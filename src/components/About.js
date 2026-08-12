@@ -11,8 +11,8 @@ import {
   FaArrowRight,
   FaChevronUp,
 } from "react-icons/fa";
-//import image1 from "../assets/image1.jpg";
-import home3 from "../assets/home3.jpg";
+import about1 from "../assets/about1.jpg";
+//import home3 from "../assets/home3.jpg";
 //import nakuru from "../assets/nakuru.jpg";
 //import image16 from "../assets/image16.jpg";
 //import image4 from "../assets/image4.jpg";
@@ -36,7 +36,7 @@ function About() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[65vh] flex items-center justify-center overflow-hidden">
         <img
           src={home1}
           alt="About Savanna Crown Safaris"
@@ -62,7 +62,7 @@ function About() {
 
           <div className="mt-10 flex justify-center gap-4">
             <Link
-              to="/upcoming-trips"
+              to="/upcomingtrips"
               className="bg-[#D4AF37] text-black px-8 py-4 rounded-full font-bold hover:scale-105 transition"
             >
               Explore Tours
@@ -85,7 +85,7 @@ function About() {
           {/* Left Image */}
           <div className="relative">
             <img
-  src={home3}
+  src={about1}
   alt="About Savanna Crown Safaris"
   className="w-full h-[600px] object-cover rounded-3xl shadow-2xl"
 />
@@ -579,57 +579,7 @@ function About() {
 
 </section> {/* ================= TESTIMONIALS ================= */}
 
-<section className="py-24 bg-white">
-  <div className="max-w-7xl mx-auto px-6">
 
-    <div className="text-center mb-16">
-      <span className="uppercase tracking-[0.3em] text-[#D4AF37] font-semibold">
-        Testimonials
-      </span>
-
-      <h2 className="mt-4 text-4xl md:text-5xl font-black text-[#06261D]">
-        What Our Travelers Say
-      </h2>
-    </div>
-
-    <div className="grid md:grid-cols-3 gap-8">
-
-      {[
-        {
-          name: "Sarah W.",
-          text: "Amazing safari experience! Everything was perfectly organized and exceeded our expectations.",
-        },
-        {
-          name: "James K.",
-          text: "Professional team, comfortable transport and unforgettable wildlife encounters.",
-        },
-        {
-          name: "Mercy N.",
-          text: "Highly recommend Savanna Crown Safaris for anyone looking for a stress-free adventure.",
-        },
-      ].map((item) => (
-        <div
-          key={item.name}
-          className="bg-[#F8FAF9] rounded-3xl p-8 shadow hover:shadow-xl transition"
-        >
-          <div className="text-yellow-400 text-2xl mb-4">
-            ⭐⭐⭐⭐⭐
-          </div>
-
-          <p className="text-gray-600 leading-8">
-            "{item.text}"
-          </p>
-
-          <h4 className="mt-6 font-bold text-[#06261D]">
-            {item.name}
-          </h4>
-        </div>
-      ))}
-
-    </div>
-
-  </div>
-</section>
 
 {/* ================= CONTACT ================= */}
 

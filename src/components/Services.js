@@ -6,12 +6,12 @@ import {
   FaCheckCircle,  FaShieldAlt,  FaUsers,  FaGlobeAfrica,  FaAward,  FaHeadset,  FaPlay,} from "react-icons/fa";
 
 import video1 from "../assets/video1.mp4";
-//import home1 from "../assets/home1.jpg";
+import home1 from "../assets/home1.jpg";
 import about1 from "../assets/about1.jpg";
 import school from "../assets/school.jpg";
 import diani from "../assets/diani.jpg";
 import climbingkili from "../assets/climbingkili.jpg";
-import group from "../assets/group.jpg";
+import adventure from "../assets/adventure.jpg";
 import team from "../assets/team.jpg";
 //import home3 from "../assets/home3.jpg";
 import wilderbeast from "../assets/Wilderbeast.jpg";
@@ -305,7 +305,7 @@ export default function Services() {
 
               {
                 title: "Group Road Trips",
-                image: group,
+                image: adventure,
                 badge: "Budget Friendly",
                 icon: "🚌",
                 description:
@@ -953,7 +953,7 @@ export default function Services() {
         {/* Background Image */}
 
         <img
-          src={group}
+          src={home1}
           alt="Savanna Crown Safaris"
           className="absolute inset-0 w-full h-full object-cover"
         />

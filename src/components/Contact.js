@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
 import {
   FaFacebookF,
@@ -32,10 +33,24 @@ function Contact() {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    alert("Message sent successfully!");
+  try {
+    await emailjs.send(
+      "service_xy9rqrg",
+      "template_o9a8e4l",
+      {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        subject: formData.subject,
+        message: formData.message,
+      },
+      "5T09y2nLb5R4gilCJ"
+    );
+
+    alert("Message sent successfully! We will get back to you soon.");
 
     setFormData({
       name: "",
@@ -44,7 +59,12 @@ function Contact() {
       subject: "",
       message: "",
     });
-  };
+
+  } catch (error) {
+    console.error("EmailJS Error:", error);
+    alert("Failed to send your message. Please try again.");
+  }
+};
 
   return (
     <div className="bg-white">
@@ -171,7 +191,7 @@ function Contact() {
               </h3>
 
               <a
-                href="https://wa.me/+254720524627"
+                href="https://wa.me/254720524627"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-4 inline-block text-[#0B6E4F] font-semibold hover:text-yellow-600"

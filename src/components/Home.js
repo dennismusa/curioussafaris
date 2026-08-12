@@ -19,11 +19,12 @@ import { useTranslation } from "react-i18next";
 
 //import cruiser1 from "../assets/cruiser1.jpg";
 import home3 from "../assets/home3.jpg";
-import weekend from "../assets/weekend.jpg";
+import weekends from "../assets/weekends.jpg";
 import school from "../assets/school.jpg";
 import team from "../assets/team.jpg";
 import camping from "../assets/camping.jpg";
-import group from "../assets/group.jpg";
+import adventure from "../assets/adventure.jpg";
+import safaritour1 from "../assets/safaritour1.jpg";
 import image1 from "../assets/image1.jpg";
 import nakuru from "../assets/nakuru.jpg";
 import image16 from "../assets/image16.jpg";
@@ -54,7 +55,7 @@ import kenya from "../assets/kenya.jpg";
 import image17 from "../assets/image17.jpg";
 function Home() {
   useLanguageSync();
-  const images = [group,team,home5,image1];
+  const images = [safaritour1,team,home5,image1];
   const [index, setIndex] = useState(0);
 const aboutImages = [home3,image17,image16,nakuru,home1,home2];
 const [aboutIndex,setAboutIndex]=useState(0);
@@ -890,7 +891,7 @@ setSmallAboutIndex(prev=>(prev + 1) % aboutImages.length);
       {[
         {
           title: "Group Road Trips",
-          image: group,
+          image: adventure,
           icon: "🚌",
           badge: "Most Popular",
           audience: "Friends • Solo Travelers • Couples",
@@ -905,7 +906,7 @@ setSmallAboutIndex(prev=>(prev + 1) % aboutImages.length);
         },
         {
           title: "Weekend Getaways",
-          image: weekend,
+          image: weekends,
           icon: "🌄",
           badge: "Weekend Escape",
           audience: "Families • Couples",

@@ -13,10 +13,10 @@ import {
   FaChevronUp,
 } from "react-icons/fa";
 
-import home3 from "../assets/home3.jpg";
+import image14 from "../assets/image14.jpg";
 import image1 from "../assets/image1.jpg";
 import nakuru from "../assets/nakuru.jpg";
-import image16 from "../assets/image16.jpg";
+import wilderbeast from "../assets/Wilderbeast.jpg";
 import image4 from "../assets/image4.jpg";
 import image2 from "../assets/image2.jpg";
 import home2 from "../assets/home2.jpg";
@@ -32,29 +32,33 @@ import serengeti from "../assets/serengeti.jpg";
 import tanzania from "../assets/tanzania.jpg";
 import home1 from "../assets/home1.jpg";
 import kenya from "../assets/kenya.jpg";
-import image17 from "../assets/image17.jpg";
+import team from "../assets/team.jpg";
+import diani from "../assets/diani.jpg";
+import image10 from "../assets/image10.jpg";
+import meru from "../assets/meru.jpg";
+import weekends from "../assets/weekends.jpg";
 
 function Gallery() {
   const gallery = [
-    { image: home1, title: "Group Adventures" },
+    { image: team, title: "Group Adventures" },
     { image: home2, title: "Weekend Road Trips" },
-    { image: home3, title: "Wildlife Safaris" },
-    { image: home4, title: "Luxury Escapes" },
-    { image: home5, title: "Beach Holidays" },
+    { image: wilderbeast, title: "Wildlife Safaris" },
+    { image: weekends, title: "Luxury Escapes" },
+    { image: diani, title: "Beach Holidays" },
     { image: kenya, title: "Discover Kenya" },
     { image: nakuru, title: "Lake Nakuru" },
-    { image: home4, title: "Safari Moments" },
+    { image: image10, title: "Safari Moments" },
     { image: nairobi, title: "Nature Experience" },
     { image: image1, title: "Adventure Tours" },
-    { image: image2, title: "Scenic Landscapes" },
-    { image: home3, title: "Amazing Destinations" },
+    { image: home5, title: "Scenic Landscapes" },
+    { image: meru, title: "Amazing Destinations" },
     { image: climbingkenya, title: "Mt. Kenya Hiking" },
     { image: climbingkili, title: "Kilimanjaro Trek" },
     { image: climbinglongonot, title: "Longonot Hike" },
     { image: gorilla, title: "Gorilla Trekking" },
     { image: hellsgate, title: "Hell's Gate" },
     { image: serengeti, title: "Serengeti Safari" },
-    { image: tanzania, title: "Explore Tanzania" },
+    { image: image14, title: "Explore Tanzania" },
   ];
 
   return (
@@ -62,38 +66,51 @@ function Gallery() {
 
       {/* HERO */}
 
-      <section className="relative min-h-[65vh] sm:min-h-[75vh] lg:h-[80vh] flex items-center overflow-hidden">
+     <section className="relative min-h-[65vh] sm:min-h-[25vh] lg:h-[70vh] flex items-center overflow-hidden">
 
-        <img
-          src={home3}
-          alt=""
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+  {/* BACKGROUND IMAGE */}
+  <img
+    src={wilderbeast}
+    alt="Safari adventure"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
 
-        <div className="absolute inset-0 bg-black/60" />
+  {/* DARK OVERLAY */}
+  <div className="absolute inset-0 bg-black/55" />
 
-        <div className="relative h-full flex items-center justify-center">
+  {/* SUBTLE GRADIENT */}
+  <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/60" />
 
-          <div className="text-center text-white px-6">
+  {/* CONTENT */}
+  <div className="relative z-10 w-full">
 
-            <span className="uppercase tracking-[5px] text-yellow-400 font-semibold">
-              Memories • Experiences • Adventures
-            </span>
+    <div className="text-center text-white px-5 max-w-3xl mx-auto">
 
-            <h1 className="text-5xl md:text-7xl font-black mt-6">
-              Our Gallery
-            </h1>
+      <span className="inline-block uppercase tracking-[3px] text-yellow-400 font-semibold text-xs sm:text-sm">
+        Memories • Experiences • Adventures
+      </span>
 
-            <p className="mt-6 max-w-2xl mx-auto text-lg text-gray-200 leading-8">
-              Explore unforgettable moments from our safaris, road trips,
-              hiking adventures and group tours across Kenya and East Africa.
-            </p>
+      <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mt-3">
+        Our Gallery
+      </h1>
 
-          </div>
+      <p className="mt-3 max-w-xl mx-auto text-sm sm:text-base text-gray-200 leading-6">
+        Explore unforgettable moments from our safaris, road trips,
+        hiking adventures and group tours across Kenya and East Africa.
+      </p>
 
-        </div>
+      {/* SMALL ACCENT */}
+      <div className="flex justify-center items-center gap-2 mt-5">
+        <span className="w-10 h-[2px] bg-yellow-400" />
+        <span className="w-2 h-2 rounded-full bg-yellow-400" />
+        <span className="w-10 h-[2px] bg-yellow-400" />
+      </div>
 
-      </section>
+    </div>
+
+  </div>
+
+</section>
 
       {/* GALLERY */}
 
@@ -229,6 +246,266 @@ function Gallery() {
   </div>
 
 </section>
+
+
+{/* ================= DESTINATIONS ================= */}
+
+<section className="py-24 bg-[#F8F9F6]">
+
+  <div className="max-w-7xl mx-auto px-6">
+
+    {/* SECTION HEADER */}
+    <div className="text-center max-w-3xl mx-auto mb-14">
+
+      <span className="uppercase tracking-[4px] text-[#0B6E4F] font-bold text-sm">
+        Explore With Us
+      </span>
+
+      <h2 className="text-4xl md:text-5xl font-black mt-4 text-gray-900">
+        Where Your Adventure
+        <span className="block text-[#0B6E4F]">
+          Takes You
+        </span>
+      </h2>
+
+      <p className="mt-5 text-gray-600 text-lg leading-8">
+        From breathtaking wildlife destinations to tropical beaches and
+        unforgettable mountain adventures, discover some of the incredible
+        places waiting for you across Kenya and East Africa.
+      </p>
+
+    </div>
+
+
+    {/* DESTINATION GRID */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      {/* MAASAI MARA */}
+      <div className="group relative h-[380px] overflow-hidden rounded-[28px] shadow-lg">
+
+        <img
+          src={wilderbeast}
+          alt="Maasai Mara safari"
+          className="absolute inset-0 w-full h-full object-cover
+                     group-hover:scale-110 transition-transform duration-700"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+
+        <div className="absolute bottom-0 left-0 right-0 p-7 text-white">
+
+          <span className="text-yellow-400 text-sm font-semibold uppercase tracking-wider">
+            Wildlife Safari
+          </span>
+
+          <h3 className="text-3xl font-black mt-2">
+            Maasai Mara
+          </h3>
+
+          <p className="mt-2 text-gray-200 text-sm leading-6">
+            Experience breathtaking wildlife, dramatic landscapes and
+            unforgettable safari moments.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      {/* DIANI */}
+      <div className="group relative h-[380px] overflow-hidden rounded-[28px] shadow-lg">
+
+        <img
+          src={diani}
+          alt="Diani Beach"
+          className="absolute inset-0 w-full h-full object-cover
+                     group-hover:scale-110 transition-transform duration-700"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+
+        <div className="absolute bottom-0 left-0 right-0 p-7 text-white">
+
+          <span className="text-yellow-400 text-sm font-semibold uppercase tracking-wider">
+            Beach Escape
+          </span>
+
+          <h3 className="text-3xl font-black mt-2">
+            Diani Beach
+          </h3>
+
+          <p className="mt-2 text-gray-200 text-sm leading-6">
+            Escape to white sandy beaches, turquoise waters and
+            unforgettable coastal experiences.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      {/* MOUNT KENYA */}
+      <div className="group relative h-[380px] overflow-hidden rounded-[28px] shadow-lg">
+
+        <img
+          src={climbingkenya}
+          alt="Mount Kenya hiking"
+          className="absolute inset-0 w-full h-full object-cover
+                     group-hover:scale-110 transition-transform duration-700"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+
+        <div className="absolute bottom-0 left-0 right-0 p-7 text-white">
+
+          <span className="text-yellow-400 text-sm font-semibold uppercase tracking-wider">
+            Mountain Adventure
+          </span>
+
+          <h3 className="text-3xl font-black mt-2">
+            Mount Kenya
+          </h3>
+
+          <p className="mt-2 text-gray-200 text-sm leading-6">
+            Challenge yourself with spectacular mountain trails and
+            breathtaking high-altitude scenery.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      {/* NAKURU */}
+      <div className="group relative h-[380px] overflow-hidden rounded-[28px] shadow-lg">
+
+        <img
+          src={nakuru}
+          alt="Lake Nakuru"
+          className="absolute inset-0 w-full h-full object-cover
+                     group-hover:scale-110 transition-transform duration-700"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+
+        <div className="absolute bottom-0 left-0 right-0 p-7 text-white">
+
+          <span className="text-yellow-400 text-sm font-semibold uppercase tracking-wider">
+            Nature Experience
+          </span>
+
+          <h3 className="text-3xl font-black mt-2">
+            Lake Nakuru
+          </h3>
+
+          <p className="mt-2 text-gray-200 text-sm leading-6">
+            Discover spectacular landscapes, wildlife and the beauty
+            of the Great Rift Valley.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      {/* SERENGETI */}
+      <div className="group relative h-[380px] overflow-hidden rounded-[28px] shadow-lg">
+
+        <img
+          src={serengeti}
+          alt="Serengeti safari"
+          className="absolute inset-0 w-full h-full object-cover
+                     group-hover:scale-110 transition-transform duration-700"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+
+        <div className="absolute bottom-0 left-0 right-0 p-7 text-white">
+
+          <span className="text-yellow-400 text-sm font-semibold uppercase tracking-wider">
+            East Africa
+          </span>
+
+          <h3 className="text-3xl font-black mt-2">
+            Serengeti
+          </h3>
+
+          <p className="mt-2 text-gray-200 text-sm leading-6">
+            Venture beyond Kenya and experience one of Africa's most
+            iconic wildlife destinations.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      {/* LONGONOT */}
+      <div className="group relative h-[380px] overflow-hidden rounded-[28px] shadow-lg">
+
+        <img
+          src={climbinglongonot}
+          alt="Mount Longonot hiking"
+          className="absolute inset-0 w-full h-full object-cover
+                     group-hover:scale-110 transition-transform duration-700"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+
+        <div className="absolute bottom-0 left-0 right-0 p-7 text-white">
+
+          <span className="text-yellow-400 text-sm font-semibold uppercase tracking-wider">
+            Hiking Adventure
+          </span>
+
+          <h3 className="text-3xl font-black mt-2">
+            Mount Longonot
+          </h3>
+
+          <p className="mt-2 text-gray-200 text-sm leading-6">
+            Take on an exciting hiking adventure with panoramic views
+            across the Great Rift Valley.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    {/* BUTTON */}
+    <div className="text-center mt-12">
+
+      <Link
+        to="/upcomingtrips"
+        className="
+          inline-flex
+          items-center
+          gap-3
+          px-8
+          py-4
+          rounded-full
+          bg-[#0B6E4F]
+          text-white
+          font-bold
+          hover:bg-[#09543D]
+          hover:scale-105
+          transition-all
+          duration-300
+        "
+      >
+        Explore upcoming trips
+        <FaArrowRight />
+      </Link>
+
+    </div>
+
+  </div>
+
+</section>
+
+
 
       {/* CTA */}
 
