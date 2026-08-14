@@ -1,17 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
+
 import { Link } from "react-router-dom";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaWhatsapp,
-  FaYoutube,
-  FaTiktok,
-  FaPhoneAlt,
-  FaEnvelope,
-  FaMapMarkerAlt,
-    FaChevronUp,
-  FaArrowRight,
+import {  FaFacebookF,  FaInstagram,  FaWhatsapp,  FaYoutube,  FaTiktok,  FaPhoneAlt,  FaEnvelope,  FaMapMarkerAlt, FaChevronUp,  FaArrowRight,
 } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import useLanguageSync from "../hooks/useLanguageSync";
@@ -29,6 +20,13 @@ import image1 from "../assets/image1.jpg";
 import nakuru from "../assets/nakuru.jpg";
 import image16 from "../assets/image16.jpg";
 import image4 from "../assets/image4.jpg";
+import kenya1 from "../assets/kenya1.jpg";
+import poster11 from "../assets/poster11.jpg";
+import poster33 from "../assets/poster33.jpg";
+import poster44 from "../assets/poster44.jpg";
+
+import poster22 from "../assets/poster22.jpg";
+import mombasa1 from "../assets/mombasa1.jpg";
 import image2 from "../assets/image2.jpg";
 import home2 from "../assets/home2.jpg";
 import home5 from "../assets/home5.jpg";
@@ -67,14 +65,132 @@ const [smallAboutIndex,setSmallAboutIndex]=useState(1);
    const { t, i18n } = useTranslation();
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
-  const [rating, setRating] = useState(5);
-  
+  const [rating, setRating] = useState(5);  
 const [loading, setLoading] = useState(false);
 const [loadingReviews, setLoadingReviews] = useState(false);
 const [success, setSuccess] = useState(false);
+const [selectedTrip, setSelectedTrip] = useState(null);
+
+const [filters, setFilters] = useState({
+  search: "",
+  month: "",
+  category: "",
+  budget: "",
+});
+
+const trips = [
+  {
+    title: "Tembea Mombasa Weekend Getaway",
+    month: "September",
+    category: "Beach",
+    budget: 9800,
+    link: "https://wa.me/254720524627",
+  },
+ {
+    title: "Salt Lick Safari Lodge",
+    month: "December",
+    category: "Safari",
+    budget: 0,
+    link: "https://wa.me/254720524627",
+  },
+
+  {
+    title: "Diamond Malindi",
+    month: "September",
+    category: "Beach",
+    budget: 39500,
+    link: "https://wa.me/254720524627",
+  },
+
+  {
+    title: "Trasha Falls & Nature Adventure",
+    month: "September",
+    category: "Adventure",
+    budget: 2500,
+    link: "https://wa.me/254720524627",
+  },
+
+  {
+    title: "Southern Palms Beach Resort - Diani",
+    month: "December",
+    category: "Beach",
+    budget: 51000,
+    link: "https://wa.me/254720524627",
+  },
+
+  {
+    title: "Azul Margarita Beach Resort - Mombasa",
+    month: "December",
+    category: "Beach",
+    budget: 17000,
+    link: "https://wa.me/254720524627",
+  },
+
+  {
+    title: "Amboseli National Park Group Joining",
+    month: "Every Month",
+    category: "Safari",
+    budget: 0,
+    link: "https://wa.me/254720524627",
+  },
+  {
+    title: "Malindi & Watamu",
+    month: "September",
+    category: "Beach",
+    budget: 18500,
+    link: "https://wa.me/254720524627",
+  },
+
+  {
+    title: "Tanzania Moshi & Arusha",
+    month: "October",
+    category: "Safari",
+    budget: 19500,
+    link: "https://wa.me/254720524627",
+  },
+
+  {
+    title: "Zanzibar & Dar es Salaam",
+    month: "February",
+    category: "Holiday",
+    budget: 8499,
+    link: "https://wa.me/254720524627",
+  },
+
+  {
+    title: "SGR Holiday Package",
+    month: "December",
+    category: "Holiday",
+    budget: 7500,
+    link: "https://wa.me/254720524627",
+  },
+];
+
+const filteredTrips = trips.filter((trip) => {
+  const matchesSearch = trip.title
+    .toLowerCase()
+    .includes(filters.search.toLowerCase());
+
+  const matchesMonth =
+    !filters.month ||
+    trip.month === filters.month;
+
+  const matchesCategory =
+    !filters.category ||
+    trip.category === filters.category;
+
+  const matchesBudget =
+    !filters.budget ||
+    trip.budget <= Number(filters.budget);
+
+  return (
+    matchesSearch &&
+    matchesMonth &&
+    matchesCategory &&
+    matchesBudget
+  );
+});
 const upcomingPosters = [
-
-
   {
   image: sgr,
   title: "SGR Holiday Package",
@@ -93,7 +209,65 @@ const upcomingPosters = [
     description:
       "Experience the beauty of the Kenyan coast with a memorable Malindi and Watamu getaway featuring stunning beaches, coastal adventures, sightseeing and unforgettable moments."
   },
+{
+  image: poster11,
+  title: "Salt Lick Safari Lodge",
+  date: "Until 21 December 2026",
+  duration: "3 Days / 2 Nights",
+  price: "Contact Us",
+  description:
+    "Enjoy a Madaraka Express safari package with accommodation, meals, return SGR tickets, transfers, swimming, complimentary game drives and a heritage tour at the Taita Museum."
+},
 
+{
+  image: poster22,
+  title: "Diamond Malindi",
+  date: "1-30 September 2026",
+  duration: "3 Nights",
+  price: "KSh 39,500",
+  description:
+    "Pay for 2 nights and stay for 3 nights. Includes accommodation, all-inclusive meals, drinks, return SGR tickets, transfers and access to hotel facilities."
+},
+
+{
+  image: poster33,
+  title: "Trasha Falls & Nature Adventure",
+  date: "6 September 2026",
+  duration: "1 Day",
+  price: "KSh 2,500",
+  description:
+    "A nature adventure in Murang'a featuring a waterfall hike, river experience, photography opportunities and return transport from Nairobi."
+},
+
+{
+  image: poster44,
+  title: "Southern Palms Beach Resort - Diani",
+  date: "Until 21 December 2026",
+  duration: "3 Days / 2 Nights",
+  price: "KSh 51,000",
+  description:
+    "An all-inclusive Diani holiday package with accommodation, meals, drinks, SGR tickets, transfers, entertainment and beach access."
+},
+
+{
+  image: mombasa1,
+  title: "Azul Margarita Beach Resort - Mombasa",
+  date: "Until 21 December 2026",
+  duration: "3 Days / 2 Nights",
+  price: "KSh 17,000",
+  description:
+    "A Mombasa holiday package including accommodation, meals, SGR tickets and return transfers."
+},
+
+{
+  image: kenya1,
+  title: "Amboseli National Park Group Joining",
+  date: "Every Friday",
+  duration: "3 Days / 2 Nights",
+  price: "Contact Us",
+  description:
+    "Group safari to Amboseli National Park including accommodation, transport in a 4x4 vehicle, meals, game drives, drinking water and a professional guide."
+},
   {
     image: mombasa,
     title: "Tembea Mombasa Weekend Getaway",
@@ -125,7 +299,10 @@ const upcomingPosters = [
       "Experience an unforgettable Tanzanian coastal adventure combining Zanzibar and Dar es Salaam, with beautiful beaches, island experiences, vibrant culture and spectacular coastal scenery."
   }
 ];
+
+const [search, setSearch] = useState("");
 const [posterIndex, setPosterIndex] = useState(0);
+
 
 useEffect(() => {
   const slider = setInterval(() => {
@@ -288,19 +465,329 @@ setSmallAboutIndex(prev=>(prev + 1) % aboutImages.length);
   </div>
 
   {/* Scroll Indicator */}
-  <div className="absolute bottom-6 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center animate-bounce">
-
-    <span className="text-white/70 text-xs tracking-[3px] uppercase mb-2">
-      Scroll
-    </span>
-
-    <div className="w-[2px] h-10 bg-gradient-to-b from-yellow-400 to-transparent" />
-
-  </div>
+  
 
 </section>
 
+{/* Search */}
+<section className="-mt-12 relative z-30 px-4 pb-16">
+  <div className="max-w-7xl mx-auto">
+    <div className="bg-white rounded-[32px] shadow-2xl overflow-hidden">
 
+      {/* Search Bar */}
+
+      <div className="p-6 md:p-8">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4">
+
+          {/* Destination */}
+
+          <input
+            type="text"
+            placeholder="Search Destination"
+            value={filters.search}
+            onChange={(e) =>
+              setFilters({
+                ...filters,
+                search: e.target.value,
+              })
+            }
+            className="
+              h-14
+              border
+              rounded-2xl
+              px-5
+              outline-none
+              focus:border-[#0B6E4F]
+              focus:ring-2
+              focus:ring-[#0B6E4F]/20
+            "
+          />
+
+          {/* Travel Date */}
+
+          <input
+            type="date"
+            className="
+              h-14
+              border
+              rounded-2xl
+              px-5
+              outline-none
+              focus:border-[#0B6E4F]
+              focus:ring-2
+              focus:ring-[#0B6E4F]/20
+            "
+          />
+
+          {/* Month */}
+
+          <select
+            value={filters.month}
+            onChange={(e) =>
+              setFilters({
+                ...filters,
+                month: e.target.value,
+              })
+            }
+            className="
+              h-14
+              border
+              rounded-2xl
+              px-5
+              outline-none
+              focus:border-[#0B6E4F]
+            "
+          >
+            <option value="">Month</option>
+
+            <option value="September">
+              September
+            </option>
+            <option value="Beach">Beach</option>
+
+<option value="Safari">Safari</option>
+
+<option value="Holiday">Holiday</option>
+
+<option value="Adventure">Adventure</option>
+            <option value="October">
+              October
+            </option>
+
+            <option value="December">
+              December
+            </option>
+
+            <option value="February">
+              February
+            </option>
+
+          </select>
+
+          {/* Category */}
+
+          <select
+            value={filters.category}
+            onChange={(e) =>
+              setFilters({
+                ...filters,
+                category: e.target.value,
+              })
+            }
+            className="
+              h-14
+              border
+              rounded-2xl
+              px-5
+              outline-none
+              focus:border-[#0B6E4F]
+            "
+          >
+            <option value="">Category</option>
+
+            <option value="Beach">
+              Beach
+            </option>
+
+            <option value="Safari">
+              Safari
+            </option>
+
+            <option value="Holiday">
+              Holiday
+            </option>
+
+          </select>
+
+          {/* Budget */}
+
+          <select
+            value={filters.budget}
+            onChange={(e) =>
+              setFilters({
+                ...filters,
+                budget: e.target.value,
+              })
+            }
+            className="
+              h-14
+              border
+              rounded-2xl
+              px-5
+              outline-none
+              focus:border-[#0B6E4F]
+            "
+          >
+            <option value="">Budget</option>
+
+            <option value="10000">
+              Under KSh 10,000
+            </option>
+
+            <option value="20000">
+              Under KSh 20,000
+            </option>
+            <option value="50000">
+              Under KSh 50,000
+            </option>
+
+          </select>
+
+          {/* Reset */}
+
+          <button
+            onClick={() =>
+              setFilters({
+                search: "",
+                month: "",
+                category: "",
+                budget: "",
+              })
+            }
+            className="
+              h-14
+              rounded-2xl
+              bg-[#0B6E4F]
+              text-white
+              font-bold
+              hover:bg-[#084c39]
+              transition
+            "
+          >
+            Reset
+          </button>
+
+        </div>
+
+        {/* Results */}
+
+        {(filters.search ||
+          filters.month ||
+          filters.category ||
+          filters.budget) && (
+
+          <div className="mt-10">
+
+            <div className="flex items-center justify-between mb-6">
+
+              <h3 className="text-2xl font-bold">
+                Available Trips
+              </h3>
+
+              <span
+                className="
+                  px-5
+                  py-2
+                  rounded-full
+                  bg-[#0B6E4F]/10
+                  text-[#0B6E4F]
+                  font-semibold
+                "
+              >
+                {filteredTrips.length} found
+              </span>
+
+            </div>
+
+            {filteredTrips.length > 0 ? (
+
+              <div className="grid gap-4">
+
+                {filteredTrips.map((trip, index) => (
+
+                  <button
+                    key={index}
+                    onClick={() => {
+
+                      const poster = upcomingPosters.find(
+                        (item) =>
+                          item.title
+                            .toLowerCase()
+                            .includes(
+                              trip.title
+                                .split(" ")[0]
+                                .toLowerCase()
+                            )
+                      );
+
+                      setSelectedTrip(poster);
+
+                    }}
+                    className="
+                      p-6
+                      border
+                      rounded-3xl
+                      text-left
+                      hover:border-[#0B6E4F]
+                      hover:shadow-xl
+                      transition-all
+                    "
+                  >
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+
+                      <div>
+
+                        <h3 className="text-xl font-bold">
+                          {trip.title}
+                        </h3>
+
+                        <p className="mt-2 text-gray-500">
+                          {trip.month} • {trip.category}
+                        </p>
+
+                      </div>
+
+                      <div className="flex items-center gap-6">
+
+                        <div className="text-xl font-black text-[#0B6E4F]">
+                          KSh {trip.budget.toLocaleString()}
+                        </div>
+
+                        <div
+                          className="
+                            px-5
+                            py-3
+                            rounded-full
+                            bg-[#0B6E4F]
+                            text-white
+                            font-bold
+                          "
+                        >
+                          View Trip →
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </button>
+
+                ))}
+
+              </div>
+
+            ) : (
+
+              <div className="py-12 text-center">
+
+                <p className="text-lg text-gray-500">
+                  No matching trips found.
+                </p>
+
+              </div>
+
+            )}
+
+          </div>
+
+        )}
+
+      </div>
+
+    </div>
+  </div>
+</section>
       {/* ABOUT / EXPERIENCE SECTION */}
 {/* ABOUT / EXPERIENCE SECTION */}
 {/* ================= ABOUT ================= */}
@@ -1732,15 +2219,126 @@ setSmallAboutIndex(prev=>(prev + 1) % aboutImages.length);
 
   {/* Scroll To Top */}
 
-  <button
-    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-    className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#D4AF37] text-black shadow-2xl hover:scale-110 transition duration-300"
-  >
-    <FaChevronUp />
-  </button>
+  
 
 </footer>
+{selectedTrip && (
+
+  <div className="fixed inset-0 z-[999] bg-black/80 flex items-center justify-center p-4">
+
+    <div className="relative w-full max-w-4xl bg-white rounded-[32px] overflow-hidden shadow-2xl">
+
+      <button
+        onClick={() => setSelectedTrip(null)}
+        className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-white shadow-lg font-bold"
+      >
+        ✕
+      </button>
+
+      <img
+        src={selectedTrip.image}
+        alt={selectedTrip.title}
+        className="w-full max-h-[500px] object-contain bg-black"
+      />
+
+      <div className="p-6 md:p-8">
+
+        <h2 className="text-2xl md:text-4xl font-black">
+
+          {selectedTrip.title}
+
+        </h2>
+
+        <p className="mt-4 text-gray-600 leading-7">
+
+          {selectedTrip.description}
+
+        </p>
+
+        <div className="mt-6 flex flex-wrap gap-6">
+
+          <div>
+
+            <p className="text-sm text-gray-500">
+
+              Date
+
+            </p>
+
+            <p className="font-bold">
+
+              {selectedTrip.date}
+
+            </p>
+
+          </div>
+
+          <div>
+
+            <p className="text-sm text-gray-500">
+
+              Duration
+
+            </p>
+
+            <p className="font-bold">
+
+              {selectedTrip.duration}
+
+            </p>
+
+          </div>
+
+          <div>
+
+            <p className="text-sm text-gray-500">
+
+              Price
+
+            </p>
+
+            <p className="font-bold text-[#0B6E4F]">
+
+              {selectedTrip.price}
+
+            </p>
+
+          </div>
+
+        </div>
+
+        {selectedTrip.flightPrice && (
+
+          <p className="mt-4 font-bold text-yellow-600">
+
+            {selectedTrip.flightPrice}
+
+          </p>
+
+        )}
+
+        <a
+          href="https://wa.me/254720524627?text=Hello%20I'm%20interested%20in%20this%20trip."
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-3 mt-8 px-8 py-4 rounded-full bg-[#0B6E4F] text-white font-bold hover:bg-[#084c39] transition"
+        >
+
+          <FaWhatsapp />
+
+          Book on WhatsApp
+
+        </a>
+
+      </div>
+
     </div>
+
+  </div>
+
+)}
+    </div>
+    
   );
 }
 
