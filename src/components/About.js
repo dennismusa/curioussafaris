@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import {  FaFacebookF,  FaInstagram,  FaWhatsapp,  FaYoutube,  FaArrowRight,  FaMapMarkerAlt,  FaChevronUp,  FaGlobe,} from "react-icons/fa";
 
 import airbaloon from "../assets/airbaloon.jpg";
-import destination from "../assets/destination.jpg";
+//import destination from "../assets/destination.jpg";
 //import home2 from "../assets/home2.jpg";
 //import home5 from "../assets/home5.jpg";
 //import climbingkenya from "../assets/climbingkenya.jpg";
