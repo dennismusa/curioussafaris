@@ -30,8 +30,13 @@ import gorilla from "../assets/gorilla.jpg";
 import nairobi from "../assets/nairobi.jpg";
 import serengeti from "../assets/serengeti.jpg";
 import tanzania from "../assets/tanzania.jpg";
-import home1 from "../assets/home1.jpg";
+import Wilderbeast from "../assets/Wilderbeast.jpg";
+import victoria1 from "../assets/victoria1.jpg";
+import zambezi from "../assets/zambezi.jpg";
+import luangwa from "../assets/luangwa.jpg";
+import ngorongoro from "../assets/ngorongoro.jpg";
 import kenya from "../assets/kenya.jpg";
+import home1 from "../assets/home1.jpg";
 import team from "../assets/team.jpg";
 import diani from "../assets/diani.jpg";
 import image10 from "../assets/image10.jpg";
@@ -478,7 +483,7 @@ function Gallery() {
     <div className="text-center mt-12">
 
       <Link
-        to="/upcomingtrips"
+        to="/Destinations"
         className="
           inline-flex
           items-center
@@ -570,7 +575,7 @@ function Gallery() {
       <div>
 
         <h2 className="text-4xl font-black">
-          Savanna
+          Curious
           <span className="text-[#D4AF37]"> Crown</span>
         </h2>
 
@@ -708,10 +713,10 @@ function Gallery() {
               </p>
 
               <a
-                href="mailto:info@savannacrownsafarisafrica.co.ke"
+                href="mailto:curioussafariss@gmail.com"
                 className="text-gray-400 hover:text-white break-all"
               >
-                info@savannacrownsafarisafrica.co.ke
+                curioussafariss@gmail.com
               </a>
 
             </div>
@@ -753,7 +758,7 @@ function Gallery() {
       <p className="text-gray-500 text-center md:text-left">
         © {new Date().getFullYear()}{" "}
         <span className="text-[#D4AF37] font-semibold">
-          Savanna Crown Safaris Africa
+          Curious Safaris 
         </span>
         . All Rights Reserved.
       </p>

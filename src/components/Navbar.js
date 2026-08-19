@@ -86,7 +86,7 @@ function Navbar() {
           >
             <img
               src={safarilogo}
-              alt="Savanna Crown Safaris"
+              alt="Curious Safaris"
               className="w-16 h-16 rounded-full border-2 border-[#D4AF37]
               shadow-xl shadow-yellow-500/20
               transition-all duration-500
@@ -103,14 +103,14 @@ function Navbar() {
                 transition-all duration-300
                 group-hover:text-[#D4AF37]"
               >
-                Savanna Crown
+                Curious Safaris
               </h2>
 
               <p
                 className="uppercase tracking-[0.35em]
                 text-[#D4AF37] text-xs"
               >
-                Safaris Africa
+                  Africa
               </p>
 
             </div>
@@ -189,8 +189,8 @@ function Navbar() {
               Our Services
             </NavItem>
 
-            <NavItem to="/upcomingtrips">
-              Upcoming Trips
+            <NavItem to="/Destinations">
+              Destinations
             </NavItem>
 
             <NavItem to="/gallery">
@@ -206,16 +206,16 @@ function Navbar() {
             
 
             <a
-  href="https://wa.me/254720524627?text=Hello%20Savanna%20Crown%20Safaris%20Africa%2C%20I%27d%20like%20to%20book%20a%20trip."
+  href="https://wa.me/254720524627?text=Hello%20Curious%20Safaris%2C%20I%27d%20like%20to%20book%20a%20trip."
   target="_blank"
   rel="noopener noreferrer"
-  className="ml-3 px-7 py-3
-  rounded-full
-  bg-[#D4AF37]
-  text-black
-  font-bold
-  transition-all duration-300
-  hover:scale-105
+  className="ml-3 px-7 py-3 
+  rounded-full 
+  bg-[#D4AF37] 
+  text-black 
+  font-bold 
+  transition-all duration-300 
+  hover:scale-105 
   hover:shadow-[0_15px_40px_rgba(212,175,55,.45)]"
 >
   Book Now
@@ -285,7 +285,7 @@ function Navbar() {
             <div>
 
               <h2 className="text-white font-black text-xl">
-                Savanna Crown
+                curious safaris
               </h2>
 
               <p className="text-[#D4AF37] uppercase text-xs tracking-widest">
@@ -356,7 +356,7 @@ function Navbar() {
         </NavLink>
 
         <NavLink
-          to="/upcomingtrips"
+          to="/Destinations"
           onClick={closeMobile}
           className={({ isActive }) =>
             `flex items-center gap-4 rounded-2xl px-5 py-4 transition-all duration-300 ${
@@ -366,7 +366,7 @@ function Navbar() {
             }`
           }
         >
-          🚌 Upcoming Trips
+          🚌 Destinations
         </NavLink>
 
         {/* Destinations */}

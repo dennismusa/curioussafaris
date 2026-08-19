@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
+//import {  FaFacebookF,  FaInstagram,  FaWhatsapp,  FaYoutube,  FaArrowRight,  FaMapMarkerAlt,  FaChevronUp,  FaGlobe,} from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
 import {
@@ -12,10 +13,11 @@ import {
   FaMapMarkerAlt,
   FaArrowRight,
   FaChevronUp,
+  FaGlobe,
 } from "react-icons/fa";
 
 import home3 from "../assets/home3.jpg";
-import about from "../assets/about.jpg";
+import airbaloon from "../assets/airbaloon.jpg";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -37,9 +39,9 @@ function Contact() {
   e.preventDefault();
 
   try {
-    await emailjs.send(
-      "service_xy9rqrg",
-      "template_o9a8e4l",
+    const result = await emailjs.send(
+      "service_0dmdh7d",
+      "template_alghgyr",
       {
         name: formData.name,
         email: formData.email,
@@ -47,8 +49,10 @@ function Contact() {
         subject: formData.subject,
         message: formData.message,
       },
-      "5T09y2nLb5R4gilCJ"
+      "PQQ88KH3r05vTWQ5j"
     );
+
+    console.log("EmailJS success:", result);
 
     alert("Message sent successfully! We will get back to you soon.");
 
@@ -59,11 +63,13 @@ function Contact() {
       subject: "",
       message: "",
     });
+ } catch (error) {
+  console.log(error);
 
-  } catch (error) {
-    console.error("EmailJS Error:", error);
-    alert("Failed to send your message. Please try again.");
-  }
+  alert(
+    `Status: ${error.status}\nMessage: ${error.text}`
+  );
+}
 };
 
   return (
@@ -74,8 +80,8 @@ function Contact() {
       <section className="relative h-[60vh] overflow-hidden">
 
         <img
-          src={about}
-          alt="Contact Savanna Crown Safaris"
+          src={airbaloon}
+          alt="Contact Curious Safaris"
           className="absolute inset-0 w-full h-full object-cover"
         />
 
@@ -127,11 +133,11 @@ function Contact() {
               </h3>
 
               <p className="mt-4 text-gray-600">
-                +254720524627
+                +254745861688
               </p>
 
               <p className="text-gray-600">
-                +254720524627
+                +254745861688
               </p>
 
             </div>
@@ -151,7 +157,7 @@ function Contact() {
               </h3>
 
               <p className="mt-4 text-gray-600 break-all">
-                info@savannacrownsafarisafrica.co.ke
+                curioussafariss@gmail.com
               </p>
 
             </div>
@@ -191,7 +197,7 @@ function Contact() {
               </h3>
 
               <a
-                href="https://wa.me/254720524627"
+                href="https://wa.me/254745861688"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-4 inline-block text-[#0B6E4F] font-semibold hover:text-yellow-600"
@@ -405,7 +411,7 @@ function Contact() {
 
         {/* Map */}
         <iframe
-          title="Savanna Crown Safaris Africa Nairobi Office"
+          title="Curious Safaris Ruiru Office"
           src="https://www.google.com/maps?q=Nairobi,Kenya&output=embed"
           className="absolute inset-0 w-full h-full border-0"
           loading="lazy"
@@ -498,10 +504,10 @@ function Contact() {
               </h4>
 
               <a
-                href="mailto:info@savannacrownsafarisafrica.co.ke"
+                href="mailto:curioussafariss@gmail.com"
                 className="mt-1 text-gray-600 hover:text-[#0B6E4F] break-all transition"
               >
-                info@savannacrownsafarisafrica.co.ke
+                curioussafariss@gmail.com
               </a>
 
             </div>
@@ -523,17 +529,17 @@ function Contact() {
               </h4>
 
               <a
-                href="tel:+254720524627"
+                href="tel:+254745861688"
                 className="block mt-1 text-gray-600 hover:text-[#0B6E4F] transition"
               >
-                +254 720 524 627
+                +254745861688
               </a>
 
               <a
-                href="tel:+254140322304"
+                href="tel:+254745861688"
                 className="block text-gray-600 hover:text-[#0B6E4F] transition"
               >
-                +254 140 322 304
+                +254745861688
               </a>
 
             </div>
@@ -601,7 +607,7 @@ function Contact() {
         <div className="grid sm:grid-cols-2 gap-4 mt-6">
 
           <a
-            href="tel:+254720524627"
+            href="tel:+254745861688"
             className="flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-gray-100 text-gray-900 font-bold hover:bg-[#0B6E4F] hover:text-white transition-all duration-300"
           >
             <FaPhoneAlt />
@@ -609,7 +615,7 @@ function Contact() {
           </a>
 
           <a
-            href="https://wa.me/254720524627"
+            href="https://wa.me/+254745861688"
             target="_blank"
             rel="noreferrer"
             className="flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-[#25D366] text-white font-bold hover:-translate-y-1 transition-all duration-300 shadow-lg"
@@ -628,69 +634,7 @@ function Contact() {
 
 </section>       {/* ================= FAQ ================= */}
 
-      <section className="py-24 bg-[#F8FAF8]">
-
-        <div className="max-w-7xl mx-auto px-6">
-
-          <div className="text-center max-w-3xl mx-auto mb-16">
-
-            <span className="inline-flex px-5 py-2 rounded-full bg-emerald-100 text-[#0B6E4F] uppercase tracking-[3px] text-sm font-semibold">
-              Frequently Asked Questions
-            </span>
-
-            <h2 className="mt-6 text-5xl font-black text-gray-900">
-              Need More Information?
-            </h2>
-
-            <p className="mt-6 text-lg text-gray-600 leading-8">
-              Here are some of the most common questions from our travelers.
-            </p>
-
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-8">
-
-            {[
-              {
-                q: "How do I book a trip?",
-                a: "Simply contact us through WhatsApp, phone, email or complete the contact form and our travel consultants will assist you."
-              },
-              {
-                q: "Do you organize group road trips?",
-                a: "Yes. Group road trips are our specialty. We organize exciting weekend getaways and adventures across Kenya."
-              },
-              {
-                q: "Can I request a private trip?",
-                a: "Absolutely. We create tailor-made travel packages for individuals, families, schools and corporate groups."
-              },
-              {
-                q: "Do you provide transport?",
-                a: "Yes. We provide comfortable tour vans, safari vehicles and airport transfers depending on your package."
-              }
-            ].map((faq, index) => (
-
-              <div
-                key={index}
-                className="bg-white rounded-[30px] p-8 shadow-lg hover:shadow-xl transition"
-              >
-
-                <h3 className="text-xl font-bold text-[#0B6E4F]">
-                  {faq.q}
-                </h3>
-
-                <p className="mt-4 text-gray-600 leading-8">
-                  {faq.a}
-                </p>
-
-              </div>
-
-            ))}
-
-          </div>
-
-        </div>
-
-      </section>
+      
 
       {/* ================= WHY CHOOSE US ================= */}
 
@@ -698,39 +642,44 @@ function Contact() {
 
 {/* ================= FOOTER ================= */}
 <footer className="relative overflow-hidden bg-[#050505] text-white">
-
   {/* Top Accent Line */}
-  <div className="h-[2px] bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
+
+  <div className="h-[2px] bg-gradient-to-r from-transparent via-[#C8A94C] to-transparent" />
 
   {/* Background Glow */}
-  <div className="absolute -top-32 -left-20 w-[450px] h-[450px] bg-emerald-500/10 rounded-full blur-[170px]" />
-  <div className="absolute -bottom-32 -right-20 w-[450px] h-[450px] bg-yellow-400/10 rounded-full blur-[170px]" />
 
-  <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-20">
+  <div className="absolute -top-32 -left-20 h-[450px] w-[450px] rounded-full bg-emerald-500/10 blur-[170px]" />
 
-    <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-14">
+  <div className="absolute -bottom-32 -right-20 h-[450px] w-[450px] rounded-full bg-yellow-400/10 blur-[170px]" />
 
-      {/* ================= Company ================= */}
+  <div className="relative mx-auto max-w-7xl px-6 py-20 lg:px-8">
+    <div className="grid gap-14 md:grid-cols-2 lg:grid-cols-3">
+      {/* Company */}
 
       <div>
-
         <h2 className="text-4xl font-black">
-          Savanna
-          <span className="text-[#D4AF37]"> Crown</span>
+          Curious
+          <span className="text-[#C8A94C]"> Safaris</span>
         </h2>
 
-        <div className="w-20 h-1 bg-[#D4AF37] rounded-full mt-4"></div>
+        <div className="mt-4 h-1 w-20 rounded-full bg-[#C8A94C]" />
 
-        <p className="mt-6 text-gray-400 leading-8">
-          Discover Kenya and East Africa through unforgettable safaris,
-          group adventures, road trips and tailor-made travel experiences.
-          We create journeys filled with wildlife, culture, comfort and
-          lifelong memories.
+        <p className="mt-6 leading-8 text-gray-400">
+          Curious Safaris is an Africa-based travel company
+          offering private, customized, and unforgettable
+          journeys across Africa.
+        </p>
+
+        <p className="mt-4 leading-8 text-gray-400">
+          Explore wildlife safaris, luxury tours, beach holidays,
+          horse-riding adventures, photography trips, cultural
+          experiences, and tailor-made journeys across the
+          continent.
         </p>
 
         {/* Social Icons */}
-        <div className="flex gap-4 mt-8">
 
+        <div className="mt-8 flex gap-4">
           {[
             {
               icon: <FaFacebookF />,
@@ -742,172 +691,141 @@ function Contact() {
             },
             {
               icon: <FaWhatsapp />,
-              link: "https://wa.me/254720524627",
+              link: "https://wa.me/254745861688",
             },
             {
               icon: <FaYoutube />,
               link: "https://youtube.com",
             },
           ].map((item, index) => (
-
             <a
               key={index}
               href={item.link}
               target="_blank"
               rel="noreferrer"
-              className="w-12 h-12 rounded-full border border-white/10 bg-white/5 flex items-center justify-center hover:bg-[#0B6E4F] hover:border-[#0B6E4F] hover:-translate-y-2 transition duration-500"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 transition duration-500 hover:-translate-y-2 hover:border-emerald-700 hover:bg-emerald-700"
             >
               {item.icon}
             </a>
-
           ))}
-
         </div>
-
       </div>
 
-      {/* ================= Quick Links ================= */}
+      {/* Quick Links */}
 
       <div>
-
-        <h3 className="text-2xl font-bold mb-8">
+        <h3 className="mb-8 text-2xl font-bold">
           Quick Links
         </h3>
 
         <div className="space-y-5">
-
           {[
             { name: "Home", path: "/" },
-            { name: "About Us", path: "/about" },
-            { name: "Services", path: "/services" },
-            { name: "Upcoming Trips", path: "/upcomingtrips" },
+            { name: "Destinations", path: "/destinations" },
+            
             { name: "Gallery", path: "/gallery" },
+            { name: "About", path: "/about" },
             { name: "Contact", path: "/contact" },
           ].map((item) => (
-
             <Link
               key={item.name}
               to={item.path}
-              className="flex items-center gap-3 text-gray-400 hover:text-[#D4AF37] hover:translate-x-2 transition-all duration-300"
+              className="flex items-center gap-3 text-gray-400 transition-all duration-300 hover:translate-x-2 hover:text-[#C8A94C]"
             >
-
               <FaArrowRight className="text-xs" />
 
               {item.name}
-
             </Link>
-
           ))}
-
         </div>
-
       </div>
 
-      {/* ================= Contact ================= */}
+      {/* Contact */}
 
       <div>
-
-        <h3 className="text-2xl font-bold mb-8">
+        <h3 className="mb-8 text-2xl font-bold">
           Contact Us
         </h3>
 
         <div className="space-y-6">
+          {/* WhatsApp */}
 
-          {/* Phone */}
-
-          <div className="flex gap-4 p-4 rounded-2xl bg-white/5 hover:bg-[#0B6E4F]/20 transition">
-
-            <div className="w-12 h-12 rounded-xl bg-[#0B6E4F] flex items-center justify-center">
-              <FaPhoneAlt />
+          <div className="flex gap-4 rounded-2xl bg-white/5 p-4 transition hover:bg-emerald-700/20">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-700">
+              <FaWhatsapp />
             </div>
 
             <div>
-
               <p className="font-semibold">
-                Call Us
+                WhatsApp
               </p>
 
               <a
-                href="tel:+254720524627"
+                href="https://wa.me/254745861688"
                 className="text-gray-400 hover:text-white"
               >
-                +254 720 524 627
+                +254 745 861 688
               </a>
-
             </div>
-
           </div>
 
-          {/* Email */}
+          {/* Africa */}
 
-          <div className="flex gap-4 p-4 rounded-2xl bg-white/5 hover:bg-[#0B6E4F]/20 transition">
-
-            <div className="w-12 h-12 rounded-xl bg-[#0B6E4F] flex items-center justify-center">
-              <FaEnvelope />
+          <div className="flex gap-4 rounded-2xl bg-white/5 p-4 transition hover:bg-emerald-700/20">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-700">
+              <FaGlobe />
             </div>
 
             <div>
-
               <p className="font-semibold">
-                Email
+                Destinations
               </p>
 
-              <a
-                href="mailto:info@savannacrownsafarisafrica.co.ke"
-                className="text-gray-400 hover:text-white break-all"
-              >
-                info@savannacrownsafarisafrica.co.ke
-              </a>
-
+              <p className="text-gray-400">
+                East, West, North, Central & Southern Africa
+              </p>
             </div>
-
           </div>
 
           {/* Location */}
 
-          <div className="flex gap-4 p-4 rounded-2xl bg-white/5 hover:bg-[#0B6E4F]/20 transition">
-
-            <div className="w-12 h-12 rounded-xl bg-[#0B6E4F] flex items-center justify-center">
+          <div className="flex gap-4 rounded-2xl bg-white/5 p-4 transition hover:bg-emerald-700/20">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-700">
               <FaMapMarkerAlt />
             </div>
 
             <div>
-
               <p className="font-semibold">
-                Office
+                Based In
               </p>
 
               <p className="text-gray-400">
                 Nairobi, Kenya
               </p>
-
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
 
-    {/* ================= Bottom ================= */}
+    {/* Bottom */}
 
-    <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
+    <div className="mt-16 flex flex-col items-center justify-between gap-6 border-t border-white/10 pt-8 md:flex-row">
+      <p className="text-center text-gray-500 md:text-left">
+        © {new Date().getFullYear()}
 
-      <p className="text-gray-500 text-center md:text-left">
-        © {new Date().getFullYear()}{" "}
-        <span className="text-[#D4AF37] font-semibold">
-          Savanna Crown Safaris Africa
+        <span className="font-semibold text-[#C8A94C]">
+          {" "}
+          Curious Safaris
         </span>
+
         . All Rights Reserved.
       </p>
 
       <div className="flex items-center gap-6 text-sm">
-
         <Link
-          to="/"
-          className="text-gray-500 hover:text-[#D4AF37] transition"
+          to="/privacy"
+          className="text-gray-500 transition hover:text-[#C8A94C]"
         >
           Privacy Policy
         </Link>
@@ -915,27 +833,28 @@ function Contact() {
         <span className="text-white/20">|</span>
 
         <Link
-          to="/"
-          className="text-gray-500 hover:text-[#D4AF37] transition"
+          to="/terms"
+          className="text-gray-500 transition hover:text-[#C8A94C]"
         >
           Terms & Conditions
         </Link>
-
       </div>
-
     </div>
-
   </div>
 
   {/* Scroll To Top */}
 
   <button
-    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-    className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#D4AF37] text-black shadow-2xl hover:scale-110 transition duration-300"
+    onClick={() =>
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      })
+    }
+    className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#C8A94C] text-black shadow-2xl transition duration-300 hover:scale-110"
   >
     <FaChevronUp />
   </button>
-
 </footer>
     </div>
   );

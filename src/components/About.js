@@ -1,22 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaWhatsapp,
-  FaYoutube,
-  FaPhoneAlt,
-  FaEnvelope,
-  FaMapMarkerAlt,
-  FaArrowRight,
-  FaChevronUp,
-} from "react-icons/fa";
-import about1 from "../assets/about1.jpg";
-//import home3 from "../assets/home3.jpg";
-//import nakuru from "../assets/nakuru.jpg";
-//import image16 from "../assets/image16.jpg";
-//import image4 from "../assets/image4.jpg";
-//import image2 from "../assets/image2.jpg";
+import {  FaFacebookF,  FaInstagram,  FaWhatsapp,  FaYoutube,  FaArrowRight,  FaMapMarkerAlt,  FaChevronUp,  FaGlobe,} from "react-icons/fa";
+
+import airbaloon from "../assets/airbaloon.jpg";
 //import home2 from "../assets/home2.jpg";
 //import home5 from "../assets/home5.jpg";
 //import climbingkenya from "../assets/climbingkenya.jpg";
@@ -27,7 +13,7 @@ import about1 from "../assets/about1.jpg";
 //import gorilla from "../assets/gorilla.jpg";
 //import serengeti from "../assets/serengeti.jpg";
 //import tanzania from "../assets/tanzania.jpg";
-import home1 from "../assets/home1.jpg";
+
 //import kenya from "../assets/kenya.jpg";
 //import image17 from "../assets/image17.jpg";
 
@@ -38,8 +24,8 @@ function About() {
       {/* Hero Section */}
       <section className="relative h-[65vh] flex items-center justify-center overflow-hidden">
         <img
-          src={home1}
-          alt="About Savanna Crown Safaris"
+          src={airbaloon}
+          alt="About curious Safaris"
           className="absolute inset-0 w-full h-full object-cover"
         />
 
@@ -47,7 +33,7 @@ function About() {
 
         <div className="relative z-10 text-center max-w-4xl px-6">
           <span className="inline-block px-4 py-2 rounded-full bg-[#D4AF37]/20 text-[#D4AF37] border border-[#D4AF37] uppercase tracking-widest text-xs">
-            Welcome to Savanna Crown Safaris
+            Welcome to curious Safaris
           </span>
 
           <h1 className="mt-6 text-5xl md:text-7xl font-black text-white leading-tight">
@@ -62,7 +48,7 @@ function About() {
 
           <div className="mt-10 flex justify-center gap-4">
             <Link
-              to="/upcomingtrips"
+              to="/Destinations"
               className="bg-[#D4AF37] text-black px-8 py-4 rounded-full font-bold hover:scale-105 transition"
             >
               Explore Tours
@@ -79,81 +65,116 @@ function About() {
       </section>    
       
           {/* About Company */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
-
-          {/* Left Image */}
-          <div className="relative">
-            <img
-  src={about1}
-  alt="About Savanna Crown Safaris"
-  className="w-full h-[600px] object-cover rounded-3xl shadow-2xl"
-/>
-
-            <div className="absolute -bottom-6 -right-6 bg-[#0B6E4F] text-white p-6 rounded-2xl shadow-xl">
-              <h3 className="text-4xl font-black text-[#D4AF37]">100+</h3>
-              <p className="text-sm uppercase tracking-widest">
-                Happy Travelers
-              </p>
-            </div>
-          </div>
-
-          {/* Right Content */}
-          <div>
-
-            <span className="text-[#D4AF37] uppercase tracking-[0.3em] font-semibold">
-              Who We Are
-            </span>
-
-            <h2 className="mt-4 text-4xl md:text-5xl font-black text-[#06261D] leading-tight">
-              Creating Unforgettable Safari Experiences
-            </h2>
-
-            <p className="mt-6 text-gray-600 leading-8">
-              Savanna Crown Safaris is a proudly Kenyan tour and travel
-              company offering unforgettable adventures across Kenya and
-              East Africa. We specialize in wildlife safaris, beach
-              holidays, road trips, corporate travel, school trips,
-              honeymoons, airport transfers and tailor-made travel
-              experiences.
-            </p>
-
-            <p className="mt-6 text-gray-600 leading-8">
-              Our experienced team is passionate about helping travelers
-              discover Africa's beauty while providing exceptional
-              customer service, comfortable travel, competitive pricing,
-              and personalized itineraries that create lifelong memories.
-            </p>
-
-            <div className="grid grid-cols-2 gap-6 mt-10">
-
-              <div className="bg-[#F8F8F8] rounded-2xl p-5 hover:shadow-lg transition">
-                <h3 className="text-3xl font-bold text-[#0B6E4F]">50+</h3>
-                <p className="text-gray-600 mt-2">Safari Packages</p>
-              </div>
-
-              <div className="bg-[#F8F8F8] rounded-2xl p-5 hover:shadow-lg transition">
-                <h3 className="text-3xl font-bold text-[#0B6E4F]">24/7</h3>
-                <p className="text-gray-600 mt-2">Customer Support</p>
-              </div>
-
-              <div className="bg-[#F8F8F8] rounded-2xl p-5 hover:shadow-lg transition">
-                <h3 className="text-3xl font-bold text-[#0B6E4F]">100%</h3>
-                <p className="text-gray-600 mt-2">Tailor-Made Trips</p>
-              </div>
-
-              <div className="bg-[#F8F8F8] rounded-2xl p-5 hover:shadow-lg transition">
-                <h3 className="text-3xl font-bold text-[#0B6E4F]">5★</h3>
-                <p className="text-gray-600 mt-2">Customer Experience</p>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-      </section>     
       
+      
+
+
+
+      {/* ABOUT SECTION */}
+
+<section className="relative overflow-hidden bg-[#F8F6F1] py-28">
+  {/* Background Effects */}
+
+  <div className="absolute -top-40 left-0 h-[450px] w-[450px] rounded-full bg-emerald-100/60 blur-3xl"></div>
+
+  <div className="absolute -bottom-40 right-0 h-[450px] w-[450px] rounded-full bg-yellow-100/60 blur-3xl"></div>
+
+  <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
+    <div className="grid items-center gap-20 lg:grid-cols-2">
+      {/* IMAGE */}
+
+      <div className="relative">
+        <div className="overflow-hidden rounded-[40px] shadow-2xl">
+          <img
+            src={airbaloon}
+            alt="Curious Safaris"
+            className="h-[600px] w-full object-cover transition duration-700 hover:scale-105"
+          />
+        </div>
+
+        <div className="absolute -bottom-8 -right-8 hidden rounded-[30px] bg-white p-8 shadow-xl md:block">
+          <h3 className="text-4xl font-black text-emerald-600">
+            Africa
+          </h3>
+
+          <p className="mt-2 text-gray-600">
+            Your journey starts here.
+          </p>
+        </div>
+      </div>
+
+      {/* CONTENT */}
+
+      <div>
+        <span className="rounded-full bg-emerald-100 px-5 py-2 text-xs font-bold uppercase tracking-[4px] text-emerald-700">
+          About Curious Safaris
+        </span>
+
+        <h2 className="mt-8 text-5xl font-black leading-tight text-gray-900 md:text-6xl">
+          Lost in the
+          <span className="block text-[#C8A94C]">
+            Right Direction
+          </span>
+        </h2>
+
+        <p className="mt-8 text-lg leading-8 text-gray-600">
+          Curious Safaris is an Africa-based travel company
+          offering private, customized, and unforgettable
+          journeys across the continent.
+        </p>
+
+        <p className="mt-6 text-lg leading-8 text-gray-600">
+          We organize wildlife safaris, luxury experiences,
+          beach holidays, horse-riding adventures, photography
+          tours, cultural experiences, and tailor-made journeys
+          designed around your travel style.
+        </p>
+
+        <p className="mt-6 text-lg leading-8 text-gray-600">
+          From Kenya and Tanzania to Namibia, South Africa,
+          Uganda, Rwanda, Egypt, Morocco, and beyond, we help
+          travelers discover Africa through authentic and
+          unforgettable experiences.
+        </p>
+
+        {/* FEATURES */}
+
+        <div className="mt-10 grid gap-5 sm:grid-cols-2">
+          <div className="rounded-2xl bg-white p-6 shadow-lg">
+            <h3 className="text-xl font-bold">🦁 Wildlife Safaris</h3>
+          </div>
+
+          <div className="rounded-2xl bg-white p-6 shadow-lg">
+            <h3 className="text-xl font-bold">🏖️ Beach Holidays</h3>
+          </div>
+
+          <div className="rounded-2xl bg-white p-6 shadow-lg">
+            <h3 className="text-xl font-bold">📷 Photography Tours</h3>
+          </div>
+
+          <div className="rounded-2xl bg-white p-6 shadow-lg">
+            <h3 className="text-xl font-bold">🌍 Tailor-Made Adventures</h3>
+          </div>
+        </div>
+
+        {/* BUTTON */}
+
+        <div className="mt-10">
+          <a
+            href="https://wa.me/254745861688"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex rounded-full bg-emerald-600 px-8 py-4 font-semibold text-white transition hover:scale-105"
+          >
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
         {/* Vision, Mission & Core Values */}
       <section className="py-24 bg-[#F8FAF9]">
         <div className="max-w-7xl mx-auto px-6">
@@ -531,121 +552,79 @@ function About() {
 
 {/* ================= CALL TO ACTION ================= */}
 
-<section className="py-24 bg-gradient-to-r from-[#06261D] via-[#0B6E4F] to-[#06261D]">
+<section className="py-24 bg-[#F8FAF8]">
 
-  <div className="max-w-5xl mx-auto px-6 text-center">
+  <div className="max-w-7xl mx-auto px-6">
 
-    <span className="uppercase tracking-[0.3em] text-[#D4AF37] font-semibold">
-      Start Your Adventure
-    </span>
+    <div className="text-center max-w-3xl mx-auto mb-16">
 
-    <h2 className="mt-6 text-5xl font-black text-white leading-tight">
+      <span className="inline-flex px-5 py-2 rounded-full bg-emerald-100 text-[#0B6E4F] uppercase tracking-[3px] text-sm font-semibold">
+        Frequently Asked Questions
+      </span>
 
-      Ready For Your Next
-      <br />
-      African Adventure?
+      <h2 className="mt-6 text-5xl font-black text-gray-900">
+        Need More Information?
+      </h2>
 
-    </h2>
-
-    <p className="mt-8 text-green-100 text-lg leading-8">
-
-      Whether you're planning a dream safari, beach holiday,
-      honeymoon or corporate retreat, our team is ready to
-      create a journey you'll never forget.
-
-    </p>
-
-    <div className="mt-12 flex flex-wrap justify-center gap-5">
-
-      <Link
-        to="/contact"
-        className="px-8 py-4 rounded-full bg-[#D4AF37] text-black font-bold hover:scale-105 transition"
-      >
-        Contact Us
-      </Link>
-
-      <a
-        href="https://wa.me/254720524627"
-        target="_blank"
-        rel="noreferrer"
-        className="px-8 py-4 rounded-full border border-white text-white hover:bg-white hover:text-black transition"
-      >
-        Chat on WhatsApp
-      </a>
+      <p className="mt-6 text-lg text-gray-600 leading-8">
+        Everything you need to know before starting your African adventure.
+      </p>
 
     </div>
 
-  </div>
+    <div className="grid lg:grid-cols-2 gap-8">
 
-</section> {/* ================= TESTIMONIALS ================= */}
+      {[
+        {
+          q: "How do I book a safari?",
+          a: "Simply contact us through WhatsApp, phone, email or our contact form. Our travel consultants will discuss your plans and help create the perfect safari for you."
+        },
+        {
+          q: "Can I customize my safari?",
+          a: "Absolutely. Our safaris are tailor-made around your interests, budget, travel dates and preferred destinations. We can customize accommodation, activities, transport and itinerary."
+        },
+        {
+          q: "Which African countries do you operate in?",
+          a: "We arrange unforgettable journeys across Africa, including Kenya, Tanzania, Uganda, Rwanda, Botswana, Zimbabwe, Namibia, South Africa, Egypt, Morocco and other destinations."
+        },
+        {
+          q: "Are your safaris private or group trips?",
+          a: "We offer both private and group safaris. Whether you're traveling solo, as a couple, with family, friends or a larger group, we can create an experience that suits you."
+        },
+        {
+          q: "Do you provide airport transfers and transportation?",
+          a: "Yes. Depending on your itinerary, we can arrange airport transfers, private safari vehicles, tour vans and other transportation needed throughout your journey."
+        },
+        {
+          q: "What is the best time to go on safari?",
+          a: "The best time depends on your destination and the experience you want. Our travel consultants can recommend the ideal season based on wildlife, weather, migration, gorilla trekking or beach experiences."
+        },
+        {
+          q: "Do you arrange accommodation?",
+          a: "Yes. We carefully select lodges, hotels, tented camps and resorts based on your itinerary, preferences and budget to make your stay comfortable and memorable."
+        },
+        {
+          q: "Can you arrange honeymoons and special occasions?",
+          a: "Yes. We create romantic and personalized journeys for honeymoons, anniversaries, birthdays and other special occasions, including luxury safari and beach combinations."
+        }
+      ].map((faq, index) => (
 
+        <div
+          key={index}
+          className="bg-white rounded-[30px] p-8 shadow-lg hover:-translate-y-1 hover:shadow-xl transition duration-300"
+        >
 
+          <h3 className="text-xl font-bold text-[#0B6E4F]">
+            {faq.q}
+          </h3>
 
-{/* ================= CONTACT ================= */}
+          <p className="mt-4 text-gray-600 leading-8">
+            {faq.a}
+          </p>
 
-<section className="py-24 bg-[#06261D] text-white">
+        </div>
 
-  <div className="max-w-6xl mx-auto px-6 text-center">
-
-    <span className="uppercase tracking-[0.3em] text-[#D4AF37] font-semibold">
-      Contact Us
-    </span>
-
-    <h2 className="mt-5 text-5xl font-black">
-      Let's Plan Your Next Adventure
-    </h2>
-
-    <p className="mt-8 text-green-100 max-w-3xl mx-auto leading-8">
-      Our travel experts are ready to help you plan your dream safari,
-      beach holiday or customized East African adventure.
-    </p>
-
-    <div className="grid md:grid-cols-3 gap-8 mt-16">
-
-      <div className="bg-white/10 rounded-3xl p-8">
-        <h3 className="text-[#D4AF37] font-bold text-xl">
-          Call Us
-        </h3>
-
-        <p className="mt-4">
-          +254 720 524 627
-        </p>
-
-        <p>
-          +254 140 322 304
-        </p>
-      </div>
-
-      <div className="bg-white/10 rounded-3xl p-8">
-        <h3 className="text-[#D4AF37] font-bold text-xl">
-          Email
-        </h3>
-
-        <p className="mt-4 break-all">
-          info@savannacrownsafarisafrica.co.ke
-        </p>
-      </div>
-
-      <div className="bg-white/10 rounded-3xl p-8">
-        <h3 className="text-[#D4AF37] font-bold text-xl">
-          Follow Us
-        </h3>
-
-        <p className="mt-4">
-          @savannacrownsafarisafrica
-        </p>
-      </div>
-
-    </div>
-
-    <div className="mt-14">
-
-      <Link
-        to="/contact"
-        className="inline-block bg-[#D4AF37] text-black font-bold px-10 py-4 rounded-full hover:scale-105 transition"
-      >
-        Get In Touch
-      </Link>
+      ))}
 
     </div>
 
@@ -656,39 +635,44 @@ function About() {
 
 {/* ================= FOOTER ================= */}
 <footer className="relative overflow-hidden bg-[#050505] text-white">
-
   {/* Top Accent Line */}
-  <div className="h-[2px] bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
+
+  <div className="h-[2px] bg-gradient-to-r from-transparent via-[#C8A94C] to-transparent" />
 
   {/* Background Glow */}
-  <div className="absolute -top-32 -left-20 w-[450px] h-[450px] bg-emerald-500/10 rounded-full blur-[170px]" />
-  <div className="absolute -bottom-32 -right-20 w-[450px] h-[450px] bg-yellow-400/10 rounded-full blur-[170px]" />
 
-  <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-20">
+  <div className="absolute -top-32 -left-20 h-[450px] w-[450px] rounded-full bg-emerald-500/10 blur-[170px]" />
 
-    <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-14">
+  <div className="absolute -bottom-32 -right-20 h-[450px] w-[450px] rounded-full bg-yellow-400/10 blur-[170px]" />
 
-      {/* ================= Company ================= */}
+  <div className="relative mx-auto max-w-7xl px-6 py-20 lg:px-8">
+    <div className="grid gap-14 md:grid-cols-2 lg:grid-cols-3">
+      {/* Company */}
 
       <div>
-
         <h2 className="text-4xl font-black">
-          Savanna
-          <span className="text-[#D4AF37]"> Crown</span>
+          Curious
+          <span className="text-[#C8A94C]"> Safaris</span>
         </h2>
 
-        <div className="w-20 h-1 bg-[#D4AF37] rounded-full mt-4"></div>
+        <div className="mt-4 h-1 w-20 rounded-full bg-[#C8A94C]" />
 
-        <p className="mt-6 text-gray-400 leading-8">
-          Discover Kenya and East Africa through unforgettable safaris,
-          group adventures, road trips and tailor-made travel experiences.
-          We create journeys filled with wildlife, culture, comfort and
-          lifelong memories.
+        <p className="mt-6 leading-8 text-gray-400">
+          Curious Safaris is an Africa-based travel company
+          offering private, customized, and unforgettable
+          journeys across Africa.
+        </p>
+
+        <p className="mt-4 leading-8 text-gray-400">
+          Explore wildlife safaris, luxury tours, beach holidays,
+          horse-riding adventures, photography trips, cultural
+          experiences, and tailor-made journeys across the
+          continent.
         </p>
 
         {/* Social Icons */}
-        <div className="flex gap-4 mt-8">
 
+        <div className="mt-8 flex gap-4">
           {[
             {
               icon: <FaFacebookF />,
@@ -700,172 +684,141 @@ function About() {
             },
             {
               icon: <FaWhatsapp />,
-              link: "https://wa.me/254720524627",
+              link: "https://wa.me/254745861688",
             },
             {
               icon: <FaYoutube />,
               link: "https://youtube.com",
             },
           ].map((item, index) => (
-
             <a
               key={index}
               href={item.link}
               target="_blank"
               rel="noreferrer"
-              className="w-12 h-12 rounded-full border border-white/10 bg-white/5 flex items-center justify-center hover:bg-[#0B6E4F] hover:border-[#0B6E4F] hover:-translate-y-2 transition duration-500"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 transition duration-500 hover:-translate-y-2 hover:border-emerald-700 hover:bg-emerald-700"
             >
               {item.icon}
             </a>
-
           ))}
-
         </div>
-
       </div>
 
-      {/* ================= Quick Links ================= */}
+      {/* Quick Links */}
 
       <div>
-
-        <h3 className="text-2xl font-bold mb-8">
+        <h3 className="mb-8 text-2xl font-bold">
           Quick Links
         </h3>
 
         <div className="space-y-5">
-
           {[
             { name: "Home", path: "/" },
-            { name: "About Us", path: "/about" },
-            { name: "Services", path: "/services" },
-            { name: "Upcoming Trips", path: "/upcomingtrips" },
+            { name: "Destinations", path: "/destinations" },
+            
             { name: "Gallery", path: "/gallery" },
+            { name: "About", path: "/about" },
             { name: "Contact", path: "/contact" },
           ].map((item) => (
-
             <Link
               key={item.name}
               to={item.path}
-              className="flex items-center gap-3 text-gray-400 hover:text-[#D4AF37] hover:translate-x-2 transition-all duration-300"
+              className="flex items-center gap-3 text-gray-400 transition-all duration-300 hover:translate-x-2 hover:text-[#C8A94C]"
             >
-
               <FaArrowRight className="text-xs" />
 
               {item.name}
-
             </Link>
-
           ))}
-
         </div>
-
       </div>
 
-      {/* ================= Contact ================= */}
+      {/* Contact */}
 
       <div>
-
-        <h3 className="text-2xl font-bold mb-8">
+        <h3 className="mb-8 text-2xl font-bold">
           Contact Us
         </h3>
 
         <div className="space-y-6">
+          {/* WhatsApp */}
 
-          {/* Phone */}
-
-          <div className="flex gap-4 p-4 rounded-2xl bg-white/5 hover:bg-[#0B6E4F]/20 transition">
-
-            <div className="w-12 h-12 rounded-xl bg-[#0B6E4F] flex items-center justify-center">
-              <FaPhoneAlt />
+          <div className="flex gap-4 rounded-2xl bg-white/5 p-4 transition hover:bg-emerald-700/20">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-700">
+              <FaWhatsapp />
             </div>
 
             <div>
-
               <p className="font-semibold">
-                Call Us
+                WhatsApp
               </p>
 
               <a
-                href="tel:+254720524627"
+                href="https://wa.me/254745861688"
                 className="text-gray-400 hover:text-white"
               >
-                +254 720 524 627
+                +254 745 861 688
               </a>
-
             </div>
-
           </div>
 
-          {/* Email */}
+          {/* Africa */}
 
-          <div className="flex gap-4 p-4 rounded-2xl bg-white/5 hover:bg-[#0B6E4F]/20 transition">
-
-            <div className="w-12 h-12 rounded-xl bg-[#0B6E4F] flex items-center justify-center">
-              <FaEnvelope />
+          <div className="flex gap-4 rounded-2xl bg-white/5 p-4 transition hover:bg-emerald-700/20">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-700">
+              <FaGlobe />
             </div>
 
             <div>
-
               <p className="font-semibold">
-                Email
+                Destinations
               </p>
 
-              <a
-                href="mailto:info@savannacrownsafarisafrica.co.ke"
-                className="text-gray-400 hover:text-white break-all"
-              >
-                info@savannacrownsafarisafrica.co.ke
-              </a>
-
+              <p className="text-gray-400">
+                East, West, North, Central & Southern Africa
+              </p>
             </div>
-
           </div>
 
           {/* Location */}
 
-          <div className="flex gap-4 p-4 rounded-2xl bg-white/5 hover:bg-[#0B6E4F]/20 transition">
-
-            <div className="w-12 h-12 rounded-xl bg-[#0B6E4F] flex items-center justify-center">
+          <div className="flex gap-4 rounded-2xl bg-white/5 p-4 transition hover:bg-emerald-700/20">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-700">
               <FaMapMarkerAlt />
             </div>
 
             <div>
-
               <p className="font-semibold">
-                Office
+                Based In
               </p>
 
               <p className="text-gray-400">
                 Nairobi, Kenya
               </p>
-
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
 
-    {/* ================= Bottom ================= */}
+    {/* Bottom */}
 
-    <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
+    <div className="mt-16 flex flex-col items-center justify-between gap-6 border-t border-white/10 pt-8 md:flex-row">
+      <p className="text-center text-gray-500 md:text-left">
+        © {new Date().getFullYear()}
 
-      <p className="text-gray-500 text-center md:text-left">
-        © {new Date().getFullYear()}{" "}
-        <span className="text-[#D4AF37] font-semibold">
-          Savanna Crown Safaris Africa
+        <span className="font-semibold text-[#C8A94C]">
+          {" "}
+          Curious Safaris
         </span>
+
         . All Rights Reserved.
       </p>
 
       <div className="flex items-center gap-6 text-sm">
-
         <Link
-          to="/"
-          className="text-gray-500 hover:text-[#D4AF37] transition"
+          to="/privacy"
+          className="text-gray-500 transition hover:text-[#C8A94C]"
         >
           Privacy Policy
         </Link>
@@ -873,27 +826,28 @@ function About() {
         <span className="text-white/20">|</span>
 
         <Link
-          to="/"
-          className="text-gray-500 hover:text-[#D4AF37] transition"
+          to="/terms"
+          className="text-gray-500 transition hover:text-[#C8A94C]"
         >
           Terms & Conditions
         </Link>
-
       </div>
-
     </div>
-
   </div>
 
   {/* Scroll To Top */}
 
   <button
-    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-    className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#D4AF37] text-black shadow-2xl hover:scale-110 transition duration-300"
+    onClick={() =>
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      })
+    }
+    className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#C8A94C] text-black shadow-2xl transition duration-300 hover:scale-110"
   >
     <FaChevronUp />
   </button>
-
 </footer>
     </>
   );

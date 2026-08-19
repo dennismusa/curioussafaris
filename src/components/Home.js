@@ -1,61 +1,40 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-
 import { Link } from "react-router-dom";
-import {  FaFacebookF,  FaInstagram,  FaWhatsapp,  FaYoutube,  FaTiktok,  FaPhoneAlt,  FaEnvelope,  FaMapMarkerAlt, FaChevronUp,  FaArrowRight,
-} from "react-icons/fa";
+import {  FaFacebookF,  FaInstagram,  FaWhatsapp,  FaYoutube,  FaArrowRight,  FaMapMarkerAlt,  FaChevronUp,  FaGlobe,} from "react-icons/fa";
 import { useState, useEffect } from "react";
 import useLanguageSync from "../hooks/useLanguageSync";
 import { useTranslation } from "react-i18next";
 
 //import cruiser1 from "../assets/cruiser1.jpg";
-import home3 from "../assets/home3.jpg";
-import weekends from "../assets/weekends.jpg";
-import school from "../assets/school.jpg";
-import team from "../assets/team.jpg";
-import camping from "../assets/camping.jpg";
-import adventure from "../assets/adventure.jpg";
-import safaritour1 from "../assets/safaritour1.jpg";
+import cruiser2 from "../assets/cruiser2.jpg";
 import image1 from "../assets/image1.jpg";
 import nakuru from "../assets/nakuru.jpg";
 import image16 from "../assets/image16.jpg";
 import image4 from "../assets/image4.jpg";
-import kenya1 from "../assets/kenya1.jpg";
-import poster11 from "../assets/poster11.jpg";
-import poster33 from "../assets/poster33.jpg";
-import poster44 from "../assets/poster44.jpg";
-
-import poster22 from "../assets/poster22.jpg";
-import mombasa1 from "../assets/mombasa1.jpg";
 import image2 from "../assets/image2.jpg";
-import home2 from "../assets/home2.jpg";
-import home5 from "../assets/home5.jpg";
+import west from "../assets/west.jpg";
+import amboseli from "../assets/amboseli.jpg";
 import climbingkenya from "../assets/climbingkenya.jpg";
-import about from "../assets/about.jpg";
+import climbinglongonot from "../assets/climbinglongonot.jpg";
 import climbingkili from "../assets/climbingkili.jpg";
-import home4 from "../assets/home4.jpg";
+import meru from "../assets/meru.jpg";
 import hellsgate from "../assets/hellsgate.jpg";
 import gorilla from "../assets/gorilla.jpg";
-import sgr from "../assets/sgr.jpg";
-import tanzania1 from "../assets/tanzania1.jpg";
-import mombasa from "../assets/mombasa.jpg";
-import malindi from "../assets/malindi.jpg";
-import zanzibar from "../assets/zanzibar.jpg";
-import poster1 from "../assets/poster1.jpg";
-import poster2 from "../assets/poster2.jpg";
-import poster3 from "../assets/poster3.jpg";
-import poster4 from "../assets/poster4.jpg";
 import serengeti from "../assets/serengeti.jpg";
 import tanzania from "../assets/tanzania.jpg";
-import schoolpos from "../assets/schoolpos.jpg";
-import home1 from "../assets/home1.jpg";
+import Wilderbeast from "../assets/Wilderbeast.jpg";
+import victoria1 from "../assets/victoria1.jpg";
+import zambezi from "../assets/zambezi.jpg";
+import luangwa from "../assets/luangwa.jpg";
+import ngorongoro from "../assets/ngorongoro.jpg";
 import kenya from "../assets/kenya.jpg";
 import image17 from "../assets/image17.jpg";
 function Home() {
   useLanguageSync();
-  const images = [safaritour1,team,home5,image1];
+  const images = [meru, kenya,amboseli,Wilderbeast];
   const [index, setIndex] = useState(0);
-const aboutImages = [home3,image17,image16,nakuru,home1,home2];
+const aboutImages = [cruiser2,image17,image16,nakuru,west,amboseli];
 const [aboutIndex,setAboutIndex]=useState(0);
 const [smallAboutIndex,setSmallAboutIndex]=useState(1);
 
@@ -65,254 +44,13 @@ const [smallAboutIndex,setSmallAboutIndex]=useState(1);
    const { t, i18n } = useTranslation();
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
-  const [rating, setRating] = useState(5);  
+  const [rating, setRating] = useState(5);
+  
 const [loading, setLoading] = useState(false);
 const [loadingReviews, setLoadingReviews] = useState(false);
 const [success, setSuccess] = useState(false);
-const [selectedTrip, setSelectedTrip] = useState(null);
-
-const [filters, setFilters] = useState({
-  search: "",
-  month: "",
-  category: "",
-  budget: "",
-});
-
-const trips = [
-  {
-    title: "Tembea Mombasa Weekend Getaway",
-    month: "September",
-    category: "Beach",
-    budget: 9800,
-    link: "https://wa.me/254720524627",
-  },
- {
-    title: "Salt Lick Safari Lodge",
-    month: "December",
-    category: "Safari",
-    budget: 0,
-    link: "https://wa.me/254720524627",
-  },
-
-  {
-    title: "Diamond Malindi",
-    month: "September",
-    category: "Beach",
-    budget: 39500,
-    link: "https://wa.me/254720524627",
-  },
-
-  {
-    title: "Trasha Falls & Nature Adventure",
-    month: "September",
-    category: "Adventure",
-    budget: 2500,
-    link: "https://wa.me/254720524627",
-  },
-
-  {
-    title: "Southern Palms Beach Resort - Diani",
-    month: "December",
-    category: "Beach",
-    budget: 51000,
-    link: "https://wa.me/254720524627",
-  },
-
-  {
-    title: "Azul Margarita Beach Resort - Mombasa",
-    month: "December",
-    category: "Beach",
-    budget: 17000,
-    link: "https://wa.me/254720524627",
-  },
-
-  {
-    title: "Amboseli National Park Group Joining",
-    month: "Every Month",
-    category: "Safari",
-    budget: 0,
-    link: "https://wa.me/254720524627",
-  },
-  {
-    title: "Malindi & Watamu",
-    month: "September",
-    category: "Beach",
-    budget: 18500,
-    link: "https://wa.me/254720524627",
-  },
-
-  {
-    title: "Tanzania Moshi & Arusha",
-    month: "October",
-    category: "Safari",
-    budget: 19500,
-    link: "https://wa.me/254720524627",
-  },
-
-  {
-    title: "Zanzibar & Dar es Salaam",
-    month: "February",
-    category: "Holiday",
-    budget: 8499,
-    link: "https://wa.me/254720524627",
-  },
-
-  {
-    title: "SGR Holiday Package",
-    month: "December",
-    category: "Holiday",
-    budget: 7500,
-    link: "https://wa.me/254720524627",
-  },
-];
-
-const filteredTrips = trips.filter((trip) => {
-  const matchesSearch = trip.title
-    .toLowerCase()
-    .includes(filters.search.toLowerCase());
-
-  const matchesMonth =
-    !filters.month ||
-    trip.month === filters.month;
-
-  const matchesCategory =
-    !filters.category ||
-    trip.category === filters.category;
-
-  const matchesBudget =
-    !filters.budget ||
-    trip.budget <= Number(filters.budget);
-
-  return (
-    matchesSearch &&
-    matchesMonth &&
-    matchesCategory &&
-    matchesBudget
-  );
-});
-const upcomingPosters = [
-  {
-  image: sgr,
-  title: "SGR Holiday Package",
-  date: "Coming Soon",
-  duration: "Holiday Package",
-  price: "Contact Us",
-  description:
-    "Enjoy a convenient and memorable holiday experience with SGR travel, comfortable accommodation, exciting sightseeing and carefully planned activities. Perfect for families, friends and group travelers looking for a stress-free Kenyan getaway."
-},
-  {
-    image: malindi,
-    title: "Malindi & Watamu Coastal Escape",
-    date: "24 - 27 September 2026",
-    duration: "4 Days / 3 Nights",
-    price: "KSh 18,500",
-    description:
-      "Experience the beauty of the Kenyan coast with a memorable Malindi and Watamu getaway featuring stunning beaches, coastal adventures, sightseeing and unforgettable moments."
-  },
-{
-  image: poster11,
-  title: "Salt Lick Safari Lodge",
-  date: "Until 21 December 2026",
-  duration: "3 Days / 2 Nights",
-  price: "Contact Us",
-  description:
-    "Enjoy a Madaraka Express safari package with accommodation, meals, return SGR tickets, transfers, swimming, complimentary game drives and a heritage tour at the Taita Museum."
-},
-
-{
-  image: poster22,
-  title: "Diamond Malindi",
-  date: "1-30 September 2026",
-  duration: "3 Nights",
-  price: "KSh 39,500",
-  description:
-    "Pay for 2 nights and stay for 3 nights. Includes accommodation, all-inclusive meals, drinks, return SGR tickets, transfers and access to hotel facilities."
-},
-
-{
-  image: poster33,
-  title: "Trasha Falls & Nature Adventure",
-  date: "6 September 2026",
-  duration: "1 Day",
-  price: "KSh 2,500",
-  description:
-    "A nature adventure in Murang'a featuring a waterfall hike, river experience, photography opportunities and return transport from Nairobi."
-},
-
-{
-  image: poster44,
-  title: "Southern Palms Beach Resort - Diani",
-  date: "Until 21 December 2026",
-  duration: "3 Days / 2 Nights",
-  price: "KSh 51,000",
-  description:
-    "An all-inclusive Diani holiday package with accommodation, meals, drinks, SGR tickets, transfers, entertainment and beach access."
-},
-
-{
-  image: mombasa1,
-  title: "Azul Margarita Beach Resort - Mombasa",
-  date: "Until 21 December 2026",
-  duration: "3 Days / 2 Nights",
-  price: "KSh 17,000",
-  description:
-    "A Mombasa holiday package including accommodation, meals, SGR tickets and return transfers."
-},
-
-{
-  image: kenya1,
-  title: "Amboseli National Park Group Joining",
-  date: "Every Friday",
-  duration: "3 Days / 2 Nights",
-  price: "Contact Us",
-  description:
-    "Group safari to Amboseli National Park including accommodation, transport in a 4x4 vehicle, meals, game drives, drinking water and a professional guide."
-},
-  {
-    image: mombasa,
-    title: "Tembea Mombasa Weekend Getaway",
-    date: "18 - 20 September 2026",
-    duration: "3 Days / 2 Nights",
-    price: "KSh 9,800",
-    description:
-      "Discover the vibrant coastal charm of Mombasa on an exciting weekend getaway filled with beautiful beaches, sightseeing, culture, relaxation and memorable experiences."
-  },
-
-  {
-    image: tanzania1,
-    title: "Tanzania Moshi & Arusha Adventure",
-    date: "9 - 11 October 2026",
-    duration: "3 Days / 2 Nights",
-    price: "KSh 19,500",
-    description:
-      "Cross the border into Tanzania and explore the incredible destinations of Moshi and Arusha through an exciting group adventure filled with culture, scenery and unforgettable experiences."
-  },
-
-  {
-    image: zanzibar,
-    title: "Zanzibar & Dar es Salaam Escape",
-    date: "10 - 14 February 2027",
-    duration: "5 Days / 4 Nights",
-    price: "KSh 8,499 by Road",
-    flightPrice: "KSh 98,499 One-Way Flight",
-    description:
-      "Experience an unforgettable Tanzanian coastal adventure combining Zanzibar and Dar es Salaam, with beautiful beaches, island experiences, vibrant culture and spectacular coastal scenery."
-  }
-];
-
-const [search, setSearch] = useState("");
-const [posterIndex, setPosterIndex] = useState(0);
 
 
-useEffect(() => {
-  const slider = setInterval(() => {
-    setPosterIndex(
-      (prev) => (prev + 1) % upcomingPosters.length
-    );
-  }, 5000);
-
-  return () => clearInterval(slider);
-}, [upcomingPosters.length]);
   // ================= SLIDER =================
   useEffect(()=>{
 
@@ -343,12 +81,13 @@ setSmallAboutIndex(prev=>(prev + 1) % aboutImages.length);
 
       
 <section
-  id="home"
-  className="relative min-h-[65vh] sm:min-h-[75vh] lg:h-[80vh] flex items-center overflow-hidden"
+  id="destinations"
+  className="relative min-h-[65vh] lg:min-h-[75vh] flex items-center overflow-hidden"
 >
-  {/* Background Slider */}
+  {/* IMAGE SLIDER */}
+
   <div className="absolute inset-0">
-    {images.map((img, i) => (
+    {[meru, kenya, amboseli, Wilderbeast].map((img, i) => (
       <div
         key={i}
         className="absolute inset-0 transition-all duration-[3500ms] ease-in-out"
@@ -357,614 +96,258 @@ setSmallAboutIndex(prev=>(prev + 1) % aboutImages.length);
           backgroundSize: "cover",
           backgroundPosition: "center",
           opacity: i === index ? 1 : 0,
-          transform: i === index ? "scale(1)" : "scale(1.05)",
+          transform: i === index ? "scale(1)" : "scale(1.06)",
         }}
       />
     ))}
   </div>
 
-  {/* Overlay */}
+  {/* OVERLAYS */}
+
   <div className="absolute inset-0 bg-black/50" />
-  <div className="absolute inset-0 bg-gradient-to-r from-[#04140E]/95 via-[#04140E]/70 to-transparent" />
 
-  {/* Glow */}
-  <div className="absolute -left-32 top-0 w-[300px] sm:w-[420px] h-[300px] sm:h-[420px] bg-emerald-500/20 rounded-full blur-[120px] animate-pulse" />
-  <div className="absolute right-0 bottom-0 w-[300px] sm:w-[420px] h-[300px] sm:h-[420px] bg-yellow-400/10 rounded-full blur-[120px]" />
+  <div className="absolute inset-0 bg-gradient-to-r from-[#022c22]/95 via-black/60 to-transparent" />
 
-  {/* Content */}
-  <div className="relative z-20 max-w-7xl mx-auto w-full px-5 sm:px-8 lg:px-10">
+  <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
 
-    <div className="max-w-2xl">
+  {/* LIGHT EFFECTS */}
 
-      {/* Badge */}
-      <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-xl border border-white/20 px-4 py-2 rounded-full">
+  <div className="absolute -top-32 -left-32 h-[450px] w-[450px] rounded-full bg-emerald-500/20 blur-[120px] animate-pulse" />
 
-        <span className="w-2 h-2 rounded-full bg-yellow-400 animate-ping" />
+  <div className="absolute bottom-[-150px] right-[-100px] h-[500px] w-[500px] rounded-full bg-yellow-400/10 blur-[130px]" />
 
-        <span className="text-[10px] sm:text-xs uppercase tracking-[2px] sm:tracking-[4px] text-yellow-300 font-semibold">
-          Savanna Crown Safaris
+  {/* CONTENT */}
+
+  <div className="relative z-20 mx-auto w-full max-w-7xl px-5 md:px-8">
+    <div className="max-w-2xl text-white">
+      {/* BADGE */}
+
+      <div className="mb-5 inline-flex items-center gap-3 rounded-full border border-emerald-300/30 bg-white/10 px-5 py-2 backdrop-blur-xl">
+        <div className="h-2 w-2 animate-ping rounded-full bg-emerald-400" />
+
+        <span className="text-[10px] uppercase tracking-[4px] text-emerald-200 md:text-xs">
+          Curious Safaris
         </span>
-
       </div>
 
-      {/* Heading */}
-      <h1 className="mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight text-white">
+      {/* TITLE */}
 
-        Explore Kenya
-
-        <span className="block text-yellow-400">
-          Together.
-        </span>
-
+      <h1 className="max-w-xl text-3xl font-black leading-tight drop-shadow-xl sm:text-4xl md:text-5xl">
+        Discover Africa's Most Extraordinary Destinations
       </h1>
 
-      {/* Description */}
-      <p className="mt-5 text-sm sm:text-base lg:text-lg leading-7 text-gray-200 max-w-xl">
+      {/* DESCRIPTION */}
 
-        Join exciting road trips, hiking adventures, camping weekends,
-        beach escapes and unforgettable group experiences across Kenya.
-        Meet new friends and discover breathtaking destinations with
-        Savanna Crown Safaris Africa.
-
+      <p className="mt-4 max-w-lg text-sm leading-7 text-gray-200 sm:text-base">
+        Explore iconic wildlife reserves, breathtaking landscapes,
+        and unforgettable adventures across East Africa.
       </p>
 
-      {/* Buttons */}
-      
+      {/* BUTTON */}
 
-      {/* Stats */}
-      <div className="grid grid-cols-3 gap-4 sm:gap-8 mt-10 max-w-md">
-
-        <div>
-          <h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-yellow-400">
-            50+
-          </h3>
-          <p className="text-[11px] sm:text-sm text-gray-300">
-            Trips Organized
-          </p>
-        </div>
-
-        <div>
-          <h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-yellow-400">
-            5K+
-          </h3>
-          <p className="text-[11px] sm:text-sm text-gray-300">
-            Happy Travelers
-          </p>
-        </div>
-
-        <div>
-          <h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-yellow-400">
-            20+
-          </h3>
-          <p className="text-[11px] sm:text-sm text-gray-300">
-            Destinations
-          </p>
-        </div>
-
+      <div className="mt-8">
+        <Link
+          to="/Destinations"
+          className="rounded-full bg-yellow-400 px-8 py-4 font-semibold text-black transition duration-300 hover:scale-105"
+        >
+          Explore adventures
+        </Link>
       </div>
-
     </div>
-
   </div>
 
-  {/* Slider Dots */}
-  <div className="absolute right-4 lg:right-6 top-1/2 -translate-y-1/2 hidden lg:flex flex-col gap-3">
+  {/* SLIDER DOTS */}
 
-    {images.map((_, i) => (
+  <div className="absolute right-6 top-1/2 hidden -translate-y-1/2 flex-col gap-3 lg:flex">
+    {[meru, kenya, amboseli, Wilderbeast].map((_, i) => (
       <button
         key={i}
         onClick={() => setIndex(i)}
-        className={`transition-all duration-500 rounded-full ${
+        className={`rounded-full transition-all duration-700 ${
           i === index
-            ? "h-10 w-2 bg-yellow-400"
+            ? "h-12 w-2 bg-yellow-400 shadow-lg shadow-yellow-400/50"
             : "h-2 w-2 bg-white/40 hover:bg-white"
         }`}
       />
     ))}
-
   </div>
-
-  {/* Scroll Indicator */}
-  
-
 </section>
 
-{/* Search */}
-<section className="-mt-10 relative z-30 px-4 pb-16">
-
-  <div className="max-w-6xl mx-auto">
-
-    <div className="bg-white rounded-3xl shadow-2xl p-5 md:p-8">
-
-      {/* Search Hint */}
-
-      <div className="flex items-center gap-2 mb-6">
-
-        <span className="animate-pulse text-[#0B6E4F]">
-          🔍
-        </span>
-
-        <p className="text-sm text-gray-500">
-          Search by destination, travel date, category, or budget.
-        </p>
-
-      </div>
-
-      {/* Filters */}
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-
-        {/* Destination */}
-
-        <div className="relative">
-
-          <input
-            type="text"
-            placeholder="📍 Destination"
-            value={filters.search}
-            onChange={(e) =>
-              setFilters({
-                ...filters,
-                search: e.target.value,
-              })
-            }
-            className="
-              w-full
-              h-14
-              border
-              rounded-2xl
-              px-4
-              outline-none
-              focus:border-[#0B6E4F]
-              focus:ring-2
-              focus:ring-[#0B6E4F]/20
-            "
-          />
-
-        </div>
-
-        {/* Date */}
-
-        <input
-          type="date"
-          className="
-            h-14
-            border
-            rounded-2xl
-            px-4
-            outline-none
-            focus:border-[#0B6E4F]
-            focus:ring-2
-            focus:ring-[#0B6E4F]/20
-          "
-        />
-
-        {/* Category */}
-
-        <select
-          value={filters.category}
-          onChange={(e) =>
-            setFilters({
-              ...filters,
-              category: e.target.value,
-            })
-          }
-          className="
-            h-14
-            border
-            rounded-2xl
-            px-4
-            outline-none
-            focus:border-[#0B6E4F]
-          "
-        >
-          <option value="">
-            🏕️ Category
-          </option>
-
-          <option value="Beach">
-            Beach
-          </option>
-
-          <option value="Safari">
-            Safari
-          </option>
-
-          <option value="Holiday">
-            Holiday
-          </option>
-
-          <option value="Adventure">
-            Adventure
-          </option>
-
-        </select>
-
-        {/* Budget */}
-
-        <select
-          value={filters.budget}
-          onChange={(e) =>
-            setFilters({
-              ...filters,
-              budget: e.target.value,
-            })
-          }
-          className="
-            h-14
-            border
-            rounded-2xl
-            px-4
-            outline-none
-            focus:border-[#0B6E4F]
-          "
-        >
-          <option value="">
-            💰 Budget
-          </option>
-
-          <option value="5000">
-            Under KSh 5,000
-          </option>
-
-          <option value="10000">
-            Under KSh 10,000
-          </option>
-
-          <option value="20000">
-            Under KSh 20,000
-          </option>
-
-          <option value="50000">
-            Under KSh 50,000
-          </option>
-
-        </select>
-
-      </div>
-
-      {/* Action Buttons */}
-
-      <div className="flex flex-col sm:flex-row gap-4 mt-5">
-
-        <button
-          className="
-            flex-1
-            h-14
-            rounded-2xl
-            bg-[#0B6E4F]
-            text-white
-            font-bold
-            hover:bg-[#084c39]
-            transition
-          "
-        >
-          Search Trips
-        </button>
-
-        <button
-          onClick={() =>
-            setFilters({
-              search: "",
-              month: "",
-              category: "",
-              budget: "",
-            })
-          }
-          className="
-            flex-1
-            h-14
-            rounded-2xl
-            border
-            font-bold
-            hover:bg-gray-50
-            transition
-          "
-        >
-          Clear Filters
-        </button>
-
-      </div>
-
-      {/* Results */}
-
-      {(filters.search ||
-        filters.category ||
-        filters.budget) && (
-
-        <div className="mt-10">
-
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-6">
-
-            <h3 className="text-2xl font-bold">
-              Available Trips
-            </h3>
-
-            <span className="text-[#0B6E4F] font-semibold">
-
-              {filteredTrips.length} trips found
-
-            </span>
-
-          </div>
-
-          {filteredTrips.length > 0 ? (
-
-            <div className="grid gap-4">
-
-              {filteredTrips.map((trip, index) => (
-
-                <button
-                  key={index}
-                  onClick={() => {
-
-                    const poster = upcomingPosters.find(
-                      (item) =>
-                        item.title
-                          .toLowerCase()
-                          .includes(
-                            trip.title
-                              .split(" ")[0]
-                              .toLowerCase()
-                          )
-                    );
-
-                    setSelectedTrip(poster);
-
-                  }}
-                  className="
-                    p-5
-                    border
-                    rounded-3xl
-                    text-left
-                    hover:border-[#0B6E4F]
-                    hover:shadow-xl
-                    transition
-                  "
-                >
-
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-
-                    <div>
-
-                      <h3 className="font-bold text-lg">
-
-                        {trip.title}
-
-                      </h3>
-
-                      <p className="text-gray-500 mt-1">
-
-                        {trip.category}
-
-                      </p>
-
-                    </div>
-
-                    <div className="flex flex-col items-start md:items-end gap-2">
-
-                      <div className="font-black text-xl text-[#0B6E4F]">
-
-                        KSh {trip.budget.toLocaleString()}
-
-                      </div>
-
-                      <span className="text-sm font-semibold">
-
-                        View details →
-
-                      </span>
-
-                    </div>
-
-                  </div>
-
-                </button>
-
-              ))}
-
-            </div>
-
-          ) : (
-
-            <div className="py-10 text-center">
-
-              <p className="text-gray-500">
-
-                No matching trips found.
-
-              </p>
-
-            </div>
-
-          )}
-
-        </div>
-
-      )}
-
-    </div>
-
-  </div>
-
-</section>
       {/* ABOUT / EXPERIENCE SECTION */}
 {/* ABOUT / EXPERIENCE SECTION */}
-{/* ================= ABOUT ================= */}
-<section
-  id="about"
-  className="relative py-32 bg-gradient-to-b from-white via-[#F7FAF8] to-[#EEF8F2] overflow-hidden"
->
-  {/* Background Decoration */}
-  <div className="absolute top-0 left-0 w-[450px] h-[450px] bg-emerald-200/20 rounded-full blur-[140px]" />
-  <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-yellow-200/20 rounded-full blur-[150px]" />
+<section className="relative overflow-hidden bg-[#F6FAF8] py-28">
 
-  <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
+  {/* Background Effects */}
 
-    <div className="grid lg:grid-cols-2 gap-20 items-center">
+  <div className="absolute top-0 right-0 h-[500px] w-[500px] rounded-full bg-emerald-100 opacity-40 blur-3xl" />
 
-      {/* LEFT IMAGE */}
+  <div className="absolute bottom-0 left-0 h-[400px] w-[400px] rounded-full bg-emerald-50 blur-3xl" />
+
+  <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
+
+    <div className="grid items-center gap-20 lg:grid-cols-[1fr_1.1fr]">
+
+      {/* IMAGE SIDE */}
+
       <div className="relative">
 
-        <div className="overflow-hidden rounded-[35px] shadow-[0_30px_80px_rgba(0,0,0,0.12)]">
+        <div className="group relative overflow-hidden rounded-[40px] shadow-2xl">
 
           <img
-  src={about}
-  alt="Savanna Crown Safaris"
-  className="w-full h-[650px] object-cover hover:scale-110 transition duration-700"
-/>
+            src={amboseli}
+            alt="Curious Safaris African adventure"
+            className="h-[520px] w-full object-cover transition-all duration-[2000ms] group-hover:scale-110"
+          />
+
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent" />
 
         </div>
 
-        {/* Floating Experience Card */}
+        <div className="absolute top-8 left-8 rounded-3xl bg-white/95 px-6 py-5 shadow-xl backdrop-blur-xl">
 
-        <div className="absolute -bottom-8 -right-6 bg-white rounded-3xl p-7 shadow-2xl border border-gray-100">
-
-          <h2 className="text-5xl font-black text-[#0B6E4F]">
-
-            10+
-
+          <h2 className="text-4xl font-black text-emerald-500">
+            15+
           </h2>
 
-          <p className="mt-2 text-gray-600">
-
-            Years of
-            <br />
-            Excellence
-
+          <p className="text-sm text-gray-700">
+            African Destinations
           </p>
 
         </div>
 
+        <div className="absolute -bottom-10 -right-10 hidden h-[280px] w-[230px] overflow-hidden rounded-[30px] border-[8px] border-white shadow-2xl md:block">
+
+          <img
+            src={amboseli}
+            alt="Gorilla trekking experience"
+            className="h-full w-full object-cover transition duration-[2000ms] hover:scale-110"
+          />
+
+        </div>
+
       </div>
 
-      {/* RIGHT CONTENT */}
+      {/* CONTENT SIDE */}
 
       <div>
 
-        <span className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-emerald-100 text-[#0B6E4F] font-semibold">
+        <span className="font-bold uppercase tracking-[5px] text-emerald-500">
 
-          👑 About Savanna Crown
+          Curious Safaris
 
         </span>
 
-        <h2 className="mt-6 text-5xl lg:text-6xl font-black leading-tight text-gray-900">
+        <h2 className="mt-6 text-4xl font-black leading-tight text-gray-900 md:text-6xl">
 
           Discover Africa
 
-          <span className="block text-[#0B6E4F]">
+          <span className="block text-emerald-500">
 
-            In Royal Comfort
+            Lost in the Right Direction
 
           </span>
 
         </h2>
 
-        <p className="mt-8 text-lg text-gray-600 leading-8">
+        <p className="mt-8 text-lg leading-8 text-gray-600">
 
-          Savanna Crown Safaris creates unforgettable journeys across
-          Kenya and East Africa. From wildlife safaris and luxury
-          holidays to corporate travel and tailor-made adventures,
-          every trip is carefully crafted to deliver comfort,
-          authenticity and lifelong memories.
+          From the legendary plains of the Serengeti and Maasai Mara
+          to the misty forests of Rwanda and Uganda, Curious Safaris
+          creates unforgettable journeys across Africa.
+
+          <br />
+          <br />
+
+          Experience extraordinary wildlife, breathtaking landscapes,
+          vibrant cultures, tropical coastlines and carefully crafted
+          adventures designed around your travel dreams.
 
         </p>
 
-        {/* Features */}
+        {/* FEATURES */}
 
-        <div className="grid sm:grid-cols-2 gap-5 mt-10">
+        <div className="mt-10 space-y-6">
 
-          {[
-            "Wildlife Safaris",
-            "Luxury Holidays",
-            "Corporate Travel",
-            "Airport Transfers",
-            "Expert Local Guides",
-            "Custom Itineraries",
-          ].map((item) => (
+          <div className="flex items-start gap-4">
 
-            <div
-              key={item}
-              className="flex items-center gap-4 bg-white rounded-2xl p-4 shadow-md hover:shadow-xl hover:-translate-y-1 transition"
-            >
+            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-100 text-2xl">
 
-              <div className="w-11 h-11 rounded-xl bg-emerald-100 flex items-center justify-center text-[#0B6E4F]">
-
-                ✓
-
-              </div>
-
-              <span className="font-semibold text-gray-700">
-
-                {item}
-
-              </span>
+              🦁
 
             </div>
 
-          ))}
+            <div>
 
-        </div>
+              <h3 className="text-lg font-bold">
 
-        {/* Statistics */}
+                Wildlife Safaris
 
-        <div className="grid grid-cols-3 gap-6 mt-12">
+              </h3>
 
-          <div>
+              <p className="text-gray-600">
 
-            <h3 className="text-4xl font-black text-[#D4AF37]">
+                Explore Africa's most iconic national parks and
+                discover the Big Five.
 
-              500+
+              </p>
 
-            </h3>
-
-            <p className="text-gray-500">
-
-              Travelers
-
-            </p>
+            </div>
 
           </div>
 
-          <div>
+          <div className="flex items-start gap-4">
 
-            <h3 className="text-4xl font-black text-[#D4AF37]">
+            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-100 text-2xl">
 
-              50+
+              🦍
 
-            </h3>
+            </div>
 
-            <p className="text-gray-500">
+            <div>
 
-              Tours
+              <h3 className="text-lg font-bold">
 
-            </p>
+                Gorilla & Primate Experiences
 
-          </div>
+              </h3>
 
-          <div>
+              <p className="text-gray-600">
 
-            <h3 className="text-4xl font-black text-[#D4AF37]">
+                Trek through ancient rainforests in search of mountain
+                gorillas and chimpanzees.
 
-              24/7
+              </p>
 
-            </h3>
-
-            <p className="text-gray-500">
-
-              Support
-
-            </p>
+            </div>
 
           </div>
 
-        </div>
+          <div className="flex items-start gap-4">
 
-        {/* CTA */}
+            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-100 text-2xl">
 
-        <div className="mt-12 flex gap-5">
+              🌍
 
-          
+            </div>
+
+            <div>
+
+              <h3 className="text-lg font-bold">
+
+                Culture & Coastal Escapes
+
+              </h3>
+
+              <p className="text-gray-600">
+
+                Discover vibrant cultures, ancient cities, waterfalls,
+                deserts and pristine beaches across Africa.
+
+              </p>
+
+            </div>
+
+          </div>
 
         </div>
 
@@ -973,752 +356,474 @@ setSmallAboutIndex(prev=>(prev + 1) % aboutImages.length);
     </div>
 
   </div>
+
 </section>
 
 
-{/* ================= UPCOMING TRIPS POSTER SLIDER ================= */}
 
-{/* ================= UPCOMING TRIPS ================= */}
-{/* ================= ADVANCED UPCOMING TRIPS ================= */}
 
-{/* ================= ADVANCED UPCOMING TRIPS ================= */}
+{/* ================= PREMIUM SERVICES ================= */}
+<section className="relative overflow-hidden bg-gradient-to-b from-[#F8F6F1] via-[#FCFBF8] to-[#EFE9DE] py-32">
 
-<section
-  id="upcomingtrips"
-  className="relative py-16 sm:py-20 md:py-24 bg-gradient-to-b from-[#F7F8F5] via-white to-[#F1F5F2] overflow-hidden"
->
   {/* Background Effects */}
-  <div className="absolute -top-40 -left-40 w-[420px] h-[420px] bg-emerald-400/10 rounded-full blur-[140px]" />
-  <div className="absolute -bottom-40 -right-40 w-[420px] h-[420px] bg-yellow-400/10 rounded-full blur-[140px]" />
 
-  <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div className="absolute -top-44 left-0 h-[500px] w-[500px] rounded-full bg-emerald-300/20 blur-[140px]" />
 
-    {/* ================= HEADER ================= */}
+  <div className="absolute -bottom-40 right-0 h-[500px] w-[500px] rounded-full bg-yellow-300/20 blur-[140px]" />
 
-    <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-12 md:mb-14">
+  <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
 
-      <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 text-[#0B6E4F] text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[2px]">
-        <span className="w-2 h-2 rounded-full bg-[#0B6E4F] animate-pulse" />
-        Upcoming Adventures
+    {/* Header */}
+
+    <div className="mx-auto mb-20 max-w-4xl text-center">
+
+      <span className="inline-flex items-center rounded-full bg-emerald-100 px-5 py-2 text-xs font-bold uppercase tracking-[3px] text-emerald-700">
+        Our Destinations
       </span>
 
-      <h2 className="mt-5 text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 leading-tight">
-        Your Next Adventure
-        <span className="block text-[#0B6E4F]">
-          Starts Here
+      <h2 className="mt-6 text-5xl font-black leading-tight md:text-6xl">
+
+        Discover Africa's
+
+        <span className="block text-[#C8A94C]">
+          Most Extraordinary Places
         </span>
+
       </h2>
 
-      <p className="mt-4 max-w-2xl mx-auto text-sm sm:text-base md:text-lg text-gray-600 leading-7">
-        Discover exciting group trips, weekend getaways, hiking adventures
-        and unforgettable escapes across Kenya.
+      <p className="mt-8 text-lg leading-8 text-gray-600">
+
+        Curious Safaris takes you beyond traditional sightseeing and
+        into the heart of Africa's most remarkable destinations.
+
+        From the legendary wildlife reserves of East Africa to the
+        ancient civilizations of North Africa and the breathtaking
+        landscapes of Southern Africa, every journey is designed to
+        create meaningful and unforgettable travel experiences.
+
       </p>
 
     </div>
 
-
-    {/* ================= SLIDER ================= */}
-
-    <div className="relative group">
-
-      {/* Previous Button */}
-
-      <button
-        onClick={() =>
-          setPosterIndex(
-            posterIndex === 0
-              ? upcomingPosters.length - 1
-              : posterIndex - 1
-          )
-        }
-        aria-label="Previous trip"
-        className="hidden md:flex absolute left-3 lg:-left-6 top-1/2 -translate-y-1/2 z-40 w-11 h-11 lg:w-14 lg:h-14 rounded-full bg-white/90 backdrop-blur-xl border border-white shadow-xl items-center justify-center text-[#0B6E4F] text-xl hover:bg-[#0B6E4F] hover:text-white hover:scale-110 transition-all duration-300"
-      >
-        ←
-      </button>
-
-
-      {/* ================= SLIDER WINDOW ================= */}
-
-      <div className="relative overflow-hidden rounded-[24px] sm:rounded-[30px] md:rounded-[38px] shadow-2xl bg-[#07150F]">
-
-        <div
-          className="flex transition-transform duration-[1000ms] ease-[cubic-bezier(0.22,1,0.36,1)]"
-          style={{
-            transform: `translateX(-${posterIndex * 100}%)`
-          }}
-        >
-
-          {upcomingPosters.map((trip, index) => (
-
-            <div
-              key={index}
-              className="min-w-full relative"
-            >
-
-              {/* ================= POSTER AREA ================= */}
-
-              <div className="relative h-[500px] sm:h-[540px] md:h-[600px] lg:h-[650px] xl:h-[700px] overflow-hidden bg-[#07150F]">
-
-                {/* Blurred Poster Background */}
-
-                <img
-                  src={trip.image}
-                  alt=""
-                  aria-hidden="true"
-                  className="absolute inset-0 w-full h-full object-cover scale-110 blur-2xl opacity-35"
-                />
-
-                {/* Dark Background Overlay */}
-
-                <div className="absolute inset-0 bg-black/45" />
-
-
-                {/* Main Poster */}
-
-                <div className="absolute inset-0 flex items-center justify-center p-3 sm:p-5 md:p-8 lg:p-10 xl:p-12">
-
-                  <img
-                    src={trip.image}
-                    alt={trip.title}
-                    className="max-w-full max-h-full w-auto h-auto object-contain rounded-xl sm:rounded-2xl shadow-2xl transition-transform duration-[1200ms] group-hover:scale-[1.015]"
-                  />
-
-                </div>
-
-
-                {/* Top Gradient */}
-
-                <div className="absolute inset-x-0 top-0 h-36 bg-gradient-to-b from-black/60 to-transparent pointer-events-none" />
-
-
-                {/* Bottom Gradient */}
-
-                <div className="absolute inset-x-0 bottom-0 h-[60%] bg-gradient-to-t from-black/95 via-black/60 to-transparent pointer-events-none" />
-
-
-                {/* ================= TOP BADGE ================= */}
-
-                <div className="absolute top-4 left-4 right-4 sm:top-6 sm:left-6 sm:right-6 md:top-8 md:left-8 md:right-8 flex items-start justify-between gap-4 z-20">
-
-                  <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-black/30 backdrop-blur-xl border border-white/20 text-white text-[9px] sm:text-xs font-bold uppercase tracking-wider">
-
-                    <span className="w-2 h-2 rounded-full bg-yellow-400 animate-pulse" />
-
-                    Upcoming Trip
-
-                  </div>
-
-
-                  {/* Counter */}
-
-                  <div className="px-3 sm:px-4 py-2 rounded-full bg-black/30 backdrop-blur-xl border border-white/20 text-white text-xs sm:text-sm font-bold">
-
-                    {String(index + 1).padStart(2, "0")}
-
-                    <span className="mx-1 text-white/40">
-                      /
-                    </span>
-
-                    {String(upcomingPosters.length).padStart(2, "0")}
-
-                  </div>
-
-                </div>
-
-
-                {/* ================= CONTENT ================= */}
-
-                <div className="absolute inset-x-0 bottom-0 z-20 p-5 sm:p-7 md:p-10 lg:p-12 xl:p-14">
-
-                  {/* Date */}
-
-                  <div className="inline-flex items-center gap-2 bg-yellow-400 text-black px-3 sm:px-4 py-2 rounded-full text-[9px] sm:text-xs md:text-sm font-black shadow-lg">
-
-                    <span>
-                      📅
-                    </span>
-
-                    {trip.date}
-
-                  </div>
-
-
-                  {/* Title */}
-
-                  <h3 className="mt-4 max-w-3xl text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-white leading-[1.08]">
-
-                    {trip.title}
-
-                  </h3>
-
-
-                  {/* Description */}
-
-                  <p className="mt-3 max-w-2xl text-xs sm:text-sm md:text-base text-gray-200 leading-6 sm:leading-7 line-clamp-3">
-
-                    {trip.description}
-
-                  </p>
-
-
-                  {/* ================= INFO ================= */}
-
-                  <div className="mt-5 sm:mt-6 flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-8">
-
-                    {/* Price */}
-
-                    <div>
-
-                      <p className="text-[9px] sm:text-[10px] text-gray-300 uppercase tracking-[2px]">
-                        Starting From
-                      </p>
-
-                      <p className="mt-1 text-lg sm:text-xl md:text-2xl font-black text-yellow-400">
-                        {trip.price}
-                      </p>
-
-                    </div>
-
-
-                    {/* Divider */}
-
-                    <div className="hidden sm:block w-px h-10 bg-white/20" />
-
-
-                    {/* Duration */}
-
-                    <div>
-
-                      <p className="text-[9px] sm:text-[10px] text-gray-300 uppercase tracking-[2px]">
-                        Duration
-                      </p>
-
-                      <p className="mt-1 text-sm sm:text-base font-bold text-white">
-                        {trip.duration}
-                      </p>
-
-                    </div>
-
-
-                    {/* CTA */}
-
-                    <a
-  href="https://wa.me/254720524627?text=Hello%20Savanna%20Crown%20Safaris%20Africa%2C%20I%27m%20interested%20in%20booking%20an%20upcoming%20trip."
-  target="_blank"
-  rel="noopener noreferrer"
-  className="sm:ml-auto inline-flex items-center justify-center gap-3 bg-[#0B6E4F] text-white px-6 sm:px-7 py-3 sm:py-3.5 rounded-full font-bold text-xs sm:text-sm md:text-base shadow-xl hover:bg-yellow-400 hover:text-black hover:scale-105 transition-all duration-300"
->
-  Reserve Your Seat
-  <span className="text-lg">→</span>
-</a>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-
-              {/* ================= PROGRESS ================= */}
-
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-white/10 z-30">
-
-                <div
-                  className="h-full bg-yellow-400 transition-all duration-700"
-                  style={{
-                    width: `${((index + 1) / upcomingPosters.length) * 100}%`
-                  }}
-                />
-
-              </div>
-
-            </div>
-
-          ))}
-
-        </div>
-
-      </div>
-
-
-      {/* ================= NEXT BUTTON ================= */}
-
-      <button
-        onClick={() =>
-          setPosterIndex(
-            (posterIndex + 1) % upcomingPosters.length
-          )
-        }
-        aria-label="Next trip"
-        className="hidden md:flex absolute right-3 lg:-right-6 top-1/2 -translate-y-1/2 z-40 w-11 h-11 lg:w-14 lg:h-14 rounded-full bg-white/90 backdrop-blur-xl border border-white shadow-xl items-center justify-center text-[#0B6E4F] text-xl hover:bg-[#0B6E4F] hover:text-white hover:scale-110 transition-all duration-300"
-      >
-        →
-      </button>
-
-    </div>
-
-
-    {/* ================= MOBILE CONTROLS ================= */}
-
-    <div className="flex md:hidden justify-center gap-4 mt-5">
-
-      <button
-        onClick={() =>
-          setPosterIndex(
-            posterIndex === 0
-              ? upcomingPosters.length - 1
-              : posterIndex - 1
-          )
-        }
-        aria-label="Previous trip"
-        className="w-10 h-10 rounded-full bg-white shadow-lg border border-gray-100 text-[#0B6E4F] flex items-center justify-center active:scale-90 transition"
-      >
-        ←
-      </button>
-
-      <button
-        onClick={() =>
-          setPosterIndex(
-            (posterIndex + 1) % upcomingPosters.length
-          )
-        }
-        aria-label="Next trip"
-        className="w-10 h-10 rounded-full bg-[#0B6E4F] shadow-lg text-white flex items-center justify-center active:scale-90 transition"
-      >
-        →
-      </button>
-
-    </div>
-
-
-    {/* ================= DOTS ================= */}
-
-    <div className="flex justify-center items-center gap-2 mt-5">
-
-      {upcomingPosters.map((_, index) => (
-
-        <button
-          key={index}
-          onClick={() => setPosterIndex(index)}
-          aria-label={`Go to trip ${index + 1}`}
-          className={`h-2 rounded-full transition-all duration-500 ${
-            posterIndex === index
-              ? "w-8 bg-[#0B6E4F]"
-              : "w-2 bg-gray-300 hover:bg-gray-400"
-          }`}
+    {/* Destination Cards */}
+
+    <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+
+  {[
+{
+  title: "Kenya",
+  image:
+    kenya,
+  desc:
+    "Witness the Great Migration, discover the Maasai Mara, explore Amboseli beneath Mount Kilimanjaro and experience unforgettable Big Five safaris.",
+},
+
+{
+  title: "Tanzania",
+  image:
+    tanzania,
+  desc:
+    "Explore the Serengeti, Tarangire and the spectacular Ngorongoro Crater while experiencing some of Africa's most iconic wildlife destinations.",
+},
+
+{
+  title: "Uganda",
+  image:
+    "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?auto=format&fit=crop&w=1200&q=85",
+  desc:
+    "Track mountain gorillas and chimpanzees through ancient rainforests while discovering Uganda's remarkable wildlife and landscapes.",
+},
+
+{
+  title: "Rwanda",
+  image:
+    luangwa,
+  desc:
+    "Discover the Land of a Thousand Hills through gorilla trekking, volcanic landscapes and unforgettable cultural experiences.",
+},
+
+{
+  title: "Botswana",
+  image:
+    victoria1,
+  desc:
+    "Experience the incredible Okavango Delta, Chobe National Park and some of Africa's most exclusive safari experiences.",
+},
+
+{
+  title: "Zimbabwe",
+  image:
+    zambezi,
+  desc:
+    "Explore the breathtaking Victoria Falls, Hwange National Park and the dramatic landscapes of Matobo.",
+},
+  ].map((destination, index) => (
+    <div
+      key={index}
+      className="overflow-hidden rounded-[35px] bg-white shadow-xl transition duration-700 hover:-translate-y-3 hover:shadow-2xl"
+    >
+      <div className="overflow-hidden">
+        <img
+          src={destination.image}
+          alt={destination.title}
+          className="h-[280px] w-full object-cover transition duration-1000 hover:scale-110"
         />
+      </div>
 
-      ))}
+      <div className="p-8">
+        <h3 className="text-3xl font-black text-gray-900">
+          {destination.title}
+        </h3>
 
+        <p className="mt-4 leading-8 text-gray-600">
+          {destination.desc}
+        </p>
+      </div>
     </div>
+  ))}
+</div>
 
+    {/* Why Travel With Us */}
 
-    {/* ================= BOTTOM LINK ================= */}
+    <div className="mt-24 rounded-[40px] bg-white p-12 shadow-2xl md:p-16">
 
-    <div className="flex justify-center mt-7">
+      <h2 className="text-center text-4xl font-black text-gray-900">
 
-      <Link
-        to="/upcomingtrips"
-        className="inline-flex items-center gap-2 text-sm sm:text-base text-[#0B6E4F] font-bold hover:text-[#D4AF37] transition-all duration-300 group/link"
-      >
+        Why Explore Africa With Curious Safaris?
 
-        View All Upcoming Trips
-
-        <span className="text-lg transition-transform duration-300 group-hover/link:translate-x-1">
-          →
-        </span>
-
-      </Link>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-{/* ================= SERVICES ================= */}
-<section
-  id="services"
-  className="relative py-28 bg-gradient-to-b from-[#F8F9F6] via-white to-[#F4F8F5] overflow-hidden"
->
-  {/* Background Effects */}
-  <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-emerald-300/20 rounded-full blur-[180px]" />
-  <div className="absolute -bottom-32 -right-32 w-[500px] h-[500px] bg-yellow-300/20 rounded-full blur-[180px]" />
-
-  <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
-
-    {/* Heading */}
-    <div className="max-w-3xl mx-auto text-center mb-20">
-
-      <span className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-emerald-100 text-[#0B6E4F] text-sm font-bold uppercase tracking-[3px]">
-        ✨ What We Offer
-      </span>
-
-      <h2 className="mt-6 text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-gray-900">
-        Adventures Designed
-        <span className="block text-[#0B6E4F]">
-          Around Great Experiences
-        </span>
       </h2>
 
-      <p className="mt-6 text-lg leading-8 text-gray-600">
-        Every trip is carefully organized to give you memorable experiences,
-        comfortable travel, professional guides and an amazing community of
-        fellow adventurers exploring Kenya together.
-      </p>
+      <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+
+        <div className="rounded-3xl bg-[#F8F6F1] p-8">
+
+          <div className="text-4xl">🛻</div>
+
+          <h3 className="mt-5 text-xl font-bold">
+            Private Safaris
+          </h3>
+
+          <p className="mt-4 leading-7 text-gray-600">
+            Enjoy personalized journeys with private guides and
+            comfortable safari vehicles.
+          </p>
+
+        </div>
+
+        <div className="rounded-3xl bg-[#F8F6F1] p-8">
+
+          <div className="text-4xl">🌍</div>
+
+          <h3 className="mt-5 text-xl font-bold">
+            Multiple Destinations
+          </h3>
+
+          <p className="mt-4 leading-7 text-gray-600">
+            Explore East, Central, Southern and North Africa through
+            carefully designed itineraries.
+          </p>
+
+        </div>
+
+        <div className="rounded-3xl bg-[#F8F6F1] p-8">
+
+          <div className="text-4xl">📸</div>
+
+          <h3 className="mt-5 text-xl font-bold">
+            Authentic Experiences
+          </h3>
+
+          <p className="mt-4 leading-7 text-gray-600">
+            Experience wildlife, local cultures, history, beaches and
+            adventure in one unforgettable journey.
+          </p>
+
+        </div>
+
+        <div className="rounded-3xl bg-[#F8F6F1] p-8">
+
+          <div className="text-4xl">🤝</div>
+
+          <h3 className="mt-5 text-xl font-bold">
+            Tailor-Made Tours
+          </h3>
+
+          <p className="mt-4 leading-7 text-gray-600">
+            Every itinerary can be customized to match your travel
+            style, interests and budget.
+          </p>
+
+        </div>
+
+      </div>
 
     </div>
 
-    {/* Cards */}
-    <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-10">
+    {/* Bottom CTA */}
 
-      {[
-        {
-          title: "Group Road Trips",
-          image: adventure,
-          icon: "🚌",
-          badge: "Most Popular",
-          audience: "Friends • Solo Travelers • Couples",
-          description:
-            "Travel with like-minded adventurers on exciting road trips across Kenya. Discover hidden gems, enjoy scenic drives and create unforgettable memories together.",
-          features: [
-            "Luxury Tourist Van",
-            "Professional Tour Guide",
-            "Photography Stops",
-            "Fun Group Activities",
-          ],
-        },
-        {
-          title: "Weekend Getaways",
-          image: weekends,
-          icon: "🌄",
-          badge: "Weekend Escape",
-          audience: "Families • Couples",
-          description:
-            "Take a break from your busy schedule and enjoy carefully planned weekend escapes featuring wildlife, lakes, beaches and breathtaking landscapes.",
-          features: [
-            "Hotel Accommodation",
-            "Meals Included",
-            "Comfortable Transport",
-            "Guided Excursions",
-          ],
-        },
-        {
-          title: "Camping Adventures",
-          image: camping,
-          icon: "⛺",
-          badge: "Outdoor Experience",
-          audience: "Adventure Lovers",
-          description:
-            "Reconnect with nature through exciting camping experiences featuring bonfires, hiking, storytelling and unforgettable nights under the stars.",
-          features: [
-            "Camping Equipment",
-            "Bonfire Sessions",
-            "Nature Walks",
-            "Professional Guides",
-          ],
-        },
-        {
-          title: "Corporate Team Building",
-          image: team,
-          icon: "🤝",
-          badge: "Corporate",
-          audience: "Companies & Organizations",
-          description:
-            "Boost teamwork and morale through engaging outdoor activities, leadership challenges and customized corporate retreat experiences.",
-          features: [
-            "Team Challenges",
-            "Leadership Activities",
-            "Conference Options",
-            "Professional Facilitators",
-          ],
-        },
-        {
-          title: "Mountain Hiking",
-          image: climbingkenya,
-          icon: "🥾",
-          badge: "Adventure",
-          audience: "Hiking Enthusiasts",
-          description:
-            "Explore Kenya's spectacular mountains and hiking trails with experienced guides while enjoying breathtaking viewpoints and fresh mountain air.",
-          features: [
-            "Certified Guides",
-            "Safety Support",
-            "Refreshments",
-            "Photography Moments",
-          ],
-        },
-        {
-          title: "Educational School Trips",
-          image: school,
-          icon: "🎒",
-          badge: "Educational",
-          audience: "Schools & Institutions",
-          description:
-            "Interactive educational excursions combining wildlife conservation, geography, history and outdoor learning in a safe environment.",
-          features: [
-            "Educational Programs",
-            "Museums & Parks",
-            "Student Activities",
-            "Safe Transport",
-          ],
-        },
-      ].map((service) => (
+    <div className="mt-24">
 
-        <div
-          key={service.title}
-          className="group relative bg-white rounded-[32px] overflow-hidden border border-gray-100 shadow-lg hover:shadow-[0_30px_70px_rgba(0,0,0,0.15)] hover:-translate-y-3 transition-all duration-500"
-        >
+      <div className="overflow-hidden rounded-[40px] bg-gradient-to-r from-[#092517] via-[#123B25] to-[#092517] p-12 shadow-2xl md:p-16">
 
-          {/* Top Image */}
-          <div className="relative h-64 overflow-hidden">
+        <div className="grid items-center gap-10 lg:grid-cols-2">
 
-            <img
-              src={service.image}
-              alt={service.title}
-              className="w-full h-full object-cover transition duration-700 group-hover:scale-110"
-            />
+          <div>
 
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+            <span className="text-sm font-bold uppercase tracking-[4px] text-yellow-400">
 
-            <span className="absolute top-5 left-5 px-4 py-2 rounded-full bg-white/15 backdrop-blur-lg border border-white/20 text-white text-xs uppercase tracking-widest">
-              {service.badge}
+              Start Your Journey
+
             </span>
 
-            <div className="absolute bottom-5 left-5 w-16 h-16 rounded-2xl bg-white/15 backdrop-blur-xl border border-white/20 flex items-center justify-center text-3xl">
-              {service.icon}
-            </div>
+            <h2 className="mt-6 text-4xl font-black text-white md:text-5xl">
 
-          </div>
+              Africa Is Waiting To Be Discovered
 
-          {/* Content */}
-          <div className="p-8">
+            </h2>
 
-            <h3 className="text-2xl font-black text-gray-900">
-              {service.title}
-            </h3>
+            <p className="mt-6 text-lg leading-8 text-gray-300">
 
-            <p className="mt-4 text-gray-600 leading-8">
-              {service.description}
+              Whether you dream of tracking mountain gorillas,
+              witnessing the Great Migration, exploring ancient
+              civilizations or relaxing on tropical beaches,
+              Curious Safaris will help you create an unforgettable
+              African adventure.
+
             </p>
 
-            {/* Features */}
-            <div className="mt-8 grid gap-4">
+          </div>
 
-              {service.features.map((feature) => (
+          <div className="grid grid-cols-2 gap-6">
 
-                <div
-                  key={feature}
-                  className="flex items-center gap-3"
-                >
+            <div className="rounded-3xl bg-white/10 p-8 text-center backdrop-blur-xl">
 
-                  <div className="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-[#0B6E4F] font-bold">
-                    ✓
-                  </div>
+              <h3 className="text-5xl font-black text-yellow-400">
+                15+
+              </h3>
 
-                  <span className="text-gray-700">
-                    {feature}
-                  </span>
-
-                </div>
-
-              ))}
+              <p className="mt-3 text-gray-300">
+                African Destinations
+              </p>
 
             </div>
 
-            {/* Bottom Info */}
-            <div className="mt-8 pt-6 border-t border-gray-100 flex items-center justify-between">
+            <div className="rounded-3xl bg-white/10 p-8 text-center backdrop-blur-xl">
 
-              <div>
+              <h3 className="text-5xl font-black text-yellow-400">
+                20+
+              </h3>
 
-                <p className="text-xs uppercase tracking-widest text-gray-400">
-                  Perfect For
-                </p>
+              <p className="mt-3 text-gray-300">
+                Safari Experiences
+              </p>
 
-                <h4 className="mt-1 font-semibold text-[#0B6E4F]">
-                  {service.audience}
-                </h4>
+            </div>
 
-              </div>
+            <div className="rounded-3xl bg-white/10 p-8 text-center backdrop-blur-xl">
 
-              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#0B6E4F] to-[#138C63] flex items-center justify-center text-white text-xl shadow-lg group-hover:rotate-12 group-hover:scale-110 transition-all duration-500">
-                {service.icon}
-              </div>
+              <h3 className="text-5xl font-black text-yellow-400">
+                24/7
+              </h3>
+
+              <p className="mt-3 text-gray-300">
+                Travel Support
+              </p>
+
+            </div>
+
+            <div className="rounded-3xl bg-white/10 p-8 text-center backdrop-blur-xl">
+
+              <h3 className="text-5xl font-black text-yellow-400">
+                100%
+              </h3>
+
+              <p className="mt-3 text-gray-300">
+                Tailor-Made Journeys
+              </p>
 
             </div>
 
           </div>
 
-          {/* Animated Top Border */}
-          <div className="absolute top-0 left-0 h-1 w-0 bg-gradient-to-r from-[#0B6E4F] via-[#D4AF37] to-[#0B6E4F] group-hover:w-full transition-all duration-700"></div>
-
         </div>
 
-      ))}
+      </div>
 
     </div>
 
   </div>
+
 </section>
+{/* FEATURED DESTINATIONS */}
 
 
-{/* ================= SCHOOL TRIPS ================= */}
-<section
-  id="school-trips"
-  className="py-24 bg-gradient-to-b from-white to-[#F6FAF8]"
->
-  <div className="max-w-7xl mx-auto px-6">
+{/* ================= AFRICA BY NUMBERS ================= */}
+<section className="relative overflow-hidden bg-[#0B1F1A] py-24 sm:py-28">
+  <div className="absolute inset-0 opacity-10">
+    <div className="absolute -left-20 top-10 h-72 w-72 rounded-full bg-[#D4A017] blur-3xl" />
+    <div className="absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-[#0B6E4F] blur-3xl" />
+  </div>
 
-    <div className="grid lg:grid-cols-2 gap-16 items-center">
+  <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+    {/* Heading */}
+    <div className="mx-auto mb-16 max-w-3xl text-center">
+      <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-[0.3em] text-[#D4A017]">
+        Curious Safaris
+      </span>
 
-      {/* Left */}
+      <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+        Africa by the Numbers
+      </h2>
 
-      <div>
-
-        <span className="inline-block px-5 py-2 rounded-full bg-emerald-100 text-[#0B6E4F] font-bold uppercase tracking-wider text-sm">
-          School Trips
-        </span>
-
-        <h2 className="mt-6 text-5xl font-black text-gray-900">
-
-          Learn.
-          <span className="text-[#D4AF37]"> Explore.</span>
-          <br />
-          Grow Together.
-
-        </h2>
-
-        <p className="mt-6 text-lg text-gray-600 leading-8">
-
-          Give your students more than a classroom experience.
-          Our educational road trips combine wildlife,
-          nature, teamwork and adventure to create unforgettable
-          learning experiences.
-
-        </p>
-
-        <div className="grid sm:grid-cols-2 gap-5 mt-10">
-
-          {[
-            "Safe & Reliable",
-            "Educational Value",
-            "Affordable Packages",
-            "Fully Coordinated",
-            "Professional Guides",
-            "Transport Included"
-          ].map((item)=>(
-
-            <div
-              key={item}
-              className="flex items-center gap-3 bg-white rounded-2xl p-4 shadow-md"
-            >
-
-              <div className="w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center text-[#0B6E4F] font-bold">
-                ✓
-              </div>
-
-              <span className="font-semibold text-gray-700">
-                {item}
-              </span>
-
-            </div>
-
-          ))}
-
-        </div>
-
-        <div className="mt-10 flex gap-4">
-
-         
-
-        </div>
-
-      </div>
-
-      {/* Right */}
-
-      <div className="relative">
-
-        <img
-          src={schoolpos}
-          alt="School Trip"
-          className="rounded-[30px] shadow-2xl w-full h-[600px] object-cover"
-        />
-
-        <div className="absolute bottom-6 left-6 bg-white rounded-3xl shadow-xl px-8 py-6">
-
-          <h3 className="text-4xl font-black text-[#0B6E4F]">
-            500+
-          </h3>
-
-          <p className="text-gray-600">
-            Students Travelled
-          </p>
-
-        </div>
-
-      </div>
-
+      <p className="mt-5 text-base leading-8 text-white/70 sm:text-lg">
+        Every journey is designed around your curiosity, your pace and the
+        experiences you want to remember.
+      </p>
     </div>
 
-    {/* Bottom Cards */}
-
-    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
-
+    {/* Statistics */}
+    <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
       {[
         {
-          icon:"🎓",
-          title:"Educational Tours",
-          desc:"Museum visits, wildlife education and cultural learning."
+          number: "15+",
+          title: "African Destinations",
+          desc: "Discover extraordinary places across the continent.",
         },
         {
-          icon:"🦒",
-          title:"Wildlife Experience",
-          desc:"National parks, game drives and conservation learning."
+          number: "20+",
+          title: "Safari Experiences",
+          desc: "From wildlife adventures to cultural journeys.",
         },
         {
-          icon:"🤝",
-          title:"Team Building",
-          desc:"Outdoor games, leadership and collaboration activities."
+          number: "100%",
+          title: "Tailor-Made Tours",
+          desc: "Travel plans created around your interests.",
         },
         {
-          icon:"🎯",
-          title:"Fun Activities",
-          desc:"Adventure parks, hiking and memorable experiences."
-        }
-      ].map((card)=>(
-
+          number: "24/7",
+          title: "Travel Support",
+          desc: "We're here whenever you need us.",
+        },
+      ].map((stat, index) => (
         <div
-          key={card.title}
-          className="rounded-3xl bg-white shadow-lg p-8 hover:-translate-y-2 hover:shadow-2xl transition duration-500"
+          key={index}
+          className="group rounded-[28px] border border-white/10 bg-white/[0.05] p-7 text-center backdrop-blur-sm transition duration-500 hover:-translate-y-2 hover:bg-white/[0.09] sm:p-9"
         >
-
-          <div className="text-5xl">
-            {card.icon}
+          <div className="text-4xl font-bold tracking-tight text-[#D4A017] sm:text-5xl">
+            {stat.number}
           </div>
 
-          <h3 className="mt-6 text-2xl font-bold">
-            {card.title}
+          <h3 className="mt-4 text-lg font-bold text-white">
+            {stat.title}
           </h3>
 
-          <p className="mt-4 text-gray-600 leading-7">
-            {card.desc}
+          <p className="mt-3 text-sm leading-6 text-white/60">
+            {stat.desc}
           </p>
-
         </div>
-
       ))}
+    </div>
+  </div>
+</section>
 
+{/* ================= SAFARI PLANNING PROCESS ================= */}
+<section className="bg-[#F8F6F0] py-24 sm:py-28">
+  <div className="mx-auto max-w-7xl px-6 lg:px-8">
+
+    {/* Heading */}
+    <div className="mx-auto mb-20 max-w-3xl text-center">
+      <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-[0.3em] text-[#0B6E4F]">
+        Your Journey Starts Here
+      </span>
+
+      <h2 className="text-4xl font-bold tracking-tight text-[#17231F] sm:text-5xl">
+        Planning Your Safari
+        <span className="block text-[#0B6E4F]">
+          Made Simple
+        </span>
+      </h2>
+
+      <p className="mt-5 text-base leading-8 text-gray-600 sm:text-lg">
+        From your first idea to the moment you set foot in Africa,
+        we make planning your journey simple, personal and stress-free.
+      </p>
     </div>
 
+    {/* Steps */}
+    <div className="relative">
+
+      {/* Desktop connecting line */}
+      <div className="absolute left-[12%] right-[12%] top-12 hidden h-px bg-[#0B6E4F]/20 lg:block" />
+
+      <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+        {[
+          {
+            number: "01",
+            title: "Choose a Destination",
+            desc:
+              "Tell us where you'd like to go and the kind of African experience you're looking for.",
+          },
+          {
+            number: "02",
+            title: "Customize Your Itinerary",
+            desc:
+              "We'll create a personalized itinerary around your interests, schedule and travel style.",
+          },
+          {
+            number: "03",
+            title: "Confirm Your Booking",
+            desc:
+              "Once everything looks perfect, we'll handle the arrangements and confirm your journey.",
+          },
+          {
+            number: "04",
+            title: "Travel & Explore Africa",
+            desc:
+              "All that's left is to arrive, relax and experience the Africa you've been dreaming about.",
+          },
+        ].map((step, index) => (
+          <div
+            key={index}
+            className="group relative text-center"
+          >
+            {/* Number */}
+            <div className="relative mx-auto flex h-24 w-24 items-center justify-center rounded-full border border-[#0B6E4F]/20 bg-[#F8F6F0] shadow-sm transition duration-500 group-hover:-translate-y-2 group-hover:border-[#D4A017] group-hover:shadow-lg">
+              <span className="text-2xl font-bold text-[#0B6E4F] transition duration-500 group-hover:text-[#D4A017]">
+                {step.number}
+              </span>
+            </div>
+
+            {/* Content */}
+            <div className="mt-7">
+              <h3 className="text-xl font-bold text-[#17231F]">
+                {step.title}
+              </h3>
+
+              <p className="mx-auto mt-4 max-w-xs text-sm leading-7 text-gray-600">
+                {step.desc}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* CTA */}
+    <div className="mt-16 text-center">
+      <a
+        href="contact"
+        className="inline-flex items-center justify-center rounded-full bg-[#0B6E4F] px-8 py-4 text-sm font-bold text-white shadow-lg transition duration-300 hover:-translate-y-1 hover:bg-[#095A41] hover:shadow-xl"
+      >
+        Start Planning Your Safari
+        <span className="ml-2 text-lg">→</span>
+      </a>
+    </div>
   </div>
 </section>
 
 
 
+{/* DESTINATIONS & EXPERIENCES */}
 
 {/* WHY TRAVEL WITH US */}
 <section className="py-24 bg-[#102315] text-white relative overflow-hidden">
@@ -1819,140 +924,96 @@ setSmallAboutIndex(prev=>(prev + 1) % aboutImages.length);
 
 
 {/* ===================== REVIEWSS ===================== */}
-<section className="relative py-28 bg-gradient-to-b from-[#F8F6F1] via-white to-[#F2EEE5] overflow-hidden">
+<section className="relative overflow-hidden bg-gradient-to-b from-[#F8F6F1] via-white to-[#F2EEE5] py-32">
 
   {/* Background Effects */}
-  <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-yellow-400/10 rounded-full blur-[140px]" />
-  <div className="absolute -bottom-40 -right-40 w-[500px] h-[500px] bg-green-600/10 rounded-full blur-[140px]" />
 
-  <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
+  <div className="absolute -top-40 -left-40 h-[500px] w-[500px] rounded-full bg-yellow-400/10 blur-[140px]" />
+
+  <div className="absolute -bottom-40 -right-40 h-[500px] w-[500px] rounded-full bg-emerald-600/10 blur-[140px]" />
+
+  <div className="relative mx-auto max-w-7xl px-6">
 
     {/* Header */}
-    <div className="text-center max-w-3xl mx-auto">
 
-      <span className="inline-flex items-center bg-green-100 text-green-700 px-5 py-2 rounded-full uppercase tracking-[3px] text-xs font-bold">
-        Google Reviews
+    <div className="mx-auto max-w-3xl text-center">
+
+      <span className="inline-flex rounded-full bg-emerald-100 px-5 py-2 text-xs font-bold uppercase tracking-[4px] text-emerald-700">
+
+        Traveler Reviews
+
       </span>
 
       <h2 className="mt-6 text-5xl font-black text-gray-900">
-        Trusted By
+
+        Stories From Our
+
         <span className="block text-[#C8A94C]">
+
           Happy Travelers
+
         </span>
+
       </h2>
 
-      <p className="mt-6 text-gray-600 text-lg leading-8">
-        We are committed to creating memorable travel experiences through
-        professionally organized road trips, group adventures and safaris
-        across Kenya.
+      <p className="mt-6 text-lg leading-8 text-gray-600">
+
+        Every journey tells a story. Discover why travelers continue
+        to trust Curious Safaris for personalized African adventures.
+
       </p>
 
     </div>
 
     {/* Rating Card */}
+
     <div className="mt-16 flex justify-center">
 
-      <div className="bg-white rounded-[35px] shadow-2xl border border-gray-100 p-10 max-w-5xl w-full grid md:grid-cols-[220px_1fr] gap-10 items-center">
+      <div className="rounded-[35px] bg-white px-12 py-10 shadow-2xl">
 
-        <div className="text-center">
+        <div className="flex flex-col items-center gap-4 md:flex-row md:gap-12">
 
-          <h3 className="text-7xl font-black text-[#0B6E4F]">
-            5.0
-          </h3>
+          <div className="text-center">
 
-          <div className="mt-3 text-yellow-400 text-3xl">
-            ★★★★★
-          </div>
+            <h3 className="text-7xl font-black text-emerald-700">
 
-          <p className="mt-3 text-gray-500">
-            Based on Google Reviews
-          </p>
+              5.0
 
-        </div>
+            </h3>
 
-        <div>
+            <div className="mt-2 text-3xl text-yellow-400">
 
-          <h3 className="text-3xl font-black text-gray-900">
-            Savanna Crown Safaris Africa
-          </h3>
-
-          <p className="mt-5 text-gray-600 leading-8">
-            Proudly serving travelers across Kenya with unforgettable group
-            road trips, educational tours, camping adventures, hiking
-            expeditions and customized safari experiences.
-          </p>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mt-8">
-
-            <div className="bg-[#F8F8F8] rounded-2xl p-5 text-center">
-              <h4 className="text-3xl font-black text-[#0B6E4F]">5.0</h4>
-              <p className="text-sm text-gray-500 mt-1">Google Rating</p>
-            </div>
-
-            <div className="bg-[#F8F8F8] rounded-2xl p-5 text-center">
-              <h4 className="text-3xl font-black text-[#0B6E4F]">1+</h4>
-              <p className="text-sm text-gray-500 mt-1">Verified Review</p>
-            </div>
-
-            <div className="bg-[#F8F8F8] rounded-2xl p-5 text-center">
-              <h4 className="text-3xl font-black text-[#0B6E4F]">24/7</h4>
-              <p className="text-sm text-gray-500 mt-1">Support</p>
-            </div>
-
-            <div className="bg-[#F8F8F8] rounded-2xl p-5 text-center">
-              <h4 className="text-3xl font-black text-[#0B6E4F]">100%</h4>
-              <p className="text-sm text-gray-500 mt-1">Commitment</p>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    {/* Review */}
-    <div className="mt-20 max-w-5xl mx-auto">
-
-      <div className="group relative bg-white rounded-[35px] shadow-xl border border-gray-100 overflow-hidden hover:-translate-y-2 hover:shadow-2xl transition duration-500">
-
-        {/* Gold Accent */}
-        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#D4AF37] via-[#0B6E4F] to-[#D4AF37]" />
-
-        <div className="p-10">
-
-          <div className="flex items-center justify-between flex-wrap gap-4">
-
-            <div className="flex items-center gap-4">
-
-              <div className="w-16 h-16 rounded-full bg-[#0B6E4F] text-white flex items-center justify-center text-2xl font-black">
-                K
-              </div>
-
-              <div>
-
-                <h3 className="text-2xl font-bold text-gray-900">
-                  Kennedy Kagunda
-                </h3>
-
-                <p className="text-gray-500">
-                  Verified Google Review
-                </p>
-
-              </div>
-
-            </div>
-
-            <div className="text-yellow-400 text-3xl">
               ★★★★★
+
             </div>
+
+            <p className="mt-3 text-gray-500">
+
+              Based on Google Reviews
+
+            </p>
 
           </div>
 
-          <blockquote className="mt-8 text-xl leading-9 text-gray-700 italic">
-            "Excellent service. Highly recommend Savanna Crown Safaris Africa."
-          </blockquote>
+          <div className="hidden h-24 w-px bg-gray-200 md:block"></div>
+
+          <div>
+
+            <h3 className="text-2xl font-bold">
+
+              Trusted by Travelers
+
+            </h3>
+
+            <p className="mt-4 max-w-lg leading-8 text-gray-600">
+
+              Guests consistently praise our personalized service,
+              well-planned itineraries, luxury experiences, affordable
+              pricing, and unforgettable wildlife adventures.
+
+            </p>
+
+          </div>
 
         </div>
 
@@ -1960,67 +1021,241 @@ setSmallAboutIndex(prev=>(prev + 1) % aboutImages.length);
 
     </div>
 
-    {/* CTA */}
-    <div className="mt-20 flex flex-wrap justify-center gap-6">
+    {/* Reviews */}
 
-      <a
-        href="https://www.google.com/search?q=SAVANNA+CROWN+SAFARIS+AFRICA&rlz=1C1PNFE_enKE1135KE1135&oq=SAVANNA+CROWN+SAFARIS+AFRICA&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg8MgYIAhBFGDwyBggDEEUYPNIBCDE1NjBqMGo3qAIAsAIA&sourceid=chrome&source=chrome.ob&ie=UTF-8#lrd=0x60c54a5d8117a2bb:0x1e10cf456f0a17fd,3,,,,"
-        className="px-8 py-4 rounded-2xl bg-[#0B6E4F] text-white font-bold hover:bg-[#08523B] hover:-translate-y-1 transition duration-300 shadow-lg"
-      >
-        ⭐ Write a Google Review
-      </a>
+    <div className="mt-20 grid gap-8 md:grid-cols-2">
 
-      <a
-        href="https://www.google.com/maps/place/SAVANNA+CROWN+SAFARIS+AFRICA/@18.2533755,-29.1122719,3z/data=!4m6!3m5!1s0x60c54a5d8117a2bb:0x1e10cf456f0a17fd!8m2!3d18.2533755!4d-29.1122719!16s%2Fg%2F11z0wqw3_l?entry=ttu&g_ep=EgoyMDI2MDgwMy4wIKXMDSoASAFQAw%3D%3D"
-        className="px-8 py-4 rounded-2xl border-2 border-[#0B6E4F] text-[#0B6E4F] font-bold hover:bg-[#0B6E4F] hover:text-white hover:-translate-y-1 transition duration-300"
-      >
-        💬 View Google Profile
-      </a>
+      {/* Review 1 */}
+
+      <div className="group rounded-[35px] border border-gray-100 bg-white p-10 shadow-xl transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+        <div className="text-2xl text-yellow-400">
+
+          ★★★★★
+
+        </div>
+
+        <p className="mt-8 text-lg italic leading-9 text-gray-600">
+
+          "Traveling with Curious Safaris was one of the best decisions
+          we made. Everything was seamless from start to finish. The
+          itinerary was well thought out, the accommodations were
+          luxurious, and the wildlife encounters were breathtaking."
+
+        </p>
+
+        <div className="mt-10 flex items-center gap-4">
+
+          <div className="flex h-16 w-16 items-center justify-center rounded-full bg-emerald-700 text-xl font-bold text-white">
+
+            J
+
+          </div>
+
+          <div>
+
+            <h4 className="font-bold text-gray-900">
+
+              Juicy Drinks
+
+            </h4>
+
+            <p className="text-sm text-gray-500">
+
+              Google Review
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      {/* Review 2 */}
+
+      <div className="group rounded-[35px] border border-gray-100 bg-white p-10 shadow-xl transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+        <div className="text-2xl text-yellow-400">
+
+          ★★★★★
+
+        </div>
+
+        <p className="mt-8 text-lg italic leading-9 text-gray-600">
+
+          "Affordable prices and top-notch service."
+
+        </p>
+
+        <div className="mt-10 flex items-center gap-4">
+
+          <div className="flex h-16 w-16 items-center justify-center rounded-full bg-emerald-700 text-xl font-bold text-white">
+
+            J
+
+          </div>
+
+          <div>
+
+            <h4 className="font-bold text-gray-900">
+
+              Joshua Ndwiga
+
+            </h4>
+
+            <p className="text-sm text-gray-500">
+
+              Google Review
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
 
     </div>
+
+    {/* Statistics */}
+
+    <div className="mt-20 grid grid-cols-2 gap-6 md:grid-cols-4">
+
+      <div className="rounded-3xl bg-white p-8 text-center shadow-lg">
+
+        <h3 className="text-5xl font-black text-emerald-700">
+
+          5.0
+
+        </h3>
+
+        <p className="mt-3 text-gray-600">
+
+          Google Rating
+
+        </p>
+
+      </div>
+
+      <div className="rounded-3xl bg-white p-8 text-center shadow-lg">
+
+        <h3 className="text-5xl font-black text-emerald-700">
+
+          2+
+
+        </h3>
+
+        <p className="mt-3 text-gray-600">
+
+          Verified Reviews
+
+        </p>
+
+      </div>
+
+      <div className="rounded-3xl bg-white p-8 text-center shadow-lg">
+
+        <h3 className="text-5xl font-black text-emerald-700">
+
+          100%
+
+        </h3>
+
+        <p className="mt-3 text-gray-600">
+
+          Personalized Trips
+
+        </p>
+
+      </div>
+
+      <div className="rounded-3xl bg-white p-8 text-center shadow-lg">
+
+        <h3 className="text-5xl font-black text-emerald-700">
+
+          24/7
+
+        </h3>
+
+        <p className="mt-3 text-gray-600">
+
+          Travel Support
+
+        </p>
+
+      </div>
+
+    </div>
+
+    {/* Buttons */}
+
+<div className="mt-20 flex flex-wrap justify-center gap-6">
+
+  <a
+    href="https://search.google.com/local/writereview?placeid=ChIJ5WRKPtUTLxgR3jaUiiu327U"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="px-8 py-4 rounded-2xl bg-[#0B6E4F] text-white font-bold hover:bg-[#08523B] hover:-translate-y-1 transition duration-300 shadow-lg"
+  >
+    ⭐ Write a Google Review
+  </a>
+
+  <a
+  href="https://www.google.com/maps/search/?api=1&query=Curious+Safaris,+Ruiru,+Kenya&query_place_id=ChIJ5WRKPtUTLxgR3jaUiiu327U"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-8 py-4 rounded-2xl border-2 border-[#0B6E4F] text-[#0B6E4F] font-bold hover:bg-[#0B6E4F] hover:text-white hover:-translate-y-1 transition duration-300"
+>
+  💬 View Google Profile
+</a>
+
+</div>
 
   </div>
 
 </section>
 
 {/* FOOTER */}
-{/* ================= FOOTER ================= */}
-
-{/* ================= FOOTER ================= */}
 <footer className="relative overflow-hidden bg-[#050505] text-white">
-
   {/* Top Accent Line */}
-  <div className="h-[2px] bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
+
+  <div className="h-[2px] bg-gradient-to-r from-transparent via-[#C8A94C] to-transparent" />
 
   {/* Background Glow */}
-  <div className="absolute -top-32 -left-20 w-[450px] h-[450px] bg-emerald-500/10 rounded-full blur-[170px]" />
-  <div className="absolute -bottom-32 -right-20 w-[450px] h-[450px] bg-yellow-400/10 rounded-full blur-[170px]" />
 
-  <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-20">
+  <div className="absolute -top-32 -left-20 h-[450px] w-[450px] rounded-full bg-emerald-500/10 blur-[170px]" />
 
-    <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-14">
+  <div className="absolute -bottom-32 -right-20 h-[450px] w-[450px] rounded-full bg-yellow-400/10 blur-[170px]" />
 
-      {/* ================= Company ================= */}
+  <div className="relative mx-auto max-w-7xl px-6 py-20 lg:px-8">
+    <div className="grid gap-14 md:grid-cols-2 lg:grid-cols-3">
+      {/* Company */}
 
       <div>
-
         <h2 className="text-4xl font-black">
-          Savanna
-          <span className="text-[#D4AF37]"> Crown</span>
+          Curious
+          <span className="text-[#C8A94C]"> Safaris</span>
         </h2>
 
-        <div className="w-20 h-1 bg-[#D4AF37] rounded-full mt-4"></div>
+        <div className="mt-4 h-1 w-20 rounded-full bg-[#C8A94C]" />
 
-        <p className="mt-6 text-gray-400 leading-8">
-          Discover Kenya and East Africa through unforgettable safaris,
-          group adventures, road trips and tailor-made travel experiences.
-          We create journeys filled with wildlife, culture, comfort and
-          lifelong memories.
+        <p className="mt-6 leading-8 text-gray-400">
+          Curious Safaris is an Africa-based travel company
+          offering private, customized, and unforgettable
+          journeys across Africa.
+        </p>
+
+        <p className="mt-4 leading-8 text-gray-400">
+          Explore wildlife safaris, luxury tours, beach holidays,
+          horse-riding adventures, photography trips, cultural
+          experiences, and tailor-made journeys across the
+          continent.
         </p>
 
         {/* Social Icons */}
-        <div className="flex gap-4 mt-8">
 
+        <div className="mt-8 flex gap-4">
           {[
             {
               icon: <FaFacebookF />,
@@ -2032,172 +1267,141 @@ setSmallAboutIndex(prev=>(prev + 1) % aboutImages.length);
             },
             {
               icon: <FaWhatsapp />,
-              link: "https://wa.me/254720524627",
+              link: "https://wa.me/254745861688",
             },
             {
               icon: <FaYoutube />,
               link: "https://youtube.com",
             },
           ].map((item, index) => (
-
             <a
               key={index}
               href={item.link}
               target="_blank"
               rel="noreferrer"
-              className="w-12 h-12 rounded-full border border-white/10 bg-white/5 flex items-center justify-center hover:bg-[#0B6E4F] hover:border-[#0B6E4F] hover:-translate-y-2 transition duration-500"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 transition duration-500 hover:-translate-y-2 hover:border-emerald-700 hover:bg-emerald-700"
             >
               {item.icon}
             </a>
-
           ))}
-
         </div>
-
       </div>
 
-      {/* ================= Quick Links ================= */}
+      {/* Quick Links */}
 
       <div>
-
-        <h3 className="text-2xl font-bold mb-8">
+        <h3 className="mb-8 text-2xl font-bold">
           Quick Links
         </h3>
 
         <div className="space-y-5">
-
           {[
             { name: "Home", path: "/" },
-            { name: "About Us", path: "/about" },
-            { name: "Services", path: "/services" },
-            { name: "Upcoming Trips", path: "/upcomingtrips" },
+            { name: "Destinations", path: "/destinations" },
+            
             { name: "Gallery", path: "/gallery" },
+            { name: "About", path: "/about" },
             { name: "Contact", path: "/contact" },
           ].map((item) => (
-
             <Link
               key={item.name}
               to={item.path}
-              className="flex items-center gap-3 text-gray-400 hover:text-[#D4AF37] hover:translate-x-2 transition-all duration-300"
+              className="flex items-center gap-3 text-gray-400 transition-all duration-300 hover:translate-x-2 hover:text-[#C8A94C]"
             >
-
               <FaArrowRight className="text-xs" />
 
               {item.name}
-
             </Link>
-
           ))}
-
         </div>
-
       </div>
 
-      {/* ================= Contact ================= */}
+      {/* Contact */}
 
       <div>
-
-        <h3 className="text-2xl font-bold mb-8">
+        <h3 className="mb-8 text-2xl font-bold">
           Contact Us
         </h3>
 
         <div className="space-y-6">
+          {/* WhatsApp */}
 
-          {/* Phone */}
-
-          <div className="flex gap-4 p-4 rounded-2xl bg-white/5 hover:bg-[#0B6E4F]/20 transition">
-
-            <div className="w-12 h-12 rounded-xl bg-[#0B6E4F] flex items-center justify-center">
-              <FaPhoneAlt />
+          <div className="flex gap-4 rounded-2xl bg-white/5 p-4 transition hover:bg-emerald-700/20">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-700">
+              <FaWhatsapp />
             </div>
 
             <div>
-
               <p className="font-semibold">
-                Call Us
+                WhatsApp
               </p>
 
               <a
-                href="tel:+254720524627"
+                href="https://wa.me/254745861688"
                 className="text-gray-400 hover:text-white"
               >
-                +254 720 524 627
+                +254 745 861 688
               </a>
-
             </div>
-
           </div>
 
-          {/* Email */}
+          {/* Africa */}
 
-          <div className="flex gap-4 p-4 rounded-2xl bg-white/5 hover:bg-[#0B6E4F]/20 transition">
-
-            <div className="w-12 h-12 rounded-xl bg-[#0B6E4F] flex items-center justify-center">
-              <FaEnvelope />
+          <div className="flex gap-4 rounded-2xl bg-white/5 p-4 transition hover:bg-emerald-700/20">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-700">
+              <FaGlobe />
             </div>
 
             <div>
-
               <p className="font-semibold">
-                Email
+                Destinations
               </p>
 
-              <a
-                href="mailto:info@savannacrownsafarisafrica.co.ke"
-                className="text-gray-400 hover:text-white break-all"
-              >
-                info@savannacrownsafarisafrica.co.ke
-              </a>
-
+              <p className="text-gray-400">
+                East, West, North, Central & Southern Africa
+              </p>
             </div>
-
           </div>
 
           {/* Location */}
 
-          <div className="flex gap-4 p-4 rounded-2xl bg-white/5 hover:bg-[#0B6E4F]/20 transition">
-
-            <div className="w-12 h-12 rounded-xl bg-[#0B6E4F] flex items-center justify-center">
+          <div className="flex gap-4 rounded-2xl bg-white/5 p-4 transition hover:bg-emerald-700/20">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-700">
               <FaMapMarkerAlt />
             </div>
 
             <div>
-
               <p className="font-semibold">
-                Office
+                Based In
               </p>
 
               <p className="text-gray-400">
                 Nairobi, Kenya
               </p>
-
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
 
-    {/* ================= Bottom ================= */}
+    {/* Bottom */}
 
-    <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
+    <div className="mt-16 flex flex-col items-center justify-between gap-6 border-t border-white/10 pt-8 md:flex-row">
+      <p className="text-center text-gray-500 md:text-left">
+        © {new Date().getFullYear()}
 
-      <p className="text-gray-500 text-center md:text-left">
-        © {new Date().getFullYear()}{" "}
-        <span className="text-[#D4AF37] font-semibold">
-          Savanna Crown Safaris Africa
+        <span className="font-semibold text-[#C8A94C]">
+          {" "}
+          Curious Safaris
         </span>
+
         . All Rights Reserved.
       </p>
 
       <div className="flex items-center gap-6 text-sm">
-
         <Link
-          to="/home"
-          className="text-gray-500 hover:text-[#D4AF37] transition"
+          to="/privacy"
+          className="text-gray-500 transition hover:text-[#C8A94C]"
         >
           Privacy Policy
         </Link>
@@ -2205,148 +1409,30 @@ setSmallAboutIndex(prev=>(prev + 1) % aboutImages.length);
         <span className="text-white/20">|</span>
 
         <Link
-          to="/home"
-          className="text-gray-500 hover:text-[#D4AF37] transition"
+          to="/terms"
+          className="text-gray-500 transition hover:text-[#C8A94C]"
         >
           Terms & Conditions
         </Link>
-
       </div>
-
     </div>
-
   </div>
 
   {/* Scroll To Top */}
 
-  
-
+  <button
+    onClick={() =>
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      })
+    }
+    className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#C8A94C] text-black shadow-2xl transition duration-300 hover:scale-110"
+  >
+    <FaChevronUp />
+  </button>
 </footer>
-{selectedTrip && (
-  <div className="fixed inset-0 z-[999] bg-black/80 p-3 flex items-center justify-center">
-
-    <div
-      className="
-        relative
-        w-full
-        max-w-md
-        md:max-w-4xl
-        max-h-[95vh]
-        overflow-y-auto
-        bg-white
-        rounded-3xl
-        shadow-2xl
-      "
-    >
-      <button
-        onClick={() => setSelectedTrip(null)}
-        className="
-          absolute
-          top-3
-          right-3
-          z-20
-          w-10
-          h-10
-          rounded-full
-          bg-white
-          shadow-lg
-          font-bold
-        "
-      >
-        ✕
-      </button>
-
-      <div className="bg-black">
-        <img
-          src={selectedTrip.image}
-          alt={selectedTrip.title}
-          className="
-            w-full
-            h-[220px]
-            sm:h-[280px]
-            md:h-[450px]
-            object-cover
-          "
-        />
-      </div>
-
-      <div className="p-5 md:p-8">
-
-        <h2 className="text-2xl md:text-4xl font-black">
-          {selectedTrip.title}
-        </h2>
-
-        <p className="mt-4 text-gray-600 text-sm md:text-base leading-7">
-          {selectedTrip.description}
-        </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-6">
-
-          <div>
-            <p className="text-sm text-gray-500">
-              Date
-            </p>
-
-            <p className="font-bold">
-              {selectedTrip.date}
-            </p>
-          </div>
-
-          <div>
-            <p className="text-sm text-gray-500">
-              Duration
-            </p>
-
-            <p className="font-bold">
-              {selectedTrip.duration}
-            </p>
-          </div>
-
-          <div>
-            <p className="text-sm text-gray-500">
-              Price
-            </p>
-
-            <p className="font-bold text-[#0B6E4F]">
-              {selectedTrip.price}
-            </p>
-          </div>
-
-        </div>
-
-        <a
-          href="https://wa.me/254720524627"
-          target="_blank"
-          rel="noreferrer"
-          className="
-            sticky
-            bottom-0
-            flex
-            items-center
-            justify-center
-            gap-3
-            w-full
-            mt-6
-            py-4
-            rounded-full
-            bg-[#0B6E4F]
-            text-white
-            font-bold
-          "
-        >
-          <FaWhatsapp />
-
-          Book on WhatsApp
-        </a>
-
-      </div>
-
     </div>
-
-  </div>
-)}
-    </div>
-    
   );
 }
 
