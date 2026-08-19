@@ -1,95 +1,107 @@
 import { Link } from "react-router-dom";
 import {  FaFacebookF,  FaInstagram,  FaWhatsapp,  FaYoutube,  FaArrowRight,  FaMapMarkerAlt,  FaChevronUp,  FaGlobe,} from "react-icons/fa";
-//import nakuru from "../assets/nakuru.jpg";
-//import image16 from "../assets/image16.jpg";
-
-//import image2 from "../assets/image2.jpg";
-//import west from "../assets/west.jpg";
+import nile from "../assets/nile.jpg";
+import okavango from "../assets/okavango.jpg";
+import krugerpark from "../assets/krugerpark.jpg";
+import pyramids from "../assets/pyramids.jpg";
+import sahara from "../assets/sahara.jpg";
 import amboseli from "../assets/amboseli.jpg";
 import victoria1 from "../assets/victoria1.jpg";
 import zambezi from "../assets/zambezi.jpg";
 import luangwa from "../assets/luangwa.jpg";
 import nakuru from "../assets/nakuru.jpg";
 import ngorongoro from "../assets/ngorongoro.jpg";
-import destination1 from "../assets/destination1.jpg";
+import destination from "../assets/destination.jpg";
 import serengeti from "../assets/serengeti.jpg";
-//import tanzania from "../assets/tanzania.jpg";
+import morocco from "../assets/morocco.jpg";
+import egypt from "../assets/egypt.jpg";
+import barkal from "../assets/barkal.jpg";
+import etoshapark from "../assets/etoshapark.jpg";
 import Wilderbeast from "../assets/Wilderbeast.jpg";
 import naivasha from "../assets/naivasha.jpg";
+
 
 export default function Destination() {
   return (
     <div className="bg-white">
      {/* Hero Section */}
 
-<section
-  className="group relative flex min-h-[62vh] items-center justify-center overflow-hidden lg:min-h-[68vh]"
->
+<section className="relative min-h-[55vh] overflow-hidden bg-[#102F27] sm:min-h-[58vh] lg:min-h-[60vh]">
+
   {/* Background Image */}
-  <div
-  className="absolute inset-0 bg-cover bg-center ..."
-  style={{ backgroundImage: `url(${destination1})` }}
-/>
-
-  {/* Dark Overlay */}
-  <div className="absolute inset-0 bg-black/45" />
-
-  {/* Cinematic Gradient */}
-  <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/20 to-black/80" />
-
-  {/* Side Gradient */}
-  <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30" />
-
-  {/* Content */}
-  <div className="relative z-10 mx-auto w-full max-w-4xl px-6 py-20 text-center text-white sm:px-8">
-
-    {/* Eyebrow */}
-    <div className="mb-6 flex justify-center">
-      <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-5 py-2 text-[10px] font-semibold uppercase tracking-[3px] text-white backdrop-blur-md sm:text-xs">
-        <span className="h-1.5 w-1.5 rounded-full bg-[#C8A94C]" />
-        Explore Africa
-      </span>
-    </div>
-
-    {/* Heading */}
-    <h1 className="mx-auto max-w-3xl text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-      Extraordinary
-      <span className="mt-2 block text-[#C8A94C]">
-        Destinations
-      </span>
-    </h1>
-
-    {/* Description */}
-    <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/80 sm:text-base sm:leading-8 lg:text-lg">
-      Discover iconic wildlife reserves, breathtaking landscapes,
-      tropical beaches, and unforgettable safari experiences across
-      Africa.
-    </p>
-
-    {/* Buttons */}
-   
-
-    {/* Bottom Info */}
-    <div className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[10px] font-medium uppercase tracking-[2px] text-white/60 sm:text-xs">
-      <span>Kenya</span>
-
-      <span className="h-1 w-1 rounded-full bg-[#C8A94C]" />
-
-      <span>Tanzania</span>
-
-      <span className="h-1 w-1 rounded-full bg-[#C8A94C]" />
-
-      <span>Uganda</span>
-
-      <span className="h-1 w-1 rounded-full bg-[#C8A94C]" />
-
-      <span>Rwanda</span>
-    </div>
-
+  <div className="absolute inset-0">
+    <img
+      src={destination}
+      alt="African safari destination"
+      className="h-full w-full object-cover object-center"
+    />
   </div>
 
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/35" />
+
+  {/* Text Protection */}
+  <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/35 to-transparent" />
+
   {/* Bottom Fade */}
-  <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#F8FAF8] to-transparent" />
+  <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent" />
+
+  {/* Content */}
+  <div className="relative z-10 flex min-h-[55vh] items-center sm:min-h-[58vh] lg:min-h-[60vh]">
+    <div className="mx-auto w-full max-w-7xl px-6 py-16 sm:px-8 lg:px-12">
+
+      <div className="max-w-2xl">
+
+        {/* Eyebrow */}
+        <div className="mb-4">
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-[9px] font-semibold uppercase tracking-[2.5px] text-white backdrop-blur-md sm:text-[10px]">
+            <span className="h-1.5 w-1.5 rounded-full bg-[#C8A94C]" />
+            Explore Africa
+          </span>
+        </div>
+
+        {/* Heading */}
+        <h1 className="text-4xl font-extrabold leading-[1] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+          Extraordinary
+          <span className="block text-[#C8A94C]">
+            Destinations
+          </span>
+        </h1>
+
+        {/* Description */}
+        <p className="mt-5 max-w-xl text-sm leading-6 text-white/80 sm:text-base sm:leading-7">
+          Discover iconic wildlife reserves, breathtaking landscapes,
+          tropical beaches, and unforgettable safari experiences across Africa.
+        </p>
+
+        {/* Buttons */}
+        
+
+      </div>
+    </div>
+  </div>
+
+  {/* Bottom Info */}
+  <div className="absolute bottom-0 left-0 right-0 z-10 border-t border-white/10 bg-black/20 backdrop-blur-sm">
+    <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-3 sm:px-8 lg:px-12">
+
+      <span className="hidden text-[9px] font-semibold uppercase tracking-[2px] text-white/60 sm:block">
+        Safari Destinations
+      </span>
+
+      <div className="flex flex-wrap items-center gap-3 text-[9px] font-medium uppercase tracking-[1.5px] text-white/60 sm:text-[10px]">
+        <span>Kenya</span>
+        <span className="text-[#C8A94C]">•</span>
+        <span>Tanzania</span>
+        <span className="text-[#C8A94C]">•</span>
+        <span>Uganda</span>
+        <span className="text-[#C8A94C]">•</span>
+        <span>Rwanda</span>
+      </div>
+
+    </div>
+  </div>
+
 </section>
 
 {/* ================= Kenya Safari Destination ================= */}
@@ -3271,7 +3283,7 @@ export default function Destination() {
         <div className="overflow-hidden">
 
           <img
-            src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1200&q=85"
+            src={etoshapark}
             alt="Etosha National Park wildlife"
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
@@ -3637,7 +3649,7 @@ export default function Destination() {
         <div className="overflow-hidden">
 
           <img
-            src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&w=1200&q=85"
+            src={okavango}
             alt="Okavango Delta Botswana"
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
@@ -4096,7 +4108,7 @@ export default function Destination() {
         <div className="overflow-hidden">
 
           <img
-            src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1200&q=85"
+            src={krugerpark}
             alt="Kruger National Park wildlife"
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
@@ -4883,436 +4895,6 @@ export default function Destination() {
 
 {/* ================= Morocco Adventure ================= */}
 
-<section className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
-
-  {/* Background Effects */}
-  <div className="pointer-events-none absolute -right-40 -top-40 h-[350px] w-[350px] rounded-full bg-yellow-300/10 blur-[120px] sm:h-[500px] sm:w-[500px] sm:blur-[160px]" />
-  <div className="pointer-events-none absolute -bottom-40 -left-40 h-[350px] w-[350px] rounded-full bg-emerald-600/10 blur-[120px] sm:h-[500px] sm:w-[500px] sm:blur-[160px]" />
-
-  <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-
-    {/* ================= HEADER ================= */}
-
-    <div className="mx-auto max-w-5xl text-center">
-
-      <span className="inline-block rounded-full bg-emerald-100 px-4 py-2 text-[10px] font-bold uppercase tracking-[3px] text-emerald-700 sm:px-6 sm:text-sm sm:tracking-[4px]">
-        Morocco Adventure
-      </span>
-
-      <h2 className="mt-6 text-3xl font-black leading-[1.1] sm:mt-8 sm:text-5xl md:text-6xl lg:text-7xl">
-
-        7-Day Morocco
-
-        <span className="mt-3 block text-2xl leading-tight text-[#C8A94C] sm:text-4xl md:text-5xl">
-          Marrakech, Sahara & Ancient Cities
-        </span>
-
-      </h2>
-
-      <p className="mx-auto mt-6 max-w-4xl text-base leading-7 text-gray-600 sm:mt-8 sm:text-lg sm:leading-8">
-        Journey through Morocco's ancient medinas, dramatic Atlas
-        Mountains and endless Sahara dunes. Experience Marrakech,
-        Ait Ben Haddou, Dades Valley, Merzouga and the historic city
-        of Fes on an unforgettable North African adventure.
-      </p>
-
-    </div>
-
-
-    {/* ================= DESTINATION IMAGES ================= */}
-
-    <div className="mt-12 grid gap-5 sm:mt-16 sm:gap-6 md:grid-cols-3">
-
-      {/* Marrakech */}
-
-      <div className="group overflow-hidden rounded-[28px] bg-white shadow-lg sm:rounded-[35px]">
-
-        <div className="overflow-hidden">
-
-          <img
-            src="https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=1200&q=85"
-            alt="Marrakech Morocco Medina"
-            loading="lazy"
-            className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
-          />
-
-        </div>
-
-        <div className="p-5 text-center sm:p-6">
-
-          <h3 className="text-xl font-bold sm:text-2xl">
-            Marrakech
-          </h3>
-
-          <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Explore the vibrant Medina, Jemaa el-Fnaa, colourful
-            souks, palaces and traditional Moroccan culture.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      {/* Sahara */}
-
-      <div className="group overflow-hidden rounded-[28px] bg-white shadow-lg sm:rounded-[35px]">
-
-        <div className="overflow-hidden">
-
-          <img
-            src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1200&q=85"
-            alt="Sahara Desert Morocco"
-            loading="lazy"
-            className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
-          />
-
-        </div>
-
-        <div className="p-5 text-center sm:p-6">
-
-          <h3 className="text-xl font-bold sm:text-2xl">
-            Sahara Desert
-          </h3>
-
-          <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Ride camels across the golden dunes, watch the sunset
-            and spend an unforgettable night beneath the stars.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      {/* Fes */}
-
-      <div className="group overflow-hidden rounded-[28px] bg-white shadow-lg sm:rounded-[35px]">
-
-        <div className="overflow-hidden">
-
-          <img
-            src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=85"
-            alt="Fes Morocco ancient city"
-            loading="lazy"
-            className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
-          />
-
-        </div>
-
-        <div className="p-5 text-center sm:p-6">
-
-          <h3 className="text-xl font-bold sm:text-2xl">
-            Fes
-          </h3>
-
-          <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Discover one of Morocco's oldest imperial cities,
-            historic medinas, souks and traditional crafts.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    {/* ================= PACKAGE DETAILS ================= */}
-
-    <div className="mt-12 grid gap-6 sm:mt-16 lg:grid-cols-3 lg:gap-8">
-
-      {/* Details */}
-
-      <div className="rounded-[28px] bg-[#F8F6F1] p-6 shadow-xl sm:rounded-[35px] sm:p-10">
-
-        <h3 className="text-2xl font-black">
-          Tour Details
-        </h3>
-
-        <div className="mt-6 space-y-5 text-sm leading-6 text-gray-600 sm:mt-8 sm:text-base">
-
-          <p>
-            <strong>Duration:</strong>{" "}
-            7 Days / 6 Nights
-          </p>
-
-          <p>
-            <strong>Route:</strong>{" "}
-            Marrakech – Ait Ben Haddou – Merzouga –
-            Dades Valley – Fes – Marrakech
-          </p>
-
-          <p>
-            <strong>Transport:</strong>{" "}
-            Private 4x4/minivan with professional
-            driver-guide
-          </p>
-
-          <p>
-            <strong>Highlights:</strong>{" "}
-            Marrakech Medina, Atlas Mountains, Ait Ben Haddou,
-            Todra Gorge, Sahara Desert, camel ride and Fes Medina
-          </p>
-
-        </div>
-
-      </div>
-
-
-      {/* Itinerary */}
-
-      <div className="rounded-[28px] bg-[#F8F6F1] p-6 shadow-xl sm:rounded-[35px] sm:p-10 lg:col-span-2">
-
-        <h3 className="text-2xl font-black">
-          7-Day Itinerary
-        </h3>
-
-        <div className="mt-6 grid gap-4 sm:mt-8 sm:gap-6 md:grid-cols-2">
-
-          {[
-            "Day 1: Arrival in Marrakech",
-            "Day 2: Marrakech City Experience",
-            "Day 3: Marrakech → Dades Valley",
-            "Day 4: Dades Valley → Merzouga",
-            "Day 5: Merzouga → Fes",
-            "Day 6: Fes → Marrakech",
-            "Day 7: Marrakech & Departure",
-          ].map((day, index) => (
-
-            <div
-              key={index}
-              className="flex items-center gap-3 rounded-2xl bg-white p-4 sm:gap-4 sm:p-5"
-            >
-
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-700 text-sm font-bold text-white sm:h-12 sm:w-12 sm:text-base">
-                {index + 1}
-              </div>
-
-              <p className="text-sm font-semibold leading-5 text-gray-700 sm:text-base">
-                {day}
-              </p>
-
-            </div>
-
-          ))}
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    {/* ================= PRICING ================= */}
-
-    <div className="mt-12 rounded-[30px] bg-[#0A1A13] p-6 text-white sm:mt-16 sm:rounded-[40px] sm:p-10 lg:p-12">
-
-      <h3 className="text-center text-3xl font-black sm:text-4xl">
-        Morocco Tour Pricing
-      </h3>
-
-      <p className="mt-3 text-center text-sm text-white/60 sm:text-base">
-        Private Morocco adventure pricing per person.
-      </p>
-
-      <div className="mt-8 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-5">
-
-        {[
-          {
-            group: "1 Person",
-            price: "USD 2,200",
-          },
-          {
-            group: "2 People",
-            price: "USD 1,650",
-          },
-          {
-            group: "3–4 People",
-            price: "USD 1,400",
-          },
-          {
-            group: "5–6 People",
-            price: "USD 1,250",
-          },
-          {
-            group: "7+ People",
-            price: "USD 1,150",
-          },
-        ].map((item, index) => (
-
-          <div
-            key={index}
-            className="rounded-2xl bg-white/10 p-6 text-center backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:bg-white/15 sm:rounded-3xl sm:p-8"
-          >
-
-            <p className="text-sm font-medium text-white/60">
-              {item.group}
-            </p>
-
-            <p className="mt-2 text-2xl font-black sm:mt-3 sm:text-3xl">
-              {item.price}
-            </p>
-
-            <p className="mt-1 text-xs text-white/50 sm:text-sm">
-              per person
-            </p>
-
-          </div>
-
-        ))}
-
-      </div>
-
-    </div>
-
-
-    {/* ================= INCLUDED ================= */}
-
-    <div className="mt-12 rounded-[30px] bg-[#F8F6F1] p-6 sm:mt-16 sm:rounded-[40px] sm:p-10 lg:p-12">
-
-      <h3 className="text-center text-3xl font-black sm:text-4xl">
-        What's Included
-      </h3>
-
-      <div className="mt-8 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-4">
-
-        {[
-          "6 nights accommodation",
-          "Private transportation",
-          "Professional English-speaking driver-guide",
-          "Airport transfers",
-          "Ait Ben Haddou visit",
-          "Todra Gorge visit",
-          "Sahara camel ride",
-          "Desert camp experience",
-          "City sightseeing as listed",
-          "Breakfast, lunch and dinner",
-          "Bottled drinking water",
-        ].map((item, index) => (
-
-          <div
-            key={index}
-            className="rounded-2xl bg-white p-5 text-center shadow-lg transition duration-300 hover:-translate-y-1 sm:p-6"
-          >
-
-            <p className="text-sm font-semibold leading-6 text-gray-700 sm:text-base">
-
-              <span className="mr-2 font-black text-emerald-700">
-                ✓
-              </span>
-
-              {item}
-
-            </p>
-
-          </div>
-
-        ))}
-
-      </div>
-
-    </div>
-
-
-    {/* ================= EXPERIENCE HIGHLIGHTS ================= */}
-
-    <div className="mt-12 grid gap-5 sm:mt-16 md:grid-cols-3">
-
-      {/* Medina */}
-
-      <div className="rounded-[28px] bg-emerald-50 p-6 sm:rounded-[35px] sm:p-8">
-
-        <div className="text-3xl">
-          🕌
-        </div>
-
-        <h3 className="mt-4 text-xl font-black">
-          Ancient Medinas
-        </h3>
-
-        <p className="mt-2 text-sm leading-6 text-gray-600">
-          Wander through Marrakech and Fes, discovering historic
-          architecture, colourful souks and traditional crafts.
-        </p>
-
-      </div>
-
-
-      {/* Sahara */}
-
-      <div className="rounded-[28px] bg-[#F8F6F1] p-6 sm:rounded-[35px] sm:p-8">
-
-        <div className="text-3xl">
-          🐪
-        </div>
-
-        <h3 className="mt-4 text-xl font-black">
-          Sahara Experience
-        </h3>
-
-        <p className="mt-2 text-sm leading-6 text-gray-600">
-          Ride camels through the desert, watch the sunset and
-          spend the night at a traditional Sahara camp.
-        </p>
-
-      </div>
-
-
-      {/* Mountains */}
-
-      <div className="rounded-[28px] bg-emerald-50 p-6 sm:rounded-[35px] sm:p-8">
-
-        <div className="text-3xl">
-          🏔️
-        </div>
-
-        <h3 className="mt-4 text-xl font-black">
-          Atlas Mountains
-        </h3>
-
-        <p className="mt-2 text-sm leading-6 text-gray-600">
-          Cross spectacular mountain landscapes, ancient valleys
-          and dramatic rock formations on the journey south.
-        </p>
-
-      </div>
-
-    </div>
-
-
-    {/* ================= FINAL CTA ================= */}
-
-    <div className="mt-12 rounded-[30px] bg-emerald-700 px-6 py-12 text-center text-white sm:mt-16 sm:rounded-[40px] sm:px-8 sm:py-16">
-
-      <p className="text-[10px] font-bold uppercase tracking-[3px] text-emerald-100 sm:text-sm sm:tracking-[4px]">
-        Curious Safaris
-      </p>
-
-      <h3 className="mt-4 text-3xl font-black leading-tight sm:text-4xl md:text-5xl">
-        From ancient medinas to endless Sahara dunes.
-      </h3>
-
-      <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-emerald-50 sm:mt-5 sm:text-lg sm:leading-8">
-        Discover Morocco through its ancient cities, dramatic
-        landscapes, rich culture and unforgettable desert experiences.
-      </p>
-
-     <a
-  href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20this%20Safari."
-  target="_blank"
-  rel="noopener noreferrer"
-  className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
->
-  Book This Safari
-  <span className="ml-2">→</span>
-</a>
-
-    </div>
-
-  </div>
-
-</section>
 
 {/* ================= Morocco Adventure ================= */}
 
@@ -5394,7 +4976,7 @@ export default function Destination() {
         <div className="overflow-hidden">
 
           <img
-            src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1200&q=85"
+            src={sahara}
             alt="Sahara Desert Morocco"
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
@@ -5425,7 +5007,7 @@ export default function Destination() {
         <div className="overflow-hidden">
 
           <img
-            src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=85"
+            src={morocco}
             alt="Fes Morocco ancient city"
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
@@ -5796,7 +5378,7 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
         <div className="overflow-hidden">
 
           <img
-            src="https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=1200&q=85"
+            src={egypt}
             alt="Pyramids of Giza Cairo Egypt"
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
@@ -5858,7 +5440,7 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
         <div className="overflow-hidden">
 
           <img
-            src="https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=1200&q=85"
+            src={nile}
             alt="Nile River Aswan Egypt"
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
@@ -6230,7 +5812,7 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
         <div className="overflow-hidden">
 
           <img
-            src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=85"
+            src={pyramids}
             alt="Ancient pyramids and desert landscape"
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
@@ -6261,7 +5843,7 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
         <div className="overflow-hidden">
 
           <img
-            src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1200&q=85"
+            src={barkal}
             alt="Nubian desert landscape"
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
@@ -6292,11 +5874,11 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
         <div className="overflow-hidden">
 
           <img
-            src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85"
-            alt="Nile River landscape"
-            loading="lazy"
-            className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
-          />
+  src={nile}
+  alt="Nile River landscape in Sudan"
+  loading="lazy"
+  className="h-[320px] w-full object-cover object-center transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
+/>
 
         </div>
 

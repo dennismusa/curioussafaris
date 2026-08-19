@@ -43,6 +43,11 @@ import image10 from "../assets/image10.jpg";
 import meru from "../assets/meru.jpg";
 import weekends from "../assets/weekends.jpg";
 
+
+import airbaloon from "../assets/airbaloon.jpg";
+import morocco from "../assets/morocco.jpg";
+import egypt from "../assets/egypt.jpg";
+
 function Gallery() {
   const gallery = [
     { image: team, title: "Group Adventures" },
@@ -52,7 +57,7 @@ function Gallery() {
     { image: diani, title: "Beach Holidays" },
     { image: kenya, title: "Discover Kenya" },
     { image: nakuru, title: "Lake Nakuru" },
-    { image: image10, title: "Safari Moments" },
+    
     { image: nairobi, title: "Nature Experience" },
     { image: image1, title: "Adventure Tours" },
     { image: home5, title: "Scenic Landscapes" },
@@ -64,6 +69,13 @@ function Gallery() {
     { image: hellsgate, title: "Hell's Gate" },
     { image: serengeti, title: "Serengeti Safari" },
     { image: image14, title: "Explore Tanzania" },
+     { image: victoria1, title: "Victoria Falls" },
+  { image: zambezi, title: "Zambezi River" },
+  { image: luangwa, title: "South Luangwa" },
+  { image: ngorongoro, title: "Ngorongoro Crater" },
+  { image: airbaloon, title: "African Balloon Safari" },
+  { image: morocco, title: "Discover Morocco" },
+  { image: egypt, title: "Explore Egypt" },
   ];
 
   return (
@@ -534,7 +546,7 @@ function Gallery() {
           <div className="mt-10 flex flex-wrap justify-center gap-5">
 
             <Link
-              to="/upcoming-trips"
+              to="/destinations"
               className="px-8 py-4 rounded-full bg-yellow-400 text-black font-bold hover:scale-105 transition"
             >
               View Upcoming Trips
@@ -640,7 +652,7 @@ function Gallery() {
             { name: "Home", path: "/" },
             { name: "About Us", path: "/about" },
             { name: "Services", path: "/services" },
-            { name: "Upcoming Trips", path: "/upcomingtrips" },
+            
             { name: "Gallery", path: "/gallery" },
             { name: "Contact", path: "/contact" },
           ].map((item) => (

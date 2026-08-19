@@ -20,7 +20,7 @@ import climbinglongonot from "../assets/climbinglongonot.jpg";
 import climbingkili from "../assets/climbingkili.jpg";
 import meru from "../assets/meru.jpg";
 import hellsgate from "../assets/hellsgate.jpg";
-import gorilla from "../assets/gorilla.jpg";
+import diani from "../assets/diani.jpg";
 import serengeti from "../assets/serengeti.jpg";
 import tanzania from "../assets/tanzania.jpg";
 import Wilderbeast from "../assets/Wilderbeast.jpg";
@@ -29,12 +29,16 @@ import zambezi from "../assets/zambezi.jpg";
 import luangwa from "../assets/luangwa.jpg";
 import ngorongoro from "../assets/ngorongoro.jpg";
 import kenya from "../assets/kenya.jpg";
-import image17 from "../assets/image17.jpg";
+import airbaloon from "../assets/airbaloon.jpg";
+import morocco from "../assets/morocco.jpg";
+import egypt from "../assets/egypt.jpg";
+import image10 from "../assets/image10.jpg";
+import destination1 from "../assets/destination1.jpg";
 function Home() {
   useLanguageSync();
-  const images = [meru, kenya,amboseli,Wilderbeast];
+  const images = [airbaloon, egypt,morocco,image10];
   const [index, setIndex] = useState(0);
-const aboutImages = [cruiser2,image17,image16,nakuru,west,amboseli];
+const aboutImages = [airbaloon, egypt,morocco,image10,west,amboseli];
 const [aboutIndex,setAboutIndex]=useState(0);
 const [smallAboutIndex,setSmallAboutIndex]=useState(1);
 
@@ -87,7 +91,7 @@ setSmallAboutIndex(prev=>(prev + 1) % aboutImages.length);
   {/* IMAGE SLIDER */}
 
   <div className="absolute inset-0">
-    {[meru, kenya, amboseli, Wilderbeast].map((img, i) => (
+    {[airbaloon, egypt,morocco,diani].map((img, i) => (
       <div
         key={i}
         className="absolute inset-0 transition-all duration-[3500ms] ease-in-out"
@@ -175,88 +179,94 @@ setSmallAboutIndex(prev=>(prev + 1) % aboutImages.length);
 
       {/* ABOUT / EXPERIENCE SECTION */}
 {/* ABOUT / EXPERIENCE SECTION */}
-<section className="relative overflow-hidden bg-[#F6FAF8] py-28">
+<section className="relative overflow-hidden bg-[#F6FAF8] py-20 sm:py-24 lg:py-28">
 
   {/* Background Effects */}
-
-  <div className="absolute top-0 right-0 h-[500px] w-[500px] rounded-full bg-emerald-100 opacity-40 blur-3xl" />
-
+  <div className="absolute right-0 top-0 h-[500px] w-[500px] rounded-full bg-emerald-100/40 blur-3xl" />
   <div className="absolute bottom-0 left-0 h-[400px] w-[400px] rounded-full bg-emerald-50 blur-3xl" />
 
   <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
 
-    <div className="grid items-center gap-20 lg:grid-cols-[1fr_1.1fr]">
+    <div className="grid items-center gap-14 lg:grid-cols-[0.95fr_1.05fr] lg:gap-20">
 
-      {/* IMAGE SIDE */}
-
+      {/* ================= IMAGE SIDE ================= */}
       <div className="relative">
 
-        <div className="group relative overflow-hidden rounded-[40px] shadow-2xl">
+        {/* Decorative Gold Frame */}
+        <div className="absolute -bottom-5 -left-5 h-full w-full rounded-[36px] border-2 border-[#C8A94C]/30" />
+
+        {/* Image Container */}
+        <div className="group relative h-[520px] overflow-hidden rounded-[36px] bg-gray-100 shadow-2xl sm:h-[600px] lg:h-[680px]">
 
           <img
-            src={amboseli}
+            src={destination1}
             alt="Curious Safaris African adventure"
-            className="h-[520px] w-full object-cover transition-all duration-[2000ms] group-hover:scale-110"
+            className="h-full w-full object-cover object-center transition-transform duration-[2000ms] group-hover:scale-105"
           />
 
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent" />
+          {/* Image Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent" />
+
+          {/* Image Caption */}
+          <div className="absolute bottom-8 left-8 right-8">
+
+            <p className="text-[10px] font-semibold uppercase tracking-[3px] text-white/70">
+              Curious Safaris
+            </p>
+
+            <h3 className="mt-2 text-2xl font-bold text-white sm:text-3xl">
+              Explore Africa
+            </h3>
+
+          </div>
 
         </div>
 
-        <div className="absolute top-8 left-8 rounded-3xl bg-white/95 px-6 py-5 shadow-xl backdrop-blur-xl">
+        {/* Floating Destination Badge */}
+        <div className="absolute left-5 top-6 rounded-2xl border border-white/70 bg-white/95 px-6 py-4 shadow-xl backdrop-blur-md sm:left-7 sm:top-8">
 
-          <h2 className="text-4xl font-black text-emerald-500">
+          <h2 className="text-3xl font-black text-[#0B6E4F]">
             15+
           </h2>
 
-          <p className="text-sm text-gray-700">
+          <p className="text-xs font-medium text-gray-600">
             African Destinations
           </p>
 
         </div>
 
-        <div className="absolute -bottom-10 -right-10 hidden h-[280px] w-[230px] overflow-hidden rounded-[30px] border-[8px] border-white shadow-2xl md:block">
-
-          <img
-            src={amboseli}
-            alt="Gorilla trekking experience"
-            className="h-full w-full object-cover transition duration-[2000ms] hover:scale-110"
-          />
-
-        </div>
-
       </div>
 
-      {/* CONTENT SIDE */}
 
+      {/* ================= CONTENT SIDE ================= */}
       <div>
 
-        <span className="font-bold uppercase tracking-[5px] text-emerald-500">
-
+        {/* Eyebrow */}
+        <span className="text-xs font-bold uppercase tracking-[4px] text-[#0B6E4F]">
           Curious Safaris
-
         </span>
 
-        <h2 className="mt-6 text-4xl font-black leading-tight text-gray-900 md:text-6xl">
+        {/* Heading */}
+        <h2 className="mt-5 text-4xl font-black leading-[1.05] tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
 
           Discover Africa
 
-          <span className="block text-emerald-500">
-
+          <span className="mt-3 block text-[#0B6E4F]">
             Lost in the Right Direction
-
           </span>
 
         </h2>
 
-        <p className="mt-8 text-lg leading-8 text-gray-600">
+        {/* Description */}
+        <p className="mt-7 max-w-2xl text-base leading-8 text-gray-600 lg:text-lg">
 
           From the legendary plains of the Serengeti and Maasai Mara
           to the misty forests of Rwanda and Uganda, Curious Safaris
           creates unforgettable journeys across Africa.
 
-          <br />
-          <br />
+        </p>
+
+        <p className="mt-5 max-w-2xl text-base leading-8 text-gray-600 lg:text-lg">
 
           Experience extraordinary wildlife, breathtaking landscapes,
           vibrant cultures, tropical coastlines and carefully crafted
@@ -264,90 +274,98 @@ setSmallAboutIndex(prev=>(prev + 1) % aboutImages.length);
 
         </p>
 
-        {/* FEATURES */}
 
-        <div className="mt-10 space-y-6">
+        {/* ================= FEATURES ================= */}
+        <div className="mt-9 space-y-6">
 
+
+          {/* Wildlife */}
           <div className="flex items-start gap-4">
 
-            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-100 text-2xl">
-
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald-100 text-xl">
               🦁
-
             </div>
 
             <div>
 
-              <h3 className="text-lg font-bold">
-
+              <h3 className="font-bold text-gray-900">
                 Wildlife Safaris
-
               </h3>
 
-              <p className="text-gray-600">
-
+              <p className="mt-1 text-sm leading-6 text-gray-600">
                 Explore Africa's most iconic national parks and
                 discover the Big Five.
-
               </p>
 
             </div>
 
           </div>
 
+
+          {/* Gorilla */}
           <div className="flex items-start gap-4">
 
-            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-100 text-2xl">
-
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald-100 text-xl">
               🦍
-
             </div>
 
             <div>
 
-              <h3 className="text-lg font-bold">
-
+              <h3 className="font-bold text-gray-900">
                 Gorilla & Primate Experiences
-
               </h3>
 
-              <p className="text-gray-600">
-
-                Trek through ancient rainforests in search of mountain
-                gorillas and chimpanzees.
-
+              <p className="mt-1 text-sm leading-6 text-gray-600">
+                Trek through ancient rainforests in search of
+                mountain gorillas and chimpanzees.
               </p>
 
             </div>
 
           </div>
 
+
+          {/* Culture */}
           <div className="flex items-start gap-4">
 
-            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-100 text-2xl">
-
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald-100 text-xl">
               🌍
-
             </div>
 
             <div>
 
-              <h3 className="text-lg font-bold">
-
+              <h3 className="font-bold text-gray-900">
                 Culture & Coastal Escapes
-
               </h3>
 
-              <p className="text-gray-600">
-
-                Discover vibrant cultures, ancient cities, waterfalls,
-                deserts and pristine beaches across Africa.
-
+              <p className="mt-1 text-sm leading-6 text-gray-600">
+                Discover vibrant cultures, ancient cities,
+                waterfalls, deserts and pristine beaches across Africa.
               </p>
 
             </div>
 
           </div>
+
+        </div>
+
+
+        {/* CTA */}
+        <div className="mt-10 flex flex-wrap gap-4">
+
+          <a
+            href="/contact"
+            className="rounded-full bg-[#0B6E4F] px-7 py-3.5 text-sm font-bold text-white shadow-lg transition duration-300 hover:-translate-y-1 hover:bg-[#09583F]"
+          >
+            Plan Your Safari
+          </a>
+
+          <a
+            href="/destinations"
+            className="rounded-full border-2 border-[#0B6E4F] px-7 py-3.5 text-sm font-bold text-[#0B6E4F] transition duration-300 hover:bg-[#0B6E4F] hover:text-white"
+          >
+            Explore Destinations
+          </a>
 
         </div>
 
