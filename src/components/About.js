@@ -2,7 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {  FaFacebookF,  FaInstagram,  FaWhatsapp,  FaYoutube,  FaArrowRight,  FaMapMarkerAlt,  FaChevronUp,  FaGlobe,} from "react-icons/fa";
 
+import founder from "../assets/founder.jpg";
 import airbaloon from "../assets/airbaloon.jpg";
+import discover1 from "../assets/discover1.jpg";
 //import destination from "../assets/destination.jpg";
 //import home2 from "../assets/home2.jpg";
 //import home5 from "../assets/home5.jpg";
@@ -71,6 +73,197 @@ function About() {
 
 
 
+
+
+
+{/* ================= Founder Section ================= */}
+{/* ================= TourGuideOmbima Founder Section ================= */}
+<section className="relative overflow-hidden bg-[#F5F0E6] py-20 md:py-24">
+
+  {/* ================= Subtle Background Decoration ================= */}
+  <div className="absolute -left-32 top-10 h-72 w-72 rounded-full bg-[#C8A94C]/10 blur-[100px]" />
+  <div className="absolute -right-32 bottom-0 h-72 w-72 rounded-full bg-[#D6B98C]/15 blur-[100px]" />
+
+  <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
+
+    {/* ================= Main Content ================= */}
+    <div className="grid items-center gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
+
+
+      {/* ================================================= */}
+      {/* FOUNDER IMAGE */}
+      {/* ================================================= */}
+
+      <div className="group relative mx-auto w-full max-w-md">
+
+        {/* Soft Glow */}
+        <div className="absolute -inset-3 rounded-[35px] bg-[#C8A94C]/20 blur-xl opacity-60 transition duration-700 group-hover:opacity-100" />
+
+        {/* Image Container */}
+        <div className="relative overflow-hidden rounded-[30px] border border-[#C8A94C]/20 bg-white p-2 shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
+
+          <div className="relative overflow-hidden rounded-[24px]">
+
+            <img
+              src={require("../assets/founder.jpg")}
+              alt="Ombima - Founder of TourGuideOmbima"
+              className="h-[400px] w-full object-cover object-center transition duration-700 ease-out group-hover:scale-105"
+            />
+
+            {/* Image Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent" />
+
+            {/* Image Text */}
+            <div className="absolute bottom-5 left-5">
+
+              <p className="text-[10px] font-bold uppercase tracking-[3px] text-[#E4CA72]">
+                Founder & Safari Guide
+              </p>
+
+              <h3 className="mt-1 text-2xl font-black text-white">
+                Ombima
+              </h3>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Floating Badge */}
+        <div className="absolute -bottom-5 -right-3 rounded-2xl border border-[#C8A94C]/20 bg-white px-5 py-4 shadow-xl">
+
+          <p className="text-[10px] font-bold uppercase tracking-[2px] text-gray-400">
+            Philosophy
+          </p>
+
+          <p className="mt-1 text-sm font-bold text-[#8A6B20]">
+            Travel Differently
+          </p>
+
+        </div>
+
+      </div>
+
+
+      {/* ================================================= */}
+      {/* FOUNDER CONTENT */}
+      {/* ================================================= */}
+
+      <div>
+
+        {/* Eyebrow */}
+        <div className="mb-5 flex items-center gap-3">
+
+          <span className="h-px w-10 bg-[#C8A94C]" />
+
+          <span className="text-xs font-bold uppercase tracking-[3px] text-[#9B7925]">
+            Meet the Founder
+          </span>
+
+        </div>
+
+
+        {/* Heading */}
+        <h2 className="text-4xl font-black leading-tight text-[#171510] md:text-5xl">
+
+          The person behind
+
+          <span className="block text-[#B28B2C]">
+            the adventure.
+          </span>
+
+        </h2>
+
+
+        {/* Introduction */}
+        <p className="mt-6 max-w-2xl text-lg leading-8 text-[#4F4A40]">
+
+          <span className="font-bold text-[#171510]">
+            TourGuideOmbima
+          </span>{" "}
+          is the personal safari and travel brand of an experienced African
+          tour guide dedicated to creating authentic, unforgettable journeys
+          across Africa.
+
+        </p>
+
+
+        {/* Detailed Description */}
+        <p className="mt-4 max-w-2xl text-sm leading-7 text-[#6B6559]">
+
+          From wildlife safaris and cultural experiences to horse riding,
+          photography trips, hot-air balloon adventures and beach escapes,
+          every experience is designed to connect travelers with the heart
+          of Africa.
+
+        </p>
+
+
+        {/* Quote */}
+        <div className="mt-7 border-l-2 border-[#C8A94C] pl-5">
+
+          <p className="text-base font-medium italic leading-7 text-[#4F4A40]">
+            “Explore Africa. Get curious. Travel with Ombima.”
+          </p>
+
+        </div>
+
+
+        {/* Experience Tags */}
+        <div className="mt-8 flex flex-wrap gap-3">
+
+          {[
+            "Wildlife",
+            "Culture",
+            "Adventure",
+            "Photography",
+            "Beach Escapes",
+          ].map((item) => (
+
+            <div
+              key={item}
+              className="rounded-full border border-[#C8A94C]/30 bg-white/70 px-4 py-2 text-xs font-semibold text-[#62542F] shadow-sm transition duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-md"
+            >
+              {item}
+            </div>
+
+          ))}
+
+        </div>
+
+
+        {/* Buttons */}
+        
+
+      </div>
+
+    </div>
+
+
+    {/* ================= Bottom Mini Statement ================= */}
+
+    <div className="mt-16 border-t border-[#C8A94C]/20 pt-6">
+
+      <div className="flex flex-col gap-2 text-center md:flex-row md:items-center md:justify-between md:text-left">
+
+        <p className="text-xs uppercase tracking-[3px] text-[#9B7925]">
+          TourGuideOmbima
+        </p>
+
+        <p className="text-sm text-[#756F63]">
+          Personal journeys. Local knowledge. Africa, your way.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
       {/* ABOUT SECTION */}
 
 <section className="relative overflow-hidden bg-[#F8F6F1] py-28">
@@ -87,7 +280,7 @@ function About() {
       <div className="relative">
         <div className="overflow-hidden rounded-[40px] shadow-2xl">
           <img
-            src={airbaloon}
+            src={discover1}
             alt="Curious Safaris"
             className="h-[600px] w-full object-cover transition duration-700 hover:scale-105"
           />
@@ -160,16 +353,7 @@ function About() {
 
         {/* BUTTON */}
 
-        <div className="mt-10">
-          <a
-            href="https://wa.me/254745861688"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex rounded-full bg-emerald-600 px-8 py-4 font-semibold text-white transition hover:scale-105"
-          >
-            Contact Us
-          </a>
-        </div>
+       
       </div>
     </div>
   </div>

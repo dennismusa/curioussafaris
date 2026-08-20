@@ -634,7 +634,395 @@ function Contact() {
 
 </section>       {/* ================= FAQ ================= */}
 
-      
+    {/* ================= PREMIUM PAYMENT SECTION ================= */}
+<section className="relative overflow-hidden bg-[#F7F3EA] py-24 md:py-32">
+
+  {/* ================= Background ================= */}
+  <div className="absolute inset-0 pointer-events-none">
+
+    {/* Soft ambient glows */}
+    <div className="absolute -left-40 top-0 h-[500px] w-[500px] rounded-full bg-[#C8A94C]/10 blur-[140px]" />
+    <div className="absolute -right-40 bottom-0 h-[500px] w-[500px] rounded-full bg-[#B7A98A]/10 blur-[140px]" />
+
+    {/* Decorative circles */}
+    <div className="absolute right-[8%] top-20 h-32 w-32 rounded-full border border-[#C8A94C]/10" />
+    <div className="absolute right-[10%] top-24 h-24 w-24 rounded-full border border-[#C8A94C]/10" />
+
+  </div>
+
+
+  <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
+
+
+    {/* ========================================================= */}
+    {/* HEADER */}
+    {/* ========================================================= */}
+
+    <div className="grid items-end gap-8 lg:grid-cols-[1fr_0.8fr]">
+
+      <div>
+
+        <div className="flex items-center gap-4">
+
+          <span className="h-px w-12 bg-[#B28B2C]" />
+
+          <span className="text-xs font-bold uppercase tracking-[4px] text-[#96731F]">
+            Secure Your Adventure
+          </span>
+
+        </div>
+
+        <h2 className="mt-6 max-w-3xl text-5xl font-black leading-[1.05] text-[#171510] md:text-6xl">
+
+          Simple,
+          <span className="block text-[#B28B2C]">
+            secure & flexible.
+          </span>
+
+        </h2>
+
+      </div>
+
+
+      <p className="max-w-xl text-base leading-8 text-[#6B6559] lg:justify-self-end">
+
+        Once your safari has been confirmed, secure your journey through
+        our bank transfer option. Our flexible payment structure gives
+        you peace of mind while planning your African adventure.
+
+      </p>
+
+    </div>
+
+
+    {/* ========================================================= */}
+    {/* MAIN PAYMENT AREA */}
+    {/* ========================================================= */}
+
+    <div className="mt-16 grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+
+
+      {/* ======================================================= */}
+      {/* BANK ACCOUNT */}
+      {/* ======================================================= */}
+
+      <div className="group relative overflow-hidden rounded-[36px] bg-[#171510] p-8 text-white shadow-[0_25px_80px_rgba(0,0,0,0.12)] md:p-10">
+
+        {/* Decorative glow */}
+        <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[#C8A94C]/10 blur-[80px] transition duration-700 group-hover:bg-[#C8A94C]/20" />
+
+        {/* Top label */}
+        <div className="relative flex items-start justify-between">
+
+          <div>
+
+            <span className="text-xs font-bold uppercase tracking-[3px] text-[#C8A94C]">
+              Bank Transfer
+            </span>
+
+            <h3 className="mt-3 text-3xl font-black">
+              Payment Account
+            </h3>
+
+          </div>
+
+
+          <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-2xl transition duration-500 group-hover:rotate-6 group-hover:scale-110">
+            🏦
+          </div>
+
+        </div>
+
+
+        {/* Account number highlight */}
+        <div className="relative mt-10 rounded-3xl border border-[#C8A94C]/20 bg-white/[0.05] p-6">
+
+          <p className="text-xs uppercase tracking-[2px] text-gray-500">
+            Account Number
+          </p>
+
+          <div className="mt-3 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+
+            <span className="text-3xl font-black tracking-[3px] text-[#E0C878]">
+              5559865001
+            </span>
+
+            <button
+              type="button"
+              onClick={() =>
+                navigator.clipboard.writeText("5559865001")
+              }
+              className="rounded-xl border border-white/10 px-4 py-2 text-xs font-bold text-gray-300 transition duration-300 hover:border-[#C8A94C] hover:text-[#C8A94C]"
+            >
+              Copy Number
+            </button>
+
+          </div>
+
+        </div>
+
+
+        {/* Bank details */}
+        <div className="relative mt-6 grid gap-x-8 gap-y-5 sm:grid-cols-2">
+
+          {[
+            ["Bank Name", "Kenya Commercial Bank"],
+            ["Account Name", "Duncan Ombima"],
+            ["Country", "Kenya"],
+            ["Bank Code", "63"],
+            ["SWIFT Code", "DTKEKENA"],
+          ].map(([label, value]) => (
+
+            <div
+              key={label}
+              className="border-b border-white/10 pb-4 transition duration-300 hover:border-[#C8A94C]/40"
+            >
+
+              <p className="text-xs uppercase tracking-[1.5px] text-gray-500">
+                {label}
+              </p>
+
+              <p className="mt-2 font-semibold text-gray-200">
+                {value}
+              </p>
+
+            </div>
+
+          ))}
+
+        </div>
+
+
+        {/* Security message */}
+        <div className="relative mt-8 flex gap-4 rounded-2xl border border-white/10 bg-white/[0.04] p-5">
+
+          <span className="text-xl">
+            🔒
+          </span>
+
+          <p className="text-sm leading-6 text-gray-400">
+            After completing your transfer, please send your payment
+            confirmation to the Curious Safaris team together with your
+            booking or invoice reference.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      {/* ======================================================= */}
+      {/* PAYMENT PLAN */}
+      {/* ======================================================= */}
+
+      <div className="rounded-[36px] border border-[#D8CFBD] bg-white p-8 shadow-[0_20px_70px_rgba(0,0,0,0.07)] md:p-10">
+
+        <div>
+
+          <span className="text-xs font-bold uppercase tracking-[3px] text-[#B28B2C]">
+            Flexible Payment
+          </span>
+
+          <h3 className="mt-3 text-3xl font-black text-[#171510]">
+            Your booking journey
+          </h3>
+
+          <p className="mt-4 text-sm leading-7 text-[#6B6559]">
+            We make it easy to secure your safari while giving you
+            flexibility before your travel date.
+          </p>
+
+        </div>
+
+
+        {/* Timeline */}
+        <div className="relative mt-10">
+
+          {/* Vertical line */}
+          <div className="absolute left-[17px] top-5 h-[calc(100%-40px)] w-px bg-[#D8CFBD]" />
+
+          <div className="space-y-8">
+
+
+            {/* Step 1 */}
+            <div className="group relative flex gap-5">
+
+              <div className="relative z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#B28B2C] text-sm font-black text-white shadow-lg transition duration-300 group-hover:scale-110">
+                01
+              </div>
+
+              <div>
+
+                <h4 className="font-black text-[#171510]">
+                  Secure your booking
+                </h4>
+
+                <p className="mt-1 text-sm leading-6 text-[#6B6559]">
+                  Pay a <strong>50% deposit</strong> to reserve and confirm
+                  your safari dates and arrangements.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            {/* Step 2 */}
+            <div className="group relative flex gap-5">
+
+              <div className="relative z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#171510] text-sm font-black text-white transition duration-300 group-hover:scale-110">
+                02
+              </div>
+
+              <div>
+
+                <h4 className="font-black text-[#171510]">
+                  Complete your balance
+                </h4>
+
+                <p className="mt-1 text-sm leading-6 text-[#6B6559]">
+                  The remaining <strong>50%</strong> is due
+                  <strong> 30 days before travel.</strong>
+                </p>
+
+              </div>
+
+            </div>
+
+
+            {/* Step 3 */}
+            <div className="group relative flex gap-5">
+
+              <div className="relative z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#171510] text-sm font-black text-white transition duration-300 group-hover:scale-110">
+                03
+              </div>
+
+              <div>
+
+                <h4 className="font-black text-[#171510]">
+                  Travel with confidence
+                </h4>
+
+                <p className="mt-1 text-sm leading-6 text-[#6B6559]">
+                  Your safari is fully arranged and our team remains
+                  available throughout your journey.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        {/* Cancellation policy */}
+        <div className="mt-10 rounded-3xl bg-[#F7F3EA] p-6">
+
+          <div className="flex items-center gap-3">
+
+            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#C8A94C]/15">
+              📜
+            </span>
+
+            <h4 className="font-black text-[#171510]">
+              Cancellation & Rescheduling
+            </h4>
+
+          </div>
+
+
+          <div className="mt-5 space-y-3">
+
+            {[
+              "Free rescheduling up to 3 weeks before travel.",
+              "100% refund for cancellations 60+ days before travel.",
+              "Up to 50% refund for cancellations 30–59 days before travel.",
+            ].map((item) => (
+
+              <div
+                key={item}
+                className="flex gap-3 text-sm leading-6 text-[#6B6559]"
+              >
+
+                <span className="mt-1 text-[#B28B2C]">
+                  ✓
+                </span>
+
+                <span>
+                  {item}
+                </span>
+
+              </div>
+
+            ))}
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    {/* ========================================================= */}
+    {/* BOTTOM CTA */}
+    {/* ========================================================= */}
+
+    <div className="relative mt-10 overflow-hidden rounded-[32px] bg-[#C8A94C] px-8 py-10 md:px-12">
+
+      {/* Decorative circle */}
+      <div className="absolute -right-20 -top-24 h-64 w-64 rounded-full border-[30px] border-white/10" />
+
+      <div className="relative flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
+
+        <div className="max-w-2xl">
+
+          <p className="text-xs font-black uppercase tracking-[3px] text-[#5F4A13]">
+            Ready when you are
+          </p>
+
+          <h3 className="mt-2 text-2xl font-black text-[#171510] md:text-3xl">
+            Secure your African adventure.
+          </h3>
+
+          <p className="mt-2 text-sm leading-6 text-[#5F4A13]">
+            Contact Curious Safaris to confirm availability, receive your
+            itinerary and get personalized booking assistance.
+          </p>
+
+        </div>
+
+
+        <div className="flex flex-wrap gap-3">
+
+          <a
+            href="https://wa.me/254745861688"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-xl bg-[#171510] px-6 py-3 font-bold text-white shadow-lg transition duration-300 hover:-translate-y-1 hover:bg-black hover:shadow-xl"
+          >
+            Chat on WhatsApp
+          </a>
+
+          <a
+            href="mailto:info@curioussafaris.com"
+            className="rounded-xl border border-[#171510]/20 bg-white/40 px-6 py-3 font-bold text-[#171510] transition duration-300 hover:-translate-y-1 hover:bg-white/70"
+          >
+            Email Us
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>  
 
       {/* ================= WHY CHOOSE US ================= */}
 

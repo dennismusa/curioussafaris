@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
 import {  FaFacebookF,  FaInstagram,  FaWhatsapp,  FaYoutube,  FaArrowRight,  FaMapMarkerAlt,  FaChevronUp,  FaGlobe,} from "react-icons/fa";
 import nile from "../assets/nile.jpg";
 import okavango from "../assets/okavango.jpg";
@@ -21,7 +22,28 @@ import Wilderbeast from "../assets/Wilderbeast.jpg";
 import naivasha from "../assets/naivasha.jpg";
 
 
+
+
 export default function Destination() {
+  useEffect(() => {
+    const hash = window.location.hash;
+
+    if (hash) {
+      const scrollToSection = () => {
+        const section = document.getElementById(hash.substring(1));
+
+        if (section) {
+          section.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      };
+
+      setTimeout(scrollToSection, 500);
+    }
+  }, []);
+  
   return (
     <div className="bg-white">
      {/* Hero Section */}
@@ -106,7 +128,7 @@ export default function Destination() {
 
 {/* ================= Kenya Safari Destination ================= */}
 
-<section className="relative overflow-hidden bg-white py-32">
+<section id="kenya-safari" className="relative overflow-hidden bg-white py-32">
 
   {/* Background Effects */}
   <div className="absolute -top-40 -right-40 h-[500px] w-[500px] rounded-full bg-yellow-300/10 blur-[160px]" />
@@ -492,7 +514,7 @@ export default function Destination() {
 
 {/* ================= Tanzania Safari Destination ================= */}
 
-<section className="relative overflow-hidden bg-white py-32">
+<section id="tanzania-safari" className="relative overflow-hidden bg-white py-32">
 
   {/* Background Effects */}
   <div className="absolute -top-40 -right-40 h-[500px] w-[500px] rounded-full bg-yellow-300/10 blur-[160px]" />
@@ -844,7 +866,7 @@ export default function Destination() {
 
 {/* ================= Uganda Safari Destination ================= */}
 
-<section className="relative overflow-hidden bg-white py-32">
+<section id="uganda-safari" className="relative overflow-hidden bg-white py-32">
 
   {/* Background Effects */}
   <div className="absolute -top-40 -right-40 h-[500px] w-[500px] rounded-full bg-yellow-300/10 blur-[160px]" />
@@ -1196,7 +1218,7 @@ export default function Destination() {
 
 {/* ================= Rwanda Safari Destination ================= */}
 
-<section className="relative overflow-hidden bg-white py-32">
+<section id="rwanda-safari" className="relative overflow-hidden bg-white py-32">
 
   {/* Background Effects */}
   <div className="absolute -top-40 -right-40 h-[500px] w-[500px] rounded-full bg-yellow-300/10 blur-[160px]" />
@@ -1550,7 +1572,7 @@ export default function Destination() {
 
 {/* ================= Ethiopia Adventure ================= */}
 
-<section className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
+<section id="ethiopia-safari" className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
 
   {/* Background Effects */}
   <div className="pointer-events-none absolute -right-40 -top-40 h-[350px] w-[350px] rounded-full bg-yellow-300/10 blur-[120px] sm:h-[500px] sm:w-[500px] sm:blur-[160px]" />
@@ -1920,7 +1942,7 @@ export default function Destination() {
 
 {/* ================= Congo Adventure ================= */}
 
-<section className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
+<section id="congo-safari" className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
 
   {/* Background Effects */}
   <div className="pointer-events-none absolute -right-40 -top-40 h-[350px] w-[350px] rounded-full bg-yellow-300/10 blur-[120px] sm:h-[500px] sm:w-[500px] sm:blur-[160px]" />
@@ -2317,7 +2339,7 @@ export default function Destination() {
 
 {/* ================= Zambia Safari Destination ================= */}
 
-<section className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
+<section id="zambia-safari" className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
 
   {/* Background Effects */}
   <div className="pointer-events-none absolute -right-40 -top-40 h-[350px] w-[350px] rounded-full bg-yellow-300/10 blur-[120px] sm:h-[500px] sm:w-[500px] sm:blur-[160px]" />
@@ -2745,7 +2767,7 @@ export default function Destination() {
 
 {/* ================= Zimbabwe Safari Destination ================= */}
 
-<section className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
+<section id="zimbabwe-safari" className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
 
   {/* Background Effects */}
   <div className="pointer-events-none absolute -right-40 -top-40 h-[350px] w-[350px] rounded-full bg-yellow-300/10 blur-[120px] sm:h-[500px] sm:w-[500px] sm:blur-[160px]" />
@@ -3173,7 +3195,7 @@ export default function Destination() {
 
 {/* ================= Namibia Adventure ================= */}
 
-<section className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
+<section id="namibia-safari" className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
 
   {/* Background Effects */}
   <div className="pointer-events-none absolute -right-40 -top-40 h-[350px] w-[350px] rounded-full bg-yellow-300/10 blur-[120px] sm:h-[500px] sm:w-[500px] sm:blur-[160px]" />
@@ -3601,7 +3623,7 @@ export default function Destination() {
 
 {/* ================= Botswana Safari Destination ================= */}
 
-<section className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
+<section id="botswana-safari" className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
 
   {/* Background Effects */}
   <div className="pointer-events-none absolute -right-40 -top-40 h-[350px] w-[350px] rounded-full bg-yellow-300/10 blur-[120px] sm:h-[500px] sm:w-[500px] sm:blur-[160px]" />
@@ -4030,7 +4052,7 @@ export default function Destination() {
 </section>
 {/* ================= South Africa Safari & City Adventure ================= */}
 
-<section className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
+<section id="southafrica-safari" className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
 
   {/* Background Effects */}
   <div className="pointer-events-none absolute -right-40 -top-40 h-[350px] w-[350px] rounded-full bg-yellow-300/10 blur-[120px] sm:h-[500px] sm:w-[500px] sm:blur-[160px]" />
@@ -4462,7 +4484,7 @@ export default function Destination() {
 
 {/* ================= Mozambique Beach & Wildlife Escape ================= */}
 
-<section className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
+<section id="mozambique-safari" className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
 
   {/* Background Effects */}
   <div className="pointer-events-none absolute -right-40 -top-40 h-[350px] w-[350px] rounded-full bg-yellow-300/10 blur-[120px] sm:h-[500px] sm:w-[500px] sm:blur-[160px]" />
@@ -4898,7 +4920,7 @@ export default function Destination() {
 
 {/* ================= Morocco Adventure ================= */}
 
-<section className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
+<section id="morocco-safari" className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
 
   {/* Background Effects */}
   <div className="pointer-events-none absolute -right-40 -top-40 h-[350px] w-[350px] rounded-full bg-yellow-300/10 blur-[120px] sm:h-[500px] sm:w-[500px] sm:blur-[160px]" />
@@ -5331,7 +5353,7 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
 
 {/* ================= Egypt Adventure ================= */}
 
-<section className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
+<section id="egypt-safari" className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
 
   {/* Background Effects */}
   <div className="pointer-events-none absolute -right-40 -top-40 h-[350px] w-[350px] rounded-full bg-yellow-300/10 blur-[120px] sm:h-[500px] sm:w-[500px] sm:blur-[160px]" />
@@ -5766,7 +5788,7 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
 
 {/* ================= Sudan Adventure ================= */}
 
-<section className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
+<section id="sudan-safari" className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
 
   {/* Background Effects */}
   <div className="pointer-events-none absolute -right-40 -top-40 h-[350px] w-[350px] rounded-full bg-yellow-300/10 blur-[120px] sm:h-[500px] sm:w-[500px] sm:blur-[160px]" />

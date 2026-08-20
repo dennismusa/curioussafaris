@@ -1,84 +1,464 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import {  FaFacebookF,  FaInstagram,  FaWhatsapp,  FaYoutube,  FaArrowRight,  FaMapMarkerAlt,  FaChevronUp,  FaGlobe,} from "react-icons/fa";
-import { useState, useEffect } from "react";
+
+import {
+  FaFacebookF,  FaInstagram,  FaWhatsapp,  FaYoutube,  FaArrowRight,  FaMapMarkerAlt,  FaChevronUp,  FaGlobe,  FaSearch,} from "react-icons/fa";
+
 import useLanguageSync from "../hooks/useLanguageSync";
 import { useTranslation } from "react-i18next";
 
-//import cruiser1 from "../assets/cruiser1.jpg";
+// ================= IMAGES =================
+
 import cruiser2 from "../assets/cruiser2.jpg";
+import krugerpark from "../assets/krugerpark.jpg";
+import etoshapark from "../assets/etoshapark.jpg";
 import image1 from "../assets/image1.jpg";
 import nakuru from "../assets/nakuru.jpg";
 import image16 from "../assets/image16.jpg";
 import image4 from "../assets/image4.jpg";
 import image2 from "../assets/image2.jpg";
+import okavango from "../assets/okavango.jpg";
 import west from "../assets/west.jpg";
 import amboseli from "../assets/amboseli.jpg";
+import discover1 from "../assets/discover1.jpg";
+import discover2 from "../assets/discover2.jpg";
 import climbingkenya from "../assets/climbingkenya.jpg";
 import climbinglongonot from "../assets/climbinglongonot.jpg";
 import climbingkili from "../assets/climbingkili.jpg";
+import uganda from "../assets/uganda.jpg";
 import meru from "../assets/meru.jpg";
 import hellsgate from "../assets/hellsgate.jpg";
 import diani from "../assets/diani.jpg";
 import serengeti from "../assets/serengeti.jpg";
+
 import tanzania from "../assets/tanzania.jpg";
 import Wilderbeast from "../assets/Wilderbeast.jpg";
+
 import victoria1 from "../assets/victoria1.jpg";
 import zambezi from "../assets/zambezi.jpg";
 import luangwa from "../assets/luangwa.jpg";
 import ngorongoro from "../assets/ngorongoro.jpg";
+
 import kenya from "../assets/kenya.jpg";
+
 import airbaloon from "../assets/airbaloon.jpg";
 import morocco from "../assets/morocco.jpg";
 import egypt from "../assets/egypt.jpg";
+
 import image10 from "../assets/image10.jpg";
 import destination1 from "../assets/destination1.jpg";
+
+// If these files exist, use them.
+// Otherwise temporarily replace them with existing images.
+
+
+
+// ======================================================
+// HOME COMPONENT
+// ======================================================
+
 function Home() {
+
   useLanguageSync();
-  const images = [airbaloon, egypt,morocco,image10];
+
+  const { t, i18n } = useTranslation();
+
+  // ======================================================
+  // HERO SLIDER
+  // ======================================================
+
+  const images = [
+    airbaloon,
+    egypt,
+    morocco,
+    uganda,
+    image10,
+  ];
+
   const [index, setIndex] = useState(0);
-const aboutImages = [airbaloon, egypt,morocco,image10,west,amboseli];
-const [aboutIndex,setAboutIndex]=useState(0);
-const [smallAboutIndex,setSmallAboutIndex]=useState(1);
 
 
-  // ================= REVIEWS STATE =================
+  // ======================================================
+  // ABOUT SLIDER
+  // ======================================================
+
+  const aboutImages = [
+    airbaloon,
+    egypt,
+    morocco,
+    image10,
+    west,
+    amboseli,
+  ];
+
+  const [aboutIndex, setAboutIndex] = useState(0);
+  const [smallAboutIndex, setSmallAboutIndex] = useState(1);
+
+
+  // ======================================================
+  // DESTINATION SEARCH
+  // ======================================================
+
+  const [searchTerm, setSearchTerm] = useState("");
+
+
+  // ======================================================
+  // REVIEWS STATE
+  // ======================================================
+
   const [reviews, setReviews] = useState([]);
-   const { t, i18n } = useTranslation();
+
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [rating, setRating] = useState(5);
-  
-const [loading, setLoading] = useState(false);
-const [loadingReviews, setLoadingReviews] = useState(false);
-const [success, setSuccess] = useState(false);
+
+  const [loading, setLoading] = useState(false);
+  const [loadingReviews, setLoadingReviews] = useState(false);
+  const [success, setSuccess] = useState(false);
 
 
-  // ================= SLIDER =================
-  useEffect(()=>{
+  // ======================================================
+  // SAFARI DESTINATIONS
+  // ======================================================
 
-const slider=setInterval(()=>{
+  const safariDestinations = [
+  {
+    country: "Uganda",
+    title: "7-Day Uganda Safari",
+    subtitle: "Gorillas, Chimpanzees & Wildlife",
+    description:
+      "Journey through Uganda's ancient rainforests and vast savannahs. Track endangered mountain gorillas in Bwindi, encounter chimpanzees in Kibale Forest, and discover incredible wildlife in Queen Elizabeth National Park.",
 
-// HERO SLIDER
-setIndex(prev=>(prev + 1) % images.length);
+    highlights: [
+      "Mountain Gorilla Trekking",
+      "Chimpanzee Tracking",
+      "Queen Elizabeth National Park",
+      "Kazinga Channel Boat Safari",
+    ],
 
-// ABOUT SLIDER
-setAboutIndex(prev=>(prev + 1) % aboutImages.length);
-setSmallAboutIndex(prev=>(prev + 1) % aboutImages.length);
+    duration: "7 Days / 6 Nights",
+    region: "East Africa",
+    image: kenya,
+    category: "Primate Safari",
+    sectionId: "uganda-safari",
+    slug: "uganda",
+    featured: true,
+  },
 
-},4000);
+  {
+    country: "Rwanda",
+    title: "7-Day Rwanda Safari",
+    subtitle: "Gorillas, Wildlife & African Culture",
+    description:
+      "Experience the Land of a Thousand Hills through unforgettable gorilla encounters, breathtaking landscapes, cultural experiences, and wildlife adventures in one of Africa's most beautiful destinations.",
 
+    highlights: [
+      "Volcanoes National Park",
+      "Gorilla Trekking",
+      "Golden Monkey Tracking",
+      "Lake Kivu",
+    ],
+
+    duration: "7 Days / 6 Nights",
+    region: "East Africa",
+    image: kenya,
+    category: "Luxury Safari",
+    sectionId: "rwanda-safari",
+    slug: "rwanda",
+    featured: true,
+  },
+
+  {
+    country: "Kenya",
+    title: "7-Day Kenya Safari",
+    subtitle: "Maasai Mara, Amboseli & Lake Nakuru",
+    description:
+      "Discover Kenya's legendary wildlife destinations, from the endless plains of the Maasai Mara to the elephant herds of Amboseli and the spectacular landscapes of Lake Nakuru.",
+
+    highlights: [
+      "Big Five Safari",
+      "Maasai Mara",
+      "Amboseli National Park",
+      "Lake Nakuru",
+    ],
+
+    duration: "7 Days / 6 Nights",
+    region: "East Africa",
+    image: kenya,
+    category: "Wildlife Safari",
+    sectionId: "kenya-safari",
+    slug: "kenya",
+    featured: true,
+  },
+
+  {
+    country: "Tanzania",
+    title: "7-Day Tanzania Safari",
+    subtitle: "Serengeti, Ngorongoro & Tarangire",
+    description:
+      "Explore Tanzania's most iconic landscapes, including the Serengeti, the Ngorongoro Crater, and Tarangire National Park, while experiencing extraordinary wildlife encounters.",
+
+    highlights: [
+      "Serengeti National Park",
+      "Ngorongoro Crater",
+      "Tarangire National Park",
+      "Great Migration",
+    ],
+
+    duration: "7 Days / 6 Nights",
+    region: "East Africa",
+    image: tanzania,
+    category: "Classic Safari",
+    sectionId: "tanzania-safari",
+    slug: "tanzania",
+    featured: true,
+  },
+
+  {
+    country: "Zimbabwe",
+    title: "7-Day Zimbabwe Safari",
+    subtitle: "Victoria Falls & Hwange National Park",
+    description:
+      "Witness the magnificent Victoria Falls, explore Hwange National Park, and discover one of Southern Africa's most remarkable wildlife destinations.",
+
+    highlights: [
+      "Victoria Falls",
+      "Hwange National Park",
+      "Zambezi River Cruise",
+      "Wildlife Encounters",
+    ],
+
+    duration: "7 Days / 6 Nights",
+    region: "Southern Africa",
+    image: victoria1,
+    category: "Adventure Safari",
+    sectionId: "zimbabwe-safari",
+    slug: "zimbabwe",
+    featured: false,
+  },
+
+  {
+    country: "Zambia",
+    title: "7-Day Zambia Safari",
+    subtitle: "South Luangwa & Zambezi River",
+    description:
+      "Experience authentic African wilderness through walking safaris, exceptional wildlife viewing, and unforgettable adventures along the mighty Zambezi River.",
+
+    highlights: [
+      "South Luangwa",
+      "Walking Safaris",
+      "Zambezi River",
+      "Wildlife Photography",
+    ],
+
+    duration: "7 Days / 6 Nights",
+    region: "Southern Africa",
+    image: luangwa,
+    category: "Walking Safari",
+    sectionId: "zambia-safari",
+    slug: "zambia",
+    featured: false,
+  },
+
+  {
+    country: "Morocco",
+    title: "Morocco Adventure",
+    subtitle: "Desert, Culture & Ancient Cities",
+    description:
+      "Explore Morocco's colorful cities, cross the Atlas Mountains, experience the Sahara Desert, and immerse yourself in centuries of history and culture.",
+
+    highlights: [
+      "Marrakech",
+      "Atlas Mountains",
+      "Sahara Desert",
+      "Ancient Medinas",
+    ],
+
+    duration: "7 Days / 6 Nights",
+    region: "North Africa",
+    image: morocco,
+    category: "Cultural Experience",
+    sectionId: "morocco-safari",
+    slug: "morocco",
+    featured: false,
+  },
+
+  {
+    country: "Egypt",
+    title: "Egypt Adventure",
+    subtitle: "Pyramids, Nile & Ancient Wonders",
+    description:
+      "Travel through ancient Egypt and discover the pyramids, historic temples, the Nile River, and one of the world's greatest civilizations.",
+
+    highlights: [
+      "Great Pyramids",
+      "The Nile",
+      "Ancient Temples",
+      "Luxor",
+    ],
+
+    duration: "7 Days / 6 Nights",
+    region: "North Africa",
+    image: egypt,
+    category: "Historical Journey",
+    sectionId: "egypt-safari",
+    slug: "egypt",
+    featured: false,
+  },
+
+  {
+    country: "Botswana",
+    title: "Botswana Safari",
+    subtitle: "Okavango Delta & Wildlife",
+    description:
+      "Explore one of Africa's most exclusive safari destinations and experience the extraordinary biodiversity of the Okavango Delta.",
+
+    highlights: [
+      "Okavango Delta",
+      "Mokoro Excursions",
+      "Luxury Camps",
+      "Wildlife Viewing",
+    ],
+
+    duration: "7 Days / 6 Nights",
+    region: "Southern Africa",
+    image: okavango,
+    category: "Luxury Wilderness",
+    sectionId: "botswana-safari",
+    slug: "botswana",
+    featured: false,
+  },
+    {
+    country: "South Africa",
+    title: "7-Day South Africa Safari",
+    subtitle: "Safari & City Adventure",
+    description:
+      "Experience the best of South Africa in one unforgettable journey, from the iconic landscapes of Cape Town and Table Mountain to thrilling Big Five encounters in Kruger National Park and the vibrant energy of Johannesburg.",
+
+    highlights: [
+      "Table Mountain",
+      "Cape Peninsula",
+      "Boulders Beach",
+      "Big Five Safari",
+      "Kruger National Park",
+      "Johannesburg",
+    ],
+
+    duration: "7 Days / 6 Nights",
+    region: "Southern Africa",
+    image: krugerpark,
+    category: "Wildlife & City Adventure",
+    sectionId: "southafrica-safari",
+    slug: "south-africa",
+    featured: false,
+  },
+
+  {
+    country: "Namibia",
+    title: "7-Day Namibia Adventure",
+    subtitle: "Desert, Wildlife & Coastal Wonders",
+    description:
+      "Journey across Namibia's extraordinary landscapes, from the towering red dunes of Sossusvlei and the coastal charm of Swakopmund to the rugged wilderness of Damaraland and the wildlife-rich plains of Etosha National Park.",
+
+    highlights: [
+      "Sossusvlei & Deadvlei",
+      "Swakopmund",
+      "Damaraland",
+      "Etosha National Park",
+      "Namib Desert",
+      "Desert-Adapted Wildlife",
+    ],
+
+    duration: "7 Days / 6 Nights",
+    region: "Southern Africa",
+    image: etoshapark,
+    category: "Desert Adventure",
+    sectionId: "namibia-safari",
+    slug: "namibia",
+    featured: false,
+  },
+];
+
+
+  // ======================================================
+  // FILTER DESTINATIONS
+  // ======================================================
+
+  const filteredDestinations = safariDestinations.filter(
+    (destination) => {
+
+      const search = searchTerm
+        .toLowerCase()
+        .trim();
+
+      if (!search) {
+        return true;
+      }
+
+      return (
+        destination.country
+          .toLowerCase()
+          .includes(search) ||
+
+        destination.title
+          .toLowerCase()
+          .includes(search) ||
+
+        destination.subtitle
+          .toLowerCase()
+          .includes(search) ||
+
+        destination.category
+          .toLowerCase()
+          .includes(search)
+      );
+
+    }
+  );
+
+
+  // ======================================================
+  // HERO & ABOUT SLIDER
+  // ======================================================
+
+  useEffect(() => {
+
+    const slider = setInterval(() => {
+
+      // HERO
+      setIndex(
+        (prev) =>
+          (prev + 1) % images.length
+      );
+
+
+      // ABOUT
+      setAboutIndex(
+        (prev) =>
+          (prev + 1) % aboutImages.length
+      );
+
+
+      // SMALL ABOUT
+      setSmallAboutIndex(
+        (prev) =>
+          (prev + 1) % aboutImages.length
+      );
+
+    }, 4000);
 
 
     return () => clearInterval(slider);
-  }, [aboutImages.length, images.length]);
 
-  // ================= SUBMIT REVIEW (IMPORTANT PART 2) =================
- 
-// instantly update UI
+  }, [images.length, aboutImages.length]);
 
-  
+
+  // ======================================================
+  // RETURN
+  // ======================================================
+
   return (
     <div className="bg-white text-gray-800 overflow-x-hidden">
 
@@ -86,96 +466,409 @@ setSmallAboutIndex(prev=>(prev + 1) % aboutImages.length);
       
 <section
   id="destinations"
-  className="relative min-h-[65vh] lg:min-h-[75vh] flex items-center overflow-hidden"
+  className="relative flex min-h-[560px] items-center overflow-hidden bg-black sm:min-h-[620px] lg:min-h-[680px]"
 >
-  {/* IMAGE SLIDER */}
+  {/* ================= BACKGROUND SLIDES ================= */}
 
   <div className="absolute inset-0">
-    {[airbaloon, egypt,morocco,diani].map((img, i) => (
+    {[airbaloon, egypt, morocco, diani].map((img, i) => (
       <div
         key={i}
-        className="absolute inset-0 transition-all duration-[3500ms] ease-in-out"
+        className="absolute inset-0 transition-all duration-[1800ms] ease-out"
         style={{
           backgroundImage: `url(${img})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           opacity: i === index ? 1 : 0,
-          transform: i === index ? "scale(1)" : "scale(1.06)",
+          transform: i === index ? "scale(1)" : "scale(1.05)",
         }}
       />
     ))}
   </div>
 
-  {/* OVERLAYS */}
+  {/* ================= CINEMATIC OVERLAYS ================= */}
 
-  <div className="absolute inset-0 bg-black/50" />
+  <div className="absolute inset-0 bg-black/35" />
 
-  <div className="absolute inset-0 bg-gradient-to-r from-[#022c22]/95 via-black/60 to-transparent" />
+  {/* Warm cinematic gradient */}
+  <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-black/10" />
 
-  <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
+  {/* Bottom fade */}
+  <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-black/70 to-transparent" />
 
-  {/* LIGHT EFFECTS */}
+  {/* Subtle warm light */}
+  <div className="absolute -bottom-32 right-[-100px] h-[350px] w-[350px] rounded-full bg-amber-400/10 blur-[100px]" />
 
-  <div className="absolute -top-32 -left-32 h-[450px] w-[450px] rounded-full bg-emerald-500/20 blur-[120px] animate-pulse" />
 
-  <div className="absolute bottom-[-150px] right-[-100px] h-[500px] w-[500px] rounded-full bg-yellow-400/10 blur-[130px]" />
+  {/* ================= HERO CONTENT ================= */}
 
-  {/* CONTENT */}
+  <div className="relative z-10 mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10">
 
-  <div className="relative z-20 mx-auto w-full max-w-7xl px-5 md:px-8">
-    <div className="max-w-2xl text-white">
-      {/* BADGE */}
+    <div className="max-w-2xl">
 
-      <div className="mb-5 inline-flex items-center gap-3 rounded-full border border-emerald-300/30 bg-white/10 px-5 py-2 backdrop-blur-xl">
-        <div className="h-2 w-2 animate-ping rounded-full bg-emerald-400" />
+      {/* Brand */}
 
-        <span className="text-[10px] uppercase tracking-[4px] text-emerald-200 md:text-xs">
+      <div className="mb-4 flex items-center gap-3">
+
+        <span className="h-px w-8 bg-yellow-400" />
+
+        <span className="text-[9px] font-bold uppercase tracking-[3px] text-yellow-300 sm:text-[10px]">
           Curious Safaris
+        </span>
+
+      </div>
+
+
+      {/* Heading */}
+
+      <h1 className="text-[2.1rem] font-black leading-[1.05] tracking-tight text-white drop-shadow-2xl sm:text-5xl md:text-6xl">
+
+        Discover Africa.
+        <br />
+
+        <span className="text-yellow-400">
+          Live the Adventure.
+        </span>
+
+      </h1>
+
+
+      {/* Description */}
+
+      <p className="mt-4 max-w-lg text-[13px] leading-6 text-white/80 sm:text-sm sm:leading-7 md:text-base">
+        Explore unforgettable wildlife, breathtaking landscapes and
+        extraordinary journeys across Africa.
+      </p>
+
+
+      {/* CTA */}
+
+      <div className="mt-6 flex flex-wrap gap-2.5">
+
+        <Link
+          to="/Destinations"
+          className="group inline-flex items-center gap-2 rounded-full bg-yellow-400 px-5 py-2.5 text-xs font-bold text-black shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-yellow-300 sm:px-6 sm:py-3 sm:text-sm"
+        >
+          Explore destinations
+
+          <span className="transition-transform duration-300 group-hover:translate-x-1">
+            →
+          </span>
+        </Link>
+
+        <Link
+          to="/Contact"
+          className="inline-flex items-center rounded-full border border-white/30 bg-white/10 px-5 py-2.5 text-xs font-semibold text-white backdrop-blur-md transition-all duration-300 hover:bg-white/20 sm:px-6 sm:py-3 sm:text-sm"
+        >
+          Plan your safari
+        </Link>
+
+      </div>
+
+
+      {/* Trust Points */}
+
+      <div className="mt-6 flex flex-wrap gap-x-4 gap-y-2 text-[9px] font-medium text-white/70 sm:text-[10px]">
+
+        <span>
+          <span className="mr-1 text-yellow-400">✓</span>
+          Tailor-made journeys
+        </span>
+
+        <span>
+          <span className="mr-1 text-yellow-400">✓</span>
+          Expert local guides
+        </span>
+
+        <span>
+          <span className="mr-1 text-yellow-400">✓</span>
+          Private safaris
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  {/* ================= SLIDER CONTROLS ================= */}
+
+  <div className="absolute bottom-5 right-5 z-20 flex items-center gap-3 sm:bottom-7 sm:right-8">
+
+    <span className="text-[10px] font-bold text-white/70">
+      {String(index + 1).padStart(2, "0")}
+    </span>
+
+    <div className="flex items-center gap-1.5">
+
+      {[0, 1, 2, 3].map((i) => (
+        <button
+          key={i}
+          onClick={() => setIndex(i)}
+          aria-label={`Go to slide ${i + 1}`}
+          className={`h-1.5 rounded-full transition-all duration-500 ${
+            i === index
+              ? "w-7 bg-yellow-400"
+              : "w-1.5 bg-white/40 hover:bg-white"
+          }`}
+        />
+      ))}
+
+    </div>
+
+    <span className="text-[10px] text-white/40">
+      04
+    </span>
+
+  </div>
+
+
+  {/* ================= MOBILE SCROLL ================= */}
+
+  <div className="absolute bottom-5 left-1/2 z-20 hidden -translate-x-1/2 md:block">
+
+    <span className="text-[8px] font-semibold uppercase tracking-[3px] text-white/40">
+      Explore
+    </span>
+
+  </div>
+
+</section>
+
+{/* ================= DESTINATION SEARCH ================= */}
+
+<section className="relative z-20 -mt-8 px-4 sm:px-6">
+  <div className="mx-auto max-w-5xl">
+
+    <div className="rounded-2xl border border-white/70 bg-white/95 p-4 shadow-xl backdrop-blur-xl sm:p-5">
+
+      {/* Heading */}
+      <div className="mb-3 flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <p className="text-[9px] font-bold uppercase tracking-[2.5px] text-[#0B6E4F]">
+            Find Your Adventure
+          </p>
+
+          <h2 className="text-lg font-black text-gray-900 sm:text-xl">
+            Where do you want to go?
+          </h2>
+        </div>
+
+        <span className="hidden text-xs text-gray-400 sm:block">
+          Explore Africa
         </span>
       </div>
 
-      {/* TITLE */}
+      {/* Search */}
+      <div className="flex flex-col gap-2 sm:flex-row">
 
-      <h1 className="max-w-xl text-3xl font-black leading-tight drop-shadow-xl sm:text-4xl md:text-5xl">
-        Discover Africa's Most Extraordinary Destinations
-      </h1>
+        <div className="relative flex-1">
 
-      {/* DESCRIPTION */}
+          <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-base">
+            🔍
+          </span>
 
-      <p className="mt-4 max-w-lg text-sm leading-7 text-gray-200 sm:text-base">
-        Explore iconic wildlife reserves, breathtaking landscapes,
-        and unforgettable adventures across East Africa.
-      </p>
+          <input
+            type="text"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            placeholder="Search destinations..."
+            className="h-12 w-full rounded-xl border border-gray-200 bg-gray-50 pl-11 pr-10 text-sm outline-none transition focus:border-[#0B6E4F] focus:bg-white focus:ring-2 focus:ring-emerald-100"
+          />
 
-      {/* BUTTON */}
+          {searchTerm && (
+            <button
+              onClick={() => setSearchTerm("")}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 transition hover:text-gray-700"
+            >
+              ✕
+            </button>
+          )}
 
-      <div className="mt-8">
-        <Link
-          to="/Destinations"
-          className="rounded-full bg-yellow-400 px-8 py-4 font-semibold text-black transition duration-300 hover:scale-105"
+        </div>
+
+        <button
+          className="h-12 rounded-xl bg-[#0B6E4F] px-6 text-sm font-bold text-white transition hover:bg-[#095c42] sm:px-7"
         >
-          Explore adventures
-        </Link>
+          Search
+        </button>
+
       </div>
+
+      {/* Popular */}
+      <div className="mt-3">
+
+        <p className="mb-2 text-[10px] font-semibold uppercase tracking-wide text-gray-400">
+          Popular
+        </p>
+
+        <div className="flex gap-1.5 overflow-x-auto pb-1 scrollbar-hide">
+
+          {[
+            "Kenya",
+            "Tanzania",
+            "Uganda",
+            "Rwanda",
+            "Zimbabwe",
+            "Zambia",
+            "Botswana",
+            "Namibia",
+            "South Africa",
+            "Morocco",
+            "Egypt",
+          ].map((destination) => {
+
+            const active =
+              searchTerm.toLowerCase() === destination.toLowerCase();
+
+            return (
+              <button
+                key={destination}
+                onClick={() => setSearchTerm(destination)}
+                className={`whitespace-nowrap rounded-full border px-3 py-1.5 text-[10px] font-semibold transition ${
+                  active
+                    ? "border-[#0B6E4F] bg-[#0B6E4F] text-white"
+                    : "border-gray-200 bg-white text-gray-600 hover:border-[#0B6E4F] hover:text-[#0B6E4F]"
+                }`}
+              >
+                {destination}
+              </button>
+            );
+          })}
+
+        </div>
+
+      </div>
+
     </div>
-  </div>
 
-  {/* SLIDER DOTS */}
-
-  <div className="absolute right-6 top-1/2 hidden -translate-y-1/2 flex-col gap-3 lg:flex">
-    {[meru, kenya, amboseli, Wilderbeast].map((_, i) => (
-      <button
-        key={i}
-        onClick={() => setIndex(i)}
-        className={`rounded-full transition-all duration-700 ${
-          i === index
-            ? "h-12 w-2 bg-yellow-400 shadow-lg shadow-yellow-400/50"
-            : "h-2 w-2 bg-white/40 hover:bg-white"
-        }`}
-      />
-    ))}
   </div>
 </section>
+{/* ================= SEARCH RESULTS ================= */}
+
+{searchTerm.trim() && (
+  <section className="bg-[#F8FAF8] px-6 py-16">
+
+    <div className="mx-auto max-w-7xl">
+
+      {/* Results Header */}
+
+      <div className="mb-8 flex items-center justify-between">
+
+        <div>
+          <p className="text-[10px] font-bold uppercase tracking-[3px] text-[#0B6E4F]">
+            Safari Experiences
+          </p>
+
+          <h2 className="mt-2 text-3xl font-black text-gray-900">
+            Results for "{searchTerm}"
+          </h2>
+        </div>
+
+        <button
+          onClick={() => setSearchTerm("")}
+          className="text-sm font-bold text-[#0B6E4F] hover:underline"
+        >
+          Clear Search
+        </button>
+
+      </div>
+
+
+      {/* Results */}
+
+      {filteredDestinations.length > 0 ? (
+
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+          {filteredDestinations.map((destination) => (
+
+            <div
+              key={destination.slug}
+              className="group overflow-hidden rounded-[28px] bg-white shadow-lg transition duration-500 hover:-translate-y-2 hover:shadow-2xl"
+            >
+
+              {/* Image */}
+
+              <div className="relative h-64 overflow-hidden">
+
+                <img
+                  src={destination.image}
+                  alt={destination.title}
+                  className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+                />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+
+                <span className="absolute left-5 top-5 rounded-full bg-white/90 px-4 py-2 text-[10px] font-bold uppercase tracking-[2px] text-[#0B6E4F]">
+                  {destination.country}
+                </span>
+
+                <h3 className="absolute bottom-5 left-5 right-5 text-2xl font-black text-white">
+                  {destination.title}
+                </h3>
+
+              </div>
+
+
+              {/* Content */}
+
+              <div className="p-6">
+
+                <p className="font-bold text-gray-900">
+                  {destination.subtitle}
+                </p>
+
+                <p className="mt-2 text-sm leading-6 text-gray-600">
+                  {destination.description}
+                </p>
+
+
+                {/* EXACT SECTION BUTTON */}
+
+<Link
+  to={`/${i18n.language}/Destinations#${destination.sectionId}`}
+  className="mt-5 inline-flex items-center font-bold text-[#0B6E4F]"
+>
+  Explore Safari
+
+  <FaArrowRight className="ml-2 text-xs transition-transform duration-300 group-hover:translate-x-1" />
+</Link>
+
+              </div>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      ) : (
+
+        <div className="rounded-[28px] bg-white p-12 text-center shadow-lg">
+
+          <div className="text-5xl">
+            🦁
+          </div>
+
+          <h3 className="mt-4 text-2xl font-black">
+            No destination found
+          </h3>
+
+          <p className="mt-2 text-gray-500">
+            Try searching for Kenya, Tanzania, Uganda,
+            Rwanda or another destination.
+          </p>
+
+        </div>
+
+      )}
+
+    </div>
+
+  </section>
+)}
 
       {/* ABOUT / EXPERIENCE SECTION */}
 {/* ABOUT / EXPERIENCE SECTION */}
@@ -199,7 +892,7 @@ setSmallAboutIndex(prev=>(prev + 1) % aboutImages.length);
         <div className="group relative h-[520px] overflow-hidden rounded-[36px] bg-gray-100 shadow-2xl sm:h-[600px] lg:h-[680px]">
 
           <img
-            src={destination1}
+            src={discover2}
             alt="Curious Safaris African adventure"
             className="h-full w-full object-cover object-center transition-transform duration-[2000ms] group-hover:scale-105"
           />
@@ -447,7 +1140,7 @@ setSmallAboutIndex(prev=>(prev + 1) % aboutImages.length);
 {
   title: "Uganda",
   image:
-    "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?auto=format&fit=crop&w=1200&q=85",
+    uganda,
   desc:
     "Track mountain gorillas and chimpanzees through ancient rainforests while discovering Uganda's remarkable wildlife and landscapes.",
 },
