@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {  FaFacebookF,  FaInstagram,  FaWhatsapp,  FaYoutube,  FaArrowRight,  FaMapMarkerAlt,  FaChevronUp,  FaGlobe,} from "react-icons/fa";
 
-import founder from "../assets/founder.jpg";
+//import founder from "../assets/founder.jpg";
 import airbaloon from "../assets/airbaloon.jpg";
 import discover1 from "../assets/discover1.jpg";
 //import destination from "../assets/destination.jpg";
