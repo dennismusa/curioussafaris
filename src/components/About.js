@@ -24,6 +24,7 @@ import useLanguageSync from "../hooks/useLanguageSync";
 function About() {
  useLanguageSync();
 
+  // eslint-disable-next-line no-unused-vars
   const { t, i18n } = useTranslation();
 
 
