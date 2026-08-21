@@ -8,7 +8,8 @@ export default function useLanguageSync() {
 
   useEffect(() => {
     const lang = location.pathname.split("/")[1];
-    const supported = ["en", "fr", "de", "es"];
+
+    const supported = ["en", "fr", "de", "es", "it"];
 
     if (supported.includes(lang)) {
       i18n.changeLanguage(lang);

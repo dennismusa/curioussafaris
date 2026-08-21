@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+
+import { useTranslation } from "react-i18next";
+
 import React, { useEffect } from "react";
-import {  FaFacebookF,  FaInstagram,  FaWhatsapp,  FaYoutube,  FaArrowRight,  FaMapMarkerAlt,  FaChevronUp,  FaGlobe,} from "react-icons/fa";
+import {  FaFacebookF, FaTiktok, FaInstagram,  FaWhatsapp,  FaYoutube,  FaArrowRight,  FaMapMarkerAlt,  FaChevronUp,  FaGlobe,} from "react-icons/fa";
 import nile from "../assets/nile.jpg";
 import okavango from "../assets/okavango.jpg";
 import krugerpark from "../assets/krugerpark.jpg";
@@ -43,7 +46,7 @@ export default function Destination() {
       setTimeout(scrollToSection, 500);
     }
   }, []);
-  
+  const { t, i18n } = useTranslation();
   return (
     <div className="bg-white">
      {/* Hero Section */}
@@ -54,7 +57,7 @@ export default function Destination() {
   <div className="absolute inset-0">
     <img
       src={destination}
-      alt="African safari destination"
+      alt={t("destinationsHero.imageAlt")}
       className="h-full w-full object-cover object-center"
     />
   </div>
@@ -70,6 +73,7 @@ export default function Destination() {
 
   {/* Content */}
   <div className="relative z-10 flex min-h-[55vh] items-center sm:min-h-[58vh] lg:min-h-[60vh]">
+
     <div className="mx-auto w-full max-w-7xl px-6 py-16 sm:px-8 lg:px-12">
 
       <div className="max-w-2xl">
@@ -77,203 +81,164 @@ export default function Destination() {
         {/* Eyebrow */}
         <div className="mb-4">
           <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-[9px] font-semibold uppercase tracking-[2.5px] text-white backdrop-blur-md sm:text-[10px]">
+
             <span className="h-1.5 w-1.5 rounded-full bg-[#C8A94C]" />
-            Explore Africa
+
+            {t("destinationsHero.badge")}
+
           </span>
         </div>
 
         {/* Heading */}
         <h1 className="text-4xl font-extrabold leading-[1] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
-          Extraordinary
+
+          {t("destinationsHero.title")}
+
           <span className="block text-[#C8A94C]">
-            Destinations
+            {t("destinationsHero.titleHighlight")}
           </span>
+
         </h1>
 
         {/* Description */}
         <p className="mt-5 max-w-xl text-sm leading-6 text-white/80 sm:text-base sm:leading-7">
-          Discover iconic wildlife reserves, breathtaking landscapes,
-          tropical beaches, and unforgettable safari experiences across Africa.
+          {t("destinationsHero.description")}
         </p>
 
-        {/* Buttons */}
-        
-
       </div>
+
     </div>
+
   </div>
 
   {/* Bottom Info */}
   <div className="absolute bottom-0 left-0 right-0 z-10 border-t border-white/10 bg-black/20 backdrop-blur-sm">
+
     <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-3 sm:px-8 lg:px-12">
 
       <span className="hidden text-[9px] font-semibold uppercase tracking-[2px] text-white/60 sm:block">
-        Safari Destinations
+        {t("destinationsHero.bottomTitle")}
       </span>
 
       <div className="flex flex-wrap items-center gap-3 text-[9px] font-medium uppercase tracking-[1.5px] text-white/60 sm:text-[10px]">
-        <span>Kenya</span>
+
+        <span>{t("destinationsHero.countries.kenya")}</span>
+
         <span className="text-[#C8A94C]">•</span>
-        <span>Tanzania</span>
+
+        <span>{t("destinationsHero.countries.tanzania")}</span>
+
         <span className="text-[#C8A94C]">•</span>
-        <span>Uganda</span>
+
+        <span>{t("destinationsHero.countries.uganda")}</span>
+
         <span className="text-[#C8A94C]">•</span>
-        <span>Rwanda</span>
+
+        <span>{t("destinationsHero.countries.rwanda")}</span>
+
       </div>
 
     </div>
+
   </div>
 
 </section>
 
 {/* ================= Kenya Safari Destination ================= */}
 
-<section id="kenya-safari" className="relative overflow-hidden bg-white py-32">
-
+<section
+  id="kenya-safari"
+  className="relative overflow-hidden bg-white py-32"
+>
   {/* Background Effects */}
   <div className="absolute -top-40 -right-40 h-[500px] w-[500px] rounded-full bg-yellow-300/10 blur-[160px]" />
   <div className="absolute -bottom-40 -left-40 h-[500px] w-[500px] rounded-full bg-emerald-600/10 blur-[160px]" />
 
   <div className="relative mx-auto max-w-7xl px-6">
 
-    {/* Header */}
+    {/* ================= HEADER ================= */}
 
     <div className="text-center">
 
       <span className="rounded-full bg-emerald-100 px-6 py-2 text-sm font-bold uppercase tracking-[4px] text-emerald-700">
-        Kenya Safari
+        {t("kenyaSafari.badge")}
       </span>
 
       <h2 className="mt-8 text-5xl font-black leading-tight md:text-6xl">
-
-        7-Day Kenya Safari
+        {t("kenyaSafari.title")}
 
         <span className="mt-2 block text-[#C8A94C]">
-          Lost in the Right Direction
+          {t("kenyaSafari.titleHighlight")}
         </span>
-
       </h2>
 
       <p className="mx-auto mt-8 max-w-4xl text-lg leading-8 text-gray-600">
-
-        Experience Kenya's most iconic wildlife destinations, from the
-        elephant-filled plains of Amboseli and the beautiful Great Rift
-        Valley to the legendary Maasai Mara. Discover incredible wildlife,
-        spectacular landscapes and authentic Kenyan culture on one
-        unforgettable safari.
-
+        {t("kenyaSafari.description")}
       </p>
 
     </div>
 
-
-    {/* Destination Images */}
+    {/* ================= DESTINATIONS ================= */}
 
     <div className="mt-20 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
 
-      {/* Amboseli */}
+      {[
+        {
+          image: amboseli,
+          title: t("kenyaSafari.destinations.amboseli.title"),
+          description: t("kenyaSafari.destinations.amboseli.description"),
+          alt: t("kenyaSafari.destinations.amboseli.alt"),
+        },
+        {
+          image: naivasha,
+          title: t("kenyaSafari.destinations.naivasha.title"),
+          description: t("kenyaSafari.destinations.naivasha.description"),
+          alt: t("kenyaSafari.destinations.naivasha.alt"),
+        },
+        {
+          image: nakuru,
+          title: t("kenyaSafari.destinations.nakuru.title"),
+          description: t("kenyaSafari.destinations.nakuru.description"),
+          alt: t("kenyaSafari.destinations.nakuru.alt"),
+        },
+        {
+          image: Wilderbeast,
+          title: t("kenyaSafari.destinations.mara.title"),
+          description: t("kenyaSafari.destinations.mara.description"),
+          alt: t("kenyaSafari.destinations.mara.alt"),
+        },
+      ].map((destination, index) => (
 
-      <div className="group overflow-hidden rounded-[35px]">
+        <div
+          key={index}
+          className="group overflow-hidden rounded-[35px]"
+        >
 
-        <img
-          src={amboseli}
-          alt="Amboseli National Park elephants"
-          className="h-[500px] w-full object-cover transition duration-1000 group-hover:scale-110"
-        />
+          <img
+            src={destination.image}
+            alt={destination.alt}
+            className="h-[500px] w-full object-cover transition duration-1000 group-hover:scale-110"
+          />
 
-        <div className="bg-white p-6 text-center">
+          <div className="bg-white p-6 text-center">
 
-          <h3 className="text-2xl font-bold">
-            Amboseli
-          </h3>
+            <h3 className="text-2xl font-bold">
+              {destination.title}
+            </h3>
 
-          <p className="mt-2 text-gray-600">
-            Famous for elephants and spectacular views of Mount Kilimanjaro.
-          </p>
+            <p className="mt-2 text-gray-600">
+              {destination.description}
+            </p>
 
-        </div>
-
-      </div>
-
-
-      {/* Naivasha */}
-
-      <div className="group overflow-hidden rounded-[35px]">
-
-        <img
-          src={naivasha}
-          alt="Lake Naivasha"
-          className="h-[500px] w-full object-cover transition duration-1000 group-hover:scale-110"
-        />
-
-        <div className="bg-white p-6 text-center">
-
-          <h3 className="text-2xl font-bold">
-            Lake Naivasha
-          </h3>
-
-          <p className="mt-2 text-gray-600">
-            Enjoy a scenic boat ride and walking safari among wildlife.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      {/* Nakuru */}
-
-      <div className="group overflow-hidden rounded-[35px]">
-
-        <img
-          src={nakuru}
-          alt="Lake Nakuru National Park"
-          className="h-[500px] w-full object-cover transition duration-1000 group-hover:scale-110"
-        />
-
-        <div className="bg-white p-6 text-center">
-
-          <h3 className="text-2xl font-bold">
-            Lake Nakuru
-          </h3>
-
-          <p className="mt-2 text-gray-600">
-            Discover rhinos, lions, giraffes and the beautiful Rift Valley.
-          </p>
+          </div>
 
         </div>
 
-      </div>
-
-
-      {/* Maasai Mara */}
-
-      <div className="group overflow-hidden rounded-[35px]">
-
-        <img
-          src={Wilderbeast}
-          alt="Maasai Mara National Reserve"
-          className="h-[500px] w-full object-cover transition duration-1000 group-hover:scale-110"
-        />
-
-        <div className="bg-white p-6 text-center">
-
-          <h3 className="text-2xl font-bold">
-            Maasai Mara
-          </h3>
-
-          <p className="mt-2 text-gray-600">
-            Home to the Big Five, endless plains and unforgettable safaris.
-          </p>
-
-        </div>
-
-      </div>
+      ))}
 
     </div>
 
-
-    {/* Safari Details */}
+    {/* ================= SAFARI DETAILS ================= */}
 
     <div className="mt-20 grid gap-8 lg:grid-cols-3">
 
@@ -282,67 +247,58 @@ export default function Destination() {
       <div className="rounded-[35px] bg-[#F8F6F1] p-10 shadow-xl">
 
         <h3 className="text-2xl font-black">
-          Safari Details
+          {t("kenyaSafari.details.title")}
         </h3>
 
         <div className="mt-8 space-y-5 text-gray-600">
 
           <p>
-            <strong>Duration:</strong> 7 Days / 6 Nights
+            <strong>{t("kenyaSafari.details.durationLabel")}:</strong>{" "}
+            {t("kenyaSafari.details.duration")}
           </p>
 
           <p>
-            <strong>Route:</strong> Nairobi – Amboseli – Naivasha –
-            Nakuru – Maasai Mara – Nairobi
+            <strong>{t("kenyaSafari.details.routeLabel")}:</strong>{" "}
+            {t("kenyaSafari.details.route")}
           </p>
 
           <p>
-            <strong>Transport:</strong> Private 4×4 Land Cruiser
-            with pop-up roof
+            <strong>{t("kenyaSafari.details.transportLabel")}:</strong>{" "}
+            {t("kenyaSafari.details.transport")}
           </p>
 
           <p>
-            <strong>Best For:</strong> Couples, solo travellers,
-            families and groups
+            <strong>{t("kenyaSafari.details.bestForLabel")}:</strong>{" "}
+            {t("kenyaSafari.details.bestFor")}
           </p>
 
           <p>
-            <strong>Highlights:</strong> Mount Kilimanjaro views,
-            elephants, Great Rift Valley, rhinos, Big Five and
-            Maasai Mara.
+            <strong>{t("kenyaSafari.details.highlightsLabel")}:</strong>{" "}
+            {t("kenyaSafari.details.highlights")}
           </p>
 
         </div>
 
       </div>
 
-
       {/* Itinerary */}
 
       <div className="rounded-[35px] bg-[#F8F6F1] p-10 shadow-xl lg:col-span-2">
 
         <h3 className="text-2xl font-black">
-          7-Day Itinerary
+          {t("kenyaSafari.itinerary.title")}
         </h3>
 
         <div className="mt-8 grid gap-6 md:grid-cols-2">
 
           {[
-
-            "Day 1: Nairobi → Amboseli National Park",
-
-            "Day 2: Full Day Amboseli",
-
-            "Day 3: Amboseli → Lake Naivasha",
-
-            "Day 4: Naivasha → Lake Nakuru → Maasai Mara",
-
-            "Day 5: Full Day Maasai Mara",
-
-            "Day 6: Maasai Mara Full Day",
-
-            "Day 7: Maasai Mara → Nairobi",
-
+            t("kenyaSafari.itinerary.days.day1"),
+            t("kenyaSafari.itinerary.days.day2"),
+            t("kenyaSafari.itinerary.days.day3"),
+            t("kenyaSafari.itinerary.days.day4"),
+            t("kenyaSafari.itinerary.days.day5"),
+            t("kenyaSafari.itinerary.days.day6"),
+            t("kenyaSafari.itinerary.days.day7"),
           ].map((day, index) => (
 
             <div
@@ -351,9 +307,7 @@ export default function Destination() {
             >
 
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-emerald-700 font-bold text-white">
-
                 {index + 1}
-
               </div>
 
               <p className="font-semibold text-gray-700">
@@ -370,40 +324,31 @@ export default function Destination() {
 
     </div>
 
-
-    {/* Pricing */}
+    {/* ================= PRICING ================= */}
 
     <div className="mt-20 rounded-[40px] bg-[#0A1A13] p-12 text-white">
 
       <h3 className="text-center text-4xl font-black">
-        Kenya Safari Pricing
+        {t("kenyaSafari.pricing.title")}
       </h3>
 
       <div className="mt-12 grid gap-6 md:grid-cols-5">
 
         {[
-
-          "1 Person\nUSD 2,200",
-
-          "2 People\nUSD 1,650",
-
-          "3–4 People\nUSD 1,450",
-
-          "5–6 People\nUSD 1,300",
-
-          "7+ People\nUSD 1,200",
-
+          t("kenyaSafari.pricing.options.one"),
+          t("kenyaSafari.pricing.options.two"),
+          t("kenyaSafari.pricing.options.threeFour"),
+          t("kenyaSafari.pricing.options.fiveSix"),
+          t("kenyaSafari.pricing.options.sevenPlus"),
         ].map((price, index) => (
 
           <div
             key={index}
             className="rounded-3xl bg-white/10 p-8 text-center backdrop-blur-sm"
           >
-
             <p className="whitespace-pre-line text-xl font-bold">
               {price}
             </p>
-
           </div>
 
         ))}
@@ -412,50 +357,36 @@ export default function Destination() {
 
     </div>
 
-
-    {/* Included */}
+    {/* ================= INCLUDED ================= */}
 
     <div className="mt-20 rounded-[40px] bg-[#F8F6F1] p-12">
 
       <h3 className="text-center text-4xl font-black">
-        What's Included
+        {t("kenyaSafari.included.title")}
       </h3>
 
       <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
 
         {[
-
-          "6 nights accommodation",
-
-          "Private 4×4 Land Cruiser with pop-up roof",
-
-          "Professional English-speaking safari guide",
-
-          "All park and reserve entry fees",
-
-          "Full-board meals during the safari",
-
-          "Game drives",
-
-          "Lake Naivasha boat ride",
-
-          "Crescent Island walking safari",
-
-          "Bottled drinking water",
-
-          "Nairobi pick-up and drop-off",
-
+          t("kenyaSafari.included.items.accommodation"),
+          t("kenyaSafari.included.items.vehicle"),
+          t("kenyaSafari.included.items.guide"),
+          t("kenyaSafari.included.items.parkFees"),
+          t("kenyaSafari.included.items.meals"),
+          t("kenyaSafari.included.items.gameDrives"),
+          t("kenyaSafari.included.items.boatRide"),
+          t("kenyaSafari.included.items.walkingSafari"),
+          t("kenyaSafari.included.items.water"),
+          t("kenyaSafari.included.items.transfers"),
         ].map((item, index) => (
 
           <div
             key={index}
             className="rounded-2xl bg-white p-6 text-center shadow-lg"
           >
-
             <p className="font-semibold text-gray-700">
               ✓ {item}
             </p>
-
           </div>
 
         ))}
@@ -464,8 +395,7 @@ export default function Destination() {
 
     </div>
 
-
-    {/* Closing */}
+    {/* ================= CLOSING ================= */}
 
     <div className="mt-20 text-center">
 
@@ -474,716 +404,12 @@ export default function Destination() {
       </p>
 
       <p className="mt-3 text-2xl font-black text-gray-900 md:text-3xl">
-        Lost in the right direction.
-      </p>
-
-    </div>
-{/* Final CTA */}
-
-<div className="mt-20 rounded-[40px] bg-emerald-700 px-8 py-16 text-center text-white">
-
-  <p className="text-sm font-bold uppercase tracking-[4px] text-emerald-100">
-    Curious Safaris
-  </p>
-
-  <h3 className="mt-4 text-4xl font-black md:text-5xl">
-    Lost in the right direction.
-  </h3>
-
-  <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-emerald-50">
-    Experience Kenya's iconic wildlife, breathtaking landscapes and
-    unforgettable safari adventures on a 7-day journey through Amboseli,
-    Naivasha, Nakuru and the Maasai Mara.
-  </p>
-
-  <a
-    href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20the%207-Day%20Kenya%20Safari."
-    target="_blank"
-    rel="noopener noreferrer"
-    className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
-  >
-    Book This Safari
-    <span className="ml-2">→</span>
-  </a>
-
-</div>
-  </div>
-
-</section>
-
-
-{/* ================= Tanzania Safari Destination ================= */}
-
-<section id="tanzania-safari" className="relative overflow-hidden bg-white py-32">
-
-  {/* Background Effects */}
-  <div className="absolute -top-40 -right-40 h-[500px] w-[500px] rounded-full bg-yellow-300/10 blur-[160px]" />
-  <div className="absolute -bottom-40 -left-40 h-[500px] w-[500px] rounded-full bg-emerald-600/10 blur-[160px]" />
-
-  <div className="relative mx-auto max-w-7xl px-6">
-
-    {/* Header */}
-
-    <div className="text-center">
-
-      <span className="rounded-full bg-emerald-100 px-6 py-2 text-sm font-bold uppercase tracking-[4px] text-emerald-700">
-        Tanzania Safari
-      </span>
-
-      <h2 className="mt-8 text-5xl font-black leading-tight md:text-6xl">
-
-        7-Day Tanzania Safari
-
-        <span className="mt-2 block text-[#C8A94C]">
-          The Ultimate Wildlife Adventure
-        </span>
-
-      </h2>
-
-      <p className="mx-auto mt-8 max-w-4xl text-lg leading-8 text-gray-600">
-
-        Experience Tanzania's most celebrated wildlife destinations,
-        from the giant baobab trees of Tarangire to the endless plains
-        of the Serengeti and the breathtaking Ngorongoro Crater.
-        Witness the Big Five, discover diverse landscapes, and enjoy
-        one of Africa's most extraordinary safari adventures.
-
+        {t("kenyaSafari.closing")}
       </p>
 
     </div>
 
-
-    {/* Destination Images */}
-
-    <div className="mt-20 grid gap-6 md:grid-cols-3">
-
-      {/* Tarangire */}
-
-      <div className="group overflow-hidden rounded-[35px]">
-
-        <img
-  src="https://www.flightsafaris.com/resources/destinations/tarangire-national-park.jpg"
-  alt="Elephants and baobabs in Tarangire National Park, Tanzania"
-  className="h-[500px] w-full object-cover transition duration-1000 group-hover:scale-110"
-/>
-
-        <div className="bg-white p-6 text-center">
-
-          <h3 className="text-2xl font-bold">
-            Tarangire
-          </h3>
-
-          <p className="mt-2 text-gray-600">
-            Famous for elephants, ancient baobab trees and spectacular
-            wildlife.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      {/* Serengeti */}
-
-      <div className="group overflow-hidden rounded-[35px]">
-
-        <img
-          src={serengeti}
-          alt="Serengeti National Park Tanzania"
-          className="h-[500px] w-full object-cover transition duration-1000 group-hover:scale-110"
-        />
-
-        <div className="bg-white p-6 text-center">
-
-          <h3 className="text-2xl font-bold">
-            Serengeti
-          </h3>
-
-          <p className="mt-2 text-gray-600">
-            Home to the Great Migration, Big Five and endless golden plains.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      {/* Ngorongoro */}
-
-      <div className="group overflow-hidden rounded-[35px]">
-
-        <img
-          src={ngorongoro}
-          alt="Ngorongoro Crater Tanzania"
-          className="h-[500px] w-full object-cover transition duration-1000 group-hover:scale-110"
-        />
-
-        <div className="bg-white p-6 text-center">
-
-          <h3 className="text-2xl font-bold">
-            Ngorongoro Crater
-          </h3>
-
-          <p className="mt-2 text-gray-600">
-            One of Africa's most spectacular wildlife destinations,
-            home to incredible landscapes and diverse wildlife.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    {/* Safari Details */}
-
-    <div className="mt-20 grid gap-8 lg:grid-cols-3">
-
-      {/* Details */}
-
-      <div className="rounded-[35px] bg-[#F8F6F1] p-10 shadow-xl">
-
-        <h3 className="text-2xl font-black">
-          Safari Details
-        </h3>
-
-        <div className="mt-8 space-y-5 text-gray-600">
-
-          <p>
-            <strong>Duration:</strong> 7 Days / 6 Nights
-          </p>
-
-          <p>
-            <strong>Route:</strong> Arusha – Tarangire –
-            Serengeti – Ngorongoro – Arusha
-          </p>
-
-          <p>
-            <strong>Transport:</strong> Private 4×4 safari
-            vehicle with pop-up roof
-          </p>
-
-          <p>
-            <strong>Highlights:</strong> Great Migration,
-            Big Five, Tarangire elephants and the
-            Ngorongoro Crater
-          </p>
-
-        </div>
-
-      </div>
-
-
-      {/* Itinerary */}
-
-      <div className="rounded-[35px] bg-[#F8F6F1] p-10 shadow-xl lg:col-span-2">
-
-        <h3 className="text-2xl font-black">
-          7-Day Itinerary
-        </h3>
-
-        <div className="mt-8 grid gap-6 md:grid-cols-2">
-
-          {[
-
-            "Day 1: Arusha → Tarangire National Park",
-
-            "Day 2: Tarangire → Serengeti",
-
-            "Day 3: Full-Day Serengeti Safari",
-
-            "Day 4: Serengeti Exploration",
-
-            "Day 5: Serengeti → Ngorongoro",
-
-            "Day 6: Ngorongoro Crater → Karatu",
-
-            "Day 7: Karatu → Arusha",
-
-          ].map((day, index) => (
-
-            <div
-              key={index}
-              className="flex items-center gap-4 rounded-2xl bg-white p-5"
-            >
-
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-emerald-700 font-bold text-white">
-
-                {index + 1}
-
-              </div>
-
-              <p className="font-semibold text-gray-700">
-                {day}
-              </p>
-
-            </div>
-
-          ))}
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    {/* Pricing */}
-
-    <div className="mt-20 rounded-[40px] bg-[#0A1A13] p-12 text-white">
-
-      <h3 className="text-center text-4xl font-black">
-        Tanzania Safari Pricing
-      </h3>
-
-      <div className="mt-12 grid gap-6 md:grid-cols-5">
-
-        {[
-
-          "1 Person\nUSD 2,400",
-
-          "2 People\nUSD 1,850",
-
-          "3–4 People\nUSD 1,600",
-
-          "5–6 People\nUSD 1,450",
-
-          "7+ People\nUSD 1,350",
-
-        ].map((price, index) => (
-
-          <div
-            key={index}
-            className="rounded-3xl bg-white/10 p-8 text-center backdrop-blur-sm"
-          >
-
-            <p className="whitespace-pre-line text-xl font-bold">
-              {price}
-            </p>
-
-          </div>
-
-        ))}
-
-      </div>
-
-    </div>
-
-
-    {/* Included */}
-
-    <div className="mt-20 rounded-[40px] bg-[#F8F6F1] p-12">
-
-      <h3 className="text-center text-4xl font-black">
-        What's Included
-      </h3>
-
-      <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-
-        {[
-
-          "6 nights accommodation",
-
-          "Private 4×4 safari vehicle with pop-up roof",
-
-          "Professional English-speaking safari guide",
-
-          "Park and conservation fees",
-
-          "Full-board meals during the safari",
-
-          "Game drives",
-
-          "Bottled drinking water",
-
-          "Arusha airport/hotel pick-up and drop-off",
-
-        ].map((item, index) => (
-
-          <div
-            key={index}
-            className="rounded-2xl bg-white p-6 text-center shadow-lg"
-          >
-
-            <p className="font-semibold text-gray-700">
-              ✓ {item}
-            </p>
-
-          </div>
-
-        ))}
-
-      </div>
-
-    </div>
-
-
-    {/* Closing */}
-
-    <div className="mt-20 text-center">
-
-      <p className="text-xl font-bold text-emerald-700">
-        Curious Safaris
-      </p>
-
-      <p className="mt-3 text-2xl font-black text-gray-900 md:text-3xl">
-        Explore Tanzania, from the Great Migration to the Ngorongoro Crater.
-      </p>
-
-    </div>
-{/* Final CTA */}
-
-<div className="mt-20 rounded-[40px] bg-emerald-700 px-8 py-16 text-center text-white">
-
-  <p className="text-sm font-bold uppercase tracking-[4px] text-emerald-100">
-    Curious Safaris
-  </p>
-
-  <h3 className="mt-4 text-4xl font-black md:text-5xl">
-    The Ultimate Wildlife Adventure.
-  </h3>
-
-  <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-emerald-50">
-    Discover Tanzania's legendary Serengeti, incredible Tarangire elephants
-    and breathtaking Ngorongoro Crater on an unforgettable 7-day safari.
-  </p>
-
-  <a
-    href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20the%207-Day%20Tanzania%20Safari."
-    target="_blank"
-    rel="noopener noreferrer"
-    className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
-  >
-    Book This Safari
-    <span className="ml-2">→</span>
-  </a>
-
-</div>
-  </div>
-
-</section>
-
-{/* ================= Uganda Safari Destination ================= */}
-
-<section id="uganda-safari" className="relative overflow-hidden bg-white py-32">
-
-  {/* Background Effects */}
-  <div className="absolute -top-40 -right-40 h-[500px] w-[500px] rounded-full bg-yellow-300/10 blur-[160px]" />
-  <div className="absolute -bottom-40 -left-40 h-[500px] w-[500px] rounded-full bg-emerald-600/10 blur-[160px]" />
-
-  <div className="relative mx-auto max-w-7xl px-6">
-
-    {/* Header */}
-
-    <div className="text-center">
-
-      <span className="rounded-full bg-emerald-100 px-6 py-2 text-sm font-bold uppercase tracking-[4px] text-emerald-700">
-        Uganda Safari
-      </span>
-
-      <h2 className="mt-8 text-5xl font-black leading-tight md:text-6xl">
-        7-Day Uganda Safari
-        <span className="mt-2 block text-[#C8A94C]">
-          Gorillas, Chimpanzees & Wildlife
-        </span>
-      </h2>
-
-      <p className="mx-auto mt-8 max-w-4xl text-lg leading-8 text-gray-600">
-        Experience Uganda's incredible rainforests, savannahs and
-        mountain landscapes. Track chimpanzees in Kibale Forest,
-        enjoy unforgettable wildlife encounters in Queen Elizabeth
-        National Park and trek through Bwindi in search of mountain gorillas.
-      </p>
-
-    </div>
-
-
-    {/* Destination Images */}
-
-    <div className="mt-20 grid gap-6 md:grid-cols-3">
-
-      {/* Kibale */}
-
-      <div className="group overflow-hidden rounded-[35px]">
-
-        <div className="overflow-hidden">
-
-          <img
-  src="https://cdn.generationvoyage.fr/2024/01/babobab-elephant-Tarangire.jpeg"
-  alt="Elephants beneath a baobab tree in Tarangire National Park"
-  className="h-[500px] w-full object-cover transition duration-1000 group-hover:scale-110"
-/>
-
-        </div>
-
-        <div className="bg-white p-6 text-center">
-
-          <h3 className="text-2xl font-bold">
-            Kibale Forest
-          </h3>
-
-          <p className="mt-2 text-gray-600">
-            Uganda's primate capital and home to incredible chimpanzee
-            tracking experiences.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      {/* Queen Elizabeth */}
-
-      <div className="group overflow-hidden rounded-[35px]">
-
-        <div className="overflow-hidden">
-
-          <img
-  src="https://www.shadowsofafrica.com/media/catalog/product/cache/1/image/900x/040ec09b1e35df139433887a97daa66f/h/e/herd_of_elephants_drinking_water_in_queen_elizabeth_national_park_uganda_1_1.jpg"
-  alt="Elephant herd at Kazinga Channel, Queen Elizabeth National Park"
-  className="h-[500px] w-full object-cover transition duration-1000 group-hover:scale-110"
-/>
-
-        </div>
-
-        <div className="bg-white p-6 text-center">
-
-          <h3 className="text-2xl font-bold">
-            Queen Elizabeth
-          </h3>
-
-          <p className="mt-2 text-gray-600">
-            Discover elephants, lions, buffaloes, hippos and
-            spectacular wildlife along the Kazinga Channel.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      {/* Bwindi */}
-
-      <div className="group overflow-hidden rounded-[35px]">
-
-        <div className="overflow-hidden">
-
-          <img
-  src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1200&q=85"
-  alt="Dense rainforest in Bwindi Impenetrable Forest, Uganda"
-  className="h-[500px] w-full object-cover transition duration-1000 group-hover:scale-110"
-/>
-
-        </div>
-
-        <div className="bg-white p-6 text-center">
-
-          <h3 className="text-2xl font-bold">
-            Bwindi Impenetrable Forest
-          </h3>
-
-          <p className="mt-2 text-gray-600">
-            Trek through ancient rainforest in search of
-            Uganda's incredible mountain gorillas.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    {/* Safari Details */}
-
-    <div className="mt-20 grid gap-8 lg:grid-cols-3">
-
-      <div className="rounded-[35px] bg-[#F8F6F1] p-10 shadow-xl">
-
-        <h3 className="text-2xl font-black">
-          Safari Details
-        </h3>
-
-        <div className="mt-8 space-y-5 text-gray-600">
-
-          <p>
-            <strong>Duration:</strong> 7 Days / 6 Nights
-          </p>
-
-          <p>
-            <strong>Route:</strong> Entebbe – Kibale –
-            Queen Elizabeth – Bwindi – Entebbe
-          </p>
-
-          <p>
-            <strong>Transport:</strong> Private 4×4 safari
-            vehicle
-          </p>
-
-          <p>
-            <strong>Highlights:</strong> Gorilla trekking,
-            chimpanzee tracking, Big Five wildlife,
-            Kazinga Channel boat safari and rainforest
-            experiences
-          </p>
-
-        </div>
-
-      </div>
-
-
-      {/* Itinerary */}
-
-      <div className="rounded-[35px] bg-[#F8F6F1] p-10 shadow-xl lg:col-span-2">
-
-        <h3 className="text-2xl font-black">
-          7-Day Itinerary
-        </h3>
-
-        <div className="mt-8 grid gap-6 md:grid-cols-2">
-
-          {[
-            "Day 1: Entebbe → Kibale Forest",
-            "Day 2: Chimpanzee Tracking",
-            "Day 3: Kibale → Queen Elizabeth",
-            "Day 4: Queen Elizabeth Safari & Kazinga Channel",
-            "Day 5: Queen Elizabeth → Bwindi",
-            "Day 6: Gorilla Trekking",
-            "Day 7: Bwindi → Entebbe",
-          ].map((day, index) => (
-
-            <div
-              key={index}
-              className="flex items-center gap-4 rounded-2xl bg-white p-5"
-            >
-
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-emerald-700 font-bold text-white">
-                {index + 1}
-              </div>
-
-              <p className="font-semibold text-gray-700">
-                {day}
-              </p>
-
-            </div>
-
-          ))}
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    {/* Pricing */}
-
-    <div className="mt-20 rounded-[40px] bg-[#0A1A13] p-12 text-white">
-
-      <h3 className="text-center text-4xl font-black">
-        Uganda Safari Pricing
-      </h3>
-
-      <div className="mt-12 grid gap-6 md:grid-cols-5">
-
-        {[
-          {
-            group: "1 Person",
-            price: "USD 3,200",
-          },
-          {
-            group: "2 People",
-            price: "USD 2,400",
-          },
-          {
-            group: "3–4 People",
-            price: "USD 2,100",
-          },
-          {
-            group: "5–6 People",
-            price: "USD 1,900",
-          },
-          {
-            group: "7+ People",
-            price: "USD 1,750",
-          },
-        ].map((item, index) => (
-
-          <div
-            key={index}
-            className="rounded-3xl bg-white/10 p-8 text-center backdrop-blur-sm transition duration-300 hover:-translate-y-2 hover:bg-white/15"
-          >
-
-            <p className="text-sm font-medium text-white/60">
-              {item.group}
-            </p>
-
-            <p className="mt-3 text-2xl font-black">
-              {item.price}
-            </p>
-
-            <p className="mt-1 text-sm text-white/50">
-              per person
-            </p>
-
-          </div>
-
-        ))}
-
-      </div>
-
-    </div>
-
-
-    {/* Included */}
-
-    <div className="mt-20 rounded-[40px] bg-[#F8F6F1] p-12">
-
-      <h3 className="text-center text-4xl font-black">
-        What's Included
-      </h3>
-
-      <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-
-        {[
-          "6 nights accommodation",
-          "Private 4×4 safari vehicle",
-          "Professional English-speaking guide",
-          "Chimpanzee tracking permit",
-          "Gorilla trekking permit",
-          "Park and conservation fees",
-          "Game drives",
-          "Kazinga Channel boat safari",
-          "Full-board meals",
-          "Bottled drinking water",
-          "Entebbe/Kampala pick-up",
-          "Entebbe/Kampala drop-off",
-        ].map((item, index) => (
-
-          <div
-            key={index}
-            className="rounded-2xl bg-white p-6 text-center shadow-lg transition duration-300 hover:-translate-y-1"
-          >
-
-            <p className="font-semibold text-gray-700">
-              <span className="mr-2 text-emerald-700">
-                ✓
-              </span>
-
-              {item}
-            </p>
-
-          </div>
-
-        ))}
-
-      </div>
-
-    </div>
-
-
-    {/* Final CTA */}
+    {/* ================= FINAL CTA ================= */}
 
     <div className="mt-20 rounded-[40px] bg-emerald-700 px-8 py-16 text-center text-white">
 
@@ -1192,23 +418,714 @@ export default function Destination() {
       </p>
 
       <h3 className="mt-4 text-4xl font-black md:text-5xl">
-        Where the rainforest meets the wild.
+        {t("kenyaSafari.cta.title")}
       </h3>
 
       <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-emerald-50">
-        Experience Uganda's gorillas, chimpanzees and incredible
-        wildlife on an unforgettable 7-day adventure.
+        {t("kenyaSafari.cta.description")}
       </p>
 
       <a
-  href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20the%207-Day%20Uganda%20Safari."
-  target="_blank"
-  rel="noopener noreferrer"
-  className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+        href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20the%207-Day%20Kenya%20Safari."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+      >
+        {t("kenyaSafari.cta.button")}
+        <span className="ml-2">→</span>
+      </a>
+
+    </div>
+
+    {/* ================= SAFARI VIDEO ================= */}
+
+    <div className="mt-10 sm:mt-16">
+
+      <div className="mx-auto max-w-5xl">
+
+        {/* Video Heading */}
+
+        <div className="mb-6 text-center sm:mb-8">
+
+          <span className="text-[10px] font-bold uppercase tracking-[3px] text-emerald-700 sm:text-xs sm:tracking-[4px]">
+            {t("kenyaSafari.video.badge")}
+          </span>
+
+          <h3 className="mt-2 text-2xl font-black text-gray-900 sm:text-3xl md:text-4xl">
+            {t("kenyaSafari.video.title")}
+          </h3>
+
+          <p className="mx-auto mt-2 max-w-xl text-sm leading-6 text-gray-500 sm:text-base">
+            {t("kenyaSafari.video.description")}
+          </p>
+
+        </div>
+
+        {/* Video */}
+
+        <div className="group relative overflow-hidden rounded-[28px] bg-[#0A1A13] p-2 shadow-2xl sm:rounded-[40px] sm:p-3">
+
+          <div className="pointer-events-none absolute -inset-1 animate-pulse rounded-[30px] bg-emerald-500/20 blur-xl sm:rounded-[42px]" />
+
+          <div className="relative aspect-video w-full overflow-hidden rounded-[22px] bg-black sm:rounded-[32px]">
+
+            <iframe
+              className="absolute inset-0 h-full w-full"
+              src="https://www.youtube.com/embed/B_ePgga2YO4?rel=0&modestbranding=1"
+              title={t("kenyaSafari.video.iframeTitle")}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+
+            <div className="pointer-events-none absolute inset-0 rounded-[22px] ring-1 ring-white/10 sm:rounded-[32px]" />
+
+          </div>
+
+        </div>
+
+        {/* YouTube Button */}
+
+        <div className="mt-5 text-center sm:mt-6">
+
+          <a
+            href="https://youtu.be/B_ePgga2YO4?si=f-u0z2Z2QkOQ4W8a"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-gray-900 px-6 py-3 text-sm font-bold text-white shadow-lg transition duration-500 hover:-translate-y-1 hover:bg-emerald-700 hover:shadow-emerald-700/30"
+          >
+            {t("kenyaSafari.video.youtubeButton")}
+            <span className="text-base">↗</span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+{/* ================= Tanzania Safari Destination ================= */}
+<section
+  id="tanzania-safari"
+  className="relative overflow-hidden bg-white py-32"
 >
-  Book This Safari
-  <span className="ml-2">→</span>
-</a>
+  {/* Background Effects */}
+  <div className="absolute -top-40 -right-40 h-[500px] w-[500px] rounded-full bg-yellow-300/10 blur-[160px]" />
+  <div className="absolute -bottom-40 -left-40 h-[500px] w-[500px] rounded-full bg-emerald-600/10 blur-[160px]" />
+
+  <div className="relative mx-auto max-w-7xl px-6">
+
+    {/* Header */}
+    <div className="text-center">
+
+      <span className="rounded-full bg-emerald-100 px-6 py-2 text-sm font-bold uppercase tracking-[4px] text-emerald-700">
+        {t("tanzaniaSafari.badge")}
+      </span>
+
+      <h2 className="mt-8 text-5xl font-black leading-tight md:text-6xl">
+        {t("tanzaniaSafari.title")}
+
+        <span className="mt-2 block text-[#C8A94C]">
+          {t("tanzaniaSafari.titleHighlight")}
+        </span>
+      </h2>
+
+      <p className="mx-auto mt-8 max-w-4xl text-lg leading-8 text-gray-600">
+        {t("tanzaniaSafari.description")}
+      </p>
+
+    </div>
+
+    {/* Destination Images */}
+    <div className="mt-20 grid gap-6 md:grid-cols-3">
+
+      {/* Tarangire */}
+      <div className="group overflow-hidden rounded-[35px]">
+
+        <img
+          src="https://www.flightsafaris.com/resources/destinations/tarangire-national-park.jpg"
+          alt={t("tanzaniaSafari.destinations.tarangire.alt")}
+          className="h-[500px] w-full object-cover transition duration-1000 group-hover:scale-110"
+        />
+
+        <div className="bg-white p-6 text-center">
+
+          <h3 className="text-2xl font-bold">
+            {t("tanzaniaSafari.destinations.tarangire.title")}
+          </h3>
+
+          <p className="mt-2 text-gray-600">
+            {t("tanzaniaSafari.destinations.tarangire.description")}
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* Serengeti */}
+      <div className="group overflow-hidden rounded-[35px]">
+
+        <img
+          src={serengeti}
+          alt={t("tanzaniaSafari.destinations.serengeti.alt")}
+          className="h-[500px] w-full object-cover transition duration-1000 group-hover:scale-110"
+        />
+
+        <div className="bg-white p-6 text-center">
+
+          <h3 className="text-2xl font-bold">
+            {t("tanzaniaSafari.destinations.serengeti.title")}
+          </h3>
+
+          <p className="mt-2 text-gray-600">
+            {t("tanzaniaSafari.destinations.serengeti.description")}
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* Ngorongoro */}
+      <div className="group overflow-hidden rounded-[35px]">
+
+        <img
+          src={ngorongoro}
+          alt={t("tanzaniaSafari.destinations.ngorongoro.alt")}
+          className="h-[500px] w-full object-cover transition duration-1000 group-hover:scale-110"
+        />
+
+        <div className="bg-white p-6 text-center">
+
+          <h3 className="text-2xl font-bold">
+            {t("tanzaniaSafari.destinations.ngorongoro.title")}
+          </h3>
+
+          <p className="mt-2 text-gray-600">
+            {t("tanzaniaSafari.destinations.ngorongoro.description")}
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    {/* Safari Details */}
+    <div className="mt-20 grid gap-8 lg:grid-cols-3">
+
+      {/* Details */}
+      <div className="rounded-[35px] bg-[#F8F6F1] p-10 shadow-xl">
+
+        <h3 className="text-2xl font-black">
+          {t("tanzaniaSafari.details.title")}
+        </h3>
+
+        <div className="mt-8 space-y-5 text-gray-600">
+
+          <p>
+            <strong>
+              {t("tanzaniaSafari.details.durationLabel")}:
+            </strong>{" "}
+            {t("tanzaniaSafari.details.duration")}
+          </p>
+
+          <p>
+            <strong>
+              {t("tanzaniaSafari.details.routeLabel")}:
+            </strong>{" "}
+            {t("tanzaniaSafari.details.route")}
+          </p>
+
+          <p>
+            <strong>
+              {t("tanzaniaSafari.details.transportLabel")}:
+            </strong>{" "}
+            {t("tanzaniaSafari.details.transport")}
+          </p>
+
+          <p>
+            <strong>
+              {t("tanzaniaSafari.details.highlightsLabel")}:
+            </strong>{" "}
+            {t("tanzaniaSafari.details.highlights")}
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* Itinerary */}
+      <div className="rounded-[35px] bg-[#F8F6F1] p-10 shadow-xl lg:col-span-2">
+
+        <h3 className="text-2xl font-black">
+          {t("tanzaniaSafari.itinerary.title")}
+        </h3>
+
+        <div className="mt-8 grid gap-6 md:grid-cols-2">
+
+          {[
+            "day1",
+            "day2",
+            "day3",
+            "day4",
+            "day5",
+            "day6",
+            "day7",
+          ].map((day, index) => (
+
+            <div
+              key={day}
+              className="flex items-center gap-4 rounded-2xl bg-white p-5"
+            >
+
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-emerald-700 font-bold text-white">
+                {index + 1}
+              </div>
+
+              <p className="font-semibold text-gray-700">
+                {t(`tanzaniaSafari.itinerary.${day}`)}
+              </p>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </div>
+
+    </div>
+
+    {/* Pricing */}
+    <div className="mt-20 rounded-[40px] bg-[#0A1A13] p-12 text-white">
+
+      <h3 className="text-center text-4xl font-black">
+        {t("tanzaniaSafari.pricing.title")}
+      </h3>
+
+      <div className="mt-12 grid gap-6 md:grid-cols-5">
+
+        {[
+          "person1",
+          "people2",
+          "people3to4",
+          "people5to6",
+          "people7plus",
+        ].map((price) => (
+
+          <div
+            key={price}
+            className="rounded-3xl bg-white/10 p-8 text-center backdrop-blur-sm"
+          >
+
+            <p className="whitespace-pre-line text-xl font-bold">
+              {t(`tanzaniaSafari.pricing.${price}`)}
+            </p>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </div>
+
+    {/* Included */}
+    <div className="mt-20 rounded-[40px] bg-[#F8F6F1] p-12">
+
+      <h3 className="text-center text-4xl font-black">
+        {t("tanzaniaSafari.included.title")}
+      </h3>
+
+      <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+
+        {[
+          "accommodation",
+          "vehicle",
+          "guide",
+          "parkFees",
+          "meals",
+          "gameDrives",
+          "water",
+          "transfers",
+        ].map((item) => (
+
+          <div
+            key={item}
+            className="rounded-2xl bg-white p-6 text-center shadow-lg"
+          >
+
+            <p className="font-semibold text-gray-700">
+              ✓ {t(`tanzaniaSafari.included.items.${item}`)}
+            </p>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </div>
+
+    {/* Closing */}
+    <div className="mt-20 text-center">
+
+      <p className="text-xl font-bold text-emerald-700">
+        Curious Safaris
+      </p>
+
+      <p className="mt-3 text-2xl font-black text-gray-900 md:text-3xl">
+        {t("tanzaniaSafari.closing")}
+      </p>
+
+    </div>
+
+    {/* Final CTA */}
+    <div className="mt-20 rounded-[40px] bg-emerald-700 px-8 py-16 text-center text-white">
+
+      <p className="text-sm font-bold uppercase tracking-[4px] text-emerald-100">
+        Curious Safaris
+      </p>
+
+      <h3 className="mt-4 text-4xl font-black md:text-5xl">
+        {t("tanzaniaSafari.cta.title")}
+      </h3>
+
+      <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-emerald-50">
+        {t("tanzaniaSafari.cta.description")}
+      </p>
+
+      <a
+        href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20the%207-Day%20Tanzania%20Safari."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+      >
+        {t("tanzaniaSafari.cta.button")}
+        <span className="ml-2">→</span>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* ================= Uganda Safari Destination ================= */}
+
+<section
+  id="uganda-safari"
+  className="relative overflow-hidden bg-white py-32"
+>
+  {/* Background Effects */}
+  <div className="absolute -top-40 -right-40 h-[500px] w-[500px] rounded-full bg-yellow-300/10 blur-[160px]" />
+  <div className="absolute -bottom-40 -left-40 h-[500px] w-[500px] rounded-full bg-emerald-600/10 blur-[160px]" />
+
+  <div className="relative mx-auto max-w-7xl px-6">
+
+    {/* Header */}
+    <div className="text-center">
+
+      <span className="rounded-full bg-emerald-100 px-6 py-2 text-sm font-bold uppercase tracking-[4px] text-emerald-700">
+        {t("ugandaSafari.badge")}
+      </span>
+
+      <h2 className="mt-8 text-5xl font-black leading-tight md:text-6xl">
+        {t("ugandaSafari.title")}
+
+        <span className="mt-2 block text-[#C8A94C]">
+          {t("ugandaSafari.titleHighlight")}
+        </span>
+      </h2>
+
+      <p className="mx-auto mt-8 max-w-4xl text-lg leading-8 text-gray-600">
+        {t("ugandaSafari.description")}
+      </p>
+
+    </div>
+
+    {/* Destination Images */}
+    <div className="mt-20 grid gap-6 md:grid-cols-3">
+
+      {/* Kibale */}
+      <div className="group overflow-hidden rounded-[35px]">
+
+        <div className="overflow-hidden">
+          <img
+            src="https://cdn.generationvoyage.fr/2024/01/babobab-elephant-Tarangire.jpeg"
+            alt={t("ugandaSafari.destinations.kibale.alt")}
+            className="h-[500px] w-full object-cover transition duration-1000 group-hover:scale-110"
+          />
+        </div>
+
+        <div className="bg-white p-6 text-center">
+
+          <h3 className="text-2xl font-bold">
+            {t("ugandaSafari.destinations.kibale.title")}
+          </h3>
+
+          <p className="mt-2 text-gray-600">
+            {t("ugandaSafari.destinations.kibale.description")}
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* Queen Elizabeth */}
+      <div className="group overflow-hidden rounded-[35px]">
+
+        <div className="overflow-hidden">
+          <img
+            src="https://www.shadowsofafrica.com/media/catalog/product/cache/1/image/900x/040ec09b1e35df139433887a97daa66f/h/e/herd_of_elephants_drinking_water_in_queen_elizabeth_national_park_uganda_1_1.jpg"
+            alt={t("ugandaSafari.destinations.queenElizabeth.alt")}
+            className="h-[500px] w-full object-cover transition duration-1000 group-hover:scale-110"
+          />
+        </div>
+
+        <div className="bg-white p-6 text-center">
+
+          <h3 className="text-2xl font-bold">
+            {t("ugandaSafari.destinations.queenElizabeth.title")}
+          </h3>
+
+          <p className="mt-2 text-gray-600">
+            {t("ugandaSafari.destinations.queenElizabeth.description")}
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* Bwindi */}
+      <div className="group overflow-hidden rounded-[35px]">
+
+        <div className="overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1200&q=85"
+            alt={t("ugandaSafari.destinations.bwindi.alt")}
+            className="h-[500px] w-full object-cover transition duration-1000 group-hover:scale-110"
+          />
+        </div>
+
+        <div className="bg-white p-6 text-center">
+
+          <h3 className="text-2xl font-bold">
+            {t("ugandaSafari.destinations.bwindi.title")}
+          </h3>
+
+          <p className="mt-2 text-gray-600">
+            {t("ugandaSafari.destinations.bwindi.description")}
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    {/* Safari Details */}
+    <div className="mt-20 grid gap-8 lg:grid-cols-3">
+
+      {/* Details */}
+      <div className="rounded-[35px] bg-[#F8F6F1] p-10 shadow-xl">
+
+        <h3 className="text-2xl font-black">
+          {t("ugandaSafari.details.title")}
+        </h3>
+
+        <div className="mt-8 space-y-5 text-gray-600">
+
+          <p>
+            <strong>
+              {t("ugandaSafari.details.durationLabel")}:
+            </strong>{" "}
+            {t("ugandaSafari.details.duration")}
+          </p>
+
+          <p>
+            <strong>
+              {t("ugandaSafari.details.routeLabel")}:
+            </strong>{" "}
+            {t("ugandaSafari.details.route")}
+          </p>
+
+          <p>
+            <strong>
+              {t("ugandaSafari.details.transportLabel")}:
+            </strong>{" "}
+            {t("ugandaSafari.details.transport")}
+          </p>
+
+          <p>
+            <strong>
+              {t("ugandaSafari.details.highlightsLabel")}:
+            </strong>{" "}
+            {t("ugandaSafari.details.highlights")}
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* Itinerary */}
+      <div className="rounded-[35px] bg-[#F8F6F1] p-10 shadow-xl lg:col-span-2">
+
+        <h3 className="text-2xl font-black">
+          {t("ugandaSafari.itinerary.title")}
+        </h3>
+
+        <div className="mt-8 grid gap-6 md:grid-cols-2">
+
+          {[
+            "day1",
+            "day2",
+            "day3",
+            "day4",
+            "day5",
+            "day6",
+            "day7",
+          ].map((day, index) => (
+
+            <div
+              key={day}
+              className="flex items-center gap-4 rounded-2xl bg-white p-5"
+            >
+
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-emerald-700 font-bold text-white">
+                {index + 1}
+              </div>
+
+              <p className="font-semibold text-gray-700">
+                {t(`ugandaSafari.itinerary.${day}`)}
+              </p>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </div>
+
+    </div>
+
+    {/* Pricing */}
+    <div className="mt-20 rounded-[40px] bg-[#0A1A13] p-12 text-white">
+
+      <h3 className="text-center text-4xl font-black">
+        {t("ugandaSafari.pricing.title")}
+      </h3>
+
+      <div className="mt-12 grid gap-6 md:grid-cols-5">
+
+        {[
+          "person1",
+          "people2",
+          "people3to4",
+          "people5to6",
+          "people7plus",
+        ].map((price) => (
+
+          <div
+            key={price}
+            className="rounded-3xl bg-white/10 p-8 text-center backdrop-blur-sm transition duration-300 hover:-translate-y-2 hover:bg-white/15"
+          >
+
+            <p className="text-sm font-medium text-white/60">
+              {t(`ugandaSafari.pricing.${price}.group`)}
+            </p>
+
+            <p className="mt-3 text-2xl font-black">
+              {t(`ugandaSafari.pricing.${price}.price`)}
+            </p>
+
+            <p className="mt-1 text-sm text-white/50">
+              {t("ugandaSafari.pricing.perPerson")}
+            </p>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </div>
+
+    {/* Included */}
+    <div className="mt-20 rounded-[40px] bg-[#F8F6F1] p-12">
+
+      <h3 className="text-center text-4xl font-black">
+        {t("ugandaSafari.included.title")}
+      </h3>
+
+      <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+
+        {[
+          "accommodation",
+          "vehicle",
+          "guide",
+          "chimpanzeePermit",
+          "gorillaPermit",
+          "parkFees",
+          "gameDrives",
+          "kazingaBoat",
+          "meals",
+          "water",
+          "pickup",
+          "dropoff",
+        ].map((item) => (
+
+          <div
+            key={item}
+            className="rounded-2xl bg-white p-6 text-center shadow-lg transition duration-300 hover:-translate-y-1"
+          >
+
+            <p className="font-semibold text-gray-700">
+
+              <span className="mr-2 text-emerald-700">
+                ✓
+              </span>
+
+              {t(`ugandaSafari.included.items.${item}`)}
+
+            </p>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </div>
+
+    {/* Final CTA */}
+    <div className="mt-20 rounded-[40px] bg-emerald-700 px-8 py-16 text-center text-white">
+
+      <p className="text-sm font-bold uppercase tracking-[4px] text-emerald-100">
+        Curious Safaris
+      </p>
+
+      <h3 className="mt-4 text-4xl font-black md:text-5xl">
+        {t("ugandaSafari.cta.title")}
+      </h3>
+
+      <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-emerald-50">
+        {t("ugandaSafari.cta.description")}
+      </p>
+
+      <a
+        href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20the%207-Day%20Uganda%20Safari."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+      >
+        {t("ugandaSafari.cta.button")}
+        <span className="ml-2">→</span>
+      </a>
 
     </div>
 
@@ -1217,7 +1134,6 @@ export default function Destination() {
 </section>
 
 {/* ================= Rwanda Safari Destination ================= */}
-
 <section id="rwanda-safari" className="relative overflow-hidden bg-white py-32">
 
   {/* Background Effects */}
@@ -1227,116 +1143,97 @@ export default function Destination() {
   <div className="relative mx-auto max-w-7xl px-6">
 
     {/* Header */}
-
     <div className="text-center">
 
       <span className="rounded-full bg-emerald-100 px-6 py-2 text-sm font-bold uppercase tracking-[4px] text-emerald-700">
-        Rwanda Safari
+        {t("rwanda.badge")}
       </span>
 
       <h2 className="mt-8 text-5xl font-black leading-tight md:text-6xl">
-        7-Day Rwanda Safari
+        {t("rwanda.title")}
         <span className="mt-2 block text-[#C8A94C]">
-          Gorillas, Wildlife & African Culture
+          {t("rwanda.subtitle")}
         </span>
       </h2>
 
       <p className="mx-auto mt-8 max-w-4xl text-lg leading-8 text-gray-600">
-        Discover Rwanda, the Land of a Thousand Hills. Experience the
-        vibrant streets of Kigali, incredible wildlife in Akagera,
-        mountain gorillas in Volcanoes National Park and the peaceful
-        beauty of Lake Kivu.
+        {t("rwanda.description")}
       </p>
 
     </div>
 
-
     {/* Destination Images */}
-
     <div className="mt-20 grid gap-6 md:grid-cols-3">
 
       {/* Kigali */}
-
       <div className="group overflow-hidden rounded-[35px]">
 
         <div className="overflow-hidden">
-
           <img
-  src="https://www.diastate.com/images/city-kigali.jpg"
-  alt="Kigali city Rwanda"
-  className="h-[500px] w-full object-cover transition duration-1000 group-hover:scale-110"
-/>
-
+            src="https://www.diastate.com/images/city-kigali.jpg"
+            alt={t("rwanda.destinations.kigali.alt")}
+            className="h-[500px] w-full object-cover transition duration-1000 group-hover:scale-110"
+          />
         </div>
 
         <div className="bg-white p-6 text-center">
 
           <h3 className="text-2xl font-bold">
-            Kigali
+            {t("rwanda.destinations.kigali.title")}
           </h3>
 
           <p className="mt-2 text-gray-600">
-            Explore Rwanda's clean and vibrant capital,
-            rich in history, culture and welcoming people.
+            {t("rwanda.destinations.kigali.description")}
           </p>
 
         </div>
 
       </div>
-
 
       {/* Akagera */}
-
       <div className="group overflow-hidden rounded-[35px]">
 
         <div className="overflow-hidden">
-<img
-  src="https://media0.faz.net/image/29d0684205d2/w1656h1071x38y52/202010/1.7074603/sie-sind-zurueck.webp"
-  alt="Elephants in Akagera National Park Rwanda"
-  className="h-[500px] w-full object-cover transition duration-1000 group-hover:scale-110"
-/>
-
+          <img
+            src="https://media0.faz.net/image/29d0684205d2/w1656h1071x38y52/202010/1.7074603/sie-sind-zurueck.webp"
+            alt={t("rwanda.destinations.akagera.alt")}
+            className="h-[500px] w-full object-cover transition duration-1000 group-hover:scale-110"
+          />
         </div>
 
         <div className="bg-white p-6 text-center">
 
           <h3 className="text-2xl font-bold">
-            Akagera National Park
+            {t("rwanda.destinations.akagera.title")}
           </h3>
 
           <p className="mt-2 text-gray-600">
-            Discover elephants, lions, giraffes, zebras,
-            buffaloes and spectacular savannah landscapes.
+            {t("rwanda.destinations.akagera.description")}
           </p>
 
         </div>
 
       </div>
 
-
       {/* Volcanoes */}
-
       <div className="group overflow-hidden rounded-[35px]">
 
         <div className="overflow-hidden">
-
           <img
-  src="https://rezkit-tour-images.b-cdn.net/01h7ywwd7at70t98wdj69emng5/images/01JTNC6WC8J69RG7BZQN8KS4ZF.jpg?aspect_ratio=1500%3A1126.2975778547"
-  alt="Misty rainforest in Volcanoes National Park Rwanda"
-  className="h-[500px] w-full object-cover transition duration-1000 group-hover:scale-110"
-/>
-
+            src="https://rezkit-tour-images.b-cdn.net/01h7ywwd7at70t98wdj69emng5/images/01JTNC6WC8J69RG7BZQN8KS4ZF.jpg?aspect_ratio=1500%3A1126.2975778547"
+            alt={t("rwanda.destinations.volcanoes.alt")}
+            className="h-[500px] w-full object-cover transition duration-1000 group-hover:scale-110"
+          />
         </div>
 
         <div className="bg-white p-6 text-center">
 
           <h3 className="text-2xl font-bold">
-            Volcanoes National Park
+            {t("rwanda.destinations.volcanoes.title")}
           </h3>
 
           <p className="mt-2 text-gray-600">
-            Trek through misty mountain forests in search
-            of Rwanda's incredible mountain gorillas.
+            {t("rwanda.destinations.volcanoes.description")}
           </p>
 
         </div>
@@ -1345,64 +1242,59 @@ export default function Destination() {
 
     </div>
 
-
     {/* Safari Details */}
-
     <div className="mt-20 grid gap-8 lg:grid-cols-3">
 
       {/* Details */}
-
       <div className="rounded-[35px] bg-[#F8F6F1] p-10 shadow-xl">
 
         <h3 className="text-2xl font-black">
-          Safari Details
+          {t("rwanda.details.title")}
         </h3>
 
         <div className="mt-8 space-y-5 text-gray-600">
 
           <p>
-            <strong>Duration:</strong> 7 Days / 6 Nights
+            <strong>{t("rwanda.details.durationLabel")}</strong>{" "}
+            {t("rwanda.details.duration")}
           </p>
 
           <p>
-            <strong>Route:</strong> Kigali – Akagera –
-            Volcanoes National Park – Lake Kivu – Kigali
+            <strong>{t("rwanda.details.routeLabel")}</strong>{" "}
+            {t("rwanda.details.route")}
           </p>
 
           <p>
-            <strong>Transport:</strong> Private 4×4 safari
-            vehicle
+            <strong>{t("rwanda.details.transportLabel")}</strong>{" "}
+            {t("rwanda.details.transport")}
           </p>
 
           <p>
-            <strong>Highlights:</strong> Gorilla trekking,
-            Akagera wildlife, golden monkeys, Lake Ihema
-            boat safari and Rwanda's rich culture
+            <strong>{t("rwanda.details.highlightsLabel")}</strong>{" "}
+            {t("rwanda.details.highlights")}
           </p>
 
         </div>
 
       </div>
 
-
       {/* Itinerary */}
-
       <div className="rounded-[35px] bg-[#F8F6F1] p-10 shadow-xl lg:col-span-2">
 
         <h3 className="text-2xl font-black">
-          7-Day Itinerary
+          {t("rwanda.itinerary.title")}
         </h3>
 
         <div className="mt-8 grid gap-6 md:grid-cols-2">
 
           {[
-            "Day 1: Arrival & Kigali City Tour",
-            "Day 2: Kigali → Akagera National Park",
-            "Day 3: Full-Day Akagera Safari",
-            "Day 4: Akagera → Volcanoes National Park",
-            "Day 5: Gorilla Trekking",
-            "Day 6: Golden Monkey Trekking / Cultural Experience",
-            "Day 7: Volcanoes → Kigali",
+            "rwanda.itinerary.days.day1",
+            "rwanda.itinerary.days.day2",
+            "rwanda.itinerary.days.day3",
+            "rwanda.itinerary.days.day4",
+            "rwanda.itinerary.days.day5",
+            "rwanda.itinerary.days.day6",
+            "rwanda.itinerary.days.day7",
           ].map((day, index) => (
 
             <div
@@ -1415,7 +1307,7 @@ export default function Destination() {
               </div>
 
               <p className="font-semibold text-gray-700">
-                {day}
+                {t(day)}
               </p>
 
             </div>
@@ -1428,36 +1320,34 @@ export default function Destination() {
 
     </div>
 
-
     {/* Pricing */}
-
     <div className="mt-20 rounded-[40px] bg-[#0A1A13] p-12 text-white">
 
       <h3 className="text-center text-4xl font-black">
-        Rwanda Safari Pricing
+        {t("rwanda.pricing.title")}
       </h3>
 
       <div className="mt-12 grid gap-6 md:grid-cols-5">
 
         {[
           {
-            group: "1 Person",
+            group: "rwanda.pricing.options.one.group",
             price: "USD 3,100",
           },
           {
-            group: "2 People",
+            group: "rwanda.pricing.options.two.group",
             price: "USD 2,350",
           },
           {
-            group: "3–4 People",
+            group: "rwanda.pricing.options.threeFour.group",
             price: "USD 2,050",
           },
           {
-            group: "5–6 People",
+            group: "rwanda.pricing.options.fiveSix.group",
             price: "USD 1,850",
           },
           {
-            group: "7+ People",
+            group: "rwanda.pricing.options.sevenPlus.group",
             price: "USD 1,700",
           },
         ].map((item, index) => (
@@ -1468,7 +1358,7 @@ export default function Destination() {
           >
 
             <p className="text-sm font-medium text-white/60">
-              {item.group}
+              {t(item.group)}
             </p>
 
             <p className="mt-3 text-2xl font-black">
@@ -1476,7 +1366,7 @@ export default function Destination() {
             </p>
 
             <p className="mt-1 text-sm text-white/50">
-              per person
+              {t("rwanda.pricing.perPerson")}
             </p>
 
           </div>
@@ -1487,30 +1377,28 @@ export default function Destination() {
 
     </div>
 
-
     {/* What's Included */}
-
     <div className="mt-20 rounded-[40px] bg-[#F8F6F1] p-12">
 
       <h3 className="text-center text-4xl font-black">
-        What's Included
+        {t("rwanda.included.title")}
       </h3>
 
       <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
 
         {[
-          "6 nights accommodation",
-          "Private 4×4 safari vehicle",
-          "Professional English-speaking guide",
-          "Gorilla trekking permit",
-          "Golden monkey trekking",
-          "Akagera National Park fees",
-          "Game drives",
-          "Lake Ihema boat safari",
-          "Full-board meals",
-          "Bottled drinking water",
-          "Kigali airport pick-up",
-          "Kigali airport drop-off",
+          "rwanda.included.items.accommodation",
+          "rwanda.included.items.vehicle",
+          "rwanda.included.items.guide",
+          "rwanda.included.items.gorillaPermit",
+          "rwanda.included.items.goldenMonkey",
+          "rwanda.included.items.akageraFees",
+          "rwanda.included.items.gameDrives",
+          "rwanda.included.items.ihemaBoat",
+          "rwanda.included.items.meals",
+          "rwanda.included.items.water",
+          "rwanda.included.items.pickup",
+          "rwanda.included.items.dropoff",
         ].map((item, index) => (
 
           <div
@@ -1524,7 +1412,7 @@ export default function Destination() {
                 ✓
               </span>
 
-              {item}
+              {t(item)}
 
             </p>
 
@@ -1536,34 +1424,31 @@ export default function Destination() {
 
     </div>
 
-
     {/* Final CTA */}
-
     <div className="mt-20 rounded-[40px] bg-emerald-700 px-8 py-16 text-center text-white">
 
       <p className="text-sm font-bold uppercase tracking-[4px] text-emerald-100">
-        Curious Safaris
+        {t("rwanda.cta.brand")}
       </p>
 
       <h3 className="mt-4 text-4xl font-black md:text-5xl">
-        Discover Rwanda, the Land of a Thousand Hills.
+        {t("rwanda.cta.title")}
       </h3>
 
       <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-emerald-50">
-        From incredible mountain gorillas to unforgettable wildlife
-        encounters and vibrant African culture, Rwanda is waiting
-        to be discovered.
+        {t("rwanda.cta.description")}
       </p>
 
       <a
-  href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20the%207-Day%20Uganda%20Safari."
-  target="_blank"
-  rel="noopener noreferrer"
-  className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
->
-  Book This Safari
-  <span className="ml-2">→</span>
-</a>
+        href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20the%207-Day%20Rwanda%20Safari."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+      >
+        {t("rwanda.cta.button")}
+        <span className="ml-2">→</span>
+      </a>
+
     </div>
 
   </div>
@@ -1571,7 +1456,6 @@ export default function Destination() {
 </section>
 
 {/* ================= Ethiopia Adventure ================= */}
-
 <section id="ethiopia-safari" className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
 
   {/* Background Effects */}
@@ -1581,30 +1465,26 @@ export default function Destination() {
 
   <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
 
-
     {/* ================= HEADER ================= */}
 
     <div className="mx-auto max-w-5xl text-center">
 
       <span className="inline-block rounded-full bg-emerald-100 px-4 py-2 text-[10px] font-bold uppercase tracking-[3px] text-emerald-700 sm:px-6 sm:text-sm sm:tracking-[4px]">
-        Ethiopia Adventure
+        {t("ethiopia.badge")}
       </span>
 
       <h2 className="mt-6 text-3xl font-black leading-[1.1] sm:mt-8 sm:text-5xl md:text-6xl lg:text-7xl">
 
-        7-Day Ethiopia Adventure
+        {t("ethiopia.title")}
 
         <span className="mt-3 block text-2xl leading-tight text-[#C8A94C] sm:text-4xl md:text-5xl">
-          History, Culture & Wildlife
+          {t("ethiopia.subtitle")}
         </span>
 
       </h2>
 
       <p className="mx-auto mt-6 max-w-4xl text-base leading-7 text-gray-600 sm:mt-8 sm:text-lg sm:leading-8">
-        Discover Ethiopia's extraordinary blend of ancient history,
-        living culture and dramatic landscapes. Explore the rock-hewn
-        churches of Lalibela, the historic castles of Gondar and the
-        breathtaking Simien Mountains.
+        {t("ethiopia.description")}
       </p>
 
     </div>
@@ -1614,7 +1494,6 @@ export default function Destination() {
 
     <div className="mt-12 grid gap-5 sm:mt-16 sm:gap-6 md:grid-cols-3">
 
-
       {/* Lalibela */}
 
       <div className="group overflow-hidden rounded-[28px] bg-white shadow-lg sm:rounded-[35px]">
@@ -1623,7 +1502,7 @@ export default function Destination() {
 
           <img
             src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=85"
-            alt="Lalibela Ethiopia"
+            alt={t("ethiopia.destinations.lalibela.alt")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
@@ -1633,12 +1512,11 @@ export default function Destination() {
         <div className="p-5 text-center sm:p-6">
 
           <h3 className="text-xl font-bold sm:text-2xl">
-            Lalibela
+            {t("ethiopia.destinations.lalibela.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Discover the remarkable rock-hewn churches and
-            centuries of Ethiopian spiritual history.
+            {t("ethiopia.destinations.lalibela.description")}
           </p>
 
         </div>
@@ -1654,7 +1532,7 @@ export default function Destination() {
 
           <img
             src="https://images.unsplash.com/photo-1600172454284-934feca24ccd?auto=format&fit=crop&w=1200&q=85"
-            alt="Gondar Ethiopia"
+            alt={t("ethiopia.destinations.gondar.alt")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
@@ -1664,12 +1542,11 @@ export default function Destination() {
         <div className="p-5 text-center sm:p-6">
 
           <h3 className="text-xl font-bold sm:text-2xl">
-            Gondar
+            {t("ethiopia.destinations.gondar.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Explore royal castles, historic churches and
-            the fascinating legacy of Ethiopia's imperial city.
+            {t("ethiopia.destinations.gondar.description")}
           </p>
 
         </div>
@@ -1685,7 +1562,7 @@ export default function Destination() {
 
           <img
             src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=1200&q=85"
-            alt="Simien Mountains Ethiopia"
+            alt={t("ethiopia.destinations.simien.alt")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
@@ -1695,12 +1572,11 @@ export default function Destination() {
         <div className="p-5 text-center sm:p-6">
 
           <h3 className="text-xl font-bold sm:text-2xl">
-            Simien Mountains
+            {t("ethiopia.destinations.simien.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Experience dramatic cliffs, deep valleys and
-            encounters with endemic gelada baboons.
+            {t("ethiopia.destinations.simien.description")}
           </p>
 
         </div>
@@ -1710,42 +1586,38 @@ export default function Destination() {
     </div>
 
 
-    {/* ================= SAFARI DETAILS ================= */}
+    {/* ================= TOUR DETAILS ================= */}
 
     <div className="mt-12 grid gap-6 sm:mt-16 lg:grid-cols-3 lg:gap-8">
-
 
       {/* Details */}
 
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 shadow-xl sm:rounded-[35px] sm:p-10">
 
         <h3 className="text-2xl font-black">
-          Tour Details
+          {t("ethiopia.details.title")}
         </h3>
 
         <div className="mt-6 space-y-5 text-sm leading-6 text-gray-600 sm:mt-8 sm:text-base">
 
           <p>
-            <strong>Duration:</strong>{" "}
-            7 Days / 6 Nights
+            <strong>{t("ethiopia.details.durationLabel")}</strong>{" "}
+            {t("ethiopia.details.duration")}
           </p>
 
           <p>
-            <strong>Route:</strong>{" "}
-            Addis Ababa – Lalibela – Gondar –
-            Simien Mountains – Addis Ababa
+            <strong>{t("ethiopia.details.routeLabel")}</strong>{" "}
+            {t("ethiopia.details.route")}
           </p>
 
           <p>
-            <strong>Transport:</strong>{" "}
-            Private vehicle and domestic flights
+            <strong>{t("ethiopia.details.transportLabel")}</strong>{" "}
+            {t("ethiopia.details.transport")}
           </p>
 
           <p>
-            <strong>Highlights:</strong>{" "}
-            Lalibela's rock-hewn churches, Gondar's royal
-            history, Simien Mountains, gelada baboons,
-            Ethiopian culture and traditional cuisine
+            <strong>{t("ethiopia.details.highlightsLabel")}</strong>{" "}
+            {t("ethiopia.details.highlights")}
           </p>
 
         </div>
@@ -1758,19 +1630,19 @@ export default function Destination() {
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 shadow-xl sm:rounded-[35px] sm:p-10 lg:col-span-2">
 
         <h3 className="text-2xl font-black">
-          7-Day Itinerary
+          {t("ethiopia.itinerary.title")}
         </h3>
 
         <div className="mt-6 grid gap-4 sm:mt-8 sm:gap-6 md:grid-cols-2">
 
           {[
-            "Day 1: Arrival in Addis Ababa",
-            "Day 2: Addis Ababa → Lalibela",
-            "Day 3: Full Day Lalibela",
-            "Day 4: Lalibela → Gondar",
-            "Day 5: Gondar → Simien Mountains",
-            "Day 6: Full Day Simien Mountains",
-            "Day 7: Simien Mountains → Addis Ababa",
+            "ethiopia.itinerary.days.day1",
+            "ethiopia.itinerary.days.day2",
+            "ethiopia.itinerary.days.day3",
+            "ethiopia.itinerary.days.day4",
+            "ethiopia.itinerary.days.day5",
+            "ethiopia.itinerary.days.day6",
+            "ethiopia.itinerary.days.day7",
           ].map((day, index) => (
 
             <div
@@ -1783,7 +1655,7 @@ export default function Destination() {
               </div>
 
               <p className="text-sm font-semibold leading-5 text-gray-700 sm:text-base">
-                {day}
+                {t(day)}
               </p>
 
             </div>
@@ -1802,11 +1674,11 @@ export default function Destination() {
     <div className="mt-12 rounded-[30px] bg-[#0A1A13] p-6 text-white sm:mt-16 sm:rounded-[40px] sm:p-10 lg:p-12">
 
       <h3 className="text-center text-3xl font-black sm:text-4xl">
-        Ethiopia Tour Pricing
+        {t("ethiopia.pricing.title")}
       </h3>
 
       <p className="mt-3 text-center text-sm text-white/60 sm:text-base">
-        Private tour pricing based on the number of travellers.
+        {t("ethiopia.pricing.description")}
       </p>
 
 
@@ -1814,23 +1686,23 @@ export default function Destination() {
 
         {[
           {
-            group: "1 Person",
+            group: "ethiopia.pricing.options.one",
             price: "USD 2,400",
           },
           {
-            group: "2 People",
+            group: "ethiopia.pricing.options.two",
             price: "USD 1,750",
           },
           {
-            group: "3–4 People",
+            group: "ethiopia.pricing.options.threeFour",
             price: "USD 1,500",
           },
           {
-            group: "5–6 People",
+            group: "ethiopia.pricing.options.fiveSix",
             price: "USD 1,350",
           },
           {
-            group: "7+ People",
+            group: "ethiopia.pricing.options.sevenPlus",
             price: "USD 1,250",
           },
         ].map((item, index) => (
@@ -1841,7 +1713,7 @@ export default function Destination() {
           >
 
             <p className="text-sm font-medium text-white/60">
-              {item.group}
+              {t(item.group)}
             </p>
 
             <p className="mt-2 text-2xl font-black sm:mt-3 sm:text-3xl">
@@ -1849,7 +1721,7 @@ export default function Destination() {
             </p>
 
             <p className="mt-1 text-xs text-white/50 sm:text-sm">
-              per person
+              {t("ethiopia.pricing.perPerson")}
             </p>
 
           </div>
@@ -1866,21 +1738,21 @@ export default function Destination() {
     <div className="mt-12 rounded-[30px] bg-[#F8F6F1] p-6 sm:mt-16 sm:rounded-[40px] sm:p-10 lg:p-12">
 
       <h3 className="text-center text-3xl font-black sm:text-4xl">
-        What's Included
+        {t("ethiopia.included.title")}
       </h3>
 
       <div className="mt-8 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-4">
 
         {[
-          "6 nights accommodation",
-          "Private transportation",
-          "Domestic flights mentioned in itinerary",
-          "Professional English-speaking guide",
-          "Entrance fees for listed attractions",
-          "Simien Mountains activities",
-          "Full-board meals",
-          "Airport transfers",
-          "Bottled drinking water",
+          "ethiopia.included.items.accommodation",
+          "ethiopia.included.items.transportation",
+          "ethiopia.included.items.flights",
+          "ethiopia.included.items.guide",
+          "ethiopia.included.items.entranceFees",
+          "ethiopia.included.items.simienActivities",
+          "ethiopia.included.items.meals",
+          "ethiopia.included.items.airportTransfers",
+          "ethiopia.included.items.water",
         ].map((item, index) => (
 
           <div
@@ -1894,7 +1766,7 @@ export default function Destination() {
                 ✓
               </span>
 
-              {item}
+              {t(item)}
 
             </p>
 
@@ -1912,27 +1784,26 @@ export default function Destination() {
     <div className="mt-12 rounded-[30px] bg-emerald-700 px-6 py-12 text-center text-white sm:mt-16 sm:rounded-[40px] sm:px-8 sm:py-16">
 
       <p className="text-[10px] font-bold uppercase tracking-[3px] text-emerald-100 sm:text-sm sm:tracking-[4px]">
-        Curious Safaris
+        {t("ethiopia.cta.brand")}
       </p>
 
       <h3 className="mt-4 text-3xl font-black leading-tight sm:text-4xl md:text-5xl">
-        Discover Ethiopia
+        {t("ethiopia.cta.title")}
       </h3>
 
       <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-emerald-50 sm:mt-5 sm:text-lg sm:leading-8">
-        Where ancient history, dramatic landscapes and living
-        culture come together.
+        {t("ethiopia.cta.description")}
       </p>
 
       <a
-  href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20this%20Safari."
-  target="_blank"
-  rel="noopener noreferrer"
-  className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
->
-  Book This Safari
-  <span className="ml-2">→</span>
-</a>
+        href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20this%20Safari."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+      >
+        {t("ethiopia.cta.button")}
+        <span className="ml-2">→</span>
+      </a>
 
     </div>
 
@@ -1941,9 +1812,10 @@ export default function Destination() {
 </section>
 
 {/* ================= Congo Adventure ================= */}
-
-<section id="congo-safari" className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
-
+<section
+  id="congo-safari"
+  className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32"
+>
   {/* Background Effects */}
   <div className="pointer-events-none absolute -right-40 -top-40 h-[350px] w-[350px] rounded-full bg-yellow-300/10 blur-[120px] sm:h-[500px] sm:w-[500px] sm:blur-[160px]" />
 
@@ -1951,30 +1823,24 @@ export default function Destination() {
 
   <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
 
-
     {/* ================= HEADER ================= */}
 
     <div className="mx-auto max-w-5xl text-center">
 
       <span className="inline-block rounded-full bg-emerald-100 px-4 py-2 text-[10px] font-bold uppercase tracking-[3px] text-emerald-700 sm:px-6 sm:text-sm sm:tracking-[4px]">
-        Congo Adventure
+        {t("congo.badge")}
       </span>
 
       <h2 className="mt-6 text-3xl font-black leading-[1.1] sm:mt-8 sm:text-5xl md:text-6xl lg:text-7xl">
-
-        7-Day Congo Adventure
+        {t("congo.title")}
 
         <span className="mt-3 block text-2xl leading-tight text-[#C8A94C] sm:text-4xl md:text-5xl">
-          Gorillas, Rainforest & Wild Africa
+          {t("congo.subtitle")}
         </span>
-
       </h2>
 
       <p className="mx-auto mt-6 max-w-4xl text-base leading-7 text-gray-600 sm:mt-8 sm:text-lg sm:leading-8">
-        Journey into the extraordinary landscapes of eastern Africa,
-        from the volcanic shores of Lake Kivu and the rainforests of
-        Virunga to the remarkable eastern lowland gorillas of
-        Kahuzi-Biéga.
+        {t("congo.description")}
       </p>
 
     </div>
@@ -1984,7 +1850,6 @@ export default function Destination() {
 
     <div className="mt-12 grid gap-5 sm:mt-16 sm:gap-6 md:grid-cols-3">
 
-
       {/* Goma */}
 
       <div className="group overflow-hidden rounded-[28px] bg-white shadow-lg sm:rounded-[35px]">
@@ -1993,7 +1858,7 @@ export default function Destination() {
 
           <img
             src="https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=1200&q=85"
-            alt="Goma and Lake Kivu"
+            alt={t("congo.destinations.goma.title")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
@@ -2003,12 +1868,11 @@ export default function Destination() {
         <div className="p-5 text-center sm:p-6">
 
           <h3 className="text-xl font-bold sm:text-2xl">
-            Goma & Lake Kivu
+            {t("congo.destinations.goma.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Experience Goma's volcanic landscapes and the
-            spectacular scenery surrounding Lake Kivu.
+            {t("congo.destinations.goma.description")}
           </p>
 
         </div>
@@ -2024,7 +1888,7 @@ export default function Destination() {
 
           <img
             src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=85"
-            alt="Virunga rainforest and wildlife"
+            alt={t("congo.destinations.virunga.title")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
@@ -2034,12 +1898,11 @@ export default function Destination() {
         <div className="p-5 text-center sm:p-6">
 
           <h3 className="text-xl font-bold sm:text-2xl">
-            Virunga National Park
+            {t("congo.destinations.virunga.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Discover volcanic landscapes, ancient rainforest
-            and one of Africa's most remarkable wilderness areas.
+            {t("congo.destinations.virunga.description")}
           </p>
 
         </div>
@@ -2055,7 +1918,7 @@ export default function Destination() {
 
           <img
             src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=1200&q=85"
-            alt="Gorilla trekking in Congo"
+            alt={t("congo.destinations.kahuzi.title")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
@@ -2065,12 +1928,11 @@ export default function Destination() {
         <div className="p-5 text-center sm:p-6">
 
           <h3 className="text-xl font-bold sm:text-2xl">
-            Kahuzi-Biéga
+            {t("congo.destinations.kahuzi.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Trek through rainforest in search of the incredible
-            eastern lowland gorillas.
+            {t("congo.destinations.kahuzi.description")}
           </p>
 
         </div>
@@ -2084,38 +1946,34 @@ export default function Destination() {
 
     <div className="mt-12 grid gap-6 sm:mt-16 lg:grid-cols-3 lg:gap-8">
 
-
       {/* Details */}
 
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 shadow-xl sm:rounded-[35px] sm:p-10">
 
         <h3 className="text-2xl font-black">
-          Adventure Details
+          {t("congo.details.title")}
         </h3>
 
         <div className="mt-6 space-y-5 text-sm leading-6 text-gray-600 sm:mt-8 sm:text-base">
 
           <p>
-            <strong>Duration:</strong>{" "}
-            7 Days / 6 Nights
+            <strong>{t("congo.details.duration")}:</strong>{" "}
+            7 {t("common.days")} / 6 {t("common.nights")}
           </p>
 
           <p>
-            <strong>Route:</strong>{" "}
-            Kigali – Goma – Virunga –
-            Kahuzi-Biéga – Kigali
+            <strong>{t("congo.details.route")}:</strong>{" "}
+            Kigali – Goma – Virunga – Kahuzi-Biéga – Kigali
           </p>
 
           <p>
-            <strong>Transport:</strong>{" "}
-            Private 4×4 vehicle and regional transfers
+            <strong>{t("congo.details.transport")}:</strong>{" "}
+            {t("congo.details.transportValue")}
           </p>
 
           <p>
-            <strong>Highlights:</strong>{" "}
-            Mountain gorillas, eastern lowland gorillas,
-            Virunga rainforest, Lake Kivu, volcanic landscapes
-            and eastern Congo's unique wilderness
+            <strong>{t("congo.details.highlights")}:</strong>{" "}
+            {t("congo.details.highlightsValue")}
           </p>
 
         </div>
@@ -2128,19 +1986,19 @@ export default function Destination() {
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 shadow-xl sm:rounded-[35px] sm:p-10 lg:col-span-2">
 
         <h3 className="text-2xl font-black">
-          7-Day Itinerary
+          {t("congo.itinerary.title")}
         </h3>
 
         <div className="mt-6 grid gap-4 sm:mt-8 sm:gap-6 md:grid-cols-2">
 
           {[
-            "Day 1: Kigali → Goma",
-            "Day 2: Goma & Lake Kivu",
-            "Day 3: Goma → Virunga National Park",
-            "Day 4: Gorilla Trekking",
-            "Day 5: Virunga → Bukavu",
-            "Day 6: Kahuzi-Biéga National Park",
-            "Day 7: Bukavu → Kigali",
+            t("congo.itinerary.day1"),
+            t("congo.itinerary.day2"),
+            t("congo.itinerary.day3"),
+            t("congo.itinerary.day4"),
+            t("congo.itinerary.day5"),
+            t("congo.itinerary.day6"),
+            t("congo.itinerary.day7"),
           ].map((day, index) => (
 
             <div
@@ -2172,34 +2030,34 @@ export default function Destination() {
     <div className="mt-12 rounded-[30px] bg-[#0A1A13] p-6 text-white sm:mt-16 sm:rounded-[40px] sm:p-10 lg:p-12">
 
       <h3 className="text-center text-3xl font-black sm:text-4xl">
-        Congo Adventure Pricing
+        {t("congo.pricing.title")}
       </h3>
 
       <p className="mt-3 text-center text-sm text-white/60 sm:text-base">
-        Private adventure pricing based on the number of travellers.
+        {t("congo.pricing.description")}
       </p>
 
       <div className="mt-8 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-5">
 
         {[
           {
-            group: "1 Person",
+            group: t("congo.pricing.one"),
             price: "USD 3,500",
           },
           {
-            group: "2 People",
+            group: t("congo.pricing.two"),
             price: "USD 2,600",
           },
           {
-            group: "3–4 People",
+            group: t("congo.pricing.threeFour"),
             price: "USD 2,300",
           },
           {
-            group: "5–6 People",
+            group: t("congo.pricing.fiveSix"),
             price: "USD 2,100",
           },
           {
-            group: "7+ People",
+            group: t("congo.pricing.sevenPlus"),
             price: "USD 1,950",
           },
         ].map((item, index) => (
@@ -2218,7 +2076,7 @@ export default function Destination() {
             </p>
 
             <p className="mt-1 text-xs text-white/50 sm:text-sm">
-              per person
+              {t("common.perPerson")}
             </p>
 
           </div>
@@ -2235,22 +2093,22 @@ export default function Destination() {
     <div className="mt-12 rounded-[30px] bg-[#F8F6F1] p-6 sm:mt-16 sm:rounded-[40px] sm:p-10 lg:p-12">
 
       <h3 className="text-center text-3xl font-black sm:text-4xl">
-        What's Included
+        {t("congo.included.title")}
       </h3>
 
       <div className="mt-8 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-4">
 
         {[
-          "6 nights accommodation",
-          "Private 4×4 transportation",
-          "Professional English-speaking guide",
-          "Gorilla trekking permits",
-          "National park fees",
-          "Listed activities and excursions",
-          "Full-board meals",
-          "Bottled drinking water",
-          "Kigali pick-up",
-          "Kigali drop-off",
+          t("congo.included.item1"),
+          t("congo.included.item2"),
+          t("congo.included.item3"),
+          t("congo.included.item4"),
+          t("congo.included.item5"),
+          t("congo.included.item6"),
+          t("congo.included.item7"),
+          t("congo.included.item8"),
+          t("congo.included.item9"),
+          t("congo.included.item10"),
         ].map((item, index) => (
 
           <div
@@ -2290,15 +2148,11 @@ export default function Destination() {
         <div>
 
           <h3 className="text-lg font-black text-gray-900 sm:text-xl">
-            Important Travel & Security Information
+            {t("congo.notice.title")}
           </h3>
 
           <p className="mt-3 text-sm leading-7 text-gray-700 sm:text-base">
-            Eastern DRC is a security-sensitive destination, and
-            access to Virunga and other areas can change. This
-            itinerary should only be confirmed after checking
-            current park access, border conditions and official
-            travel advisories.
+            {t("congo.notice.description")}
           </p>
 
         </div>
@@ -2317,18 +2171,17 @@ export default function Destination() {
       </p>
 
       <h3 className="mt-4 text-3xl font-black leading-tight sm:text-4xl md:text-5xl">
-        Discover the Congo Beyond the Ordinary.
+        {t("congo.cta.title")}
       </h3>
 
       <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-emerald-50 sm:mt-5 sm:text-lg sm:leading-8">
-        Explore extraordinary rainforests, volcanic landscapes,
-        Lake Kivu and unforgettable gorilla experiences.
+        {t("congo.cta.description")}
       </p>
 
       <button
         className="mt-7 w-full rounded-2xl bg-white px-7 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mt-8 sm:w-auto sm:px-8"
       >
-        Enquire About This Adventure
+        {t("congo.cta.button")}
       </button>
 
     </div>
@@ -2336,11 +2189,11 @@ export default function Destination() {
   </div>
 
 </section>
-
 {/* ================= Zambia Safari Destination ================= */}
-
-<section id="zambia-safari" className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
-
+<section
+  id="zambia-safari"
+  className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32"
+>
   {/* Background Effects */}
   <div className="pointer-events-none absolute -right-40 -top-40 h-[350px] w-[350px] rounded-full bg-yellow-300/10 blur-[120px] sm:h-[500px] sm:w-[500px] sm:blur-[160px]" />
 
@@ -2349,253 +2202,199 @@ export default function Destination() {
   <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
 
     {/* ================= HEADER ================= */}
-
     <div className="mx-auto max-w-5xl text-center">
 
       <span className="inline-block rounded-full bg-emerald-100 px-4 py-2 text-[10px] font-bold uppercase tracking-[3px] text-emerald-700 sm:px-6 sm:text-sm sm:tracking-[4px]">
-        Zambia Safari
+        {t("zambiaSafari.badge")}
       </span>
 
       <h2 className="mt-6 text-3xl font-black leading-[1.1] sm:mt-8 sm:text-5xl md:text-6xl lg:text-7xl">
-
-        7-Day Zambia Safari
+        {t("zambiaSafari.title")}
 
         <span className="mt-3 block text-2xl leading-tight text-[#C8A94C] sm:text-4xl md:text-5xl">
-          Victoria Falls & South Luangwa
+          {t("zambiaSafari.subtitle")}
         </span>
-
       </h2>
 
       <p className="mx-auto mt-6 max-w-4xl text-base leading-7 text-gray-600 sm:mt-8 sm:text-lg sm:leading-8">
-        Experience the power of Victoria Falls, cruise along the
-        Zambezi River and discover the extraordinary wildlife of
-        South Luangwa National Park. From walking safaris to
-        unforgettable night drives, explore Zambia at its wildest.
+        {t("zambiaSafari.description")}
       </p>
 
     </div>
 
 
     {/* ================= DESTINATION IMAGES ================= */}
-
     <div className="mt-12 grid gap-5 sm:mt-16 sm:gap-6 md:grid-cols-3">
 
       {/* Victoria Falls */}
-
       <div className="group overflow-hidden rounded-[28px] bg-white shadow-lg sm:rounded-[35px]">
 
         <div className="overflow-hidden">
-
           <img
-  src={victoria1}
-  alt="Victoria Falls Zambia"
-  className="h-[500px] w-full object-cover transition duration-1000 group-hover:scale-110"
-/>
-
+            src={victoria1}
+            alt={t("zambiaSafari.destinations.victoriaFalls.title")}
+            className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
+          />
         </div>
 
         <div className="p-5 text-center sm:p-6">
 
           <h3 className="text-xl font-bold sm:text-2xl">
-            Victoria Falls
+            {t("zambiaSafari.destinations.victoriaFalls.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Experience one of the world's greatest natural
-            wonders and watch the Zambezi flow into the gorge.
+            {t("zambiaSafari.destinations.victoriaFalls.description")}
           </p>
 
         </div>
-
       </div>
 
 
       {/* Zambezi */}
-
       <div className="group overflow-hidden rounded-[28px] bg-white shadow-lg sm:rounded-[35px]">
 
         <div className="overflow-hidden">
-
           <img
             src={zambezi}
-            alt="Zambezi River Zambia"
+            alt={t("zambiaSafari.destinations.zambezi.title")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
-
         </div>
 
         <div className="p-5 text-center sm:p-6">
 
           <h3 className="text-xl font-bold sm:text-2xl">
-            Zambezi River
+            {t("zambiaSafari.destinations.zambezi.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Enjoy a peaceful sunset cruise while watching
-            hippos, crocodiles and elephants along the river.
+            {t("zambiaSafari.destinations.zambezi.description")}
           </p>
 
         </div>
-
       </div>
 
 
       {/* South Luangwa */}
-
       <div className="group overflow-hidden rounded-[28px] bg-white shadow-lg sm:rounded-[35px]">
 
         <div className="overflow-hidden">
-
           <img
             src={luangwa}
-            alt="South Luangwa wildlife safari"
+            alt={t("zambiaSafari.destinations.southLuangwa.title")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
-
         </div>
 
         <div className="p-5 text-center sm:p-6">
 
           <h3 className="text-xl font-bold sm:text-2xl">
-            South Luangwa
+            {t("zambiaSafari.destinations.southLuangwa.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Discover elephants, lions, leopards, wild dogs
-            and unforgettable walking and night safaris.
+            {t("zambiaSafari.destinations.southLuangwa.description")}
           </p>
 
         </div>
-
       </div>
 
     </div>
 
 
     {/* ================= SAFARI DETAILS ================= */}
-
     <div className="mt-12 grid gap-6 sm:mt-16 lg:grid-cols-3 lg:gap-8">
 
       {/* Details */}
-
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 shadow-xl sm:rounded-[35px] sm:p-10">
 
         <h3 className="text-2xl font-black">
-          Safari Details
+          {t("zambiaSafari.details.title")}
         </h3>
 
         <div className="mt-6 space-y-5 text-sm leading-6 text-gray-600 sm:mt-8 sm:text-base">
 
           <p>
-            <strong>Duration:</strong>{" "}
-            7 Days / 6 Nights
+            <strong>{t("zambiaSafari.details.duration")}:</strong>{" "}
+            {t("zambiaSafari.details.durationValue")}
           </p>
 
           <p>
-            <strong>Route:</strong>{" "}
-            Livingstone – Victoria Falls –
-            South Luangwa National Park
+            <strong>{t("zambiaSafari.details.route")}:</strong>{" "}
+            {t("zambiaSafari.details.routeValue")}
           </p>
 
           <p>
-            <strong>Transport:</strong>{" "}
-            Private 4×4 safari vehicle and domestic flight
+            <strong>{t("zambiaSafari.details.transport")}:</strong>{" "}
+            {t("zambiaSafari.details.transportValue")}
           </p>
 
           <p>
-            <strong>Highlights:</strong>{" "}
-            Victoria Falls, Zambezi sunset cruise,
-            South Luangwa wildlife, walking safari,
-            night safari and spectacular African landscapes
+            <strong>{t("zambiaSafari.details.highlights")}:</strong>{" "}
+            {t("zambiaSafari.details.highlightsValue")}
           </p>
 
         </div>
-
       </div>
 
 
       {/* Itinerary */}
-
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 shadow-xl sm:rounded-[35px] sm:p-10 lg:col-span-2">
 
         <h3 className="text-2xl font-black">
-          7-Day Itinerary
+          {t("zambiaSafari.itinerary.title")}
         </h3>
 
         <div className="mt-6 grid gap-4 sm:mt-8 sm:gap-6 md:grid-cols-2">
 
-          {[
-            "Day 1: Arrival in Livingstone",
-            "Day 2: Victoria Falls & Zambezi",
-            "Day 3: Livingstone → South Luangwa",
-            "Day 4: Full-Day South Luangwa Safari",
-            "Day 5: Walking Safari & Game Drive",
-            "Day 6: Full-Day Wildlife Experience",
-            "Day 7: South Luangwa → Livingstone",
-          ].map((day, index) => (
+          {t("zambiaSafari.itinerary.days", { returnObjects: true }).map(
+            (day, index) => (
+              <div
+                key={index}
+                className="flex items-center gap-3 rounded-2xl bg-white p-4 sm:gap-4 sm:p-5"
+              >
 
-            <div
-              key={index}
-              className="flex items-center gap-3 rounded-2xl bg-white p-4 sm:gap-4 sm:p-5"
-            >
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-700 text-sm font-bold text-white sm:h-12 sm:w-12 sm:text-base">
+                  {index + 1}
+                </div>
 
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-700 text-sm font-bold text-white sm:h-12 sm:w-12 sm:text-base">
-                {index + 1}
+                <p className="text-sm font-semibold leading-5 text-gray-700 sm:text-base">
+                  {day}
+                </p>
+
               </div>
-
-              <p className="text-sm font-semibold leading-5 text-gray-700 sm:text-base">
-                {day}
-              </p>
-
-            </div>
-
-          ))}
+            )
+          )}
 
         </div>
-
       </div>
 
     </div>
 
 
     {/* ================= PRICING ================= */}
-
     <div className="mt-12 rounded-[30px] bg-[#0A1A13] p-6 text-white sm:mt-16 sm:rounded-[40px] sm:p-10 lg:p-12">
 
       <h3 className="text-center text-3xl font-black sm:text-4xl">
-        Zambia Safari Pricing
+        {t("zambiaSafari.pricing.title")}
       </h3>
 
       <p className="mt-3 text-center text-sm text-white/60 sm:text-base">
-        Private safari pricing based on the number of travellers.
+        {t("zambiaSafari.pricing.description")}
       </p>
 
       <div className="mt-8 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-5">
 
         {[
-          {
-            group: "1 Person",
-            price: "USD 3,000",
-          },
-          {
-            group: "2 People",
-            price: "USD 2,200",
-          },
-          {
-            group: "3–4 People",
-            price: "USD 1,900",
-          },
-          {
-            group: "5–6 People",
-            price: "USD 1,700",
-          },
-          {
-            group: "7+ People",
-            price: "USD 1,550",
-          },
-        ].map((item, index) => (
+          ["one", "USD 3,000"],
+          ["two", "USD 2,200"],
+          ["threeFour", "USD 1,900"],
+          ["fiveSix", "USD 1,700"],
+          ["sevenPlus", "USD 1,550"],
+        ].map(([group, price], index) => (
 
           <div
             key={index}
@@ -2603,15 +2402,15 @@ export default function Destination() {
           >
 
             <p className="text-sm font-medium text-white/60">
-              {item.group}
+              {t(`zambiaSafari.pricing.groups.${group}`)}
             </p>
 
             <p className="mt-2 text-2xl font-black sm:mt-3 sm:text-3xl">
-              {item.price}
+              {price}
             </p>
 
             <p className="mt-1 text-xs text-white/50 sm:text-sm">
-              per person
+              {t("zambiaSafari.pricing.perPerson")}
             </p>
 
           </div>
@@ -2619,61 +2418,46 @@ export default function Destination() {
         ))}
 
       </div>
-
     </div>
 
 
     {/* ================= INCLUDED ================= */}
-
     <div className="mt-12 rounded-[30px] bg-[#F8F6F1] p-6 sm:mt-16 sm:rounded-[40px] sm:p-10 lg:p-12">
 
       <h3 className="text-center text-3xl font-black sm:text-4xl">
-        What's Included
+        {t("zambiaSafari.included.title")}
       </h3>
 
       <div className="mt-8 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-4">
 
-        {[
-          "6 nights accommodation",
-          "Private safari transportation",
-          "Professional English-speaking guide",
-          "Domestic flights mentioned in itinerary",
-          "Victoria Falls visit",
-          "Zambezi sunset cruise",
-          "Game drives",
-          "Guided walking safari",
-          "Park fees",
-          "Full-board meals",
-          "Bottled drinking water",
-          "Airport transfers",
-        ].map((item, index) => (
+        {t("zambiaSafari.included.items", { returnObjects: true }).map(
+          (item, index) => (
 
-          <div
-            key={index}
-            className="rounded-2xl bg-white p-5 text-center shadow-lg transition duration-300 hover:-translate-y-1 sm:p-6"
-          >
+            <div
+              key={index}
+              className="rounded-2xl bg-white p-5 text-center shadow-lg transition duration-300 hover:-translate-y-1 sm:p-6"
+            >
 
-            <p className="text-sm font-semibold leading-6 text-gray-700 sm:text-base">
+              <p className="text-sm font-semibold leading-6 text-gray-700 sm:text-base">
 
-              <span className="mr-2 font-black text-emerald-700">
-                ✓
-              </span>
+                <span className="mr-2 font-black text-emerald-700">
+                  ✓
+                </span>
 
-              {item}
+                {item}
 
-            </p>
+              </p>
 
-          </div>
+            </div>
 
-        ))}
+          )
+        )}
 
       </div>
-
     </div>
 
 
     {/* ================= EXPERIENCE HIGHLIGHTS ================= */}
-
     <div className="mt-12 grid gap-5 sm:mt-16 md:grid-cols-3">
 
       <div className="rounded-[28px] bg-emerald-50 p-6 sm:rounded-[35px] sm:p-8">
@@ -2683,12 +2467,11 @@ export default function Destination() {
         </div>
 
         <h3 className="mt-4 text-xl font-black">
-          Victoria Falls
+          {t("zambiaSafari.experienceHighlights.victoriaFalls.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Witness the power and beauty of one of Africa's
-          most spectacular natural wonders.
+          {t("zambiaSafari.experienceHighlights.victoriaFalls.description")}
         </p>
 
       </div>
@@ -2701,12 +2484,11 @@ export default function Destination() {
         </div>
 
         <h3 className="mt-4 text-xl font-black">
-          Wild South Luangwa
+          {t("zambiaSafari.experienceHighlights.southLuangwa.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Search for predators, elephants and large herds
-          during exciting day and night game drives.
+          {t("zambiaSafari.experienceHighlights.southLuangwa.description")}
         </p>
 
       </div>
@@ -2719,12 +2501,11 @@ export default function Destination() {
         </div>
 
         <h3 className="mt-4 text-xl font-black">
-          Walking Safari
+          {t("zambiaSafari.experienceHighlights.walkingSafari.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Step beyond the safari vehicle and experience
-          the wilderness on foot with an expert guide.
+          {t("zambiaSafari.experienceHighlights.walkingSafari.description")}
         </p>
 
       </div>
@@ -2733,43 +2514,100 @@ export default function Destination() {
 
 
     {/* ================= FINAL CTA ================= */}
-
     <div className="mt-12 rounded-[30px] bg-emerald-700 px-6 py-12 text-center text-white sm:mt-16 sm:rounded-[40px] sm:px-8 sm:py-16">
 
       <p className="text-[10px] font-bold uppercase tracking-[3px] text-emerald-100 sm:text-sm sm:tracking-[4px]">
-        Curious Safaris
+        {t("zambiaSafari.cta.brand")}
       </p>
 
       <h3 className="mt-4 text-3xl font-black leading-tight sm:text-4xl md:text-5xl">
-        Where the Zambezi flows and the wild still leads the way.
+        {t("zambiaSafari.cta.title")}
       </h3>
 
       <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-emerald-50 sm:mt-5 sm:text-lg sm:leading-8">
-        Experience Victoria Falls, the Zambezi River and
-        the untamed wilderness of South Luangwa.
+        {t("zambiaSafari.cta.description")}
       </p>
 
       <a
-  href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20the%207-Day%20Uganda%20Safari."
-  target="_blank"
-  rel="noopener noreferrer"
-  className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
->
-  Book This Safari
-  <span className="ml-2">→</span>
-</a>
+        href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20the%207-Day%20Zambia%20Safari."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+      >
+        {t("zambiaSafari.cta.button")}
+        <span className="ml-2">→</span>
+      </a>
 
     </div>
 
+
+    {/* ================= SAFARI VIDEO ================= */}
+    <div className="mt-10 sm:mt-16">
+
+      <div className="mx-auto max-w-5xl">
+
+        <div className="mb-6 text-center sm:mb-8">
+
+          <span className="text-[10px] font-bold uppercase tracking-[3px] text-emerald-700 sm:text-xs sm:tracking-[4px]">
+            {t("zambiaSafari.video.badge")}
+          </span>
+
+          <h3 className="mt-2 text-2xl font-black text-gray-900 sm:text-3xl md:text-4xl">
+            {t("zambiaSafari.video.title")}
+          </h3>
+
+          <p className="mx-auto mt-2 max-w-xl text-sm leading-6 text-gray-500 sm:text-base">
+            {t("zambiaSafari.video.description")}
+          </p>
+
+        </div>
+
+
+        <div className="group relative overflow-hidden rounded-[28px] bg-[#0A1A13] p-2 shadow-2xl sm:rounded-[40px] sm:p-3">
+
+          <div className="pointer-events-none absolute -inset-1 animate-pulse rounded-[30px] bg-emerald-500/20 blur-xl sm:rounded-[42px]" />
+
+          <div className="relative aspect-video w-full overflow-hidden rounded-[22px] bg-black sm:rounded-[32px]">
+
+            <iframe
+              className="absolute inset-0 h-full w-full"
+              src="https://www.youtube.com/embed/Qyl7C0MGXJ4?rel=0&modestbranding=1"
+              title="Curious Safaris Zambia Safari"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+
+            <div className="pointer-events-none absolute inset-0 rounded-[22px] ring-1 ring-white/10 sm:rounded-[32px]" />
+
+          </div>
+        </div>
+
+
+        <div className="mt-5 text-center sm:mt-6">
+
+          <a
+            href="https://youtu.be/Qyl7C0MGXJ4?si=v1hm09D6glBBuYHP"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-gray-900 px-6 py-3 text-sm font-bold text-white shadow-lg transition duration-500 hover:-translate-y-1 hover:bg-emerald-700 hover:shadow-emerald-700/30"
+          >
+            {t("zambiaSafari.video.button")}
+            <span className="text-base">↗</span>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+
   </div>
-
 </section>
-
 {/* ================= Zimbabwe Safari Destination ================= */}
-
-<section id="zimbabwe-safari" className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
-
-  {/* Background Effects */}
+<section
+  id="zimbabwe-safari"
+  className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32"
+>
+  {/* ================= BACKGROUND EFFECTS ================= */}
   <div className="pointer-events-none absolute -right-40 -top-40 h-[350px] w-[350px] rounded-full bg-yellow-300/10 blur-[120px] sm:h-[500px] sm:w-[500px] sm:blur-[160px]" />
 
   <div className="pointer-events-none absolute -bottom-40 -left-40 h-[350px] w-[350px] rounded-full bg-emerald-600/10 blur-[120px] sm:h-[500px] sm:w-[500px] sm:blur-[160px]" />
@@ -2777,125 +2615,100 @@ export default function Destination() {
   <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
 
     {/* ================= HEADER ================= */}
-
     <div className="mx-auto max-w-5xl text-center">
 
       <span className="inline-block rounded-full bg-emerald-100 px-4 py-2 text-[10px] font-bold uppercase tracking-[3px] text-emerald-700 sm:px-6 sm:text-sm sm:tracking-[4px]">
-        Zimbabwe Safari
+        {t("zimbabweSafari.badge")}
       </span>
 
       <h2 className="mt-6 text-3xl font-black leading-[1.1] sm:mt-8 sm:text-5xl md:text-6xl lg:text-7xl">
-
-        7-Day Zimbabwe Safari
+        {t("zimbabweSafari.title")}
 
         <span className="mt-3 block text-2xl leading-tight text-[#C8A94C] sm:text-4xl md:text-5xl">
-          Victoria Falls & Hwange National Park
+          {t("zimbabweSafari.subtitle")}
         </span>
-
       </h2>
 
       <p className="mx-auto mt-6 max-w-4xl text-base leading-7 text-gray-600 sm:mt-8 sm:text-lg sm:leading-8">
-        Discover Zimbabwe's extraordinary wilderness, from the
-        thunderous Victoria Falls and the Zambezi River to the
-        wildlife-rich plains of Hwange and the dramatic granite
-        landscapes of Matobo National Park.
+        {t("zimbabweSafari.description")}
       </p>
 
     </div>
 
 
     {/* ================= DESTINATION IMAGES ================= */}
-
     <div className="mt-12 grid gap-5 sm:mt-16 sm:gap-6 md:grid-cols-3">
 
       {/* Victoria Falls */}
-
       <div className="group overflow-hidden rounded-[28px] bg-white shadow-lg sm:rounded-[35px]">
 
         <div className="overflow-hidden">
-
           <img
             src={victoria1}
-            alt="Victoria Falls Zimbabwe"
+            alt={t("zimbabweSafari.destinations.victoriaFalls.alt")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
-
         </div>
 
         <div className="p-5 text-center sm:p-6">
-
           <h3 className="text-xl font-bold sm:text-2xl">
-            Victoria Falls
+            {t("zimbabweSafari.destinations.victoriaFalls.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Experience the power of one of Africa's greatest
-            natural wonders and cruise along the Zambezi River.
+            {t("zimbabweSafari.destinations.victoriaFalls.description")}
           </p>
-
         </div>
 
       </div>
 
 
       {/* Hwange */}
-
       <div className="group overflow-hidden rounded-[28px] bg-white shadow-lg sm:rounded-[35px]">
 
         <div className="overflow-hidden">
-
           <img
             src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1200&q=85"
-            alt="Hwange National Park wildlife"
+            alt={t("zimbabweSafari.destinations.hwange.alt")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
-
         </div>
 
         <div className="p-5 text-center sm:p-6">
-
           <h3 className="text-xl font-bold sm:text-2xl">
-            Hwange National Park
+            {t("zimbabweSafari.destinations.hwange.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Explore Zimbabwe's largest national park and
-            search for elephants, lions, buffaloes and wild dogs.
+            {t("zimbabweSafari.destinations.hwange.description")}
           </p>
-
         </div>
 
       </div>
 
 
       {/* Matobo */}
-
       <div className="group overflow-hidden rounded-[28px] bg-white shadow-lg sm:rounded-[35px]">
 
         <div className="overflow-hidden">
-
           <img
             src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&w=1200&q=85"
-            alt="Matobo National Park Zimbabwe"
+            alt={t("zimbabweSafari.destinations.matobo.alt")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
-
         </div>
 
         <div className="p-5 text-center sm:p-6">
-
           <h3 className="text-xl font-bold sm:text-2xl">
-            Matobo National Park
+            {t("zimbabweSafari.destinations.matobo.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Discover dramatic granite formations, rhinos,
-            ancient landscapes and fascinating cultural history.
+            {t("zimbabweSafari.destinations.matobo.description")}
           </p>
-
         </div>
 
       </div>
@@ -2904,40 +2717,43 @@ export default function Destination() {
 
 
     {/* ================= SAFARI DETAILS ================= */}
-
     <div className="mt-12 grid gap-6 sm:mt-16 lg:grid-cols-3 lg:gap-8">
 
       {/* Details */}
-
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 shadow-xl sm:rounded-[35px] sm:p-10">
 
         <h3 className="text-2xl font-black">
-          Safari Details
+          {t("zimbabweSafari.details.title")}
         </h3>
 
         <div className="mt-6 space-y-5 text-sm leading-6 text-gray-600 sm:mt-8 sm:text-base">
 
           <p>
-            <strong>Duration:</strong>{" "}
-            7 Days / 6 Nights
+            <strong>
+              {t("zimbabweSafari.details.duration")}:
+            </strong>{" "}
+            {t("zimbabweSafari.details.durationValue")}
           </p>
 
           <p>
-            <strong>Route:</strong>{" "}
-            Victoria Falls – Hwange National Park –
-            Matobo National Park
+            <strong>
+              {t("zimbabweSafari.details.route")}:
+            </strong>{" "}
+            {t("zimbabweSafari.details.routeValue")}
           </p>
 
           <p>
-            <strong>Transport:</strong>{" "}
-            Private 4×4 safari vehicle
+            <strong>
+              {t("zimbabweSafari.details.transport")}:
+            </strong>{" "}
+            {t("zimbabweSafari.details.transportValue")}
           </p>
 
           <p>
-            <strong>Highlights:</strong>{" "}
-            Victoria Falls, Zambezi sunset cruise,
-            Hwange wildlife, rhino tracking, Matobo Hills
-            and Zimbabwe's dramatic landscapes
+            <strong>
+              {t("zimbabweSafari.details.highlights")}:
+            </strong>{" "}
+            {t("zimbabweSafari.details.highlightsValue")}
           </p>
 
         </div>
@@ -2946,24 +2762,17 @@ export default function Destination() {
 
 
       {/* Itinerary */}
-
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 shadow-xl sm:rounded-[35px] sm:p-10 lg:col-span-2">
 
         <h3 className="text-2xl font-black">
-          7-Day Itinerary
+          {t("zimbabweSafari.itinerary.title")}
         </h3>
 
         <div className="mt-6 grid gap-4 sm:mt-8 sm:gap-6 md:grid-cols-2">
 
-          {[
-            "Day 1: Arrival in Victoria Falls",
-            "Day 2: Victoria Falls Experience",
-            "Day 3: Victoria Falls → Hwange National Park",
-            "Day 4: Full-Day Hwange Safari",
-            "Day 5: Hwange → Matobo National Park",
-            "Day 6: Full-Day Matobo",
-            "Day 7: Matobo → Bulawayo",
-          ].map((day, index) => (
+          {t("zimbabweSafari.itinerary.days", {
+            returnObjects: true,
+          }).map((day, index) => (
 
             <div
               key={index}
@@ -2990,39 +2799,38 @@ export default function Destination() {
 
 
     {/* ================= PRICING ================= */}
-
     <div className="mt-12 rounded-[30px] bg-[#0A1A13] p-6 text-white sm:mt-16 sm:rounded-[40px] sm:p-10 lg:p-12">
 
       <h3 className="text-center text-3xl font-black sm:text-4xl">
-        Zimbabwe Safari Pricing
+        {t("zimbabweSafari.pricing.title")}
       </h3>
 
       <p className="mt-3 text-center text-sm text-white/60 sm:text-base">
-        Private safari pricing based on the number of travellers.
+        {t("zimbabweSafari.pricing.description")}
       </p>
 
       <div className="mt-8 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-5">
 
         {[
           {
-            group: "1 Person",
-            price: "USD 2,800",
+            group: t("zimbabweSafari.pricing.groups.one"),
+            price: t("zimbabweSafari.pricing.prices.one"),
           },
           {
-            group: "2 People",
-            price: "USD 2,100",
+            group: t("zimbabweSafari.pricing.groups.two"),
+            price: t("zimbabweSafari.pricing.prices.two"),
           },
           {
-            group: "3–4 People",
-            price: "USD 1,800",
+            group: t("zimbabweSafari.pricing.groups.threeFour"),
+            price: t("zimbabweSafari.pricing.prices.threeFour"),
           },
           {
-            group: "5–6 People",
-            price: "USD 1,650",
+            group: t("zimbabweSafari.pricing.groups.fiveSix"),
+            price: t("zimbabweSafari.pricing.prices.fiveSix"),
           },
           {
-            group: "7+ People",
-            price: "USD 1,500",
+            group: t("zimbabweSafari.pricing.groups.sevenPlus"),
+            price: t("zimbabweSafari.pricing.prices.sevenPlus"),
           },
         ].map((item, index) => (
 
@@ -3040,7 +2848,7 @@ export default function Destination() {
             </p>
 
             <p className="mt-1 text-xs text-white/50 sm:text-sm">
-              per person
+              {t("zimbabweSafari.pricing.perPerson")}
             </p>
 
           </div>
@@ -3053,28 +2861,17 @@ export default function Destination() {
 
 
     {/* ================= INCLUDED ================= */}
-
     <div className="mt-12 rounded-[30px] bg-[#F8F6F1] p-6 sm:mt-16 sm:rounded-[40px] sm:p-10 lg:p-12">
 
       <h3 className="text-center text-3xl font-black sm:text-4xl">
-        What's Included
+        {t("zimbabweSafari.included.title")}
       </h3>
 
       <div className="mt-8 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-4">
 
-        {[
-          "6 nights accommodation",
-          "Private 4×4 safari vehicle",
-          "Professional English-speaking guide",
-          "Victoria Falls visit",
-          "Zambezi sunset cruise",
-          "Hwange National Park fees",
-          "Matobo National Park fees",
-          "Game drives",
-          "Full-board meals",
-          "Bottled drinking water",
-          "Airport transfers",
-        ].map((item, index) => (
+        {t("zimbabweSafari.included.items", {
+          returnObjects: true,
+        }).map((item, index) => (
 
           <div
             key={index}
@@ -3101,9 +2898,9 @@ export default function Destination() {
 
 
     {/* ================= EXPERIENCE HIGHLIGHTS ================= */}
-
     <div className="mt-12 grid gap-5 sm:mt-16 md:grid-cols-3">
 
+      {/* Victoria Falls */}
       <div className="rounded-[28px] bg-emerald-50 p-6 sm:rounded-[35px] sm:p-8">
 
         <div className="text-3xl">
@@ -3111,17 +2908,17 @@ export default function Destination() {
         </div>
 
         <h3 className="mt-4 text-xl font-black">
-          Victoria Falls
+          {t("zimbabweSafari.experienceHighlights.victoriaFalls.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Stand before one of Africa's greatest natural
-          wonders and experience the mighty Zambezi.
+          {t("zimbabweSafari.experienceHighlights.victoriaFalls.description")}
         </p>
 
       </div>
 
 
+      {/* Hwange */}
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 sm:rounded-[35px] sm:p-8">
 
         <div className="text-3xl">
@@ -3129,17 +2926,17 @@ export default function Destination() {
         </div>
 
         <h3 className="mt-4 text-xl font-black">
-          Hwange Wildlife
+          {t("zimbabweSafari.experienceHighlights.hwangeWildlife.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Explore vast wilderness areas and search for
-          elephants, lions, buffaloes, giraffes and wild dogs.
+          {t("zimbabweSafari.experienceHighlights.hwangeWildlife.description")}
         </p>
 
       </div>
 
 
+      {/* Matobo */}
       <div className="rounded-[28px] bg-emerald-50 p-6 sm:rounded-[35px] sm:p-8">
 
         <div className="text-3xl">
@@ -3147,12 +2944,11 @@ export default function Destination() {
         </div>
 
         <h3 className="mt-4 text-xl font-black">
-          Matobo Hills
+          {t("zimbabweSafari.experienceHighlights.matoboHills.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Discover ancient granite landscapes and search
-          for rhinos among the spectacular Matobo Hills.
+          {t("zimbabweSafari.experienceHighlights.matoboHills.description")}
         </p>
 
       </div>
@@ -3161,42 +2957,40 @@ export default function Destination() {
 
 
     {/* ================= FINAL CTA ================= */}
-
     <div className="mt-12 rounded-[30px] bg-emerald-700 px-6 py-12 text-center text-white sm:mt-16 sm:rounded-[40px] sm:px-8 sm:py-16">
 
       <p className="text-[10px] font-bold uppercase tracking-[3px] text-emerald-100 sm:text-sm sm:tracking-[4px]">
-        Curious Safaris
+        {t("zimbabweSafari.cta.brand")}
       </p>
 
       <h3 className="mt-4 text-3xl font-black leading-tight sm:text-4xl md:text-5xl">
-        Where waterfalls, ancient landscapes and wildlife meet.
+        {t("zimbabweSafari.cta.title")}
       </h3>
 
       <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-emerald-50 sm:mt-5 sm:text-lg sm:leading-8">
-        Experience Victoria Falls, the wilderness of Hwange
-        and the extraordinary landscapes of Matobo.
+        {t("zimbabweSafari.cta.description")}
       </p>
 
       <a
-  href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20this%20Safari."
-  target="_blank"
-  rel="noopener noreferrer"
-  className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
->
-  Book This Safari
-  <span className="ml-2">→</span>
-</a>
+        href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20this%20Safari."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+      >
+        {t("zimbabweSafari.cta.button")}
+        <span className="ml-2">→</span>
+      </a>
 
     </div>
 
   </div>
-
 </section>
 
 {/* ================= Namibia Adventure ================= */}
-
-<section id="namibia-safari" className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
-
+<section
+  id="namibia-safari"
+  className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32"
+>
   {/* Background Effects */}
   <div className="pointer-events-none absolute -right-40 -top-40 h-[350px] w-[350px] rounded-full bg-yellow-300/10 blur-[120px] sm:h-[500px] sm:w-[500px] sm:blur-[160px]" />
 
@@ -3209,24 +3003,21 @@ export default function Destination() {
     <div className="mx-auto max-w-5xl text-center">
 
       <span className="inline-block rounded-full bg-emerald-100 px-4 py-2 text-[10px] font-bold uppercase tracking-[3px] text-emerald-700 sm:px-6 sm:text-sm sm:tracking-[4px]">
-        Namibia Adventure
+        {t("namibiaSafari.badge")}
       </span>
 
       <h2 className="mt-6 text-3xl font-black leading-[1.1] sm:mt-8 sm:text-5xl md:text-6xl lg:text-7xl">
 
-        7-Day Namibia Adventure
+        {t("namibiaSafari.title")}
 
         <span className="mt-3 block text-2xl leading-tight text-[#C8A94C] sm:text-4xl md:text-5xl">
-          Desert, Wildlife & Coastal Wonders
+          {t("namibiaSafari.titleHighlight")}
         </span>
 
       </h2>
 
       <p className="mx-auto mt-6 max-w-4xl text-base leading-7 text-gray-600 sm:mt-8 sm:text-lg sm:leading-8">
-        Journey across Namibia's extraordinary landscapes, from the
-        towering red dunes of Sossusvlei and the coastal charm of
-        Swakopmund to the rugged wilderness of Damaraland and the
-        wildlife-rich plains of Etosha National Park.
+        {t("namibiaSafari.description")}
       </p>
 
     </div>
@@ -3244,7 +3035,7 @@ export default function Destination() {
 
           <img
             src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=1200&q=85"
-            alt="Sossusvlei red dunes Namibia"
+            alt={t("namibiaSafari.destinations.sossusvlei.alt")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
@@ -3254,12 +3045,11 @@ export default function Destination() {
         <div className="p-5 text-center sm:p-6">
 
           <h3 className="text-xl font-bold sm:text-2xl">
-            Sossusvlei & Deadvlei
+            {t("namibiaSafari.destinations.sossusvlei.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Walk among Namibia's iconic red dunes and discover
-            the surreal landscapes of Deadvlei.
+            {t("namibiaSafari.destinations.sossusvlei.description")}
           </p>
 
         </div>
@@ -3275,7 +3065,7 @@ export default function Destination() {
 
           <img
             src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85"
-            alt="Swakopmund Namibia coast"
+            alt={t("namibiaSafari.destinations.swakopmund.alt")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
@@ -3285,12 +3075,11 @@ export default function Destination() {
         <div className="p-5 text-center sm:p-6">
 
           <h3 className="text-xl font-bold sm:text-2xl">
-            Swakopmund
+            {t("namibiaSafari.destinations.swakopmund.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Experience Namibia's coastal charm where the
-            desert meets the Atlantic Ocean.
+            {t("namibiaSafari.destinations.swakopmund.description")}
           </p>
 
         </div>
@@ -3306,7 +3095,7 @@ export default function Destination() {
 
           <img
             src={etoshapark}
-            alt="Etosha National Park wildlife"
+            alt={t("namibiaSafari.destinations.etosha.alt")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
@@ -3316,12 +3105,11 @@ export default function Destination() {
         <div className="p-5 text-center sm:p-6">
 
           <h3 className="text-xl font-bold sm:text-2xl">
-            Etosha National Park
+            {t("namibiaSafari.destinations.etosha.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Search for elephants, lions, rhinos, giraffes,
-            zebras and other wildlife around Etosha's waterholes.
+            {t("namibiaSafari.destinations.etosha.description")}
           </p>
 
         </div>
@@ -3340,32 +3128,37 @@ export default function Destination() {
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 shadow-xl sm:rounded-[35px] sm:p-10">
 
         <h3 className="text-2xl font-black">
-          Adventure Details
+          {t("namibiaSafari.details.title")}
         </h3>
 
         <div className="mt-6 space-y-5 text-sm leading-6 text-gray-600 sm:mt-8 sm:text-base">
 
           <p>
-            <strong>Duration:</strong>{" "}
-            7 Days / 6 Nights
+            <strong>
+              {t("namibiaSafari.details.durationLabel")}:
+            </strong>{" "}
+            {t("namibiaSafari.details.duration")}
           </p>
 
           <p>
-            <strong>Route:</strong>{" "}
-            Windhoek – Sossusvlei – Swakopmund –
-            Damaraland – Etosha
+            <strong>
+              {t("namibiaSafari.details.routeLabel")}:
+            </strong>{" "}
+            {t("namibiaSafari.details.route")}
           </p>
 
           <p>
-            <strong>Transport:</strong>{" "}
-            Private 4×4 safari vehicle
+            <strong>
+              {t("namibiaSafari.details.transportLabel")}:
+            </strong>{" "}
+            {t("namibiaSafari.details.transport")}
           </p>
 
           <p>
-            <strong>Highlights:</strong>{" "}
-            Sossusvlei, Deadvlei, Namib Desert,
-            Swakopmund, Damaraland, Etosha National Park
-            and desert-adapted wildlife
+            <strong>
+              {t("namibiaSafari.details.highlightsLabel")}:
+            </strong>{" "}
+            {t("namibiaSafari.details.highlights")}
           </p>
 
         </div>
@@ -3378,20 +3171,14 @@ export default function Destination() {
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 shadow-xl sm:rounded-[35px] sm:p-10 lg:col-span-2">
 
         <h3 className="text-2xl font-black">
-          7-Day Itinerary
+          {t("namibiaSafari.itinerary.title")}
         </h3>
 
         <div className="mt-6 grid gap-4 sm:mt-8 sm:gap-6 md:grid-cols-2">
 
-          {[
-            "Day 1: Arrival in Windhoek",
-            "Day 2: Windhoek → Sossusvlei",
-            "Day 3: Sossusvlei & Deadvlei",
-            "Day 4: Sossusvlei → Swakopmund",
-            "Day 5: Swakopmund → Damaraland",
-            "Day 6: Damaraland → Etosha National Park",
-            "Day 7: Etosha → Windhoek",
-          ].map((day, index) => (
+          {t("namibiaSafari.itinerary.days", {
+            returnObjects: true,
+          }).map((day, index) => (
 
             <div
               key={index}
@@ -3422,35 +3209,35 @@ export default function Destination() {
     <div className="mt-12 rounded-[30px] bg-[#0A1A13] p-6 text-white sm:mt-16 sm:rounded-[40px] sm:p-10 lg:p-12">
 
       <h3 className="text-center text-3xl font-black sm:text-4xl">
-        Namibia Adventure Pricing
+        {t("namibiaSafari.pricing.title")}
       </h3>
 
       <p className="mt-3 text-center text-sm text-white/60 sm:text-base">
-        Private adventure pricing based on the number of travellers.
+        {t("namibiaSafari.pricing.description")}
       </p>
 
       <div className="mt-8 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-5">
 
         {[
           {
-            group: "1 Person",
-            price: "USD 2,700",
+            group: t("namibiaSafari.pricing.groups.one"),
+            price: t("namibiaSafari.pricing.prices.one"),
           },
           {
-            group: "2 People",
-            price: "USD 2,050",
+            group: t("namibiaSafari.pricing.groups.two"),
+            price: t("namibiaSafari.pricing.prices.two"),
           },
           {
-            group: "3–4 People",
-            price: "USD 1,750",
+            group: t("namibiaSafari.pricing.groups.threeFour"),
+            price: t("namibiaSafari.pricing.prices.threeFour"),
           },
           {
-            group: "5–6 People",
-            price: "USD 1,600",
+            group: t("namibiaSafari.pricing.groups.fiveSix"),
+            price: t("namibiaSafari.pricing.prices.fiveSix"),
           },
           {
-            group: "7+ People",
-            price: "USD 1,450",
+            group: t("namibiaSafari.pricing.groups.sevenPlus"),
+            price: t("namibiaSafari.pricing.prices.sevenPlus"),
           },
         ].map((item, index) => (
 
@@ -3468,7 +3255,7 @@ export default function Destination() {
             </p>
 
             <p className="mt-1 text-xs text-white/50 sm:text-sm">
-              per person
+              {t("namibiaSafari.pricing.perPerson")}
             </p>
 
           </div>
@@ -3485,24 +3272,14 @@ export default function Destination() {
     <div className="mt-12 rounded-[30px] bg-[#F8F6F1] p-6 sm:mt-16 sm:rounded-[40px] sm:p-10 lg:p-12">
 
       <h3 className="text-center text-3xl font-black sm:text-4xl">
-        What's Included
+        {t("namibiaSafari.included.title")}
       </h3>
 
       <div className="mt-8 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-4">
 
-        {[
-          "6 nights accommodation",
-          "Private 4×4 safari vehicle",
-          "Professional English-speaking guide/driver",
-          "Park and conservation fees",
-          "Sossusvlei & Deadvlei excursion",
-          "Etosha game drives",
-          "Listed activities and excursions",
-          "Full-board meals",
-          "Bottled drinking water",
-          "Airport pick-up",
-          "Airport drop-off",
-        ].map((item, index) => (
+        {t("namibiaSafari.included.items", {
+          returnObjects: true,
+        }).map((item, index) => (
 
           <div
             key={index}
@@ -3532,6 +3309,8 @@ export default function Destination() {
 
     <div className="mt-12 grid gap-5 sm:mt-16 md:grid-cols-3">
 
+      {/* Namib Desert */}
+
       <div className="rounded-[28px] bg-emerald-50 p-6 sm:rounded-[35px] sm:p-8">
 
         <div className="text-3xl">
@@ -3539,16 +3318,17 @@ export default function Destination() {
         </div>
 
         <h3 className="mt-4 text-xl font-black">
-          Namib Desert
+          {t("namibiaSafari.experienceHighlights.namibDesert.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Stand among towering red dunes and experience
-          the surreal beauty of Sossusvlei and Deadvlei.
+          {t("namibiaSafari.experienceHighlights.namibDesert.description")}
         </p>
 
       </div>
 
+
+      {/* Coastal Wonders */}
 
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 sm:rounded-[35px] sm:p-8">
 
@@ -3557,16 +3337,17 @@ export default function Destination() {
         </div>
 
         <h3 className="mt-4 text-xl font-black">
-          Coastal Wonders
+          {t("namibiaSafari.experienceHighlights.coastalWonders.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Discover Swakopmund and the fascinating meeting
-          point between Namibia's desert and Atlantic coast.
+          {t("namibiaSafari.experienceHighlights.coastalWonders.description")}
         </p>
 
       </div>
 
+
+      {/* Etosha Wildlife */}
 
       <div className="rounded-[28px] bg-emerald-50 p-6 sm:rounded-[35px] sm:p-8">
 
@@ -3575,12 +3356,11 @@ export default function Destination() {
         </div>
 
         <h3 className="mt-4 text-xl font-black">
-          Etosha Wildlife
+          {t("namibiaSafari.experienceHighlights.etoshaWildlife.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Explore Etosha's famous waterholes in search of
-          elephants, lions, rhinos, giraffes and zebras.
+          {t("namibiaSafari.experienceHighlights.etoshaWildlife.description")}
         </p>
 
       </div>
@@ -3593,27 +3373,26 @@ export default function Destination() {
     <div className="mt-12 rounded-[30px] bg-emerald-700 px-6 py-12 text-center text-white sm:mt-16 sm:rounded-[40px] sm:px-8 sm:py-16">
 
       <p className="text-[10px] font-bold uppercase tracking-[3px] text-emerald-100 sm:text-sm sm:tracking-[4px]">
-        Curious Safaris
+        {t("namibiaSafari.cta.brand")}
       </p>
 
       <h3 className="mt-4 text-3xl font-black leading-tight sm:text-4xl md:text-5xl">
-        Where endless deserts meet extraordinary wildlife.
+        {t("namibiaSafari.cta.title")}
       </h3>
 
       <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-emerald-50 sm:mt-5 sm:text-lg sm:leading-8">
-        Explore Namibia's deserts, dramatic landscapes,
-        Atlantic coast and unforgettable wildlife.
+        {t("namibiaSafari.cta.description")}
       </p>
 
       <a
- href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20this%20Safari."
-  target="_blank"
-  rel="noopener noreferrer"
-  className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
->
-  Book This Safari
-  <span className="ml-2">→</span>
-</a>
+        href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20this%20Safari."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+      >
+        {t("namibiaSafari.cta.button")}
+        <span className="ml-2">→</span>
+      </a>
 
     </div>
 
@@ -3622,9 +3401,10 @@ export default function Destination() {
 </section>
 
 {/* ================= Botswana Safari Destination ================= */}
-
-<section id="botswana-safari" className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
-
+<section
+  id="botswana-safari"
+  className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32"
+>
   {/* Background Effects */}
   <div className="pointer-events-none absolute -right-40 -top-40 h-[350px] w-[350px] rounded-full bg-yellow-300/10 blur-[120px] sm:h-[500px] sm:w-[500px] sm:blur-[160px]" />
 
@@ -3637,24 +3417,19 @@ export default function Destination() {
     <div className="mx-auto max-w-5xl text-center">
 
       <span className="inline-block rounded-full bg-emerald-100 px-4 py-2 text-[10px] font-bold uppercase tracking-[3px] text-emerald-700 sm:px-6 sm:text-sm sm:tracking-[4px]">
-        Botswana Safari
+        {t("botswanaSafari.badge")}
       </span>
 
       <h2 className="mt-6 text-3xl font-black leading-[1.1] sm:mt-8 sm:text-5xl md:text-6xl lg:text-7xl">
-
-        7-Day Botswana Safari
+        {t("botswanaSafari.title")}
 
         <span className="mt-3 block text-2xl leading-tight text-[#C8A94C] sm:text-4xl md:text-5xl">
-          Chobe & Okavango Delta
+          {t("botswanaSafari.titleHighlight")}
         </span>
-
       </h2>
 
       <p className="mx-auto mt-6 max-w-4xl text-base leading-7 text-gray-600 sm:mt-8 sm:text-lg sm:leading-8">
-        Discover Botswana's extraordinary wilderness, from the
-        waterways of the Okavango Delta to the wildlife-rich
-        plains of Moremi and the elephant-filled riverfronts of
-        Chobe National Park.
+        {t("botswanaSafari.description")}
       </p>
 
     </div>
@@ -3672,7 +3447,7 @@ export default function Destination() {
 
           <img
             src={okavango}
-            alt="Okavango Delta Botswana"
+            alt={t("botswanaSafari.destinations.okavango.alt")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
@@ -3682,12 +3457,11 @@ export default function Destination() {
         <div className="p-5 text-center sm:p-6">
 
           <h3 className="text-xl font-bold sm:text-2xl">
-            Okavango Delta
+            {t("botswanaSafari.destinations.okavango.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Glide through spectacular waterways by mokoro
-            and discover elephants, hippos and incredible birdlife.
+            {t("botswanaSafari.destinations.okavango.description")}
           </p>
 
         </div>
@@ -3703,7 +3477,7 @@ export default function Destination() {
 
           <img
             src="https://images.unsplash.com/photo-1519659528534-7fd733a832a0?auto=format&fit=crop&w=1200&q=85"
-            alt="Moremi Game Reserve Botswana"
+            alt={t("botswanaSafari.destinations.moremi.alt")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
@@ -3713,12 +3487,11 @@ export default function Destination() {
         <div className="p-5 text-center sm:p-6">
 
           <h3 className="text-xl font-bold sm:text-2xl">
-            Moremi Game Reserve
+            {t("botswanaSafari.destinations.moremi.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Explore lagoons, forests and open plains in one
-            of Botswana's most remarkable wildlife areas.
+            {t("botswanaSafari.destinations.moremi.description")}
           </p>
 
         </div>
@@ -3734,7 +3507,7 @@ export default function Destination() {
 
           <img
             src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=1200&q=85"
-            alt="Chobe National Park elephants"
+            alt={t("botswanaSafari.destinations.chobe.alt")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
@@ -3744,12 +3517,11 @@ export default function Destination() {
         <div className="p-5 text-center sm:p-6">
 
           <h3 className="text-xl font-bold sm:text-2xl">
-            Chobe National Park
+            {t("botswanaSafari.destinations.chobe.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Witness huge elephant herds along the Chobe River
-            and experience unforgettable wildlife from land and water.
+            {t("botswanaSafari.destinations.chobe.description")}
           </p>
 
         </div>
@@ -3768,33 +3540,29 @@ export default function Destination() {
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 shadow-xl sm:rounded-[35px] sm:p-10">
 
         <h3 className="text-2xl font-black">
-          Safari Details
+          {t("botswanaSafari.details.title")}
         </h3>
 
         <div className="mt-6 space-y-5 text-sm leading-6 text-gray-600 sm:mt-8 sm:text-base">
 
           <p>
-            <strong>Duration:</strong>{" "}
-            7 Days / 6 Nights
+            <strong>{t("botswanaSafari.details.duration")}:</strong>{" "}
+            {t("botswanaSafari.details.durationValue")}
           </p>
 
           <p>
-            <strong>Route:</strong>{" "}
-            Maun – Okavango Delta – Moremi –
-            Chobe – Kasane
+            <strong>{t("botswanaSafari.details.route")}:</strong>{" "}
+            {t("botswanaSafari.details.routeValue")}
           </p>
 
           <p>
-            <strong>Transport:</strong>{" "}
-            4×4 safari vehicle, safari boats and
-            light aircraft where required
+            <strong>{t("botswanaSafari.details.transport")}:</strong>{" "}
+            {t("botswanaSafari.details.transportValue")}
           </p>
 
           <p>
-            <strong>Highlights:</strong>{" "}
-            Okavango Delta, mokoro canoe experience,
-            Moremi wildlife, Chobe elephants and
-            Chobe River boat safari
+            <strong>{t("botswanaSafari.details.highlights")}:</strong>{" "}
+            {t("botswanaSafari.details.highlightsValue")}
           </p>
 
         </div>
@@ -3807,23 +3575,23 @@ export default function Destination() {
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 shadow-xl sm:rounded-[35px] sm:p-10 lg:col-span-2">
 
         <h3 className="text-2xl font-black">
-          7-Day Itinerary
+          {t("botswanaSafari.itinerary.title")}
         </h3>
 
         <div className="mt-6 grid gap-4 sm:mt-8 sm:gap-6 md:grid-cols-2">
 
           {[
-            "Day 1: Arrival in Maun",
-            "Day 2: Maun → Okavango Delta",
-            "Day 3: Full-Day Okavango Delta",
-            "Day 4: Okavango Delta → Moremi",
-            "Day 5: Moremi → Chobe National Park",
-            "Day 6: Full-Day Chobe",
-            "Day 7: Chobe → Kasane",
+            "day1",
+            "day2",
+            "day3",
+            "day4",
+            "day5",
+            "day6",
+            "day7",
           ].map((day, index) => (
 
             <div
-              key={index}
+              key={day}
               className="flex items-center gap-3 rounded-2xl bg-white p-4 sm:gap-4 sm:p-5"
             >
 
@@ -3832,7 +3600,7 @@ export default function Destination() {
               </div>
 
               <p className="text-sm font-semibold leading-5 text-gray-700 sm:text-base">
-                {day}
+                {t(`botswanaSafari.itinerary.${day}`)}
               </p>
 
             </div>
@@ -3851,45 +3619,45 @@ export default function Destination() {
     <div className="mt-12 rounded-[30px] bg-[#0A1A13] p-6 text-white sm:mt-16 sm:rounded-[40px] sm:p-10 lg:p-12">
 
       <h3 className="text-center text-3xl font-black sm:text-4xl">
-        Botswana Safari Pricing
+        {t("botswanaSafari.pricing.title")}
       </h3>
 
       <p className="mt-3 text-center text-sm text-white/60 sm:text-base">
-        Private safari pricing based on the number of travellers.
+        {t("botswanaSafari.pricing.description")}
       </p>
 
       <div className="mt-8 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-5">
 
         {[
           {
-            group: "1 Person",
+            group: "one",
             price: "USD 3,500",
           },
           {
-            group: "2 People",
+            group: "two",
             price: "USD 2,700",
           },
           {
-            group: "3–4 People",
+            group: "threeFour",
             price: "USD 2,350",
           },
           {
-            group: "5–6 People",
+            group: "fiveSix",
             price: "USD 2,150",
           },
           {
-            group: "7+ People",
+            group: "sevenPlus",
             price: "USD 1,950",
           },
-        ].map((item, index) => (
+        ].map((item) => (
 
           <div
-            key={index}
+            key={item.group}
             className="rounded-2xl bg-white/10 p-6 text-center backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:bg-white/15 sm:rounded-3xl sm:p-8"
           >
 
             <p className="text-sm font-medium text-white/60">
-              {item.group}
+              {t(`botswanaSafari.pricing.groups.${item.group}`)}
             </p>
 
             <p className="mt-2 text-2xl font-black sm:mt-3 sm:text-3xl">
@@ -3897,7 +3665,7 @@ export default function Destination() {
             </p>
 
             <p className="mt-1 text-xs text-white/50 sm:text-sm">
-              per person
+              {t("botswanaSafari.pricing.perPerson")}
             </p>
 
           </div>
@@ -3914,28 +3682,28 @@ export default function Destination() {
     <div className="mt-12 rounded-[30px] bg-[#F8F6F1] p-6 sm:mt-16 sm:rounded-[40px] sm:p-10 lg:p-12">
 
       <h3 className="text-center text-3xl font-black sm:text-4xl">
-        What's Included
+        {t("botswanaSafari.included.title")}
       </h3>
 
       <div className="mt-8 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-4">
 
         {[
-          "6 nights accommodation",
-          "Private safari transportation",
-          "Professional English-speaking guide",
-          "Okavango Delta experience",
-          "Mokoro canoe excursion",
-          "Moremi game drives",
-          "Chobe National Park game drives",
-          "Chobe River boat safari",
-          "Park and conservation fees",
-          "Full-board meals",
-          "Bottled drinking water",
-          "Airport transfers",
-        ].map((item, index) => (
+          "accommodation",
+          "transportation",
+          "guide",
+          "okavango",
+          "mokoro",
+          "moremi",
+          "chobeGameDrives",
+          "chobeBoat",
+          "parkFees",
+          "meals",
+          "water",
+          "transfers",
+        ].map((item) => (
 
           <div
-            key={index}
+            key={item}
             className="rounded-2xl bg-white p-5 text-center shadow-lg transition duration-300 hover:-translate-y-1 sm:p-6"
           >
 
@@ -3945,7 +3713,7 @@ export default function Destination() {
                 ✓
               </span>
 
-              {item}
+              {t(`botswanaSafari.included.items.${item}`)}
 
             </p>
 
@@ -3969,12 +3737,11 @@ export default function Destination() {
         </div>
 
         <h3 className="mt-4 text-xl font-black">
-          Okavango Delta
+          {t("botswanaSafari.experienceHighlights.okavango.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Glide silently through crystal-clear channels
-          and discover Botswana's incredible wetland wilderness.
+          {t("botswanaSafari.experienceHighlights.okavango.description")}
         </p>
 
       </div>
@@ -3987,12 +3754,11 @@ export default function Destination() {
         </div>
 
         <h3 className="mt-4 text-xl font-black">
-          Moremi Wilderness
+          {t("botswanaSafari.experienceHighlights.moremi.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Search for lions, leopards, elephants, buffaloes
-          and African wild dogs across diverse habitats.
+          {t("botswanaSafari.experienceHighlights.moremi.description")}
         </p>
 
       </div>
@@ -4005,12 +3771,11 @@ export default function Destination() {
         </div>
 
         <h3 className="mt-4 text-xl font-black">
-          Chobe River
+          {t("botswanaSafari.experienceHighlights.chobe.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Experience some of Africa's largest elephant
-          gatherings from the water and during game drives.
+          {t("botswanaSafari.experienceHighlights.chobe.description")}
         </p>
 
       </div>
@@ -4023,39 +3788,39 @@ export default function Destination() {
     <div className="mt-12 rounded-[30px] bg-emerald-700 px-6 py-12 text-center text-white sm:mt-16 sm:rounded-[40px] sm:px-8 sm:py-16">
 
       <p className="text-[10px] font-bold uppercase tracking-[3px] text-emerald-100 sm:text-sm sm:tracking-[4px]">
-        Curious Safaris
+        {t("botswanaSafari.cta.brand")}
       </p>
 
       <h3 className="mt-4 text-3xl font-black leading-tight sm:text-4xl md:text-5xl">
-        Where the desert meets the delta.
+        {t("botswanaSafari.cta.title")}
       </h3>
 
       <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-emerald-50 sm:mt-5 sm:text-lg sm:leading-8">
-        Explore Botswana's waterways, wilderness and
-        extraordinary wildlife on an unforgettable safari.
+        {t("botswanaSafari.cta.description")}
       </p>
 
       <a
- href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20this%20Safari."
-  target="_blank"
-  rel="noopener noreferrer"
-  className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
->
-  Book This Safari
-  <span className="ml-2">→</span>
-</a>
+        href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20this%20Safari."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+      >
+        {t("botswanaSafari.cta.button")}
+        <span className="ml-2">→</span>
+      </a>
 
     </div>
 
   </div>
-
 </section>
 {/* ================= South Africa Safari & City Adventure ================= */}
-
-<section id="southafrica-safari" className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
-
+<section
+  id="southafrica-safari"
+  className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32"
+>
   {/* Background Effects */}
   <div className="pointer-events-none absolute -right-40 -top-40 h-[350px] w-[350px] rounded-full bg-yellow-300/10 blur-[120px] sm:h-[500px] sm:w-[500px] sm:blur-[160px]" />
+
   <div className="pointer-events-none absolute -bottom-40 -left-40 h-[350px] w-[350px] rounded-full bg-emerald-600/10 blur-[120px] sm:h-[500px] sm:w-[500px] sm:blur-[160px]" />
 
   <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -4065,24 +3830,19 @@ export default function Destination() {
     <div className="mx-auto max-w-5xl text-center">
 
       <span className="inline-block rounded-full bg-emerald-100 px-4 py-2 text-[10px] font-bold uppercase tracking-[3px] text-emerald-700 sm:px-6 sm:text-sm sm:tracking-[4px]">
-        South Africa Safari
+        {t("southAfricaSafari.badge")}
       </span>
 
       <h2 className="mt-6 text-3xl font-black leading-[1.1] sm:mt-8 sm:text-5xl md:text-6xl lg:text-7xl">
-
-        7-Day South Africa
+        {t("southAfricaSafari.title")}
 
         <span className="mt-2 block text-2xl leading-tight text-[#C8A94C] sm:text-4xl md:text-5xl">
-          Safari & City Adventure
+          {t("southAfricaSafari.titleHighlight")}
         </span>
-
       </h2>
 
       <p className="mx-auto mt-6 max-w-4xl text-base leading-7 text-gray-600 sm:mt-8 sm:text-lg sm:leading-8">
-        Experience the best of South Africa in one unforgettable
-        journey, from the iconic landscapes of Cape Town and
-        Table Mountain to thrilling Big Five encounters in Kruger
-        National Park and the vibrant energy of Johannesburg.
+        {t("southAfricaSafari.description")}
       </p>
 
     </div>
@@ -4100,7 +3860,7 @@ export default function Destination() {
 
           <img
             src="https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&w=1200&q=85"
-            alt="Cape Town Table Mountain South Africa"
+            alt={t("southAfricaSafari.destinations.capeTown.imageAlt")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
@@ -4110,12 +3870,11 @@ export default function Destination() {
         <div className="p-5 text-center sm:p-6">
 
           <h3 className="text-xl font-bold sm:text-2xl">
-            Cape Town
+            {t("southAfricaSafari.destinations.capeTown.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Discover Table Mountain, Cape Point, Boulders Beach
-            and the spectacular Cape Peninsula.
+            {t("southAfricaSafari.destinations.capeTown.description")}
           </p>
 
         </div>
@@ -4131,7 +3890,7 @@ export default function Destination() {
 
           <img
             src={krugerpark}
-            alt="Kruger National Park wildlife"
+            alt={t("southAfricaSafari.destinations.kruger.imageAlt")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
@@ -4141,12 +3900,11 @@ export default function Destination() {
         <div className="p-5 text-center sm:p-6">
 
           <h3 className="text-xl font-bold sm:text-2xl">
-            Kruger National Park
+            {t("southAfricaSafari.destinations.kruger.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Search for the Big Five and experience unforgettable
-            sunrise, sunset and full-day game drives.
+            {t("southAfricaSafari.destinations.kruger.description")}
           </p>
 
         </div>
@@ -4162,7 +3920,7 @@ export default function Destination() {
 
           <img
             src="https://images.unsplash.com/photo-1576485290814-1c72aa4bbb8e?auto=format&fit=crop&w=1200&q=85"
-            alt="Johannesburg South Africa city"
+            alt={t("southAfricaSafari.destinations.johannesburg.imageAlt")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
@@ -4172,12 +3930,11 @@ export default function Destination() {
         <div className="p-5 text-center sm:p-6">
 
           <h3 className="text-xl font-bold sm:text-2xl">
-            Johannesburg
+            {t("southAfricaSafari.destinations.johannesburg.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Discover the city's history, culture and vibrant
-            neighborhoods with an optional Soweto experience.
+            {t("southAfricaSafari.destinations.johannesburg.description")}
           </p>
 
         </div>
@@ -4196,31 +3953,29 @@ export default function Destination() {
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 shadow-xl sm:rounded-[35px] sm:p-10">
 
         <h3 className="text-2xl font-black">
-          Safari Details
+          {t("southAfricaSafari.details.title")}
         </h3>
 
         <div className="mt-6 space-y-5 text-sm leading-6 text-gray-600 sm:mt-8 sm:text-base">
 
           <p>
-            <strong>Duration:</strong>{" "}
-            7 Days / 6 Nights
+            <strong>{t("southAfricaSafari.details.durationLabel")}</strong>{" "}
+            {t("southAfricaSafari.details.duration")}
           </p>
 
           <p>
-            <strong>Route:</strong>{" "}
-            Cape Town – Kruger National Park –
-            Johannesburg
+            <strong>{t("southAfricaSafari.details.routeLabel")}</strong>{" "}
+            {t("southAfricaSafari.details.route")}
           </p>
 
           <p>
-            <strong>Transport:</strong>{" "}
-            Private vehicle and domestic flight
+            <strong>{t("southAfricaSafari.details.transportLabel")}</strong>{" "}
+            {t("southAfricaSafari.details.transport")}
           </p>
 
           <p>
-            <strong>Highlights:</strong>{" "}
-            Table Mountain, Cape Peninsula, Boulders Beach,
-            Big Five safari, Kruger National Park and Johannesburg
+            <strong>{t("southAfricaSafari.details.highlightsLabel")}</strong>{" "}
+            {t("southAfricaSafari.details.highlights")}
           </p>
 
         </div>
@@ -4233,19 +3988,19 @@ export default function Destination() {
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 shadow-xl sm:rounded-[35px] sm:p-10 lg:col-span-2">
 
         <h3 className="text-2xl font-black">
-          7-Day Itinerary
+          {t("southAfricaSafari.itinerary.title")}
         </h3>
 
         <div className="mt-6 grid gap-4 sm:mt-8 sm:gap-6 md:grid-cols-2">
 
           {[
-            "Day 1: Arrival in Cape Town",
-            "Day 2: Cape Town & Cape Peninsula",
-            "Day 3: Cape Town → Kruger National Park",
-            "Day 4: Full-Day Kruger Safari",
-            "Day 5: Full-Day Kruger Safari",
-            "Day 6: Kruger → Johannesburg",
-            "Day 7: Johannesburg & Departure",
+            t("southAfricaSafari.itinerary.days.day1"),
+            t("southAfricaSafari.itinerary.days.day2"),
+            t("southAfricaSafari.itinerary.days.day3"),
+            t("southAfricaSafari.itinerary.days.day4"),
+            t("southAfricaSafari.itinerary.days.day5"),
+            t("southAfricaSafari.itinerary.days.day6"),
+            t("southAfricaSafari.itinerary.days.day7"),
           ].map((day, index) => (
 
             <div
@@ -4277,34 +4032,34 @@ export default function Destination() {
     <div className="mt-12 rounded-[30px] bg-[#0A1A13] p-6 text-white sm:mt-16 sm:rounded-[40px] sm:p-10 lg:p-12">
 
       <h3 className="text-center text-3xl font-black sm:text-4xl">
-        South Africa Package Pricing
+        {t("southAfricaSafari.pricing.title")}
       </h3>
 
       <p className="mt-3 text-center text-sm text-white/60 sm:text-base">
-        Private safari and city adventure pricing per person.
+        {t("southAfricaSafari.pricing.description")}
       </p>
 
       <div className="mt-8 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-5">
 
         {[
           {
-            group: "1 Person",
+            group: t("southAfricaSafari.pricing.options.one.group"),
             price: "USD 2,600",
           },
           {
-            group: "2 People",
+            group: t("southAfricaSafari.pricing.options.two.group"),
             price: "USD 2,000",
           },
           {
-            group: "3–4 People",
+            group: t("southAfricaSafari.pricing.options.three.group"),
             price: "USD 1,700",
           },
           {
-            group: "5–6 People",
+            group: t("southAfricaSafari.pricing.options.four.group"),
             price: "USD 1,550",
           },
           {
-            group: "7+ People",
+            group: t("southAfricaSafari.pricing.options.five.group"),
             price: "USD 1,400",
           },
         ].map((item, index) => (
@@ -4323,7 +4078,7 @@ export default function Destination() {
             </p>
 
             <p className="mt-1 text-xs text-white/50 sm:text-sm">
-              per person
+              {t("southAfricaSafari.pricing.perPerson")}
             </p>
 
           </div>
@@ -4340,23 +4095,23 @@ export default function Destination() {
     <div className="mt-12 rounded-[30px] bg-[#F8F6F1] p-6 sm:mt-16 sm:rounded-[40px] sm:p-10 lg:p-12">
 
       <h3 className="text-center text-3xl font-black sm:text-4xl">
-        What's Included
+        {t("southAfricaSafari.included.title")}
       </h3>
 
       <div className="mt-8 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-4">
 
         {[
-          "6 nights accommodation",
-          "Domestic flight between Cape Town and Kruger region",
-          "Private transportation",
-          "Professional English-speaking guide",
-          "Kruger National Park fees",
-          "Game drives",
-          "Cape Town sightseeing",
-          "Johannesburg/Soweto experience",
-          "Full-board meals during safari portion",
-          "Bottled drinking water",
-          "Airport transfers",
+          t("southAfricaSafari.included.items.accommodation"),
+          t("southAfricaSafari.included.items.flight"),
+          t("southAfricaSafari.included.items.transport"),
+          t("southAfricaSafari.included.items.guide"),
+          t("southAfricaSafari.included.items.krugerFees"),
+          t("southAfricaSafari.included.items.gameDrives"),
+          t("southAfricaSafari.included.items.capeTown"),
+          t("southAfricaSafari.included.items.johannesburg"),
+          t("southAfricaSafari.included.items.meals"),
+          t("southAfricaSafari.included.items.water"),
+          t("southAfricaSafari.included.items.airportTransfers"),
         ].map((item, index) => (
 
           <div
@@ -4396,12 +4151,11 @@ export default function Destination() {
         </div>
 
         <h3 className="mt-4 text-xl font-black">
-          Cape Town
+          {t("southAfricaSafari.experience.capeTown.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Experience Table Mountain, dramatic coastlines,
-          Cape Point and the famous penguins of Boulders Beach.
+          {t("southAfricaSafari.experience.capeTown.description")}
         </p>
 
       </div>
@@ -4416,12 +4170,11 @@ export default function Destination() {
         </div>
 
         <h3 className="mt-4 text-xl font-black">
-          Big Five Safari
+          {t("southAfricaSafari.experience.kruger.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Explore Kruger's wilderness in search of lions,
-          leopards, elephants, rhinos and buffaloes.
+          {t("southAfricaSafari.experience.kruger.description")}
         </p>
 
       </div>
@@ -4436,12 +4189,11 @@ export default function Destination() {
         </div>
 
         <h3 className="mt-4 text-xl font-black">
-          Johannesburg
+          {t("southAfricaSafari.experience.johannesburg.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Discover South Africa's vibrant urban culture
-          with a city or Soweto experience.
+          {t("southAfricaSafari.experience.johannesburg.description")}
         </p>
 
       </div>
@@ -4454,27 +4206,95 @@ export default function Destination() {
     <div className="mt-12 rounded-[30px] bg-emerald-700 px-6 py-12 text-center text-white sm:mt-16 sm:rounded-[40px] sm:px-8 sm:py-16">
 
       <p className="text-[10px] font-bold uppercase tracking-[3px] text-emerald-100 sm:text-sm sm:tracking-[4px]">
-        Curious Safaris
+        {t("southAfricaSafari.cta.brand")}
       </p>
 
       <h3 className="mt-4 text-3xl font-black leading-tight sm:text-4xl md:text-5xl">
-        From iconic cities to unforgettable wildlife.
+        {t("southAfricaSafari.cta.title")}
       </h3>
 
       <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-emerald-50 sm:mt-5 sm:text-lg sm:leading-8">
-        Experience the best of South Africa, from the spectacular
-        landscapes of Cape Town to the wild heart of Kruger.
+        {t("southAfricaSafari.cta.description")}
       </p>
 
       <a
-  href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20this%20Safari."
-  target="_blank"
-  rel="noopener noreferrer"
-  className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
->
-  Book This Safari
-  <span className="ml-2">→</span>
-</a>
+        href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20this%20Safari."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+      >
+        {t("southAfricaSafari.cta.button")}
+        <span className="ml-2">→</span>
+      </a>
+
+    </div>
+
+
+    {/* ================= SAFARI VIDEO ================= */}
+
+    <div className="mt-10 sm:mt-16">
+
+      <div className="mx-auto max-w-5xl">
+
+        {/* Video Heading */}
+
+        <div className="mb-6 text-center sm:mb-8">
+
+          <span className="text-[10px] font-bold uppercase tracking-[3px] text-emerald-700 sm:text-xs sm:tracking-[4px]">
+            {t("southAfricaSafari.video.badge")}
+          </span>
+
+          <h3 className="mt-2 text-2xl font-black text-gray-900 sm:text-3xl md:text-4xl">
+            {t("southAfricaSafari.video.title")}
+          </h3>
+
+          <p className="mx-auto mt-2 max-w-xl text-sm leading-6 text-gray-500 sm:text-base">
+            {t("southAfricaSafari.video.description")}
+          </p>
+
+        </div>
+
+
+        {/* Animated Video Card */}
+
+        <div className="group relative overflow-hidden rounded-[28px] bg-[#0A1A13] p-2 shadow-2xl sm:rounded-[40px] sm:p-3">
+
+          <div className="pointer-events-none absolute -inset-1 animate-pulse rounded-[30px] bg-emerald-500/20 blur-xl sm:rounded-[42px]" />
+
+          <div className="relative aspect-video w-full overflow-hidden rounded-[22px] bg-black sm:rounded-[32px]">
+
+            <iframe
+              className="absolute inset-0 h-full w-full"
+              src="https://www.youtube.com/embed/GpV4cUssLpE?rel=0&modestbranding=1"
+              title={t("southAfricaSafari.video.iframeTitle")}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+
+            <div className="pointer-events-none absolute inset-0 rounded-[22px] ring-1 ring-white/10 sm:rounded-[32px]" />
+
+          </div>
+
+        </div>
+
+
+        {/* Watch on YouTube */}
+
+        <div className="mt-5 text-center sm:mt-6">
+
+          <a
+            href="https://youtu.be/GpV4cUssLpE?si=w619UcMataGt5gq1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-gray-900 px-6 py-3 text-sm font-bold text-white shadow-lg transition duration-500 hover:-translate-y-1 hover:bg-emerald-700 hover:shadow-emerald-700/30"
+          >
+            {t("southAfricaSafari.video.watchButton")}
+            <span className="text-base">↗</span>
+          </a>
+
+        </div>
+
+      </div>
 
     </div>
 
@@ -4483,9 +4303,10 @@ export default function Destination() {
 </section>
 
 {/* ================= Mozambique Beach & Wildlife Escape ================= */}
-
-<section id="mozambique-safari" className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
-
+<section
+  id="mozambique-safari"
+  className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32"
+>
   {/* Background Effects */}
   <div className="pointer-events-none absolute -right-40 -top-40 h-[350px] w-[350px] rounded-full bg-yellow-300/10 blur-[120px] sm:h-[500px] sm:w-[500px] sm:blur-[160px]" />
 
@@ -4498,24 +4319,19 @@ export default function Destination() {
     <div className="mx-auto max-w-5xl text-center">
 
       <span className="inline-block rounded-full bg-emerald-100 px-4 py-2 text-[10px] font-bold uppercase tracking-[3px] text-emerald-700 sm:px-6 sm:text-sm sm:tracking-[4px]">
-        Mozambique Escape
+        {t("mozambiqueSafari.badge")}
       </span>
 
       <h2 className="mt-6 text-3xl font-black leading-[1.1] sm:mt-8 sm:text-5xl md:text-6xl lg:text-7xl">
-
-        7-Day Mozambique
+        {t("mozambiqueSafari.title")}
 
         <span className="mt-3 block text-2xl leading-tight text-[#C8A94C] sm:text-4xl md:text-5xl">
-          Beach & Wildlife Escape
+          {t("mozambiqueSafari.titleHighlight")}
         </span>
-
       </h2>
 
       <p className="mx-auto mt-6 max-w-4xl text-base leading-7 text-gray-600 sm:mt-8 sm:text-lg sm:leading-8">
-        Escape to Mozambique's spectacular Indian Ocean coastline,
-        combining the vibrant culture of Maputo with the white-sand
-        beaches, turquoise waters and tropical marine life of the
-        Bazaruto Archipelago.
+        {t("mozambiqueSafari.description")}
       </p>
 
     </div>
@@ -4530,25 +4346,22 @@ export default function Destination() {
       <div className="group overflow-hidden rounded-[28px] bg-white shadow-lg sm:rounded-[35px]">
 
         <div className="overflow-hidden">
-
           <img
             src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=85"
-            alt="Maputo Mozambique"
+            alt={t("mozambiqueSafari.destinations.maputo.imageAlt")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
-
         </div>
 
         <div className="p-5 text-center sm:p-6">
 
           <h3 className="text-xl font-bold sm:text-2xl">
-            Maputo
+            {t("mozambiqueSafari.destinations.maputo.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Discover Mozambique's vibrant capital, waterfront,
-            local markets and delicious Mozambican cuisine.
+            {t("mozambiqueSafari.destinations.maputo.description")}
           </p>
 
         </div>
@@ -4561,25 +4374,22 @@ export default function Destination() {
       <div className="group overflow-hidden rounded-[28px] bg-white shadow-lg sm:rounded-[35px]">
 
         <div className="overflow-hidden">
-
           <img
             src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85"
-            alt="Vilanculos Mozambique beach"
+            alt={t("mozambiqueSafari.destinations.vilanculos.imageAlt")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
-
         </div>
 
         <div className="p-5 text-center sm:p-6">
 
           <h3 className="text-xl font-bold sm:text-2xl">
-            Vilanculos
+            {t("mozambiqueSafari.destinations.vilanculos.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Relax on beautiful white-sand beaches overlooking
-            the warm waters of the Indian Ocean.
+            {t("mozambiqueSafari.destinations.vilanculos.description")}
           </p>
 
         </div>
@@ -4592,25 +4402,22 @@ export default function Destination() {
       <div className="group overflow-hidden rounded-[28px] bg-white shadow-lg sm:rounded-[35px]">
 
         <div className="overflow-hidden">
-
           <img
             src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=85"
-            alt="Bazaruto Archipelago Mozambique"
+            alt={t("mozambiqueSafari.destinations.bazaruto.imageAlt")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
-
         </div>
 
         <div className="p-5 text-center sm:p-6">
 
           <h3 className="text-xl font-bold sm:text-2xl">
-            Bazaruto Archipelago
+            {t("mozambiqueSafari.destinations.bazaruto.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Explore tropical islands, coral reefs, sandbanks
-            and crystal-clear turquoise waters.
+            {t("mozambiqueSafari.destinations.bazaruto.description")}
           </p>
 
         </div>
@@ -4629,32 +4436,29 @@ export default function Destination() {
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 shadow-xl sm:rounded-[35px] sm:p-10">
 
         <h3 className="text-2xl font-black">
-          Package Details
+          {t("mozambiqueSafari.packageDetails.title")}
         </h3>
 
         <div className="mt-6 space-y-5 text-sm leading-6 text-gray-600 sm:mt-8 sm:text-base">
 
           <p>
-            <strong>Duration:</strong>{" "}
-            7 Days / 6 Nights
+            <strong>{t("mozambiqueSafari.packageDetails.durationLabel")}</strong>{" "}
+            {t("mozambiqueSafari.packageDetails.duration")}
           </p>
 
           <p>
-            <strong>Route:</strong>{" "}
-            Maputo – Vilanculos – Bazaruto Archipelago
+            <strong>{t("mozambiqueSafari.packageDetails.routeLabel")}</strong>{" "}
+            {t("mozambiqueSafari.packageDetails.route")}
           </p>
 
           <p>
-            <strong>Transport:</strong>{" "}
-            Private vehicle, domestic flight and
-            boat excursions
+            <strong>{t("mozambiqueSafari.packageDetails.transportLabel")}</strong>{" "}
+            {t("mozambiqueSafari.packageDetails.transport")}
           </p>
 
           <p>
-            <strong>Highlights:</strong>{" "}
-            Bazaruto Archipelago, white-sand beaches,
-            snorkelling, island excursions, local culture
-            and Indian Ocean sunsets
+            <strong>{t("mozambiqueSafari.packageDetails.highlightsLabel")}</strong>{" "}
+            {t("mozambiqueSafari.packageDetails.highlights")}
           </p>
 
         </div>
@@ -4667,19 +4471,19 @@ export default function Destination() {
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 shadow-xl sm:rounded-[35px] sm:p-10 lg:col-span-2">
 
         <h3 className="text-2xl font-black">
-          7-Day Itinerary
+          {t("mozambiqueSafari.itinerary.title")}
         </h3>
 
         <div className="mt-6 grid gap-4 sm:mt-8 sm:gap-6 md:grid-cols-2">
 
           {[
-            "Day 1: Arrival in Maputo",
-            "Day 2: Maputo → Vilanculos",
-            "Day 3: Bazaruto Archipelago",
-            "Day 4: Ocean Adventure",
-            "Day 5: Vilanculos & Local Culture",
-            "Day 6: Vilanculos Leisure Day",
-            "Day 7: Vilanculos → Maputo",
+            t("mozambiqueSafari.itinerary.days.day1"),
+            t("mozambiqueSafari.itinerary.days.day2"),
+            t("mozambiqueSafari.itinerary.days.day3"),
+            t("mozambiqueSafari.itinerary.days.day4"),
+            t("mozambiqueSafari.itinerary.days.day5"),
+            t("mozambiqueSafari.itinerary.days.day6"),
+            t("mozambiqueSafari.itinerary.days.day7"),
           ].map((day, index) => (
 
             <div
@@ -4711,34 +4515,34 @@ export default function Destination() {
     <div className="mt-12 rounded-[30px] bg-[#0A1A13] p-6 text-white sm:mt-16 sm:rounded-[40px] sm:p-10 lg:p-12">
 
       <h3 className="text-center text-3xl font-black sm:text-4xl">
-        Mozambique Package Pricing
+        {t("mozambiqueSafari.pricing.title")}
       </h3>
 
       <p className="mt-3 text-center text-sm text-white/60 sm:text-base">
-        Private beach and island adventure pricing per person.
+        {t("mozambiqueSafari.pricing.description")}
       </p>
 
       <div className="mt-8 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-5">
 
         {[
           {
-            group: "1 Person",
+            group: t("mozambiqueSafari.pricing.groups.one"),
             price: "USD 2,500",
           },
           {
-            group: "2 People",
+            group: t("mozambiqueSafari.pricing.groups.two"),
             price: "USD 1,900",
           },
           {
-            group: "3–4 People",
+            group: t("mozambiqueSafari.pricing.groups.threeFour"),
             price: "USD 1,650",
           },
           {
-            group: "5–6 People",
+            group: t("mozambiqueSafari.pricing.groups.fiveSix"),
             price: "USD 1,500",
           },
           {
-            group: "7+ People",
+            group: t("mozambiqueSafari.pricing.groups.sevenPlus"),
             price: "USD 1,350",
           },
         ].map((item, index) => (
@@ -4757,7 +4561,7 @@ export default function Destination() {
             </p>
 
             <p className="mt-1 text-xs text-white/50 sm:text-sm">
-              per person
+              {t("mozambiqueSafari.pricing.perPerson")}
             </p>
 
           </div>
@@ -4774,26 +4578,26 @@ export default function Destination() {
     <div className="mt-12 rounded-[30px] bg-[#F8F6F1] p-6 sm:mt-16 sm:rounded-[40px] sm:p-10 lg:p-12">
 
       <h3 className="text-center text-3xl font-black sm:text-4xl">
-        What's Included
+        {t("mozambiqueSafari.included.title")}
       </h3>
 
       <div className="mt-8 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-4">
 
         {[
-          "6 nights accommodation",
-          "Domestic flights mentioned in itinerary",
-          "Private transfers",
-          "Professional English-speaking guide",
-          "Bazaruto boat excursion",
-          "Snorkelling and selected marine activities",
-          "Local cultural experience",
-          "Breakfast, lunch and dinner",
-          "Bottled drinking water",
-          "Airport transfers",
-        ].map((item, index) => (
+          "accommodation",
+          "flights",
+          "transfers",
+          "guide",
+          "boat",
+          "snorkelling",
+          "culture",
+          "meals",
+          "water",
+          "airportTransfers",
+        ].map((item) => (
 
           <div
-            key={index}
+            key={item}
             className="rounded-2xl bg-white p-5 text-center shadow-lg transition duration-300 hover:-translate-y-1 sm:p-6"
           >
 
@@ -4803,7 +4607,7 @@ export default function Destination() {
                 ✓
               </span>
 
-              {item}
+              {t(`mozambiqueSafari.included.items.${item}`)}
 
             </p>
 
@@ -4829,12 +4633,11 @@ export default function Destination() {
         </div>
 
         <h3 className="mt-4 text-xl font-black">
-          Tropical Beaches
+          {t("mozambiqueSafari.experiences.beaches.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Relax on pristine white-sand beaches and enjoy
-          spectacular sunsets over the Indian Ocean.
+          {t("mozambiqueSafari.experiences.beaches.description")}
         </p>
 
       </div>
@@ -4849,12 +4652,11 @@ export default function Destination() {
         </div>
 
         <h3 className="mt-4 text-xl font-black">
-          Ocean Adventure
+          {t("mozambiqueSafari.experiences.ocean.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Explore coral reefs, snorkel among tropical fish
-          and cruise through the spectacular Bazaruto islands.
+          {t("mozambiqueSafari.experiences.ocean.description")}
         </p>
 
       </div>
@@ -4869,12 +4671,11 @@ export default function Destination() {
         </div>
 
         <h3 className="mt-4 text-xl font-black">
-          Mozambican Culture
+          {t("mozambiqueSafari.experiences.culture.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Meet local communities and experience the warmth,
-          traditions and cuisine of Mozambique.
+          {t("mozambiqueSafari.experiences.culture.description")}
         </p>
 
       </div>
@@ -4887,27 +4688,26 @@ export default function Destination() {
     <div className="mt-12 rounded-[30px] bg-emerald-700 px-6 py-12 text-center text-white sm:mt-16 sm:rounded-[40px] sm:px-8 sm:py-16">
 
       <p className="text-[10px] font-bold uppercase tracking-[3px] text-emerald-100 sm:text-sm sm:tracking-[4px]">
-        Curious Safaris
+        {t("mozambiqueSafari.cta.brand")}
       </p>
 
       <h3 className="mt-4 text-3xl font-black leading-tight sm:text-4xl md:text-5xl">
-        Where turquoise waters meet African culture.
+        {t("mozambiqueSafari.cta.title")}
       </h3>
 
       <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-emerald-50 sm:mt-5 sm:text-lg sm:leading-8">
-        Escape to Mozambique's untouched islands, tropical
-        beaches and spectacular Indian Ocean coastline.
+        {t("mozambiqueSafari.cta.description")}
       </p>
 
       <a
-  href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20this%20Safari."
-  target="_blank"
-  rel="noopener noreferrer"
-  className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
->
-  Book This Safari
-  <span className="ml-2">→</span>
-</a>
+        href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20this%20Safari."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+      >
+        {t("mozambiqueSafari.cta.button")}
+        <span className="ml-2">→</span>
+      </a>
 
     </div>
 
@@ -4919,135 +4719,112 @@ export default function Destination() {
 
 
 {/* ================= Morocco Adventure ================= */}
-
-<section id="morocco-safari" className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
-
+<section
+  id="morocco-safari"
+  className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32"
+>
   {/* Background Effects */}
   <div className="pointer-events-none absolute -right-40 -top-40 h-[350px] w-[350px] rounded-full bg-yellow-300/10 blur-[120px] sm:h-[500px] sm:w-[500px] sm:blur-[160px]" />
+
   <div className="pointer-events-none absolute -bottom-40 -left-40 h-[350px] w-[350px] rounded-full bg-emerald-600/10 blur-[120px] sm:h-[500px] sm:w-[500px] sm:blur-[160px]" />
 
   <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
 
     {/* ================= HEADER ================= */}
-
     <div className="mx-auto max-w-5xl text-center">
 
       <span className="inline-block rounded-full bg-emerald-100 px-4 py-2 text-[10px] font-bold uppercase tracking-[3px] text-emerald-700 sm:px-6 sm:text-sm sm:tracking-[4px]">
-        Morocco Adventure
+        {t("moroccoSafari.badge")}
       </span>
 
       <h2 className="mt-6 text-3xl font-black leading-[1.1] sm:mt-8 sm:text-5xl md:text-6xl lg:text-7xl">
-
-        7-Day Morocco
+        {t("moroccoSafari.title")}
 
         <span className="mt-3 block text-2xl leading-tight text-[#C8A94C] sm:text-4xl md:text-5xl">
-          Marrakech, Sahara & Ancient Cities
+          {t("moroccoSafari.subtitle")}
         </span>
-
       </h2>
 
       <p className="mx-auto mt-6 max-w-4xl text-base leading-7 text-gray-600 sm:mt-8 sm:text-lg sm:leading-8">
-        Journey through Morocco's ancient medinas, dramatic Atlas
-        Mountains and endless Sahara dunes. Experience Marrakech,
-        Ait Ben Haddou, Dades Valley, Merzouga and the historic city
-        of Fes on an unforgettable North African adventure.
+        {t("moroccoSafari.description")}
       </p>
 
     </div>
 
 
     {/* ================= DESTINATION IMAGES ================= */}
-
     <div className="mt-12 grid gap-5 sm:mt-16 sm:gap-6 md:grid-cols-3">
 
       {/* Marrakech */}
-
       <div className="group overflow-hidden rounded-[28px] bg-white shadow-lg sm:rounded-[35px]">
 
         <div className="overflow-hidden">
-
           <img
             src="https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=1200&q=85"
-            alt="Marrakech Morocco Medina"
+            alt={t("moroccoSafari.destinations.marrakech.imageAlt")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
-
         </div>
 
         <div className="p-5 text-center sm:p-6">
-
           <h3 className="text-xl font-bold sm:text-2xl">
-            Marrakech
+            {t("moroccoSafari.destinations.marrakech.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Explore the vibrant Medina, Jemaa el-Fnaa, colourful
-            souks, palaces and traditional Moroccan culture.
+            {t("moroccoSafari.destinations.marrakech.description")}
           </p>
-
         </div>
 
       </div>
 
 
       {/* Sahara */}
-
       <div className="group overflow-hidden rounded-[28px] bg-white shadow-lg sm:rounded-[35px]">
 
         <div className="overflow-hidden">
-
           <img
             src={sahara}
-            alt="Sahara Desert Morocco"
+            alt={t("moroccoSafari.destinations.sahara.imageAlt")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
-
         </div>
 
         <div className="p-5 text-center sm:p-6">
-
           <h3 className="text-xl font-bold sm:text-2xl">
-            Sahara Desert
+            {t("moroccoSafari.destinations.sahara.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Ride camels across the golden dunes, watch the sunset
-            and spend an unforgettable night beneath the stars.
+            {t("moroccoSafari.destinations.sahara.description")}
           </p>
-
         </div>
 
       </div>
 
 
       {/* Fes */}
-
       <div className="group overflow-hidden rounded-[28px] bg-white shadow-lg sm:rounded-[35px]">
 
         <div className="overflow-hidden">
-
           <img
             src={morocco}
-            alt="Fes Morocco ancient city"
+            alt={t("moroccoSafari.destinations.fes.imageAlt")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
-
         </div>
 
         <div className="p-5 text-center sm:p-6">
-
           <h3 className="text-xl font-bold sm:text-2xl">
-            Fes
+            {t("moroccoSafari.destinations.fes.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Discover one of Morocco's oldest imperial cities,
-            historic medinas, souks and traditional crafts.
+            {t("moroccoSafari.destinations.fes.description")}
           </p>
-
         </div>
 
       </div>
@@ -5056,40 +4833,35 @@ export default function Destination() {
 
 
     {/* ================= PACKAGE DETAILS ================= */}
-
     <div className="mt-12 grid gap-6 sm:mt-16 lg:grid-cols-3 lg:gap-8">
 
       {/* Details */}
-
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 shadow-xl sm:rounded-[35px] sm:p-10">
 
         <h3 className="text-2xl font-black">
-          Tour Details
+          {t("moroccoSafari.details.title")}
         </h3>
 
         <div className="mt-6 space-y-5 text-sm leading-6 text-gray-600 sm:mt-8 sm:text-base">
 
           <p>
-            <strong>Duration:</strong>{" "}
-            7 Days / 6 Nights
+            <strong>{t("moroccoSafari.details.durationLabel")}</strong>{" "}
+            {t("moroccoSafari.details.duration")}
           </p>
 
           <p>
-            <strong>Route:</strong>{" "}
-            Marrakech – Ait Ben Haddou – Merzouga –
-            Dades Valley – Fes – Marrakech
+            <strong>{t("moroccoSafari.details.routeLabel")}</strong>{" "}
+            {t("moroccoSafari.details.route")}
           </p>
 
           <p>
-            <strong>Transport:</strong>{" "}
-            Private 4x4/minivan with professional
-            driver-guide
+            <strong>{t("moroccoSafari.details.transportLabel")}</strong>{" "}
+            {t("moroccoSafari.details.transport")}
           </p>
 
           <p>
-            <strong>Highlights:</strong>{" "}
-            Marrakech Medina, Atlas Mountains, Ait Ben Haddou,
-            Todra Gorge, Sahara Desert, camel ride and Fes Medina
+            <strong>{t("moroccoSafari.details.highlightsLabel")}</strong>{" "}
+            {t("moroccoSafari.details.highlights")}
           </p>
 
         </div>
@@ -5098,23 +4870,22 @@ export default function Destination() {
 
 
       {/* Itinerary */}
-
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 shadow-xl sm:rounded-[35px] sm:p-10 lg:col-span-2">
 
         <h3 className="text-2xl font-black">
-          7-Day Itinerary
+          {t("moroccoSafari.itinerary.title")}
         </h3>
 
         <div className="mt-6 grid gap-4 sm:mt-8 sm:gap-6 md:grid-cols-2">
 
           {[
-            "Day 1: Arrival in Marrakech",
-            "Day 2: Marrakech City Experience",
-            "Day 3: Marrakech → Dades Valley",
-            "Day 4: Dades Valley → Merzouga",
-            "Day 5: Merzouga → Fes",
-            "Day 6: Fes → Marrakech",
-            "Day 7: Marrakech & Departure",
+            t("moroccoSafari.itinerary.days.day1"),
+            t("moroccoSafari.itinerary.days.day2"),
+            t("moroccoSafari.itinerary.days.day3"),
+            t("moroccoSafari.itinerary.days.day4"),
+            t("moroccoSafari.itinerary.days.day5"),
+            t("moroccoSafari.itinerary.days.day6"),
+            t("moroccoSafari.itinerary.days.day7"),
           ].map((day, index) => (
 
             <div
@@ -5142,38 +4913,37 @@ export default function Destination() {
 
 
     {/* ================= PRICING ================= */}
-
     <div className="mt-12 rounded-[30px] bg-[#0A1A13] p-6 text-white sm:mt-16 sm:rounded-[40px] sm:p-10 lg:p-12">
 
       <h3 className="text-center text-3xl font-black sm:text-4xl">
-        Morocco Tour Pricing
+        {t("moroccoSafari.pricing.title")}
       </h3>
 
       <p className="mt-3 text-center text-sm text-white/60 sm:text-base">
-        Private Morocco adventure pricing per person.
+        {t("moroccoSafari.pricing.description")}
       </p>
 
       <div className="mt-8 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-5">
 
         {[
           {
-            group: "1 Person",
+            group: t("moroccoSafari.pricing.groups.one"),
             price: "USD 2,200",
           },
           {
-            group: "2 People",
+            group: t("moroccoSafari.pricing.groups.two"),
             price: "USD 1,650",
           },
           {
-            group: "3–4 People",
+            group: t("moroccoSafari.pricing.groups.threeFour"),
             price: "USD 1,400",
           },
           {
-            group: "5–6 People",
+            group: t("moroccoSafari.pricing.groups.fiveSix"),
             price: "USD 1,250",
           },
           {
-            group: "7+ People",
+            group: t("moroccoSafari.pricing.groups.sevenPlus"),
             price: "USD 1,150",
           },
         ].map((item, index) => (
@@ -5192,7 +4962,7 @@ export default function Destination() {
             </p>
 
             <p className="mt-1 text-xs text-white/50 sm:text-sm">
-              per person
+              {t("moroccoSafari.pricing.perPerson")}
             </p>
 
           </div>
@@ -5205,31 +4975,30 @@ export default function Destination() {
 
 
     {/* ================= INCLUDED ================= */}
-
     <div className="mt-12 rounded-[30px] bg-[#F8F6F1] p-6 sm:mt-16 sm:rounded-[40px] sm:p-10 lg:p-12">
 
       <h3 className="text-center text-3xl font-black sm:text-4xl">
-        What's Included
+        {t("moroccoSafari.included.title")}
       </h3>
 
       <div className="mt-8 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-4">
 
         {[
-          "6 nights accommodation",
-          "Private transportation",
-          "Professional English-speaking driver-guide",
-          "Airport transfers",
-          "Ait Ben Haddou visit",
-          "Todra Gorge visit",
-          "Sahara camel ride",
-          "Desert camp experience",
-          "City sightseeing as listed",
-          "Breakfast, lunch and dinner",
-          "Bottled drinking water",
-        ].map((item, index) => (
+          "accommodation",
+          "transportation",
+          "guide",
+          "airportTransfers",
+          "aitBenHaddou",
+          "todraGorge",
+          "camelRide",
+          "desertCamp",
+          "sightseeing",
+          "meals",
+          "water",
+        ].map((item) => (
 
           <div
-            key={index}
+            key={item}
             className="rounded-2xl bg-white p-5 text-center shadow-lg transition duration-300 hover:-translate-y-1 sm:p-6"
           >
 
@@ -5239,7 +5008,7 @@ export default function Destination() {
                 ✓
               </span>
 
-              {item}
+              {t(`moroccoSafari.included.items.${item}`)}
 
             </p>
 
@@ -5253,64 +5022,51 @@ export default function Destination() {
 
 
     {/* ================= EXPERIENCE HIGHLIGHTS ================= */}
-
     <div className="mt-12 grid gap-5 sm:mt-16 md:grid-cols-3">
 
       {/* Medina */}
-
       <div className="rounded-[28px] bg-emerald-50 p-6 sm:rounded-[35px] sm:p-8">
 
-        <div className="text-3xl">
-          🕌
-        </div>
+        <div className="text-3xl">🕌</div>
 
         <h3 className="mt-4 text-xl font-black">
-          Ancient Medinas
+          {t("moroccoSafari.experiences.medinas.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Wander through Marrakech and Fes, discovering historic
-          architecture, colourful souks and traditional crafts.
+          {t("moroccoSafari.experiences.medinas.description")}
         </p>
 
       </div>
 
 
       {/* Sahara */}
-
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 sm:rounded-[35px] sm:p-8">
 
-        <div className="text-3xl">
-          🐪
-        </div>
+        <div className="text-3xl">🐪</div>
 
         <h3 className="mt-4 text-xl font-black">
-          Sahara Experience
+          {t("moroccoSafari.experiences.sahara.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Ride camels through the desert, watch the sunset and
-          spend the night at a traditional Sahara camp.
+          {t("moroccoSafari.experiences.sahara.description")}
         </p>
 
       </div>
 
 
       {/* Mountains */}
-
       <div className="rounded-[28px] bg-emerald-50 p-6 sm:rounded-[35px] sm:p-8">
 
-        <div className="text-3xl">
-          🏔️
-        </div>
+        <div className="text-3xl">🏔️</div>
 
         <h3 className="mt-4 text-xl font-black">
-          Atlas Mountains
+          {t("moroccoSafari.experiences.mountains.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Cross spectacular mountain landscapes, ancient valleys
-          and dramatic rock formations on the journey south.
+          {t("moroccoSafari.experiences.mountains.description")}
         </p>
 
       </div>
@@ -5319,31 +5075,29 @@ export default function Destination() {
 
 
     {/* ================= FINAL CTA ================= */}
-
     <div className="mt-12 rounded-[30px] bg-emerald-700 px-6 py-12 text-center text-white sm:mt-16 sm:rounded-[40px] sm:px-8 sm:py-16">
 
       <p className="text-[10px] font-bold uppercase tracking-[3px] text-emerald-100 sm:text-sm sm:tracking-[4px]">
-        Curious Safaris
+        {t("moroccoSafari.cta.brand")}
       </p>
 
       <h3 className="mt-4 text-3xl font-black leading-tight sm:text-4xl md:text-5xl">
-        From ancient medinas to endless Sahara dunes.
+        {t("moroccoSafari.cta.title")}
       </h3>
 
       <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-emerald-50 sm:mt-5 sm:text-lg sm:leading-8">
-        Discover Morocco through its ancient cities, dramatic
-        landscapes, rich culture and unforgettable desert experiences.
+        {t("moroccoSafari.cta.description")}
       </p>
 
       <a
-href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20this%20Safari."
-  target="_blank"
-  rel="noopener noreferrer"
-  className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
->
-  Book This Safari
-  <span className="ml-2">→</span>
-</a>
+        href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20this%20Safari."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+      >
+        {t("moroccoSafari.cta.button")}
+        <span className="ml-2">→</span>
+      </a>
 
     </div>
 
@@ -5352,7 +5106,6 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
 </section>
 
 {/* ================= Egypt Adventure ================= */}
-
 <section id="egypt-safari" className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
 
   {/* Background Effects */}
@@ -5367,23 +5120,21 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
     <div className="mx-auto max-w-5xl text-center">
 
       <span className="inline-block rounded-full bg-emerald-100 px-4 py-2 text-[10px] font-bold uppercase tracking-[3px] text-emerald-700 sm:px-6 sm:text-sm sm:tracking-[4px]">
-        Egypt Adventure
+        {t("egyptSafari.badge")}
       </span>
 
       <h2 className="mt-6 text-3xl font-black leading-[1.1] sm:mt-8 sm:text-5xl md:text-6xl lg:text-7xl">
 
-        7-Day Egypt
+        {t("egyptSafari.title")}
 
         <span className="mt-3 block text-2xl leading-tight text-[#C8A94C] sm:text-4xl md:text-5xl">
-          Cairo, Nile & Ancient Wonders
+          {t("egyptSafari.titleHighlight")}
         </span>
 
       </h2>
 
       <p className="mx-auto mt-6 max-w-4xl text-base leading-7 text-gray-600 sm:mt-8 sm:text-lg sm:leading-8">
-        Step into thousands of years of history as you explore the
-        legendary Pyramids of Giza, ancient temples and royal tombs,
-        while cruising along the timeless Nile from Luxor to Aswan.
+        {t("egyptSafari.description")}
       </p>
 
     </div>
@@ -5401,7 +5152,7 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
 
           <img
             src={egypt}
-            alt="Pyramids of Giza Cairo Egypt"
+            alt={t("egyptSafari.destinations.cairo.imageAlt")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
@@ -5411,12 +5162,11 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
         <div className="p-5 text-center sm:p-6">
 
           <h3 className="text-xl font-bold sm:text-2xl">
-            Cairo
+            {t("egyptSafari.destinations.cairo.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Discover the Pyramids of Giza, the Sphinx, Egyptian
-            Museum and the historic Khan el-Khalili bazaar.
+            {t("egyptSafari.destinations.cairo.description")}
           </p>
 
         </div>
@@ -5432,7 +5182,7 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
 
           <img
             src="https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=1200&q=85"
-            alt="Luxor ancient temple Egypt"
+            alt={t("egyptSafari.destinations.luxor.imageAlt")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
@@ -5442,12 +5192,11 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
         <div className="p-5 text-center sm:p-6">
 
           <h3 className="text-xl font-bold sm:text-2xl">
-            Luxor
+            {t("egyptSafari.destinations.luxor.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Explore Karnak Temple, Luxor Temple, the Valley of
-            the Kings and the magnificent Temple of Hatshepsut.
+            {t("egyptSafari.destinations.luxor.description")}
           </p>
 
         </div>
@@ -5455,7 +5204,7 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
       </div>
 
 
-      {/* Nile & Aswan */}
+      {/* Nile */}
 
       <div className="group overflow-hidden rounded-[28px] bg-white shadow-lg sm:rounded-[35px]">
 
@@ -5463,7 +5212,7 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
 
           <img
             src={nile}
-            alt="Nile River Aswan Egypt"
+            alt={t("egyptSafari.destinations.nile.imageAlt")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
@@ -5473,12 +5222,11 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
         <div className="p-5 text-center sm:p-6">
 
           <h3 className="text-xl font-bold sm:text-2xl">
-            Nile & Aswan
+            {t("egyptSafari.destinations.nile.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Cruise the Nile and discover Edfu, Kom Ombo, Philae
-            Temple and the beautiful landscapes around Aswan.
+            {t("egyptSafari.destinations.nile.description")}
           </p>
 
         </div>
@@ -5497,32 +5245,29 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 shadow-xl sm:rounded-[35px] sm:p-10">
 
         <h3 className="text-2xl font-black">
-          Tour Details
+          {t("egyptSafari.details.title")}
         </h3>
 
         <div className="mt-6 space-y-5 text-sm leading-6 text-gray-600 sm:mt-8 sm:text-base">
 
           <p>
-            <strong>Duration:</strong>{" "}
-            7 Days / 6 Nights
+            <strong>{t("egyptSafari.details.durationLabel")}</strong>{" "}
+            {t("egyptSafari.details.duration")}
           </p>
 
           <p>
-            <strong>Route:</strong>{" "}
-            Cairo – Luxor – Nile Cruise –
-            Aswan – Cairo
+            <strong>{t("egyptSafari.details.routeLabel")}</strong>{" "}
+            {t("egyptSafari.details.route")}
           </p>
 
           <p>
-            <strong>Transport:</strong>{" "}
-            Private vehicle, domestic flight
-            and Nile cruise
+            <strong>{t("egyptSafari.details.transportLabel")}</strong>{" "}
+            {t("egyptSafari.details.transport")}
           </p>
 
           <p>
-            <strong>Highlights:</strong>{" "}
-            Pyramids of Giza, Sphinx, ancient temples,
-            Valley of the Kings, Nile cruise and Aswan
+            <strong>{t("egyptSafari.details.highlightsLabel")}</strong>{" "}
+            {t("egyptSafari.details.highlights")}
           </p>
 
         </div>
@@ -5535,19 +5280,19 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 shadow-xl sm:rounded-[35px] sm:p-10 lg:col-span-2">
 
         <h3 className="text-2xl font-black">
-          7-Day Itinerary
+          {t("egyptSafari.itinerary.title")}
         </h3>
 
         <div className="mt-6 grid gap-4 sm:mt-8 sm:gap-6 md:grid-cols-2">
 
           {[
-            "Day 1: Arrival in Cairo",
-            "Day 2: Pyramids & Ancient Cairo",
-            "Day 3: Cairo → Luxor & Nile Cruise",
-            "Day 4: Luxor & Valley of the Kings",
-            "Day 5: Edfu & Kom Ombo",
-            "Day 6: Aswan → Cairo",
-            "Day 7: Cairo & Departure",
+            "day1",
+            "day2",
+            "day3",
+            "day4",
+            "day5",
+            "day6",
+            "day7",
           ].map((day, index) => (
 
             <div
@@ -5560,7 +5305,7 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
               </div>
 
               <p className="text-sm font-semibold leading-5 text-gray-700 sm:text-base">
-                {day}
+                {t(`egyptSafari.itinerary.${day}`)}
               </p>
 
             </div>
@@ -5579,34 +5324,34 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
     <div className="mt-12 rounded-[30px] bg-[#0A1A13] p-6 text-white sm:mt-16 sm:rounded-[40px] sm:p-10 lg:p-12">
 
       <h3 className="text-center text-3xl font-black sm:text-4xl">
-        Egypt Tour Pricing
+        {t("egyptSafari.pricing.title")}
       </h3>
 
       <p className="mt-3 text-center text-sm text-white/60 sm:text-base">
-        Ancient wonders and Nile cruise adventure pricing per person.
+        {t("egyptSafari.pricing.description")}
       </p>
 
       <div className="mt-8 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-5">
 
         {[
           {
-            group: "1 Person",
+            group: "one",
             price: "USD 2,400",
           },
           {
-            group: "2 People",
+            group: "two",
             price: "USD 1,800",
           },
           {
-            group: "3–4 People",
+            group: "threeFour",
             price: "USD 1,550",
           },
           {
-            group: "5–6 People",
+            group: "fiveSix",
             price: "USD 1,400",
           },
           {
-            group: "7+ People",
+            group: "sevenPlus",
             price: "USD 1,300",
           },
         ].map((item, index) => (
@@ -5617,7 +5362,7 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
           >
 
             <p className="text-sm font-medium text-white/60">
-              {item.group}
+              {t(`egyptSafari.pricing.groups.${item.group}`)}
             </p>
 
             <p className="mt-2 text-2xl font-black sm:mt-3 sm:text-3xl">
@@ -5625,7 +5370,7 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
             </p>
 
             <p className="mt-1 text-xs text-white/50 sm:text-sm">
-              per person
+              {t("egyptSafari.pricing.perPerson")}
             </p>
 
           </div>
@@ -5642,29 +5387,29 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
     <div className="mt-12 rounded-[30px] bg-[#F8F6F1] p-6 sm:mt-16 sm:rounded-[40px] sm:p-10 lg:p-12">
 
       <h3 className="text-center text-3xl font-black sm:text-4xl">
-        What's Included
+        {t("egyptSafari.included.title")}
       </h3>
 
       <div className="mt-8 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-4">
 
         {[
-          "6 nights accommodation",
-          "Nile cruise",
-          "Domestic flights mentioned in itinerary",
-          "Private transportation",
-          "Professional English-speaking guide",
-          "Entrance fees to listed attractions",
-          "Pyramids and Sphinx visit",
-          "Valley of the Kings",
-          "Karnak, Luxor, Edfu, Kom Ombo & Philae temples",
-          "Nile dinner cruise",
-          "Breakfast, lunch and dinner",
-          "Bottled drinking water",
-          "Airport transfers",
-        ].map((item, index) => (
+          "accommodation",
+          "nileCruise",
+          "domesticFlights",
+          "privateTransportation",
+          "professionalGuide",
+          "entranceFees",
+          "pyramids",
+          "valleyOfKings",
+          "temples",
+          "nileDinnerCruise",
+          "meals",
+          "water",
+          "airportTransfers",
+        ].map((item) => (
 
           <div
-            key={index}
+            key={item}
             className="rounded-2xl bg-white p-5 text-center shadow-lg transition duration-300 hover:-translate-y-1 sm:p-6"
           >
 
@@ -5674,7 +5419,7 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
                 ✓
               </span>
 
-              {item}
+              {t(`egyptSafari.included.items.${item}`)}
 
             </p>
 
@@ -5691,8 +5436,6 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
 
     <div className="mt-12 grid gap-5 sm:mt-16 md:grid-cols-3">
 
-      {/* Pyramids */}
-
       <div className="rounded-[28px] bg-emerald-50 p-6 sm:rounded-[35px] sm:p-8">
 
         <div className="text-3xl">
@@ -5700,18 +5443,15 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
         </div>
 
         <h3 className="mt-4 text-xl font-black">
-          Ancient Wonders
+          {t("egyptSafari.experiences.ancient.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Stand before the legendary Pyramids of Giza and
-          Sphinx and explore the fascinating history of ancient Egypt.
+          {t("egyptSafari.experiences.ancient.description")}
         </p>
 
       </div>
 
-
-      {/* Nile */}
 
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 sm:rounded-[35px] sm:p-8">
 
@@ -5720,18 +5460,15 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
         </div>
 
         <h3 className="mt-4 text-xl font-black">
-          Nile Cruise
+          {t("egyptSafari.experiences.nile.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Sail between Luxor and Aswan while discovering
-          magnificent temples and timeless Nile landscapes.
+          {t("egyptSafari.experiences.nile.description")}
         </p>
 
       </div>
 
-
-      {/* Temples */}
 
       <div className="rounded-[28px] bg-emerald-50 p-6 sm:rounded-[35px] sm:p-8">
 
@@ -5740,12 +5477,11 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
         </div>
 
         <h3 className="mt-4 text-xl font-black">
-          Ancient Temples
+          {t("egyptSafari.experiences.temples.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Explore Karnak, Luxor, Edfu, Kom Ombo and Philae,
-          each revealing another chapter of Egypt's ancient civilization.
+          {t("egyptSafari.experiences.temples.description")}
         </p>
 
       </div>
@@ -5758,27 +5494,26 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
     <div className="mt-12 rounded-[30px] bg-emerald-700 px-6 py-12 text-center text-white sm:mt-16 sm:rounded-[40px] sm:px-8 sm:py-16">
 
       <p className="text-[10px] font-bold uppercase tracking-[3px] text-emerald-100 sm:text-sm sm:tracking-[4px]">
-        Curious Safaris
+        {t("egyptSafari.cta.brand")}
       </p>
 
       <h3 className="mt-4 text-3xl font-black leading-tight sm:text-4xl md:text-5xl">
-        Walk through the pages of history.
+        {t("egyptSafari.cta.title")}
       </h3>
 
       <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-emerald-50 sm:mt-5 sm:text-lg sm:leading-8">
-        From the Pyramids of Giza to the timeless Nile,
-        experience Egypt's ancient wonders on an unforgettable journey.
+        {t("egyptSafari.cta.description")}
       </p>
 
       <a
-  href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20this%20Safari."
-  target="_blank"
-  rel="noopener noreferrer"
-  className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
->
-  Book This Safari
-  <span className="ml-2">→</span>
-</a>
+        href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20booking%20this%20Safari."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-emerald-700 shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+      >
+        {t("egyptSafari.cta.button")}
+        <span className="ml-2">→</span>
+      </a>
 
     </div>
 
@@ -5787,9 +5522,10 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
 </section>
 
 {/* ================= Sudan Adventure ================= */}
-
-<section id="sudan-safari" className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
-
+<section
+  id="sudan-safari"
+  className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32"
+>
   {/* Background Effects */}
   <div className="pointer-events-none absolute -right-40 -top-40 h-[350px] w-[350px] rounded-full bg-yellow-300/10 blur-[120px] sm:h-[500px] sm:w-[500px] sm:blur-[160px]" />
   <div className="pointer-events-none absolute -bottom-40 -left-40 h-[350px] w-[350px] rounded-full bg-emerald-600/10 blur-[120px] sm:h-[500px] sm:w-[500px] sm:blur-[160px]" />
@@ -5801,27 +5537,22 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
     <div className="mx-auto max-w-5xl text-center">
 
       <span className="inline-block rounded-full bg-emerald-100 px-4 py-2 text-[10px] font-bold uppercase tracking-[3px] text-emerald-700 sm:px-6 sm:text-sm sm:tracking-[4px]">
-        Sudan Adventure
+        {t("sudanSafari.badge")}
       </span>
 
       <h2 className="mt-6 text-3xl font-black leading-[1.1] sm:mt-8 sm:text-5xl md:text-6xl lg:text-7xl">
-
-        7-Day Sudan
+        {t("sudanSafari.title")}
 
         <span className="mt-3 block text-2xl leading-tight text-[#C8A94C] sm:text-4xl md:text-5xl">
-          Ancient Nubia, Pyramids & the Nile
+          {t("sudanSafari.subtitle")}
         </span>
-
       </h2>
 
       <p className="mx-auto mt-6 max-w-4xl text-base leading-7 text-gray-600 sm:mt-8 sm:text-lg sm:leading-8">
-        Journey through the ancient Nubian heart of Africa and
-        discover extraordinary pyramids, archaeological treasures,
-        desert landscapes and traditional communities along the Nile.
+        {t("sudanSafari.description")}
       </p>
 
     </div>
-
 
     {/* ================= DESTINATION IMAGES ================= */}
 
@@ -5832,155 +5563,132 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
       <div className="group overflow-hidden rounded-[28px] bg-white shadow-lg sm:rounded-[35px]">
 
         <div className="overflow-hidden">
-
           <img
             src={pyramids}
-            alt="Ancient pyramids and desert landscape"
+            alt={t("sudanSafari.destinations.meroe.alt")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
-
         </div>
 
         <div className="p-5 text-center sm:p-6">
-
           <h3 className="text-xl font-bold sm:text-2xl">
-            Meroë Pyramids
+            {t("sudanSafari.destinations.meroe.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Discover the spectacular ancient pyramids of Meroë
-            rising from the Nubian Desert.
+            {t("sudanSafari.destinations.meroe.description")}
           </p>
-
         </div>
 
       </div>
-
 
       {/* Jebel Barkal */}
 
       <div className="group overflow-hidden rounded-[28px] bg-white shadow-lg sm:rounded-[35px]">
 
         <div className="overflow-hidden">
-
           <img
             src={barkal}
-            alt="Nubian desert landscape"
+            alt={t("sudanSafari.destinations.barkal.alt")}
             loading="lazy"
             className="h-[320px] w-full object-cover transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
           />
-
         </div>
 
         <div className="p-5 text-center sm:p-6">
-
           <h3 className="text-xl font-bold sm:text-2xl">
-            Jebel Barkal
+            {t("sudanSafari.destinations.barkal.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Explore the sacred mountain, ancient temples and
-            archaeological monuments of the Napatan kingdom.
+            {t("sudanSafari.destinations.barkal.description")}
           </p>
-
         </div>
 
       </div>
-
 
       {/* Nile */}
 
       <div className="group overflow-hidden rounded-[28px] bg-white shadow-lg sm:rounded-[35px]">
 
         <div className="overflow-hidden">
-
           <img
-  src={nile}
-  alt="Nile River landscape in Sudan"
-  loading="lazy"
-  className="h-[320px] w-full object-cover object-center transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
-/>
-
+            src={nile}
+            alt={t("sudanSafari.destinations.nile.alt")}
+            loading="lazy"
+            className="h-[320px] w-full object-cover object-center transition duration-1000 group-hover:scale-110 sm:h-[420px] lg:h-[500px]"
+          />
         </div>
 
         <div className="p-5 text-center sm:p-6">
-
           <h3 className="text-xl font-bold sm:text-2xl">
-            The Nile
+            {t("sudanSafari.destinations.nile.title")}
           </h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
-            Follow the Nile through traditional Nubian villages,
-            ancient settlements and dramatic desert landscapes.
+            {t("sudanSafari.destinations.nile.description")}
           </p>
-
         </div>
 
       </div>
 
     </div>
 
-
     {/* ================= TOUR DETAILS ================= */}
 
     <div className="mt-12 grid gap-6 sm:mt-16 lg:grid-cols-3 lg:gap-8">
 
-      {/* Details */}
-
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 shadow-xl sm:rounded-[35px] sm:p-10">
 
         <h3 className="text-2xl font-black">
-          Tour Details
+          {t("sudanSafari.tourDetails.title")}
         </h3>
 
         <div className="mt-6 space-y-5 text-sm leading-6 text-gray-600 sm:mt-8 sm:text-base">
 
           <p>
-            <strong>Duration:</strong>{" "}
-            7 Days / 6 Nights
+            <strong>{t("sudanSafari.tourDetails.duration")}:</strong>{" "}
+            {t("sudanSafari.tourDetails.durationValue")}
           </p>
 
           <p>
-            <strong>Route:</strong>{" "}
-            Khartoum – Meroë – Karima –
-            Old Dongola – Khartoum
+            <strong>{t("sudanSafari.tourDetails.route")}:</strong>{" "}
+            {t("sudanSafari.tourDetails.routeValue")}
           </p>
 
           <p>
-            <strong>Transport:</strong>{" "}
-            Private 4x4 with professional guide
+            <strong>{t("sudanSafari.tourDetails.transport")}:</strong>{" "}
+            {t("sudanSafari.tourDetails.transportValue")}
           </p>
 
           <p>
-            <strong>Highlights:</strong>{" "}
-            Meroë pyramids, Jebel Barkal, Nuri pyramids,
-            Old Dongola and Nubian villages along the Nile
+            <strong>{t("sudanSafari.tourDetails.highlights")}:</strong>{" "}
+            {t("sudanSafari.tourDetails.highlightsValue")}
           </p>
 
         </div>
 
       </div>
 
-
-      {/* Itinerary */}
+      {/* ================= ITINERARY ================= */}
 
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 shadow-xl sm:rounded-[35px] sm:p-10 lg:col-span-2">
 
         <h3 className="text-2xl font-black">
-          7-Day Itinerary
+          {t("sudanSafari.itinerary.title")}
         </h3>
 
         <div className="mt-6 grid gap-4 sm:mt-8 sm:gap-6 md:grid-cols-2">
 
           {[
-            "Day 1: Arrival in Khartoum",
-            "Day 2: Khartoum → Meroë",
-            "Day 3: Meroë → Karima",
-            "Day 4: Jebel Barkal & Nuri",
-            "Day 5: Karima → Old Dongola",
-            "Day 6: Dongola → Khartoum",
-            "Day 7: Khartoum & Departure",
+            "day1",
+            "day2",
+            "day3",
+            "day4",
+            "day5",
+            "day6",
+            "day7"
           ].map((day, index) => (
 
             <div
@@ -5993,7 +5701,7 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
               </div>
 
               <p className="text-sm font-semibold leading-5 text-gray-700 sm:text-base">
-                {day}
+                {t(`sudanSafari.itinerary.${day}`)}
               </p>
 
             </div>
@@ -6006,41 +5714,39 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
 
     </div>
 
-
     {/* ================= PRICING ================= */}
 
     <div className="mt-12 rounded-[30px] bg-[#0A1A13] p-6 text-white sm:mt-16 sm:rounded-[40px] sm:p-10 lg:p-12">
 
       <h3 className="text-center text-3xl font-black sm:text-4xl">
-        Sudan Tour Pricing
+        {t("sudanSafari.pricing.title")}
       </h3>
 
       <p className="mx-auto mt-3 max-w-2xl text-center text-sm leading-6 text-white/60 sm:text-base">
-        Sample pricing for the proposed private adventure.
-        Current availability and safe access must be confirmed.
+        {t("sudanSafari.pricing.description")}
       </p>
 
       <div className="mt-8 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-5">
 
         {[
           {
-            group: "1 Person",
+            group: "onePerson",
             price: "USD 3,200",
           },
           {
-            group: "2 People",
+            group: "twoPeople",
             price: "USD 2,400",
           },
           {
-            group: "3–4 People",
+            group: "threeFourPeople",
             price: "USD 2,050",
           },
           {
-            group: "5–6 People",
+            group: "fiveSixPeople",
             price: "USD 1,850",
           },
           {
-            group: "7+ People",
+            group: "sevenPlusPeople",
             price: "USD 1,700",
           },
         ].map((item, index) => (
@@ -6051,7 +5757,7 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
           >
 
             <p className="text-sm font-medium text-white/60">
-              {item.group}
+              {t(`sudanSafari.pricing.${item.group}`)}
             </p>
 
             <p className="mt-2 text-2xl font-black sm:mt-3 sm:text-3xl">
@@ -6059,7 +5765,7 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
             </p>
 
             <p className="mt-1 text-xs text-white/50 sm:text-sm">
-              per person
+              {t("sudanSafari.pricing.perPerson")}
             </p>
 
           </div>
@@ -6070,30 +5776,19 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
 
     </div>
 
-
     {/* ================= INCLUDED ================= */}
 
     <div className="mt-12 rounded-[30px] bg-[#F8F6F1] p-6 sm:mt-16 sm:rounded-[40px] sm:p-10 lg:p-12">
 
       <h3 className="text-center text-3xl font-black sm:text-4xl">
-        What's Included
+        {t("sudanSafari.included.title")}
       </h3>
 
       <div className="mt-8 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-4">
 
-        {[
-          "6 nights accommodation",
-          "Private 4x4 transportation",
-          "Professional local guide",
-          "Archaeological site entrance fees",
-          "Meroë visit",
-          "Jebel Barkal visit",
-          "Nuri pyramids visit",
-          "Old Dongola visit",
-          "Full-board meals during the tour",
-          "Bottled drinking water",
-          "Airport transfers",
-        ].map((item, index) => (
+        {t("sudanSafari.included.items", {
+          returnObjects: true
+        }).map((item, index) => (
 
           <div
             key={index}
@@ -6117,7 +5812,6 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
       </div>
 
     </div>
-
 
     {/* ================= SAFETY NOTICE ================= */}
 
@@ -6132,16 +5826,11 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
         <div>
 
           <h3 className="text-xl font-black text-red-800">
-            Important Travel & Safety Notice
+            {t("sudanSafari.safety.title")}
           </h3>
 
           <p className="mt-3 text-sm leading-7 text-red-700 sm:text-base">
-            Sudan is currently a high-risk destination due to the
-            ongoing conflict and security situation. This itinerary
-            is a sample travel concept and should not be marketed
-            as currently bookable without first confirming safe
-            access, permits, border conditions, accommodation
-            availability and official travel advisories.
+            {t("sudanSafari.safety.description")}
           </p>
 
         </div>
@@ -6150,12 +5839,9 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
 
     </div>
 
-
     {/* ================= EXPERIENCE HIGHLIGHTS ================= */}
 
     <div className="mt-12 grid gap-5 sm:mt-16 md:grid-cols-3">
-
-      {/* Pyramids */}
 
       <div className="rounded-[28px] bg-emerald-50 p-6 sm:rounded-[35px] sm:p-8">
 
@@ -6164,18 +5850,14 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
         </div>
 
         <h3 className="mt-4 text-xl font-black">
-          Ancient Nubia
+          {t("sudanSafari.highlights.ancientNubia.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Explore remarkable pyramids, temples and archaeological
-          sites connected to the ancient Nubian kingdoms.
+          {t("sudanSafari.highlights.ancientNubia.description")}
         </p>
 
       </div>
-
-
-      {/* Desert */}
 
       <div className="rounded-[28px] bg-[#F8F6F1] p-6 sm:rounded-[35px] sm:p-8">
 
@@ -6184,18 +5866,14 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
         </div>
 
         <h3 className="mt-4 text-xl font-black">
-          Nubian Desert
+          {t("sudanSafari.highlights.desert.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Travel through vast desert landscapes and experience
-          the dramatic scenery between ancient settlements.
+          {t("sudanSafari.highlights.desert.description")}
         </p>
 
       </div>
-
-
-      {/* Nile */}
 
       <div className="rounded-[28px] bg-emerald-50 p-6 sm:rounded-[35px] sm:p-8">
 
@@ -6204,40 +5882,35 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
         </div>
 
         <h3 className="mt-4 text-xl font-black">
-          Nile Culture
+          {t("sudanSafari.highlights.nileCulture.title")}
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          Follow the Nile through traditional Nubian villages
-          and discover local hospitality and centuries-old traditions.
+          {t("sudanSafari.highlights.nileCulture.description")}
         </p>
 
       </div>
 
     </div>
 
-
     {/* ================= FINAL CTA ================= */}
 
     <div className="mt-12 rounded-[30px] bg-emerald-700 px-6 py-12 text-center text-white sm:mt-16 sm:rounded-[40px] sm:px-8 sm:py-16">
 
       <p className="text-[10px] font-bold uppercase tracking-[3px] text-emerald-100 sm:text-sm sm:tracking-[4px]">
-        Curious Safaris
+        {t("sudanSafari.cta.brand")}
       </p>
 
       <h3 className="mt-4 text-3xl font-black leading-tight sm:text-4xl md:text-5xl">
-        Discover the ancient Nubian heart of Africa.
+        {t("sudanSafari.cta.title")}
       </h3>
 
       <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-emerald-50 sm:mt-5 sm:text-lg sm:leading-8">
-        Experience extraordinary archaeological treasures,
-        dramatic desert landscapes and the timeless culture
-        of the Nile.
+        {t("sudanSafari.cta.description")}
       </p>
 
       <p className="mx-auto mt-6 max-w-2xl text-xs font-semibold leading-5 text-emerald-100 sm:text-sm">
-        Travel availability is subject to current security,
-        access and official travel conditions.
+        {t("sudanSafari.cta.notice")}
       </p>
 
     </div>
@@ -6248,22 +5921,26 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
 
 
 
+{/* FOOTER */}
+{/* FOOTER */}
 <footer className="relative overflow-hidden bg-[#050505] text-white">
-  {/* Top Accent Line */}
 
+  {/* Top Accent Line */}
   <div className="h-[2px] bg-gradient-to-r from-transparent via-[#C8A94C] to-transparent" />
 
   {/* Background Glow */}
-
   <div className="absolute -top-32 -left-20 h-[450px] w-[450px] rounded-full bg-emerald-500/10 blur-[170px]" />
 
   <div className="absolute -bottom-32 -right-20 h-[450px] w-[450px] rounded-full bg-yellow-400/10 blur-[170px]" />
 
   <div className="relative mx-auto max-w-7xl px-6 py-20 lg:px-8">
+
     <div className="grid gap-14 md:grid-cols-2 lg:grid-cols-3">
-      {/* Company */}
+
+      {/* ================= COMPANY ================= */}
 
       <div>
+
         <h2 className="text-4xl font-black">
           Curious
           <span className="text-[#C8A94C]"> Safaris</span>
@@ -6272,184 +5949,246 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
         <div className="mt-4 h-1 w-20 rounded-full bg-[#C8A94C]" />
 
         <p className="mt-6 leading-8 text-gray-400">
-          Curious Safaris is an Africa-based travel company
-          offering private, customized, and unforgettable
-          journeys across Africa.
+          {t("footer.description1")}
         </p>
 
         <p className="mt-4 leading-8 text-gray-400">
-          Explore wildlife safaris, luxury tours, beach holidays,
-          horse-riding adventures, photography trips, cultural
-          experiences, and tailor-made journeys across the
-          continent.
+          {t("footer.description2")}
         </p>
 
         {/* Social Icons */}
 
         <div className="mt-8 flex gap-4">
-          {[
-            {
-              icon: <FaFacebookF />,
-              link: "https://facebook.com",
-            },
-            {
-              icon: <FaInstagram />,
-              link: "https://instagram.com",
-            },
-            {
-              icon: <FaWhatsapp />,
-              link: "https://wa.me/254745861688",
-            },
-            {
-              icon: <FaYoutube />,
-              link: "https://youtube.com",
-            },
-          ].map((item, index) => (
-            <a
-              key={index}
-              href={item.link}
-              target="_blank"
-              rel="noreferrer"
-              className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 transition duration-500 hover:-translate-y-2 hover:border-emerald-700 hover:bg-emerald-700"
-            >
-              {item.icon}
-            </a>
-          ))}
-        </div>
+  {[
+    {
+      icon: <FaFacebookF />,
+      link: "https://facebook.com/CuriousSafaris",
+      label: "Facebook",
+    },
+    {
+      icon: <FaInstagram />,
+      link: "https://instagram.com/curioussafaris",
+      label: "Instagram",
+    },
+    {
+      icon: <FaTiktok />,
+      link: "https://www.tiktok.com/@curioussafaris",
+      label: "TikTok",
+    },
+    {
+      icon: <FaWhatsapp />,
+      link: "https://wa.me/254745861688",
+      label: "WhatsApp",
+    },
+    {
+      icon: <FaYoutube />,
+      link: "https://www.youtube.com/@CuriousSafaris",
+      label: "YouTube",
+    },
+  ].map((item) => (
+    <a
+      key={item.label}
+      href={item.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={item.label}
+      className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 transition duration-500 hover:-translate-y-2 hover:border-emerald-700 hover:bg-emerald-700"
+    >
+      {item.icon}
+    </a>
+  ))}
+</div>
+
       </div>
 
-      {/* Quick Links */}
+
+      {/* ================= QUICK LINKS ================= */}
 
       <div>
+
         <h3 className="mb-8 text-2xl font-bold">
-          Quick Links
+          {t("footer.quickLinks")}
         </h3>
 
         <div className="space-y-5">
+
           {[
-            { name: "Home", path: "/" },
-            { name: "Destinations", path: "/destinations" },
-            
-            { name: "Gallery", path: "/gallery" },
-            { name: "About", path: "/about" },
-            { name: "Contact", path: "/contact" },
+            {
+              name: t("footer.home"),
+              path: "/",
+            },
+            {
+              name: t("footer.destinations"),
+              path: "/destinations",
+            },
+            {
+              name: t("footer.gallery"),
+              path: "/gallery",
+            },
+            {
+              name: t("footer.about"),
+              path: "/about",
+            },
+            {
+              name: t("footer.contact"),
+              path: "/contact",
+            },
           ].map((item) => (
+
             <Link
-              key={item.name}
+              key={item.path}
               to={item.path}
               className="flex items-center gap-3 text-gray-400 transition-all duration-300 hover:translate-x-2 hover:text-[#C8A94C]"
             >
+
               <FaArrowRight className="text-xs" />
 
               {item.name}
+
             </Link>
+
           ))}
+
         </div>
+
       </div>
 
-      {/* Contact */}
+
+      {/* ================= CONTACT ================= */}
 
       <div>
+
         <h3 className="mb-8 text-2xl font-bold">
-          Contact Us
+          {t("footer.contactUs")}
         </h3>
 
         <div className="space-y-6">
+
           {/* WhatsApp */}
 
           <div className="flex gap-4 rounded-2xl bg-white/5 p-4 transition hover:bg-emerald-700/20">
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-700">
+
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald-700">
               <FaWhatsapp />
             </div>
 
             <div>
+
               <p className="font-semibold">
-                WhatsApp
+                {t("footer.whatsapp")}
               </p>
 
               <a
                 href="https://wa.me/254745861688"
-                className="text-gray-400 hover:text-white"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 transition hover:text-white"
               >
                 +254 745 861 688
               </a>
+
             </div>
+
           </div>
 
-          {/* Africa */}
+
+          {/* Destinations */}
 
           <div className="flex gap-4 rounded-2xl bg-white/5 p-4 transition hover:bg-emerald-700/20">
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-700">
+
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald-700">
               <FaGlobe />
             </div>
 
             <div>
+
               <p className="font-semibold">
-                Destinations
+                {t("footer.destinationLabel")}
               </p>
 
               <p className="text-gray-400">
-                East, West, North, Central & Southern Africa
+                {t("footer.destinationText")}
               </p>
+
             </div>
+
           </div>
+
 
           {/* Location */}
 
           <div className="flex gap-4 rounded-2xl bg-white/5 p-4 transition hover:bg-emerald-700/20">
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-700">
+
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald-700">
               <FaMapMarkerAlt />
             </div>
 
             <div>
+
               <p className="font-semibold">
-                Based In
+                {t("footer.basedIn")}
               </p>
 
               <p className="text-gray-400">
-                Nairobi, Kenya
+                {t("footer.location")}
               </p>
+
             </div>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
 
-    {/* Bottom */}
+
+    {/* ================= BOTTOM ================= */}
 
     <div className="mt-16 flex flex-col items-center justify-between gap-6 border-t border-white/10 pt-8 md:flex-row">
+
       <p className="text-center text-gray-500 md:text-left">
+
         © {new Date().getFullYear()}
 
         <span className="font-semibold text-[#C8A94C]">
-          {" "}
-          Curious Safaris
+          {" "}Curious Safaris
         </span>
 
-        . All Rights Reserved.
+        . {t("footer.rights")}
+
       </p>
 
+
       <div className="flex items-center gap-6 text-sm">
+
         <Link
           to="/privacy"
           className="text-gray-500 transition hover:text-[#C8A94C]"
         >
-          Privacy Policy
+          {t("footer.privacy")}
         </Link>
 
-        <span className="text-white/20">|</span>
+        <span className="text-white/20">
+          |
+        </span>
 
         <Link
           to="/terms"
           className="text-gray-500 transition hover:text-[#C8A94C]"
         >
-          Terms & Conditions
+          {t("footer.terms")}
         </Link>
+
       </div>
+
     </div>
+
   </div>
 
-  {/* Scroll To Top */}
+
+  {/* ================= SCROLL TO TOP ================= */}
 
   <button
     onClick={() =>
@@ -6458,10 +6197,12 @@ href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20int
         behavior: "smooth",
       })
     }
+    aria-label="Scroll to top"
     className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#C8A94C] text-black shadow-2xl transition duration-300 hover:scale-110"
   >
     <FaChevronUp />
   </button>
+
 </footer>
     </div>
   );

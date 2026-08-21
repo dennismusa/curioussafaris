@@ -1,0 +1,2430 @@
+{
+  "hero": {
+    "brand": "Curious Safaris",
+    "title": "Scopri l'Africa.",
+    "subtitle": "Vivi l'avventura.",
+    "description": "Scopri l'Africa attraverso safari nella natura, tour di lusso, spedizioni fotografiche, vacanze al mare e avventure su misura create intorno a te.",
+    "explore": "Esplora l'Africa",
+    "plan": "Pianifica il tuo safari",
+    "exploreLabel": "Esplora",
+    "slide": "Vai alla diapositiva {{number}}",
+    "trust": {
+      "tailor": "Viaggi su misura",
+      "guides": "Guide locali esperte",
+      "private": "Safari privati"
+    }
+  },
+
+  "nav": {
+    "home": "Home",
+    "about": "Chi siamo",
+    "destinations": "Destinazioni",
+    "services": "Servizi",
+    "gallery": "Galleria",
+    "contact": "Contatti",
+    "language": "Lingua",
+    "book": "Prenota ora"
+  },
+
+  "search": {
+    "findAdventure": "Trova la tua avventura",
+    "whereGo": "Dove vuoi andare?",
+    "exploreAfrica": "Esplora l'Africa",
+    "placeholder": "Cerca destinazioni...",
+    "clear": "Cancella ricerca",
+    "button": "Cerca",
+    "popular": "Popolari"
+  },
+
+  "discover": {
+    "imageAlt": "Avventura africana con Curious Safaris",
+    "imageTitle": "Esplora l'Africa",
+    "destinations": "Destinazioni africane",
+    "title": "Scopri l'Africa",
+    "subtitle": "Persi nella giusta direzione",
+
+    "description1": "Dalle leggendarie pianure del Serengeti e del Maasai Mara alle foreste nebbiose del Ruanda e dell'Uganda, Curious Safaris crea viaggi indimenticabili in tutta l'Africa.",
+
+    "description2": "Vivi incontri straordinari con la fauna selvatica, paesaggi mozzafiato, culture affascinanti, coste tropicali e avventure attentamente progettate intorno ai tuoi sogni di viaggio.",
+
+    "features": {
+      "wildlife": {
+        "title": "Safari nella natura",
+        "description": "Esplora i parchi nazionali più iconici dell'Africa e scopri i Big Five."
+      },
+
+      "gorilla": {
+        "title": "Esperienze con gorilla e primati",
+        "description": "Attraversa antiche foreste pluviali alla ricerca dei gorilla di montagna e degli scimpanzé."
+      },
+
+      "culture": {
+        "title": "Cultura e soggiorni sulla costa",
+        "description": "Scopri culture affascinanti, città antiche, cascate, deserti e spiagge incontaminate in tutta l'Africa."
+      }
+    },
+
+    "plan": "Pianifica il tuo safari",
+    "explore": "Esplora le destinazioni"
+  },
+
+  "destinations": {
+    "eyebrow": "Le nostre destinazioni",
+    "title": "Scopri i",
+    "titleHighlight": "luoghi più straordinari dell'Africa",
+
+    "description": "Curious Safaris ti porta oltre il turismo tradizionale, nel cuore delle destinazioni più straordinarie dell'Africa. Dalle leggendarie riserve naturali dell'Africa orientale alle antiche civiltà del Nord Africa e agli spettacolari paesaggi dell'Africa meridionale, ogni viaggio è progettato per creare esperienze autentiche, significative e indimenticabili.",
+
+    "countries": {
+      "kenya": "Ammira la Grande Migrazione, scopri il Maasai Mara, esplora Amboseli ai piedi del Monte Kilimangiaro e vivi indimenticabili safari alla scoperta dei Big Five.",
+
+      "tanzania": "Esplora il Serengeti, Tarangire e lo spettacolare cratere di Ngorongoro, vivendo alcune delle esperienze naturalistiche più iconiche dell'Africa.",
+
+      "uganda": "Segui le tracce dei gorilla di montagna e degli scimpanzé attraverso antiche foreste pluviali, scoprendo la straordinaria fauna selvatica e i paesaggi dell'Uganda.",
+
+      "rwanda": "Scopri la Terra delle Mille Colline attraverso il trekking dei gorilla, paesaggi vulcanici spettacolari ed esperienze culturali indimenticabili.",
+
+      "botswana": "Vivi l'incredibile Delta dell'Okavango, esplora il Parco Nazionale di Chobe e scopri alcuni dei safari più esclusivi dell'Africa.",
+
+      "zimbabwe": "Esplora le spettacolari Cascate Vittoria, il Parco Nazionale di Hwange e i suggestivi paesaggi del Parco Nazionale di Matobo."
+    },
+
+    "why": {
+      "title": "Perché esplorare l'Africa con Curious Safaris?",
+
+      "private": {
+        "title": "Safari privati",
+        "description": "Goditi viaggi personalizzati con guide private e confortevoli veicoli da safari."
+      },
+
+      "multiple": {
+        "title": "Destinazioni multiple",
+        "description": "Esplora l'Africa orientale, centrale, meridionale e settentrionale attraverso itinerari attentamente progettati."
+      },
+
+      "authentic": {
+        "title": "Esperienze autentiche",
+        "description": "Vivi la fauna selvatica, le culture locali, la storia, le spiagge e l'avventura in un unico viaggio indimenticabile."
+      },
+
+      "tailor": {
+        "title": "Viaggi su misura",
+        "description": "Ogni itinerario può essere personalizzato in base al tuo stile di viaggio, ai tuoi interessi e al tuo budget."
+      }
+    },
+
+    "cta": {
+      "eyebrow": "Inizia il tuo viaggio",
+      "title": "L'Africa aspetta di essere scoperta",
+      "description": "Che tu sogni di osservare i gorilla di montagna, assistere alla Grande Migrazione, esplorare antiche civiltà o rilassarti su spiagge tropicali, Curious Safaris ti aiuterà a creare un'avventura africana indimenticabile."
+    },
+
+    "stats": {
+      "destinations": "Destinazioni africane",
+      "experiences": "Esperienze safari",
+      "support": "Assistenza di viaggio",
+      "tailorMade": "Viaggi su misura"
+    }
+  },
+
+  "numbers": {
+    "eyebrow": "Curious Safaris",
+    "title": "L'Africa in numeri",
+    "description": "Ogni viaggio è progettato intorno alla tua curiosità, al tuo ritmo e alle esperienze che desideri ricordare.",
+
+    "stats": {
+      "destinations": {
+        "title": "Destinazioni africane",
+        "desc": "Scopri luoghi straordinari in tutto il continente."
+      },
+
+      "experiences": {
+        "title": "Esperienze safari",
+        "desc": "Dalle avventure nella natura alle esperienze culturali."
+      },
+
+      "tours": {
+        "title": "Tour su misura",
+        "desc": "Itinerari creati intorno ai tuoi interessi."
+      },
+
+      "support": {
+        "title": "Assistenza di viaggio",
+        "desc": "Siamo al tuo fianco ogni volta che hai bisogno di noi."
+      }
+    }
+  },
+
+  "planning": {
+    "eyebrow": "Il tuo viaggio inizia qui",
+    "title": "Pianificare il tuo safari",
+    "titleHighlight": "è semplice",
+
+    "description": "Dalla tua prima idea fino al momento in cui metterai piede in Africa, rendiamo la pianificazione del tuo viaggio semplice, personale e senza stress.",
+
+    "steps": {
+      "destination": {
+        "title": "Scegli una destinazione",
+        "description": "Dicci dove desideri andare e quale tipo di esperienza africana stai cercando."
+      },
+
+      "itinerary": {
+        "title": "Personalizza il tuo itinerario",
+        "description": "Creeremo un itinerario personalizzato in base ai tuoi interessi, ai tuoi programmi e al tuo stile di viaggio."
+      },
+
+      "booking": {
+        "title": "Conferma la tua prenotazione",
+        "description": "Quando tutto sarà perfetto, ci occuperemo dell'organizzazione e confermeremo il tuo viaggio."
+      },
+
+      "travel": {
+        "title": "Viaggia ed esplora l'Africa",
+        "description": "Non resta che arrivare, rilassarti e vivere l'Africa che hai sempre sognato."
+      }
+    },
+
+    "cta": "Inizia a pianificare il tuo safari"
+  },
+
+  "why": {
+    "eyebrow": "Perché sceglierci",
+    "title": "Viaggia con",
+    "titleHighlight": "fiducia",
+
+    "description": "Combiniamo esperienza locale, servizio personalizzato ed esperienze attentamente progettate per creare viaggi indimenticabili in Africa.",
+
+    "expertGuidesTitle": "Guide esperte",
+    "expertGuidesDesc": "Viaggia con guide locali esperte che conoscono la fauna selvatica, i paesaggi e le culture africane.",
+
+    "luxuryTravelTitle": "Viaggi confortevoli",
+    "luxuryTravelDesc": "Goditi veicoli confortevoli, sistemazioni di qualità e servizi accuratamente selezionati durante tutta la tua avventura.",
+
+    "ecoTourismTitle": "Turismo responsabile",
+    "ecoTourismDesc": "Promuoviamo viaggi responsabili che sostengono le comunità locali, la conservazione della fauna selvatica e la tutela dell'ambiente naturale africano.",
+
+    "trustedServiceTitle": "Servizio affidabile",
+    "trustedServiceDesc": "Dalla pianificazione fino al tuo ritorno a casa, il nostro team è sempre disponibile per offrirti un servizio affidabile e personalizzato."
+  },
+
+  "reviews": {
+    "badge": "Recensioni dei viaggiatori",
+    "title": "Le storie dei nostri",
+    "titleHighlight": "viaggiatori felici",
+
+    "description": "Ogni viaggio racconta una storia. Scopri perché i viaggiatori continuano a fidarsi di Curious Safaris per vivere avventure africane personalizzate.",
+
+    "basedOn": "Basato sulle recensioni Google",
+    "trustedTitle": "Scelto dai viaggiatori",
+
+    "trustedDescription": "I nostri ospiti apprezzano il servizio personalizzato, gli itinerari ben organizzati, le esperienze di qualità, i prezzi competitivi e le indimenticabili avventure nella natura africana.",
+
+    "googleReview": "Recensione Google",
+
+    "review1": {
+      "text": "Viaggiare con Curious Safaris è stata una delle migliori decisioni che abbiamo preso. Tutto è stato perfetto dall'inizio alla fine. L'itinerario era ben organizzato, gli alloggi erano lussuosi e gli incontri con la fauna selvatica sono stati mozzafiato."
+    },
+
+    "review2": {
+      "text": "Prezzi accessibili e servizio di alta qualità."
+    },
+
+    "stats": {
+      "rating": "Valutazione Google",
+      "verified": "Recensioni verificate",
+      "personalized": "Viaggi personalizzati",
+      "support": "Assistenza di viaggio"
+    },
+
+    "writeReview": "Scrivi una recensione Google",
+    "viewProfile": "Visualizza il profilo Google"
+  },
+
+  "footer": {
+    "description1": "Curious Safaris è un'azienda di viaggi con sede in Africa che offre viaggi privati, personalizzati e indimenticabili in tutto il continente.",
+
+    "description2": "Esplora safari naturalistici, tour di lusso, vacanze al mare, avventure a cavallo, viaggi fotografici, esperienze culturali e itinerari su misura in tutta l'Africa.",
+
+    "quickLinks": "Link rapidi",
+
+    "home": "Home",
+    "destinations": "Destinazioni",
+    "gallery": "Galleria",
+    "about": "Chi siamo",
+    "contact": "Contatti",
+
+    "contactUs": "Contattaci",
+    "whatsapp": "WhatsApp",
+
+    "destinationLabel": "Destinazioni",
+    "destinationText": "Africa orientale, occidentale, settentrionale, centrale e meridionale",
+
+    "basedIn": "Sede",
+    "location": "Nairobi, Kenya",
+
+    "privacy": "Informativa sulla privacy",
+    "terms": "Termini e condizioni",
+    "rights": "Tutti i diritti riservati."
+  
+
+
+
+
+
+  },
+  "aboutHero": {
+    "badge": "Benvenuto in Curious Safaris",
+    "title": "Chi",
+    "titleHighlight": "siamo",
+    "description": "Creiamo indimenticabili avventure safari, vacanze al mare, viaggi on the road ed esperienze di viaggio su misura in Kenya e nell'Africa orientale.",
+    "explore": "Esplora i tour",
+    "contact": "Contattaci"
+  },
+
+  "founder": {
+    "role": "Fondatore e guida safari",
+    "philosophy": "Filosofia",
+    "travelDifferently": "Viaggia in modo diverso",
+    "eyebrow": "Incontra il fondatore",
+    "title": "La persona dietro",
+    "titleHighlight": "l'avventura.",
+    "intro": "Curious Safaris è un'azienda di viaggi con sede in Africa dedicata alla creazione di esperienze autentiche e indimenticabili in tutto il continente.",
+    "description": "Dai safari naturalistici alle esperienze culturali, dalle escursioni a cavallo ai viaggi fotografici, dalle avventure in mongolfiera alle fughe sulla spiaggia, ogni esperienza è pensata per mettere i viaggiatori in contatto con il cuore dell'Africa.",
+    "quote": "Esplora l'Africa. Sii curioso. Viaggia con Curious Safaris.",
+    "tags": {
+      "wildlife": "Fauna selvatica",
+      "culture": "Cultura",
+      "adventure": "Avventura",
+      "photography": "Fotografia",
+      "beach": "Vacanze al mare"
+    },
+    "bottomLabel": "Curious Safaris",
+    "bottomText": "Viaggi personalizzati. Conoscenza locale. L'Africa, a modo tuo."
+  },
+
+  "discover": {
+    "imageAlt": "Avventura africana di Curious Safaris",
+    "imageTitle": "Esplora l'Africa",
+    "destinations": "Destinazioni africane",
+    "title": "Scopri l'Africa",
+    "subtitle": "Persi nella giusta direzione",
+    "description1": "Dalle leggendarie pianure del Serengeti e del Maasai Mara alle foreste nebbiose del Ruanda e dell'Uganda, Curious Safaris crea viaggi indimenticabili attraverso l'Africa.",
+    "description2": "Vivi esperienze straordinarie con fauna selvatica, paesaggi mozzafiato, culture vivaci, coste tropicali e avventure attentamente progettate intorno ai tuoi sogni di viaggio.",
+    "features": {
+      "wildlife": {
+        "title": "Safari nella natura",
+        "description": "Esplora i parchi nazionali più iconici dell'Africa e scopri i Big Five."
+      },
+      "gorilla": {
+        "title": "Esperienze con gorilla e primati",
+        "description": "Attraversa antiche foreste pluviali alla ricerca di gorilla di montagna e scimpanzé."
+      },
+      "culture": {
+        "title": "Cultura e soggiorni sulla costa",
+        "description": "Scopri culture vivaci, città antiche, cascate, deserti e spiagge incontaminate in tutta l'Africa."
+      }
+    },
+    "plan": "Pianifica il tuo safari",
+    "explore": "Esplora le destinazioni"
+  },
+
+  "about": {
+    "purpose": {
+      "eyebrow": "Il nostro obiettivo",
+      "title": "Visione, missione e valori fondamentali",
+      "description": "Tutto ciò che facciamo nasce dal nostro impegno nel creare viaggi indimenticabili, offrendo al contempo un servizio eccezionale, sicurezza e turismo sostenibile.",
+
+      "vision": {
+        "title": "La nostra visione",
+        "description": "Diventare il marchio di safari e viaggi più affidabile dell'Africa orientale, offrendo viaggi indimenticabili nel massimo comfort e valorizzando la bellezza naturale dell'Africa."
+      },
+
+      "mission": {
+        "title": "La nostra missione",
+        "description": "Offrire esperienze di viaggio sicure, accessibili, professionali e personalizzate, promuovendo al contempo un turismo responsabile e sostenibile in tutta l'Africa orientale."
+      },
+
+      "values": {
+        "integrity": {
+          "title": "Integrità",
+          "description": "Operiamo con onestà, trasparenza e responsabilità."
+        },
+        "excellence": {
+          "title": "Eccellenza",
+          "description": "Ci impegniamo a superare le aspettative in ogni viaggio."
+        },
+        "safety": {
+          "title": "Sicurezza",
+          "description": "Il tuo comfort e la tua sicurezza rimangono la nostra massima priorità."
+        },
+        "sustainability": {
+          "title": "Sostenibilità",
+          "description": "Sosteniamo il turismo responsabile e la conservazione dell'ambiente."
+        },
+        "customerFirst": {
+          "title": "Il cliente al primo posto",
+          "description": "Ogni avventura è progettata intorno alle esigenze dei nostri clienti."
+        },
+        "experience": {
+          "title": "Vivi la natura selvaggia",
+          "description": "Creiamo ricordi indimenticabili di safari nel massimo comfort."
+        }
+      }
+    }
+  },
+
+  "services": {
+    "badge": "I nostri servizi",
+    "title": "Esperienze di viaggio pensate per tutti",
+    "description": "Dai safari naturalistici ai viaggi aziendali, offriamo soluzioni di viaggio complete e personalizzate in base alle tue esigenze.",
+
+    "items": {
+      "wildlife": {
+        "title": "Safari nella natura",
+        "description": "Scopri la straordinaria fauna africana attraverso avventure safari organizzate con cura."
+      },
+      "beach": {
+        "title": "Vacanze al mare",
+        "description": "Rilassati su splendide spiagge tropicali e vivi esperienze costiere indimenticabili."
+      },
+      "hotel": {
+        "title": "Prenotazioni alberghiere",
+        "description": "Ti aiutiamo a trovare sistemazioni confortevoli e di qualità adatte al tuo stile di viaggio e al tuo budget."
+      },
+      "group": {
+        "title": "Viaggi di gruppo",
+        "description": "Vivi avventure di gruppo indimenticabili con itinerari e attività organizzati con cura."
+      },
+      "corporate": {
+        "title": "Viaggi aziendali",
+        "description": "Soluzioni di viaggio professionali per aziende, riunioni, conferenze ed eventi aziendali."
+      },
+      "team": {
+        "title": "Team Building",
+        "description": "Rafforza lo spirito di squadra e crea ricordi duraturi attraverso emozionanti esperienze di viaggio e team building."
+      },
+      "airport": {
+        "title": "Trasferimenti aeroportuali",
+        "description": "Goditi trasferimenti aeroportuali affidabili e confortevoli da e verso la tua destinazione."
+      },
+      "honeymoon": {
+        "title": "Pacchetti luna di miele",
+        "description": "Festeggia il tuo amore con esperienze romantiche e indimenticabili in tutta l'Africa."
+      },
+      "consultation": {
+        "title": "Consulenza di viaggio",
+        "description": "Ricevi consigli di viaggio esperti e assistenza personalizzata per organizzare il viaggio perfetto."
+      }}},
+      "faq": {
+  "badge": "Domande frequenti",
+  "title": "Hai bisogno di maggiori informazioni?",
+  "description": "Tutto ciò che devi sapere prima di iniziare la tua avventura africana.",
+  "items": {
+    "booking": {
+      "question": "Come posso prenotare un safari?",
+      "answer": "Contattaci semplicemente tramite WhatsApp, telefono, e-mail o il nostro modulo di contatto. I nostri consulenti di viaggio discuteranno con te dei tuoi programmi e ti aiuteranno a creare il safari perfetto."
+    },
+    "customize": {
+      "question": "Posso personalizzare il mio safari?",
+      "answer": "Certamente. I nostri safari sono progettati su misura in base ai tuoi interessi, al tuo budget, alle date di viaggio e alle destinazioni preferite. Possiamo personalizzare alloggi, attività, trasporti e itinerario."
+    },
+    "countries": {
+      "question": "In quali paesi africani operate?",
+      "answer": "Organizziamo viaggi indimenticabili in tutta l'Africa, tra cui Kenya, Tanzania, Uganda, Ruanda, Botswana, Zimbabwe, Namibia, Sudafrica, Egitto, Marocco e altre destinazioni."
+    },
+    "privateGroup": {
+      "question": "I vostri safari sono privati o di gruppo?",
+      "answer": "Offriamo sia safari privati che viaggi di gruppo. Che tu viaggi da solo, in coppia, con la famiglia, con amici o con un gruppo più numeroso, possiamo creare un'esperienza adatta a te."
+    },
+    "transport": {
+      "question": "Fornite trasferimenti aeroportuali e trasporti?",
+      "answer": "Sì. In base al tuo itinerario, possiamo organizzare trasferimenti aeroportuali, veicoli safari privati, minibus turistici e altri trasporti necessari durante il viaggio."
+    },
+    "bestTime": {
+      "question": "Qual è il periodo migliore per fare un safari?",
+      "answer": "Il periodo migliore dipende dalla destinazione e dall'esperienza che desideri. I nostri consulenti di viaggio possono consigliarti la stagione ideale in base alla fauna selvatica, al clima, alla migrazione, al trekking dei gorilla o alle esperienze sulla costa."
+    },
+    "accommodation": {
+      "question": "Organizzate anche gli alloggi?",
+      "answer": "Sì. Selezioniamo con cura lodge, hotel, campi tendati e resort in base al tuo itinerario, alle tue preferenze e al tuo budget, per rendere il tuo soggiorno confortevole e memorabile."
+    },
+    "honeymoon": {
+      "question": "Potete organizzare lune di miele e occasioni speciali?",
+      "answer": "Sì. Creiamo viaggi romantici e personalizzati per lune di miele, anniversari, compleanni e altre occasioni speciali, comprese combinazioni di safari di lusso e soggiorni sulla costa."
+    }}},
+    
+  "galleryHero": {
+    "imageAlt": "Avventura safari",
+    "badge": "Ricordi • Esperienze • Avventure",
+    "title": "La Nostra Galleria",
+    "description": "Scopri momenti indimenticabili dei nostri safari, viaggi on the road, escursioni e tour di gruppo in Kenya e nell'Africa orientale."
+  },
+  "galleryCollection": {
+  "badge": "Raccolta Fotografica",
+  "title": "Momenti di Viaggio"
+},
+
+  "galleryStory": {
+    "badge": "Molto Più Che Foto",
+    "title": "Ogni Viaggio Racconta",
+    "titleHighlight": "Una Storia Diversa",
+    "description": "Ogni viaggio on the road è un'opportunità per scoprire paesaggi mozzafiato, creare amicizie durature e vivere avventure indimenticabili in Kenya e nell'Africa orientale.",
+    "stats": {
+      "roadTrips": {
+        "number": "150+",
+        "title": "Viaggi On The Road",
+        "text": "Avventure di gruppo organizzate con successo."
+      },
+      "travelers": {
+        "number": "5K+",
+        "title": "Viaggiatori Soddisfatti",
+        "text": "Viaggiatori che hanno esplorato l'Africa con noi."
+      },
+      "destinations": {
+        "number": "40+",
+        "title": "Destinazioni",
+        "text": "Luoghi straordinari in tutta l'Africa orientale."
+      },
+      "experiences": {
+        "number": "100%",
+        "title": "Esperienze Indimenticabili",
+        "text": "Creiamo momenti che durano per sempre."
+      }
+    }
+  },
+
+  "galleryDestinations": {
+    "badge": "Esplora Con Noi",
+    "title": "Dove Ti Porta",
+    "titleHighlight": "La Tua Avventura",
+    "description": "Dalle spettacolari destinazioni naturalistiche alle spiagge tropicali e alle indimenticabili avventure in montagna, scopri alcuni degli incredibili luoghi che ti aspettano in Kenya e nell'Africa orientale.",
+
+    "items": {
+      "maasaiMara": {
+        "category": "Safari Naturalistico",
+        "title": "Maasai Mara",
+        "description": "Vivi un'incredibile esperienza con la fauna selvatica, paesaggi spettacolari e momenti di safari indimenticabili.",
+        "imageAlt": "Safari nel Maasai Mara"
+      },
+      "diani": {
+        "category": "Fuga al Mare",
+        "title": "Diani Beach",
+        "description": "Rilassati su spiagge di sabbia bianca, acque turchesi e vivi esperienze costiere indimenticabili.",
+        "imageAlt": "Diani Beach"
+      },
+      "mountKenya": {
+        "category": "Avventura in Montagna",
+        "title": "Monte Kenya",
+        "description": "Affronta spettacolari sentieri di montagna e paesaggi mozzafiato d'alta quota.",
+        "imageAlt": "Escursione sul Monte Kenya"
+      },
+      "nakuru": {
+        "category": "Esperienza nella Natura",
+        "title": "Lago Nakuru",
+        "description": "Scopri paesaggi spettacolari, fauna selvatica e la bellezza della Great Rift Valley.",
+        "imageAlt": "Lago Nakuru"
+      },
+      "serengeti": {
+        "category": "Africa Orientale",
+        "title": "Serengeti",
+        "description": "Vai oltre il Kenya e scopri una delle destinazioni naturalistiche più iconiche dell'Africa.",
+        "imageAlt": "Safari nel Serengeti"
+      },
+      "longonot": {
+        "category": "Avventura di Trekking",
+        "title": "Monte Longonot",
+        "description": "Vivi un'emozionante avventura di trekking con viste panoramiche sulla Great Rift Valley.",
+        "imageAlt": "Escursione sul Monte Longonot"
+      }
+    },
+
+    "button": "Esplora i prossimi viaggi"
+  },
+  "galleryCTA": {
+  "badge": "Pronto per la tua prossima avventura?",
+  "title": "Crea ricordi con noi",
+  "description": "Unisciti a uno dei nostri emozionanti road trip, safari o avventure di trekking e diventa parte della nostra crescente comunità di viaggiatori.",
+  "viewTrips": "Vedi i prossimi viaggi",
+  "bookNow": "Prenota ora"
+},
+"contactHero": {
+  "imageAlt": "Contatta Curious Safaris",
+  "badge": "Siamo qui per aiutarti",
+  "title": "Contattaci",
+  "description": "Pronto a unirti alla nostra prossima avventura? Contattaci oggi stesso e lasciaci aiutarti a organizzare il safari, il road trip o la vacanza perfetta."
+},
+"contactInfo": {
+  "phone": {
+    "title": "Chiamaci"
+  },
+  "email": {
+    "title": "E-mail"
+  },
+  "office": {
+    "title": "Ufficio"
+  },
+  "whatsapp": {
+    "title": "WhatsApp",
+    "button": "Chatta con noi"
+  }
+},
+
+"contactForm": {
+  "badge": "Contattaci",
+  "title": "Pianifichiamo la tua",
+  "titleHighlight": "prossima avventura",
+  "description": "Che tu stia organizzando un road trip di gruppo, un ritiro aziendale, un safari o una vacanza personalizzata, i nostri esperti di viaggio sono pronti ad aiutarti a creare un'esperienza indimenticabile.",
+
+  "features": {
+    "fastResponse": "Risposta rapida",
+    "tailorMade": "Pacchetti personalizzati",
+    "professional": "Consulenti di viaggio professionisti"
+  },
+
+  "fields": {
+    "name": "Nome completo",
+    "email": "Indirizzo e-mail",
+    "phone": "Numero di telefono",
+    "subject": "Oggetto",
+    "message": "Raccontaci del tuo viaggio..."
+  },
+
+  "send": "Invia messaggio"
+},
+
+  "office": {
+    "badge": "Dove trovarci",
+    "title": "Visita il Nostro",
+    "titleHighlight": "Ufficio a Nairobi",
+    "description": "Stai pianificando la tua prossima avventura? Vieni a trovarci, chiamaci o contatta il nostro team di viaggio. Siamo pronti ad aiutarti a organizzare il safari, il road trip o la vacanza perfetta in Kenya e Africa orientale.",
+
+    "map": {
+      "title": "La Nostra Posizione",
+      "location": "Nairobi, Kenya"
+    },
+
+    "officeInfo": {
+      "badge": "Il Nostro Ufficio",
+      "title": "Saremo Felici di",
+      "titleHighlight": "Incontrarti",
+      "description": "I nostri consulenti di viaggio sono disponibili per aiutarti a scegliere le destinazioni, organizzare avventure di gruppo e creare esperienze di viaggio personalizzate."
+    },
+
+    "contact": {
+      "address": "Indirizzo dell'Ufficio",
+      "email": "Indirizzo Email",
+      "phone": "Numero di Telefono"
+    },
+
+    "hours": {
+      "title": "Orari di Apertura",
+      "available": "Disponibile",
+      "mondayFriday": "Lunedì - Venerdì",
+      "mondayFridayTime": "8:00 - 18:00",
+      "saturday": "Sabato",
+      "saturdayTime": "9:00 - 16:00",
+      "sunday": "Domenica",
+      "closed": "Chiuso"
+    },
+
+    "actions": {
+      "call": "Chiamaci",
+      "whatsapp": "WhatsApp"
+    }
+  },
+
+  "payment": {
+    "badge": "Metti al Sicuro la Tua Avventura",
+    "title": "Semplice,",
+    "titleHighlight": "sicuro e flessibile.",
+    "description": "Una volta confermato il safari, puoi assicurarti il viaggio tramite il nostro metodo di pagamento con bonifico bancario. La nostra struttura di pagamento flessibile ti offre tranquillità mentre pianifichi la tua avventura africana.",
+
+    "bank": {
+      "badge": "Bonifico Bancario",
+      "title": "Conto di Pagamento",
+      "accountNumber": "Numero di Conto",
+      "copy": "Copia Numero",
+      "bankName": "Nome della Banca",
+      "bankNameValue": "Kenya Commercial Bank",
+      "accountName": "Nome del Conto",
+      "accountNameValue": "Duncan Ombima",
+      "country": "Paese",
+      "countryValue": "Kenya",
+      "bankCode": "Codice Bancario",
+      "swiftCode": "Codice SWIFT",
+      "security": "Dopo aver effettuato il bonifico, invia la conferma del pagamento al team di Curious Safaris insieme al riferimento della prenotazione o della fattura."
+    },
+
+    "plan": {
+      "badge": "Pagamento Flessibile",
+      "title": "Il tuo percorso di prenotazione",
+      "description": "Rendiamo semplice assicurarti il safari offrendoti flessibilità prima della data del viaggio.",
+      "steps": {
+        "step1": {
+          "title": "Assicura la tua prenotazione",
+          "description": "Paga un deposito del 50% per prenotare e confermare le date e gli accordi del tuo safari."
+        },
+        "step2": {
+          "title": "Completa il saldo",
+          "description": "Il restante 50% deve essere pagato 30 giorni prima del viaggio."
+        },
+        "step3": {
+          "title": "Viaggia con tranquillità",
+          "description": "Il tuo safari sarà completamente organizzato e il nostro team resterà disponibile durante tutto il viaggio."
+        }
+      }
+    },
+
+    "cancellation": {
+      "title": "Cancellazione e Riprogrammazione",
+      "items": [
+        "Riprogrammazione gratuita fino a 3 settimane prima del viaggio.",
+        "Rimborso del 100% per cancellazioni effettuate almeno 60 giorni prima del viaggio.",
+        "Fino al 50% di rimborso per cancellazioni effettuate da 30 a 59 giorni prima del viaggio."
+      ]
+    },
+
+    "cta": {
+      "badge": "Quando sei pronto",
+      "title": "Assicura la tua avventura africana.",
+      "description": "Contatta Curious Safaris per confermare la disponibilità, ricevere il tuo itinerario e ottenere assistenza personalizzata per la prenotazione.",
+      "whatsapp": "Chatta su WhatsApp",
+      "email": "Inviaci un'Email"
+    }
+  },
+
+  
+  "hero": {
+    "brand": "Curious Safaris",
+    "title": "Privati e Personalizzati",
+    "titleHighlight": "Viaggi Indimenticabili",
+    "description": "Scopri l'Africa attraverso safari naturalistici, tour di lusso, spedizioni fotografiche, vacanze al mare e avventure su misura create intorno a te.",
+    "explore": "Esplora l'Africa",
+    "planSafari": "Pianifica il Mio Safari",
+    "highlight1": "Safari Privati",
+    "highlight2": "Viaggi Su Misura",
+    "highlight3": "In Tutta l'Africa"
+  },
+
+  "tailorMade": {
+    "badge": "Viaggi Personalizzati",
+    "title": "Su Misura",
+    "titleHighlight": "Viaggi",
+    "description": "Non esistono due viaggiatori uguali. Per questo ogni itinerario che creiamo è progettato con cura in base ai tuoi interessi, al tuo stile di viaggio, alle destinazioni preferite e al tuo budget.",
+    "imageAlt": "Viaggi su misura",
+    "imageTitle": "Il Tuo Viaggio.",
+    "imageHighlight": "Le Tue Regole.",
+    "contentTitle": "Crea la Tua Perfetta Avventura Africana",
+    "contentDescription": "Che tu stia organizzando un safari di lusso, una spedizione fotografica, una luna di miele romantica o una vacanza in famiglia, creeremo un'esperienza personalizzata che rispecchi la tua visione.",
+
+    "steps": {
+      "destination": "Scegli la Tua Destinazione",
+      "travelStyle": "Scegli il Tuo Stile di Viaggio",
+      "accommodation": "Scegli il Tuo Alloggio",
+      "activities": "Personalizza le Tue Attività",
+      "duration": "Scegli la Durata",
+      "itinerary": "Ricevi il Tuo Itinerario Personalizzato"
+    },
+
+    "travelers": {
+      "solo": "Viaggiatori Solitari",
+      "couples": "Coppie",
+      "families": "Famiglie",
+      "luxury": "Viaggiatori di Lusso",
+      "photographers": "Fotografi",
+      "adventure": "Amanti dell'Avventura"
+    }
+  },
+
+  "services": {
+    "badge": "Esperienze Esclusive",
+    "heading": "Esperienze Progettate",
+    "headingHighlight": "Intorno al Tuo Viaggio",
+    "description": "Curious Safaris è specializzata in viaggi privati, personalizzati e indimenticabili in tutta l'Africa. Dagli incontri con la fauna selvatica ai safari di lusso, dalle spedizioni culturali alle vacanze al mare, ogni itinerario è progettato secondo i tuoi interessi.",
+    "premiumService": "Servizio Premium",
+
+    "items": {
+      "wildlife": {
+        "title": "Safari Naturalistici",
+        "description": "La fauna selvatica africana è unica al mondo. I nostri safari ti portano in destinazioni leggendarie come Maasai Mara, Serengeti, Amboseli, Samburu, Kruger National Park e Delta dell'Okavango.",
+        "details": "Osserva i Big Five, assisti alla Grande Migrazione, goditi safari all'alba e al tramonto ed esplora ecosistemi protetti con guide esperte.",
+        "features": {
+          "bigFive": "Esperienze Big Five",
+          "gameDrives": "Safari in Fuoristrada",
+          "nationalParks": "Parchi Nazionali",
+          "walkingSafaris": "Safari a Piedi"
+        }
+      },
+
+      "luxury": {
+        "title": "Tour di Lusso e di Fascia Media",
+        "description": "Che tu preferisca il lusso a cinque stelle o un'avventura di fascia media attentamente pianificata, creiamo esperienze che combinano comfort, autenticità ed esplorazione.",
+        "details": "Soggiorna in lodge di lusso, hotel boutique, campi privati o strutture selezionate con cura, godendo di servizi personalizzati, attività esclusive e una pianificazione impeccabile.",
+        "features": {
+          "luxuryLodges": "Lodge di Lusso",
+          "privateVillas": "Ville Private",
+          "boutiqueCamps": "Campi Boutique",
+          "exclusiveExperiences": "Esperienze Esclusive"
+        }
+      },
+
+      "photography": {
+        "title": "Spedizioni Fotografiche",
+        "description": "Pensate per fotografi e amanti della natura, le nostre spedizioni fotografiche offrono accesso a paesaggi straordinari, fauna selvatica ed esperienze culturali in tutta l'Africa.",
+        "details": "Fotografa i gorilla di montagna in Uganda, la Grande Migrazione in Tanzania, il deserto del Namib, le Cascate Vittoria e i momenti più spettacolari della fauna africana.",
+        "features": {
+          "wildlifePhotography": "Fotografia Naturalistica",
+          "landscapeTours": "Tour Paesaggistici",
+          "goldenHour": "Safari all'Ora Dorata",
+          "photoExpeditions": "Spedizioni Fotografiche"
+        }
+      },
+
+      "horseRiding": {
+        "title": "Safari a Cavallo",
+        "description": "Vivi l'Africa oltre i tradizionali safari in fuoristrada attraverso avventure a cavallo che ti avvicinano alla natura.",
+        "details": "Attraversa a cavallo le pianure aperte, scopri paesaggi nascosti e vivi esperienze immersive che combinano avventura, libertà e scenari indimenticabili.",
+        "features": {
+          "guidedRiding": "Passeggiate Guidate",
+          "natureTrails": "Sentieri Naturali",
+          "privateExperiences": "Esperienze Private",
+          "multiDayAdventures": "Avventure di Più Giorni"
+        }
+      },
+
+      "cultural": {
+        "title": "Esperienze Culturali",
+        "description": "Viaggiare significa molto più che osservare la fauna selvatica. I nostri viaggi culturali ti fanno conoscere i popoli, le tradizioni, la musica, la cucina e il patrimonio dell'Africa.",
+        "details": "Visita comunità locali, esplora città antiche, scopri cerimonie tradizionali e entra in contatto con culture dell'Africa orientale, occidentale, settentrionale, centrale e meridionale.",
+        "features": {
+          "localCommunities": "Comunità Locali",
+          "traditionalExperiences": "Esperienze Tradizionali",
+          "historicalSites": "Siti Storici",
+          "authenticCulture": "Cultura Autentica"
+        }
+      },
+
+      "beach": {
+        "title": "Vacanze al Mare e Avventure Su Misura",
+        "description": "Rilassati lungo le spettacolari coste africane o crea un itinerario completamente personalizzato progettato appositamente per te.",
+        "details": "Da Zanzibar e dalla costa del Kenya al Marocco e al Sudafrica, combiniamo spiagge, safari, cultura e avventura in un'unica esperienza.",
+        "features": {
+          "beachEscapes": "Vacanze al Mare",
+          "customItineraries": "Itinerari Personalizzati",
+          "privateTravel": "Viaggi Privati",
+          "multiCountryTours": "Tour Multinazione"
+        }
+      }
+    }
+  },
+
+  "regions": {
+    "badge": "In Tutto il Continente Africano",
+    "title": "Africa Senza",
+    "titleHighlight": "Confini",
+    "description": "Curious Safaris crea viaggi indimenticabili in Africa orientale, meridionale, settentrionale, occidentale e centrale. Dalle destinazioni naturalistiche più famose alle coste incontaminate, dalle civiltà antiche alle culture vivaci, aiutiamo i viaggiatori a vivere l'Africa senza limiti.",
+    "explore": "Esplora",
+    "destinationHighlights": "Punti Salienti della Destinazione",
+
+    "tags": {
+      "privateTours": "Tour Privati",
+      "luxuryTravel": "Viaggi di Lusso",
+      "wildlifeExperiences": "Esperienze Naturalistiche",
+      "customizedItineraries": "Itinerari Personalizzati"
+    },
+
+    "items": {
+      "eastAfrica": {
+        "title": "Africa Orientale",
+        "countries": "Kenya • Tanzania • Uganda • Ruanda",
+        "highlights": "Maasai Mara • Serengeti • Amboseli • Trekking dei Gorilla",
+        "description": "L'Africa orientale ospita alcune delle destinazioni safari più iconiche del mondo. Assisti alla Grande Migrazione nel Serengeti e nel Maasai Mara, osserva i gorilla di montagna in Uganda e Ruanda, esplora le vaste pianure di Amboseli ai piedi del Kilimangiaro e scopri un'incredibile varietà di fauna, paesaggi e culture."
+      },
+
+      "southernAfrica": {
+        "title": "Africa Meridionale",
+        "countries": "Namibia • Botswana • Zimbabwe • Sudafrica",
+        "highlights": "Cascate Vittoria • Delta dell'Okavango • Deserto del Namib",
+        "description": "L'Africa meridionale offre paesaggi straordinari e alcune delle esperienze safari più lussuose del continente. Naviga nelle acque del Delta dell'Okavango, ammira le spettacolari Cascate Vittoria, esplora le dune della Namibia e vivi incontri eccezionali con la fauna selvatica in Sudafrica e Botswana."
+      },
+
+      "northAfrica": {
+        "title": "Africa Settentrionale",
+        "countries": "Egitto • Marocco",
+        "highlights": "Le Piramidi • Il Sahara • Città Imperiali",
+        "description": "L'Africa settentrionale combina storia antica e ricche esperienze culturali. Esplora le piramidi d'Egitto, passeggia nelle storiche medine del Marocco, scopri tradizioni secolari e ammira la spettacolare bellezza del deserto del Sahara."
+      },
+
+      "centralAfrica": {
+        "title": "Africa Centrale",
+        "countries": "Congo • Camerun • Gabon",
+        "highlights": "Foreste Pluviali • Fauna • Culture Indigene",
+        "description": "L'Africa centrale rivela un lato diverso del continente. Dense foreste pluviali, fauna rara, straordinaria biodiversità e autentici incontri culturali creano esperienze indimenticabili per i viaggiatori avventurosi."
+      },
+
+      "westAfrica": {
+        "title": "Africa Occidentale",
+        "countries": "Ghana • Senegal • Benin • Costa d'Avorio",
+        "highlights": "Cultura • Patrimonio • Esperienze Costiere",
+        "description": "L'Africa occidentale offre un'affascinante combinazione di storia, musica, cultura e patrimonio. Esplora siti storici, città vivaci, comunità tradizionali e destinazioni costiere scoprendo una delle regioni culturalmente più diverse dell'Africa."
+      }
+    }
+  },
+
+  "adventureProcess": {
+    "title": "Come Progettiamo",
+    "titleHighlight": "La Tua Avventura",
+
+    "step1": {
+      "title": "Raccontaci il Tuo Sogno",
+      "description": "Condividi le tue idee di viaggio, le destinazioni preferite e le tue aspettative."
+    },
+
+    "step2": {
+      "title": "Progettiamo",
+      "description": "Il nostro team crea un itinerario africano personalizzato."
+    },
+
+    "step3": {
+      "title": "Personalizza",
+      "description": "Modifica ogni dettaglio finché il tuo viaggio non sarà perfetto."
+    },
+
+    "step4": {
+      "title": "Conferma",
+      "description": "Organizziamo i tuoi alloggi, il trasporto e le attività."
+    },
+
+    "step5": {
+      "title": "Esplora",
+      "description": "Viaggia con sicurezza mentre noi gestiamo ogni dettaglio."
+    }
+  },
+  
+
+
+  "destinationsHero": {
+    "imageAlt": "Destinazione safari africana",
+    "badge": "Esplora l'Africa",
+    "title": "Destinazioni",
+    "titleHighlight": "Straordinarie",
+    "description": "Scopri riserve naturali iconiche, paesaggi mozzafiato, spiagge tropicali ed esperienze safari indimenticabili in tutta l'Africa.",
+    "bottomTitle": "Destinazioni Safari",
+    "countries": {
+      "kenya": "Kenya",
+      "tanzania": "Tanzania",
+      "uganda": "Uganda",
+      "rwanda": "Ruanda"
+    }
+  },
+
+  "kenyaSafari": {
+    "badge": "Safari in Kenya",
+    "title": "Safari di 7 Giorni in Kenya",
+    "titleHighlight": "Persi nella Direzione Giusta",
+    "description": "Scopri le destinazioni naturalistiche più iconiche del Kenya, dalle pianure di Amboseli ricche di elefanti e dalla splendida Great Rift Valley fino alla leggendaria Maasai Mara. Vivi una fauna straordinaria, paesaggi spettacolari e l'autentica cultura kenyana in un safari indimenticabile.",
+
+    "destinations": {
+      "amboseli": {
+        "title": "Amboseli",
+        "description": "Famoso per i suoi elefanti e le spettacolari viste sul Monte Kilimanjaro.",
+        "alt": "Elefanti nel Parco Nazionale di Amboseli"
+      },
+      "naivasha": {
+        "title": "Lago Naivasha",
+        "description": "Goditi un giro in barca e un safari a piedi tra la fauna selvatica.",
+        "alt": "Lago Naivasha"
+      },
+      "nakuru": {
+        "title": "Lago Nakuru",
+        "description": "Scopri rinoceronti, leoni, giraffe e la splendida Rift Valley.",
+        "alt": "Parco Nazionale del Lago Nakuru"
+      },
+      "mara": {
+        "title": "Maasai Mara",
+        "description": "Casa dei Big Five, infinite pianure e safari indimenticabili.",
+        "alt": "Riserva Nazionale Maasai Mara"
+      }
+    },
+
+    "details": {
+      "title": "Dettagli del Safari",
+      "durationLabel": "Durata",
+      "duration": "7 Giorni / 6 Notti",
+      "routeLabel": "Itinerario",
+      "route": "Nairobi – Amboseli – Naivasha – Nakuru – Maasai Mara – Nairobi",
+      "transportLabel": "Trasporto",
+      "transport": "Land Cruiser 4×4 privato con tetto apribile",
+      "bestForLabel": "Ideale Per",
+      "bestFor": "Coppie, viaggiatori solitari, famiglie e gruppi",
+      "highlightsLabel": "Punti Salienti",
+      "highlights": "Viste del Kilimangiaro, elefanti, Great Rift Valley, rinoceronti, Big Five e Maasai Mara."
+    },
+
+    "itinerary": {
+      "title": "Itinerario di 7 Giorni",
+      "days": {
+        "day1": "Giorno 1: Nairobi → Parco Nazionale di Amboseli",
+        "day2": "Giorno 2: Giornata Intera ad Amboseli",
+        "day3": "Giorno 3: Amboseli → Lago Naivasha",
+        "day4": "Giorno 4: Naivasha → Lago Nakuru → Maasai Mara",
+        "day5": "Giorno 5: Giornata Intera nel Maasai Mara",
+        "day6": "Giorno 6: Giornata Intera nel Maasai Mara",
+        "day7": "Giorno 7: Maasai Mara → Nairobi"
+      }
+    },
+
+    "pricing": {
+      "title": "Prezzi del Safari in Kenya",
+      "options": {
+        "one": "1 Persona\nUSD 2,200",
+        "two": "2 Persone\nUSD 1,650",
+        "threeFour": "3–4 Persone\nUSD 1,450",
+        "fiveSix": "5–6 Persone\nUSD 1,300",
+        "sevenPlus": "7+ Persone\nUSD 1,200"
+      }
+    },
+
+    "included": {
+      "title": "Cosa è Incluso",
+      "items": {
+        "accommodation": "6 notti di sistemazione",
+        "vehicle": "Land Cruiser 4×4 privato con tetto apribile",
+        "guide": "Guida safari professionale di lingua inglese",
+        "parkFees": "Tutti i biglietti d'ingresso ai parchi e alle riserve",
+        "meals": "Pensione completa durante il safari",
+        "gameDrives": "Game drive",
+        "boatRide": "Giro in barca sul Lago Naivasha",
+        "walkingSafari": "Safari a piedi a Crescent Island",
+        "water": "Acqua potabile in bottiglia",
+        "transfers": "Trasferimento di andata e ritorno a Nairobi"
+      }
+    },
+
+    "closing": "Persi nella direzione giusta.",
+
+    "cta": {
+      "title": "Persi nella direzione giusta.",
+      "description": "Vivi la fauna iconica del Kenya, paesaggi mozzafiato e indimenticabili avventure safari in un viaggio di 7 giorni attraverso Amboseli, Naivasha, Nakuru e Maasai Mara.",
+      "button": "Prenota Questo Safari"
+    },
+
+    "video": {
+      "badge": "Vivi il Maasai Mara",
+      "title": "Scopri la Magia del Maasai Mara",
+      "description": "Dai uno sguardo ai paesaggi mozzafiato, alla fauna incredibile e alle esperienze safari indimenticabili del Maasai Mara.",
+      "iframeTitle": "Safari Maasai Mara di Curious Safaris",
+      "youtubeButton": "Guarda il Maasai Mara su YouTube"
+    }
+  },
+
+  "tanzaniaSafari": {
+    "badge": "Safari in Tanzania",
+    "title": "Safari di 7 Giorni in Tanzania",
+    "titleHighlight": "L'Avventura Definitiva nella Natura Selvaggia",
+    "description": "Scopri le destinazioni naturalistiche più celebri della Tanzania, dagli enormi baobab di Tarangire alle infinite pianure del Serengeti e allo spettacolare Cratere di Ngorongoro. Ammira i Big Five, scopri paesaggi diversi e vivi una delle avventure safari più straordinarie d'Africa.",
+
+    "destinations": {
+      "tarangire": {
+        "title": "Tarangire",
+        "alt": "Elefanti e baobab nel Parco Nazionale di Tarangire, Tanzania",
+        "description": "Famoso per gli elefanti, gli antichi baobab e la spettacolare fauna selvatica."
+      },
+      "serengeti": {
+        "title": "Serengeti",
+        "alt": "Parco Nazionale del Serengeti Tanzania",
+        "description": "Casa della Grande Migrazione, dei Big Five e di infinite pianure dorate."
+      },
+      "ngorongoro": {
+        "title": "Cratere di Ngorongoro",
+        "alt": "Cratere di Ngorongoro Tanzania",
+        "description": "Una delle destinazioni naturalistiche più spettacolari d'Africa, con paesaggi incredibili e una fauna diversificata."
+      }
+    },
+
+    "details": {
+      "title": "Dettagli del Safari",
+      "durationLabel": "Durata",
+      "duration": "7 Giorni / 6 Notti",
+      "routeLabel": "Itinerario",
+      "route": "Arusha – Tarangire – Serengeti – Ngorongoro – Arusha",
+      "transportLabel": "Trasporto",
+      "transport": "Veicolo safari 4×4 privato con tetto apribile",
+      "highlightsLabel": "Punti Salienti",
+      "highlights": "Grande Migrazione, Big Five, elefanti di Tarangire e Cratere di Ngorongoro"
+    },
+
+    "itinerary": {
+      "title": "Itinerario di 7 Giorni",
+      "day1": "Giorno 1: Arusha → Parco Nazionale di Tarangire",
+      "day2": "Giorno 2: Tarangire → Serengeti",
+      "day3": "Giorno 3: Safari di Giornata Intera nel Serengeti",
+      "day4": "Giorno 4: Esplorazione del Serengeti",
+      "day5": "Giorno 5: Serengeti → Ngorongoro",
+      "day6": "Giorno 6: Cratere di Ngorongoro → Karatu",
+      "day7": "Giorno 7: Karatu → Arusha"
+    },
+
+    "pricing": {
+      "title": "Prezzi del Safari in Tanzania",
+      "person1": "1 Persona\nUSD 2,400",
+      "people2": "2 Persone\nUSD 1,850",
+      "people3to4": "3–4 Persone\nUSD 1,600",
+      "people5to6": "5–6 Persone\nUSD 1,450",
+      "people7plus": "7+ Persone\nUSD 1,350"
+    },
+
+    "included": {
+      "title": "Cosa è Incluso",
+      "items": {
+        "accommodation": "6 notti di sistemazione",
+        "vehicle": "Veicolo safari 4×4 privato con tetto apribile",
+        "guide": "Guida safari professionale di lingua inglese",
+        "parkFees": "Tasse dei parchi e di conservazione",
+        "meals": "Pensione completa durante il safari",
+        "gameDrives": "Game drive",
+        "water": "Acqua potabile in bottiglia",
+        "transfers": "Trasferimento di andata e ritorno dall'aeroporto/hotel di Arusha"
+      }
+    },
+
+    "closing": "Esplora la Tanzania, dalla Grande Migrazione al Cratere di Ngorongoro.",
+
+    "cta": {
+      "title": "L'Avventura Definitiva nella Natura Selvaggia.",
+      "description": "Scopri il leggendario Serengeti, gli incredibili elefanti di Tarangire e lo spettacolare Cratere di Ngorongoro in un safari indimenticabile di 7 giorni.",
+      "button": "Prenota Questo Safari"
+    }
+  },
+
+  "ugandaSafari": {
+    "badge": "Safari in Uganda",
+    "title": "Safari di 7 Giorni in Uganda",
+    "titleHighlight": "Gorilla, Scimpanzé e Fauna Selvatica",
+    "description": "Scopri le incredibili foreste pluviali, savane e paesaggi montuosi dell'Uganda. Segui gli scimpanzé nella foresta di Kibale, vivi incontri indimenticabili con la fauna nel Queen Elizabeth National Park e attraversa Bwindi alla ricerca dei gorilla di montagna.",
+
+    "destinations": {
+      "kibale": {
+        "title": "Foresta di Kibale",
+        "alt": "Foresta di Kibale in Uganda",
+        "description": "La capitale dei primati dell'Uganda e sede di incredibili esperienze di tracking degli scimpanzé."
+      },
+      "queenElizabeth": {
+        "title": "Queen Elizabeth",
+        "alt": "Mandria di elefanti sul Canale di Kazinga, Queen Elizabeth National Park",
+        "description": "Scopri elefanti, leoni, bufali, ippopotami e una fauna spettacolare lungo il Canale di Kazinga."
+      },
+      "bwindi": {
+        "title": "Foresta Impenetrabile di Bwindi",
+        "alt": "Fitta foresta pluviale nella Foresta Impenetrabile di Bwindi, Uganda",
+        "description": "Attraversa un'antica foresta pluviale alla ricerca degli incredibili gorilla di montagna dell'Uganda."
+      }
+    },
+
+    "details": {
+      "title": "Dettagli del Safari",
+      "durationLabel": "Durata",
+      "duration": "7 Giorni / 6 Notti",
+      "routeLabel": "Itinerario",
+      "route": "Entebbe – Kibale – Queen Elizabeth – Bwindi – Entebbe",
+      "transportLabel": "Trasporto",
+      "transport": "Veicolo safari 4×4 privato",
+      "highlightsLabel": "Punti Salienti",
+      "highlights": "Trekking dei gorilla, tracking degli scimpanzé, fauna dei Big Five, safari in barca sul Canale di Kazinga ed esperienze nella foresta pluviale"
+    },
+
+    "itinerary": {
+      "title": "Itinerario di 7 Giorni",
+      "day1": "Giorno 1: Entebbe → Foresta di Kibale",
+      "day2": "Giorno 2: Tracking degli Scimpanzé",
+      "day3": "Giorno 3: Kibale → Queen Elizabeth",
+      "day4": "Giorno 4: Safari nel Queen Elizabeth e Canale di Kazinga",
+      "day5": "Giorno 5: Queen Elizabeth → Bwindi",
+      "day6": "Giorno 6: Trekking dei Gorilla",
+      "day7": "Giorno 7: Bwindi → Entebbe"
+    },
+
+    "pricing": {
+      "title": "Prezzi del Safari in Uganda",
+      "perPerson": "a persona",
+      "person1": {
+        "group": "1 Persona",
+        "price": "USD 3,200"
+      },
+      "people2": {
+        "group": "2 Persone",
+        "price": "USD 2,400"
+      },
+      "people3to4": {
+        "group": "3–4 Persone",
+        "price": "USD 2,100"
+      },
+      "people5to6": {
+        "group": "5–6 Persone",
+        "price": "USD 1,900"
+      },
+      "people7plus": {
+        "group": "7+ Persone",
+        "price": "USD 1,750"
+      }
+    },
+
+    "included": {
+      "title": "Cosa è Incluso",
+      "items": {
+        "accommodation": "6 notti di sistemazione",
+        "vehicle": "Veicolo safari 4×4 privato",
+        "guide": "Guida professionale di lingua inglese",
+        "chimpanzeePermit": "Permesso per il tracking degli scimpanzé",
+        "gorillaPermit": "Permesso per il trekking dei gorilla",
+        "parkFees": "Tasse dei parchi e di conservazione",
+        "gameDrives": "Game drive",
+        "kazingaBoat": "Safari in barca sul Canale di Kazinga",
+        "meals": "Pensione completa",
+        "water": "Acqua potabile in bottiglia",
+        "pickup": "Prelievo a Entebbe/Kampala",
+        "dropoff": "Trasferimento di ritorno a Entebbe/Kampala"
+      }
+    },
+
+    "cta": {
+      "title": "Dove la foresta pluviale incontra la natura selvaggia.",
+      "description": "Vivi l'esperienza dei gorilla, degli scimpanzé e dell'incredibile fauna dell'Uganda in un'avventura indimenticabile di 7 giorni.",
+      "button": "Prenota Questo Safari"
+    }
+  },
+
+  "rwanda": {
+    "badge": "Safari in Ruanda",
+    "title": "Safari di 7 Giorni in Ruanda",
+    "subtitle": "Gorilla, Fauna Selvatica e Cultura Africana",
+    "description": "Scopri il Ruanda, la Terra delle Mille Colline. Esplora le vivaci strade di Kigali, ammira l'incredibile fauna di Akagera, incontra i gorilla di montagna nel Parco Nazionale dei Vulcani e scopri la tranquilla bellezza del Lago Kivu.",
+
+    "destinations": {
+      "kigali": {
+        "title": "Kigali",
+        "alt": "Città di Kigali, Ruanda",
+        "description": "Esplora la capitale pulita e vivace del Ruanda, ricca di storia, cultura e persone accoglienti."
+      },
+      "akagera": {
+        "title": "Parco Nazionale di Akagera",
+        "alt": "Elefanti nel Parco Nazionale di Akagera, Ruanda",
+        "description": "Scopri elefanti, leoni, giraffe, zebre, bufali e spettacolari paesaggi di savana."
+      },
+      "volcanoes": {
+        "title": "Parco Nazionale dei Vulcani",
+        "alt": "Foresta pluviale nebbiosa nel Parco Nazionale dei Vulcani, Ruanda",
+        "description": "Attraversa le foreste montane avvolte dalla nebbia alla ricerca degli incredibili gorilla di montagna del Ruanda."
+      }
+    },
+
+    "details": {
+      "title": "Dettagli del Safari",
+      "durationLabel": "Durata:",
+      "duration": "7 Giorni / 6 Notti",
+      "routeLabel": "Itinerario:",
+      "route": "Kigali – Akagera – Parco Nazionale dei Vulcani – Lago Kivu – Kigali",
+      "transportLabel": "Trasporto:",
+      "transport": "Veicolo safari 4×4 privato",
+      "highlightsLabel": "Punti Salienti:",
+      "highlights": "Trekking dei gorilla, fauna di Akagera, scimmie dorate, safari in barca sul Lago Ihema e la ricca cultura del Ruanda"
+    },
+
+    "itinerary": {
+      "title": "Itinerario di 7 Giorni",
+      "days": {
+        "day1": "Giorno 1: Arrivo e Tour della Città di Kigali",
+        "day2": "Giorno 2: Kigali → Parco Nazionale di Akagera",
+        "day3": "Giorno 3: Safari di Giornata Intera ad Akagera",
+        "day4": "Giorno 4: Akagera → Parco Nazionale dei Vulcani",
+        "day5": "Giorno 5: Trekking dei Gorilla",
+        "day6": "Giorno 6: Trekking delle Scimmie Dorate / Esperienza Culturale",
+        "day7": "Giorno 7: Vulcani → Kigali"
+      }
+    },
+
+    "pricing": {
+      "title": "Prezzi del Safari in Ruanda",
+      "perPerson": "a persona",
+      "options": {
+        "one": {
+          "group": "1 Persona"
+        },
+        "two": {
+          "group": "2 Persone"
+        },
+        "threeFour": {
+          "group": "3–4 Persone"
+        },
+        "fiveSix": {
+          "group": "5–6 Persone"
+        },
+        "sevenPlus": {
+          "group": "7+ Persone"
+        }
+      }
+    },
+
+    "included": {
+      "title": "Cosa è Incluso",
+      "items": {
+        "accommodation": "6 notti di sistemazione",
+        "vehicle": "Veicolo safari 4×4 privato",
+        "guide": "Guida professionale di lingua inglese",
+        "gorillaPermit": "Permesso per il trekking dei gorilla",
+        "goldenMonkey": "Trekking delle scimmie dorate",
+        "akageraFees": "Tasse del Parco Nazionale di Akagera",
+        "gameDrives": "Game drive",
+        "ihemaBoat": "Safari in barca sul Lago Ihema",
+        "meals": "Pensione completa",
+        "water": "Acqua potabile in bottiglia",
+        "pickup": "Prelievo dall'aeroporto di Kigali",
+        "dropoff": "Trasferimento di ritorno all'aeroporto di Kigali"
+      }
+    },
+
+    "cta": {
+      "brand": "Curious Safaris",
+      "title": "Scopri il Ruanda, la Terra delle Mille Colline.",
+      "description": "Dagli incredibili gorilla di montagna agli incontri indimenticabili con la fauna selvatica e alla vivace cultura africana, il Ruanda ti aspetta.",
+      "button": "Prenota Questo Safari"
+    }
+  },
+
+  "ethiopia": {
+    "badge": "Avventura in Etiopia",
+    "title": "Avventura di 7 Giorni in Etiopia",
+    "subtitle": "Storia, Cultura e Fauna Selvatica",
+    "description": "Scopri lo straordinario mix di storia antica, cultura vivente e paesaggi spettacolari dell'Etiopia. Esplora le chiese scavate nella roccia di Lalibela, i castelli storici di Gondar e le spettacolari montagne Simien.",
+
+    "destinations": {
+      "lalibela": {
+        "title": "Lalibela",
+        "alt": "Lalibela, Etiopia",
+        "description": "Scopri le straordinarie chiese scavate nella roccia e secoli di storia spirituale etiope."
+      },
+      "gondar": {
+        "title": "Gondar",
+        "alt": "Gondar, Etiopia",
+        "description": "Esplora castelli reali, chiese storiche e l'affascinante eredità della città imperiale dell'Etiopia."
+      },
+      "simien": {
+        "title": "Montagne Simien",
+        "alt": "Montagne Simien, Etiopia",
+        "description": "Vivi spettacolari scogliere, profonde vallate e incontri con i babbuini gelada endemici."
+      }
+    },
+
+    "details": {
+      "title": "Dettagli del Tour",
+      "durationLabel": "Durata:",
+      "duration": "7 Giorni / 6 Notti",
+      "routeLabel": "Itinerario:",
+      "route": "Addis Abeba – Lalibela – Gondar – Montagne Simien – Addis Abeba",
+      "transportLabel": "Trasporto:",
+      "transport": "Veicolo privato e voli nazionali",
+      "highlightsLabel": "Punti Salienti:",
+      "highlights": "Chiese scavate nella roccia di Lalibela, storia reale di Gondar, Montagne Simien, babbuini gelada, cultura etiope e cucina tradizionale"
+    },
+
+    "itinerary": {
+      "title": "Itinerario di 7 Giorni",
+      "days": {
+        "day1": "Giorno 1: Arrivo ad Addis Abeba",
+        "day2": "Giorno 2: Addis Abeba → Lalibela",
+        "day3": "Giorno 3: Giornata Intera a Lalibela",
+        "day4": "Giorno 4: Lalibela → Gondar",
+        "day5": "Giorno 5: Gondar → Montagne Simien",
+        "day6": "Giorno 6: Giornata Intera sulle Montagne Simien",
+        "day7": "Giorno 7: Montagne Simien → Addis Abeba"
+      }
+    },
+
+    "pricing": {
+      "title": "Prezzi del Tour in Etiopia",
+      "description": "Prezzi del tour privato in base al numero di viaggiatori.",
+      "perPerson": "a persona",
+      "options": {
+        "one": "1 Persona",
+        "two": "2 Persone",
+        "threeFour": "3–4 Persone",
+        "fiveSix": "5–6 Persone",
+        "sevenPlus": "7+ Persone"
+      }
+    },
+
+    "included": {
+      "title": "Cosa è Incluso",
+      "items": {
+        "accommodation": "6 notti di sistemazione",
+        "transportation": "Trasporto privato",
+        "flights": "Voli nazionali menzionati nell'itinerario",
+        "guide": "Guida professionale di lingua inglese",
+        "entranceFees": "Ingressi alle attrazioni indicate",
+        "simienActivities": "Attività nelle Montagne Simien",
+        "meals": "Pensione completa",
+        "airportTransfers": "Trasferimenti aeroportuali",
+        "water": "Acqua potabile in bottiglia"
+      }
+    },
+
+    "cta": {
+      "brand": "Curious Safaris",
+      "title": "Scopri l'Etiopia",
+      "description": "Dove storia antica, paesaggi spettacolari e cultura vivente si incontrano.",
+      "button": "Prenota Questo Tour"
+    }
+  },
+
+  "common": {
+    "days": "Giorni",
+    "nights": "Notti",
+    "perPerson": "a persona"
+  },
+
+  "congo": {
+    "badge": "Avventura in Congo",
+    "title": "Avventura di 7 Giorni in Congo",
+    "subtitle": "Gorilla, Foresta Pluviale e Africa Selvaggia",
+    "description": "Immergiti negli straordinari paesaggi dell'Africa orientale, dalle rive vulcaniche del Lago Kivu e dalle foreste pluviali di Virunga agli incredibili gorilla di pianura orientale di Kahuzi-Biéga.",
+
+    "destinations": {
+      "goma": {
+        "title": "Goma e Lago Kivu",
+        "description": "Scopri i paesaggi vulcanici di Goma e lo spettacolare scenario intorno al Lago Kivu."
+      },
+      "virunga": {
+        "title": "Parco Nazionale di Virunga",
+        "description": "Scopri paesaggi vulcanici, antiche foreste pluviali e una delle aree selvagge più straordinarie d'Africa."
+      },
+      "kahuzi": {
+        "title": "Kahuzi-Biéga",
+        "description": "Attraversa la foresta pluviale alla ricerca degli incredibili gorilla di pianura orientale."
+      }
+    },
+
+    "details": {
+      "title": "Dettagli dell'Avventura",
+      "duration": "Durata",
+      "route": "Itinerario",
+      "transport": "Trasporto",
+      "transportValue": "Veicolo 4×4 privato e trasferimenti regionali",
+      "highlights": "Punti Salienti",
+      "highlightsValue": "Gorilla di montagna, gorilla di pianura orientale, foresta di Virunga, Lago Kivu, paesaggi vulcanici e natura selvaggia unica del Congo orientale"
+    },
+
+    "itinerary": {
+      "title": "Itinerario di 7 Giorni",
+      "day1": "Giorno 1: Kigali → Goma",
+      "day2": "Giorno 2: Goma e Lago Kivu",
+      "day3": "Giorno 3: Goma → Parco Nazionale di Virunga",
+      "day4": "Giorno 4: Trekking dei Gorilla",
+      "day5": "Giorno 5: Virunga → Bukavu",
+      "day6": "Giorno 6: Parco Nazionale di Kahuzi-Biéga",
+      "day7": "Giorno 7: Bukavu → Kigali"
+    },
+
+    "pricing": {
+      "title": "Prezzi dell'Avventura in Congo",
+      "description": "Prezzi dell'avventura privata in base al numero di viaggiatori.",
+      "one": "1 Persona",
+      "two": "2 Persone",
+      "threeFour": "3–4 Persone",
+      "fiveSix": "5–6 Persone",
+      "sevenPlus": "7+ Persone"
+    },
+
+    "included": {
+      "title": "Cosa è Incluso",
+      "item1": "6 notti di sistemazione",
+      "item2": "Trasporto privato 4×4",
+      "item3": "Guida professionale di lingua inglese",
+      "item4": "Permessi per il trekking dei gorilla",
+      "item5": "Tasse dei parchi nazionali",
+      "item6": "Attività ed escursioni indicate",
+      "item7": "Pensione completa",
+      "item8": "Acqua potabile in bottiglia",
+      "item9": "Prelievo a Kigali",
+      "item10": "Trasferimento di ritorno a Kigali"
+    },
+
+    "notice": {
+      "title": "Informazioni Importanti su Viaggio e Sicurezza",
+      "description": "La parte orientale della RDC è una destinazione sensibile dal punto di vista della sicurezza e l'accesso a Virunga e ad altre aree può cambiare. Questo itinerario dovrebbe essere confermato solo dopo aver verificato l'accesso attuale ai parchi, le condizioni di frontiera e gli avvisi ufficiali di viaggio."
+    },
+
+    "cta": {
+      "title": "Scopri il Congo Oltre l'Ordinario.",
+      "description": "Esplora straordinarie foreste pluviali, paesaggi vulcanici, il Lago Kivu e indimenticabili esperienze con i gorilla.",
+      "button": "Richiedi Informazioni"
+    }
+  },
+
+  "zambiaSafari": {
+    "badge": "Safari in Zambia",
+    "title": "Safari di 7 Giorni in Zambia",
+    "subtitle": "Victoria Falls e South Luangwa",
+    "description": "Scopri la potenza delle Cascate Vittoria, naviga lungo il fiume Zambesi ed esplora la straordinaria fauna del Parco Nazionale South Luangwa. Dai safari a piedi agli indimenticabili safari notturni, scopri lo Zambia nella sua forma più selvaggia.",
+
+    "destinations": {
+      "victoriaFalls": {
+        "title": "Cascate Vittoria",
+        "description": "Scopri una delle più grandi meraviglie naturali del mondo e osserva lo Zambesi entrare nella gola."
+      },
+      "zambezi": {
+        "title": "Fiume Zambesi",
+        "description": "Goditi una tranquilla crociera al tramonto osservando ippopotami, coccodrilli ed elefanti lungo il fiume."
+      },
+      "southLuangwa": {
+        "title": "South Luangwa",
+        "description": "Scopri elefanti, leoni, leopardi, licaoni e indimenticabili safari a piedi e notturni."
+      }
+    },
+
+    "details": {
+      "title": "Dettagli del Safari",
+      "duration": "Durata",
+      "durationValue": "7 Giorni / 6 Notti",
+      "route": "Itinerario",
+      "routeValue": "Livingstone – Cascate Vittoria – Parco Nazionale South Luangwa",
+      "transport": "Trasporto",
+      "transportValue": "Veicolo safari 4×4 privato e volo nazionale",
+      "highlights": "Punti Salienti",
+      "highlightsValue": "Cascate Vittoria, crociera al tramonto sullo Zambesi, fauna di South Luangwa, safari a piedi, safari notturno e spettacolari paesaggi africani"
+    },
+
+    "itinerary": {
+      "title": "Itinerario di 7 Giorni",
+      "days": [
+        "Giorno 1: Arrivo a Livingstone",
+        "Giorno 2: Cascate Vittoria e Zambesi",
+        "Giorno 3: Livingstone → South Luangwa",
+        "Giorno 4: Safari di Giornata Intera a South Luangwa",
+        "Giorno 5: Safari a Piedi e Game Drive",
+        "Giorno 6: Giornata Intera di Esperienza nella Natura",
+        "Giorno 7: South Luangwa → Livingstone"
+      ]
+    },
+
+    "pricing": {
+      "title": "Prezzi del Safari in Zambia",
+      "description": "Prezzi del safari privato in base al numero di viaggiatori.",
+      "perPerson": "a persona",
+      "groups": {
+        "one": "1 Persona",
+        "two": "2 Persone",
+        "threeFour": "3–4 Persone",
+        "fiveSix": "5–6 Persone",
+        "sevenPlus": "7+ Persone"
+      }
+    },
+
+    "included": {
+      "title": "Cosa è Incluso",
+      "items": [
+        "6 notti di sistemazione",
+        "Trasporto safari privato",
+        "Guida professionale di lingua inglese",
+        "Voli nazionali menzionati nell'itinerario",
+        "Visita alle Cascate Vittoria",
+        "Crociera al tramonto sullo Zambesi",
+        "Game drive",
+        "Safari a piedi guidato",
+        "Tasse dei parchi",
+        "Pensione completa",
+        "Acqua potabile in bottiglia",
+        "Trasferimenti aeroportuali"
+      ]
+    },
+
+    "experienceHighlights": {
+      "title": "Punti Salienti dell'Esperienza",
+      "victoriaFalls": {
+        "title": "Cascate Vittoria",
+        "description": "Ammira la potenza e la bellezza di una delle meraviglie naturali più spettacolari d'Africa."
+      },
+      "southLuangwa": {
+        "title": "South Luangwa Selvaggio",
+        "description": "Cerca predatori, elefanti e grandi branchi durante emozionanti game drive diurni e notturni."
+      },
+      "walkingSafari": {
+        "title": "Safari a Piedi",
+        "description": "Scendi dal veicolo e vivi la natura selvaggia a piedi con una guida esperta."
+      }
+    },
+
+    "cta": {
+      "brand": "Curious Safaris",
+      "title": "Dove lo Zambesi scorre e la natura selvaggia continua a indicare la strada.",
+      "description": "Scopri le Cascate Vittoria, il fiume Zambesi e la natura incontaminata di South Luangwa.",
+      "button": "Prenota Questo Safari"
+    },
+
+    "video": {
+      "badge": "Vivi lo Zambia",
+      "title": "Scopri il Lato Selvaggio dello Zambia",
+      "description": "Dai uno sguardo all'incredibile fauna, ai paesaggi e alle esperienze safari indimenticabili dello Zambia.",
+      "button": "Guarda lo Zambia su YouTube"
+    }
+  },
+  
+  "zimbabweSafari": {
+    "badge": "Safari in Zimbabwe",
+    "title": "Safari di 7 giorni in Zimbabwe",
+    "subtitle": "Cascate Vittoria e Parco Nazionale di Hwange",
+    "description": "Scopri la straordinaria natura selvaggia dello Zimbabwe, dalle maestose Cascate Vittoria e dal fiume Zambesi alle pianure ricche di fauna di Hwange e agli spettacolari paesaggi granitici del Parco Nazionale di Matobo.",
+
+    "destinations": {
+      "victoriaFalls": {
+        "title": "Cascate Vittoria",
+        "alt": "Cascate Vittoria Zimbabwe",
+        "description": "Vivi la potenza di una delle più grandi meraviglie naturali dell'Africa e naviga lungo il fiume Zambesi."
+      },
+      "hwange": {
+        "title": "Parco Nazionale di Hwange",
+        "alt": "Fauna del Parco Nazionale di Hwange",
+        "description": "Esplora il più grande parco nazionale dello Zimbabwe e cerca elefanti, leoni, bufali e licaoni."
+      },
+      "matobo": {
+        "title": "Parco Nazionale di Matobo",
+        "alt": "Parco Nazionale di Matobo Zimbabwe",
+        "description": "Scopri spettacolari formazioni granitiche, rinoceronti, paesaggi antichi e un'affascinante storia culturale."
+      }
+    },
+
+    "details": {
+      "title": "Dettagli del Safari",
+      "duration": "Durata",
+      "durationValue": "7 giorni / 6 notti",
+      "route": "Itinerario",
+      "routeValue": "Cascate Vittoria – Parco Nazionale di Hwange – Parco Nazionale di Matobo",
+      "transport": "Trasporto",
+      "transportValue": "Veicolo safari privato 4×4",
+      "highlights": "Punti salienti",
+      "highlightsValue": "Cascate Vittoria, crociera al tramonto sullo Zambesi, fauna di Hwange, osservazione dei rinoceronti, Matobo Hills e gli spettacolari paesaggi dello Zimbabwe"
+    },
+
+    "itinerary": {
+      "title": "Itinerario di 7 giorni",
+      "days": [
+        "Giorno 1: Arrivo alle Cascate Vittoria",
+        "Giorno 2: Esperienza alle Cascate Vittoria",
+        "Giorno 3: Cascate Vittoria → Parco Nazionale di Hwange",
+        "Giorno 4: Safari di un'intera giornata a Hwange",
+        "Giorno 5: Hwange → Parco Nazionale di Matobo",
+        "Giorno 6: Giornata intera a Matobo",
+        "Giorno 7: Matobo → Bulawayo"
+      ]
+    },
+
+    "pricing": {
+      "title": "Prezzi del Safari in Zimbabwe",
+      "description": "Prezzi del safari privato in base al numero di viaggiatori.",
+      "perPerson": "a persona",
+      "groups": {
+        "one": "1 persona",
+        "two": "2 persone",
+        "threeFour": "3–4 persone",
+        "fiveSix": "5–6 persone",
+        "sevenPlus": "7+ persone"
+      },
+      "prices": {
+        "one": "USD 2.800",
+        "two": "USD 2.100",
+        "threeFour": "USD 1.800",
+        "fiveSix": "USD 1.650",
+        "sevenPlus": "USD 1.500"
+      }
+    },
+
+    "included": {
+      "title": "Cosa è incluso",
+      "items": [
+        "6 notti di pernottamento",
+        "Veicolo safari privato 4×4",
+        "Guida professionale di lingua inglese",
+        "Visita alle Cascate Vittoria",
+        "Crociera al tramonto sullo Zambesi",
+        "Tasse del Parco Nazionale di Hwange",
+        "Tasse del Parco Nazionale di Matobo",
+        "Safari fotografici",
+        "Pasti completi",
+        "Acqua potabile in bottiglia",
+        "Trasferimenti aeroportuali"
+      ]
+    },
+
+    "experienceHighlights": {
+      "title": "Esperienze principali",
+      "victoriaFalls": {
+        "title": "Cascate Vittoria",
+        "description": "Ammira una delle più grandi meraviglie naturali dell'Africa e vivi la potenza del possente Zambesi."
+      },
+      "hwangeWildlife": {
+        "title": "Fauna di Hwange",
+        "description": "Esplora vaste aree selvagge e cerca elefanti, leoni, bufali, giraffe e licaoni."
+      },
+      "matoboHills": {
+        "title": "Matobo Hills",
+        "description": "Scopri antichi paesaggi granitici e cerca i rinoceronti tra le spettacolari Matobo Hills."
+      }
+    },
+
+    "cta": {
+      "brand": "Curious Safaris",
+      "title": "Dove cascate, paesaggi antichi e fauna selvatica si incontrano.",
+      "description": "Vivi le Cascate Vittoria, la natura selvaggia di Hwange e gli straordinari paesaggi di Matobo.",
+      "button": "Prenota questo safari"
+    },
+
+    "video": {
+      "badge": "Vivi lo Zimbabwe",
+      "title": "Scopri il lato selvaggio dello Zimbabwe",
+      "description": "Dai uno sguardo alla straordinaria fauna, ai paesaggi e alle indimenticabili esperienze di safari dello Zimbabwe.",
+      "button": "Guarda lo Zimbabwe su YouTube"
+    }
+  },
+
+  "namibiaSafari": {
+    "badge": "Avventura in Namibia",
+    "title": "Avventura di 7 giorni in Namibia",
+    "titleHighlight": "Deserto, fauna selvatica e meraviglie costiere",
+    "description": "Attraversa gli straordinari paesaggi della Namibia, dalle imponenti dune rosse di Sossusvlei al fascino costiero di Swakopmund, fino alla selvaggia Damaraland e alle pianure ricche di fauna del Parco Nazionale di Etosha.",
+
+    "destinations": {
+      "sossusvlei": {
+        "title": "Sossusvlei e Deadvlei",
+        "description": "Cammina tra le iconiche dune rosse della Namibia e scopri i paesaggi surreali di Deadvlei.",
+        "alt": "Dune rosse di Sossusvlei Namibia"
+      },
+      "swakopmund": {
+        "title": "Swakopmund",
+        "description": "Vivi il fascino costiero della Namibia, dove il deserto incontra l'Oceano Atlantico.",
+        "alt": "Costa di Swakopmund Namibia"
+      },
+      "etosha": {
+        "title": "Parco Nazionale di Etosha",
+        "description": "Cerca elefanti, leoni, rinoceronti, giraffe, zebre e altra fauna intorno alle pozze d'acqua di Etosha.",
+        "alt": "Fauna del Parco Nazionale di Etosha"
+      }
+    },
+
+    "details": {
+      "title": "Dettagli dell'Avventura",
+      "durationLabel": "Durata",
+      "duration": "7 giorni / 6 notti",
+      "routeLabel": "Itinerario",
+      "route": "Windhoek – Sossusvlei – Swakopmund – Damaraland – Etosha",
+      "transportLabel": "Trasporto",
+      "transport": "Veicolo safari privato 4×4",
+      "highlightsLabel": "Punti salienti",
+      "highlights": "Sossusvlei, Deadvlei, deserto del Namib, Swakopmund, Damaraland, Parco Nazionale di Etosha e fauna adattata al deserto"
+    },
+
+    "itinerary": {
+      "title": "Itinerario di 7 giorni",
+      "days": [
+        "Giorno 1: Arrivo a Windhoek",
+        "Giorno 2: Windhoek → Sossusvlei",
+        "Giorno 3: Sossusvlei e Deadvlei",
+        "Giorno 4: Sossusvlei → Swakopmund",
+        "Giorno 5: Swakopmund → Damaraland",
+        "Giorno 6: Damaraland → Parco Nazionale di Etosha",
+        "Giorno 7: Etosha → Windhoek"
+      ]
+    },
+
+    "pricing": {
+      "title": "Prezzi dell'Avventura in Namibia",
+      "description": "Prezzi dell'avventura privata in base al numero di viaggiatori.",
+      "perPerson": "a persona",
+      "groups": {
+        "one": "1 persona",
+        "two": "2 persone",
+        "threeFour": "3–4 persone",
+        "fiveSix": "5–6 persone",
+        "sevenPlus": "7+ persone"
+      },
+      "prices": {
+        "one": "USD 2.700",
+        "two": "USD 2.050",
+        "threeFour": "USD 1.750",
+        "fiveSix": "USD 1.600",
+        "sevenPlus": "USD 1.450"
+      }
+    },
+
+    "included": {
+      "title": "Cosa è incluso",
+      "items": [
+        "6 notti di pernottamento",
+        "Veicolo privato 4×4",
+        "Guida/autista professionale di lingua inglese",
+        "Tasse dei parchi e di conservazione",
+        "Escursione a Sossusvlei e Deadvlei",
+        "Safari a Etosha",
+        "Attività ed escursioni indicate",
+        "Pasti completi",
+        "Acqua potabile in bottiglia",
+        "Trasferimento dall'aeroporto",
+        "Trasferimento all'aeroporto"
+      ]
+    },
+
+    "experienceHighlights": {
+      "namibDesert": {
+        "title": "Deserto del Namib",
+        "description": "Rimani tra imponenti dune rosse e vivi la bellezza surreale di Sossusvlei e Deadvlei."
+      },
+      "coastalWonders": {
+        "title": "Meraviglie della Costa",
+        "description": "Scopri Swakopmund e l'affascinante punto d'incontro tra il deserto della Namibia e la costa atlantica."
+      },
+      "etoshaWildlife": {
+        "title": "Fauna di Etosha",
+        "description": "Esplora le famose pozze d'acqua di Etosha alla ricerca di elefanti, leoni, rinoceronti, giraffe e zebre."
+      }
+    },
+
+    "cta": {
+      "brand": "Curious Safaris",
+      "title": "Dove deserti infiniti incontrano una fauna straordinaria.",
+      "description": "Esplora i deserti della Namibia, i paesaggi spettacolari, la costa atlantica e una fauna indimenticabile.",
+      "button": "Prenota questo safari"
+    }
+  },
+
+  "botswanaSafari": {
+    "badge": "Safari in Botswana",
+    "title": "Safari di 7 giorni in Botswana",
+    "titleHighlight": "Chobe e Delta dell'Okavango",
+    "description": "Scopri la straordinaria natura selvaggia del Botswana, dalle acque del Delta dell'Okavango alle pianure ricche di fauna di Moremi e alle rive del Chobe National Park, popolate da grandi branchi di elefanti.",
+
+    "destinations": {
+      "okavango": {
+        "title": "Delta dell'Okavango",
+        "alt": "Delta dell'Okavango Botswana",
+        "description": "Naviga tra spettacolari corsi d'acqua in mokoro e scopri elefanti, ippopotami e un'incredibile avifauna."
+      },
+      "moremi": {
+        "title": "Riserva di Moremi",
+        "alt": "Riserva di Moremi Botswana",
+        "description": "Esplora lagune, foreste e pianure aperte in una delle aree faunistiche più straordinarie del Botswana."
+      },
+      "chobe": {
+        "title": "Parco Nazionale di Chobe",
+        "alt": "Elefanti nel Parco Nazionale di Chobe",
+        "description": "Ammira enormi branchi di elefanti lungo il fiume Chobe e vivi esperienze indimenticabili sulla terra e sull'acqua."
+      }
+    },
+
+    "details": {
+      "title": "Dettagli del Safari",
+      "duration": "Durata",
+      "durationValue": "7 giorni / 6 notti",
+      "route": "Itinerario",
+      "routeValue": "Maun – Delta dell'Okavango – Moremi – Chobe – Kasane",
+      "transport": "Trasporto",
+      "transportValue": "Veicolo safari 4×4, imbarcazioni safari e piccoli aerei quando necessari",
+      "highlights": "Punti salienti",
+      "highlightsValue": "Delta dell'Okavango, esperienza in mokoro, fauna di Moremi, elefanti di Chobe e safari in barca sul fiume Chobe"
+    },
+
+    "itinerary": {
+      "title": "Itinerario di 7 giorni",
+      "day1": "Giorno 1: Arrivo a Maun",
+      "day2": "Giorno 2: Maun → Delta dell'Okavango",
+      "day3": "Giorno 3: Giornata intera nel Delta dell'Okavango",
+      "day4": "Giorno 4: Delta dell'Okavango → Moremi",
+      "day5": "Giorno 5: Moremi → Parco Nazionale di Chobe",
+      "day6": "Giorno 6: Giornata intera a Chobe",
+      "day7": "Giorno 7: Chobe → Kasane"
+    },
+
+    "pricing": {
+      "title": "Prezzi del Safari in Botswana",
+      "description": "Prezzi del safari privato in base al numero di viaggiatori.",
+      "perPerson": "a persona",
+      "groups": {
+        "one": "1 persona",
+        "two": "2 persone",
+        "threeFour": "3–4 persone",
+        "fiveSix": "5–6 persone",
+        "sevenPlus": "7+ persone"
+      }
+    },
+
+    "included": {
+      "title": "Cosa è incluso",
+      "items": {
+        "accommodation": "6 notti di pernottamento",
+        "transportation": "Trasporto safari privato",
+        "guide": "Guida professionale di lingua inglese",
+        "okavango": "Esperienza nel Delta dell'Okavango",
+        "mokoro": "Escursione in canoa mokoro",
+        "moremi": "Safari a Moremi",
+        "chobeGameDrives": "Safari nel Parco Nazionale di Chobe",
+        "chobeBoat": "Safari in barca sul fiume Chobe",
+        "parkFees": "Tasse dei parchi e di conservazione",
+        "meals": "Pasti completi",
+        "water": "Acqua potabile in bottiglia",
+        "transfers": "Trasferimenti aeroportuali"
+      }
+    },
+
+    "experienceHighlights": {
+      "okavango": {
+        "title": "Delta dell'Okavango",
+        "description": "Scivola silenziosamente attraverso canali cristallini e scopri l'incredibile natura delle zone umide del Botswana."
+      },
+      "moremi": {
+        "title": "Natura selvaggia di Moremi",
+        "description": "Cerca leoni, leopardi, elefanti, bufali e licaoni africani tra habitat diversi."
+      },
+      "chobe": {
+        "title": "Fiume Chobe",
+        "description": "Ammira alcuni dei più grandi raduni di elefanti dell'Africa dall'acqua e durante i safari."
+      }
+    },
+
+    "cta": {
+      "brand": "Curious Safaris",
+      "title": "Dove il deserto incontra il delta.",
+      "description": "Esplora i corsi d'acqua, la natura selvaggia e la straordinaria fauna del Botswana in un safari indimenticabile.",
+      "button": "Prenota questo safari"
+    }
+  },
+
+  "southAfricaSafari": {
+    "badge": "Safari in Sudafrica",
+    "title": "7 giorni in Sudafrica",
+    "titleHighlight": "Safari e avventura in città",
+    "description": "Vivi il meglio del Sudafrica in un viaggio indimenticabile, dagli iconici paesaggi di Città del Capo e Table Mountain agli emozionanti incontri con i Big Five nel Parco Nazionale Kruger e alla vibrante energia di Johannesburg.",
+
+    "destinations": {
+      "capeTown": {
+        "title": "Città del Capo",
+        "imageAlt": "Table Mountain Città del Capo Sudafrica",
+        "description": "Scopri Table Mountain, Cape Point, Boulders Beach e la spettacolare Penisola del Capo."
+      },
+      "kruger": {
+        "title": "Parco Nazionale Kruger",
+        "imageAlt": "Fauna del Parco Nazionale Kruger",
+        "description": "Cerca i Big Five e vivi indimenticabili safari all'alba, al tramonto e durante l'intera giornata."
+      },
+      "johannesburg": {
+        "title": "Johannesburg",
+        "imageAlt": "Città di Johannesburg Sudafrica",
+        "description": "Scopri la storia, la cultura e i quartieri vivaci della città con un'esperienza opzionale a Soweto."
+      }
+    },
+
+    "details": {
+      "title": "Dettagli del Safari",
+      "durationLabel": "Durata:",
+      "duration": "7 giorni / 6 notti",
+      "routeLabel": "Itinerario:",
+      "route": "Città del Capo – Parco Nazionale Kruger – Johannesburg",
+      "transportLabel": "Trasporto:",
+      "transport": "Veicolo privato e volo nazionale",
+      "highlightsLabel": "Punti salienti:",
+      "highlights": "Table Mountain, Penisola del Capo, Boulders Beach, safari dei Big Five, Parco Nazionale Kruger e Johannesburg"
+    },
+
+    "itinerary": {
+      "title": "Itinerario di 7 giorni",
+      "days": {
+        "day1": "Giorno 1: Arrivo a Città del Capo",
+        "day2": "Giorno 2: Città del Capo e Penisola del Capo",
+        "day3": "Giorno 3: Città del Capo → Parco Nazionale Kruger",
+        "day4": "Giorno 4: Safari di un'intera giornata a Kruger",
+        "day5": "Giorno 5: Safari di un'intera giornata a Kruger",
+        "day6": "Giorno 6: Kruger → Johannesburg",
+        "day7": "Giorno 7: Johannesburg e partenza"
+      }
+    },
+
+    "pricing": {
+      "title": "Prezzi del Pacchetto Sudafrica",
+      "description": "Prezzi del safari privato e dell'avventura in città a persona.",
+      "perPerson": "a persona",
+      "options": {
+        "one": {
+          "group": "1 persona"
+        },
+        "two": {
+          "group": "2 persone"
+        },
+        "three": {
+          "group": "3–4 persone"
+        },
+        "four": {
+          "group": "5–6 persone"
+        },
+        "five": {
+          "group": "7+ persone"
+        }
+      }
+    },
+
+    "included": {
+      "title": "Cosa è incluso",
+      "items": {
+        "accommodation": "6 notti di pernottamento",
+        "flight": "Volo nazionale tra Città del Capo e la regione di Kruger",
+        "transport": "Trasporto privato",
+        "guide": "Guida professionale di lingua inglese",
+        "krugerFees": "Tasse del Parco Nazionale Kruger",
+        "gameDrives": "Safari fotografici",
+        "capeTown": "Visite turistiche a Città del Capo",
+        "johannesburg": "Esperienza a Johannesburg/Soweto",
+        "meals": "Pasti completi durante la parte safari",
+        "water": "Acqua potabile in bottiglia",
+        "airportTransfers": "Trasferimenti aeroportuali"
+      }
+    },
+
+    "experience": {
+      "capeTown": {
+        "title": "Città del Capo",
+        "description": "Vivi Table Mountain, le spettacolari coste, Cape Point e i famosi pinguini di Boulders Beach."
+      },
+      "kruger": {
+        "title": "Safari dei Big Five",
+        "description": "Esplora la natura selvaggia di Kruger alla ricerca di leoni, leopardi, elefanti, rinoceronti e bufali."
+      },
+      "johannesburg": {
+        "title": "Johannesburg",
+        "description": "Scopri la vivace cultura urbana del Sudafrica con un'esperienza in città o a Soweto."
+      }
+    },
+
+    "cta": {
+      "brand": "Curious Safaris",
+      "title": "Dalle città iconiche alla fauna indimenticabile.",
+      "description": "Vivi il meglio del Sudafrica, dagli spettacolari paesaggi di Città del Capo al cuore selvaggio di Kruger.",
+      "button": "Prenota questo safari"
+    },
+
+    "video": {
+      "badge": "Vivi il Sudafrica",
+      "title": "Scopri l'Avventura",
+      "description": "Dai uno sguardo alle indimenticabili esperienze che ti aspettano.",
+      "iframeTitle": "Safari Curious Safaris in Sudafrica",
+      "watchButton": "Guarda su YouTube"
+    }
+  },
+
+  "mozambiqueSafari": {
+    "badge": "Fuga in Mozambico",
+    "title": "7 giorni in Mozambico",
+    "titleHighlight": "Fuga tra spiagge e fauna marina",
+    "description": "Fuggi sulla spettacolare costa dell'Oceano Indiano del Mozambico, combinando la vivace cultura di Maputo con le spiagge di sabbia bianca, le acque turchesi e la vita marina tropicale dell'Arcipelago di Bazaruto.",
+
+    "destinations": {
+      "maputo": {
+        "title": "Maputo",
+        "imageAlt": "Maputo Mozambico",
+        "description": "Scopri la vivace capitale del Mozambico, il lungomare, i mercati locali e la deliziosa cucina mozambicana."
+      },
+      "vilanculos": {
+        "title": "Vilanculos",
+        "imageAlt": "Spiaggia di Vilanculos Mozambico",
+        "description": "Rilassati su splendide spiagge di sabbia bianca affacciate sulle calde acque dell'Oceano Indiano."
+      },
+      "bazaruto": {
+        "title": "Arcipelago di Bazaruto",
+        "imageAlt": "Arcipelago di Bazaruto Mozambico",
+        "description": "Esplora isole tropicali, barriere coralline, banchi di sabbia e acque turchesi cristalline."
+      }
+    },
+
+    "packageDetails": {
+      "title": "Dettagli del Pacchetto",
+      "durationLabel": "Durata:",
+      "duration": "7 giorni / 6 notti",
+      "routeLabel": "Itinerario:",
+      "route": "Maputo – Vilanculos – Arcipelago di Bazaruto",
+      "transportLabel": "Trasporto:",
+      "transport": "Veicolo privato, volo nazionale ed escursioni in barca",
+      "highlightsLabel": "Punti salienti:",
+      "highlights": "Arcipelago di Bazaruto, spiagge di sabbia bianca, snorkeling, escursioni sulle isole, cultura locale e tramonti sull'Oceano Indiano"
+    },
+
+    "itinerary": {
+      "title": "Itinerario di 7 giorni",
+      "days": {
+        "day1": "Giorno 1: Arrivo a Maputo",
+        "day2": "Giorno 2: Maputo → Vilanculos",
+        "day3": "Giorno 3: Arcipelago di Bazaruto",
+        "day4": "Giorno 4: Avventura nell'oceano",
+        "day5": "Giorno 5: Vilanculos e cultura locale",
+        "day6": "Giorno 6: Giornata libera a Vilanculos",
+        "day7": "Giorno 7: Vilanculos → Maputo"
+      }
+    },
+
+    "pricing": {
+      "title": "Prezzi del Pacchetto Mozambico",
+      "description": "Prezzi dell'avventura privata tra spiagge e isole a persona.",
+      "groups": {
+        "one": "1 persona",
+        "two": "2 persone",
+        "threeFour": "3–4 persone",
+        "fiveSix": "5–6 persone",
+        "sevenPlus": "7+ persone"
+      },
+      "perPerson": "a persona"
+    },
+
+    "included": {
+      "title": "Cosa è incluso",
+      "items": {
+        "accommodation": "6 notti di pernottamento",
+        "flights": "Voli nazionali indicati nell'itinerario",
+        "transfers": "Trasferimenti privati",
+        "guide": "Guida professionale di lingua inglese",
+        "boat": "Escursione in barca a Bazaruto",
+        "snorkelling": "Snorkeling e attività marine selezionate",
+        "culture": "Esperienza culturale locale",
+        "meals": "Colazione, pranzo e cena",
+        "water": "Acqua potabile in bottiglia",
+        "airportTransfers": "Trasferimenti aeroportuali"
+      }
+    },
+
+    "experiences": {
+      "beaches": {
+        "title": "Spiagge Tropicali",
+        "description": "Rilassati su spiagge incontaminate di sabbia bianca e goditi spettacolari tramonti sull'Oceano Indiano."
+      },
+      "ocean": {
+        "title": "Avventura nell'Oceano",
+        "description": "Esplora le barriere coralline, fai snorkeling tra i pesci tropicali e naviga attraverso le spettacolari isole di Bazaruto."
+      },
+      "culture": {
+        "title": "Cultura Mozambicana",
+        "description": "Incontra le comunità locali e scopri l'accoglienza, le tradizioni e la cucina del Mozambico."
+      }
+    },
+
+    "cta": {
+      "brand": "Curious Safaris",
+      "title": "Dove le acque turchesi incontrano la cultura africana.",
+      "description": "Fuggi sulle isole incontaminate, sulle spiagge tropicali e lungo la spettacolare costa dell'Oceano Indiano del Mozambico.",
+      "button": "Prenota questo safari"
+    }
+  },
+
+  "moroccoSafari": {
+    "badge": "Avventura in Marocco",
+    "title": "7 giorni in Marocco",
+    "subtitle": "Marrakech, Sahara e città antiche",
+    "description": "Attraversa le antiche medine del Marocco, le spettacolari montagne dell'Atlante e le infinite dune del Sahara. Vivi Marrakech, Ait Ben Haddou, la Valle del Dades, Merzouga e la storica città di Fes in un'indimenticabile avventura nordafricana.",
+
+    "destinations": {
+      "marrakech": {
+        "title": "Marrakech",
+        "imageAlt": "Medina di Marrakech Marocco",
+        "description": "Esplora la vivace Medina, Jemaa el-Fnaa, i colorati souk, i palazzi e la tradizionale cultura marocchina."
+      },
+      "sahara": {
+        "title": "Deserto del Sahara",
+        "imageAlt": "Deserto del Sahara Marocco",
+        "description": "Attraversa le dune dorate a dorso di cammello, ammira il tramonto e trascorri una notte indimenticabile sotto le stelle."
+      },
+      "fes": {
+        "title": "Fes",
+        "imageAlt": "Antica città di Fes Marocco",
+        "description": "Scopri una delle più antiche città imperiali del Marocco, con medine storiche, souk e artigianato tradizionale."
+      }
+    },
+
+    "details": {
+      "title": "Dettagli del Tour",
+      "durationLabel": "Durata:",
+      "duration": "7 giorni / 6 notti",
+      "routeLabel": "Itinerario:",
+      "route": "Marrakech – Ait Ben Haddou – Merzouga – Valle del Dades – Fes – Marrakech",
+      "transportLabel": "Trasporto:",
+      "transport": "4x4/minivan privato con autista-guida professionale",
+      "highlightsLabel": "Punti salienti:",
+      "highlights": "Medina di Marrakech, montagne dell'Atlante, Ait Ben Haddou, Gole del Todra, deserto del Sahara, escursione in cammello e Medina di Fes"
+    },
+
+    "itinerary": {
+      "title": "Itinerario di 7 giorni",
+      "days": {
+        "day1": "Giorno 1: Arrivo a Marrakech",
+        "day2": "Giorno 2: Esperienza nella città di Marrakech",
+        "day3": "Giorno 3: Marrakech → Valle del Dades",
+        "day4": "Giorno 4: Valle del Dades → Merzouga",
+        "day5": "Giorno 5: Merzouga → Fes",
+        "day6": "Giorno 6: Fes → Marrakech",
+        "day7": "Giorno 7: Marrakech e partenza"
+      }
+    },
+
+    "pricing": {
+      "title": "Prezzi del Tour in Marocco",
+      "description": "Prezzi dell'avventura privata in Marocco a persona.",
+      "perPerson": "a persona",
+      "groups": {
+        "one": "1 persona",
+        "two": "2 persone",
+        "threeFour": "3–4 persone",
+        "fiveSix": "5–6 persone",
+        "sevenPlus": "7+ persone"
+      }
+    },
+
+    "included": {
+      "title": "Cosa è incluso",
+      "items": {
+        "accommodation": "6 notti di pernottamento",
+        "transportation": "Trasporto privato",
+        "guide": "Autista-guida professionale di lingua inglese",
+        "airportTransfers": "Trasferimenti aeroportuali",
+        "aitBenHaddou": "Visita ad Ait Ben Haddou",
+        "todraGorge": "Visita alle Gole del Todra",
+        "camelRide": "Escursione in cammello nel Sahara",
+        "desertCamp": "Esperienza in un campo nel deserto",
+        "sightseeing": "Visite turistiche come indicate",
+        "meals": "Colazione, pranzo e cena",
+        "water": "Acqua potabile in bottiglia"
+      }
+    },
+
+    "experiences": {
+      "medinas": {
+        "title": "Medine Antiche",
+        "description": "Passeggia tra Marrakech e Fes, scoprendo architettura storica, souk colorati e artigianato tradizionale."
+      },
+      "sahara": {
+        "title": "Esperienza nel Sahara",
+        "description": "Attraversa il deserto in cammello, ammira il tramonto e trascorri la notte in un tradizionale campo nel Sahara."
+      },
+      "mountains": {
+        "title": "Montagne dell'Atlante",
+        "description": "Attraversa spettacolari paesaggi montani, antiche vallate e spettacolari formazioni rocciose durante il viaggio verso sud."
+      }
+    },
+
+    "cta": {
+      "brand": "Curious Safaris",
+      "title": "Dalle antiche medine alle infinite dune del Sahara.",
+      "description": "Scopri il Marocco attraverso le sue città antiche, i paesaggi spettacolari, la ricca cultura e le indimenticabili esperienze nel deserto.",
+      "button": "Prenota questo safari"
+    }
+  },
+
+  "egyptSafari": {
+    "badge": "Avventura in Egitto",
+    "title": "7 giorni in Egitto",
+    "titleHighlight": "Il Cairo, il Nilo e meraviglie antiche",
+    "description": "Immergiti in migliaia di anni di storia esplorando le leggendarie Piramidi di Giza, gli antichi templi e le tombe reali, mentre navighi lungo l'eterno Nilo da Luxor ad Assuan.",
+
+    "destinations": {
+      "cairo": {
+        "title": "Il Cairo",
+        "imageAlt": "Piramidi di Giza Il Cairo Egitto",
+        "description": "Scopri le Piramidi di Giza, la Sfinge, il Museo Egizio e lo storico bazar Khan el-Khalili."
+      },
+      "luxor": {
+        "title": "Luxor",
+        "imageAlt": "Antico tempio di Luxor Egitto",
+        "description": "Esplora il Tempio di Karnak, il Tempio di Luxor, la Valle dei Re e il magnifico Tempio di Hatshepsut."
+      },
+      "nile": {
+        "title": "Nilo e Assuan",
+        "imageAlt": "Fiume Nilo Assuan Egitto",
+        "description": "Naviga sul Nilo e scopri Edfu, Kom Ombo, il Tempio di Philae e gli splendidi paesaggi intorno ad Assuan."
+      }
+    },
+
+    "details": {
+      "title": "Dettagli del Tour",
+      "durationLabel": "Durata:",
+      "duration": "7 giorni / 6 notti",
+      "routeLabel": "Itinerario:",
+      "route": "Il Cairo – Luxor – Crociera sul Nilo – Assuan – Il Cairo",
+      "transportLabel": "Trasporto:",
+      "transport": "Veicolo privato, volo nazionale e crociera sul Nilo",
+      "highlightsLabel": "Punti salienti:",
+      "highlights": "Piramidi di Giza, Sfinge, antichi templi, Valle dei Re, crociera sul Nilo e Assuan"
+    },
+
+    "itinerary": {
+      "title": "Itinerario di 7 giorni",
+      "day1": "Giorno 1: Arrivo al Cairo",
+      "day2": "Giorno 2: Piramidi e antico Cairo",
+      "day3": "Giorno 3: Il Cairo → Luxor e crociera sul Nilo",
+      "day4": "Giorno 4: Luxor e Valle dei Re",
+      "day5": "Giorno 5: Edfu e Kom Ombo",
+      "day6": "Giorno 6: Assuan → Il Cairo",
+      "day7": "Giorno 7: Il Cairo e partenza"
+    },
+
+    "pricing": {
+      "title": "Prezzi del Tour in Egitto",
+      "description": "Prezzi dell'avventura tra meraviglie antiche e crociera sul Nilo a persona.",
+      "perPerson": "a persona",
+      "groups": {
+        "one": "1 persona",
+        "two": "2 persone",
+        "threeFour": "3–4 persone",
+        "fiveSix": "5–6 persone",
+        "sevenPlus": "7+ persone"
+      }
+    },
+
+    "included": {
+      "title": "Cosa è incluso",
+      "items": {
+        "accommodation": "6 notti di pernottamento",
+        "nileCruise": "Crociera sul Nilo",
+        "domesticFlights": "Voli nazionali indicati nell'itinerario",
+        "privateTransportation": "Trasporto privato",
+        "professionalGuide": "Guida professionale di lingua inglese",
+        "entranceFees": "Ingressi alle attrazioni indicate",
+        "pyramids": "Visita alle Piramidi e alla Sfinge",
+        "valleyOfKings": "Valle dei Re",
+        "temples": "Templi di Karnak, Luxor, Edfu, Kom Ombo e Philae",
+        "nileDinnerCruise": "Crociera con cena sul Nilo",
+        "meals": "Colazione, pranzo e cena",
+        "water": "Acqua potabile in bottiglia",
+        "airportTransfers": "Trasferimenti aeroportuali"
+      }
+    },
+
+    "experiences": {
+      "ancient": {
+        "title": "Meraviglie Antiche",
+        "description": "Ammira le leggendarie Piramidi di Giza e la Sfinge ed esplora l'affascinante storia dell'antico Egitto."
+      },
+      "nile": {
+        "title": "Crociera sul Nilo",
+        "description": "Naviga tra Luxor e Assuan scoprendo magnifici templi e gli eterni paesaggi del Nilo."
+      },
+      "temples": {
+        "title": "Templi Antichi",
+        "description": "Esplora Karnak, Luxor, Edfu, Kom Ombo e Philae, ognuno dei quali racconta un altro capitolo dell'antica civiltà egizia."
+      }
+    },
+
+    "cta": {
+      "brand": "Curious Safaris",
+      "title": "Cammina attraverso le pagine della storia.",
+      "description": "Dalle Piramidi di Giza all'eterno Nilo, vivi le antiche meraviglie dell'Egitto in un viaggio indimenticabile.",
+      "button": "Prenota questo safari"
+    }
+  },
+
+  "sudanSafari": {
+    "badge": "Avventura in Sudan",
+    "title": "7 giorni in Sudan",
+    "subtitle": "Antica Nubia, piramidi e Nilo",
+    "description": "Viaggia attraverso l'antico cuore nubiano dell'Africa e scopri straordinarie piramidi, tesori archeologici, paesaggi desertici e comunità tradizionali lungo il Nilo.",
+
+    "destinations": {
+      "meroe": {
+        "title": "Piramidi di Meroë",
+        "alt": "Antiche piramidi e paesaggio desertico",
+        "description": "Scopri le spettacolari antiche piramidi di Meroë che si ergono nel deserto nubiano."
+      },
+      "barkal": {
+        "title": "Jebel Barkal",
+        "alt": "Paesaggio del deserto nubiano",
+        "description": "Esplora la montagna sacra, gli antichi templi e i monumenti archeologici del regno di Napata."
+      },
+      "nile": {
+        "title": "Il Nilo",
+        "alt": "Paesaggio del fiume Nilo in Sudan",
+        "description": "Segui il Nilo attraverso villaggi nubiani tradizionali, antichi insediamenti e spettacolari paesaggi desertici."
+      }
+    },
+
+    "tourDetails": {
+      "title": "Dettagli del Tour",
+      "duration": "Durata",
+      "durationValue": "7 giorni / 6 notti",
+      "route": "Itinerario",
+      "routeValue": "Khartoum – Meroë – Karima – Old Dongola – Khartoum",
+      "transport": "Trasporto",
+      "transportValue": "4x4 privato con guida professionale",
+      "highlights": "Punti salienti",
+      "highlightsValue": "Piramidi di Meroë, Jebel Barkal, piramidi di Nuri, Old Dongola e villaggi nubiani lungo il Nilo"
+    },
+
+    "itinerary": {
+      "title": "Itinerario di 7 giorni",
+      "day1": "Giorno 1: Arrivo a Khartoum",
+      "day2": "Giorno 2: Khartoum → Meroë",
+      "day3": "Giorno 3: Meroë → Karima",
+      "day4": "Giorno 4: Jebel Barkal e Nuri",
+      "day5": "Giorno 5: Karima → Old Dongola",
+      "day6": "Giorno 6: Dongola → Khartoum",
+      "day7": "Giorno 7: Khartoum e partenza"
+    },
+
+    "pricing": {
+      "title": "Prezzi del Tour in Sudan",
+      "description": "Prezzo indicativo per l'avventura privata proposta. La disponibilità attuale e l'accesso in sicurezza devono essere confermati.",
+      "perPerson": "a persona",
+      "onePerson": "1 persona",
+      "twoPeople": "2 persone",
+      "threeFourPeople": "3–4 persone",
+      "fiveSixPeople": "5–6 persone",
+      "sevenPlusPeople": "7+ persone"
+    },
+
+    "included": {
+      "title": "Cosa è incluso",
+      "items": [
+        "6 notti di pernottamento",
+        "Trasporto privato 4x4",
+        "Guida locale professionale",
+        "Ingressi ai siti archeologici",
+        "Visita a Meroë",
+        "Visita a Jebel Barkal",
+        "Visita alle piramidi di Nuri",
+        "Visita a Old Dongola",
+        "Pasti completi durante il tour",
+        "Acqua potabile in bottiglia",
+        "Trasferimenti aeroportuali"
+      ]
+    },
+
+    "safety": {
+      "title": "Importante avviso di viaggio e sicurezza",
+      "description": "Il Sudan è attualmente una destinazione ad alto rischio a causa del conflitto in corso e della situazione di sicurezza. Questo itinerario è un esempio di proposta di viaggio e non deve essere commercializzato come attualmente prenotabile senza aver prima verificato l'accesso sicuro, i permessi, le condizioni alle frontiere, la disponibilità degli alloggi e gli avvisi di viaggio ufficiali."
+    },
+
+    "highlights": {
+      "ancientNubia": {
+        "title": "Antica Nubia",
+        "description": "Esplora straordinarie piramidi, templi e siti archeologici legati agli antichi regni nubiani."
+      },
+      "desert": {
+        "title": "Deserto Nubiano",
+        "description": "Attraversa vasti paesaggi desertici e vivi gli spettacolari scenari tra antichi insediamenti."
+      },
+      "nileCulture": {
+        "title": "Cultura del Nilo",
+        "description": "Segui il Nilo attraverso i tradizionali villaggi nubiani e scopri l'ospitalità locale e tradizioni secolari."
+      }
+    },
+
+    "cta": {
+      "brand": "Curious Safaris",
+      "title": "Scopri l'antico cuore nubiano dell'Africa.",
+      "description": "Vivi straordinari tesori archeologici, spettacolari paesaggi desertici e l'eterna cultura del Nilo.",
+      "notice": "La disponibilità del viaggio è soggetta alle attuali condizioni di sicurezza, accesso e alle disposizioni ufficiali."
+    }
+  }
+}
+
+
+
+
+  

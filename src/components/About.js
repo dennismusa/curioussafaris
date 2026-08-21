@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {  FaFacebookF,  FaInstagram,  FaWhatsapp,  FaYoutube,  FaArrowRight,  FaMapMarkerAlt,  FaChevronUp,  FaGlobe,} from "react-icons/fa";
-
+import { useTranslation } from "react-i18next";
 //import founder from "../assets/founder.jpg";
 import airbaloon from "../assets/airbaloon.jpg";
 import discover1 from "../assets/discover1.jpg";
@@ -19,54 +19,72 @@ import discover1 from "../assets/discover1.jpg";
 
 //import kenya from "../assets/kenya.jpg";
 //import image17 from "../assets/image17.jpg";
-
+import useLanguageSync from "../hooks/useLanguageSync";
 
 function About() {
+ useLanguageSync();
+
+  const { t, i18n } = useTranslation();
+
+
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-[65vh] flex items-center justify-center overflow-hidden">
-        <img
-          src={airbaloon}
-          alt="About curious Safaris"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+      <section className="relative flex h-[65vh] items-center justify-center overflow-hidden">
 
-        <div className="absolute inset-0 bg-black/60"></div>
+  {/* Background Image */}
+  <img
+    src={airbaloon}
+    alt={t("aboutHero.badge")}
+    className="absolute inset-0 h-full w-full object-cover"
+  />
 
-        <div className="relative z-10 text-center max-w-4xl px-6">
-          <span className="inline-block px-4 py-2 rounded-full bg-[#D4AF37]/20 text-[#D4AF37] border border-[#D4AF37] uppercase tracking-widest text-xs">
-            Welcome to curious Safaris
-          </span>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/60"></div>
 
-          <h1 className="mt-6 text-5xl md:text-7xl font-black text-white leading-tight">
-            About <span className="text-[#D4AF37]">Us</span>
-          </h1>
+  {/* Content */}
+  <div className="relative z-10 max-w-4xl px-6 text-center">
 
-          <p className="mt-6 text-lg text-gray-200 leading-8">
-            We create unforgettable safari adventures, beach holidays,
-            road trips, and tailor-made travel experiences across Kenya
-            and East Africa.
-          </p>
+    {/* Badge */}
+    <span className="inline-block rounded-full border border-[#D4AF37] bg-[#D4AF37]/20 px-4 py-2 text-xs uppercase tracking-widest text-[#D4AF37]">
+      {t("aboutHero.badge")}
+    </span>
 
-          <div className="mt-10 flex justify-center gap-4">
-            <Link
-              to="/Destinations"
-              className="bg-[#D4AF37] text-black px-8 py-4 rounded-full font-bold hover:scale-105 transition"
-            >
-              Explore Tours
-            </Link>
+    {/* Heading */}
+    <h1 className="mt-6 text-5xl font-black leading-tight text-white md:text-7xl">
+      {t("aboutHero.title")}{" "}
+      <span className="text-[#D4AF37]">
+        {t("aboutHero.titleHighlight")}
+      </span>
+    </h1>
 
-            <Link
-              to="/contact"
-              className="border border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-black transition"
-            >
-              Contact Us
-            </Link>
-          </div>
-        </div>
-      </section>    
-      
+    {/* Description */}
+    <p className="mt-6 text-lg leading-8 text-gray-200">
+      {t("aboutHero.description")}
+    </p>
+
+    {/* Buttons */}
+    <div className="mt-10 flex justify-center gap-4">
+
+      <Link
+        to="/destinations"
+        className="rounded-full bg-[#D4AF37] px-8 py-4 font-bold text-black transition hover:scale-105"
+      >
+        {t("aboutHero.explore")}
+      </Link>
+
+      <Link
+        to="/contact"
+        className="rounded-full border border-white px-8 py-4 text-white transition hover:bg-white hover:text-black"
+      >
+        {t("aboutHero.contact")}
+      </Link>
+
+    </div>
+
+  </div>
+
+</section>
           {/* About Company */}
       
       
@@ -80,48 +98,39 @@ function About() {
 {/* ================= TourGuideOmbima Founder Section ================= */}
 <section className="relative overflow-hidden bg-[#F5F0E6] py-20 md:py-24">
 
-  {/* ================= Subtle Background Decoration ================= */}
+  {/* Background Decoration */}
   <div className="absolute -left-32 top-10 h-72 w-72 rounded-full bg-[#C8A94C]/10 blur-[100px]" />
   <div className="absolute -right-32 bottom-0 h-72 w-72 rounded-full bg-[#D6B98C]/15 blur-[100px]" />
 
   <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
 
-    {/* ================= Main Content ================= */}
     <div className="grid items-center gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
 
-
-      {/* ================================================= */}
       {/* FOUNDER IMAGE */}
-      {/* ================================================= */}
-
       <div className="group relative mx-auto w-full max-w-md">
 
-        {/* Soft Glow */}
         <div className="absolute -inset-3 rounded-[35px] bg-[#C8A94C]/20 blur-xl opacity-60 transition duration-700 group-hover:opacity-100" />
 
-        {/* Image Container */}
         <div className="relative overflow-hidden rounded-[30px] border border-[#C8A94C]/20 bg-white p-2 shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
 
           <div className="relative overflow-hidden rounded-[24px]">
 
             <img
               src={require("../assets/founder.jpg")}
-              alt="Ombima - Founder of TourGuideOmbima"
+              alt={t("founder.eyebrow")}
               className="h-[400px] w-full object-cover object-center transition duration-700 ease-out group-hover:scale-105"
             />
 
-            {/* Image Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent" />
 
-            {/* Image Text */}
             <div className="absolute bottom-5 left-5">
 
               <p className="text-[10px] font-bold uppercase tracking-[3px] text-[#E4CA72]">
-                Founder & Safari Guide
+                {t("founder.role")}
               </p>
 
               <h3 className="mt-1 text-2xl font-black text-white">
-                Ombima
+                Curious Safaris
               </h3>
 
             </div>
@@ -134,11 +143,11 @@ function About() {
         <div className="absolute -bottom-5 -right-3 rounded-2xl border border-[#C8A94C]/20 bg-white px-5 py-4 shadow-xl">
 
           <p className="text-[10px] font-bold uppercase tracking-[2px] text-gray-400">
-            Philosophy
+            {t("founder.philosophy")}
           </p>
 
           <p className="mt-1 text-sm font-bold text-[#8A6B20]">
-            Travel Differently
+            {t("founder.travelDifferently")}
           </p>
 
         </div>
@@ -146,10 +155,7 @@ function About() {
       </div>
 
 
-      {/* ================================================= */}
       {/* FOUNDER CONTENT */}
-      {/* ================================================= */}
-
       <div>
 
         {/* Eyebrow */}
@@ -158,7 +164,7 @@ function About() {
           <span className="h-px w-10 bg-[#C8A94C]" />
 
           <span className="text-xs font-bold uppercase tracking-[3px] text-[#9B7925]">
-            Meet the Founder
+            {t("founder.eyebrow")}
           </span>
 
         </div>
@@ -167,10 +173,10 @@ function About() {
         {/* Heading */}
         <h2 className="text-4xl font-black leading-tight text-[#171510] md:text-5xl">
 
-          The person behind
+          {t("founder.title")}
 
           <span className="block text-[#B28B2C]">
-            the adventure.
+            {t("founder.titleHighlight")}
           </span>
 
         </h2>
@@ -179,23 +185,15 @@ function About() {
         {/* Introduction */}
         <p className="mt-6 max-w-2xl text-lg leading-8 text-[#4F4A40]">
 
-          <span className="font-bold text-[#171510]">
-            TourGuideOmbima
-          </span>{" "}
-          is the personal safari and travel brand of an experienced African
-          tour guide dedicated to creating authentic, unforgettable journeys
-          across Africa.
+          {t("founder.intro")}
 
         </p>
 
 
-        {/* Detailed Description */}
+        {/* Description */}
         <p className="mt-4 max-w-2xl text-sm leading-7 text-[#6B6559]">
 
-          From wildlife safaris and cultural experiences to horse riding,
-          photography trips, hot-air balloon adventures and beach escapes,
-          every experience is designed to connect travelers with the heart
-          of Africa.
+          {t("founder.description")}
 
         </p>
 
@@ -204,7 +202,7 @@ function About() {
         <div className="mt-7 border-l-2 border-[#C8A94C] pl-5">
 
           <p className="text-base font-medium italic leading-7 text-[#4F4A40]">
-            “Explore Africa. Get curious. Travel with Ombima.”
+            “{t("founder.quote")}”
           </p>
 
         </div>
@@ -214,11 +212,11 @@ function About() {
         <div className="mt-8 flex flex-wrap gap-3">
 
           {[
-            "Wildlife",
-            "Culture",
-            "Adventure",
-            "Photography",
-            "Beach Escapes",
+            t("founder.tags.wildlife"),
+            t("founder.tags.culture"),
+            t("founder.tags.adventure"),
+            t("founder.tags.photography"),
+            t("founder.tags.beach"),
           ].map((item) => (
 
             <div
@@ -232,27 +230,22 @@ function About() {
 
         </div>
 
-
-        {/* Buttons */}
-        
-
       </div>
 
     </div>
 
 
-    {/* ================= Bottom Mini Statement ================= */}
-
+    {/* Bottom Statement */}
     <div className="mt-16 border-t border-[#C8A94C]/20 pt-6">
 
       <div className="flex flex-col gap-2 text-center md:flex-row md:items-center md:justify-between md:text-left">
 
         <p className="text-xs uppercase tracking-[3px] text-[#9B7925]">
-          TourGuideOmbima
+          {t("founder.bottomLabel")}
         </p>
 
         <p className="text-sm text-[#756F63]">
-          Personal journeys. Local knowledge. Africa, your way.
+          {t("founder.bottomText")}
         </p>
 
       </div>
@@ -266,219 +259,312 @@ function About() {
 
       {/* ABOUT SECTION */}
 
+{/* ================= DISCOVER CURIOUS SAFARIS ================= */}
 <section className="relative overflow-hidden bg-[#F8F6F1] py-28">
+
   {/* Background Effects */}
 
-  <div className="absolute -top-40 left-0 h-[450px] w-[450px] rounded-full bg-emerald-100/60 blur-3xl"></div>
+  <div className="absolute -top-40 left-0 h-[450px] w-[450px] rounded-full bg-emerald-100/60 blur-3xl" />
 
-  <div className="absolute -bottom-40 right-0 h-[450px] w-[450px] rounded-full bg-yellow-100/60 blur-3xl"></div>
+  <div className="absolute -bottom-40 right-0 h-[450px] w-[450px] rounded-full bg-yellow-100/60 blur-3xl" />
 
   <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
+
     <div className="grid items-center gap-20 lg:grid-cols-2">
-      {/* IMAGE */}
+
+      {/* ================= IMAGE ================= */}
 
       <div className="relative">
+
         <div className="overflow-hidden rounded-[40px] shadow-2xl">
+
           <img
             src={discover1}
-            alt="Curious Safaris"
+            alt={t("discover.imageAlt")}
             className="h-[600px] w-full object-cover transition duration-700 hover:scale-105"
           />
+
         </div>
 
+        {/* Floating Card */}
+
         <div className="absolute -bottom-8 -right-8 hidden rounded-[30px] bg-white p-8 shadow-xl md:block">
+
           <h3 className="text-4xl font-black text-emerald-600">
-            Africa
+            {t("discover.imageTitle")}
           </h3>
 
           <p className="mt-2 text-gray-600">
-            Your journey starts here.
+            {t("discover.subtitle")}
           </p>
+
         </div>
+
       </div>
 
-      {/* CONTENT */}
+
+      {/* ================= CONTENT ================= */}
 
       <div>
+
+        {/* Eyebrow */}
+
         <span className="rounded-full bg-emerald-100 px-5 py-2 text-xs font-bold uppercase tracking-[4px] text-emerald-700">
-          About Curious Safaris
+          {t("discover.destinations")}
         </span>
 
+
+        {/* Heading */}
+
         <h2 className="mt-8 text-5xl font-black leading-tight text-gray-900 md:text-6xl">
-          Lost in the
+
+          {t("discover.title")}
+
           <span className="block text-[#C8A94C]">
-            Right Direction
+            {t("discover.subtitle")}
           </span>
+
         </h2>
 
+
+        {/* Description 1 */}
+
         <p className="mt-8 text-lg leading-8 text-gray-600">
-          Curious Safaris is an Africa-based travel company
-          offering private, customized, and unforgettable
-          journeys across the continent.
+          {t("discover.description1")}
         </p>
+
+
+        {/* Description 2 */}
 
         <p className="mt-6 text-lg leading-8 text-gray-600">
-          We organize wildlife safaris, luxury experiences,
-          beach holidays, horse-riding adventures, photography
-          tours, cultural experiences, and tailor-made journeys
-          designed around your travel style.
+          {t("discover.description2")}
         </p>
 
-        <p className="mt-6 text-lg leading-8 text-gray-600">
-          From Kenya and Tanzania to Namibia, South Africa,
-          Uganda, Rwanda, Egypt, Morocco, and beyond, we help
-          travelers discover Africa through authentic and
-          unforgettable experiences.
-        </p>
 
-        {/* FEATURES */}
+        {/* ================= FEATURES ================= */}
 
         <div className="mt-10 grid gap-5 sm:grid-cols-2">
-          <div className="rounded-2xl bg-white p-6 shadow-lg">
-            <h3 className="text-xl font-bold">🦁 Wildlife Safaris</h3>
+
+          {/* Wildlife */}
+
+          <div className="rounded-2xl bg-white p-6 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+
+            <h3 className="text-xl font-bold">
+              🦁 {t("discover.features.wildlife.title")}
+            </h3>
+
+            <p className="mt-3 text-sm leading-6 text-gray-600">
+              {t("discover.features.wildlife.description")}
+            </p>
+
           </div>
 
-          <div className="rounded-2xl bg-white p-6 shadow-lg">
-            <h3 className="text-xl font-bold">🏖️ Beach Holidays</h3>
+
+          {/* Gorilla */}
+
+          <div className="rounded-2xl bg-white p-6 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+
+            <h3 className="text-xl font-bold">
+              🦍 {t("discover.features.gorilla.title")}
+            </h3>
+
+            <p className="mt-3 text-sm leading-6 text-gray-600">
+              {t("discover.features.gorilla.description")}
+            </p>
+
           </div>
 
-          <div className="rounded-2xl bg-white p-6 shadow-lg">
-            <h3 className="text-xl font-bold">📷 Photography Tours</h3>
+
+          {/* Culture */}
+
+          <div className="rounded-2xl bg-white p-6 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-xl sm:col-span-2">
+
+            <h3 className="text-xl font-bold">
+              🌍 {t("discover.features.culture.title")}
+            </h3>
+
+            <p className="mt-3 text-sm leading-6 text-gray-600">
+              {t("discover.features.culture.description")}
+            </p>
+
           </div>
 
-          <div className="rounded-2xl bg-white p-6 shadow-lg">
-            <h3 className="text-xl font-bold">🌍 Tailor-Made Adventures</h3>
-          </div>
         </div>
 
-        {/* BUTTON */}
 
-       
+        {/* ================= BUTTONS ================= */}
+
+        <div className="mt-10 flex flex-wrap gap-4">
+
+          <Link
+            to="/contact"
+            className="rounded-full bg-[#0B6E4F] px-8 py-4 font-bold text-white shadow-lg transition duration-300 hover:-translate-y-1 hover:bg-[#095A41] hover:shadow-xl"
+          >
+            {t("discover.plan")}
+          </Link>
+
+          <Link
+            to="/destinations"
+            className="rounded-full border-2 border-[#0B6E4F] px-8 py-4 font-bold text-[#0B6E4F] transition duration-300 hover:-translate-y-1 hover:bg-[#0B6E4F] hover:text-white"
+          >
+            {t("discover.explore")}
+          </Link>
+
+        </div>
+
       </div>
+
     </div>
+
   </div>
+
 </section>
 
 
         {/* Vision, Mission & Core Values */}
-      <section className="py-24 bg-[#F8FAF9]">
-        <div className="max-w-7xl mx-auto px-6">
+      {/* ================= VISION, MISSION & CORE VALUES ================= */}
+<section className="py-24 bg-[#F8FAF9]">
+  <div className="max-w-7xl mx-auto px-6">
 
-          {/* Heading */}
-          <div className="text-center mb-16">
-            <span className="text-[#D4AF37] uppercase tracking-[0.3em] font-semibold">
-              Our Purpose
-            </span>
+    {/* ================= HEADING ================= */}
+    <div className="text-center mb-16">
+      <span className="text-[#D4AF37] uppercase tracking-[0.3em] font-semibold">
+        {t("about.purpose.eyebrow")}
+      </span>
 
-            <h2 className="mt-4 text-4xl md:text-5xl font-black text-[#06261D]">
-              Vision, Mission & Core Values
-            </h2>
+      <h2 className="mt-4 text-4xl md:text-5xl font-black text-[#06261D]">
+        {t("about.purpose.title")}
+      </h2>
 
-            <p className="mt-5 text-gray-600 max-w-3xl mx-auto leading-8">
-              Everything we do is driven by our commitment to creating
-              unforgettable journeys while delivering exceptional service,
-              safety, and sustainable tourism.
-            </p>
-          </div>
+      <p className="mt-5 text-gray-600 max-w-3xl mx-auto leading-8">
+        {t("about.purpose.description")}
+      </p>
+    </div>
 
-          {/* Vision & Mission */}
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
+    {/* ================= VISION & MISSION ================= */}
+    <div className="grid md:grid-cols-2 gap-8 mb-16">
 
-            <div className="bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
-              <div className="w-16 h-16 rounded-full bg-[#0B6E4F] text-white flex items-center justify-center text-3xl mb-6">
-                👁️
-              </div>
-
-              <h3 className="text-2xl font-bold text-[#06261D] mb-4">
-                Our Vision
-              </h3>
-
-              <p className="text-gray-600 leading-8">
-                To become East Africa's most trusted safari and travel
-                brand by delivering unforgettable journeys in royal
-                comfort while showcasing Africa's natural beauty.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
-              <div className="w-16 h-16 rounded-full bg-[#D4AF37] text-black flex items-center justify-center text-3xl mb-6">
-                🎯
-              </div>
-
-              <h3 className="text-2xl font-bold text-[#06261D] mb-4">
-                Our Mission
-              </h3>
-
-              <p className="text-gray-600 leading-8">
-                To provide safe, affordable, professional and personalized
-                travel experiences while promoting responsible and
-                sustainable tourism throughout East Africa.
-              </p>
-            </div>
-
-          </div>
-
-          {/* Core Values */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            <div className="bg-white rounded-2xl p-8 text-center shadow hover:shadow-xl transition">
-              <div className="text-5xl mb-4">🤝</div>
-              <h3 className="font-bold text-xl text-[#06261D]">Integrity</h3>
-              <p className="mt-3 text-gray-600">
-                We operate with honesty, transparency and accountability.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 text-center shadow hover:shadow-xl transition">
-              <div className="text-5xl mb-4">⭐</div>
-              <h3 className="font-bold text-xl text-[#06261D]">Excellence</h3>
-              <p className="mt-3 text-gray-600">
-                We strive to exceed expectations in every journey.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 text-center shadow hover:shadow-xl transition">
-              <div className="text-5xl mb-4">🛡️</div>
-              <h3 className="font-bold text-xl text-[#06261D]">Safety</h3>
-              <p className="mt-3 text-gray-600">
-                Your comfort and security remain our highest priority.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 text-center shadow hover:shadow-xl transition">
-              <div className="text-5xl mb-4">🌿</div>
-              <h3 className="font-bold text-xl text-[#06261D]">Sustainability</h3>
-              <p className="mt-3 text-gray-600">
-                We support responsible tourism and environmental conservation.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 text-center shadow hover:shadow-xl transition">
-              <div className="text-5xl mb-4">❤️</div>
-              <h3 className="font-bold text-xl text-[#06261D]">
-                Customer First
-              </h3>
-              <p className="mt-3 text-gray-600">
-                Every adventure is designed around our clients' needs.
-              </p>
-            </div>
-
-            <div className="bg-gradient-to-br from-[#0B6E4F] to-[#06261D] rounded-2xl p-8 text-center text-white shadow-xl">
-              <div className="text-5xl mb-4">🦁</div>
-              <h3 className="font-bold text-2xl">
-                Experience the Wild
-              </h3>
-              <p className="mt-3 text-green-100">
-                Creating unforgettable safari memories in royal comfort.
-              </p>
-            </div>
-
-          </div>
-
+      {/* Vision */}
+      <div className="bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+        <div className="w-16 h-16 rounded-full bg-[#0B6E4F] text-white flex items-center justify-center text-3xl mb-6">
+          👁️
         </div>
-      </section>
+
+        <h3 className="text-2xl font-bold text-[#06261D] mb-4">
+          {t("about.purpose.vision.title")}
+        </h3>
+
+        <p className="text-gray-600 leading-8">
+          {t("about.purpose.vision.description")}
+        </p>
+      </div>
+
+      {/* Mission */}
+      <div className="bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+        <div className="w-16 h-16 rounded-full bg-[#D4AF37] text-black flex items-center justify-center text-3xl mb-6">
+          🎯
+        </div>
+
+        <h3 className="text-2xl font-bold text-[#06261D] mb-4">
+          {t("about.purpose.mission.title")}
+        </h3>
+
+        <p className="text-gray-600 leading-8">
+          {t("about.purpose.mission.description")}
+        </p>
+      </div>
+
+    </div>
+
+    {/* ================= CORE VALUES ================= */}
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      {/* Integrity */}
+      <div className="bg-white rounded-2xl p-8 text-center shadow hover:shadow-xl transition">
+        <div className="text-5xl mb-4">🤝</div>
+
+        <h3 className="font-bold text-xl text-[#06261D]">
+          {t("about.purpose.values.integrity.title")}
+        </h3>
+
+        <p className="mt-3 text-gray-600">
+          {t("about.purpose.values.integrity.description")}
+        </p>
+      </div>
+
+      {/* Excellence */}
+      <div className="bg-white rounded-2xl p-8 text-center shadow hover:shadow-xl transition">
+        <div className="text-5xl mb-4">⭐</div>
+
+        <h3 className="font-bold text-xl text-[#06261D]">
+          {t("about.purpose.values.excellence.title")}
+        </h3>
+
+        <p className="mt-3 text-gray-600">
+          {t("about.purpose.values.excellence.description")}
+        </p>
+      </div>
+
+      {/* Safety */}
+      <div className="bg-white rounded-2xl p-8 text-center shadow hover:shadow-xl transition">
+        <div className="text-5xl mb-4">🛡️</div>
+
+        <h3 className="font-bold text-xl text-[#06261D]">
+          {t("about.purpose.values.safety.title")}
+        </h3>
+
+        <p className="mt-3 text-gray-600">
+          {t("about.purpose.values.safety.description")}
+        </p>
+      </div>
+
+      {/* Sustainability */}
+      <div className="bg-white rounded-2xl p-8 text-center shadow hover:shadow-xl transition">
+        <div className="text-5xl mb-4">🌿</div>
+
+        <h3 className="font-bold text-xl text-[#06261D]">
+          {t("about.purpose.values.sustainability.title")}
+        </h3>
+
+        <p className="mt-3 text-gray-600">
+          {t("about.purpose.values.sustainability.description")}
+        </p>
+      </div>
+
+      {/* Customer First */}
+      <div className="bg-white rounded-2xl p-8 text-center shadow hover:shadow-xl transition">
+        <div className="text-5xl mb-4">❤️</div>
+
+        <h3 className="font-bold text-xl text-[#06261D]">
+          {t("about.purpose.values.customerFirst.title")}
+        </h3>
+
+        <p className="mt-3 text-gray-600">
+          {t("about.purpose.values.customerFirst.description")}
+        </p>
+      </div>
+
+      {/* Experience */}
+      <div className="bg-gradient-to-br from-[#0B6E4F] to-[#06261D] rounded-2xl p-8 text-center text-white shadow-xl">
+        <div className="text-5xl mb-4">🦁</div>
+
+        <h3 className="font-bold text-2xl">
+          {t("about.purpose.values.experience.title")}
+        </h3>
+
+        <p className="mt-3 text-green-100">
+          {t("about.purpose.values.experience.description")}
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
       
        {/* ================= WHY CHOOSE US ================= */}
+{/* ================= WHY CHOOSE US ================= */}
+
 <section className="py-24 bg-white">
   <div className="max-w-7xl mx-auto px-6">
 
@@ -487,24 +573,25 @@ function About() {
     <div className="text-center max-w-3xl mx-auto mb-20">
 
       <span className="uppercase tracking-[0.3em] text-[#D4AF37] font-semibold">
-        Why Choose Us
+        {t("whyChooseUs.badge")}
       </span>
 
       <h2 className="mt-4 text-4xl md:text-5xl font-black text-[#06261D]">
-        Your Trusted Safari & Travel Partner
+        {t("whyChooseUs.title")}
       </h2>
 
       <p className="mt-6 text-gray-600 leading-8">
-        We are committed to providing unforgettable travel experiences
-        through exceptional service, expert planning, and personalized
-        adventures across East Africa.
+        {t("whyChooseUs.description")}
       </p>
 
     </div>
 
+
     {/* Features */}
 
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      {/* Tailor-Made */}
 
       <div className="group bg-[#F8FAF9] rounded-3xl p-8 hover:bg-[#0B6E4F] transition duration-500">
 
@@ -513,15 +600,17 @@ function About() {
         </div>
 
         <h3 className="text-2xl font-bold text-[#06261D] group-hover:text-white">
-          Tailor-Made Safaris
+          {t("whyChooseUs.features.tailor.title")}
         </h3>
 
         <p className="mt-4 text-gray-600 group-hover:text-green-100 leading-7">
-          Every itinerary is customized to match your travel style,
-          budget and dream destinations.
+          {t("whyChooseUs.features.tailor.description")}
         </p>
 
       </div>
+
+
+      {/* Affordable */}
 
       <div className="group bg-[#F8FAF9] rounded-3xl p-8 hover:bg-[#0B6E4F] transition duration-500">
 
@@ -530,15 +619,17 @@ function About() {
         </div>
 
         <h3 className="text-2xl font-bold text-[#06261D] group-hover:text-white">
-          Affordable Pricing
+          {t("whyChooseUs.features.affordable.title")}
         </h3>
 
         <p className="mt-4 text-gray-600 group-hover:text-green-100 leading-7">
-          Competitive packages with no hidden costs while maintaining
-          premium service quality.
+          {t("whyChooseUs.features.affordable.description")}
         </p>
 
       </div>
+
+
+      {/* Comfortable Travel */}
 
       <div className="group bg-[#F8FAF9] rounded-3xl p-8 hover:bg-[#0B6E4F] transition duration-500">
 
@@ -547,15 +638,17 @@ function About() {
         </div>
 
         <h3 className="text-2xl font-bold text-[#06261D] group-hover:text-white">
-          Comfortable Travel
+          {t("whyChooseUs.features.comfortable.title")}
         </h3>
 
         <p className="mt-4 text-gray-600 group-hover:text-green-100 leading-7">
-          Modern safari vehicles, experienced drivers and comfortable
-          accommodation throughout your journey.
+          {t("whyChooseUs.features.comfortable.description")}
         </p>
 
       </div>
+
+
+      {/* Local Expertise */}
 
       <div className="group bg-[#F8FAF9] rounded-3xl p-8 hover:bg-[#0B6E4F] transition duration-500">
 
@@ -564,15 +657,17 @@ function About() {
         </div>
 
         <h3 className="text-2xl font-bold text-[#06261D] group-hover:text-white">
-          Local Expertise
+          {t("whyChooseUs.features.expertise.title")}
         </h3>
 
         <p className="mt-4 text-gray-600 group-hover:text-green-100 leading-7">
-          Our knowledgeable team knows Kenya's wildlife, parks,
-          beaches and hidden gems.
+          {t("whyChooseUs.features.expertise.description")}
         </p>
 
       </div>
+
+
+      {/* Support */}
 
       <div className="group bg-[#F8FAF9] rounded-3xl p-8 hover:bg-[#0B6E4F] transition duration-500">
 
@@ -581,15 +676,17 @@ function About() {
         </div>
 
         <h3 className="text-2xl font-bold text-[#06261D] group-hover:text-white">
-          24/7 Support
+          {t("whyChooseUs.features.support.title")}
         </h3>
 
         <p className="mt-4 text-gray-600 group-hover:text-green-100 leading-7">
-          Friendly customer support before, during and after every
-          adventure.
+          {t("whyChooseUs.features.support.description")}
         </p>
 
       </div>
+
+
+      {/* Exceptional Experience */}
 
       <div className="group bg-[#F8FAF9] rounded-3xl p-8 hover:bg-[#0B6E4F] transition duration-500">
 
@@ -598,23 +695,25 @@ function About() {
         </div>
 
         <h3 className="text-2xl font-bold text-[#06261D] group-hover:text-white">
-          Exceptional Experience
+          {t("whyChooseUs.features.experience.title")}
         </h3>
 
         <p className="mt-4 text-gray-600 group-hover:text-green-100 leading-7">
-          We focus on creating memorable moments that you'll cherish
-          for a lifetime.
+          {t("whyChooseUs.features.experience.description")}
         </p>
 
       </div>
 
     </div>
 
-    {/* Statistics */}
+
+    {/* ================= STATISTICS ================= */}
 
     <div className="mt-24 rounded-[40px] bg-gradient-to-r from-[#06261D] via-[#0B6E4F] to-[#06261D] p-12">
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+
+        {/* Travelers */}
 
         <div>
 
@@ -623,10 +722,13 @@ function About() {
           </h2>
 
           <p className="mt-3 text-green-100">
-            Happy Travelers
+            {t("whyChooseUs.stats.travelers")}
           </p>
 
         </div>
+
+
+        {/* Packages */}
 
         <div>
 
@@ -635,10 +737,13 @@ function About() {
           </h2>
 
           <p className="mt-3 text-green-100">
-            Tour Packages
+            {t("whyChooseUs.stats.packages")}
           </p>
 
         </div>
+
+
+        {/* Destinations */}
 
         <div>
 
@@ -647,10 +752,13 @@ function About() {
           </h2>
 
           <p className="mt-3 text-green-100">
-            Destinations
+            {t("whyChooseUs.stats.destinations")}
           </p>
 
         </div>
+
+
+        {/* Satisfaction */}
 
         <div>
 
@@ -659,7 +767,7 @@ function About() {
           </h2>
 
           <p className="mt-3 text-green-100">
-            Customer Satisfaction
+            {t("whyChooseUs.stats.satisfaction")}
           </p>
 
         </div>
@@ -671,59 +779,88 @@ function About() {
   </div>
 </section> {/* ================= OUR SERVICES ================= */}
 
+{/* ================= OUR SERVICES ================= */}
+
 <section className="py-24 bg-[#F8FAF9]">
   <div className="max-w-7xl mx-auto px-6">
 
     {/* Heading */}
+
     <div className="text-center max-w-3xl mx-auto mb-16">
 
       <span className="uppercase tracking-[0.3em] text-[#D4AF37] font-semibold">
-        Our Services
+        {t("services.badge")}
       </span>
 
       <h2 className="mt-4 text-4xl md:text-5xl font-black text-[#06261D]">
-        Travel Experiences Designed For Everyone
+        {t("services.title")}
       </h2>
 
       <p className="mt-6 text-gray-600 leading-8">
-        From wildlife safaris to corporate travel, we provide complete
-        travel solutions tailored to your needs.
+        {t("services.description")}
       </p>
 
     </div>
+
 
     {/* Services Grid */}
 
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
       {[
-        ["🦁", "Wildlife Safaris"],
-        ["🏖️", "Beach Holidays"],
-        ["🏨", "Hotel Bookings"],
-        ["👨‍👩‍👧", "Group Tours"],
-        ["💼", "Corporate Travel"],
-        ["🤝", "Team Building"],
-        ["✈️", "Airport Transfers"],
-        ["❤️", "Honeymoon Packages"],
-        ["🧭", "Travel Consultation"],
-      ].map(([icon, title]) => (
+        {
+          icon: "🦁",
+          key: "wildlife"
+        },
+        {
+          icon: "🏖️",
+          key: "beach"
+        },
+        {
+          icon: "🏨",
+          key: "hotel"
+        },
+        {
+          icon: "👨‍👩‍👧",
+          key: "group"
+        },
+        {
+          icon: "💼",
+          key: "corporate"
+        },
+        {
+          icon: "🤝",
+          key: "team"
+        },
+        {
+          icon: "✈️",
+          key: "airport"
+        },
+        {
+          icon: "❤️",
+          key: "honeymoon"
+        },
+        {
+          icon: "🧭",
+          key: "consultation"
+        }
+      ].map((service) => (
 
         <div
-          key={title}
-          className="bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 hover:shadow-2xl transition duration-300"
+          key={service.key}
+          className="group bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 hover:shadow-2xl transition duration-300"
         >
 
           <div className="text-5xl mb-6">
-            {icon}
+            {service.icon}
           </div>
 
-          <h3 className="text-2xl font-bold text-[#06261D]">
-            {title}
+          <h3 className="text-2xl font-bold text-[#06261D] group-hover:text-[#0B6E4F] transition">
+            {t(`services.items.${service.key}.title`)}
           </h3>
 
           <p className="mt-4 text-gray-600 leading-7">
-            Professional planning and personalized experiences
-            designed to make every journey unforgettable.
+            {t(`services.items.${service.key}.description`)}
           </p>
 
         </div>
@@ -738,21 +875,20 @@ function About() {
 {/* ================= CALL TO ACTION ================= */}
 
 <section className="py-24 bg-[#F8FAF8]">
-
   <div className="max-w-7xl mx-auto px-6">
 
     <div className="text-center max-w-3xl mx-auto mb-16">
 
       <span className="inline-flex px-5 py-2 rounded-full bg-emerald-100 text-[#0B6E4F] uppercase tracking-[3px] text-sm font-semibold">
-        Frequently Asked Questions
+        {t("faq.badge")}
       </span>
 
       <h2 className="mt-6 text-5xl font-black text-gray-900">
-        Need More Information?
+        {t("faq.title")}
       </h2>
 
       <p className="mt-6 text-lg text-gray-600 leading-8">
-        Everything you need to know before starting your African adventure.
+        {t("faq.description")}
       </p>
 
     </div>
@@ -760,51 +896,27 @@ function About() {
     <div className="grid lg:grid-cols-2 gap-8">
 
       {[
-        {
-          q: "How do I book a safari?",
-          a: "Simply contact us through WhatsApp, phone, email or our contact form. Our travel consultants will discuss your plans and help create the perfect safari for you."
-        },
-        {
-          q: "Can I customize my safari?",
-          a: "Absolutely. Our safaris are tailor-made around your interests, budget, travel dates and preferred destinations. We can customize accommodation, activities, transport and itinerary."
-        },
-        {
-          q: "Which African countries do you operate in?",
-          a: "We arrange unforgettable journeys across Africa, including Kenya, Tanzania, Uganda, Rwanda, Botswana, Zimbabwe, Namibia, South Africa, Egypt, Morocco and other destinations."
-        },
-        {
-          q: "Are your safaris private or group trips?",
-          a: "We offer both private and group safaris. Whether you're traveling solo, as a couple, with family, friends or a larger group, we can create an experience that suits you."
-        },
-        {
-          q: "Do you provide airport transfers and transportation?",
-          a: "Yes. Depending on your itinerary, we can arrange airport transfers, private safari vehicles, tour vans and other transportation needed throughout your journey."
-        },
-        {
-          q: "What is the best time to go on safari?",
-          a: "The best time depends on your destination and the experience you want. Our travel consultants can recommend the ideal season based on wildlife, weather, migration, gorilla trekking or beach experiences."
-        },
-        {
-          q: "Do you arrange accommodation?",
-          a: "Yes. We carefully select lodges, hotels, tented camps and resorts based on your itinerary, preferences and budget to make your stay comfortable and memorable."
-        },
-        {
-          q: "Can you arrange honeymoons and special occasions?",
-          a: "Yes. We create romantic and personalized journeys for honeymoons, anniversaries, birthdays and other special occasions, including luxury safari and beach combinations."
-        }
-      ].map((faq, index) => (
+        "booking",
+        "customize",
+        "countries",
+        "privateGroup",
+        "transport",
+        "bestTime",
+        "accommodation",
+        "honeymoon"
+      ].map((item) => (
 
         <div
-          key={index}
+          key={item}
           className="bg-white rounded-[30px] p-8 shadow-lg hover:-translate-y-1 hover:shadow-xl transition duration-300"
         >
 
           <h3 className="text-xl font-bold text-[#0B6E4F]">
-            {faq.q}
+            {t(`faq.items.${item}.question`)}
           </h3>
 
           <p className="mt-4 text-gray-600 leading-8">
-            {faq.a}
+            {t(`faq.items.${item}.answer`)}
           </p>
 
         </div>
@@ -814,27 +926,29 @@ function About() {
     </div>
 
   </div>
-
 </section>
 {/* ================= PREMIUM FOOTER ================= */}
 
 {/* ================= FOOTER ================= */}
+{/* FOOTER */}
 <footer className="relative overflow-hidden bg-[#050505] text-white">
-  {/* Top Accent Line */}
 
+  {/* Top Accent Line */}
   <div className="h-[2px] bg-gradient-to-r from-transparent via-[#C8A94C] to-transparent" />
 
   {/* Background Glow */}
-
   <div className="absolute -top-32 -left-20 h-[450px] w-[450px] rounded-full bg-emerald-500/10 blur-[170px]" />
 
   <div className="absolute -bottom-32 -right-20 h-[450px] w-[450px] rounded-full bg-yellow-400/10 blur-[170px]" />
 
   <div className="relative mx-auto max-w-7xl px-6 py-20 lg:px-8">
+
     <div className="grid gap-14 md:grid-cols-2 lg:grid-cols-3">
-      {/* Company */}
+
+      {/* ================= COMPANY ================= */}
 
       <div>
+
         <h2 className="text-4xl font-black">
           Curious
           <span className="text-[#C8A94C]"> Safaris</span>
@@ -843,184 +957,245 @@ function About() {
         <div className="mt-4 h-1 w-20 rounded-full bg-[#C8A94C]" />
 
         <p className="mt-6 leading-8 text-gray-400">
-          Curious Safaris is an Africa-based travel company
-          offering private, customized, and unforgettable
-          journeys across Africa.
+          {t("footer.description1")}
         </p>
 
         <p className="mt-4 leading-8 text-gray-400">
-          Explore wildlife safaris, luxury tours, beach holidays,
-          horse-riding adventures, photography trips, cultural
-          experiences, and tailor-made journeys across the
-          continent.
+          {t("footer.description2")}
         </p>
 
         {/* Social Icons */}
 
         <div className="mt-8 flex gap-4">
+
           {[
             {
               icon: <FaFacebookF />,
               link: "https://facebook.com",
+              label: "Facebook",
             },
             {
               icon: <FaInstagram />,
               link: "https://instagram.com",
+              label: "Instagram",
             },
             {
               icon: <FaWhatsapp />,
               link: "https://wa.me/254745861688",
+              label: "WhatsApp",
             },
             {
               icon: <FaYoutube />,
               link: "https://youtube.com",
+              label: "YouTube",
             },
-          ].map((item, index) => (
+          ].map((item) => (
+
             <a
-              key={index}
+              key={item.label}
               href={item.link}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
+              aria-label={item.label}
               className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 transition duration-500 hover:-translate-y-2 hover:border-emerald-700 hover:bg-emerald-700"
             >
               {item.icon}
             </a>
+
           ))}
+
         </div>
+
       </div>
 
-      {/* Quick Links */}
+
+      {/* ================= QUICK LINKS ================= */}
 
       <div>
+
         <h3 className="mb-8 text-2xl font-bold">
-          Quick Links
+          {t("footer.quickLinks")}
         </h3>
 
         <div className="space-y-5">
+
           {[
-            { name: "Home", path: "/" },
-            { name: "Destinations", path: "/destinations" },
-            
-            { name: "Gallery", path: "/gallery" },
-            { name: "About", path: "/about" },
-            { name: "Contact", path: "/contact" },
+            {
+              name: t("footer.home"),
+              path: "/",
+            },
+            {
+              name: t("footer.destinations"),
+              path: "/destinations",
+            },
+            {
+              name: t("footer.gallery"),
+              path: "/gallery",
+            },
+            {
+              name: t("footer.about"),
+              path: "/about",
+            },
+            {
+              name: t("footer.contact"),
+              path: "/contact",
+            },
           ].map((item) => (
+
             <Link
-              key={item.name}
+              key={item.path}
               to={item.path}
               className="flex items-center gap-3 text-gray-400 transition-all duration-300 hover:translate-x-2 hover:text-[#C8A94C]"
             >
+
               <FaArrowRight className="text-xs" />
 
               {item.name}
+
             </Link>
+
           ))}
+
         </div>
+
       </div>
 
-      {/* Contact */}
+
+      {/* ================= CONTACT ================= */}
 
       <div>
+
         <h3 className="mb-8 text-2xl font-bold">
-          Contact Us
+          {t("footer.contactUs")}
         </h3>
 
         <div className="space-y-6">
+
           {/* WhatsApp */}
 
           <div className="flex gap-4 rounded-2xl bg-white/5 p-4 transition hover:bg-emerald-700/20">
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-700">
+
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald-700">
               <FaWhatsapp />
             </div>
 
             <div>
+
               <p className="font-semibold">
-                WhatsApp
+                {t("footer.whatsapp")}
               </p>
 
               <a
                 href="https://wa.me/254745861688"
-                className="text-gray-400 hover:text-white"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 transition hover:text-white"
               >
                 +254 745 861 688
               </a>
+
             </div>
+
           </div>
 
-          {/* Africa */}
+
+          {/* Destinations */}
 
           <div className="flex gap-4 rounded-2xl bg-white/5 p-4 transition hover:bg-emerald-700/20">
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-700">
+
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald-700">
               <FaGlobe />
             </div>
 
             <div>
+
               <p className="font-semibold">
-                Destinations
+                {t("footer.destinationLabel")}
               </p>
 
               <p className="text-gray-400">
-                East, West, North, Central & Southern Africa
+                {t("footer.destinationText")}
               </p>
+
             </div>
+
           </div>
+
 
           {/* Location */}
 
           <div className="flex gap-4 rounded-2xl bg-white/5 p-4 transition hover:bg-emerald-700/20">
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-700">
+
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald-700">
               <FaMapMarkerAlt />
             </div>
 
             <div>
+
               <p className="font-semibold">
-                Based In
+                {t("footer.basedIn")}
               </p>
 
               <p className="text-gray-400">
-                Nairobi, Kenya
+                {t("footer.location")}
               </p>
+
             </div>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
 
-    {/* Bottom */}
+
+    {/* ================= BOTTOM ================= */}
 
     <div className="mt-16 flex flex-col items-center justify-between gap-6 border-t border-white/10 pt-8 md:flex-row">
+
       <p className="text-center text-gray-500 md:text-left">
+
         © {new Date().getFullYear()}
 
         <span className="font-semibold text-[#C8A94C]">
-          {" "}
-          Curious Safaris
+          {" "}Curious Safaris
         </span>
 
-        . All Rights Reserved.
+        . {t("footer.rights")}
+
       </p>
 
+
       <div className="flex items-center gap-6 text-sm">
+
         <Link
           to="/privacy"
           className="text-gray-500 transition hover:text-[#C8A94C]"
         >
-          Privacy Policy
+          {t("footer.privacy")}
         </Link>
 
-        <span className="text-white/20">|</span>
+        <span className="text-white/20">
+          |
+        </span>
 
         <Link
           to="/terms"
           className="text-gray-500 transition hover:text-[#C8A94C]"
         >
-          Terms & Conditions
+          {t("footer.terms")}
         </Link>
+
       </div>
+
     </div>
+
   </div>
 
-  {/* Scroll To Top */}
+
+  {/* ================= SCROLL TO TOP ================= */}
 
   <button
     onClick={() =>
@@ -1029,10 +1204,12 @@ function About() {
         behavior: "smooth",
       })
     }
+    aria-label="Scroll to top"
     className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#C8A94C] text-black shadow-2xl transition duration-300 hover:scale-110"
   >
     <FaChevronUp />
   </button>
+
 </footer>
     </>
   );
