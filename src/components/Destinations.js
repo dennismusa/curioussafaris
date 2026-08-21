@@ -46,6 +46,7 @@ export default function Destination() {
       setTimeout(scrollToSection, 500);
     }
   }, []);
+  // eslint-disable-next-line no-unused-vars
   const { t, i18n } = useTranslation();
   return (
     <div className="bg-white">
