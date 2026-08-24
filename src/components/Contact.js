@@ -273,7 +273,7 @@ const { t, i18n } = useTranslation();
           <input
             type="text"
             name="name"
-            placeholder={t("contactForm.form.name")}
+            placeholder={t("name")}
             value={formData.name}
             onChange={handleChange}
             className="w-full border border-gray-200 rounded-2xl p-4 outline-none focus:border-[#0B6E4F] focus:ring-2 focus:ring-emerald-100 transition"
@@ -283,7 +283,7 @@ const { t, i18n } = useTranslation();
           <input
             type="email"
             name="email"
-            placeholder={t("contactForm.form.email")}
+            placeholder={t("email")}
             value={formData.email}
             onChange={handleChange}
             className="w-full border border-gray-200 rounded-2xl p-4 outline-none focus:border-[#0B6E4F] focus:ring-2 focus:ring-emerald-100 transition"
@@ -293,7 +293,7 @@ const { t, i18n } = useTranslation();
           <input
             type="text"
             name="phone"
-            placeholder={t("contactForm.form.phone")}
+            placeholder={t("phone")}
             value={formData.phone}
             onChange={handleChange}
             className="w-full border border-gray-200 rounded-2xl p-4 outline-none focus:border-[#0B6E4F] focus:ring-2 focus:ring-emerald-100 transition"
@@ -302,7 +302,7 @@ const { t, i18n } = useTranslation();
           <input
             type="text"
             name="subject"
-            placeholder={t("contactForm.form.subject")}
+            placeholder={t("subject")}
             value={formData.subject}
             onChange={handleChange}
             className="w-full border border-gray-200 rounded-2xl p-4 outline-none focus:border-[#0B6E4F] focus:ring-2 focus:ring-emerald-100 transition"
@@ -311,7 +311,7 @@ const { t, i18n } = useTranslation();
           <textarea
             rows="6"
             name="message"
-            placeholder={t("contactForm.form.message")}
+            placeholder={t("message")}
             value={formData.message}
             onChange={handleChange}
             className="w-full border border-gray-200 rounded-2xl p-4 outline-none focus:border-[#0B6E4F] focus:ring-2 focus:ring-emerald-100 transition resize-none"

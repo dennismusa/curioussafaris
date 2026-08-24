@@ -11,6 +11,7 @@ import pyramids from "../assets/pyramids.jpg";
 import sahara from "../assets/sahara.jpg";
 import amboseli from "../assets/amboseli.jpg";
 import victoria1 from "../assets/victoria1.jpg";
+//import victoria from "../assets/victoria.jpg";
 import zambezi from "../assets/zambezi.jpg";
 import luangwa from "../assets/luangwa.jpg";
 import nakuru from "../assets/nakuru.jpg";
@@ -5921,6 +5922,4718 @@ export default function Destination() {
 </section>
 
 
+
+{/* ================= 4-Day Diani Beach Staycation ================= */}
+<section
+  id="Diani-safari"
+  className="relative overflow-hidden bg-[#F7F3EA] py-24 md:py-32"
+>
+  {/* ================= Background ================= */}
+  <div className="absolute -left-40 top-20 h-[500px] w-[500px] rounded-full bg-[#C8A94C]/10 blur-[140px]" />
+  <div className="absolute -right-40 bottom-0 h-[500px] w-[500px] rounded-full bg-[#D6B98C]/10 blur-[140px]" />
+
+  <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
+
+    {/* ================= Header ================= */}
+    <div className="mx-auto max-w-4xl text-center">
+
+      <span className="inline-flex rounded-full bg-[#C8A94C]/10 px-5 py-2 text-xs font-bold uppercase tracking-[3px] text-[#96731F]">
+        {t("diani.badge")}
+      </span>
+
+      <h2 className="mt-6 text-4xl font-black leading-[1.05] text-[#171510] md:text-6xl">
+        {t("diani.hero.title")}
+
+        <span className="block text-[#B28B2C]">
+          {t("diani.hero.titleHighlight")}
+        </span>
+      </h2>
+
+      <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#6B6559]">
+        {t("diani.hero.description")}
+      </p>
+
+    </div>
+
+
+    {/* ================= Destination Cards ================= */}
+    <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+
+      {/* Diani Beach */}
+      <div className="group relative min-h-[360px] overflow-hidden rounded-[30px]">
+
+        <img
+          src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=85"
+          alt={t("diani.destinations.dianiBeach.imageAlt")}
+          className="absolute inset-0 h-full w-full object-cover transition duration-1000 group-hover:scale-105"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+
+        <div className="absolute bottom-0 left-0 right-0 p-6">
+
+          <span className="text-xs font-bold uppercase tracking-[3px] text-[#DFC66D]">
+            {t("diani.destinations.dianiBeach.number")}
+          </span>
+
+          <h3 className="mt-2 text-2xl font-black text-white">
+            {t("diani.destinations.dianiBeach.title")}
+          </h3>
+
+          <p className="mt-2 text-sm leading-6 text-gray-200">
+            {t("diani.destinations.dianiBeach.description")}
+          </p>
+
+        </div>
+      </div>
+
+
+      {/* Wasini Island */}
+      <div className="group relative min-h-[360px] overflow-hidden rounded-[30px]">
+
+        <img
+          src="https://images.unsplash.com/photo-1540202404-a2f29016b523?auto=format&fit=crop&w=900&q=85"
+          alt={t("diani.destinations.wasini.imageAlt")}
+          className="absolute inset-0 h-full w-full object-cover transition duration-1000 group-hover:scale-105"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+
+        <div className="absolute bottom-0 left-0 right-0 p-6">
+
+          <span className="text-xs font-bold uppercase tracking-[3px] text-[#DFC66D]">
+            {t("diani.destinations.wasini.number")}
+          </span>
+
+          <h3 className="mt-2 text-2xl font-black text-white">
+            {t("diani.destinations.wasini.title")}
+          </h3>
+
+          <p className="mt-2 text-sm leading-6 text-gray-200">
+            {t("diani.destinations.wasini.description")}
+          </p>
+
+        </div>
+      </div>
+
+
+      {/* Shimba Hills */}
+      <div className="group relative min-h-[360px] overflow-hidden rounded-[30px]">
+
+        <img
+          src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=900&q=85"
+          alt={t("diani.destinations.shimba.imageAlt")}
+          className="absolute inset-0 h-full w-full object-cover transition duration-1000 group-hover:scale-105"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+
+        <div className="absolute bottom-0 left-0 right-0 p-6">
+
+          <span className="text-xs font-bold uppercase tracking-[3px] text-[#DFC66D]">
+            {t("diani.destinations.shimba.number")}
+          </span>
+
+          <h3 className="mt-2 text-2xl font-black text-white">
+            {t("diani.destinations.shimba.title")}
+          </h3>
+
+          <p className="mt-2 text-sm leading-6 text-gray-200">
+            {t("diani.destinations.shimba.description")}
+          </p>
+
+        </div>
+      </div>
+
+
+      {/* Coastal Culture */}
+      <div className="group relative min-h-[360px] overflow-hidden rounded-[30px]">
+
+        <img
+          src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=900&q=85"
+          alt={t("diani.destinations.culture.imageAlt")}
+          className="absolute inset-0 h-full w-full object-cover transition duration-1000 group-hover:scale-105"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+
+        <div className="absolute bottom-0 left-0 right-0 p-6">
+
+          <span className="text-xs font-bold uppercase tracking-[3px] text-[#DFC66D]">
+            {t("diani.destinations.culture.number")}
+          </span>
+
+          <h3 className="mt-2 text-2xl font-black text-white">
+            {t("diani.destinations.culture.title")}
+          </h3>
+
+          <p className="mt-2 text-sm leading-6 text-gray-200">
+            {t("diani.destinations.culture.description")}
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    {/* ================= Safari Details ================= */}
+    <div className="mt-16 rounded-[32px] border border-[#DED6C8] bg-white p-8 shadow-sm md:p-10">
+
+      <div className="flex flex-col gap-8 lg:flex-row lg:items-center">
+
+        <div className="lg:w-1/3">
+
+          <span className="text-xs font-bold uppercase tracking-[3px] text-[#B28B2C]">
+            {t("diani.details.badge")}
+          </span>
+
+          <h3 className="mt-3 text-3xl font-black text-[#171510]">
+            {t("diani.details.title")}
+          </h3>
+
+          <p className="mt-4 text-sm leading-7 text-[#6B6559]">
+            {t("diani.details.description")}
+          </p>
+
+        </div>
+
+
+        <div className="grid flex-1 gap-4 sm:grid-cols-2">
+
+          {[
+            ["diani.details.duration.label", "diani.details.duration.value"],
+            ["diani.details.destination.label", "diani.details.destination.value"],
+            ["diani.details.transport.label", "diani.details.transport.value"],
+            ["diani.details.bestFor.label", "diani.details.bestFor.value"],
+            ["diani.details.experience.label", "diani.details.experience.value"],
+            ["diani.details.style.label", "diani.details.style.value"],
+          ].map(([label, value]) => (
+
+            <div
+              key={label}
+              className="rounded-2xl bg-[#F7F3EA] p-5"
+            >
+
+              <p className="text-xs font-bold uppercase tracking-[2px] text-[#B28B2C]">
+                {t(label)}
+              </p>
+
+              <p className="mt-2 font-bold text-[#29251E]">
+                {t(value)}
+              </p>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    {/* ================= Itinerary ================= */}
+    <div className="mt-20">
+
+      <div className="mb-10">
+
+        <span className="text-xs font-bold uppercase tracking-[3px] text-[#B28B2C]">
+          {t("diani.itinerary.badge")}
+        </span>
+
+        <h3 className="mt-3 text-3xl font-black text-[#171510] md:text-4xl">
+          {t("diani.itinerary.title")}
+        </h3>
+
+      </div>
+
+
+      <div className="space-y-5">
+
+        {[
+          {
+            day: "01",
+            title: t("diani.itinerary.day1.title"),
+            text: t("diani.itinerary.day1.text"),
+          },
+          {
+            day: "02",
+            title: t("diani.itinerary.day2.title"),
+            text: t("diani.itinerary.day2.text"),
+          },
+          {
+            day: "03",
+            title: t("diani.itinerary.day3.title"),
+            text: t("diani.itinerary.day3.text"),
+          },
+          {
+            day: "04",
+            title: t("diani.itinerary.day4.title"),
+            text: t("diani.itinerary.day4.text"),
+          },
+        ].map((item) => (
+
+          <div
+            key={item.day}
+            className="group grid gap-6 rounded-[28px] border border-[#DED6C8] bg-white p-7 shadow-sm transition duration-500 hover:-translate-y-1 hover:shadow-lg md:grid-cols-[90px_1fr] md:p-9"
+          >
+
+            <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#F7F3EA] text-xl font-black text-[#B28B2C]">
+              {item.day}
+            </div>
+
+            <div>
+
+              <h4 className="text-xl font-black text-[#171510] md:text-2xl">
+                Day {item.day}: {item.title}
+              </h4>
+
+              <p className="mt-3 max-w-4xl text-sm leading-7 text-[#6B6559]">
+                {item.text}
+              </p>
+
+            </div>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </div>
+
+
+    {/* ================= Suggested Stays ================= */}
+    <div className="mt-20">
+
+      <div className="mb-8">
+
+        <span className="text-xs font-bold uppercase tracking-[3px] text-[#B28B2C]">
+          {t("diani.accommodation.badge")}
+        </span>
+
+        <h3 className="mt-3 text-3xl font-black text-[#171510]">
+          {t("diani.accommodation.title")}
+        </h3>
+
+      </div>
+
+
+      <div className="grid gap-5 md:grid-cols-3">
+
+        {[
+          "dianiReef",
+          "baobab",
+          "southernPalms",
+        ].map((hotel) => (
+
+          <div
+            key={hotel}
+            className="rounded-[26px] border border-[#DED6C8] bg-white p-7 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+          >
+
+            <span className="rounded-full bg-[#C8A94C]/10 px-3 py-1 text-xs font-bold uppercase tracking-[2px] text-[#96731F]">
+              {t(`diani.accommodation.hotels.${hotel}.type`)}
+            </span>
+
+            <h4 className="mt-5 text-xl font-black text-[#171510]">
+              {t(`diani.accommodation.hotels.${hotel}.name`)}
+            </h4>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </div>
+
+
+    {/* ================= Included + Pricing ================= */}
+    <div className="mt-20 grid gap-8 lg:grid-cols-[1fr_0.8fr]">
+
+      {/* Included */}
+      <div className="rounded-[32px] bg-[#211F1A] p-8 text-white md:p-10">
+
+        <span className="text-xs font-bold uppercase tracking-[3px] text-[#C8A94C]">
+          {t("diani.included.badge")}
+        </span>
+
+        <h3 className="mt-3 text-3xl font-black">
+          {t("diani.included.title")}
+        </h3>
+
+        <div className="mt-8 grid gap-4 sm:grid-cols-2">
+
+          {t("diani.included.items", { returnObjects: true }).map(
+            (item) => (
+
+              <div
+                key={item}
+                className="flex gap-3 rounded-xl border border-white/10 bg-white/[0.04] p-4"
+              >
+
+                <span className="text-[#C8A94C]">
+                  ✓
+                </span>
+
+                <span className="text-sm text-gray-300">
+                  {item}
+                </span>
+
+              </div>
+
+            )
+          )}
+
+        </div>
+
+      </div>
+
+
+      {/* Pricing */}
+      <div className="rounded-[32px] border border-[#DED6C8] bg-white p-8 shadow-sm md:p-10">
+
+        <span className="text-xs font-bold uppercase tracking-[3px] text-[#B28B2C]">
+          {t("diani.pricing.badge")}
+        </span>
+
+        <h3 className="mt-3 text-3xl font-black text-[#171510]">
+          {t("diani.pricing.title")}
+        </h3>
+
+        <div className="mt-8 space-y-4">
+
+          {[
+            "budget",
+            "midRange",
+            "luxury",
+          ].map((type) => (
+
+            <div
+              key={type}
+              className="flex items-center justify-between rounded-2xl bg-[#F7F3EA] p-5"
+            >
+
+              <div>
+
+                <p className="font-bold text-[#29251E]">
+                  {t(`diani.pricing.${type}.name`)}
+                </p>
+
+                <p className="mt-1 text-xs text-[#8A8377]">
+                  {t(`diani.pricing.${type}.description`)}
+                </p>
+
+              </div>
+
+              <p className="text-2xl font-black text-[#B28B2C]">
+                {t(`diani.pricing.${type}.price`)}
+              </p>
+
+            </div>
+
+          ))}
+
+        </div>
+
+        <p className="mt-6 text-xs leading-6 text-[#7A746A]">
+          {t("diani.pricing.note")}
+        </p>
+
+      </div>
+
+    </div>
+
+
+    {/* ================= Recommendation ================= */}
+    <div className="mt-10 rounded-[30px] border border-[#C8A94C]/20 bg-[#F8F5ED] p-7 md:p-9">
+
+      <p className="text-xs font-bold uppercase tracking-[3px] text-[#B28B2C]">
+        {t("diani.recommendation.badge")}
+      </p>
+
+      <p className="mt-3 text-lg font-bold leading-8 text-[#29251E]">
+        {t("diani.recommendation.text")}
+      </p>
+
+    </div>
+
+
+    {/* ================= CTA ================= */}
+    <div className="mt-10 flex flex-col items-center justify-between gap-6 rounded-[30px] bg-[#211F1A] p-8 text-center text-white md:flex-row md:text-left md:p-10">
+
+      <div>
+
+        <p className="text-xs font-bold uppercase tracking-[3px] text-[#C8A94C]">
+          {t("diani.cta.badge")}
+        </p>
+
+        <h3 className="mt-2 text-2xl font-black md:text-3xl">
+          {t("diani.cta.title")}
+        </h3>
+
+        <p className="mt-2 text-sm text-gray-400">
+          {t("diani.cta.description")}
+        </p>
+
+      </div>
+
+      <a
+        href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20the%204-Day%20Diani%20Beach%20Staycation."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="shrink-0 rounded-2xl bg-[#C8A94C] px-7 py-4 font-bold text-[#211F1A] transition-all duration-300 hover:-translate-y-1 hover:bg-[#DFC66D]"
+      >
+        {t("diani.cta.button")}
+      </a>
+
+    </div>
+
+  </div>
+</section>
+{/* ================= TANZANIA EXPERIENCES ================= */}
+<section
+  id="Tanzani2-safari"
+  className="relative overflow-hidden bg-[#F7F3EA] py-24 md:py-32"
+>
+  {/* Background */}
+  <div className="absolute -left-40 top-20 h-[500px] w-[500px] rounded-full bg-[#C8A94C]/10 blur-[140px]" />
+  <div className="absolute -right-40 bottom-20 h-[500px] w-[500px] rounded-full bg-[#D6B98C]/20 blur-[140px]" />
+
+  <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
+
+    {/* ================= HEADER ================= */}
+    <div className="mx-auto max-w-4xl text-center">
+
+      <span className="inline-flex rounded-full bg-[#C8A94C]/10 px-5 py-2 text-xs font-bold uppercase tracking-[3px] text-[#96731F]">
+        {t("tanzania.header.badge")}
+      </span>
+
+      <h2 className="mt-6 text-4xl font-black leading-[1.05] text-[#171510] md:text-6xl">
+        {t("tanzania.header.title")}
+        <span className="block text-[#B28B2C]">
+          {t("tanzania.header.titleHighlight")}
+        </span>
+      </h2>
+
+      <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-[#6B6559] md:text-lg">
+        {t("tanzania.header.description")}
+      </p>
+
+    </div>
+
+
+    {/* ================================================= */}
+    {/* WILDLIFE SAFARI */}
+    {/* ================================================= */}
+
+    <div className="mt-20">
+
+      {/* Section Intro */}
+      <div className="grid items-end gap-8 lg:grid-cols-[1fr_0.7fr]">
+
+        <div>
+
+          <span className="text-xs font-bold uppercase tracking-[3px] text-[#B28B2C]">
+            {t("tanzania.wildlife.badge")}
+          </span>
+
+          <h3 className="mt-4 text-4xl font-black leading-tight text-[#171510] md:text-5xl">
+            {t("tanzania.wildlife.title")}
+            <span className="block text-[#B28B2C]">
+              {t("tanzania.wildlife.titleHighlight")}
+            </span>
+          </h3>
+
+        </div>
+
+        <p className="text-base leading-8 text-[#6B6559]">
+          {t("tanzania.wildlife.description")}
+        </p>
+
+      </div>
+
+
+      {/* ================= DESTINATION IMAGES ================= */}
+      <div className="mt-10 grid gap-5 md:grid-cols-3">
+
+        {/* Tarangire */}
+        <div className="group relative min-h-[400px] overflow-hidden rounded-[32px]">
+
+          <img
+            src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1000&q=85"
+            alt={t("tanzania.wildlife.destinations.tarangire.imageAlt")}
+            className="absolute inset-0 h-full w-full object-cover transition duration-1000 group-hover:scale-105"
+          />
+
+          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+
+          <div className="absolute bottom-0 left-0 right-0 p-7">
+
+            <span className="text-xs font-bold uppercase tracking-[3px] text-[#DFC66D]">
+              {t("tanzania.wildlife.destinations.tarangire.day")}
+            </span>
+
+            <h4 className="mt-2 text-3xl font-black text-white">
+              {t("tanzania.wildlife.destinations.tarangire.title")}
+            </h4>
+
+            <p className="mt-2 text-sm leading-6 text-gray-200">
+              {t("tanzania.wildlife.destinations.tarangire.description")}
+            </p>
+
+          </div>
+
+        </div>
+
+
+        {/* Serengeti */}
+        <div className="group relative min-h-[400px] overflow-hidden rounded-[32px]">
+
+          <img
+            src={serengeti}
+            alt={t("tanzania.wildlife.destinations.serengeti.imageAlt")}
+            className="absolute inset-0 h-full w-full object-cover transition duration-1000 group-hover:scale-105"
+          />
+
+          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+
+          <div className="absolute bottom-0 left-0 right-0 p-7">
+
+            <span className="text-xs font-bold uppercase tracking-[3px] text-[#DFC66D]">
+              {t("tanzania.wildlife.destinations.serengeti.day")}
+            </span>
+
+            <h4 className="mt-2 text-3xl font-black text-white">
+              {t("tanzania.wildlife.destinations.serengeti.title")}
+            </h4>
+
+            <p className="mt-2 text-sm leading-6 text-gray-200">
+              {t("tanzania.wildlife.destinations.serengeti.description")}
+            </p>
+
+          </div>
+
+        </div>
+
+
+        {/* Ngorongoro */}
+        <div className="group relative min-h-[400px] overflow-hidden rounded-[32px]">
+
+          <img
+            src={ngorongoro}
+            alt={t("tanzania.wildlife.destinations.ngorongoro.imageAlt")}
+            className="absolute inset-0 h-full w-full object-cover transition duration-1000 group-hover:scale-105"
+          />
+
+          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+
+          <div className="absolute bottom-0 left-0 right-0 p-7">
+
+            <span className="text-xs font-bold uppercase tracking-[3px] text-[#DFC66D]">
+              {t("tanzania.wildlife.destinations.ngorongoro.day")}
+            </span>
+
+            <h4 className="mt-2 text-3xl font-black text-white">
+              {t("tanzania.wildlife.destinations.ngorongoro.title")}
+            </h4>
+
+            <p className="mt-2 text-sm leading-6 text-gray-200">
+              {t("tanzania.wildlife.destinations.ngorongoro.description")}
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      {/* ================= SAFARI DETAILS ================= */}
+      <div className="mt-10 grid gap-4 rounded-[30px] border border-[#DED6C8] bg-white p-6 md:grid-cols-4 md:p-8">
+
+        {[
+          [
+            t("tanzania.wildlife.details.duration.label"),
+            t("tanzania.wildlife.details.duration.value"),
+          ],
+          [
+            t("tanzania.wildlife.details.route.label"),
+            t("tanzania.wildlife.details.route.value"),
+          ],
+          [
+            t("tanzania.wildlife.details.bestFor.label"),
+            t("tanzania.wildlife.details.bestFor.value"),
+          ],
+          [
+            t("tanzania.wildlife.details.transport.label"),
+            t("tanzania.wildlife.details.transport.value"),
+          ],
+        ].map(([label, value]) => (
+
+          <div
+            key={label}
+            className="rounded-2xl bg-[#F7F3EA] p-5"
+          >
+
+            <p className="text-xs font-bold uppercase tracking-[2px] text-[#B28B2C]">
+              {label}
+            </p>
+
+            <p className="mt-2 text-sm font-bold leading-6 text-[#29251E]">
+              {value}
+            </p>
+
+          </div>
+
+        ))}
+
+      </div>
+
+
+      {/* ================= ITINERARY ================= */}
+      <div className="mt-12">
+
+        <h4 className="text-3xl font-black text-[#171510]">
+          {t("tanzania.wildlife.itinerary.title")}
+        </h4>
+
+        <div className="mt-8 space-y-4">
+
+          {[
+            {
+              day: "01",
+              title: t("tanzania.wildlife.itinerary.days.day01.title"),
+              text: t("tanzania.wildlife.itinerary.days.day01.text"),
+            },
+            {
+              day: "02",
+              title: t("tanzania.wildlife.itinerary.days.day02.title"),
+              text: t("tanzania.wildlife.itinerary.days.day02.text"),
+            },
+            {
+              day: "03",
+              title: t("tanzania.wildlife.itinerary.days.day03.title"),
+              text: t("tanzania.wildlife.itinerary.days.day03.text"),
+            },
+            {
+              day: "04",
+              title: t("tanzania.wildlife.itinerary.days.day04.title"),
+              text: t("tanzania.wildlife.itinerary.days.day04.text"),
+            },
+          ].map((item) => (
+
+            <div
+              key={item.day}
+              className="grid gap-5 rounded-[26px] border border-[#DED6C8] bg-white p-6 transition duration-300 hover:-translate-y-1 hover:shadow-lg md:grid-cols-[80px_1fr]"
+            >
+
+              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#F7F3EA] text-xl font-black text-[#B28B2C]">
+                {item.day}
+              </div>
+
+              <div>
+
+                <h5 className="text-xl font-black text-[#171510]">
+                  {item.title}
+                </h5>
+
+                <p className="mt-2 text-sm leading-7 text-[#6B6559]">
+                  {item.text}
+                </p>
+
+              </div>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </div>
+
+
+      {/* ================= WILDLIFE PRICING ================= */}
+      <div className="mt-10 grid gap-6 lg:grid-cols-[1fr_0.8fr]">
+
+        <div className="rounded-[30px] bg-[#211F1A] p-8 text-white md:p-10">
+
+          <p className="text-xs font-bold uppercase tracking-[3px] text-[#C8A94C]">
+            {t("tanzania.wildlife.pricing.badge")}
+          </p>
+
+          <h4 className="mt-3 text-3xl font-black">
+            {t("tanzania.wildlife.pricing.title")}
+          </h4>
+
+          <p className="mt-4 max-w-xl text-sm leading-7 text-gray-400">
+            {t("tanzania.wildlife.pricing.description")}
+          </p>
+
+        </div>
+
+
+        <div className="space-y-4">
+
+          {[
+            [
+              t("tanzania.wildlife.pricing.options.budget.label"),
+              t("tanzania.wildlife.pricing.options.budget.price"),
+            ],
+            [
+              t("tanzania.wildlife.pricing.options.midRange.label"),
+              t("tanzania.wildlife.pricing.options.midRange.price"),
+            ],
+            [
+              t("tanzania.wildlife.pricing.options.luxury.label"),
+              t("tanzania.wildlife.pricing.options.luxury.price"),
+            ],
+          ].map(([type, price]) => (
+
+            <div
+              key={type}
+              className="flex items-center justify-between rounded-2xl border border-[#DED6C8] bg-white p-5"
+            >
+
+              <p className="font-bold text-[#29251E]">
+                {type}
+              </p>
+
+              <p className="text-xl font-black text-[#B28B2C]">
+                {price}
+              </p>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    {/* ================================================= */}
+    {/* ZANZIBAR */}
+    {/* ================================================= */}
+
+    <div className="mt-28 border-t border-[#DED6C8] pt-24">
+
+      {/* Section Intro */}
+      <div className="grid items-end gap-8 lg:grid-cols-[1fr_0.7fr]">
+
+        <div>
+
+          <span className="text-xs font-bold uppercase tracking-[3px] text-[#B28B2C]">
+            {t("tanzania.zanzibar.badge")}
+          </span>
+
+          <h3 className="mt-4 text-4xl font-black leading-tight text-[#171510] md:text-5xl">
+            {t("tanzania.zanzibar.title")}
+            <span className="block text-[#B28B2C]">
+              {t("tanzania.zanzibar.titleHighlight")}
+            </span>
+          </h3>
+
+        </div>
+
+        <p className="text-base leading-8 text-[#6B6559]">
+          {t("tanzania.zanzibar.description")}
+        </p>
+
+      </div>
+
+
+      {/* ================= ZANZIBAR IMAGES ================= */}
+      <div className="mt-10 grid gap-5 lg:grid-cols-12">
+
+        {/* Large Zanzibar Beach */}
+        <div className="group relative min-h-[500px] overflow-hidden rounded-[32px] lg:col-span-7">
+
+          <img
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=85"
+            alt={t("tanzania.zanzibar.images.beach.imageAlt")}
+            className="absolute inset-0 h-full w-full object-cover transition duration-1000 group-hover:scale-105"
+          />
+
+          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+
+          <div className="absolute bottom-0 left-0 right-0 p-8 md:p-10">
+
+            <span className="text-xs font-bold uppercase tracking-[3px] text-[#DFC66D]">
+              {t("tanzania.zanzibar.images.beach.badge")}
+            </span>
+
+            <h4 className="mt-2 text-4xl font-black text-white">
+              {t("tanzania.zanzibar.images.beach.title")}
+            </h4>
+
+            <p className="mt-3 max-w-xl text-sm leading-7 text-gray-200">
+              {t("tanzania.zanzibar.images.beach.description")}
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div className="grid gap-5 lg:col-span-5">
+
+          {/* Stone Town */}
+          <div className="group relative min-h-[240px] overflow-hidden rounded-[32px]">
+
+            <img
+              src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1000&q=85"
+              alt={t("tanzania.zanzibar.images.stoneTown.imageAlt")}
+              className="absolute inset-0 h-full w-full object-cover transition duration-1000 group-hover:scale-105"
+            />
+
+            <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+
+            <div className="absolute bottom-0 p-7">
+
+              <span className="text-xs font-bold uppercase tracking-[3px] text-[#DFC66D]">
+                {t("tanzania.zanzibar.images.stoneTown.badge")}
+              </span>
+
+              <h4 className="mt-2 text-2xl font-black text-white">
+                {t("tanzania.zanzibar.images.stoneTown.title")}
+              </h4>
+
+            </div>
+
+          </div>
+
+
+          {/* Ocean Adventure */}
+          <div className="group relative min-h-[240px] overflow-hidden rounded-[32px]">
+
+            <img
+              src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1000&q=85"
+              alt={t("tanzania.zanzibar.images.ocean.imageAlt")}
+              className="absolute inset-0 h-full w-full object-cover transition duration-1000 group-hover:scale-105"
+            />
+
+            <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+
+            <div className="absolute bottom-0 p-7">
+
+              <span className="text-xs font-bold uppercase tracking-[3px] text-[#DFC66D]">
+                {t("tanzania.zanzibar.images.ocean.badge")}
+              </span>
+
+              <h4 className="mt-2 text-2xl font-black text-white">
+                {t("tanzania.zanzibar.images.ocean.title")}
+              </h4>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      {/* ================= ZANZIBAR DETAILS ================= */}
+      <div className="mt-10 grid gap-4 rounded-[30px] border border-[#DED6C8] bg-white p-6 md:grid-cols-4 md:p-8">
+
+        {[
+          [
+            t("tanzania.zanzibar.details.duration.label"),
+            t("tanzania.zanzibar.details.duration.value"),
+          ],
+          [
+            t("tanzania.zanzibar.details.destinations.label"),
+            t("tanzania.zanzibar.details.destinations.value"),
+          ],
+          [
+            t("tanzania.zanzibar.details.bestFor.label"),
+            t("tanzania.zanzibar.details.bestFor.value"),
+          ],
+          [
+            t("tanzania.zanzibar.details.experience.label"),
+            t("tanzania.zanzibar.details.experience.value"),
+          ],
+        ].map(([label, value]) => (
+
+          <div
+            key={label}
+            className="rounded-2xl bg-[#F7F3EA] p-5"
+          >
+
+            <p className="text-xs font-bold uppercase tracking-[2px] text-[#B28B2C]">
+              {label}
+            </p>
+
+            <p className="mt-2 text-sm font-bold leading-6 text-[#29251E]">
+              {value}
+            </p>
+
+          </div>
+
+        ))}
+
+      </div>
+
+
+      {/* ================= ZANZIBAR ITINERARY ================= */}
+      <div className="mt-12">
+
+        <h4 className="text-3xl font-black text-[#171510]">
+          {t("tanzania.zanzibar.itinerary.title")}
+        </h4>
+
+        <div className="mt-8 grid gap-5 md:grid-cols-2">
+
+          {[
+            {
+              day: "01",
+              title: t("tanzania.zanzibar.itinerary.days.day01.title"),
+              text: t("tanzania.zanzibar.itinerary.days.day01.text"),
+            },
+            {
+              day: "02",
+              title: t("tanzania.zanzibar.itinerary.days.day02.title"),
+              text: t("tanzania.zanzibar.itinerary.days.day02.text"),
+            },
+            {
+              day: "03",
+              title: t("tanzania.zanzibar.itinerary.days.day03.title"),
+              text: t("tanzania.zanzibar.itinerary.days.day03.text"),
+            },
+            {
+              day: "04",
+              title: t("tanzania.zanzibar.itinerary.days.day04.title"),
+              text: t("tanzania.zanzibar.itinerary.days.day04.text"),
+            },
+          ].map((item) => (
+
+            <div
+              key={item.day}
+              className="rounded-[28px] border border-[#DED6C8] bg-white p-7 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+            >
+
+              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#F7F3EA] text-sm font-black text-[#B28B2C]">
+                {item.day}
+              </span>
+
+              <h5 className="mt-6 text-xl font-black text-[#171510]">
+                {item.title}
+              </h5>
+
+              <p className="mt-3 text-sm leading-7 text-[#6B6559]">
+                {item.text}
+              </p>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </div>
+
+
+      {/* ================= ZANZIBAR PRICING ================= */}
+      <div className="mt-12 rounded-[32px] bg-[#211F1A] p-8 text-white md:p-10">
+
+        <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
+
+          <div>
+
+            <p className="text-xs font-bold uppercase tracking-[3px] text-[#C8A94C]">
+              {t("tanzania.zanzibar.pricing.badge")}
+            </p>
+
+            <h4 className="mt-3 text-3xl font-black">
+              {t("tanzania.zanzibar.pricing.title")}
+            </h4>
+
+            <p className="mt-4 text-sm leading-7 text-gray-400">
+              {t("tanzania.zanzibar.pricing.description")}
+            </p>
+
+          </div>
+
+
+          <div className="grid gap-4 sm:grid-cols-3">
+
+            {[
+              [
+                t("tanzania.zanzibar.pricing.options.budget.label"),
+                t("tanzania.zanzibar.pricing.options.budget.price"),
+              ],
+              [
+                t("tanzania.zanzibar.pricing.options.midRange.label"),
+                t("tanzania.zanzibar.pricing.options.midRange.price"),
+              ],
+              [
+                t("tanzania.zanzibar.pricing.options.luxury.label"),
+                t("tanzania.zanzibar.pricing.options.luxury.price"),
+              ],
+            ].map(([type, price]) => (
+
+              <div
+                key={type}
+                className="rounded-2xl border border-white/10 bg-white/[0.05] p-6"
+              >
+
+                <p className="text-xs font-bold uppercase tracking-[2px] text-[#C8A94C]">
+                  {type}
+                </p>
+
+                <p className="mt-4 text-2xl font-black">
+                  {price}
+                </p>
+
+                <p className="mt-1 text-xs text-gray-500">
+                  {t("tanzania.zanzibar.pricing.perPerson")}
+                </p>
+
+              </div>
+
+            ))}
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      {/* ================= SPECIAL EXPERIENCES ================= */}
+      <div className="mt-12">
+
+        <div className="flex flex-col gap-3">
+
+          <span className="text-xs font-bold uppercase tracking-[3px] text-[#B28B2C]">
+            {t("tanzania.zanzibar.optional.badge")}
+          </span>
+
+          <h4 className="text-3xl font-black text-[#171510]">
+            {t("tanzania.zanzibar.optional.title")}
+          </h4>
+
+        </div>
+
+
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+
+          {[
+            t("tanzania.zanzibar.optional.items.sunsetDhow"),
+            t("tanzania.zanzibar.optional.items.snorkeling"),
+            t("tanzania.zanzibar.optional.items.spa"),
+            t("tanzania.zanzibar.optional.items.kayaking"),
+          ].map((item, index) => (
+
+            <div
+              key={item}
+              className="rounded-2xl border border-[#DED6C8] bg-white p-6 transition duration-300 hover:-translate-y-1 hover:border-[#C8A94C]/40 hover:shadow-lg"
+            >
+
+              <span className="text-xs font-black text-[#B28B2C]">
+                0{index + 1}
+              </span>
+
+              <p className="mt-4 font-bold text-[#29251E]">
+                {item}
+              </p>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    {/* ================================================= */}
+    {/* FINAL CTA */}
+    {/* ================================================= */}
+
+    <div className="mt-24 rounded-[36px] bg-[#211F1A] p-8 text-center text-white md:p-14">
+
+      <span className="text-xs font-bold uppercase tracking-[4px] text-[#C8A94C]">
+        {t("tanzania.cta.badge")}
+      </span>
+
+      <h3 className="mx-auto mt-5 max-w-3xl text-3xl font-black leading-tight md:text-5xl">
+        {t("tanzania.cta.title")}
+        <span className="block text-[#C8A94C]">
+          {t("tanzania.cta.titleHighlight")}
+        </span>
+      </h3>
+
+      <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-gray-400 md:text-base">
+        {t("tanzania.cta.description")}
+      </p>
+
+      <div className="mt-9 flex flex-wrap justify-center gap-4">
+
+        <a
+          href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I'm%20interested%20in%20your%20Tanzania%20experiences."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group rounded-2xl bg-[#C8A94C] px-8 py-4 font-bold text-[#211F1A] transition-all duration-300 hover:-translate-y-1 hover:bg-[#DFC66D]"
+        >
+          {t("tanzania.cta.plan")}
+          <span className="ml-2 inline-block transition-transform duration-300 group-hover:translate-x-1">
+            →
+          </span>
+        </a>
+
+        <Link
+          to="/contact"
+          className="rounded-2xl border border-white/20 px-8 py-4 font-bold text-white transition duration-300 hover:-translate-y-1 hover:border-[#C8A94C] hover:text-[#C8A94C]"
+        >
+          {t("tanzania.cta.contact")}
+        </Link>
+
+      </div>
+
+      <div className="mt-10 border-t border-white/10 pt-6">
+
+        <p className="text-xs uppercase tracking-[4px] text-gray-500">
+          Curious Safaris
+        </p>
+
+        <p className="mt-2 font-bold text-[#C8A94C]">
+          {t("tanzania.cta.tagline")}
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* ================= UGANDA EXPERIENCES ================= */}
+<section
+  id="uganda2-safari"
+  className="relative overflow-hidden bg-[#F7F3EA] py-24 md:py-32"
+>
+  {/* Background */}
+  <div className="absolute -left-40 top-20 h-[500px] w-[500px] rounded-full bg-[#C8A94C]/10 blur-[140px]" />
+  <div className="absolute -right-40 bottom-20 h-[500px] w-[500px] rounded-full bg-[#8FAF72]/10 blur-[140px]" />
+
+  <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
+
+    {/* ================= HEADER ================= */}
+    <div className="mx-auto max-w-4xl text-center">
+
+      <span className="inline-flex rounded-full bg-[#C8A94C]/10 px-5 py-2 text-xs font-bold uppercase tracking-[3px] text-[#96731F]">
+        {t("uganda.header.badge")}
+      </span>
+
+      <h2 className="mt-6 text-4xl font-black leading-[1.05] text-[#171510] md:text-6xl">
+        {t("uganda.header.title")}
+        <span className="block text-[#B28B2C]">
+          {t("uganda.header.titleAccent")}
+        </span>
+      </h2>
+
+      <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-[#6B6559] md:text-lg">
+        {t("uganda.header.description")}
+      </p>
+
+    </div>
+
+
+    {/* =====================================================
+        EXPERIENCE ONE — GORILLA & WILDLIFE
+    ====================================================== */}
+
+    <div className="mt-20">
+
+      <div className="grid items-end gap-8 lg:grid-cols-[1fr_0.7fr]">
+
+        <div>
+          <span className="text-xs font-bold uppercase tracking-[3px] text-[#B28B2C]">
+            {t("uganda.wildlife.badge")}
+          </span>
+
+          <h3 className="mt-4 text-4xl font-black leading-tight text-[#171510] md:text-5xl">
+            {t("uganda.wildlife.title")}
+            <span className="block text-[#B28B2C]">
+              {t("uganda.wildlife.titleAccent")}
+            </span>
+          </h3>
+        </div>
+
+        <p className="text-base leading-8 text-[#6B6559]">
+          {t("uganda.wildlife.description")}
+        </p>
+
+      </div>
+
+
+      {/* ================= IMAGES ================= */}
+      <div className="mt-10 grid gap-5 md:grid-cols-3">
+
+        {/* Queen Elizabeth */}
+        <div className="group relative min-h-[400px] overflow-hidden rounded-[32px]">
+
+          <img
+            src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1000&q=85"
+            alt={t("uganda.wildlife.destinations.queenElizabeth.imageAlt")}
+            className="absolute inset-0 h-full w-full object-cover transition duration-1000 group-hover:scale-105"
+          />
+
+          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+
+          <div className="absolute bottom-0 left-0 right-0 p-7">
+
+            <span className="text-xs font-bold uppercase tracking-[3px] text-[#DFC66D]">
+              {t("uganda.wildlife.destinations.queenElizabeth.day")}
+            </span>
+
+            <h4 className="mt-2 text-3xl font-black text-white">
+              {t("uganda.wildlife.destinations.queenElizabeth.title")}
+            </h4>
+
+            <p className="mt-2 text-sm leading-6 text-gray-200">
+              {t("uganda.wildlife.destinations.queenElizabeth.description")}
+            </p>
+
+          </div>
+
+        </div>
+
+
+        {/* Kazinga */}
+        <div className="group relative min-h-[400px] overflow-hidden rounded-[32px]">
+
+          <img
+            src="https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=1000&q=85"
+            alt={t("uganda.wildlife.destinations.kazinga.imageAlt")}
+            className="absolute inset-0 h-full w-full object-cover transition duration-1000 group-hover:scale-105"
+          />
+
+          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+
+          <div className="absolute bottom-0 left-0 right-0 p-7">
+
+            <span className="text-xs font-bold uppercase tracking-[3px] text-[#DFC66D]">
+              {t("uganda.wildlife.destinations.kazinga.day")}
+            </span>
+
+            <h4 className="mt-2 text-3xl font-black text-white">
+              {t("uganda.wildlife.destinations.kazinga.title")}
+            </h4>
+
+            <p className="mt-2 text-sm leading-6 text-gray-200">
+              {t("uganda.wildlife.destinations.kazinga.description")}
+            </p>
+
+          </div>
+
+        </div>
+
+
+        {/* Bwindi */}
+        <div className="group relative min-h-[400px] overflow-hidden rounded-[32px]">
+
+          <img
+            src="https://images.unsplash.com/photo-1535338454770-8be927b5a00b?auto=format&fit=crop&w=1000&q=85"
+            alt={t("uganda.wildlife.destinations.bwindi.imageAlt")}
+            className="absolute inset-0 h-full w-full object-cover transition duration-1000 group-hover:scale-105"
+          />
+
+          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+
+          <div className="absolute bottom-0 left-0 right-0 p-7">
+
+            <span className="text-xs font-bold uppercase tracking-[3px] text-[#DFC66D]">
+              {t("uganda.wildlife.destinations.bwindi.day")}
+            </span>
+
+            <h4 className="mt-2 text-3xl font-black text-white">
+              {t("uganda.wildlife.destinations.bwindi.title")}
+            </h4>
+
+            <p className="mt-2 text-sm leading-6 text-gray-200">
+              {t("uganda.wildlife.destinations.bwindi.description")}
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      {/* ================= DETAILS ================= */}
+      <div className="mt-10 grid gap-4 rounded-[30px] border border-[#DED6C8] bg-white p-6 md:grid-cols-4 md:p-8">
+
+        {[
+          [
+            t("uganda.wildlife.details.duration.label"),
+            t("uganda.wildlife.details.duration.value"),
+          ],
+          [
+            t("uganda.wildlife.details.route.label"),
+            t("uganda.wildlife.details.route.value"),
+          ],
+          [
+            t("uganda.wildlife.details.bestFor.label"),
+            t("uganda.wildlife.details.bestFor.value"),
+          ],
+          [
+            t("uganda.wildlife.details.transport.label"),
+            t("uganda.wildlife.details.transport.value"),
+          ],
+        ].map(([label, value]) => (
+
+          <div
+            key={label}
+            className="rounded-2xl bg-[#F7F3EA] p-5"
+          >
+
+            <p className="text-xs font-bold uppercase tracking-[2px] text-[#B28B2C]">
+              {label}
+            </p>
+
+            <p className="mt-2 text-sm font-bold leading-6 text-[#29251E]">
+              {value}
+            </p>
+
+          </div>
+
+        ))}
+
+      </div>
+
+
+      {/* ================= ITINERARY ================= */}
+      <div className="mt-12">
+
+        <h4 className="text-3xl font-black text-[#171510]">
+          {t("uganda.wildlife.itinerary.title")}
+        </h4>
+
+        <div className="mt-8 space-y-4">
+
+          {[
+            {
+              day: "01",
+              title: t("uganda.wildlife.itinerary.days.day01.title"),
+              text: t("uganda.wildlife.itinerary.days.day01.text"),
+            },
+            {
+              day: "02",
+              title: t("uganda.wildlife.itinerary.days.day02.title"),
+              text: t("uganda.wildlife.itinerary.days.day02.text"),
+            },
+            {
+              day: "03",
+              title: t("uganda.wildlife.itinerary.days.day03.title"),
+              text: t("uganda.wildlife.itinerary.days.day03.text"),
+            },
+            {
+              day: "04",
+              title: t("uganda.wildlife.itinerary.days.day04.title"),
+              text: t("uganda.wildlife.itinerary.days.day04.text"),
+            },
+          ].map((item) => (
+
+            <div
+              key={item.day}
+              className="grid gap-5 rounded-[26px] border border-[#DED6C8] bg-white p-6 transition duration-300 hover:-translate-y-1 hover:shadow-lg md:grid-cols-[80px_1fr]"
+            >
+
+              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#F7F3EA] text-xl font-black text-[#B28B2C]">
+                {item.day}
+              </div>
+
+              <div>
+
+                <h5 className="text-xl font-black text-[#171510]">
+                  {item.title}
+                </h5>
+
+                <p className="mt-2 text-sm leading-7 text-[#6B6559]">
+                  {item.text}
+                </p>
+
+              </div>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </div>
+
+
+      {/* ================= PRICING ================= */}
+      <div className="mt-10 grid gap-6 lg:grid-cols-[1fr_0.8fr]">
+
+        <div className="rounded-[30px] bg-[#211F1A] p-8 text-white md:p-10">
+
+          <p className="text-xs font-bold uppercase tracking-[3px] text-[#C8A94C]">
+            {t("uganda.wildlife.pricing.badge")}
+          </p>
+
+          <h4 className="mt-3 text-3xl font-black">
+            {t("uganda.wildlife.pricing.title")}
+          </h4>
+
+          <p className="mt-4 max-w-xl text-sm leading-7 text-gray-400">
+            {t("uganda.wildlife.pricing.description")}
+          </p>
+
+        </div>
+
+        <div className="space-y-4">
+
+          {[
+            [
+              t("uganda.wildlife.pricing.options.budget.label"),
+              t("uganda.wildlife.pricing.options.budget.price"),
+            ],
+            [
+              t("uganda.wildlife.pricing.options.midRange.label"),
+              t("uganda.wildlife.pricing.options.midRange.price"),
+            ],
+            [
+              t("uganda.wildlife.pricing.options.luxury.label"),
+              t("uganda.wildlife.pricing.options.luxury.price"),
+            ],
+          ].map(([type, price]) => (
+
+            <div
+              key={type}
+              className="flex items-center justify-between rounded-2xl border border-[#DED6C8] bg-white p-5"
+            >
+
+              <p className="font-bold text-[#29251E]">
+                {type}
+              </p>
+
+              <p className="text-xl font-black text-[#B28B2C]">
+                {price}
+              </p>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </div>
+
+
+      {/* ================= INCLUSIONS ================= */}
+      <div className="mt-8 rounded-[30px] border border-[#DED6C8] bg-white p-7 md:p-9">
+
+        <h4 className="text-2xl font-black text-[#171510]">
+          {t("uganda.wildlife.inclusions.title")}
+        </h4>
+
+        <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+
+          {[
+            t("uganda.wildlife.inclusions.items.accommodation"),
+            t("uganda.wildlife.inclusions.items.vehicle"),
+            t("uganda.wildlife.inclusions.items.driverGuide"),
+            t("uganda.wildlife.inclusions.items.gameDrives"),
+            t("uganda.wildlife.inclusions.items.kazingaCruise"),
+            t("uganda.wildlife.inclusions.items.gorillaPermit"),
+            t("uganda.wildlife.inclusions.items.parkFees"),
+            t("uganda.wildlife.inclusions.items.meals"),
+            t("uganda.wildlife.inclusions.items.water"),
+            t("uganda.wildlife.inclusions.items.transfers"),
+          ].map((item) => (
+
+            <div
+              key={item}
+              className="flex items-center gap-3 rounded-xl bg-[#F7F3EA] p-4 text-sm font-medium text-[#514C43]"
+            >
+
+              <span className="text-[#B28B2C]">
+                ✓
+              </span>
+
+              {item}
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    {/* =====================================================
+        EXPERIENCE TWO — ADVENTURE ESCAPE
+    ====================================================== */}
+
+    <div className="mt-28 border-t border-[#DED6C8] pt-24">
+
+      <div className="grid items-end gap-8 lg:grid-cols-[1fr_0.7fr]">
+
+        <div>
+
+          <span className="text-xs font-bold uppercase tracking-[3px] text-[#B28B2C]">
+            {t("uganda.adventure.badge")}
+          </span>
+
+          <h3 className="mt-4 text-4xl font-black leading-tight text-[#171510] md:text-5xl">
+
+            {t("uganda.adventure.title")}
+
+            <span className="block text-[#B28B2C]">
+              {t("uganda.adventure.titleAccent")}
+            </span>
+
+          </h3>
+
+        </div>
+
+        <p className="text-base leading-8 text-[#6B6559]">
+          {t("uganda.adventure.description")}
+        </p>
+
+      </div>
+
+
+      {/* ================= IMAGES ================= */}
+      <div className="mt-10 grid gap-5 lg:grid-cols-12">
+
+        {/* Nile */}
+        <div className="group relative min-h-[500px] overflow-hidden rounded-[32px] lg:col-span-7">
+
+          <img
+            src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1400&q=85"
+            alt={t("uganda.adventure.images.nile.imageAlt")}
+            className="absolute inset-0 h-full w-full object-cover transition duration-1000 group-hover:scale-105"
+          />
+
+          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+
+          <div className="absolute bottom-0 left-0 right-0 p-8 md:p-10">
+
+            <span className="text-xs font-bold uppercase tracking-[3px] text-[#DFC66D]">
+              {t("uganda.adventure.images.nile.badge")}
+            </span>
+
+            <h4 className="mt-2 text-4xl font-black text-white">
+              {t("uganda.adventure.images.nile.title")}
+            </h4>
+
+            <p className="mt-3 max-w-xl text-sm leading-7 text-gray-200">
+              {t("uganda.adventure.images.nile.description")}
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div className="grid gap-5 lg:col-span-5">
+
+          {/* Sipi */}
+          <div className="group relative min-h-[240px] overflow-hidden rounded-[32px]">
+
+            <img
+              src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1000&q=85"
+              alt={t("uganda.adventure.images.sipi.imageAlt")}
+              className="absolute inset-0 h-full w-full object-cover transition duration-1000 group-hover:scale-105"
+            />
+
+            <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+
+            <div className="absolute bottom-0 p-7">
+
+              <span className="text-xs font-bold uppercase tracking-[3px] text-[#DFC66D]">
+                {t("uganda.adventure.images.sipi.badge")}
+              </span>
+
+              <h4 className="mt-2 text-2xl font-black text-white">
+                {t("uganda.adventure.images.sipi.title")}
+              </h4>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      {/* ================= DETAILS ================= */}
+      <div className="mt-10 grid gap-4 rounded-[30px] border border-[#DED6C8] bg-white p-6 md:grid-cols-4 md:p-8">
+
+        {[
+          [
+            t("uganda.adventure.details.duration.label"),
+            t("uganda.adventure.details.duration.value"),
+          ],
+          [
+            t("uganda.adventure.details.route.label"),
+            t("uganda.adventure.details.route.value"),
+          ],
+          [
+            t("uganda.adventure.details.bestFor.label"),
+            t("uganda.adventure.details.bestFor.value"),
+          ],
+          [
+            t("uganda.adventure.details.experience.label"),
+            t("uganda.adventure.details.experience.value"),
+          ],
+        ].map(([label, value]) => (
+
+          <div
+            key={label}
+            className="rounded-2xl bg-[#F7F3EA] p-5"
+          >
+
+            <p className="text-xs font-bold uppercase tracking-[2px] text-[#B28B2C]">
+              {label}
+            </p>
+
+            <p className="mt-2 text-sm font-bold leading-6 text-[#29251E]">
+              {value}
+            </p>
+
+          </div>
+
+        ))}
+
+      </div>
+
+
+      {/* ================= ITINERARY ================= */}
+      <div className="mt-12">
+
+        <h4 className="text-3xl font-black text-[#171510]">
+          {t("uganda.adventure.itinerary.title")}
+        </h4>
+
+        <div className="mt-8 grid gap-5 md:grid-cols-2">
+
+          {[
+            {
+              day: "01",
+              title: t("uganda.adventure.itinerary.days.day01.title"),
+              text: t("uganda.adventure.itinerary.days.day01.text"),
+            },
+            {
+              day: "02",
+              title: t("uganda.adventure.itinerary.days.day02.title"),
+              text: t("uganda.adventure.itinerary.days.day02.text"),
+            },
+            {
+              day: "03",
+              title: t("uganda.adventure.itinerary.days.day03.title"),
+              text: t("uganda.adventure.itinerary.days.day03.text"),
+            },
+            {
+              day: "04",
+              title: t("uganda.adventure.itinerary.days.day04.title"),
+              text: t("uganda.adventure.itinerary.days.day04.text"),
+            },
+          ].map((item) => (
+
+            <div
+              key={item.day}
+              className="rounded-[28px] border border-[#DED6C8] bg-white p-7 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+            >
+
+              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#F7F3EA] text-sm font-black text-[#B28B2C]">
+                {item.day}
+              </span>
+
+              <h5 className="mt-6 text-xl font-black text-[#171510]">
+                {item.title}
+              </h5>
+
+              <p className="mt-3 text-sm leading-7 text-[#6B6559]">
+                {item.text}
+              </p>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </div>
+
+
+      {/* ================= PRICING ================= */}
+      <div className="mt-12 rounded-[32px] bg-[#211F1A] p-8 text-white md:p-10">
+
+        <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
+
+          <div>
+
+            <p className="text-xs font-bold uppercase tracking-[3px] text-[#C8A94C]">
+              {t("uganda.adventure.pricing.badge")}
+            </p>
+
+            <h4 className="mt-3 text-3xl font-black">
+              {t("uganda.adventure.pricing.title")}
+            </h4>
+
+            <p className="mt-4 text-sm leading-7 text-gray-400">
+              {t("uganda.adventure.pricing.description")}
+            </p>
+
+          </div>
+
+          <div className="grid gap-4 sm:grid-cols-3">
+
+            {[
+              [
+                t("uganda.adventure.pricing.options.budget.label"),
+                t("uganda.adventure.pricing.options.budget.price"),
+              ],
+              [
+                t("uganda.adventure.pricing.options.midRange.label"),
+                t("uganda.adventure.pricing.options.midRange.price"),
+              ],
+              [
+                t("uganda.adventure.pricing.options.luxury.label"),
+                t("uganda.adventure.pricing.options.luxury.price"),
+              ],
+            ].map(([type, price]) => (
+
+              <div
+                key={type}
+                className="rounded-2xl border border-white/10 bg-white/[0.05] p-6"
+              >
+
+                <p className="text-xs font-bold uppercase tracking-[2px] text-[#C8A94C]">
+                  {type}
+                </p>
+
+                <p className="mt-4 text-2xl font-black">
+                  {price}
+                </p>
+
+                <p className="mt-1 text-xs text-gray-500">
+                  {t("uganda.adventure.pricing.perPerson")}
+                </p>
+
+              </div>
+
+            ))}
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      {/* ================= INCLUSIONS ================= */}
+      <div className="mt-8 rounded-[30px] border border-[#DED6C8] bg-white p-7 md:p-9">
+
+        <h4 className="text-2xl font-black text-[#171510]">
+          {t("uganda.adventure.inclusions.title")}
+        </h4>
+
+        <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+
+          {[
+            t("uganda.adventure.inclusions.items.accommodation"),
+            t("uganda.adventure.inclusions.items.vehicle"),
+            t("uganda.adventure.inclusions.items.driverGuide"),
+            t("uganda.adventure.inclusions.items.nileCruise"),
+            t("uganda.adventure.inclusions.items.rafting"),
+            t("uganda.adventure.inclusions.items.abseiling"),
+            t("uganda.adventure.inclusions.items.sipiHike"),
+            t("uganda.adventure.inclusions.items.mabiraForest"),
+            t("uganda.adventure.inclusions.items.coffee"),
+            t("uganda.adventure.inclusions.items.meals"),
+            t("uganda.adventure.inclusions.items.water"),
+            t("uganda.adventure.inclusions.items.transfers"),
+          ].map((item) => (
+
+            <div
+              key={item}
+              className="flex items-center gap-3 rounded-xl bg-[#F7F3EA] p-4 text-sm font-medium text-[#514C43]"
+            >
+
+              <span className="text-[#B28B2C]">
+                ✓
+              </span>
+
+              {item}
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    {/* ================= FINAL CTA ================= */}
+    <div className="mt-24 rounded-[36px] bg-[#211F1A] p-8 text-center text-white md:p-14">
+
+      <span className="text-xs font-bold uppercase tracking-[4px] text-[#C8A94C]">
+        {t("uganda.cta.badge")}
+      </span>
+
+      <h3 className="mx-auto mt-5 max-w-3xl text-3xl font-black leading-tight md:text-5xl">
+
+        {t("uganda.cta.title")}
+
+        <span className="block text-[#C8A94C]">
+          {t("uganda.cta.titleAccent")}
+        </span>
+
+      </h3>
+
+      <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-gray-400 md:text-base">
+        {t("uganda.cta.description")}
+      </p>
+
+      <div className="mt-9 flex flex-wrap justify-center gap-4">
+
+        <a
+          href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I'm%20interested%20in%20your%20Uganda%20experiences."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group rounded-2xl bg-[#C8A94C] px-8 py-4 font-bold text-[#211F1A] transition-all duration-300 hover:-translate-y-1 hover:bg-[#DFC66D]"
+        >
+          {t("uganda.cta.primaryButton")}
+
+          <span className="ml-2 inline-block transition-transform duration-300 group-hover:translate-x-1">
+            →
+          </span>
+
+        </a>
+
+        <Link
+          to="/contact"
+          className="rounded-2xl border border-white/20 px-8 py-4 font-bold text-white transition duration-300 hover:-translate-y-1 hover:border-[#C8A94C] hover:text-[#C8A94C]"
+        >
+          {t("uganda.cta.secondaryButton")}
+        </Link>
+
+      </div>
+
+      <div className="mt-10 border-t border-white/10 pt-6">
+
+        <p className="text-xs uppercase tracking-[4px] text-gray-500">
+          {t("uganda.cta.brand")}
+        </p>
+
+        <p className="mt-2 font-bold text-[#C8A94C]">
+          {t("uganda.cta.tagline")}
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* ================= RWANDA ADVENTURE ================= */}
+{/* ================= RWANDA ADVENTURE ================= */}
+<section
+  id="rwanda2-safari"
+  className="relative overflow-hidden bg-[#F7F3EA] py-24 md:py-32"
+>
+  <div className="absolute -left-40 top-20 h-[450px] w-[450px] rounded-full bg-[#C8A94C]/10 blur-[140px]" />
+  <div className="absolute -right-40 bottom-20 h-[450px] w-[450px] rounded-full bg-[#8BAF9A]/15 blur-[140px]" />
+
+  <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
+
+    {/* ================= HEADER ================= */}
+    <div className="mx-auto max-w-4xl text-center">
+
+      <span className="inline-flex rounded-full bg-[#C8A94C]/10 px-5 py-2 text-xs font-bold uppercase tracking-[3px] text-[#96731F]">
+        {t("rwanda2.header.badge")}
+      </span>
+
+      <h2 className="mt-6 text-4xl font-black leading-[1.05] text-[#171510] md:text-6xl">
+        {t("rwanda2.header.title")}
+        <span className="block text-[#B28B2C]">
+          {t("rwanda2.header.titleHighlight")}
+        </span>
+      </h2>
+
+      <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-[#6B6559] md:text-lg">
+        {t("rwanda2.header.description")}
+      </p>
+
+    </div>
+
+
+    {/* ================= DESTINATIONS ================= */}
+    <div className="mt-16 grid gap-5 md:grid-cols-3">
+
+      {/* Akagera */}
+      <div className="group relative min-h-[390px] overflow-hidden rounded-[30px]">
+
+        <img
+          src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1000&q=85"
+          alt={t("rwanda2.destinations.akagera.imageAlt")}
+          className="absolute inset-0 h-full w-full object-cover transition duration-1000 group-hover:scale-105"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+
+        <div className="absolute bottom-0 p-7">
+
+          <span className="text-xs font-bold uppercase tracking-[3px] text-[#DFC66D]">
+            {t("rwanda2.destinations.akagera.badge")}
+          </span>
+
+          <h3 className="mt-2 text-3xl font-black text-white">
+            {t("rwanda2.destinations.akagera.title")}
+          </h3>
+
+          <p className="mt-2 text-sm leading-6 text-gray-200">
+            {t("rwanda2.destinations.akagera.description")}
+          </p>
+
+        </div>
+
+      </div>
+
+
+      {/* Lake Kivu */}
+      <div className="group relative min-h-[390px] overflow-hidden rounded-[30px]">
+
+        <img
+          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=85"
+          alt={t("rwanda2.destinations.lakeKivu.imageAlt")}
+          className="absolute inset-0 h-full w-full object-cover transition duration-1000 group-hover:scale-105"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+
+        <div className="absolute bottom-0 p-7">
+
+          <span className="text-xs font-bold uppercase tracking-[3px] text-[#DFC66D]">
+            {t("rwanda2.destinations.lakeKivu.badge")}
+          </span>
+
+          <h3 className="mt-2 text-3xl font-black text-white">
+            {t("rwanda2.destinations.lakeKivu.title")}
+          </h3>
+
+          <p className="mt-2 text-sm leading-6 text-gray-200">
+            {t("rwanda2.destinations.lakeKivu.description")}
+          </p>
+
+        </div>
+
+      </div>
+
+
+      {/* Kigali */}
+      <div className="group relative min-h-[390px] overflow-hidden rounded-[30px]">
+
+        <img
+          src="https://images.unsplash.com/photo-1618828665011-0abd973f7bb8?auto=format&fit=crop&w=1000&q=85"
+          alt={t("rwanda2.destinations.kigali.imageAlt")}
+          className="absolute inset-0 h-full w-full object-cover transition duration-1000 group-hover:scale-105"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+
+        <div className="absolute bottom-0 p-7">
+
+          <span className="text-xs font-bold uppercase tracking-[3px] text-[#DFC66D]">
+            {t("rwanda2.destinations.kigali.badge")}
+          </span>
+
+          <h3 className="mt-2 text-3xl font-black text-white">
+            {t("rwanda2.destinations.kigali.title")}
+          </h3>
+
+          <p className="mt-2 text-sm leading-6 text-gray-200">
+            {t("rwanda2.destinations.kigali.description")}
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    {/* ================= TOUR DETAILS ================= */}
+    <div className="mt-8 grid gap-4 rounded-[28px] border border-[#DED6C8] bg-white p-6 md:grid-cols-4 md:p-7">
+
+      {[
+        [
+          t("rwanda2.details.duration.label"),
+          t("rwanda2.details.duration.value"),
+        ],
+        [
+          t("rwanda2.details.route.label"),
+          t("rwanda2.details.route.value"),
+        ],
+        [
+          t("rwanda2.details.bestFor.label"),
+          t("rwanda2.details.bestFor.value"),
+        ],
+        [
+          t("rwanda2.details.transport.label"),
+          t("rwanda2.details.transport.value"),
+        ],
+      ].map(([label, value]) => (
+
+        <div
+          key={label}
+          className="rounded-2xl bg-[#F7F3EA] p-5"
+        >
+          <p className="text-xs font-bold uppercase tracking-[2px] text-[#B28B2C]">
+            {label}
+          </p>
+
+          <p className="mt-2 text-sm font-bold leading-6 text-[#29251E]">
+            {value}
+          </p>
+        </div>
+
+      ))}
+
+    </div>
+
+
+    {/* ================= ITINERARY ================= */}
+    <div className="mt-14">
+
+      <span className="text-xs font-bold uppercase tracking-[3px] text-[#B28B2C]">
+        {t("rwanda2.itinerary.badge")}
+      </span>
+
+      <h3 className="mt-3 text-3xl font-black text-[#171510] md:text-4xl">
+        {t("rwanda2.itinerary.title")}
+      </h3>
+
+      <div className="mt-8 grid gap-5 md:grid-cols-2">
+
+        {[
+          {
+            day: "01",
+            title: t("rwanda2.itinerary.days.day01.title"),
+            text: t("rwanda2.itinerary.days.day01.text"),
+            highlights: t("rwanda2.itinerary.days.day01.highlights"),
+          },
+          {
+            day: "02",
+            title: t("rwanda2.itinerary.days.day02.title"),
+            text: t("rwanda2.itinerary.days.day02.text"),
+            highlights: t("rwanda2.itinerary.days.day02.highlights"),
+          },
+          {
+            day: "03",
+            title: t("rwanda2.itinerary.days.day03.title"),
+            text: t("rwanda2.itinerary.days.day03.text"),
+            highlights: t("rwanda2.itinerary.days.day03.highlights"),
+          },
+          {
+            day: "04",
+            title: t("rwanda2.itinerary.days.day04.title"),
+            text: t("rwanda2.itinerary.days.day04.text"),
+            highlights: t("rwanda2.itinerary.days.day04.highlights"),
+          },
+        ].map((item) => (
+
+          <div
+            key={item.day}
+            className="rounded-[26px] border border-[#DED6C8] bg-white p-7 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+          >
+
+            <div className="flex items-start gap-5">
+
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#F7F3EA] text-sm font-black text-[#B28B2C]">
+                {item.day}
+              </span>
+
+              <div>
+
+                <h4 className="text-xl font-black text-[#171510]">
+                  {item.title}
+                </h4>
+
+                <p className="mt-3 text-sm leading-7 text-[#6B6559]">
+                  {item.text}
+                </p>
+
+                <span className="mt-5 inline-flex rounded-full bg-[#F7F3EA] px-4 py-2 text-xs font-bold text-[#96731F]">
+                  {item.highlights}
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </div>
+
+
+    {/* ================= PRICING ================= */}
+    <div className="mt-12 grid gap-6 lg:grid-cols-[1fr_1.3fr]">
+
+      <div className="rounded-[30px] bg-[#211F1A] p-8 text-white md:p-9">
+
+        <p className="text-xs font-bold uppercase tracking-[3px] text-[#C8A94C]">
+          {t("rwanda2.pricing.badge")}
+        </p>
+
+        <h3 className="mt-3 text-3xl font-black">
+          {t("rwanda2.pricing.title")}
+        </h3>
+
+        <p className="mt-4 text-sm leading-7 text-gray-400">
+          {t("rwanda2.pricing.description")}
+        </p>
+
+      </div>
+
+
+      <div className="grid gap-4 sm:grid-cols-3">
+
+        {[
+          {
+            label: t("rwanda2.pricing.options.budget.label"),
+            price: t("rwanda2.pricing.options.budget.price"),
+          },
+          {
+            label: t("rwanda2.pricing.options.midRange.label"),
+            price: t("rwanda2.pricing.options.midRange.price"),
+          },
+          {
+            label: t("rwanda2.pricing.options.luxury.label"),
+            price: t("rwanda2.pricing.options.luxury.price"),
+          },
+        ].map((option) => (
+
+          <div
+            key={option.label}
+            className="rounded-[24px] border border-[#DED6C8] bg-white p-6"
+          >
+
+            <p className="text-xs font-bold uppercase tracking-[2px] text-[#B28B2C]">
+              {option.label}
+            </p>
+
+            <p className="mt-4 text-2xl font-black text-[#171510]">
+              {option.price}
+            </p>
+
+            <p className="mt-1 text-xs text-[#8A8377]">
+              {t("rwanda2.pricing.perPerson")}
+            </p>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </div>
+
+
+    {/* ================= INCLUDED ================= */}
+    <div className="mt-10 rounded-[30px] border border-[#DED6C8] bg-white p-7 md:p-9">
+
+      <div className="grid gap-8 lg:grid-cols-[0.7fr_1.3fr]">
+
+        <div>
+
+          <span className="text-xs font-bold uppercase tracking-[3px] text-[#B28B2C]">
+            {t("rwanda2.included.badge")}
+          </span>
+
+          <h3 className="mt-3 text-3xl font-black text-[#171510]">
+            {t("rwanda2.included.title")}
+          </h3>
+
+        </div>
+
+        <div className="grid gap-3 sm:grid-cols-2">
+
+          {[
+            "rwanda2.included.items.accommodation",
+            "rwanda2.included.items.vehicle",
+            "rwanda2.included.items.guide",
+            "rwanda2.included.items.parkFees",
+            "rwanda2.included.items.gameDrives",
+            "rwanda2.included.items.ihemaBoat",
+            "rwanda2.included.items.kivuBoat",
+            "rwanda2.included.items.kigali",
+            "rwanda2.included.items.meals",
+            "rwanda2.included.items.water",
+            "rwanda2.included.items.transfers",
+          ].map((itemKey) => (
+
+            <div
+              key={itemKey}
+              className="flex items-center gap-3 rounded-xl bg-[#F7F3EA] px-4 py-3"
+            >
+
+              <span className="text-sm font-black text-[#B28B2C]">
+                ✓
+              </span>
+
+              <span className="text-sm font-medium text-[#514B40]">
+                {t(itemKey)}
+              </span>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    {/* ================= HIGHLIGHT ================= */}
+    <div className="mt-10 rounded-[32px] bg-[#211F1A] p-8 text-center text-white md:p-12">
+
+      <span className="text-xs font-bold uppercase tracking-[4px] text-[#C8A94C]">
+        {t("rwanda2.highlight.badge")}
+      </span>
+
+      <h3 className="mx-auto mt-4 max-w-3xl text-3xl font-black leading-tight md:text-4xl">
+        {t("rwanda2.highlight.titleLine1")}
+        <span className="text-[#C8A94C]">
+          {t("rwanda2.highlight.titleLine2")}
+        </span>
+        <br />
+        {t("rwanda2.highlight.titleLine3")}
+      </h3>
+
+      <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-gray-400">
+        {t("rwanda2.highlight.description")}
+      </p>
+
+    </div>
+
+
+    {/* ================= CTA ================= */}
+    <div className="mt-8 flex flex-wrap justify-center gap-4">
+
+      <a
+        href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I'm%20interested%20in%20the%204-Day%20Rwanda%20Adventure."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="rounded-2xl bg-[#C8A94C] px-8 py-4 font-bold text-[#211F1A] transition hover:-translate-y-1 hover:bg-[#DFC66D]"
+      >
+        {t("rwanda2.cta.planJourney")} →
+      </a>
+
+      <Link
+        to="/contact"
+        className="rounded-2xl border border-[#DED6C8] bg-white px-8 py-4 font-bold text-[#29251E] transition hover:-translate-y-1 hover:border-[#C8A94C] hover:text-[#96731F]"
+      >
+        {t("rwanda2.cta.contact")}
+      </Link>
+
+    </div>
+
+  </div>
+</section>
+
+{/* ================= ETHIOPIA HERITAGE & ADVENTURE ================= */}
+{/* ================= ETHIOPIA HERITAGE & ADVENTURE ================= */}
+<section
+  className="relative flex min-h-[58vh] items-center justify-center overflow-hidden lg:min-h-[65vh]"
+  style={{
+    backgroundImage: `url(${serengeti})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  {/* Dark overlay */}
+  <div className="absolute inset-0 bg-black/55" />
+
+  {/* Gradient */}
+  <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/75" />
+
+  {/* Content */}
+  <div className="relative z-10 mx-auto w-full max-w-4xl px-6 py-16 text-center text-white sm:px-8 lg:py-20">
+
+    {/* Brand badge */}
+    <div className="flex justify-center">
+      <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-5 py-2 text-[10px] font-semibold uppercase tracking-[3px] text-white backdrop-blur-md">
+        {t("services1.badge")}
+      </span>
+    </div>
+
+    {/* Heading */}
+    <h1 className="mx-auto mt-6 max-w-3xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl md:text-6xl">
+      {t("services1.title")}
+    </h1>
+
+    {/* Description */}
+    <p className="mx-auto mt-6 max-w-xl text-sm leading-6 text-white/80 sm:text-base sm:leading-7">
+      {t("services1.description")}
+    </p>
+
+    {/* Buttons */}
+    <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+
+      <a
+        href="/destinations"
+        className="inline-flex w-full items-center justify-center rounded-full bg-[#C8A94C] px-7 py-3 text-sm font-bold text-black shadow-lg transition duration-300 hover:-translate-y-1 hover:bg-[#D8BB63] sm:w-auto"
+      >
+        Explore Destinations
+        <span className="ml-2">→</span>
+      </a>
+
+      <a
+        href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27d%20like%20to%20plan%20a%20trip."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex w-full items-center justify-center rounded-full border border-white/30 bg-white/10 px-7 py-3 text-sm font-bold text-white backdrop-blur-md transition duration-300 hover:-translate-y-1 hover:bg-white hover:text-black sm:w-auto"
+      >
+        Plan Your Journey
+      </a>
+
+    </div>
+
+    {/* Bottom highlights */}
+    <div className="mx-auto mt-8 flex max-w-lg flex-wrap items-center justify-center gap-x-5 gap-y-2 text-[10px] font-medium uppercase tracking-[1.5px] text-white/60 sm:text-xs">
+
+      <span>Wildlife Safaris</span>
+
+      <span className="hidden h-1 w-1 rounded-full bg-[#C8A94C] sm:block" />
+
+      <span>Beach Holidays</span>
+
+      <span className="hidden h-1 w-1 rounded-full bg-[#C8A94C] sm:block" />
+
+      <span>Travel Experiences</span>
+
+    </div>
+
+  </div>
+</section>
+
+{/* ================= DRC ADVENTURE ================= */}
+{/* ================= DRC ADVENTURE ================= */}
+<section id="DRC2" className="relative overflow-hidden bg-[#F7F3EA] py-24 md:py-32">
+
+  {/* Background */}
+  <div className="absolute -left-40 top-20 h-[450px] w-[450px] rounded-full bg-[#C8A94C]/10 blur-[140px]" />
+  <div className="absolute -right-40 bottom-20 h-[450px] w-[450px] rounded-full bg-[#687B68]/15 blur-[140px]" />
+
+  <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
+
+    {/* ================= HEADER ================= */}
+    <div className="mx-auto max-w-4xl text-center">
+
+      <span className="inline-flex rounded-full bg-[#C8A94C]/10 px-5 py-2 text-xs font-bold uppercase tracking-[3px] text-[#96731F]">
+        {t("drcAdventure.header.badge")}
+      </span>
+
+      <h2 className="mt-6 text-4xl font-black leading-[1.05] text-[#171510] md:text-6xl">
+        {t("drcAdventure.header.title")}
+        <span className="block text-[#B28B2C]">
+          {t("drcAdventure.header.titleHighlight")}
+        </span>
+      </h2>
+
+      <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-[#6B6559] md:text-lg">
+        {t("drcAdventure.header.description")}
+      </p>
+
+    </div>
+
+
+    {/* ================= DESTINATIONS ================= */}
+    <div className="mt-16 grid gap-5 md:grid-cols-3">
+
+      {/* Goma */}
+      <div className="group relative min-h-[390px] overflow-hidden rounded-[30px]">
+
+        <img
+          src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1000&q=85"
+          alt={t("drcAdventure.destinations.goma.alt")}
+          className="absolute inset-0 h-full w-full object-cover transition duration-1000 group-hover:scale-105"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+
+        <div className="absolute bottom-0 p-7">
+
+          <span className="text-xs font-bold uppercase tracking-[3px] text-[#DFC66D]">
+            {t("drcAdventure.destinations.goma.days")}
+          </span>
+
+          <h3 className="mt-2 text-3xl font-black text-white">
+            {t("drcAdventure.destinations.goma.title")}
+          </h3>
+
+          <p className="mt-2 text-sm leading-6 text-gray-200">
+            {t("drcAdventure.destinations.goma.description")}
+          </p>
+
+        </div>
+
+      </div>
+
+
+      {/* Virunga */}
+      <div className="group relative min-h-[390px] overflow-hidden rounded-[30px]">
+
+        <img
+          src="https://images.unsplash.com/photo-1535338454770-8be927b5a00b?auto=format&fit=crop&w=1000&q=85"
+          alt={t("drcAdventure.destinations.virunga.alt")}
+          className="absolute inset-0 h-full w-full object-cover transition duration-1000 group-hover:scale-105"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+
+        <div className="absolute bottom-0 p-7">
+
+          <span className="text-xs font-bold uppercase tracking-[3px] text-[#DFC66D]">
+            {t("drcAdventure.destinations.virunga.days")}
+          </span>
+
+          <h3 className="mt-2 text-3xl font-black text-white">
+            {t("drcAdventure.destinations.virunga.title")}
+          </h3>
+
+          <p className="mt-2 text-sm leading-6 text-gray-200">
+            {t("drcAdventure.destinations.virunga.description")}
+          </p>
+
+        </div>
+
+      </div>
+
+
+      {/* Nyiragongo */}
+      <div className="group relative min-h-[390px] overflow-hidden rounded-[30px]">
+
+        <img
+          src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=85"
+          alt={t("drcAdventure.destinations.nyiragongo.alt")}
+          className="absolute inset-0 h-full w-full object-cover transition duration-1000 group-hover:scale-105" 
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+
+        <div className="absolute bottom-0 p-7">
+
+          <span className="text-xs font-bold uppercase tracking-[3px] text-[#DFC66D]">
+            {t("drcAdventure.destinations.nyiragongo.days")}
+          </span>
+
+          <h3 className="mt-2 text-3xl font-black text-white">
+            {t("drcAdventure.destinations.nyiragongo.title")}
+          </h3>
+
+          <p className="mt-2 text-sm leading-6 text-gray-200">
+            {t("drcAdventure.destinations.nyiragongo.description")}
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    {/* ================= TOUR DETAILS ================= */}
+    <div className="mt-8 grid gap-4 rounded-[28px] border border-[#DED6C8] bg-white p-6 md:grid-cols-4 md:p-7">
+
+      {[
+        [t("drcAdventure.details.duration.label"), t("drcAdventure.details.duration.value")],
+        [t("drcAdventure.details.route.label"), t("drcAdventure.details.route.value")],
+        [t("drcAdventure.details.bestFor.label"), t("drcAdventure.details.bestFor.value")],
+        [t("drcAdventure.details.transport.label"), t("drcAdventure.details.transport.value")],
+      ].map(([label, value]) => (
+
+        <div
+          key={label}
+          className="rounded-2xl bg-[#F7F3EA] p-5"
+        >
+
+          <p className="text-xs font-bold uppercase tracking-[2px] text-[#B28B2C]">
+            {label}
+          </p>
+
+          <p className="mt-2 text-sm font-bold leading-6 text-[#29251E]">
+            {value}
+          </p>
+
+        </div>
+
+      ))}
+
+    </div>
+
+
+    {/* ================= ITINERARY ================= */}
+    <div className="mt-14">
+
+      <span className="text-xs font-bold uppercase tracking-[3px] text-[#B28B2C]">
+        {t("drcAdventure.itinerary.eyebrow")}
+      </span>
+
+      <h3 className="mt-3 text-3xl font-black text-[#171510] md:text-4xl">
+        {t("drcAdventure.itinerary.title")}
+      </h3>
+
+      <div className="mt-8 grid gap-5 md:grid-cols-2">
+
+        {[
+          {
+            day: "01",
+            title: t("drcAdventure.itinerary.days.day01.title"),
+            text: t("drcAdventure.itinerary.days.day01.text"),
+            highlights: t("drcAdventure.itinerary.days.day01.highlights"),
+          },
+          {
+            day: "02",
+            title: t("drcAdventure.itinerary.days.day02.title"),
+            text: t("drcAdventure.itinerary.days.day02.text"),
+            highlights: t("drcAdventure.itinerary.days.day02.highlights"),
+          },
+          {
+            day: "03",
+            title: t("drcAdventure.itinerary.days.day03.title"),
+            text: t("drcAdventure.itinerary.days.day03.text"),
+            highlights: t("drcAdventure.itinerary.days.day03.highlights"),
+          },
+          {
+            day: "04",
+            title: t("drcAdventure.itinerary.days.day04.title"),
+            text: t("drcAdventure.itinerary.days.day04.text"),
+            highlights: t("drcAdventure.itinerary.days.day04.highlights"),
+          },
+        ].map((item) => (
+
+          <div
+            key={item.day}
+            className="rounded-[26px] border border-[#DED6C8] bg-white p-7 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+          >
+
+            <div className="flex items-start gap-5">
+
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#F7F3EA] text-sm font-black text-[#B28B2C]">
+                {item.day}
+              </span>
+
+              <div>
+
+                <h4 className="text-xl font-black text-[#171510]">
+                  {item.title}
+                </h4>
+
+                <p className="mt-3 text-sm leading-7 text-[#6B6559]">
+                  {item.text}
+                </p>
+
+                <span className="mt-5 inline-flex rounded-full bg-[#F7F3EA] px-4 py-2 text-xs font-bold text-[#96731F]">
+                  {item.highlights}
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </div>
+
+
+    {/* ================= PRICING ================= */}
+    <div className="mt-12 grid gap-6 lg:grid-cols-[1fr_1.3fr]">
+
+      <div className="rounded-[30px] bg-[#211F1A] p-8 text-white md:p-9">
+
+        <p className="text-xs font-bold uppercase tracking-[3px] text-[#C8A94C]">
+          {t("drcAdventure.pricing.eyebrow")}
+        </p>
+
+        <h3 className="mt-3 text-3xl font-black">
+          {t("drcAdventure.pricing.title")}
+        </h3>
+
+        <p className="mt-4 text-sm leading-7 text-gray-400">
+          {t("drcAdventure.pricing.description")}
+        </p>
+
+      </div>
+
+
+      <div className="grid gap-4 sm:grid-cols-3">
+
+        {[
+          [t("drcAdventure.pricing.options.budget.label"), t("drcAdventure.pricing.options.budget.price")],
+          [t("drcAdventure.pricing.options.midRange.label"), t("drcAdventure.pricing.options.midRange.price")],
+          [t("drcAdventure.pricing.options.luxury.label"), t("drcAdventure.pricing.options.luxury.price")],
+        ].map(([type, price]) => (
+
+          <div
+            key={type}
+            className="rounded-[24px] border border-[#DED6C8] bg-white p-6"
+          >
+
+            <p className="text-xs font-bold uppercase tracking-[2px] text-[#B28B2C]">
+              {type}
+            </p>
+
+            <p className="mt-4 text-2xl font-black text-[#171510]">
+              {price}
+            </p>
+
+            <p className="mt-1 text-xs text-[#8A8377]">
+              {t("drcAdventure.pricing.perPerson")}
+            </p>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </div>
+
+
+    {/* ================= INCLUDED ================= */}
+    <div className="mt-10 rounded-[30px] border border-[#DED6C8] bg-white p-7 md:p-9">
+
+      <div className="grid gap-8 lg:grid-cols-[0.7fr_1.3fr]">
+
+        <div>
+
+          <span className="text-xs font-bold uppercase tracking-[3px] text-[#B28B2C]">
+            {t("drcAdventure.included.eyebrow")}
+          </span>
+
+          <h3 className="mt-3 text-3xl font-black text-[#171510]">
+            {t("drcAdventure.included.title")}
+          </h3>
+
+        </div>
+
+        <div className="grid gap-3 sm:grid-cols-2">
+
+          {[
+            "accommodation",
+            "transport",
+            "guide",
+            "virunga",
+            "nyiragongo",
+            "ranger",
+            "lakeKivu",
+            "meals",
+            "water",
+            "airport",
+          ].map((item) => (
+
+            <div
+              key={item}
+              className="flex items-center gap-3 rounded-xl bg-[#F7F3EA] px-4 py-3"
+            >
+
+              <span className="text-sm font-black text-[#B28B2C]">
+                ✓
+              </span>
+
+              <span className="text-sm font-medium text-[#514B40]">
+                {t(`drcAdventure.included.items.${item}`)}
+              </span>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    {/* ================= IMPORTANT NOTE ================= */}
+    <div className="mt-10 rounded-[30px] border border-amber-200 bg-amber-50 p-7 md:p-9">
+
+      <div className="flex items-start gap-4">
+
+        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-amber-100 text-lg">
+          ⚠️
+        </div>
+
+        <div>
+
+          <span className="text-xs font-bold uppercase tracking-[3px] text-amber-700">
+            {t("drcAdventure.importantNote.eyebrow")}
+          </span>
+
+          <h3 className="mt-2 text-xl font-black text-[#29251E]">
+            {t("drcAdventure.importantNote.title")}
+          </h3>
+
+          <p className="mt-3 text-sm leading-7 text-[#6B6559]">
+            {t("drcAdventure.importantNote.description")}
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    {/* ================= ALTERNATIVE EXPERIENCE ================= */}
+    <div className="mt-8 rounded-[30px] bg-[#211F1A] p-8 text-white md:p-10">
+
+      <span className="text-xs font-bold uppercase tracking-[3px] text-[#C8A94C]">
+        {t("drcAdventure.alternative.eyebrow")}
+      </span>
+
+      <h3 className="mt-3 text-3xl font-black">
+        {t("drcAdventure.alternative.title")}
+      </h3>
+
+      <p className="mt-4 max-w-3xl text-sm leading-7 text-gray-400">
+        {t("drcAdventure.alternative.description")}
+      </p>
+
+    </div>
+
+
+    {/* ================= HIGHLIGHT ================= */}
+    <div className="mt-10 rounded-[32px] bg-[#211F1A] p-8 text-center text-white md:p-12">
+
+      <span className="text-xs font-bold uppercase tracking-[4px] text-[#C8A94C]">
+        {t("drcAdventure.highlight.eyebrow")}
+      </span>
+
+      <h3 className="mx-auto mt-4 max-w-3xl text-3xl font-black leading-tight md:text-4xl">
+        {t("drcAdventure.highlight.title")}
+        <br />
+        {t("drcAdventure.highlight.titleSecond")}
+      </h3>
+
+      <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-gray-400">
+        {t("drcAdventure.highlight.description")}
+      </p>
+
+    </div>
+
+
+    {/* ================= CTA ================= */}
+    <div className="mt-8 flex flex-wrap justify-center gap-4">
+
+      <a
+        href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I'm%20interested%20in%20the%204-Day%20DRC%20Adventure."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="rounded-2xl bg-[#C8A94C] px-8 py-4 font-bold text-[#211F1A] transition hover:-translate-y-1 hover:bg-[#DFC66D]"
+      >
+        {t("drcAdventure.cta.whatsapp")}
+      </a>
+
+      <Link
+        to="/contact"
+        className="rounded-2xl border border-[#DED6C8] bg-white px-8 py-4 font-bold text-[#29251E] transition hover:-translate-y-1 hover:border-[#C8A94C] hover:text-[#96731F]"
+      >
+        {t("drcAdventure.cta.contact")}
+      </Link>
+
+    </div>
+
+  </div>
+</section>
+
+
+{/* ================= ZAMBIA EXPERIENCE ================= */}
+{/* ================= ZAMBIA ADVENTURE ================= */}
+<section
+  id="zambia2-safari"
+  className="relative overflow-hidden bg-[#F7F3EA] py-24 md:py-32"
+>
+  <div className="absolute -left-40 top-20 h-[500px] w-[500px] rounded-full bg-[#C8A94C]/10 blur-[140px]" />
+  <div className="absolute -right-40 bottom-20 h-[500px] w-[500px] rounded-full bg-[#D6B98C]/20 blur-[140px]" />
+
+  <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
+
+    {/* ================= HEADER ================= */}
+    <div className="mx-auto max-w-4xl text-center">
+
+      <span className="inline-flex rounded-full bg-[#C8A94C]/10 px-5 py-2 text-xs font-bold uppercase tracking-[3px] text-[#96731F]">
+        {t("zambiaAdventure.header.badge")}
+      </span>
+
+      <h2 className="mt-6 text-4xl font-black leading-[1.05] text-[#171510] md:text-6xl">
+        {t("zambiaAdventure.header.title")}
+        <span className="block text-[#B28B2C]">
+          {t("zambiaAdventure.header.titleHighlight")}
+        </span>
+      </h2>
+
+      <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-[#6B6559] md:text-lg">
+        {t("zambiaAdventure.header.description")}
+      </p>
+
+    </div>
+
+
+    {/* ================= EXPERIENCE IMAGES ================= */}
+    <div className="mt-16 grid gap-5 lg:grid-cols-12">
+
+      {/* Victoria Falls */}
+      <div className="group relative min-h-[500px] overflow-hidden rounded-[32px] lg:col-span-7">
+
+        <img
+          src={victoria1}
+          alt={t("zambiaAdventure.experiences.victoriaFalls.alt")}
+          className="absolute inset-0 h-full w-full object-cover transition duration-1000 group-hover:scale-105"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+
+        <div className="absolute bottom-0 left-0 right-0 p-8 md:p-10">
+
+          <span className="text-xs font-bold uppercase tracking-[3px] text-[#DFC66D]">
+            {t("zambiaAdventure.experiences.victoriaFalls.eyebrow")}
+          </span>
+
+          <h3 className="mt-2 text-4xl font-black text-white">
+            {t("zambiaAdventure.experiences.victoriaFalls.title")}
+          </h3>
+
+          <p className="mt-3 max-w-xl text-sm leading-7 text-gray-200">
+            {t("zambiaAdventure.experiences.victoriaFalls.description")}
+          </p>
+
+        </div>
+
+      </div>
+
+
+      {/* Zambezi + Wildlife */}
+      <div className="grid gap-5 lg:col-span-5">
+
+        {/* Zambezi */}
+        <div className="group relative min-h-[240px] overflow-hidden rounded-[32px]">
+
+          <img
+            src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=85"
+            alt={t("zambiaAdventure.experiences.zambezi.alt")}
+            className="absolute inset-0 h-full w-full object-cover transition duration-1000 group-hover:scale-105"
+          />
+
+          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+
+          <div className="absolute bottom-0 p-7">
+
+            <span className="text-xs font-bold uppercase tracking-[3px] text-[#DFC66D]">
+              {t("zambiaAdventure.experiences.zambezi.eyebrow")}
+            </span>
+
+            <h4 className="mt-2 text-2xl font-black text-white">
+              {t("zambiaAdventure.experiences.zambezi.title")}
+            </h4>
+
+          </div>
+
+        </div>
+
+
+        {/* Wildlife */}
+        <div className="group relative min-h-[240px] overflow-hidden rounded-[32px]">
+
+          <img
+            src="https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=1000&q=85"
+            alt={t("zambiaAdventure.experiences.wildlife.alt")}
+            className="absolute inset-0 h-full w-full object-cover transition duration-1000 group-hover:scale-105"
+          />
+
+          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+
+          <div className="absolute bottom-0 p-7">
+
+            <span className="text-xs font-bold uppercase tracking-[3px] text-[#DFC66D]">
+              {t("zambiaAdventure.experiences.wildlife.eyebrow")}
+            </span>
+
+            <h4 className="mt-2 text-2xl font-black text-white">
+              {t("zambiaAdventure.experiences.wildlife.title")}
+            </h4>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    {/* ================= TOUR DETAILS ================= */}
+    <div className="mt-10 grid gap-4 rounded-[30px] border border-[#DED6C8] bg-white p-6 md:grid-cols-4 md:p-8">
+
+      {[
+        [
+          t("zambiaAdventure.details.duration.label"),
+          t("zambiaAdventure.details.duration.value"),
+        ],
+        [
+          t("zambiaAdventure.details.route.label"),
+          t("zambiaAdventure.details.route.value"),
+        ],
+        [
+          t("zambiaAdventure.details.bestFor.label"),
+          t("zambiaAdventure.details.bestFor.value"),
+        ],
+        [
+          t("zambiaAdventure.details.transport.label"),
+          t("zambiaAdventure.details.transport.value"),
+        ],
+      ].map(([label, value]) => (
+
+        <div
+          key={label}
+          className="rounded-2xl bg-[#F7F3EA] p-5"
+        >
+
+          <p className="text-xs font-bold uppercase tracking-[2px] text-[#B28B2C]">
+            {label}
+          </p>
+
+          <p className="mt-2 text-sm font-bold leading-6 text-[#29251E]">
+            {value}
+          </p>
+
+        </div>
+
+      ))}
+
+    </div>
+
+
+    {/* ================= ITINERARY ================= */}
+    <div className="mt-12">
+
+      <span className="text-xs font-bold uppercase tracking-[3px] text-[#B28B2C]">
+        {t("zambiaAdventure.itinerary.eyebrow")}
+      </span>
+
+      <h3 className="mt-3 text-3xl font-black text-[#171510]">
+        {t("zambiaAdventure.itinerary.title")}
+      </h3>
+
+      <div className="mt-8 space-y-4">
+
+        {[
+          {
+            day: "01",
+            title: t("zambiaAdventure.itinerary.days.day01.title"),
+            text: t("zambiaAdventure.itinerary.days.day01.text"),
+          },
+          {
+            day: "02",
+            title: t("zambiaAdventure.itinerary.days.day02.title"),
+            text: t("zambiaAdventure.itinerary.days.day02.text"),
+          },
+          {
+            day: "03",
+            title: t("zambiaAdventure.itinerary.days.day03.title"),
+            text: t("zambiaAdventure.itinerary.days.day03.text"),
+          },
+          {
+            day: "04",
+            title: t("zambiaAdventure.itinerary.days.day04.title"),
+            text: t("zambiaAdventure.itinerary.days.day04.text"),
+          },
+        ].map((item) => (
+
+          <div
+            key={item.day}
+            className="grid gap-5 rounded-[26px] border border-[#DED6C8] bg-white p-6 transition duration-300 hover:-translate-y-1 hover:shadow-lg md:grid-cols-[80px_1fr]"
+          >
+
+            <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#F7F3EA] text-xl font-black text-[#B28B2C]">
+              {item.day}
+            </div>
+
+            <div>
+
+              <h4 className="text-xl font-black text-[#171510]">
+                {item.title}
+              </h4>
+
+              <p className="mt-2 text-sm leading-7 text-[#6B6559]">
+                {item.text}
+              </p>
+
+            </div>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </div>
+
+
+    {/* ================= PACKAGE + PRICING ================= */}
+    <div className="mt-12 grid gap-6 lg:grid-cols-[1fr_0.8fr]">
+
+      {/* Included */}
+      <div className="rounded-[30px] bg-[#211F1A] p-8 text-white md:p-10">
+
+        <p className="text-xs font-bold uppercase tracking-[3px] text-[#C8A94C]">
+          {t("zambiaAdventure.included.eyebrow")}
+        </p>
+
+        <h3 className="mt-3 text-3xl font-black">
+          {t("zambiaAdventure.included.title")}
+        </h3>
+
+        <div className="mt-6 grid gap-3 sm:grid-cols-2">
+
+          {[
+            "accommodation",
+            "airportTransfers",
+            "privateTransport",
+            "guide",
+            "victoriaFalls",
+            "sunsetCruise",
+            "gameDrive",
+            "adventureActivity",
+            "mukuni",
+            "meals",
+            "water",
+          ].map((item) => (
+
+            <div
+              key={item}
+              className="flex items-center gap-2 text-sm text-gray-300"
+            >
+
+              <span className="text-[#C8A94C]">
+                ✓
+              </span>
+
+              {t(`zambiaAdventure.included.items.${item}`)}
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </div>
+
+
+      {/* Pricing */}
+      <div className="rounded-[30px] border border-[#DED6C8] bg-white p-8 md:p-10">
+
+        <p className="text-xs font-bold uppercase tracking-[3px] text-[#B28B2C]">
+          {t("zambiaAdventure.pricing.eyebrow")}
+        </p>
+
+        <h3 className="mt-3 text-3xl font-black text-[#171510]">
+          {t("zambiaAdventure.pricing.title")}
+        </h3>
+
+        <div className="mt-7 space-y-3">
+
+          {[
+            [
+              t("zambiaAdventure.pricing.options.budget.label"),
+              t("zambiaAdventure.pricing.options.budget.price"),
+            ],
+            [
+              t("zambiaAdventure.pricing.options.midRange.label"),
+              t("zambiaAdventure.pricing.options.midRange.price"),
+            ],
+            [
+              t("zambiaAdventure.pricing.options.luxury.label"),
+              t("zambiaAdventure.pricing.options.luxury.price"),
+            ],
+          ].map(([type, price]) => (
+
+            <div
+              key={type}
+              className="flex items-center justify-between rounded-2xl bg-[#F7F3EA] p-5"
+            >
+
+              <span className="font-bold text-[#29251E]">
+                {type}
+              </span>
+
+              <span className="font-black text-[#B28B2C]">
+                {price}
+              </span>
+
+            </div>
+
+          ))}
+
+        </div>
+
+        <p className="mt-5 text-xs leading-6 text-[#777064]">
+          {t("zambiaAdventure.pricing.note")}
+        </p>
+
+      </div>
+
+    </div>
+
+
+    {/* ================= HIGHLIGHT ================= */}
+    <div className="mt-12 rounded-[30px] bg-[#211F1A] p-8 text-center text-white md:p-12">
+
+      <span className="text-xs font-bold uppercase tracking-[3px] text-[#C8A94C]">
+        {t("zambiaAdventure.highlight.eyebrow")}
+      </span>
+
+      <h3 className="mx-auto mt-4 max-w-3xl text-3xl font-black md:text-4xl">
+        {t("zambiaAdventure.highlight.title")}
+        <span className="block text-[#C8A94C]">
+          {t("zambiaAdventure.highlight.titleHighlight")}
+        </span>
+      </h3>
+
+      <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-gray-400">
+        {t("zambiaAdventure.highlight.description")}
+      </p>
+
+      <a
+        href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I'm%20interested%20in%20the%204-Day%20Zambia%20Adventure."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-8 inline-flex rounded-2xl bg-[#C8A94C] px-8 py-4 font-bold text-[#211F1A] transition hover:-translate-y-1 hover:bg-[#DFC66D]"
+      >
+        {t("zambiaAdventure.cta")}
+        <span className="ml-2">→</span>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+{/* ================= ZIMBABWE EXPERIENCES ================= */}
+<section
+  id="zimbabwe2-safari"
+  className="relative overflow-hidden bg-[#F7F3EA] py-20 md:py-28"
+>
+  <div className="absolute -left-40 top-20 h-[400px] w-[400px] rounded-full bg-[#C8A94C]/10 blur-[120px]" />
+  <div className="absolute -right-40 bottom-20 h-[400px] w-[400px] rounded-full bg-[#D6B98C]/20 blur-[120px]" />
+
+  <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
+
+    {/* ================= HEADER ================= */}
+    <div className="mx-auto max-w-3xl text-center">
+
+      <span className="inline-flex rounded-full bg-[#C8A94C]/10 px-4 py-2 text-[10px] font-bold uppercase tracking-[3px] text-[#96731F]">
+        {t("zimbabweAdventure.header.badge")}
+      </span>
+
+      <h2 className="mt-5 text-4xl font-black leading-tight text-[#171510] md:text-6xl">
+        {t("zimbabweAdventure.header.title")}
+        <span className="block text-[#B28B2C]">
+          {t("zimbabweAdventure.header.titleHighlight")}
+        </span>
+      </h2>
+
+      <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-[#6B6559] md:text-base">
+        {t("zimbabweAdventure.header.description")}
+      </p>
+
+    </div>
+
+
+    {/* ================= HERO IMAGE GRID ================= */}
+    <div className="mt-12 grid gap-5 lg:grid-cols-12">
+
+      {/* Victoria Falls */}
+      <div className="group relative min-h-[430px] overflow-hidden rounded-[30px] lg:col-span-7">
+
+        <img
+          src="https://images.unsplash.com/photo-1519659528534-7fd733a832a0?auto=format&fit=crop&w=1400&q=85"
+          alt={t("zimbabweAdventure.experiences.victoriaFalls.alt")}
+          className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+
+        <div className="absolute bottom-0 p-8">
+
+          <span className="text-[10px] font-bold uppercase tracking-[3px] text-[#DFC66D]">
+            {t("zimbabweAdventure.experiences.victoriaFalls.eyebrow")}
+          </span>
+
+          <h3 className="mt-2 text-3xl font-black text-white md:text-4xl">
+            {t("zimbabweAdventure.experiences.victoriaFalls.title")}
+          </h3>
+
+          <p className="mt-2 max-w-lg text-sm leading-6 text-gray-200">
+            {t("zimbabweAdventure.experiences.victoriaFalls.description")}
+          </p>
+
+        </div>
+
+      </div>
+
+
+      {/* Zambezi */}
+      <div className="grid gap-5 lg:col-span-5">
+
+        <div className="group relative min-h-[205px] overflow-hidden rounded-[30px]">
+
+          <img
+            src="https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?auto=format&fit=crop&w=1000&q=85"
+            alt={t("zimbabweAdventure.experiences.zambezi.alt")}
+            className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
+          />
+
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+
+          <div className="absolute bottom-0 p-6">
+
+            <span className="text-[10px] font-bold uppercase tracking-[3px] text-[#DFC66D]">
+              {t("zimbabweAdventure.experiences.zambezi.eyebrow")}
+            </span>
+
+            <h4 className="mt-2 text-2xl font-black text-white">
+              {t("zimbabweAdventure.experiences.zambezi.title")}
+            </h4>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    {/* ================= TOUR DETAILS ================= */}
+    <div className="mt-8 grid gap-4 rounded-[28px] border border-[#DED6C8] bg-white p-5 md:grid-cols-4">
+
+      {[
+        [
+          t("zimbabweAdventure.details.duration.label"),
+          t("zimbabweAdventure.details.duration.value"),
+        ],
+        [
+          t("zimbabweAdventure.details.location.label"),
+          t("zimbabweAdventure.details.location.value"),
+        ],
+        [
+          t("zimbabweAdventure.details.bestFor.label"),
+          t("zimbabweAdventure.details.bestFor.value"),
+        ],
+        [
+          t("zimbabweAdventure.details.transport.label"),
+          t("zimbabweAdventure.details.transport.value"),
+        ],
+      ].map(([label, value]) => (
+
+        <div
+          key={label}
+          className="rounded-2xl bg-[#F7F3EA] p-5"
+        >
+
+          <p className="text-[10px] font-bold uppercase tracking-[2px] text-[#B28B2C]">
+            {label}
+          </p>
+
+          <p className="mt-2 text-sm font-bold leading-6 text-[#29251E]">
+            {value}
+          </p>
+
+        </div>
+
+      ))}
+
+    </div>
+
+
+    {/* ================= ITINERARY ================= */}
+    <div className="mt-12">
+
+      <div className="flex items-end justify-between gap-5">
+
+        <div>
+
+          <span className="text-[10px] font-bold uppercase tracking-[3px] text-[#B28B2C]">
+            {t("zimbabweAdventure.itinerary.eyebrow")}
+          </span>
+
+          <h3 className="mt-2 text-3xl font-black text-[#171510]">
+            {t("zimbabweAdventure.itinerary.title")}
+          </h3>
+
+        </div>
+
+      </div>
+
+
+      <div className="mt-7 grid gap-4 md:grid-cols-2">
+
+        {[
+          {
+            day: "01",
+            title: t("zimbabweAdventure.itinerary.days.day01.title"),
+            text: t("zimbabweAdventure.itinerary.days.day01.text"),
+          },
+          {
+            day: "02",
+            title: t("zimbabweAdventure.itinerary.days.day02.title"),
+            text: t("zimbabweAdventure.itinerary.days.day02.text"),
+          },
+          {
+            day: "03",
+            title: t("zimbabweAdventure.itinerary.days.day03.title"),
+            text: t("zimbabweAdventure.itinerary.days.day03.text"),
+          },
+          {
+            day: "04",
+            title: t("zimbabweAdventure.itinerary.days.day04.title"),
+            text: t("zimbabweAdventure.itinerary.days.day04.text"),
+          },
+        ].map((item) => (
+
+          <div
+            key={item.day}
+            className="rounded-[24px] border border-[#DED6C8] bg-white p-6 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+          >
+
+            <div className="flex items-start gap-4">
+
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#F7F3EA] text-sm font-black text-[#B28B2C]">
+                {item.day}
+              </span>
+
+              <div>
+
+                <h4 className="text-lg font-black text-[#171510]">
+                  {item.title}
+                </h4>
+
+                <p className="mt-2 text-sm leading-6 text-[#6B6559]">
+                  {item.text}
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </div>
+
+
+    {/* ================= INCLUDED + PRICING ================= */}
+    <div className="mt-10 grid gap-5 lg:grid-cols-2">
+
+      {/* INCLUDED */}
+      <div className="rounded-[28px] bg-[#211F1A] p-7 text-white">
+
+        <p className="text-[10px] font-bold uppercase tracking-[3px] text-[#C8A94C]">
+          {t("zimbabweAdventure.included.eyebrow")}
+        </p>
+
+        <div className="mt-5 grid gap-3 sm:grid-cols-2">
+
+          {[
+            "accommodation",
+            "airportTransfers",
+            "privateTransport",
+            "guide",
+            "victoriaFalls",
+            "sunsetCruise",
+            "wildlife",
+            "adventure",
+          ].map((item) => (
+
+            <div
+              key={item}
+              className="flex gap-2 text-sm text-white/70"
+            >
+
+              <span className="text-[#C8A94C]">
+                ✓
+              </span>
+
+              {t(`zimbabweAdventure.included.items.${item}`)}
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </div>
+
+
+      {/* PRICING */}
+      <div className="rounded-[28px] border border-[#DED6C8] bg-white p-7">
+
+        <p className="text-[10px] font-bold uppercase tracking-[3px] text-[#B28B2C]">
+          {t("zimbabweAdventure.pricing.eyebrow")}
+        </p>
+
+        <div className="mt-5 space-y-3">
+
+          {[
+            [
+              t("zimbabweAdventure.pricing.options.budget.label"),
+              t("zimbabweAdventure.pricing.options.budget.price"),
+            ],
+            [
+              t("zimbabweAdventure.pricing.options.midRange.label"),
+              t("zimbabweAdventure.pricing.options.midRange.price"),
+            ],
+            [
+              t("zimbabweAdventure.pricing.options.luxury.label"),
+              t("zimbabweAdventure.pricing.options.luxury.price"),
+            ],
+          ].map(([type, price]) => (
+
+            <div
+              key={type}
+              className="flex items-center justify-between rounded-xl bg-[#F7F3EA] px-5 py-4"
+            >
+
+              <span className="text-sm font-bold text-[#29251E]">
+                {type}
+              </span>
+
+              <span className="text-lg font-black text-[#B28B2C]">
+                {price}
+              </span>
+
+            </div>
+
+          ))}
+
+        </div>
+
+        <p className="mt-4 text-xs leading-5 text-[#8A8377]">
+          {t("zimbabweAdventure.pricing.note")}
+        </p>
+
+      </div>
+
+    </div>
+
+
+    {/* ================= BOOK BUTTON ================= */}
+    <div className="mt-10 flex flex-col items-center justify-between gap-5 rounded-[28px] bg-[#211F1A] p-7 text-center text-white sm:flex-row sm:text-left">
+
+      <div>
+
+        <p className="text-[10px] font-bold uppercase tracking-[3px] text-[#C8A94C]">
+          {t("zimbabweAdventure.booking.brand")}
+        </p>
+
+        <h3 className="mt-2 text-2xl font-black">
+          {t("zimbabweAdventure.booking.title")}
+        </h3>
+
+        <p className="mt-1 text-sm text-white/50">
+          {t("zimbabweAdventure.booking.description")}
+        </p>
+
+      </div>
+
+      <a
+        href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I'm%20interested%20in%20the%204-Day%20Zimbabwe%20Adventure."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="shrink-0 rounded-full bg-[#C8A94C] px-7 py-3.5 text-sm font-bold text-[#211F1A] transition hover:bg-[#DFC66D]"
+      >
+        {t("zimbabweAdventure.booking.button")}
+      </a>
+
+    </div>
+
+  </div>
+</section>
+{/* ================= MOZAMBIQUE EXPERIENCES ================= */}
+<section
+  id="mozambique2-safari"
+  className="relative overflow-hidden bg-[#F7F3EA] py-20 md:py-28"
+>
+  <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
+
+    {/* ================= HEADER ================= */}
+    <div className="mx-auto max-w-3xl text-center">
+
+      <span className="inline-flex rounded-full bg-[#C8A94C]/10 px-4 py-2 text-[10px] font-bold uppercase tracking-[3px] text-[#96731F]">
+        {t("mozambiqueAdventure.header.badge")}
+      </span>
+
+      <h2 className="mt-5 text-4xl font-black leading-tight text-[#171510] md:text-6xl">
+        {t("mozambiqueAdventure.header.title")}
+        <span className="block text-[#B28B2C]">
+          {t("mozambiqueAdventure.header.titleHighlight")}
+        </span>
+      </h2>
+
+      <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-[#6B6559] md:text-base">
+        {t("mozambiqueAdventure.header.description")}
+      </p>
+
+    </div>
+
+
+    {/* ================= IMAGE GRID ================= */}
+    <div className="mt-12 grid gap-5 lg:grid-cols-12">
+
+      {/* Tofo Beach */}
+      <div className="group relative min-h-[430px] overflow-hidden rounded-[30px] lg:col-span-7">
+
+        <img
+          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=85"
+          alt={t("mozambiqueAdventure.experiences.tofo.alt")}
+          className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+
+        <div className="absolute bottom-0 p-8">
+
+          <span className="text-[10px] font-bold uppercase tracking-[3px] text-[#DFC66D]">
+            {t("mozambiqueAdventure.experiences.tofo.eyebrow")}
+          </span>
+
+          <h3 className="mt-2 text-3xl font-black text-white md:text-4xl">
+            {t("mozambiqueAdventure.experiences.tofo.title")}
+          </h3>
+
+          <p className="mt-2 max-w-lg text-sm leading-6 text-gray-200">
+            {t("mozambiqueAdventure.experiences.tofo.description")}
+          </p>
+
+        </div>
+
+      </div>
+
+
+      {/* Maputo + Ocean */}
+      <div className="grid gap-5 lg:col-span-5">
+
+        {/* Maputo */}
+        <div className="group relative min-h-[205px] overflow-hidden rounded-[30px]">
+
+          <img
+            src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1000&q=85"
+            alt={t("mozambiqueAdventure.experiences.maputo.alt")}
+            className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
+          />
+
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+
+          <div className="absolute bottom-0 p-6">
+
+            <span className="text-[10px] font-bold uppercase tracking-[3px] text-[#DFC66D]">
+              {t("mozambiqueAdventure.experiences.maputo.eyebrow")}
+            </span>
+
+            <h4 className="mt-2 text-2xl font-black text-white">
+              {t("mozambiqueAdventure.experiences.maputo.title")}
+            </h4>
+
+          </div>
+
+        </div>
+
+
+        {/* Ocean */}
+        <div className="group relative min-h-[205px] overflow-hidden rounded-[30px]">
+
+          <img
+            src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1000&q=85"
+            alt={t("mozambiqueAdventure.experiences.ocean.alt")}
+            className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
+          />
+
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+
+          <div className="absolute bottom-0 p-6">
+
+            <span className="text-[10px] font-bold uppercase tracking-[3px] text-[#DFC66D]">
+              {t("mozambiqueAdventure.experiences.ocean.eyebrow")}
+            </span>
+
+            <h4 className="mt-2 text-2xl font-black text-white">
+              {t("mozambiqueAdventure.experiences.ocean.title")}
+            </h4>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    {/* ================= DETAILS ================= */}
+    <div className="mt-8 grid gap-4 rounded-[28px] border border-[#DED6C8] bg-white p-5 md:grid-cols-4">
+
+      {[
+        [
+          t("mozambiqueAdventure.details.duration.label"),
+          t("mozambiqueAdventure.details.duration.value"),
+        ],
+        [
+          t("mozambiqueAdventure.details.route.label"),
+          t("mozambiqueAdventure.details.route.value"),
+        ],
+        [
+          t("mozambiqueAdventure.details.bestFor.label"),
+          t("mozambiqueAdventure.details.bestFor.value"),
+        ],
+        [
+          t("mozambiqueAdventure.details.experience.label"),
+          t("mozambiqueAdventure.details.experience.value"),
+        ],
+      ].map(([label, value]) => (
+
+        <div
+          key={label}
+          className="rounded-2xl bg-[#F7F3EA] p-5"
+        >
+
+          <p className="text-[10px] font-bold uppercase tracking-[2px] text-[#B28B2C]">
+            {label}
+          </p>
+
+          <p className="mt-2 text-sm font-bold leading-6 text-[#29251E]">
+            {value}
+          </p>
+
+        </div>
+
+      ))}
+
+    </div>
+
+
+    {/* ================= ITINERARY ================= */}
+    <div className="mt-12">
+
+      <span className="text-[10px] font-bold uppercase tracking-[3px] text-[#B28B2C]">
+        {t("mozambiqueAdventure.itinerary.eyebrow")}
+      </span>
+
+      <h3 className="mt-2 text-3xl font-black text-[#171510]">
+        {t("mozambiqueAdventure.itinerary.title")}
+      </h3>
+
+      <div className="mt-7 grid gap-4 md:grid-cols-2">
+
+        {[
+          {
+            day: "01",
+            title: t("mozambiqueAdventure.itinerary.days.day01.title"),
+            text: t("mozambiqueAdventure.itinerary.days.day01.text"),
+          },
+          {
+            day: "02",
+            title: t("mozambiqueAdventure.itinerary.days.day02.title"),
+            text: t("mozambiqueAdventure.itinerary.days.day02.text"),
+          },
+          {
+            day: "03",
+            title: t("mozambiqueAdventure.itinerary.days.day03.title"),
+            text: t("mozambiqueAdventure.itinerary.days.day03.text"),
+          },
+          {
+            day: "04",
+            title: t("mozambiqueAdventure.itinerary.days.day04.title"),
+            text: t("mozambiqueAdventure.itinerary.days.day04.text"),
+          },
+        ].map((item) => (
+
+          <div
+            key={item.day}
+            className="rounded-[24px] border border-[#DED6C8] bg-white p-6 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+          >
+
+            <div className="flex items-start gap-4">
+
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#F7F3EA] text-sm font-black text-[#B28B2C]">
+                {item.day}
+              </span>
+
+              <div>
+
+                <h4 className="text-lg font-black text-[#171510]">
+                  {item.title}
+                </h4>
+
+                <p className="mt-2 text-sm leading-6 text-[#6B6559]">
+                  {item.text}
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </div>
+
+
+    {/* ================= HIGHLIGHTS + PRICING ================= */}
+    <div className="mt-10 grid gap-5 lg:grid-cols-2">
+
+      {/* Highlight */}
+      <div className="rounded-[28px] bg-[#211F1A] p-7 text-white">
+
+        <p className="text-[10px] font-bold uppercase tracking-[3px] text-[#C8A94C]">
+          {t("mozambiqueAdventure.highlight.eyebrow")}
+        </p>
+
+        <h3 className="mt-3 text-2xl font-black">
+          {t("mozambiqueAdventure.highlight.title")}
+        </h3>
+
+        <p className="mt-4 text-sm leading-7 text-white/55">
+          {t("mozambiqueAdventure.highlight.description")}
+        </p>
+
+      </div>
+
+
+      {/* Pricing */}
+      <div className="rounded-[28px] border border-[#DED6C8] bg-white p-7">
+
+        <p className="text-[10px] font-bold uppercase tracking-[3px] text-[#B28B2C]">
+          {t("mozambiqueAdventure.pricing.eyebrow")}
+        </p>
+
+        <div className="mt-5 space-y-3">
+
+          {[
+            [
+              t("mozambiqueAdventure.pricing.options.budget.label"),
+              t("mozambiqueAdventure.pricing.options.budget.price"),
+            ],
+            [
+              t("mozambiqueAdventure.pricing.options.midRange.label"),
+              t("mozambiqueAdventure.pricing.options.midRange.price"),
+            ],
+            [
+              t("mozambiqueAdventure.pricing.options.luxury.label"),
+              t("mozambiqueAdventure.pricing.options.luxury.price"),
+            ],
+          ].map(([type, price]) => (
+
+            <div
+              key={type}
+              className="flex items-center justify-between rounded-xl bg-[#F7F3EA] px-5 py-4"
+            >
+
+              <span className="text-sm font-bold text-[#29251E]">
+                {type}
+              </span>
+
+              <span className="text-lg font-black text-[#B28B2C]">
+                {price}
+              </span>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    {/* ================= BOOK BUTTON ================= */}
+    <div className="mt-10 flex flex-col items-center justify-between gap-5 rounded-[28px] bg-[#211F1A] p-7 text-center text-white sm:flex-row sm:text-left">
+
+      <div>
+
+        <p className="text-[10px] font-bold uppercase tracking-[3px] text-[#C8A94C]">
+          {t("mozambiqueAdventure.booking.brand")}
+        </p>
+
+        <h3 className="mt-2 text-2xl font-black">
+          {t("mozambiqueAdventure.booking.title")}
+        </h3>
+
+      </div>
+
+      <a
+        href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I'm%20interested%20in%20the%204-Day%20Mozambique%20Culture%20%26%20Beach%20Escape."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="shrink-0 rounded-full bg-[#C8A94C] px-7 py-3.5 text-sm font-bold text-[#211F1A] transition hover:bg-[#DFC66D]"
+      >
+        {t("mozambiqueAdventure.booking.button")}
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+{/* ================= EGYPT EXPERIENCES ================= */}
+{/* ================= EGYPT EXPERIENCE ================= */}
+<section
+  id="egypt2-safari"
+  className="relative overflow-hidden bg-[#F7F3EA] py-20 md:py-28"
+>
+  <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
+
+    {/* ================= HEADER ================= */}
+    <div className="mx-auto max-w-3xl text-center">
+
+      <span className="inline-flex rounded-full bg-[#C8A94C]/10 px-4 py-2 text-[10px] font-bold uppercase tracking-[3px] text-[#96731F]">
+        {t("egyptAdventure.header.badge")}
+      </span>
+
+      <h2 className="mt-5 text-4xl font-black leading-tight text-[#171510] md:text-6xl">
+        {t("egyptAdventure.header.title")}
+        <span className="block text-[#B28B2C]">
+          {t("egyptAdventure.header.titleHighlight")}
+        </span>
+      </h2>
+
+      <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-[#6B6559] md:text-base">
+        {t("egyptAdventure.header.description")}
+      </p>
+
+    </div>
+
+
+    {/* ================= EXPERIENCE 1 ================= */}
+    <div className="mt-14">
+
+      <div className="grid gap-5 lg:grid-cols-12">
+
+        {/* IMAGE */}
+        <div className="group relative min-h-[400px] overflow-hidden rounded-[30px] lg:col-span-7">
+
+          <img
+            src="https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=1400&q=85"
+            alt={t("egyptAdventure.experienceOne.title")}
+            className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
+          />
+
+          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+
+          <div className="absolute bottom-0 p-8">
+
+            <span className="text-[10px] font-bold uppercase tracking-[3px] text-[#DFC66D]">
+              {t("egyptAdventure.experienceOne.eyebrow")}
+            </span>
+
+            <h3 className="mt-2 text-3xl font-black text-white md:text-4xl">
+              {t("egyptAdventure.experienceOne.title")}
+            </h3>
+
+            <p className="mt-2 max-w-lg text-sm leading-6 text-gray-200">
+              {t("egyptAdventure.experienceOne.description")}
+            </p>
+
+          </div>
+
+        </div>
+
+
+        {/* PACKAGE */}
+        <div className="rounded-[30px] bg-[#211F1A] p-7 text-white lg:col-span-5">
+
+          <p className="text-[10px] font-bold uppercase tracking-[3px] text-[#C8A94C]">
+            {t("egyptAdventure.experienceOne.package.eyebrow")}
+          </p>
+
+          <h4 className="mt-3 text-2xl font-black">
+            {t("egyptAdventure.experienceOne.package.title")}
+          </h4>
+
+          <p className="mt-3 text-sm leading-7 text-white/55">
+            {t("egyptAdventure.experienceOne.package.route")}
+          </p>
+
+          <div className="mt-7 space-y-3">
+
+            {t("egyptAdventure.experienceOne.package.highlights", {
+              returnObjects: true,
+            }).map((item) => (
+
+              <div
+                key={item}
+                className="flex gap-3 text-sm text-white/70"
+              >
+                <span className="text-[#C8A94C]">✓</span>
+                {item}
+              </div>
+
+            ))}
+
+          </div>
+
+          <div className="mt-7 border-t border-white/10 pt-6">
+
+            <p className="text-[10px] uppercase tracking-[2px] text-white/40">
+              {t("egyptAdventure.experienceOne.package.from")}
+            </p>
+
+            <p className="mt-1 text-2xl font-black text-[#DFC66D]">
+              {t("egyptAdventure.experienceOne.package.price")}
+            </p>
+
+            <p className="text-xs text-white/40">
+              {t("egyptAdventure.experienceOne.package.perPerson")}
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      {/* ================= ITINERARY ================= */}
+      <div className="mt-7 grid gap-4 md:grid-cols-2">
+
+        {[
+          {
+            day: "01",
+            title: t("egyptAdventure.experienceOne.itinerary.day01.title"),
+            text: t("egyptAdventure.experienceOne.itinerary.day01.text"),
+          },
+          {
+            day: "02",
+            title: t("egyptAdventure.experienceOne.itinerary.day02.title"),
+            text: t("egyptAdventure.experienceOne.itinerary.day02.text"),
+          },
+          {
+            day: "03",
+            title: t("egyptAdventure.experienceOne.itinerary.day03.title"),
+            text: t("egyptAdventure.experienceOne.itinerary.day03.text"),
+          },
+          {
+            day: "04",
+            title: t("egyptAdventure.experienceOne.itinerary.day04.title"),
+            text: t("egyptAdventure.experienceOne.itinerary.day04.text"),
+          },
+        ].map((item) => (
+
+          <div
+            key={item.day}
+            className="rounded-[22px] border border-[#DED6C8] bg-white p-5"
+          >
+
+            <div className="flex gap-4">
+
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#F7F3EA] text-sm font-black text-[#B28B2C]">
+                {item.day}
+              </span>
+
+              <div>
+
+                <h5 className="font-black text-[#171510]">
+                  {item.title}
+                </h5>
+
+                <p className="mt-1 text-sm leading-6 text-[#6B6559]">
+                  {item.text}
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </div>
+
+
+    {/* ================= EXPERIENCE 2 ================= */}
+    <div className="mt-20 border-t border-[#DED6C8] pt-16">
+
+      <div className="grid gap-5 lg:grid-cols-12">
+
+        <div className="rounded-[30px] bg-[#211F1A] p-7 text-white lg:col-span-5">
+
+          <p className="text-[10px] font-bold uppercase tracking-[3px] text-[#C8A94C]">
+            {t("egyptAdventure.experienceTwo.eyebrow")}
+          </p>
+
+          <h3 className="mt-3 text-3xl font-black">
+            {t("egyptAdventure.experienceTwo.title")}
+            <span className="block text-[#DFC66D]">
+              {t("egyptAdventure.experienceTwo.titleHighlight")}
+            </span>
+          </h3>
+
+          <p className="mt-3 text-sm leading-7 text-white/55">
+            {t("egyptAdventure.experienceTwo.description")}
+          </p>
+
+          <div className="mt-7 space-y-3">
+
+            {t("egyptAdventure.experienceTwo.highlights", {
+              returnObjects: true,
+            }).map((item) => (
+
+              <div
+                key={item}
+                className="flex gap-3 text-sm text-white/70"
+              >
+                <span className="text-[#C8A94C]">✓</span>
+                {item}
+              </div>
+
+            ))}
+
+          </div>
+
+          <div className="mt-7 border-t border-white/10 pt-6">
+
+            <p className="text-[10px] uppercase tracking-[2px] text-white/40">
+              {t("egyptAdventure.experienceTwo.from")}
+            </p>
+
+            <p className="mt-1 text-2xl font-black text-[#DFC66D]">
+              {t("egyptAdventure.experienceTwo.price")}
+            </p>
+
+            <p className="text-xs text-white/40">
+              {t("egyptAdventure.experienceTwo.perPerson")}
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      {/* ================= ITINERARY ================= */}
+      <div className="mt-7 grid gap-4 md:grid-cols-2">
+
+        {[
+          {
+            day: "01",
+            title: t("egyptAdventure.experienceTwo.itinerary.day01.title"),
+            text: t("egyptAdventure.experienceTwo.itinerary.day01.text"),
+          },
+          {
+            day: "02",
+            title: t("egyptAdventure.experienceTwo.itinerary.day02.title"),
+            text: t("egyptAdventure.experienceTwo.itinerary.day02.text"),
+          },
+          {
+            day: "03",
+            title: t("egyptAdventure.experienceTwo.itinerary.day03.title"),
+            text: t("egyptAdventure.experienceTwo.itinerary.day03.text"),
+          },
+          {
+            day: "04",
+            title: t("egyptAdventure.experienceTwo.itinerary.day04.title"),
+            text: t("egyptAdventure.experienceTwo.itinerary.day04.text"),
+          },
+        ].map((item) => (
+
+          <div
+            key={item.day}
+            className="rounded-[22px] border border-[#DED6C8] bg-white p-5"
+          >
+
+            <div className="flex gap-4">
+
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#F7F3EA] text-sm font-black text-[#B28B2C]">
+                {item.day}
+              </span>
+
+              <div>
+
+                <h5 className="font-black text-[#171510]">
+                  {item.title}
+                </h5>
+
+                <p className="mt-1 text-sm leading-6 text-[#6B6559]">
+                  {item.text}
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </div>
+
+
+    {/* ================= FINAL CTA ================= */}
+    <div className="mt-12 flex flex-col items-center justify-between gap-5 rounded-[28px] bg-[#211F1A] p-7 text-center text-white sm:flex-row sm:text-left">
+
+      <div>
+
+        <p className="text-[10px] font-bold uppercase tracking-[3px] text-[#C8A94C]">
+          {t("egyptAdventure.cta.brand")}
+        </p>
+
+        <h3 className="mt-2 text-2xl font-black">
+          {t("egyptAdventure.cta.title")}
+        </h3>
+
+        <p className="mt-1 text-sm text-white/50">
+          {t("egyptAdventure.cta.description")}
+        </p>
+
+      </div>
+
+      <a
+        href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I'm%20interested%20in%20your%20Egypt%20safari."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="shrink-0 rounded-full bg-[#C8A94C] px-7 py-3.5 text-sm font-bold text-[#211F1A] transition hover:bg-[#DFC66D]"
+      >
+        {t("egyptAdventure.cta.button")}
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+{/* ================= SUDAN EXPERIENCE ================= */}
+<section
+  id="sudan2-safari"
+  className="relative overflow-hidden bg-[#F7F3EA] py-20 md:py-24"
+>
+  <div className="absolute -right-40 top-20 h-[400px] w-[400px] rounded-full bg-[#C8A94C]/10 blur-[120px]" />
+
+  <div className="relative mx-auto max-w-6xl px-6 lg:px-10">
+
+    {/* ================= HEADER ================= */}
+    <div className="max-w-3xl">
+
+      <span className="text-xs font-bold uppercase tracking-[3px] text-[#B28B2C]">
+        {t("sudanAdventure.header.eyebrow")}
+      </span>
+
+      <h2 className="mt-4 text-4xl font-black leading-tight text-[#171510] md:text-5xl">
+        {t("sudanAdventure.header.title")}
+        <span className="block text-[#B28B2C]">
+          {t("sudanAdventure.header.titleHighlight")}
+        </span>
+      </h2>
+
+      <p className="mt-5 text-sm leading-7 text-[#6B6559] md:text-base">
+        {t("sudanAdventure.header.description")}
+      </p>
+
+    </div>
+
+
+    {/* ================= ROUTE ================= */}
+    <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+
+      {[
+        {
+          day: t("sudanAdventure.route.day01.label"),
+          title: t("sudanAdventure.route.day01.title"),
+          text: t("sudanAdventure.route.day01.description"),
+        },
+        {
+          day: t("sudanAdventure.route.day02.label"),
+          title: t("sudanAdventure.route.day02.title"),
+          text: t("sudanAdventure.route.day02.description"),
+        },
+        {
+          day: t("sudanAdventure.route.day03.label"),
+          title: t("sudanAdventure.route.day03.title"),
+          text: t("sudanAdventure.route.day03.description"),
+        },
+        {
+          day: t("sudanAdventure.route.day04.label"),
+          title: t("sudanAdventure.route.day04.title"),
+          text: t("sudanAdventure.route.day04.description"),
+        },
+      ].map((item) => (
+
+        <div
+          key={item.day}
+          className="rounded-2xl border border-[#DED6C8] bg-white p-5"
+        >
+
+          <span className="text-xs font-black text-[#B28B2C]">
+            {item.day}
+          </span>
+
+          <h3 className="mt-3 text-lg font-black text-[#171510]">
+            {item.title}
+          </h3>
+
+          <p className="mt-2 text-sm leading-6 text-[#6B6559]">
+            {item.text}
+          </p>
+
+        </div>
+
+      ))}
+
+    </div>
+
+
+    {/* ================= ITINERARY ================= */}
+    <div className="mt-12">
+
+      <h3 className="text-2xl font-black text-[#171510]">
+        {t("sudanAdventure.itinerary.title")}
+      </h3>
+
+      <div className="mt-6 space-y-3">
+
+        {[
+          {
+            day: t("sudanAdventure.itinerary.day01.label"),
+            title: t("sudanAdventure.itinerary.day01.title"),
+            text: t("sudanAdventure.itinerary.day01.text"),
+          },
+          {
+            day: t("sudanAdventure.itinerary.day02.label"),
+            title: t("sudanAdventure.itinerary.day02.title"),
+            text: t("sudanAdventure.itinerary.day02.text"),
+          },
+          {
+            day: t("sudanAdventure.itinerary.day03.label"),
+            title: t("sudanAdventure.itinerary.day03.title"),
+            text: t("sudanAdventure.itinerary.day03.text"),
+          },
+          {
+            day: t("sudanAdventure.itinerary.day04.label"),
+            title: t("sudanAdventure.itinerary.day04.title"),
+            text: t("sudanAdventure.itinerary.day04.text"),
+          },
+          {
+            day: t("sudanAdventure.itinerary.day05.label"),
+            title: t("sudanAdventure.itinerary.day05.title"),
+            text: t("sudanAdventure.itinerary.day05.text"),
+          },
+        ].map((item) => (
+
+          <div
+            key={item.day}
+            className="grid gap-3 rounded-2xl border border-[#DED6C8] bg-white p-5 md:grid-cols-[90px_1fr]"
+          >
+
+            <span className="font-black text-[#B28B2C]">
+              {item.day}
+            </span>
+
+            <div>
+
+              <h4 className="font-black text-[#171510]">
+                {item.title}
+              </h4>
+
+              <p className="mt-1 text-sm leading-6 text-[#6B6559]">
+                {item.text}
+              </p>
+
+            </div>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </div>
+
+
+    {/* ================= PRICE + NOTE ================= */}
+    <div className="mt-10 grid gap-5 lg:grid-cols-[1fr_1.2fr]">
+
+      {/* PRICING */}
+      <div className="rounded-2xl bg-[#211F1A] p-7 text-white">
+
+        <p className="text-xs font-bold uppercase tracking-[3px] text-[#C8A94C]">
+          {t("sudanAdventure.pricing.eyebrow")}
+        </p>
+
+        <div className="mt-5 space-y-3">
+
+          {[
+            {
+              type: t("sudanAdventure.pricing.budget.label"),
+              price: t("sudanAdventure.pricing.budget.price"),
+            },
+            {
+              type: t("sudanAdventure.pricing.midRange.label"),
+              price: t("sudanAdventure.pricing.midRange.price"),
+            },
+            {
+              type: t("sudanAdventure.pricing.luxury.label"),
+              price: t("sudanAdventure.pricing.luxury.price"),
+            },
+          ].map((item) => (
+
+            <div
+              key={item.type}
+              className="flex items-center justify-between border-b border-white/10 pb-3"
+            >
+
+              <span className="text-sm text-white/60">
+                {item.type}
+              </span>
+
+              <span className="font-black text-[#DFC66D]">
+                {item.price}
+              </span>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </div>
+
+
+      {/* IMPORTANT */}
+      <div className="rounded-2xl border border-amber-300/30 bg-amber-50 p-7">
+
+        <span className="text-xs font-bold uppercase tracking-[3px] text-[#96731F]">
+          {t("sudanAdventure.important.eyebrow")}
+        </span>
+
+        <h3 className="mt-3 text-xl font-black text-[#29251E]">
+          {t("sudanAdventure.important.title")}
+        </h3>
+
+        <p className="mt-3 text-sm leading-7 text-[#6B6559]">
+          {t("sudanAdventure.important.description")}
+        </p>
+
+      </div>
+
+    </div>
+
+
+    {/* ================= HIGHLIGHT ================= */}
+    <div className="mt-8 rounded-2xl bg-[#EDE7D8] p-6">
+
+      <p className="text-xs font-bold uppercase tracking-[3px] text-[#B28B2C]">
+        {t("sudanAdventure.highlight.eyebrow")}
+      </p>
+
+      <p className="mt-3 text-lg font-black text-[#29251E]">
+        {t("sudanAdventure.highlight.text")}
+      </p>
+
+    </div>
+
+
+    {/* ================= BOOK / ENQUIRE ================= */}
+    <div className="mt-8 flex flex-wrap items-center gap-4">
+
+      <a
+        href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27m%20interested%20in%20the%20Sudan%20Nubian%20Desert%20%26%20Ancient%20Kingdoms%20experience."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="rounded-xl bg-[#C8A94C] px-7 py-3.5 text-sm font-bold text-[#211F1A] transition hover:bg-[#DFC66D]"
+      >
+        {t("sudanAdventure.booking.button")}
+      </a>
+
+      <span className="text-xs text-[#6B6559]">
+        {t("sudanAdventure.booking.note")}
+      </span>
+
+    </div>
+
+  </div>
+</section>
+{/* ================= KENYA & TANZANIA COASTAL ESCAPE ================= */}
+{/* ================= KENYA & TANZANIA COASTAL STAYCATION ================= */}
+<section
+  id="kenyacoast-safari"
+  className="relative overflow-hidden bg-[#F7F3EA] py-20 md:py-24"
+>
+
+  <div className="relative mx-auto max-w-6xl px-6 lg:px-10">
+
+    {/* ================= HEADER ================= */}
+    <div className="max-w-3xl">
+
+      <span className="text-xs font-bold uppercase tracking-[3px] text-[#B28B2C]">
+        {t("kenyaCoastSafari.header.eyebrow")}
+      </span>
+
+      <h2 className="mt-4 text-4xl font-black leading-tight text-[#171510] md:text-5xl">
+        {t("kenyaCoastSafari.header.title")}
+        <span className="block text-[#B28B2C]">
+          {t("kenyaCoastSafari.header.titleHighlight")}
+        </span>
+      </h2>
+
+      <p className="mt-5 text-sm leading-7 text-[#6B6559] md:text-base">
+        {t("kenyaCoastSafari.header.description")}
+      </p>
+
+    </div>
+
+
+    {/* ================= HIGHLIGHTS ================= */}
+    <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+
+      {[
+        "diani",
+        "beachEscape",
+        "zanzibar",
+        "privateYacht",
+      ].map((item) => (
+
+        <div
+          key={item}
+          className="rounded-2xl border border-[#DED6C8] bg-white p-5"
+        >
+
+          <span className="text-xs font-black text-[#B28B2C]">
+            {t(`kenyaCoastSafari.highlights.items.${item}.number`)}
+          </span>
+
+          <h3 className="mt-3 text-lg font-black text-[#171510]">
+            {t(`kenyaCoastSafari.highlights.items.${item}.title`)}
+          </h3>
+
+          <p className="mt-2 text-sm text-[#6B6559]">
+            {t(`kenyaCoastSafari.highlights.items.${item}.text`)}
+          </p>
+
+        </div>
+
+      ))}
+
+    </div>
+
+
+    {/* ================= ITINERARY ================= */}
+    <div className="mt-12">
+
+      <h3 className="text-2xl font-black text-[#171510]">
+        {t("kenyaCoastSafari.itinerary.title")}
+      </h3>
+
+      <div className="mt-6 space-y-3">
+
+        {[
+          "day1",
+          "day2",
+          "day3",
+          "day4",
+          "day5",
+        ].map((item) => (
+
+          <div
+            key={item}
+            className="grid gap-3 rounded-2xl border border-[#DED6C8] bg-white p-5 md:grid-cols-[90px_1fr]"
+          >
+
+            <span className="font-black text-[#B28B2C]">
+              {t(`kenyaCoastSafari.itinerary.days.${item}.day`)}
+            </span>
+
+            <div>
+
+              <h4 className="font-black text-[#171510]">
+                {t(`kenyaCoastSafari.itinerary.days.${item}.title`)}
+              </h4>
+
+              <p className="mt-1 text-sm leading-6 text-[#6B6559]">
+                {t(`kenyaCoastSafari.itinerary.days.${item}.text`)}
+              </p>
+
+            </div>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </div>
+
+
+    {/* ================= PACKAGE + PRICING ================= */}
+    <div className="mt-10 grid gap-5 lg:grid-cols-[1.1fr_0.9fr]">
+
+      {/* PACKAGE HIGHLIGHTS */}
+      <div className="rounded-2xl bg-[#211F1A] p-7 text-white">
+
+        <p className="text-xs font-bold uppercase tracking-[3px] text-[#C8A94C]">
+          {t("kenyaCoastSafari.package.eyebrow")}
+        </p>
+
+        <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+
+          {[
+            "dianiNights",
+            "zanzibarNights",
+            "beachfront",
+            "transfers",
+            "stoneTown",
+            "privateYacht",
+            "mnemba",
+            "airport",
+          ].map((item) => (
+
+            <li
+              key={item}
+              className="flex gap-2 text-sm text-white/70"
+            >
+
+              <span className="text-[#C8A94C]">
+                ✓
+              </span>
+
+              {t(`kenyaCoastSafari.package.items.${item}`)}
+
+            </li>
+
+          ))}
+
+        </ul>
+
+      </div>
+
+
+      {/* PRICING */}
+      <div className="rounded-2xl border border-[#DED6C8] bg-white p-7">
+
+        <p className="text-xs font-bold uppercase tracking-[3px] text-[#B28B2C]">
+          {t("kenyaCoastSafari.pricing.eyebrow")}
+        </p>
+
+        <div className="mt-5 space-y-4">
+
+          <div className="flex items-center justify-between border-b border-[#DED6C8] pb-4">
+
+            <span className="text-sm text-[#6B6559]">
+              {t("kenyaCoastSafari.pricing.midRange.label")}
+            </span>
+
+            <span className="text-xl font-black text-[#B28B2C]">
+              {t("kenyaCoastSafari.pricing.midRange.price")}
+            </span>
+
+          </div>
+
+
+          <div className="flex items-center justify-between">
+
+            <span className="text-sm text-[#6B6559]">
+              {t("kenyaCoastSafari.pricing.luxury.label")}
+            </span>
+
+            <span className="text-xl font-black text-[#B28B2C]">
+              {t("kenyaCoastSafari.pricing.luxury.price")}
+            </span>
+
+          </div>
+
+        </div>
+
+        <p className="mt-5 text-xs leading-5 text-[#8A8478]">
+          {t("kenyaCoastSafari.pricing.note")}
+        </p>
+
+      </div>
+
+    </div>
+
+
+    {/* ================= CTA ================= */}
+    <div className="mt-8 flex flex-col gap-4 rounded-2xl bg-[#EDE7D8] p-6 sm:flex-row sm:items-center sm:justify-between">
+
+      <div>
+
+        <p className="text-xs font-bold uppercase tracking-[3px] text-[#B28B2C]">
+          {t("kenyaCoastSafari.cta.eyebrow")}
+        </p>
+
+        <h3 className="mt-2 text-xl font-black text-[#29251E]">
+          {t("kenyaCoastSafari.cta.title")}
+        </h3>
+
+      </div>
+
+
+      <a
+        href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I'm%20interested%20in%20the%205-Day%20Kenya%20%26%20Tanzania%20Coastal%20Staycation."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex shrink-0 items-center justify-center rounded-xl bg-[#C8A94C] px-7 py-3.5 text-sm font-bold text-[#211F1A] transition hover:bg-[#DFC66D]"
+      >
+        {t("kenyaCoastSafari.cta.button")}
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
 
 {/* FOOTER */}
 {/* FOOTER */}

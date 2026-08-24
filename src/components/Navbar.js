@@ -219,14 +219,15 @@ function Navbar() {
   // NAVIGATION ITEMS
   // =====================================================
 
-  const mobileItems = [
-    ["🏠", "nav.home", "/"],
-    ["👑", "nav.about", "/about"],
-    ["🌍", "nav.destinations", "/destinations"],
-    ["🚐", "nav.services", "/services"],
-    ["📸", "nav.gallery", "/gallery"],
-    ["📞", "nav.contact", "/contact"],
-  ];
+ const mobileItems = [
+  ["🏠", "nav.home", "/"],
+  ["👑", "nav.about", "/about"],
+  ["🚐", "nav.services", "/services"],
+  ["🗺️", "nav.dayTour", "/Daytours"],
+  ["🌍", "nav.destinations", "/destinations"],
+  ["📸", "nav.gallery", "/gallery"],
+  ["📞", "nav.contact", "/contact"],
+];
 
   // =====================================================
   // NAV ITEM
@@ -636,28 +637,32 @@ function Navbar() {
 
             <div className="hidden items-center gap-0 lg:flex">
               <NavItem to="/">
-                {t("nav.home")}
-              </NavItem>
+  {t("nav.home")}
+</NavItem>
 
-              <NavItem to="/about">
-                {t("nav.about")}
-              </NavItem>
+<NavItem to="/about">
+  {t("nav.about")}
+</NavItem>
 
-              <NavItem to="/destinations">
-                {t("nav.destinations")}
-              </NavItem>
+<NavItem to="/services">
+  {t("nav.services")}
+</NavItem>
 
-              <NavItem to="/services">
-                {t("nav.services")}
-              </NavItem>
+<NavItem to="/Daytours">
+  {t("nav.dayTour")}
+</NavItem>
 
-              <NavItem to="/gallery">
-                {t("nav.gallery")}
-              </NavItem>
+<NavItem to="/destinations">
+  {t("nav.destinations")}
+</NavItem>
 
-              <NavItem to="/contact">
-                {t("nav.contact")}
-              </NavItem>
+<NavItem to="/gallery">
+  {t("nav.gallery")}
+</NavItem>
+
+<NavItem to="/contact">
+  {t("nav.contact")}
+</NavItem>
 
               {/* LANGUAGE */}
 
@@ -727,34 +732,7 @@ function Navbar() {
 
               {/* BOOK */}
 
-              <a
-                href="https://wa.me/254720524627?text=Hello%20Curious%20Safaris%2C%20I%27d%20like%20to%20book%20a%20trip."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="
-                  group
-                  relative
-                  ms-3
-                  overflow-hidden
-                  rounded-full
-                  bg-[#D4AF37]
-                  px-7
-                  py-3
-                  font-bold
-                  text-black
-                  transition-all
-                  duration-300
-                  hover:-translate-y-0.5
-                  hover:scale-105
-                  hover:shadow-[0_15px_40px_rgba(212,175,55,.45)]
-                "
-              >
-                <span className="relative z-10">
-                  {t("nav.book")}
-                </span>
-
-                <span className="absolute inset-0 -translate-x-full bg-white/25 transition-transform duration-500 group-hover:translate-x-full" />
-              </a>
+              
             </div>
 
             {/* =================================================
@@ -1198,7 +1176,7 @@ function Navbar() {
           ================================================= */}
 
           <a
-            href="https://wa.me/254720524627?text=Hello%20Curious%20Safaris%2C%20I%27d%20like%20to%20book%20a%20trip."
+            href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27d%20like%20to%20book%20a%20trip."
             target="_blank"
             rel="noopener noreferrer"
             onClick={closeMobile}

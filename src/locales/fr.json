@@ -14,15 +14,15 @@
     }},
     "nav": {
   "home": "Accueil",
-  "about": "À Propos",
+  "dayTour": "Excursions d'une journée",
+  "about": "À propos",
   "destinations": "Destinations",
   "services": "Services",
   "gallery": "Galerie",
   "contact": "Contact",
-  "language": "Langue",
-  "book": "Réserver"
-
-  },
+  "book": "Réserver un safari",
+  "language": "Langue"
+},
 
   "search": {
     "findAdventure": "Trouvez votre aventure",
@@ -244,7 +244,7 @@
     "writeReview": "Écrire un Avis Google",
 
     "viewProfile": "Voir le Profil Google"
-  },"reviews": {
+  },"reviews1": {
   "badge": "Avis des Voyageurs",
   "title": "Les Histoires de Nos",
   "titleHighlight": "Voyageurs Heureux",
@@ -313,7 +313,7 @@
   },
   "bottomLabel": "Curious Safaris",
   "bottomText": "Voyages personnalisés. Connaissance locale. L'Afrique, à votre façon."
-},"discover": {
+},"discover1": {
     "imageAlt": "Aventure africaine de Curious Safaris",
     "imageTitle": "Explorez l'Afrique",
     "destinations": "Destinations africaines",
@@ -383,7 +383,7 @@
 }
 },
 
-"whyChooseUs": {
+"whyChooseUs1": {
   "badge": "Pourquoi nous choisir",
   "title": "Votre partenaire de confiance pour les safaris et les voyages",
   "description": "Nous nous engageons à créer des expériences de voyage inoubliables grâce à un service exceptionnel, une planification experte et des aventures personnalisées à travers l'Afrique de l'Est.",
@@ -428,7 +428,7 @@
   }
 },
 
-"services": {
+"services1": {
   "badge": "Nos services",
   "title": "Des expériences de voyage conçues pour tous",
   "description": "Des safaris animaliers aux voyages d'affaires, nous proposons des solutions de voyage complètes adaptées à vos besoins.",
@@ -709,7 +709,7 @@
       "accountNumber": "Numéro de Compte",
       "copy": "Copier le Numéro",
       "bankName": "Nom de la Banque",
-      "bankNameValue": "Kenya Commercial Bank",
+      "bankNameValue": "Diamond Trust Bank",
       "accountName": "Nom du Compte",
       "accountNameValue": "Duncan Ombima",
       "country": "Pays",
@@ -758,7 +758,7 @@
   
 },
 
-  "hero": {
+  "hero1": {
     "brand": "Curious Safaris",
     "title": "Privés et Personnalisés",
     "titleHighlight": "Voyages Inoubliables",
@@ -2427,12 +2427,2671 @@
       "description": "Vivi straordinari tesori archeologici, spettacolari paesaggi desertici e la cultura senza tempo del Nilo.",
       "notice": "La disponibilità del viaggio è soggetta alle attuali condizioni di sicurezza, accesso e alle disposizioni ufficiali."
     }
+  },
+
+
+  
+  "nairobi": {
+    "hero": {
+      "brand": "Curious Safaris",
+      "title": "Un jour.",
+      "titleHighlight": "L’Afrique sans limites.",
+      "description": "Découvrez Nairobi à travers la faune, la culture, la gastronomie et des expériences locales inoubliables, le tout en une journée conçue avec élégance.",
+      "explore": "Explorer l’expérience",
+      "plan": "Planifier ma journée"
+    },
+
+    "experience": {
+      "badge": "Expérience exclusive d’une journée",
+      "title": "1 journée de faune sauvage,",
+      "titleHighlight": "culture et expérience en matatu",
+      "description": "Une journée soigneusement conçue qui combine faune sauvage, gastronomie, histoire, marchés et l’énergie urbaine unique de Nairobi.",
+      "imageAlt": "Paysage du Kenya",
+      "duration": "Journée complète",
+      "location": "Nairobi, Kenya",
+      "start": "Début",
+      "finish": "Fin",
+      "startTime": "06:00",
+      "finishTime": "17:30"
+    },
+
+    "journey": {
+      "badge": "Le voyage",
+      "title": "Votre journée, parfaitement planifiée.",
+      "description": "Du premier safari à l’aube aux rues animées de Nairobi, chaque moment de votre journée a été soigneusement planifié."
+    },
+
+    "itinerary": [
+      {
+        "time": "06:00",
+        "title": "Parc national de Nairobi",
+        "description": "Prise en charge à l’hôtel suivie d’un safari matinal dans le parc national de Nairobi.",
+        "highlights": [
+          "Lions",
+          "Rhinocéros",
+          "Girafes",
+          "Zèbres",
+          "Buffles"
+        ]
+      },
+      {
+        "time": "09:30",
+        "title": "Retour à Nairobi",
+        "description": "Départ du parc et continuation vers Nairobi pour profiter d’expériences culturelles.",
+        "highlights": [
+          "Transfert confortable",
+          "Pause rafraîchissement",
+          "Horaires flexibles"
+        ]
+      },
+      {
+        "time": "10:30",
+        "title": "Musée des Illusions",
+        "description": "Plongez dans un monde interactif d’illusions d’optique et de salles immersives.",
+        "highlights": [
+          "Expositions interactives",
+          "Photographie",
+          "Expériences immersives"
+        ]
+      },
+      {
+        "time": "12:30",
+        "title": "Déjeuner kényan authentique",
+        "description": "Savourez des plats kényans authentiques et découvrez la chaleureuse culture gastronomique du pays.",
+        "highlights": [
+          "Nyama Choma",
+          "Ugali",
+          "Chapati",
+          "Pilau"
+        ]
+      },
+      {
+        "time": "14:00",
+        "title": "Marché Maasai",
+        "description": "Explorez des objets artisanaux faits à la main, des tissus africains, des bijoux et des œuvres d’art.",
+        "highlights": [
+          "Artisanat local",
+          "Tissus africains",
+          "Art et souvenirs"
+        ]
+      },
+      {
+        "time": "15:30",
+        "title": "Culture des matatu de Nairobi",
+        "description": "Découvrez les célèbres matatu de Nairobi, leurs graffitis, leur musique, leur mode et leur culture urbaine.",
+        "highlights": [
+          "Art sur les matatu",
+          "Musique et mode",
+          "Expérience urbaine guidée"
+        ]
+      },
+      {
+        "time": "17:30",
+        "title": "Retour à l’hôtel",
+        "description": "Retour à votre hôtel ou à l’emplacement de votre choix après une journée complète à Nairobi.",
+        "highlights": []
+      }
+    ],
+
+    "safari": {
+      "badge": "Parc national de Nairobi",
+      "title": "L’Afrique sauvage,",
+      "titleHighlight": "à quelques minutes de la ville.",
+      "description": "Vivez un véritable safari aux portes de Nairobi avec des safaris matinaux et après-midi flexibles conçus selon votre emploi du temps.",
+      "plan": "Planifier ce safari",
+      "imageAlt": "Safari dans le parc national de Nairobi"
+    },
+
+    "pricing": {
+      "badge": "Voyagez à votre façon",
+      "title": "Choisissez votre expérience.",
+      "description": "Des options flexibles conçues selon votre confort, votre budget et votre style de voyage.",
+      "perPerson": "/ personne",
+      "popular": "Populaire"
+    },
+
+    "payment": {
+      "badge": "Détails du paiement",
+      "title": "Sécurisez votre réservation.",
+
+      "mpesa": {
+        "region": "Kenya uniquement",
+        "title": "M-PESA Paybill",
+        "paybill": "Paybill",
+        "account": "Compte",
+        "name": "Nom",
+        "businessName": "Curious Safaris"
+      },
+
+      "bank": {
+        "type": "Virement bancaire",
+        "title": "Diamond Trust Bank",
+        "account": "Compte",
+        "name": "Nom",
+        "swift": "SWIFT",
+        "businessName": "Curious Safaris"
+      },
+
+      "policy": {
+        "title": "Politique de paiement flexible",
+        "description": "Des conditions simples pour une réservation sans stress.",
+        "deposit": "Acompte de 50 %",
+        "balance": "Solde 30 jours avant",
+        "rescheduling": "Modification gratuite jusqu’à 3 semaines avant",
+        "refunds": "Remboursements disponibles"
+      },
+
+      "contact": {
+        "title": "Prêt à planifier votre journée ?",
+        "description": "Contactez Curious Safaris pour confirmer les disponibilités.",
+        "phone": "+254 745 861 688",
+        "email": "curioussafariss@gmail.com"
+      }
+    },
+
+    "more": {
+      "badge": "Plus à découvrir",
+      "title": "Votre journée n’a pas besoin de ressembler à celle des autres.",
+
+      "wildlife": {
+        "title": "Faune sauvage",
+        "text": "Safaris et rencontres rapprochées avec l’incroyable faune sauvage du Kenya."
+      },
+
+      "culture": {
+        "title": "Culture",
+        "text": "Rencontrez les communautés locales, explorez les marchés et goûtez à l’authentique gastronomie kényane."
+      },
+
+      "adventure": {
+        "title": "Aventure",
+        "text": "Explorez Nairobi et ses environs à travers des expériences uniques conçues pour vous."
+      }
+    },
+
+    "cta": {
+      "badge": "Faites compter votre journée",
+      "title": "Une journée peut devenir",
+      "titleHighlight": "votre plus beau souvenir.",
+      "description": "Dites-nous quand vous êtes disponible, ce que vous aimez et comment vous souhaitez voyager. Nous créerons une journée d’expériences pensée pour vous.",
+      "plan": "Planifier ma journée",
+      "contact": "Contacter Curious Safaris"
+    }
+  },
+
+  "diani": {
+    "badge": "Côte du Kenya · Diani",
+
+    "hero": {
+      "title": "4 jours sur la côte kenyane",
+      "titleHighlight": "Escapade balnéaire",
+      "description": "Une escapade relaxante de 4 jours combinant plages de sable blanc, aventures océaniques, culture swahilie, faune sauvage et couchers de soleil inoubliables à Diani."
+    },
+
+    "destinations": {
+      "dianiBeach": {
+        "number": "01 · Côte",
+        "title": "Plage de Diani",
+        "description": "Plages de sable blanc, eaux chaudes de l’océan Indien et atmosphère côtière élégante et décontractée.",
+        "imageAlt": "Plage de Diani, Kenya"
+      },
+
+      "wasini": {
+        "number": "02 · Océan",
+        "title": "Wasini et Kisite",
+        "description": "Snorkeling, observation des dauphins, aventures en dhow et expérience insulaire authentiquement swahilie.",
+        "imageAlt": "Île de Wasini et océan Indien"
+      },
+
+      "shimba": {
+        "number": "03 · Faune sauvage",
+        "title": "Collines de Shimba",
+        "description": "Découvrez la faune côtière, des paysages spectaculaires et la rare antilope sable.",
+        "imageAlt": "Safari animalier au Kenya"
+      },
+
+      "culture": {
+        "number": "04 · Culture",
+        "title": "Culture côtière",
+        "description": "Découvrez les traditions swahilies, la gastronomie côtière, les marchés locaux et l’hospitalité chaleureuse de la côte kenyane.",
+        "imageAlt": "Culture côtière du Kenya"
+      }
+    },
+
+    "details": {
+      "badge": "Détails de l’escapade",
+      "title": "Votre escapade côtière",
+      "description": "Quatre jours de détente à la plage, d’aventures marines, de faune sauvage, de culture et de moments inoubliables sur la côte kenyane.",
+
+      "duration": {
+        "label": "Durée",
+        "value": "4 jours / 3 nuits"
+      },
+
+      "destination": {
+        "label": "Destination",
+        "value": "Plage de Diani, Kenya"
+      },
+
+      "transport": {
+        "label": "Transport",
+        "value": "Transferts privés"
+      },
+
+      "bestFor": {
+        "label": "Idéal pour",
+        "value": "Couples, familles et groupes"
+      },
+
+      "experience": {
+        "label": "Expérience",
+        "value": "Plage · Faune sauvage · Culture"
+      },
+
+      "style": {
+        "label": "Style",
+        "value": "Économique · Milieu de gamme · Luxe"
+      }
+    },
+
+    "itinerary": {
+      "badge": "Votre voyage",
+      "title": "Itinéraire de 4 jours à Diani",
+
+      "day1": {
+        "title": "Nairobi → Plage de Diani",
+        "text": "Vol matinal de Nairobi vers Ukunda ou transfert routier. Installation dans votre resort en bord de mer, déjeuner de bienvenue et détente sur la plage ou au bord de la piscine. Promenade sur la plage l’après-midi avant un soin spa optionnel et une croisière traditionnelle en dhow au coucher du soleil."
+      },
+
+      "day2": {
+        "title": "Île de Wasini et aventure marine à Kisite",
+        "text": "Petit-déjeuner matinal suivi d’un transfert vers Shimoni. Profitez d’une excursion en dhow traditionnel vers l’île de Wasini et le parc marin de Kisite-Mpunguti, avec observation des dauphins, snorkeling et baignade dans l’océan Indien. Savourez un déjeuner de fruits de mer ou de cuisine swahilie sur l’île de Wasini avant de retourner à Diani."
+      },
+
+      "day3": {
+        "title": "Culture, faune sauvage et aventure à Diani",
+        "text": "Visitez Colobus Conservation avant de poursuivre vers la réserve nationale de Shimba Hills. Profitez d’un safari à la recherche d’éléphants, de girafes, de buffles et de la rare antilope sable. Si les conditions le permettent, visitez les cascades de Sheldrick avant de retourner à Diani pour vous détendre sur la plage ou profiter d’activités nautiques optionnelles."
+      },
+
+      "day4": {
+        "title": "Diani → Nairobi",
+        "text": "Profitez d’un petit-déjeuner tranquille et de votre dernière matinée à la plage. Les activités optionnelles comprennent le jet-ski, le kayak, le paddleboard, le kitesurf ou un soin spa. Départ et transfert vers l’aéroport d’Ukunda pour votre vol retour vers Nairobi."
+      }
+    },
+
+    "accommodation": {
+      "badge": "Hébergement",
+      "title": "Séjours recommandés à Diani",
+
+      "hotels": {
+        "dianiReef": {
+          "name": "Diani Reef Beach Resort & Spa",
+          "type": "Milieu de gamme"
+        },
+
+        "baobab": {
+          "name": "Baobab Beach Resort & Spa",
+          "type": "Premium"
+        },
+
+        "southernPalms": {
+          "name": "Southern Palms Beach Resort",
+          "type": "Milieu de gamme"
+        }
+      }
+    },
+
+    "included": {
+      "badge": "Le forfait comprend",
+      "title": "Tout ce dont vous avez besoin pour la côte",
+
+      "items": [
+        "3 nuits d’hébergement en bord de mer",
+        "Petit-déjeuner",
+        "Transport Nairobi–Diani–Nairobi",
+        "Transferts privés",
+        "Excursion sur l’île de Wasini et au parc marin de Kisite",
+        "Snorkeling",
+        "Expérience d’observation des dauphins",
+        "Déjeuner swahili",
+        "Visite touristique de Diani",
+        "Visite de Colobus Conservation",
+        "Safari à Shimba Hills",
+        "Guide professionnel Curious Safaris"
+      ]
+    },
+
+    "pricing": {
+      "badge": "Prix estimé",
+      "title": "Par personne",
+
+      "budget": {
+        "name": "Économique",
+        "price": "$900",
+        "description": "Niveau du forfait"
+      },
+
+      "midRange": {
+        "name": "Milieu de gamme",
+        "price": "$1,050",
+        "description": "Niveau du forfait"
+      },
+
+      "luxury": {
+        "name": "Luxe",
+        "price": "$1,700",
+        "description": "Niveau du forfait"
+      },
+
+      "note": "Les prix dépendent des dates de voyage, de la catégorie de l’hôtel, des vols et du nombre de voyageurs. Le prix final doit être confirmé lors de la réservation."
+    },
+
+    "recommendation": {
+      "badge": "Recommandation de Curious Safaris",
+      "text": "Choisissez le forfait milieu de gamme pour profiter du meilleur équilibre entre hébergement en bord de mer, aventures marines, faune sauvage et détente."
+    },
+
+    "cta": {
+      "badge": "Prêt pour la côte ?",
+      "title": "Évadez-vous à Diani.",
+      "description": "Plage · Océan · Faune sauvage · Culture · Détente",
+      "button": "Réserver cette escapade →"
+    }
+  },
+
+  "tanzania": {
+    "header": {
+      "badge": "Découvrez la Tanzanie",
+      "title": "Deux façons de vivre",
+      "titleHighlight": "la Tanzanie.",
+      "description": "Des légendaires plaines du Serengeti et du riche écosystème du cratère du Ngorongoro aux eaux turquoise et à la culture swahilie de Zanzibar, découvrez la Tanzanie à votre manière."
+    },
+
+    "wildlife": {
+      "badge": "Expérience une · Faune sauvage",
+      "title": "4 jours de safari en",
+      "titleHighlight": "Tanzanie",
+      "description": "Une aventure classique à travers le circuit nord, avec Tarangire, Serengeti et Ngorongoro, trois des destinations animalières les plus emblématiques de Tanzanie.",
+
+      "destinations": {
+        "tarangire": {
+          "day": "Jour 01",
+          "title": "Tarangire",
+          "description": "De grands troupeaux d’éléphants, d’anciens baobabs et une faune exceptionnelle.",
+          "imageAlt": "Parc national de Tarangire, Tanzanie"
+        },
+
+        "serengeti": {
+          "day": "Jour 02 · 03",
+          "title": "Serengeti",
+          "description": "Des plaines infinies, des prédateurs et l’une des plus grandes expériences animalières d’Afrique.",
+          "imageAlt": "Serengeti, Tanzanie"
+        },
+
+        "ngorongoro": {
+          "day": "Jour 04",
+          "title": "Ngorongoro",
+          "description": "Descendez dans l’un des paysages animaliers les plus spectaculaires d’Afrique.",
+          "imageAlt": "Cratère du Ngorongoro, Tanzanie"
+        }
+      },
+
+      "details": {
+        "duration": {
+          "label": "Durée",
+          "value": "4 jours / 3 nuits"
+        },
+
+        "route": {
+          "label": "Itinéraire",
+          "value": "Tarangire · Serengeti · Ngorongoro"
+        },
+
+        "bestFor": {
+          "label": "Idéal pour",
+          "value": "Amoureux de la faune sauvage et des Big Five"
+        },
+
+        "transport": {
+          "label": "Transport",
+          "value": "Véhicule safari privé 4×4"
+        }
+      },
+
+      "itinerary": {
+        "title": "Votre safari de 4 jours",
+
+        "days": {
+          "day01": {
+            "number": "01",
+            "title": "Arusha → Parc national de Tarangire",
+            "text": "Prise en charge le matin à Arusha et transfert vers le parc national de Tarangire. Profitez d’un safari d’une journée parmi les éléphants, girafes, zèbres, buffles et les paysages spectaculaires de baobabs du parc avant de rejoindre votre lodge."
+          },
+
+          "day02": {
+            "number": "02",
+            "title": "Tarangire → Serengeti",
+            "text": "Après le petit-déjeuner, partez vers le légendaire Serengeti à travers de magnifiques paysages et la zone de conservation du Ngorongoro. Profitez d’un safari l’après-midi à la recherche de lions, éléphants, guépards, léopards et grands troupeaux."
+          },
+
+          "day03": {
+            "number": "03",
+            "title": "Safari d’une journée complète au Serengeti",
+            "text": "Commencez par un safari au lever du soleil avant de passer la journée à explorer les vastes plaines du Serengeti. Profitez d’un déjeuner pique-nique dans la nature et continuez à observer une incroyable diversité de faune. Des expériences optionnelles en montgolfière et des expériences culturelles peuvent être organisées."
+          },
+
+          "day04": {
+            "number": "04",
+            "title": "Serengeti → Cratère du Ngorongoro → Arusha",
+            "text": "Voyagez vers le Ngorongoro et descendez dans le cratère pour un safari inoubliable. Observez lions, éléphants, buffles et rhinocéros avant de profiter d’un déjeuner pique-nique et de retourner à Arusha."
+          }
+        }
+      },
+
+      "pricing": {
+        "badge": "Safari animalier en Tanzanie",
+        "title": "Prix estimé par personne",
+        "description": "Choisissez l’expérience correspondant à votre niveau de confort et au style d’hébergement souhaité.",
+
+        "options": {
+          "budget": {
+            "label": "Économique",
+            "price": "$900 – $1,100"
+          },
+
+          "midRange": {
+            "label": "Milieu de gamme",
+            "price": "$1,200 – $1,500"
+          },
+
+          "luxury": {
+            "label": "Luxe",
+            "price": "$1,700 – $2,200"
+          }
+        }
+      }
+    },
+
+    "zanzibar": {
+      "badge": "Expérience deux · Côte et culture",
+      "title": "4 jours à Zanzibar",
+      "titleHighlight": "Escapade plage et culture",
+      "description": "Déconnectez-vous et découvrez Zanzibar à travers ses magnifiques plages, la ville historique de Stone Town, ses plantations d’épices, sa culture swahilie et ses aventures inoubliables dans l’océan Indien.",
+
+      "images": {
+        "beach": {
+          "badge": "Zanzibar",
+          "title": "Escapade dans l’océan Indien",
+          "description": "Eaux turquoise, sable blanc et doux rythme de la vie insulaire.",
+          "imageAlt": "Plage de Zanzibar"
+        },
+
+        "stoneTown": {
+          "badge": "Jour 01",
+          "title": "Stone Town",
+          "imageAlt": "Stone Town, Zanzibar"
+        },
+
+        "ocean": {
+          "badge": "Jour 02",
+          "title": "Aventure Safari Blue",
+          "imageAlt": "Aventure océanique à Zanzibar"
+        }
+      },
+
+      "details": {
+        "duration": {
+          "label": "Durée",
+          "value": "4 jours / 3 nuits"
+        },
+
+        "destinations": {
+          "label": "Destinations",
+          "value": "Stone Town · Zanzibar"
+        },
+
+        "bestFor": {
+          "label": "Idéal pour",
+          "value": "Couples, familles et jeunes mariés"
+        },
+
+        "experience": {
+          "label": "Expérience",
+          "value": "Plage · Culture · Océan"
+        }
+      },
+
+      "itinerary": {
+        "title": "Votre escapade de 4 jours à Zanzibar",
+
+        "days": {
+          "day01": {
+            "number": "01",
+            "title": "Arrivée et Stone Town",
+            "text": "Prise en charge à l’aéroport et transfert vers votre hôtel. Détendez-vous avant d’explorer la ville historique de Stone Town, ses célèbres portes, le Vieux Fort, les marchés locaux et de profiter du coucher du soleil aux jardins de Forodhani."
+          },
+
+          "day02": {
+            "number": "02",
+            "title": "Aventure océanique Safari Blue",
+            "text": "Profitez d’une expérience traditionnelle en dhow sur l’océan Indien avec snorkeling, baignade, exploration des bancs de sable et déjeuner frais de fruits de mer ou de cuisine swahilie."
+          },
+
+          "day03": {
+            "number": "03",
+            "title": "Plantation d’épices et culture",
+            "text": "Visitez une plantation traditionnelle d’épices et découvrez le clou de girofle, la cannelle, la vanille et les fruits tropicaux avant de profiter d’une expérience culturelle et d’un après-midi relaxant à la plage."
+          },
+
+          "day04": {
+            "number": "04",
+            "title": "Temps libre à la plage → Départ",
+            "text": "Profitez du petit-déjeuner et de vos dernières heures sur les plages de Zanzibar. Activités nautiques optionnelles et achats de souvenirs avant votre transfert vers l’aéroport."
+          }
+        }
+      },
+
+      "pricing": {
+        "badge": "Escapade à Zanzibar",
+        "title": "Prix estimé",
+        "description": "Sélectionnez votre hébergement et votre style de voyage préférés pour profiter d’une expérience à Zanzibar conçue pour vous.",
+        "perPerson": "Par personne",
+
+        "options": {
+          "budget": {
+            "label": "Économique",
+            "price": "$900"
+          },
+
+          "midRange": {
+            "label": "Milieu de gamme",
+            "price": "$1,000"
+          },
+
+          "luxury": {
+            "label": "Luxe",
+            "price": "$1,600"
+          }
+        }
+      },
+
+      "optional": {
+        "badge": "Expériences optionnelles",
+        "title": "Faites de Zanzibar votre propre aventure.",
+
+        "items": {
+          "sunsetDhow": "Croisière en dhow au coucher du soleil",
+          "snorkeling": "Snorkeling et plongée",
+          "spa": "Spa et bien-être",
+          "kayaking": "Kayak et sports nautiques"
+        }
+      }
+    },
+
+    "cta": {
+      "badge": "Curious Safaris Tanzanie",
+      "title": "La nature sauvage ou l’océan ?",
+      "titleHighlight": "Pourquoi pas les deux ?",
+      "description": "Des Big Five et des plaines infinies du Serengeti aux eaux turquoise et à la culture swahilie de Zanzibar, Curious Safaris crée des voyages adaptés à votre style, votre temps et votre budget.",
+      "plan": "Planifier mon voyage en Tanzanie",
+      "contact": "Nous contacter",
+      "taglineBrand": "Curious Safaris",
+      "tagline": "Perdus dans la bonne direction."
+    }
+  },
+
+  "uganda": {
+    "header": {
+      "badge": "Découvrez l’Ouganda",
+      "title": "Deux façons de vivre",
+      "titleAccent": "l’Ouganda.",
+      "description": "Des gorilles de montagne et de la faune sauvage classique au Nil, aux cascades et aux aventures riches en adrénaline, découvrez l’Ouganda au-delà de l’ordinaire."
+    },
+
+    "wildlife": {
+      "badge": "Expérience une · Faune sauvage et gorilles",
+      "title": "4 jours en Ouganda",
+      "titleAccent": "Safari gorilles et faune sauvage",
+      "description": "Combinez le parc national Queen Elizabeth, le canal de Kazinga et l’ancienne forêt de Bwindi pour vivre une aventure inoubliable au cœur de la faune sauvage et des gorilles de montagne.",
+
+      "destinations": {
+        "queenElizabeth": {
+          "imageAlt": "Parc national Queen Elizabeth, Ouganda",
+          "day": "Jour 01",
+          "title": "Queen Elizabeth",
+          "description": "Faune sauvage, paysages de savane et safaris inoubliables."
+        },
+
+        "kazinga": {
+          "imageAlt": "Canal de Kazinga, Ouganda",
+          "day": "Jour 02",
+          "title": "Canal de Kazinga",
+          "description": "Naviguez parmi les hippopotames, crocodiles, éléphants et une abondante diversité d’oiseaux."
+        },
+
+        "bwindi": {
+          "imageAlt": "Forêt impénétrable de Bwindi, Ouganda",
+          "day": "Jour 03 · 04",
+          "title": "Bwindi",
+          "description": "Ancienne forêt tropicale et expérience inoubliable de pistage des gorilles de montagne."
+        }
+      },
+
+      "details": {
+        "duration": {
+          "label": "Durée",
+          "value": "4 jours / 3 nuits"
+        },
+
+        "route": {
+          "label": "Itinéraire",
+          "value": "Kampala · Queen Elizabeth · Bwindi"
+        },
+
+        "bestFor": {
+          "label": "Idéal pour",
+          "value": "Amoureux de la faune sauvage et des gorilles"
+        },
+
+        "transport": {
+          "label": "Transport",
+          "value": "Véhicule safari privé 4×4"
+        }
+      },
+
+      "itinerary": {
+        "title": "Votre safari gorilles de 4 jours",
+
+        "days": {
+          "day01": {
+            "title": "Kampala / Entebbe → Queen Elizabeth",
+            "text": "Prise en charge tôt le matin et trajet panoramique à travers l’ouest de l’Ouganda. Profitez d’un déjeuner en cours de route avant d’arriver au parc national Queen Elizabeth pour un safari l’après-midi à la recherche d’éléphants, buffles, lions, léopards et cobes d’Ouganda."
+          },
+
+          "day02": {
+            "title": "Queen Elizabeth · Safari et canal de Kazinga",
+            "text": "Commencez par un safari matinal dans les plaines de Kasenyi. Plus tard, profitez d’une promenade inoubliable en bateau sur le canal de Kazinga, où vous pourrez observer hippopotames, crocodiles, éléphants et de nombreux oiseaux le long des rives."
+          },
+
+          "day03": {
+            "title": "Queen Elizabeth → Bwindi",
+            "text": "Voyagez vers Bwindi à travers les paysages ruraux spectaculaires de l’Ouganda. Une visite optionnelle de la faune dans le secteur d’Ishasha peut être organisée avant de poursuivre vers la forêt impénétrable de Bwindi. Détendez-vous et préparez-vous pour votre trekking des gorilles."
+          },
+
+          "day04": {
+            "title": "Trekking des gorilles → Départ",
+            "text": "Après le petit-déjeuner, transfert vers le point d’information pour le trekking des gorilles. Commencez votre randonnée dans la forêt à la recherche d’une famille habituée de gorilles de montagne. Après l’expérience, profitez du déjeuner avant votre transfert vers Kampala ou Entebbe."
+          }
+        }
+      },
+
+      "pricing": {
+        "badge": "Safari gorilles et faune sauvage en Ouganda",
+        "title": "Prix estimé par personne",
+        "description": "Le prix final dépend des dates de voyage, de l’hébergement et de la disponibilité des permis de gorilles.",
+
+        "options": {
+          "budget": {
+            "label": "Économique",
+            "price": "$1,600"
+          },
+
+          "midRange": {
+            "label": "Milieu de gamme",
+            "price": "$2,100"
+          },
+
+          "luxury": {
+            "label": "Luxe",
+            "price": "$3,500"
+          }
+        }
+      },
+
+      "inclusions": {
+        "title": "Ce qui est inclus",
+
+        "items": {
+          "accommodation": "3 nuits d’hébergement",
+          "vehicle": "Véhicule safari privé 4×4",
+          "driverGuide": "Chauffeur-guide professionnel anglophone",
+          "gameDrives": "Safaris",
+          "kazingaCruise": "Promenade en bateau sur le canal de Kazinga",
+          "gorillaPermit": "Permis de trekking des gorilles",
+          "parkFees": "Droits d’entrée dans les parcs",
+          "meals": "Repas selon le programme",
+          "water": "Eau potable en bouteille",
+          "transfers": "Transferts aéroport et hôtel"
+        }
+      }
+    },
+
+    "adventure": {
+      "badge": "Expérience deux · Aventure et culture",
+      "title": "4 jours en Ouganda",
+      "titleAccent": "Escapade aventure",
+      "description": "Découvrez le Nil, la culture de l’aventure de Jinja, la forêt de Mabira et les spectaculaires cascades de Sipi lors d’un voyage riche en action.",
+
+      "images": {
+        "nile": {
+          "imageAlt": "Nil, Ouganda",
+          "badge": "Jinja",
+          "title": "Source du Nil",
+          "description": "Croisières en bateau, aventures fluviales et expériences inoubliables en Ouganda."
+        },
+
+        "sipi": {
+          "imageAlt": "Cascades de Sipi, Ouganda",
+          "badge": "Jour 03",
+          "title": "Cascades de Sipi"
+        }
+      },
+
+      "details": {
+        "duration": {
+          "label": "Durée",
+          "value": "4 jours / 3 nuits"
+        },
+
+        "route": {
+          "label": "Itinéraire",
+          "value": "Kampala · Jinja · Cascades de Sipi"
+        },
+
+        "bestFor": {
+          "label": "Idéal pour",
+          "value": "Voyageurs actifs et amateurs d’aventure"
+        },
+
+        "experience": {
+          "label": "Expérience",
+          "value": "Nil · Rafting · Cascades"
+        }
+      },
+
+      "itinerary": {
+        "title": "Votre aventure de 4 jours",
+
+        "days": {
+          "day01": {
+            "title": "Kampala → Jinja · Source du Nil",
+            "text": "Prise en charge le matin à Kampala ou Entebbe. Visitez la forêt de Mabira avant de continuer vers Jinja pour déjeuner, profiter d’une promenade en bateau à la Source du Nil et vivre une expérience inoubliable au coucher du soleil."
+          },
+
+          "day02": {
+            "title": "Journée d’aventure à Jinja",
+            "text": "Profitez d’une descente en rafting sur les eaux vives du Nil avec des guides professionnels et un équipement de sécurité. Continuez avec des activités optionnelles telles que la tyrolienne, la descente en rappel ou le saut à l’élastique avant d’explorer la ville de Jinja."
+          },
+
+          "day03": {
+            "title": "Jinja → Cascades de Sipi",
+            "text": "Voyagez vers le mont Elgon et arrivez aux cascades de Sipi. Faites une randonnée jusqu’aux cascades, profitez de vues spectaculaires sur la vallée, vivez une expérience de descente en rappel et visitez une plantation locale de café."
+          },
+
+          "day04": {
+            "title": "Cascades de Sipi → Kampala / Entebbe",
+            "text": "Profitez du petit-déjeuner et d’une promenade matinale dans la nature. Des activités optionnelles telles que l’équitation ou des expériences autour du café peuvent être organisées avant de partir vers Kampala ou Entebbe, avec des arrêts pour prendre des photos et faire des achats locaux."
+          }
+        }
+      },
+
+      "pricing": {
+        "badge": "Escapade aventure en Ouganda",
+        "title": "Prix estimé",
+        "description": "Une expérience dynamique en Ouganda qui combine nature, culture, aventure et certains des plus beaux paysages d’Afrique de l’Est.",
+        "perPerson": "Par personne",
+
+        "options": {
+          "budget": {
+            "label": "Économique",
+            "price": "$950"
+          },
+
+          "midRange": {
+            "label": "Milieu de gamme",
+            "price": "$1,200"
+          },
+
+          "luxury": {
+            "label": "Luxe",
+            "price": "$1,800"
+          }
+        }
+      },
+
+      "inclusions": {
+        "title": "Ce qui est inclus",
+
+        "items": {
+          "accommodation": "3 nuits d’hébergement",
+          "vehicle": "Véhicule privé 4×4",
+          "driverGuide": "Chauffeur-guide professionnel anglophone",
+          "nileCruise": "Promenade en bateau à la Source du Nil",
+          "rafting": "Rafting en eaux vives",
+          "abseiling": "Expérience de descente en rappel",
+          "sipiHike": "Randonnée aux cascades de Sipi",
+          "mabiraForest": "Visite de la forêt de Mabira",
+          "coffee": "Expérience autour du café",
+          "meals": "Repas selon le programme",
+          "water": "Eau potable en bouteille",
+          "transfers": "Tous les transferts prévus"
+        }
+      }
+    },
+
+    "cta": {
+      "badge": "Curious Safaris Ouganda",
+      "title": "Gorilles ou aventure ?",
+      "titleAccent": "Découvrez l’Ouganda à votre manière.",
+      "description": "Des gorilles de montagne et de la faune sauvage au Nil, aux cascades et aux aventures inoubliables, Curious Safaris crée des voyages adaptés à votre style, votre temps et votre budget.",
+      "primaryButton": "Planifier mon voyage en Ouganda",
+      "secondaryButton": "Nous contacter",
+      "brand": "Curious Safaris",
+      "tagline": "Perdus dans la bonne direction."
+    }
+  },
+
+  
+  "rwanda2": {
+    "header": {
+      "badge": "Découvrez le Rwanda",
+      "title": "4 jours au Rwanda",
+      "titleHighlight": "Escapade aventure",
+      "description": "Faune sauvage, lacs, culture et paysages spectaculaires de collines verdoyantes — une aventure compacte combinant le parc national de l'Akagera, le lac Kivu et Kigali."
+    },
+
+    "destinations": {
+      "akagera": {
+        "imageAlt": "Parc national de l'Akagera au Rwanda",
+        "badge": "Jours 01 · 02",
+        "title": "Akagera",
+        "description": "Les Big Five, des paysages de savane et les magnifiques eaux du lac Ihema."
+      },
+      "lakeKivu": {
+        "imageAlt": "Lac Kivu au Rwanda",
+        "badge": "Jour 03",
+        "title": "Lac Kivu",
+        "description": "Détente au bord du lac, croisières en bateau, îles et couchers de soleil spectaculaires."
+      },
+      "kigali": {
+        "imageAlt": "Kigali au Rwanda",
+        "badge": "Jours 01 · 04",
+        "title": "Kigali",
+        "description": "Découvrez la capitale dynamique du Rwanda, sa culture locale et ses magnifiques paysages urbains."
+      }
+    },
+
+    "details": {
+      "duration": {
+        "label": "Durée",
+        "value": "4 jours / 3 nuits"
+      },
+      "route": {
+        "label": "Itinéraire",
+        "value": "Kigali · Akagera · Lac Kivu"
+      },
+      "bestFor": {
+        "label": "Idéal pour",
+        "value": "Faune, culture et nature"
+      },
+      "transport": {
+        "label": "Transport",
+        "value": "Véhicule safari 4×4 privé"
+      }
+    },
+
+    "itinerary": {
+      "badge": "Le voyage",
+      "title": "Votre aventure de 4 jours au Rwanda",
+
+      "days": {
+        "day01": {
+          "title": "Kigali → Parc national de l'Akagera",
+          "text": "Prise en charge le matin à Kigali avec une visite facultative de la ville avant de rejoindre l'Akagera. Déjeuner, croisière en bateau sur le lac Ihema et safari en soirée.",
+          "highlights": "Lac Ihema · Croisière · Faune sauvage"
+        },
+        "day02": {
+          "title": "Safari d'une journée dans l'Akagera",
+          "text": "Commencez par un safari matinal à travers les savanes, zones humides et lacs. Observez éléphants, lions, buffles, girafes et zèbres avant un safari dans l'après-midi.",
+          "highlights": "Big Five · Safaris · Conservation"
+        },
+        "day03": {
+          "title": "Akagera → Lac Kivu",
+          "text": "Traversez les spectaculaires collines verdoyantes du Rwanda jusqu'au lac Kivu. Profitez d'un après-midi au bord du lac avec une croisière, une visite d'île, du kayak ou de la baignade.",
+          "highlights": "Lac Kivu · Îles · Coucher de soleil"
+        },
+        "day04": {
+          "title": "Lac Kivu → Kigali",
+          "text": "Profitez d'un petit-déjeuner avec vue sur le lac, suivi d'une expérience café, d'une séance de kayak ou de vélo en option. Retour à Kigali pour des visites, du shopping et le transfert vers l'aéroport ou votre hôtel.",
+          "highlights": "Café · Kigali · Départ"
+        }
+      }
+    },
+
+    "pricing": {
+      "badge": "Aventure au Rwanda",
+      "title": "Prix estimé",
+      "description": "Des options flexibles conçues selon votre niveau d'hébergement et de confort préféré.",
+      "perPerson": "Par personne",
+
+      "options": {
+        "budget": {
+          "label": "Économique",
+          "price": "$950"
+        },
+        "midRange": {
+          "label": "Milieu de gamme",
+          "price": "$1,200"
+        },
+        "luxury": {
+          "label": "Luxe",
+          "price": "$1,900"
+        }
+      }
+    },
+
+    "included": {
+      "badge": "Le forfait comprend",
+      "title": "Tout ce dont vous avez besoin.",
+
+      "items": {
+        "accommodation": "3 nuits d'hébergement",
+        "vehicle": "Véhicule safari 4×4 privé",
+        "guide": "Guide professionnel anglophone",
+        "parkFees": "Frais d'entrée au parc de l'Akagera",
+        "gameDrives": "Safaris en véhicule",
+        "ihemaBoat": "Croisière sur le lac Ihema",
+        "kivuBoat": "Expérience en bateau sur le lac Kivu",
+        "kigali": "Visite de Kigali",
+        "meals": "Repas selon le programme",
+        "water": "Eau potable en bouteille",
+        "transfers": "Transferts aéroport et hôtel"
+      }
+    },
+
+    "highlight": {
+      "badge": "L'expérience Curious Safaris",
+      "titleLine1": "4 jours.",
+      "titleLine2": "2 lacs.",
+      "titleLine3": "Big Five, croisières en bateau et célèbres collines du Rwanda.",
+      "description": "Une escapade idéale pour les voyageurs souhaitant combiner faune sauvage, nature, culture et détente sans entreprendre un long itinéraire de safari."
+    },
+
+    "cta": {
+      "planJourney": "Planifier mon voyage au Rwanda",
+      "contact": "Nous contacter"
+    }
+  },
+
+  "ethiopia1": {
+    "header": {
+      "badge": "Découvrez l'Éthiopie",
+      "title": "4 jours en Éthiopie",
+      "titleAccent": "Patrimoine & aventure",
+      "description": "Églises anciennes, paysages montagneux spectaculaires, culture éthiopienne et cuisine inoubliable — un voyage compact à travers le pays des origines."
+    },
+
+    "destinations": {
+      "addis": {
+        "day": "Jour 01",
+        "title": "Addis-Abeba",
+        "imageAlt": "Addis-Abeba en Éthiopie",
+        "description": "Découvrez la capitale éthiopienne, ses musées, ses marchés, sa culture du café et ses magnifiques points de vue montagneux."
+      },
+      "lalibela": {
+        "day": "Jour 02",
+        "title": "Lalibela",
+        "imageAlt": "Églises rupestres de Lalibela en Éthiopie",
+        "description": "Explorez d'extraordinaires églises médiévales directement sculptées dans la roche."
+      },
+      "simien": {
+        "day": "Jours 03 · 04",
+        "title": "Montagnes du Simien",
+        "imageAlt": "Montagnes du Simien en Éthiopie",
+        "description": "Falaises spectaculaires, vallées profondes, sentiers de randonnée et faune endémique éthiopienne."
+      }
+    },
+
+    "details": {
+      "duration": {
+        "label": "Durée",
+        "value": "4 jours / 3 nuits"
+      },
+      "route": {
+        "label": "Itinéraire",
+        "value": "Addis · Lalibela · Gondar · Simien"
+      },
+      "bestFor": {
+        "label": "Idéal pour",
+        "value": "Histoire, culture et aventure"
+      },
+      "transport": {
+        "label": "Transport",
+        "value": "Vols intérieurs et véhicule privé"
+      }
+    },
+
+    "itinerary": {
+      "label": "Le voyage",
+      "title": "Votre aventure de 4 jours en Éthiopie",
+
+      "days": {
+        "day01": {
+          "title": "Découverte d'Addis-Abeba",
+          "text": "Explorez le Musée national et le fossile de Lucy, la cathédrale de la Sainte-Trinité, le Musée ethnologique et le Merkato. Savourez la cuisine traditionnelle éthiopienne, assistez à une cérémonie du café et admirez le coucher du soleil depuis le mont Entoto.",
+          "highlights": "Lucy · Café · Entoto"
+        },
+        "day02": {
+          "title": "Addis-Abeba → Lalibela",
+          "text": "Envolez-vous vers Lalibela et découvrez ses extraordinaires églises rupestres, notamment Bet Medhane Alem, Bet Maryam et Bet Giyorgis, ainsi que les tunnels et passages creusés dans la roche.",
+          "highlights": "Lalibela · Églises · Patrimoine"
+        },
+        "day03": {
+          "title": "Lalibela → Gondar → Montagnes du Simien",
+          "text": "Voyagez vers Gondar et explorez l'enceinte royale historique avant de poursuivre vers les montagnes du Simien. Profitez d'une randonnée guidée, de points de vue spectaculaires et de rencontres possibles avec les babouins géladas.",
+          "highlights": "Gondar · Randonnée · Géladas"
+        },
+        "day04": {
+          "title": "Montagnes du Simien → Addis-Abeba",
+          "text": "Commencez par une promenade matinale en montagne et une visite d'une communauté locale avant de retourner à Gondar pour votre vol vers Addis-Abeba. Profitez du shopping, du café et de votre dernière expérience éthiopienne avant le départ.",
+          "highlights": "Montagnes · Culture · Départ"
+        }
+      }
+    },
+
+    "pricing": {
+      "label": "Patrimoine & aventure en Éthiopie",
+      "title": "Prix estimé",
+      "description": "Choisissez votre niveau d'hébergement et de confort préféré pour votre voyage en Éthiopie.",
+      "perPerson": "Par personne",
+
+      "options": {
+        "budget": {
+          "label": "Économique",
+          "price": "$950"
+        },
+        "midRange": {
+          "label": "Milieu de gamme",
+          "price": "$1,300"
+        },
+        "luxury": {
+          "label": "Luxe",
+          "price": "$2,000"
+        }
+      }
+    },
+
+    "included": {
+      "label": "Le forfait comprend",
+      "title": "Tout ce dont vous avez besoin.",
+
+      "items": {
+        "accommodation": "3 nuits d'hébergement",
+        "domesticFlights": "Vols intérieurs",
+        "privateTransportation": "Transport privé",
+        "professionalGuide": "Guide professionnel anglophone",
+        "lalibelaFees": "Frais d'entrée à Lalibela",
+        "simienFees": "Frais du parc national du Simien",
+        "guidedHiking": "Randonnée guidée",
+        "addisCityTour": "Visite d'Addis-Abeba",
+        "traditionalDinner": "Dîner éthiopien traditionnel",
+        "coffeeCeremony": "Cérémonie du café",
+        "meals": "Repas selon le programme",
+        "airportTransfers": "Transferts aéroport",
+        "bottledWater": "Eau potable en bouteille"
+      }
+    },
+
+    "highlight": {
+      "label": "L'expérience Curious Safaris",
+      "title": "Églises anciennes.",
+      "titleAccent": "Aventures en montagne.",
+      "titleEnd": "Café éthiopien & cuisine exceptionnelle.",
+      "description": "Un voyage inoubliable à travers le pays des origines, combinant le patrimoine extraordinaire de l'Éthiopie avec des paysages montagneux spectaculaires et la culture locale."
+    },
+
+    "cta": {
+      "planJourney": "Planifier mon voyage en Éthiopie",
+      "contact": "Nous contacter"
+    }
+  },
+
+  "drcAdventure": {
+    "header": {
+      "badge": "Découvrez la République démocratique du Congo",
+      "title": "4 jours en RDC",
+      "titleHighlight": "Escapade aventure",
+      "description": "Volcans, forêt tropicale, lac Kivu et paysages montagneux extraordinaires — une aventure à travers Goma et la région du Virunga."
+    },
+
+    "destinations": {
+      "goma": {
+        "days": "Jour 01",
+        "title": "Goma & Lac Kivu",
+        "description": "Découvrez Goma, le lac Kivu, les communautés de pêcheurs et les paysages volcaniques spectaculaires.",
+        "alt": "Goma en République démocratique du Congo"
+      },
+      "virunga": {
+        "days": "Jour 02",
+        "title": "Virunga",
+        "description": "Explorez les paysages volcaniques, la forêt et les zones de conservation avec l'accompagnement de rangers locaux.",
+        "alt": "Paysage du parc national des Virunga"
+      },
+      "nyiragongo": {
+        "days": "Jours 03 · 04",
+        "title": "Nyiragongo",
+        "description": "Une ascension volcanique exigeante offrant des paysages spectaculaires du cratère et une expérience inoubliable au sommet.",
+        "alt": "Paysage volcanique de montagne"
+      }
+    },
+
+    "details": {
+      "duration": {
+        "label": "Durée",
+        "value": "4 jours / 3 nuits"
+      },
+      "route": {
+        "label": "Itinéraire",
+        "value": "Goma · Virunga · Nyiragongo · Lac Kivu"
+      },
+      "bestFor": {
+        "label": "Idéal pour",
+        "value": "Voyageurs en quête d'aventure et de montagne"
+      },
+      "transport": {
+        "label": "Transport",
+        "value": "Véhicule 4×4 privé"
+      }
+    },
+
+    "itinerary": {
+      "eyebrow": "Le voyage",
+      "title": "Votre aventure de 4 jours en RDC",
+
+      "days": {
+        "day01": {
+          "title": "Arrivée à Goma & Lac Kivu",
+          "text": "Prise en charge à l'aéroport, installation à l'hôtel et découverte de Goma. Déjeuner avec vue sur le lac Kivu, croisière en bateau l'après-midi, visite de communautés de pêcheurs et coucher de soleil sur les paysages volcaniques.",
+          "highlights": "Goma · Lac Kivu · Croisière"
+        },
+        "day02": {
+          "title": "Goma → Parc national des Virunga",
+          "text": "Route vers le Virunga pour une expérience guidée de nature et de faune sauvage. Explorez les paysages volcaniques et la forêt environnante, profitez d'un pique-nique et visitez une communauté locale ou un projet de conservation.",
+          "highlights": "Virunga · Forêt · Conservation"
+        },
+        "day03": {
+          "title": "Aventure au volcan Nyiragongo",
+          "text": "Route jusqu'au point de départ avant de commencer l'ascension volcanique exigeante avec l'accompagnement de rangers. Atteignez le bord du cratère et profitez de vues spectaculaires avant de passer la nuit au camp du sommet.",
+          "highlights": "Volcan · Trekking · Camp du cratère"
+        },
+        "day04": {
+          "title": "Nyiragongo → Goma",
+          "text": "Admirez le lever du soleil sur les paysages volcaniques avant d'entamer la descente. Retour à Goma pour le petit-déjeuner et vous rafraîchir, suivi d'un déjeuner facultatif au bord du lac Kivu avant le transfert à l'aéroport.",
+          "highlights": "Lever du soleil · Descente · Départ"
+        }
+      }
+    },
+
+    "pricing": {
+      "eyebrow": "Aventure en RDC",
+      "title": "Prix estimé",
+      "description": "Le prix de l'aventure dépend de l'hébergement, de la logistique et des autorisations du parc ou du trek.",
+      "perPerson": "Par personne",
+
+      "options": {
+        "budget": {
+          "label": "Économique",
+          "price": "$1,200"
+        },
+        "midRange": {
+          "label": "Milieu de gamme",
+          "price": "$1,700"
+        },
+        "luxury": {
+          "label": "Luxe",
+          "price": "$2,800"
+        }
+      }
+    },
+
+    "included": {
+      "eyebrow": "Le forfait comprend",
+      "title": "Tout ce dont vous avez besoin.",
+
+      "items": {
+        "accommodation": "3 nuits d'hébergement / camping",
+        "transport": "Transport privé en 4×4",
+        "guide": "Guide local professionnel",
+        "virunga": "Expérience dans le parc national des Virunga",
+        "nyiragongo": "Organisation du trek du Nyiragongo",
+        "ranger": "Accompagnement de rangers",
+        "lakeKivu": "Croisière sur le lac Kivu",
+        "meals": "Repas selon le programme",
+        "water": "Eau potable en bouteille",
+        "airport": "Transferts aéroport"
+      }
+    },
+
+    "importantNote": {
+      "eyebrow": "Note importante",
+      "title": "La disponibilité des treks doit être reconfirmée.",
+      "description": "Les opérations touristiques du Virunga peuvent changer. Les activités de trekking des gorilles et du Nyiragongo doivent uniquement être confirmées après vérification de la disponibilité et des autorisations auprès des autorités compétentes du Virunga."
+    },
+
+    "alternative": {
+      "eyebrow": "Expérience alternative en RDC",
+      "title": "Kahuzi-Biega & Gorilles de Grauer",
+      "description": "Pour les voyageurs à la recherche d'une autre aventure en RDC, un itinéraire peut être organisé autour du parc national de Kahuzi-Biega, qui abrite les gorilles de Grauer, une sous-espèce de gorilles des plaines orientales gravement menacée."
+    },
+
+    "highlight": {
+      "eyebrow": "L'expérience Curious Safaris",
+      "title": "Volcans. Forêt tropicale. Lac Kivu. Gorilles. Aventure.",
+      "titleSecond": "Lac Kivu. Gorilles. Aventure.",
+      "description": "La RDC s'adresse aux voyageurs souhaitant découvrir une Afrique hors des sentiers battus — avec des paysages spectaculaires, des aventures volcaniques et des expériences sauvages inoubliables."
+    },
+
+    "cta": {
+      "whatsapp": "Planifier mon voyage en RDC →",
+      "contact": "Nous contacter"
+    }
+  },
+
+  "zimbabwe": {
+    "badge": "Découvrez le Zimbabwe",
+    "title": "7 jours au Zimbabwe",
+    "titleHighlight": "Aventure Safari",
+    "description": "Les chutes Victoria, la faune légendaire de Hwange et les paysages spectaculaires de Matobo — un voyage inoubliable à travers l'une des destinations safari les plus fascinantes d'Afrique australe.",
+
+    "destinations": {
+      "victoriaFalls": {
+        "days": "Jours 01 · 02",
+        "title": "Chutes Victoria",
+        "description": "Découvrez l'une des plus grandes cascades du monde, les croisières au coucher du soleil et le spectaculaire fleuve Zambèze."
+      },
+      "hwange": {
+        "days": "Jours 03 · 05",
+        "title": "Parc national de Hwange",
+        "description": "Observez éléphants, lions, buffles, lycaons et autres animaux sauvages dans le plus grand parc national du Zimbabwe."
+      },
+      "matobo": {
+        "days": "Jours 06 · 07",
+        "title": "Parc national de Matobo",
+        "description": "Découvrez les paysages granitiques, les formations rocheuses anciennes, le pistage des rhinocéros et le patrimoine culturel de Matobo."
+      }
+    },
+
+    "details": {
+      "duration": {
+        "label": "Durée",
+        "value": "7 jours / 6 nuits"
+      },
+      "route": {
+        "label": "Itinéraire",
+        "value": "Chutes Victoria · Hwange · Matobo"
+      },
+      "bestFor": {
+        "label": "Idéal pour",
+        "value": "Faune, aventure et culture"
+      },
+      "transport": {
+        "label": "Transport",
+        "value": "Véhicule safari 4×4 privé"
+      }
+    },
+
+    "journey": {
+      "label": "Le voyage",
+      "title": "Votre safari de 7 jours au Zimbabwe",
+
+      "days": {
+        "day1": {
+          "title": "Arrivée aux chutes Victoria",
+          "text": "Prise en charge à l'aéroport et transfert vers votre lodge. Installation avant de découvrir les chutes Victoria et de profiter de votre premier coucher de soleil spectaculaire sur le Zambèze.",
+          "highlight": "Chutes Victoria · Zambèze · Coucher de soleil"
+        },
+        "day2": {
+          "title": "Expérience des chutes Victoria",
+          "text": "Explorez les chutes Victoria avec un guide depuis plusieurs points de vue. Plus tard, choisissez une activité facultative : vol en hélicoptère, canoë, visite culturelle ou croisière au coucher du soleil.",
+          "highlight": "Cascades · Aventure · Croisière"
+        },
+        "day3": {
+          "title": "Chutes Victoria → Parc national de Hwange",
+          "text": "Route vers le parc national de Hwange et installation dans votre lodge safari. Profitez d'un safari l'après-midi pour commencer à explorer la plus grande zone sauvage du Zimbabwe.",
+          "highlight": "Hwange · Safari · Faune"
+        },
+        "day4": {
+          "title": "Safari d'une journée à Hwange",
+          "text": "Passez la journée à explorer les paysages variés de Hwange avec des safaris matin et après-midi. Observez éléphants, lions, buffles, girafes, zèbres et lycaons.",
+          "highlight": "Éléphants · Lions · Lycaons"
+        },
+        "day5": {
+          "title": "Expérience faunique à Hwange",
+          "text": "Profitez d'une nouvelle journée de safari avec des possibilités de promenades guidées, d'observation aux points d'eau et de photographie. Découvrez l'atmosphère changeante du parc du lever au coucher du soleil.",
+          "highlight": "Safari · Photographie · Nature"
+        },
+        "day6": {
+          "title": "Hwange → Parc national de Matobo",
+          "text": "Voyagez vers le sud en direction de Matobo et découvrez ses paysages granitiques spectaculaires. Profitez d'une expérience culturelle et naturelle au milieu des anciennes formations rocheuses.",
+          "highlight": "Matobo · Collines granitiques · Culture"
+        },
+        "day7": {
+          "title": "Expérience de pistage des rhinocéros à Matobo → Départ",
+          "text": "Commencez par une expérience guidée de pistage des rhinocéros avant de découvrir davantage les paysages remarquables de Matobo. Continuez vers Bulawayo pour votre voyage ou votre départ.",
+          "highlight": "Pistage des rhinocéros · Matobo · Départ"
+        }
+      }
+    },
+
+    "pricing": {
+      "label": "Safari au Zimbabwe",
+      "title": "Prix estimé",
+      "description": "Tarification flexible selon la catégorie d'hébergement, les activités de safari et la saison du voyage.",
+      "perPerson": "Par personne",
+      "budget": "Économique",
+      "budgetPrice": "$1,350",
+      "midRange": "Milieu de gamme",
+      "midRangePrice": "$1,850",
+      "luxury": "Luxe",
+      "luxuryPrice": "$2,700"
+    },
+
+    "included": {
+      "label": "Le forfait comprend",
+      "title": "Tout ce dont vous avez besoin.",
+      "items": [
+        "6 nuits d'hébergement",
+        "Véhicule safari 4×4 privé",
+        "Guide professionnel anglophone",
+        "Entrée aux chutes Victoria",
+        "Frais du parc national de Hwange",
+        "Plusieurs safaris",
+        "Expérience au parc national de Matobo",
+        "Expérience de pistage des rhinocéros",
+        "Croisière au coucher du soleil sur le Zambèze",
+        "Transferts aéroport et hôtel",
+        "Repas selon le programme",
+        "Eau potable en bouteille"
+      ]
+    },
+
+    "extension": {
+      "label": "Prolongez votre safari",
+      "title": "Ajoutez le parc national de Mana Pools",
+      "description": "Prolongez votre aventure au Zimbabwe avec Mana Pools pour découvrir le canoë, les safaris à pied et des expériences exceptionnelles de faune sauvage le long du fleuve Zambèze. Parfait pour les voyageurs à la recherche d'une expérience plus profonde en pleine nature."
+    },
+
+    "highlight": {
+      "label": "L'expérience Curious Safaris",
+      "title": "Chutes Victoria.",
+      "highlight": " Hwange.",
+      "line": "Matobo. Faune. Aventure.",
+      "description": "Une expérience complète du Zimbabwe combinant l'une des plus grandes merveilles naturelles d'Afrique avec une faune exceptionnelle, des paysages spectaculaires et des expériences culturelles authentiques."
+    },
+
+    "cta": {
+      "plan": "Planifier mon voyage au Zimbabwe →",
+      "contact": "Nous contacter"
+    }
+  },
+
+  "zambiaAdventure": {
+    "header": {
+      "badge": "Découvrez la Zambie",
+      "title": "Chutes Victoria &",
+      "titleHighlight": "Aventure sur le Zambèze.",
+      "description": "Découvrez les puissantes chutes Victoria, le fleuve Zambèze, la faune, la culture locale et des aventures inoubliables lors d'une escapade spectaculaire de quatre jours en Zambie."
+    },
+
+    "experiences": {
+      "victoriaFalls": {
+        "eyebrow": "Livingstone · Jour 01",
+        "title": "Chutes Victoria",
+        "description": "Admirez l'une des plus grandes merveilles naturelles d'Afrique et ressentez la puissance de Mosi-oa-Tunya.",
+        "alt": "Chutes Victoria en Zambie"
+      },
+      "zambezi": {
+        "eyebrow": "Jours 01 · 04",
+        "title": "Fleuve Zambèze",
+        "alt": "Fleuve Zambèze en Zambie"
+      },
+      "wildlife": {
+        "eyebrow": "Jour 03",
+        "title": "Faune de Mosi-oa-Tunya",
+        "alt": "Safari animalier en Zambie"
+      }
+    },
+
+    "details": {
+      "duration": {
+        "label": "Durée",
+        "value": "4 jours / 3 nuits"
+      },
+      "route": {
+        "label": "Itinéraire",
+        "value": "Livingstone · Chutes Victoria · Zambèze"
+      },
+      "bestFor": {
+        "label": "Idéal pour",
+        "value": "Amoureux d'aventure et de faune"
+      },
+      "transport": {
+        "label": "Transport",
+        "value": "Véhicule privé et activités fluviales"
+      }
+    },
+
+    "itinerary": {
+      "eyebrow": "Le voyage",
+      "title": "Votre aventure de 4 jours en Zambie",
+
+      "days": {
+        "day01": {
+          "title": "Arrivée à Livingstone & Chutes Victoria",
+          "text": "Prise en charge à l'aéroport, installation à l'hôtel et première visite des chutes Victoria. Explorez les points de vue, le Knife-Edge Bridge et le Boiling Pot avant une inoubliable croisière au coucher du soleil sur le Zambèze."
+        },
+        "day02": {
+          "title": "Chutes Victoria & journée d'aventure",
+          "text": "Profitez d'une visite guidée des chutes Victoria suivie de l'aventure de votre choix : rafting en eaux vives, descente en rappel, tyrolienne ou saut à l'élastique. Livingstone Island et Devil's Pool peuvent être organisés lorsque les conditions saisonnières le permettent."
+        },
+        "day03": {
+          "title": "Faune de Mosi-oa-Tunya & culture",
+          "text": "Partez tôt le matin pour un safari à la recherche d'éléphants, buffles, girafes et rhinocéros. Plus tard, découvrez la culture locale à Mukuni Village avant de retourner vers le Zambèze pour une croisière en soirée ou un dîner au bord du fleuve."
+        },
+        "day04": {
+          "title": "Aventure sur le Zambèze & départ",
+          "text": "Profitez d'une expérience matinale en canoë ou en kayak sur le Zambèze, avec pêche en option. Consacrez vos dernières heures au shopping de souvenirs avant votre transfert vers l'aéroport de Livingstone."
+        }
+      }
+    },
+
+    "included": {
+      "eyebrow": "Ce qui est inclus",
+      "title": "Votre expérience en Zambie",
+
+      "items": {
+        "accommodation": "3 nuits d'hébergement",
+        "airportTransfers": "Transferts aéroport",
+        "privateTransport": "Transport privé",
+        "guide": "Guide anglophone",
+        "victoriaFalls": "Entrée aux chutes Victoria",
+        "sunsetCruise": "Croisière au coucher du soleil sur le Zambèze",
+        "gameDrive": "Safari dans Mosi-oa-Tunya",
+        "adventureActivity": "Activité d'aventure au choix",
+        "mukuni": "Expérience culturelle à Mukuni",
+        "meals": "Repas selon le programme",
+        "water": "Eau potable en bouteille"
+      }
+    },
+
+    "pricing": {
+      "eyebrow": "Prix estimé",
+      "title": "Par personne",
+
+      "options": {
+        "budget": {
+          "label": "Économique",
+          "price": "$550 – $750"
+        },
+        "midRange": {
+          "label": "Milieu de gamme",
+          "price": "$800 – $1,100"
+        },
+        "luxury": {
+          "label": "Luxe",
+          "price": "$1,300 – $1,800"
+        }
+      },
+
+      "note": "Le rafting, le saut à l'élastique, les vols en hélicoptère et Devil's Pool sont facturés séparément selon la saison et la disponibilité."
+    },
+
+    "highlight": {
+      "eyebrow": "L'expérience Curious Safaris",
+      "title": "4 jours. Chutes Victoria. Fleuve Zambèze.",
+      "titleHighlight": "Faune. Aventure. Culture.",
+      "description": "Pour un safari plus approfondi en Zambie, prolongez votre voyage vers South Luangwa ou le parc national du Lower Zambezi pour des expériences de safari à pied, en canoë et d'observation classique de la faune."
+    },
+
+    "cta": "Planifier mon voyage en Zambie"
+  },
+
+  "zimbabweAdventure": {
+    "header": {
+      "badge": "Découvrez le Zimbabwe",
+      "title": "4 jours au Zimbabwe",
+      "titleHighlight": "Aventure aux chutes Victoria",
+      "description": "Découvrez les chutes Victoria, le fleuve Zambèze, la faune et des aventures africaines inoubliables en seulement quatre jours."
+    },
+
+    "experiences": {
+      "victoriaFalls": {
+        "eyebrow": "Zimbabwe",
+        "title": "Chutes Victoria",
+        "description": "L'une des plus grandes merveilles naturelles d'Afrique, entourée d'aventures et du puissant fleuve Zambèze.",
+        "alt": "Chutes Victoria au Zimbabwe"
+      },
+      "zambezi": {
+        "eyebrow": "Jour 01",
+        "title": "Fleuve Zambèze",
+        "alt": "Fleuve Zambèze au Zimbabwe"
+      }
+    },
+
+    "details": {
+      "duration": {
+        "label": "Durée",
+        "value": "4 jours / 3 nuits"
+      },
+      "location": {
+        "label": "Lieu",
+        "value": "Chutes Victoria · Zambèze"
+      },
+      "bestFor": {
+        "label": "Idéal pour",
+        "value": "Aventure & faune"
+      },
+      "transport": {
+        "label": "Transport",
+        "value": "Véhicule privé"
+      }
+    },
+
+    "itinerary": {
+      "eyebrow": "Votre voyage",
+      "title": "4 jours au Zimbabwe",
+
+      "days": {
+        "day01": {
+          "title": "Arrivée & Chutes Victoria",
+          "text": "Prise en charge à l'aéroport, découverte des chutes Victoria, visite du marché local et croisière au coucher du soleil sur le Zambèze."
+        },
+        "day02": {
+          "title": "Chutes & aventure",
+          "text": "Explorez les chutes Victoria avec des activités facultatives telles que rafting, tyrolienne, descente en rappel ou saut à l'élastique."
+        },
+        "day03": {
+          "title": "Faune & culture",
+          "text": "Expérience matinale de la faune suivie d'une visite culturelle et d'une soirée paisible au bord du Zambèze."
+        },
+        "day04": {
+          "title": "Zambèze & départ",
+          "text": "Expérience matinale en canoë ou kayak, temps libre pour le shopping et transfert à l'aéroport."
+        }
+      }
+    },
+
+    "included": {
+      "eyebrow": "Le forfait comprend",
+      "items": {
+        "accommodation": "3 nuits d'hébergement",
+        "airportTransfers": "Transferts aéroport",
+        "privateTransport": "Transport privé",
+        "guide": "Guide professionnel",
+        "victoriaFalls": "Entrée aux chutes Victoria",
+        "sunsetCruise": "Croisière au coucher du soleil sur le Zambèze",
+        "wildlife": "Expérience de la faune",
+        "adventure": "Activité d'aventure"
+      }
+    },
+
+    "pricing": {
+      "eyebrow": "Prix estimé",
+
+      "options": {
+        "budget": {
+          "label": "Économique",
+          "price": "$850"
+        },
+        "midRange": {
+          "label": "Milieu de gamme",
+          "price": "$1,100"
+        },
+        "luxury": {
+          "label": "Luxe",
+          "price": "$1,800"
+        }
+      },
+
+      "note": "Les activités d'aventure telles que le rafting, le saut à l'élastique et les vols en hélicoptère peuvent être facturées séparément."
+    },
+
+    "booking": {
+      "brand": "Curious Safaris",
+      "title": "Prêt pour les chutes Victoria ?",
+      "description": "Commencez à planifier votre aventure au Zimbabwe.",
+      "button": "Réserver ce safari →"
+    }
+  },
+
+  "mozambiqueAdventure": {
+    "header": {
+      "badge": "Découvrez le Mozambique",
+      "title": "4 jours au Mozambique",
+      "titleHighlight": "Escapade culture & plage",
+      "description": "Découvrez la culture de Maputo, les magnifiques plages de Tofo, les aventures marines et le rythme paisible de la côte mozambicaine."
+    },
+
+    "experiences": {
+      "tofo": {
+        "alt": "Plage du Mozambique",
+        "eyebrow": "Plage de Tofo",
+        "title": "Escapade dans l'océan Indien",
+        "description": "Plages de sable blanc, aventures océaniques et couchers de soleil inoubliables au Mozambique."
+      },
+      "maputo": {
+        "alt": "Maputo au Mozambique",
+        "eyebrow": "Jour 01",
+        "title": "Culture de Maputo"
+      },
+      "ocean": {
+        "alt": "Aventure océanique au Mozambique",
+        "eyebrow": "Jour 03",
+        "title": "Aventure océanique"
+      }
+    },
+
+    "details": {
+      "duration": {
+        "label": "Durée",
+        "value": "4 jours / 3 nuits"
+      },
+      "route": {
+        "label": "Itinéraire",
+        "value": "Maputo · Tofo · Inhambane"
+      },
+      "bestFor": {
+        "label": "Idéal pour",
+        "value": "Amoureux de plage et de culture"
+      },
+      "experience": {
+        "label": "Expérience",
+        "value": "Culture · Océan · Aventure"
+      }
+    },
+
+    "itinerary": {
+      "eyebrow": "Votre voyage",
+      "title": "4 jours au Mozambique",
+
+      "days": {
+        "day01": {
+          "title": "Découvrez Maputo",
+          "text": "Explorez le centre historique de Maputo, ses marchés et sa scène artistique avant de profiter d'un coucher de soleil côtier et d'un dîner de fruits de mer locaux."
+        },
+        "day02": {
+          "title": "Maputo → Tofo",
+          "text": "Envolez-vous vers Inhambane, transfert vers Tofo et profitez de la plage, du snorkeling, du surf et d'une promenade tranquille au coucher du soleil."
+        },
+        "day03": {
+          "title": "Aventure marine à Tofo",
+          "text": "Profitez d'un safari océanique à la recherche de requins-baleines, raies manta et dauphins, suivi d'un moment de détente sur la plage et d'activités facultatives."
+        },
+        "day04": {
+          "title": "Culture d'Inhambane → Départ",
+          "text": "Découvrez la ville historique d'Inhambane, sa culture locale et sa cuisine, puis retournez à Tofo pour votre transfert vers l'aéroport."
+        }
+      }
+    },
+
+    "highlight": {
+      "eyebrow": "L'expérience Curious Safaris",
+      "title": "Culture, plage & aventure.",
+      "description": "Culture de Maputo, plages de Tofo, safari océanique, navigation en dhow et fruits de mer authentiques du Mozambique."
+    },
+
+    "pricing": {
+      "eyebrow": "Prix estimé par personne",
+
+      "options": {
+        "budget": {
+          "label": "Économique",
+          "price": "$850"
+        },
+        "midRange": {
+          "label": "Milieu de gamme",
+          "price": "$1,100"
+        },
+        "luxury": {
+          "label": "Luxe",
+          "price": "$1,900"
+        }
+      }
+    },
+
+    "booking": {
+      "brand": "Curious Safaris",
+      "title": "Prêt pour le Mozambique ?",
+      "button": "Réserver cette aventure →"
+    }
+  },
+
+  "egyptAdventure": {
+    "header": {
+      "badge": "Découvrez l'Égypte",
+      "title": "Merveilles anciennes,",
+      "titleHighlight": "Égypte éternelle.",
+      "description": "Découvrez les pyramides, le Grand Musée égyptien, les temples antiques, le Nil intemporel et la culture fascinante du Caire et du sud de l'Égypte."
+    },
+
+    "experienceOne": {
+      "eyebrow": "Expérience 1",
+      "title": "Égypte classique",
+      "description": "Pyramides, Grand Musée égyptien, temples de Louxor et croisière mémorable sur le Nil.",
+
+      "package": {
+        "eyebrow": "4 jours en Égypte classique",
+        "title": "Pyramides & Nil",
+        "route": "Le Caire → Gizeh → Louxor → Croisière sur le Nil",
+        "from": "À partir de",
+        "price": "$700",
+        "perPerson": "par personne · Économique",
+        "highlights": [
+          "Pyramides de Gizeh & Sphinx",
+          "Grand Musée égyptien",
+          "Vallée des Rois",
+          "Temples de Karnak & Louxor",
+          "Croisière sur le Nil"
+        ]
+      },
+
+      "itinerary": {
+        "day01": {
+          "title": "Arrivée au Caire",
+          "text": "Plateau de Gizeh, Grande Pyramide, Sphinx et croisière-dîner facultative sur le Nil."
+        },
+        "day02": {
+          "title": "Le Caire → Louxor",
+          "text": "Grand Musée égyptien, vol vers Louxor et visite du temple de Louxor en soirée."
+        },
+        "day03": {
+          "title": "Louxor & Croisière sur le Nil",
+          "text": "Vallée des Rois, temple d'Hatchepsout, Karnak et navigation sur le Nil."
+        },
+        "day04": {
+          "title": "Louxor → Le Caire",
+          "text": "Expérience matinale de croisière, transfert à l'aéroport et départ."
+        }
+      }
+    },
+
+    "experienceTwo": {
+      "eyebrow": "Expérience 2",
+      "title": "Le Caire, Assouan",
+      "titleHighlight": "& Abou Simbel",
+      "description": "Une aventure dans le sud de l'Égypte combinant temples anciens, culture nubienne et paysages spectaculaires du Nil.",
+      "from": "À partir de",
+      "price": "$750",
+      "perPerson": "par personne · Économique",
+
+      "highlights": [
+        "Pyramides & Sphinx",
+        "Temple de Philae",
+        "Village nubien",
+        "Navigation en felouque sur le Nil",
+        "Temples d'Abou Simbel"
+      ],
+
+      "itinerary": {
+        "day01": {
+          "title": "Le Caire – Pyramides & Vieux Caire",
+          "text": "Explorez les pyramides, le Sphinx, Khan el-Khalili et profitez d'un dîner égyptien traditionnel."
+        },
+        "day02": {
+          "title": "Le Caire → Assouan",
+          "text": "Visitez le temple de Philae, le haut barrage, l'obélisque inachevé et un village nubien."
+        },
+        "day03": {
+          "title": "Aventure à Abou Simbel",
+          "text": "Explorez les magnifiques temples de Ramsès II et de la reine Néfertari avant de retourner à Assouan."
+        },
+        "day04": {
+          "title": "Assouan → Le Caire",
+          "text": "Profitez d'une matinée tranquille, d'une dernière expérience sur le Nil et du vol retour vers Le Caire."
+        }
+      }
+    },
+
+    "cta": {
+      "brand": "Curious Safaris",
+      "title": "Prêt à découvrir l'Égypte ?",
+      "description": "Choisissez votre expérience égyptienne et commencez à planifier.",
+      "button": "Réserver ce safari →"
+    }
+  },
+
+  "sudanAdventure": {
+    "header": {
+      "eyebrow": "Future expérience au Soudan",
+      "title": "5 jours au Soudan",
+      "titleHighlight": "Désert nubien & anciens royaumes",
+      "description": "Port-Soudan → Mer Rouge → Karima → Jebel Barkal → Méroé. Découvrez la mer Rouge, le désert nubien et l'ancien royaume de Koush."
+    },
+
+    "route": {
+      "day01": {
+        "label": "JOUR 01",
+        "title": "Port-Soudan",
+        "description": "Expérience sur la mer Rouge et la côte"
+      },
+      "day02": {
+        "label": "JOUR 02",
+        "title": "Désert nubien",
+        "description": "Paysages désertiques & communautés locales"
+      },
+      "day03": {
+        "label": "JOUR 03",
+        "title": "Jebel Barkal",
+        "description": "Temples anciens & patrimoine nubien"
+      },
+      "day04": {
+        "label": "JOUR 04",
+        "title": "Méroé",
+        "description": "Pyramides emblématiques de Koush"
+      }
+    },
+
+    "itinerary": {
+      "title": "Itinéraire de 5 jours",
+
+      "day01": {
+        "label": "Jour 1",
+        "title": "Port-Soudan & Mer Rouge",
+        "text": "Arrivée, découverte de la côte, excursion en bateau sur la mer Rouge et snorkeling ou plongée en option."
+      },
+      "day02": {
+        "label": "Jour 2",
+        "title": "Port-Soudan → Désert nubien",
+        "text": "Voyage panoramique à travers le désert, rencontre avec les communautés locales, photographie et nuit en camp dans le désert."
+      },
+      "day03": {
+        "label": "Jour 3",
+        "title": "Karima & Jebel Barkal",
+        "text": "Explorez Jebel Barkal, les temples anciens et les pyramides de Nouri."
+      },
+      "day04": {
+        "label": "Jour 4",
+        "title": "Karima → Méroé",
+        "text": "Traversez la vallée du Nil et explorez les célèbres pyramides de Méroé."
+      },
+      "day05": {
+        "label": "Jour 5",
+        "title": "Méroé → Départ",
+        "text": "Admirez le lever du soleil à Méroé, poursuivez l'exploration puis transfert vers le point de départ."
+      }
+    },
+
+    "pricing": {
+      "eyebrow": "Tarification future estimée",
+
+      "budget": {
+        "label": "Économique",
+        "price": "$1,300"
+      },
+      "midRange": {
+        "label": "Milieu de gamme",
+        "price": "$1,900"
+      },
+      "luxury": {
+        "label": "Luxe",
+        "price": "$3,000"
+      }
+    },
+
+    "important": {
+      "eyebrow": "Important",
+      "title": "Future expérience au Soudan",
+      "description": "Cet itinéraire est actuellement un concept futur et n'est pas réservable. Les conditions de disponibilité, de sécurité et les conseils aux voyageurs doivent être reconfirmés avant de proposer tout départ."
+    },
+
+    "highlight": {
+      "eyebrow": "L'expérience Curious Safaris",
+      "text": "Mer Rouge · Désert nubien · Ancien Koush · Pyramides de Méroé"
+    },
+
+    "booking": {
+      "button": "Demander des informations sur cette expérience →",
+      "note": "Future expérience · Actuellement non réservable"
+    }
+  },
+
+  "kenyaCoastSafari": {
+    "header": {
+      "eyebrow": "Kenya & Tanzanie",
+      "title": "5 jours de séjour",
+      "titleHighlight": "balnéaire",
+      "description": "Plage de Diani + escapade en yacht à Zanzibar. Une élégante escapade côtière combinant les plages du Kenya avec la beauté tropicale de Zanzibar."
+    },
+
+    "highlights": {
+      "items": {
+        "diani": {
+          "number": "01",
+          "title": "Plage de Diani",
+          "text": "Détente sur l'océan Indien"
+        },
+        "beachEscape": {
+          "number": "02",
+          "title": "Escapade balnéaire",
+          "text": "Sports nautiques & croisière en dhow"
+        },
+        "zanzibar": {
+          "number": "03",
+          "title": "Zanzibar",
+          "text": "Stone Town & vie insulaire"
+        },
+        "privateYacht": {
+          "number": "04",
+          "title": "Yacht privé",
+          "text": "Expérience snorkeling à Mnemba"
+        }
+      }
+    },
+
+    "itinerary": {
+      "title": "Itinéraire de 5 jours",
+
+      "days": {
+        "day1": {
+          "day": "Jour 1",
+          "title": "Nairobi → Plage de Diani",
+          "text": "Vol vers Diani, transfert privé vers l'hôtel, détente en bord de mer et promenade au coucher du soleil."
+        },
+        "day2": {
+          "day": "Jour 2",
+          "title": "Expérience à Diani Beach",
+          "text": "Temps à la plage, sports nautiques en option, déjeuner en bord de mer et croisière en dhow au coucher du soleil."
+        },
+        "day3": {
+          "day": "Jour 3",
+          "title": "Diani → Zanzibar",
+          "text": "Vol vers Zanzibar, installation au resort, découverte de Stone Town et dîner au coucher du soleil."
+        },
+        "day4": {
+          "day": "Jour 4",
+          "title": "Yacht privé à Zanzibar",
+          "text": "Croisière vers l'atoll de Mnemba avec snorkeling, baignade, déjeuner de fruits de mer et navigation au coucher du soleil."
+        },
+        "day5": {
+          "day": "Jour 5",
+          "title": "Zanzibar → Nairobi",
+          "text": "Matinée tranquille, shopping ou détente sur la plage en option, puis transfert à l'aéroport et vol vers Nairobi."
+        }
+      }
+    },
+
+    "package": {
+      "eyebrow": "Points forts du forfait",
+
+      "items": {
+        "dianiNights": "2 nuits à Diani Beach",
+        "zanzibarNights": "2 nuits à Zanzibar",
+        "beachfront": "Hébergement en bord de mer",
+        "transfers": "Transferts Kenya–Tanzanie",
+        "stoneTown": "Expérience à Stone Town",
+        "privateYacht": "Expérience en yacht privé",
+        "mnemba": "Snorkeling à Mnemba",
+        "airport": "Transferts privés aéroport"
+      }
+    },
+
+    "pricing": {
+      "eyebrow": "Prix estimé",
+
+      "midRange": {
+        "label": "Milieu de gamme",
+        "price": "$1,650"
+      },
+      "luxury": {
+        "label": "Luxe",
+        "price": "$2,500"
+      },
+
+      "note": "Le prix final varie selon les vols, les hôtels, le choix du yacht, les dates de voyage et la taille du groupe."
+    },
+
+    "cta": {
+      "eyebrow": "Prêt pour la côte ?",
+      "title": "Faites-en votre escapade côtière privée.",
+      "button": "Réserver cette escapade →"
+    }
+  },
+
+
+
+
+  
+  "services2": {
+    "hero": {
+      "brand": "Nos Services",
+      "title": "Expériences de Voyage",
+      "titleHighlight": "Conçues Pour Tous",
+      "description": "Des safaris animaliers aux voyages d'affaires, nous proposons des solutions de voyage complètes adaptées à vos besoins.",
+      "explore": "Explorer les Destinations",
+      "planSafari": "Planifier Votre Voyage",
+      "highlight1": "Safaris Animaliers",
+      "highlight2": "Vacances à la Plage",
+      "highlight3": "Voyages d'Affaires"
+    },
+    "items": {
+      "wildlife": {
+        "title": "Safaris Animaliers",
+        "description": "Découvrez l'incroyable faune africaine grâce à des aventures safari soigneusement organisées."
+      },
+      "beach": {
+        "title": "Vacances à la Plage",
+        "description": "Détendez-vous sur de magnifiques plages tropicales et profitez d'expériences côtières inoubliables."
+      },
+      "hotel": {
+        "title": "Réservation d'Hôtels",
+        "description": "Nous vous aidons à trouver un hébergement confortable et de qualité adapté à votre style de voyage et à votre budget."
+      },
+      "group": {
+        "title": "Circuits en Groupe",
+        "description": "Profitez d'aventures de groupe inoubliables avec des itinéraires et des activités soigneusement organisés."
+      },
+      "corporate": {
+        "title": "Voyages d'Affaires",
+        "description": "Des solutions de voyage professionnelles pour les entreprises, réunions, conférences et événements professionnels."
+      },
+      "team": {
+        "title": "Team Building",
+        "description": "Renforcez l'esprit d'équipe et créez des souvenirs durables grâce à des voyages passionnants et des activités de team building."
+      },
+      "airport": {
+        "title": "Transferts Aéroport",
+        "description": "Profitez de transferts aéroport fiables et confortables vers et depuis votre destination."
+      },
+      "honeymoon": {
+        "title": "Forfaits Lune de Miel",
+        "description": "Célébrez votre amour avec des expériences romantiques et inoubliables à travers l'Afrique."
+      },
+      "consultation": {
+        "title": "Conseils en Voyage",
+        "description": "Bénéficiez de conseils d'experts et d'une assistance personnalisée pour planifier votre voyage idéal."
+      }
+    }
+  },
+
+  "faq1": {
+    "badge": "Questions Fréquemment Posées",
+    "title": "Besoin de Plus d'Informations ?",
+    "description": "Tout ce que vous devez savoir avant de commencer votre aventure africaine.",
+    "items": {
+      "booking": {
+        "question": "Comment réserver un safari ?",
+        "answer": "Contactez-nous simplement via WhatsApp, par téléphone, e-mail ou à l'aide de notre formulaire de contact. Nos conseillers en voyage discuteront de vos projets avec vous et vous aideront à créer le safari parfait."
+      },
+      "customize": {
+        "question": "Puis-je personnaliser mon safari ?",
+        "answer": "Absolument. Nos safaris sont conçus sur mesure selon vos centres d'intérêt, votre budget, vos dates de voyage et vos destinations préférées. Nous pouvons personnaliser l'hébergement, les activités, le transport et l'itinéraire."
+      },
+      "countries": {
+        "question": "Dans quels pays africains opérez-vous ?",
+        "answer": "Nous organisons des voyages inoubliables à travers l'Afrique, notamment au Kenya, en Tanzanie, en Ouganda, au Rwanda, au Botswana, au Zimbabwe, en Namibie, en Afrique du Sud, en Égypte, au Maroc et dans d'autres destinations."
+      },
+      "privateGroup": {
+        "question": "Vos safaris sont-ils privés ou en groupe ?",
+        "answer": "Nous proposons des safaris privés et des safaris en groupe. Que vous voyagiez seul, en couple, en famille, entre amis ou avec un grand groupe, nous pouvons créer une expérience adaptée à vos besoins."
+      },
+      "transport": {
+        "question": "Proposez-vous des transferts aéroport et des services de transport ?",
+        "answer": "Oui. Selon votre itinéraire, nous pouvons organiser les transferts aéroport, des véhicules safari privés, des minibus touristiques et tout autre moyen de transport nécessaire pendant votre voyage."
+      },
+      "bestTime": {
+        "question": "Quelle est la meilleure période pour partir en safari ?",
+        "answer": "La meilleure période dépend de votre destination et de l'expérience que vous recherchez. Nos conseillers en voyage peuvent vous recommander la saison idéale selon la faune, la météo, la migration, le trekking des gorilles ou les expériences balnéaires."
+      },
+      "accommodation": {
+        "question": "Organisez-vous également l'hébergement ?",
+        "answer": "Oui. Nous sélectionnons soigneusement les lodges, hôtels, camps de tentes et complexes hôteliers en fonction de votre itinéraire, de vos préférences et de votre budget afin de rendre votre séjour confortable et mémorable."
+      },
+      "honeymoon": {
+        "question": "Pouvez-vous organiser des lunes de miel et des occasions spéciales ?",
+        "answer": "Oui. Nous créons des voyages romantiques et personnalisés pour les lunes de miel, anniversaires, anniversaires de mariage et autres occasions spéciales, notamment des combinaisons de safaris de luxe et de séjours balnéaires."
+      }
+    }
+  },
+
+  "galleryHero1": {
+    "imageAlt": "Aventure safari",
+    "badge": "Souvenirs • Expériences • Aventures",
+    "title": "Notre Galerie",
+    "description": "Découvrez des moments inoubliables de nos safaris, road trips, randonnées et circuits en groupe à travers le Kenya et l'Afrique de l'Est."
+  },
+
+  "galleryCollection1": {
+    "badge": "Collection de Photos",
+    "title": "Moments de Voyage"
+  },
+
+  "galleryStory1": {
+    "badge": "Bien Plus Que des Photos",
+    "title": "Chaque Voyage Raconte",
+    "titleHighlight": "Une Histoire Différente",
+    "description": "Chaque road trip est une occasion de découvrir des paysages à couper le souffle, de créer des amitiés durables et de vivre des aventures inoubliables à travers le Kenya et l'Afrique de l'Est.",
+    "stats": {
+      "roadTrips": {
+        "number": "150+",
+        "title": "Road Trips",
+        "text": "Aventures de groupe organisées avec succès."
+      },
+      "travelers": {
+        "number": "5K+",
+        "title": "Voyageurs Satisfaits",
+        "text": "Voyageurs ayant exploré le monde avec nous."
+      },
+      "destinations": {
+        "number": "40+",
+        "title": "Destinations",
+        "text": "Des lieux extraordinaires à travers l'Afrique de l'Est."
+      },
+      "experiences": {
+        "number": "100%",
+        "title": "Expériences Mémorables",
+        "text": "Créer des moments qui durent pour toujours."
+      }
+    }
+  },
+
+  "galleryDestinations1": {
+    "badge": "Explorez Avec Nous",
+    "title": "Où Votre Aventure",
+    "titleHighlight": "Vous Mènera",
+    "description": "Des destinations animalières à couper le souffle aux plages tropicales et aux aventures de montagne inoubliables, découvrez quelques-uns des endroits extraordinaires qui vous attendent au Kenya et en Afrique de l'Est.",
+    "items": {
+      "maasaiMara": {
+        "category": "Safari Animalier",
+        "title": "Maasai Mara",
+        "description": "Découvrez une faune exceptionnelle, des paysages spectaculaires et des moments de safari inoubliables.",
+        "imageAlt": "Safari au Maasai Mara"
+      },
+      "diani": {
+        "category": "Évasion Balnéaire",
+        "title": "Diani Beach",
+        "description": "Évadez-vous vers des plages de sable blanc, des eaux turquoise et des expériences côtières inoubliables.",
+        "imageAlt": "Diani Beach"
+      },
+      "mountKenya": {
+        "category": "Aventure en Montagne",
+        "title": "Mont Kenya",
+        "description": "Relevez le défi de sentiers de montagne spectaculaires et admirez des paysages d'altitude à couper le souffle.",
+        "imageAlt": "Randonnée au Mont Kenya"
+      },
+      "nakuru": {
+        "category": "Expérience Nature",
+        "title": "Lac Nakuru",
+        "description": "Découvrez des paysages spectaculaires, une faune exceptionnelle et la beauté de la Great Rift Valley.",
+        "imageAlt": "Lac Nakuru"
+      },
+      "serengeti": {
+        "category": "Afrique de l'Est",
+        "title": "Serengeti",
+        "description": "Allez au-delà du Kenya et découvrez l'une des destinations animalières les plus emblématiques d'Afrique.",
+        "imageAlt": "Safari au Serengeti"
+      },
+      "longonot": {
+        "category": "Aventure Randonnée",
+        "title": "Mont Longonot",
+        "description": "Partez pour une randonnée passionnante offrant des vues panoramiques sur la Great Rift Valley.",
+        "imageAlt": "Randonnée au Mont Longonot"
+      }
+    },
+    "button": "Explorer les prochains voyages"
+  },
+
+  "galleryCTA1": {
+    "badge": "Prêt pour Votre Prochaine Aventure ?",
+    "title": "Créez des Souvenirs Avec Nous",
+    "description": "Rejoignez l'un de nos passionnants road trips, safaris ou treks et devenez membre de notre communauté grandissante de voyageurs.",
+    "viewTrips": "Voir les Prochains Voyages",
+    "bookNow": "Réserver Maintenant"
+  },
+
+  "contactHero1": {
+    "imageAlt": "Contacter Curious Safaris",
+    "badge": "Nous Sommes Là Pour Vous Aider",
+    "title": "Contactez-Nous",
+    "description": "Prêt à rejoindre notre prochaine aventure ? Contactez-nous dès aujourd'hui et laissez-nous vous aider à planifier votre safari, road trip ou séjour idéal."
+  },
+
+  "contactInfo1": {
+    "phone": {
+      "title": "Appelez-Nous"
+    },
+    "email": {
+      "title": "E-mail"
+    },
+    "office": {
+      "title": "Bureau"
+    },
+    "whatsapp": {
+      "title": "WhatsApp",
+      "button": "Discutez Avec Nous"
+    }
+  },
+
+  "contactForm1": {
+    "badge": "Prenez Contact",
+    "title": "Planifions Votre",
+    "titleHighlight": "Prochaine Aventure",
+    "description": "Que vous planifiiez un road trip en groupe, une retraite d'entreprise, un safari animalier ou des vacances sur mesure, nos experts en voyage sont prêts à vous aider à créer une expérience inoubliable.",
+    "features": {
+      "fastResponse": "Réponse Rapide",
+      "tailorMade": "Forfaits Sur Mesure",
+      "professional": "Conseillers en Voyage Professionnels"
+    },
+    "fields": {
+      "name": "Nom Complet",
+      "email": "Adresse E-mail",
+      "phone": "Numéro de Téléphone",
+      "subject": "Objet",
+      "message": "Parlez-nous de votre voyage..."
+    },
+    "form": {
+      "button": "Envoyer le Message"
+    }
+  },
+
+  "office1": {
+    "badge": "Nous Trouver",
+    "title": "Visitez Notre",
+    "titleHighlight": "Bureau de Nairobi",
+    "description": "Vous planifiez votre prochaine aventure ? Venez nous rendre visite, appelez-nous ou contactez notre équipe de voyage. Nous sommes prêts à vous aider à planifier votre safari, road trip ou séjour idéal à travers le Kenya et l'Afrique de l'Est.",
+    "map": {
+      "title": "Notre Emplacement",
+      "location": "Nairobi, Kenya"
+    },
+    "officeInfo": {
+      "badge": "Notre Bureau",
+      "title": "Nous Serions Heureux de",
+      "titleHighlight": "Vous Rencontrer",
+      "description": "Nos conseillers en voyage sont disponibles pour vous aider à choisir vos destinations, organiser des aventures en groupe et créer des expériences de voyage sur mesure."
+    },
+    "contact": {
+      "address": "Adresse du Bureau",
+      "email": "Adresse E-mail",
+      "phone": "Numéro de Téléphone"
+    },
+    "hours": {
+      "title": "Heures d'Ouverture",
+      "available": "Disponible",
+      "mondayFriday": "Lundi - Vendredi",
+      "mondayFridayTime": "8:00 - 18:00",
+      "saturday": "Samedi",
+      "saturdayTime": "9:00 - 16:00",
+      "sunday": "Dimanche",
+      "closed": "Fermé"
+    },
+    "actions": {
+      "call": "Appelez-Nous",
+      "whatsapp": "Contactez-Nous sur WhatsApp"
+    }
+  },
+
+  "payment1": {
+    "badge": "Sécurisez Votre Aventure",
+    "title": "Simple,",
+    "titleHighlight": "sécurisé & flexible.",
+    "description": "Une fois votre safari confirmé, sécurisez votre voyage grâce à notre option de virement bancaire. Notre structure de paiement flexible vous offre une tranquillité d'esprit pendant la préparation de votre aventure africaine.",
+    "bank": {
+      "badge": "Virement Bancaire",
+      "title": "Compte de Paiement",
+      "accountNumber": "Numéro de Compte",
+      "copy": "Copier le Numéro",
+      "bankName": "Nom de la Banque",
+      "bankNameValue": "Diamond Trust Bank",
+      "accountName": "Nom du Titulaire",
+      "accountNameValue": "Duncan Ombima",
+      "country": "Pays",
+      "countryValue": "Kenya",
+      "bankCode": "Code Bancaire",
+      "swiftCode": "Code SWIFT",
+      "security": "Après avoir effectué votre virement, veuillez envoyer la confirmation de paiement à l'équipe de Curious Safaris avec votre référence de réservation ou de facture."
+    },
+    "plan": {
+      "badge": "Paiement Flexible",
+      "title": "Votre Parcours de Réservation",
+      "description": "Nous facilitons la réservation de votre safari tout en vous offrant de la flexibilité avant votre date de voyage.",
+      "steps": {
+        "step1": {
+          "title": "Sécurisez votre réservation",
+          "description": "Payez un acompte de 50 % pour réserver et confirmer les dates et les arrangements de votre safari."
+        },
+        "step2": {
+          "title": "Réglez votre solde",
+          "description": "Les 50 % restants sont dus 30 jours avant le voyage."
+        },
+        "step3": {
+          "title": "Voyagez en toute sérénité",
+          "description": "Votre safari est entièrement organisé et notre équipe reste disponible tout au long de votre voyage."
+        }
+      }
+    },
+    "cancellation": {
+      "title": "Annulation & Report",
+      "items": [
+        "Report gratuit jusqu'à 3 semaines avant le voyage.",
+        "Remboursement de 100 % pour les annulations effectuées 60 jours ou plus avant le voyage.",
+        "Remboursement jusqu'à 50 % pour les annulations effectuées 30 à 59 jours avant le voyage."
+      ]
+    },
+    "cta": {
+      "badge": "Prêts Quand Vous l'Êtes",
+      "title": "Sécurisez votre aventure africaine.",
+      "description": "Contactez Curious Safaris pour confirmer la disponibilité, recevoir votre itinéraire et bénéficier d'une assistance personnalisée pour votre réservation.",
+      "whatsapp": "Discuter sur WhatsApp",
+      "email": "Envoyez-nous un E-mail"
+    }
+  },
+
+  "dicoverhero": {
+    "brand": "Curious Safaris",
+    "title": "Voyages Privés et Personnalisés",
+    "titleHighlight": "Inoubliables",
+    "description": "Découvrez l'Afrique à travers des safaris animaliers, des circuits de luxe, des expéditions photographiques, des vacances à la plage et des aventures sur mesure créées autour de vous.",
+    "explore": "Explorer l'Afrique",
+    "planSafari": "Planifier Mon Safari",
+    "highlight1": "Safaris Privés",
+    "highlight2": "Voyages Sur Mesure",
+    "highlight3": "À Travers l'Afrique"
+  
+},
+
+
+
+  "region": {
+    "eastAfrica": "Afrique de l’Est",
+    "southernAfrica": "Afrique australe",
+    "northAfrica": "Afrique du Nord",
+    "centralAfrica": "Afrique centrale"
+  },
+
+  "categories": {
+    "primateSafari": "Safari des primates",
+    "luxurySafari": "Safari de luxe",
+    "wildlifeSafari": "Safari animalier",
+    "classicSafari": "Safari classique",
+    "adventureSafari": "Safari aventure",
+    "walkingSafari": "Safari à pied",
+    "culturalExperience": "Expérience culturelle",
+    "historicalJourney": "Voyage historique",
+    "luxuryWilderness": "Nature sauvage de luxe",
+    "wildlifeCityAdventure": "Faune sauvage & aventure urbaine",
+    "desertAdventure": "Aventure dans le désert"
+  },
+
+  "destination": {
+    "common": {
+      "sevenDays": "7 jours / 6 nuits",
+      "fourDays": "4 jours",
+      "futureExperience": "Expérience future"
+    },
+
+    "uganda": {
+      "country": "Ouganda",
+      "sevenDay": {
+        "title": "Safari de 7 jours en Ouganda",
+        "subtitle": "Gorilles, chimpanzés & faune sauvage",
+        "description": "Parcourez les anciennes forêts tropicales et les vastes savanes de l’Ouganda. Suivez les gorilles de montagne menacés à Bwindi, observez les chimpanzés dans la forêt de Kibale et découvrez une faune exceptionnelle dans le parc national Queen Elizabeth.",
+        "highlights": {
+          "gorillas": "Trekking des gorilles de montagne",
+          "chimpanzees": "Observation des chimpanzés",
+          "queenElizabeth": "Parc national Queen Elizabeth",
+          "kazinga": "Safari en bateau sur le canal de Kazinga"
+        }
+      },
+      "gorillaWildlife": {
+        "title": "Safari de 4 jours Gorilles & Faune en Ouganda",
+        "subtitle": "Gorilles, faune sauvage & canal de Kazinga",
+        "description": "Découvrez le parc national Queen Elizabeth, le canal de Kazinga et les inoubliables gorilles de montagne de Bwindi."
+      },
+      "adventureEscape": {
+        "title": "Escapade aventure de 4 jours en Ouganda",
+        "subtitle": "Jinja, Nil & chutes de Sipi",
+        "description": "Une aventure dynamique en Ouganda combinant le Nil, le rafting, les cascades, le café et la culture locale."
+      }
+    },
+
+    "rwanda": {
+      "country": "Rwanda",
+      "sevenDay": {
+        "title": "Safari de 7 jours au Rwanda",
+        "subtitle": "Gorilles, faune sauvage & culture africaine",
+        "description": "Découvrez le pays des mille collines à travers des rencontres inoubliables avec les gorilles, des paysages spectaculaires, des expériences culturelles et des aventures animalières dans l’une des plus belles destinations d’Afrique.",
+        "highlights": {
+          "volcanoes": "Parc national des Volcans",
+          "gorilla": "Trekking des gorilles",
+          "goldenMonkey": "Observation des singes dorés",
+          "lakeKivu": "Lac Kivu"
+        }
+      },
+      "adventure": {
+        "title": "Aventure de 4 jours au Rwanda",
+        "subtitle": "Faune sauvage, lac Kivu & culture",
+        "description": "Découvrez la faune d’Akagera, le lac Ihema, le magnifique lac Kivu et les célèbres collines vallonnées du Rwanda."
+      }
+    },
+
+    "kenya": {
+      "country": "Kenya",
+      "sevenDay": {
+        "title": "Safari de 7 jours au Kenya",
+        "subtitle": "Maasai Mara, Amboseli & lac Nakuru",
+        "description": "Découvrez les destinations animalières légendaires du Kenya, des plaines infinies du Maasai Mara aux troupeaux d’éléphants d’Amboseli, en passant par les paysages spectaculaires du lac Nakuru.",
+        "highlights": {
+          "bigFive": "Safari des Big Five",
+          "maasaiMara": "Maasai Mara",
+          "amboseli": "Parc national d’Amboseli",
+          "nakuru": "Lac Nakuru"
+        }
+      }
+    },
+
+    "tanzania": {
+      "country": "Tanzanie",
+      "sevenDay": {
+        "title": "Safari de 7 jours en Tanzanie",
+        "subtitle": "Serengeti, Ngorongoro & Tarangire",
+        "description": "Explorez les paysages les plus emblématiques de Tanzanie, notamment le Serengeti, le cratère du Ngorongoro et le parc national de Tarangire, tout en vivant des rencontres exceptionnelles avec la faune sauvage.",
+        "highlights": {
+          "serengeti": "Parc national du Serengeti",
+          "ngorongoro": "Cratère du Ngorongoro",
+          "tarangire": "Parc national de Tarangire",
+          "migration": "Grande Migration"
+        }
+      },
+      "wildlifeSafari": {
+        "title": "Safari animalier de 4 jours en Tanzanie",
+        "subtitle": "Tarangire, Serengeti & Ngorongoro",
+        "description": "Explorez le légendaire circuit nord de la Tanzanie avec ses éléphants, ses prédateurs, ses plaines infinies et le cratère du Ngorongoro.",
+        "highlights": {
+          "tarangire": "Tarangire",
+          "serengeti": "Serengeti",
+          "ngorongoro": "Ngorongoro",
+          "wildlife": "Faune sauvage"
+        }
+      }
+    },
+
+    "zimbabwe": {
+      "country": "Zimbabwe",
+      "sevenDay": {
+        "title": "Safari de 7 jours au Zimbabwe",
+        "subtitle": "Chutes Victoria & parc national de Hwange",
+        "description": "Admirez les magnifiques chutes Victoria, explorez le parc national de Hwange et découvrez l’une des destinations animalières les plus remarquables d’Afrique australe.",
+        "highlights": {
+          "victoriaFalls": "Chutes Victoria",
+          "hwange": "Parc national de Hwange",
+          "zambezi": "Croisière sur le fleuve Zambèze",
+          "wildlife": "Rencontres avec la faune sauvage"
+        }
+      },
+      "adventure": {
+        "title": "Aventure de 4 jours au Zimbabwe",
+        "subtitle": "Chutes Victoria & Hwange",
+        "description": "Découvrez les chutes Victoria, la faune de Hwange et les paysages spectaculaires du Zimbabwe."
+      }
+    },
+
+    "zambia": {
+      "country": "Zambie",
+      "sevenDay": {
+        "title": "Safari de 7 jours en Zambie",
+        "subtitle": "South Luangwa & fleuve Zambèze",
+        "description": "Découvrez une nature sauvage africaine authentique grâce aux safaris à pied, à une observation exceptionnelle de la faune et à des aventures inoubliables le long du puissant fleuve Zambèze.",
+        "highlights": {
+          "southLuangwa": "South Luangwa",
+          "walkingSafaris": "Safaris à pied",
+          "zambezi": "Fleuve Zambèze",
+          "photography": "Photographie animalière"
+        }
+      },
+      "adventure": {
+        "title": "Aventure de 4 jours en Zambie",
+        "subtitle": "Chutes Victoria & Zambèze",
+        "description": "Découvrez les chutes Victoria, le fleuve Zambèze, la faune sauvage et des activités d’aventure passionnantes autour de Livingstone."
+      }
+    },
+
+    "morocco": {
+      "country": "Maroc",
+      "adventure": {
+        "title": "Aventure au Maroc",
+        "subtitle": "Désert, culture & villes anciennes",
+        "description": "Explorez les villes colorées du Maroc, traversez les montagnes de l’Atlas, découvrez le désert du Sahara et plongez dans des siècles d’histoire et de culture.",
+        "highlights": {
+          "marrakech": "Marrakech",
+          "atlas": "Montagnes de l’Atlas",
+          "sahara": "Désert du Sahara",
+          "medinas": "Anciennes médinas"
+        }
+      }
+    },
+
+    "egypt": {
+      "country": "Égypte",
+      "adventure": {
+        "title": "Aventure en Égypte",
+        "subtitle": "Pyramides, Nil & merveilles antiques",
+        "description": "Voyagez à travers l’Égypte ancienne et découvrez les pyramides, les temples historiques, le Nil et l’une des plus grandes civilisations du monde.",
+        "highlights": {
+          "pyramids": "Grandes Pyramides",
+          "nile": "Le Nil",
+          "temples": "Temples antiques",
+          "luxor": "Louxor"
+        }
+      },
+      "classic": {
+        "title": "Égypte classique en 4 jours",
+        "subtitle": "Pyramides & Nil",
+        "description": "Découvrez les pyramides de Gizeh, le Sphinx, le Grand Musée égyptien, les temples antiques et le Nil intemporel."
+      },
+      "aswan": {
+        "title": "Aventure de 4 jours en Égypte",
+        "subtitle": "Le Caire, Assouan & Abou Simbel",
+        "description": "Voyagez au-delà du Caire pour découvrir le sud de l’Égypte, la culture nubienne, le temple de Philae et Abou Simbel."
+      }
+    },
+
+    "botswana": {
+      "country": "Botswana",
+      "safari": {
+        "title": "Safari au Botswana",
+        "subtitle": "Delta de l’Okavango & faune sauvage",
+        "description": "Explorez l’une des destinations de safari les plus exclusives d’Afrique et découvrez l’extraordinaire biodiversité du delta de l’Okavango.",
+        "highlights": {
+          "okavango": "Delta de l’Okavango",
+          "mokoro": "Excursions en mokoro",
+          "luxuryCamps": "Camps de luxe",
+          "wildlife": "Observation de la faune sauvage"
+        }
+      }
+    },
+
+    "southAfrica": {
+      "country": "Afrique du Sud",
+      "sevenDay": {
+        "title": "Safari de 7 jours en Afrique du Sud",
+        "subtitle": "Safari & aventure urbaine",
+        "description": "Découvrez le meilleur de l’Afrique du Sud lors d’un voyage inoubliable, des paysages emblématiques du Cap et de la montagne de la Table aux rencontres avec les Big Five dans le parc national Kruger et à l’énergie vibrante de Johannesburg.",
+        "highlights": {
+          "tableMountain": "Montagne de la Table",
+          "capePeninsula": "Péninsule du Cap",
+          "bouldersBeach": "Plage de Boulders",
+          "bigFive": "Safari des Big Five",
+          "kruger": "Parc national Kruger",
+          "johannesburg": "Johannesburg"
+        }
+      }
+    },
+
+    "ethiopia": {
+      "country": "Éthiopie",
+      "adventure": {
+        "title": "Escapade patrimoine & aventure de 4 jours en Éthiopie",
+        "subtitle": "Lalibela, montagnes du Simien & culture",
+        "description": "Explorez les anciennes églises taillées dans la roche, les paysages montagneux spectaculaires, la culture éthiopienne et le café traditionnel."
+      }
+    },
+
+    "drc": {
+      "country": "République démocratique du Congo",
+      "adventure": {
+        "title": "Aventure de 4 jours en RDC",
+        "subtitle": "Goma, Virunga & lac Kivu",
+        "description": "Un voyage riche en aventures à travers les paysages volcaniques, le lac Kivu et l’extraordinaire région des Virunga."
+      }
+    },
+
+    "mozambique": {
+      "country": "Mozambique",
+      "adventure": {
+        "title": "Escapade culture & plage de 4 jours au Mozambique",
+        "subtitle": "Maputo, Tofo & Inhambane",
+        "description": "Combinez la ville animée de Maputo, les magnifiques plages de Tofo, les aventures marines, la culture locale et les fruits de mer frais du Mozambique."
+      }
+    },
+
+    "zanzibar": {
+      "country": "Tanzanie",
+      "title": "Escapade plage & culture de 4 jours à Zanzibar",
+      "subtitle": "Stone Town, plages & aventures océaniques",
+      "description": "Détendez-vous sur les plages de Zanzibar tout en découvrant Stone Town, les plantations d’épices, la culture swahilie et l’océan Indien."
+    },
+
+    "kenyaTanzania": {
+      "country": "Kenya & Tanzanie",
+      "coastal": {
+        "title": "Séjour côtier de 5 jours",
+        "subtitle": "Diani Beach & escapade en yacht à Zanzibar",
+        "description": "Une escapade côtière élégante combinant Diani Beach, Zanzibar, Stone Town et une expérience privée en yacht."
+      }
+    },
+
+    "sudan": {
+      "country": "Soudan",
+      "title": "5 jours au Soudan — désert nubien & royaumes antiques",
+      "subtitle": "Mer Rouge, désert nubien & Méroé",
+      "description": "Un futur voyage spécialisé combinant la mer Rouge, le désert nubien, le Jebel Barkal et les anciennes pyramides de Méroé."
+    },
+
+    "namibia": {
+      "country": "Namibie",
+      "sevenDay": {
+        "title": "Aventure de 7 jours en Namibie",
+        "subtitle": "Désert, faune sauvage & merveilles côtières",
+        "description": "Parcourez les paysages extraordinaires de la Namibie, des imposantes dunes rouges de Sossusvlei et du charme côtier de Swakopmund aux étendues sauvages de Damaraland et aux plaines riches en faune du parc national d’Etosha.",
+        "highlights": {
+          "sossusvlei": "Sossusvlei & Deadvlei",
+          "swakopmund": "Swakopmund",
+          "damaraland": "Damaraland",
+          "etosha": "Parc national d’Etosha",
+          "namib": "Désert du Namib",
+          "desertWildlife": "Faune adaptée au désert"
+        }
+      }
+    }
   }
 }
-
-
-
- 
-
-
 

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 
 import React, { useEffect, useState } from "react";
@@ -101,7 +102,16 @@ function Home() {
   // DESTINATION SEARCH
   // ======================================================
 
-  const [searchTerm, setSearchTerm] = useState("");
+ const [searchTerm, setSearchTerm] = useState("");
+
+const [filters, setFilters] = useState({
+  destination: "",
+  category: "",
+  region: "",
+  duration: "",
+});
+
+const [showSuggestions, setShowSuggestions] = useState(false);
 
 
   // ======================================================
@@ -123,301 +133,863 @@ function Home() {
   // SAFARI DESTINATIONS
   // ======================================================
 
-  const safariDestinations = [
+const safariDestinations = [
+  // =====================================================
+  // UGANDA — 7 DAY
+  // =====================================================
   {
-    country: "Uganda",
-    title: "7-Day Uganda Safari",
-    subtitle: "Gorillas, Chimpanzees & Wildlife",
-    description:
-      "Journey through Uganda's ancient rainforests and vast savannahs. Track endangered mountain gorillas in Bwindi, encounter chimpanzees in Kibale Forest, and discover incredible wildlife in Queen Elizabeth National Park.",
+    country: t("destination.uganda.country"),
+    title: t("destination.uganda.sevenDay.title"),
+    subtitle: t("destination.uganda.sevenDay.subtitle"),
+    description: t("destination.uganda.sevenDay.description"),
 
     highlights: [
-      "Mountain Gorilla Trekking",
-      "Chimpanzee Tracking",
-      "Queen Elizabeth National Park",
-      "Kazinga Channel Boat Safari",
+      t("destination.uganda.sevenDay.highlights.gorillas"),
+      t("destination.uganda.sevenDay.highlights.chimpanzees"),
+      t("destination.uganda.sevenDay.highlights.queenElizabeth"),
+      t("destination.uganda.sevenDay.highlights.kazinga"),
     ],
 
-    duration: "7 Days / 6 Nights",
-    region: "East Africa",
+    duration: t("destination.common.sevenDays"),
+    days: 7,
+
+    region: t("regions.eastAfrica"),
+    category: t("categories.primateSafari"),
+
     image: kenya,
-    category: "Primate Safari",
     sectionId: "uganda-safari",
     slug: "uganda",
+
     featured: true,
   },
 
+  // =====================================================
+  // RWANDA — 7 DAY
+  // =====================================================
   {
-    country: "Rwanda",
-    title: "7-Day Rwanda Safari",
-    subtitle: "Gorillas, Wildlife & African Culture",
-    description:
-      "Experience the Land of a Thousand Hills through unforgettable gorilla encounters, breathtaking landscapes, cultural experiences, and wildlife adventures in one of Africa's most beautiful destinations.",
+    country: t("destination.rwanda.country"),
+    title: t("destination.rwanda.sevenDay.title"),
+    subtitle: t("destination.rwanda.sevenDay.subtitle"),
+    description: t("destination.rwanda.sevenDay.description"),
 
     highlights: [
-      "Volcanoes National Park",
-      "Gorilla Trekking",
-      "Golden Monkey Tracking",
-      "Lake Kivu",
+      t("destination.rwanda.sevenDay.highlights.volcanoes"),
+      t("destination.rwanda.sevenDay.highlights.gorilla"),
+      t("destination.rwanda.sevenDay.highlights.goldenMonkey"),
+      t("destination.rwanda.sevenDay.highlights.lakeKivu"),
     ],
 
-    duration: "7 Days / 6 Nights",
-    region: "East Africa",
+    duration: t("destination.common.sevenDays"),
+    days: 7,
+
+    region: t("regions.eastAfrica"),
+    category: t("categories.luxurySafari"),
+
     image: kenya,
-    category: "Luxury Safari",
     sectionId: "rwanda-safari",
     slug: "rwanda",
+
     featured: true,
   },
 
+  // =====================================================
+  // KENYA — 7 DAY
+  // =====================================================
   {
-    country: "Kenya",
-    title: "7-Day Kenya Safari",
-    subtitle: "Maasai Mara, Amboseli & Lake Nakuru",
-    description:
-      "Discover Kenya's legendary wildlife destinations, from the endless plains of the Maasai Mara to the elephant herds of Amboseli and the spectacular landscapes of Lake Nakuru.",
+    country: t("destination.kenya.country"),
+    title: t("destination.kenya.sevenDay.title"),
+    subtitle: t("destination.kenya.sevenDay.subtitle"),
+    description: t("destination.kenya.sevenDay.description"),
 
     highlights: [
-      "Big Five Safari",
-      "Maasai Mara",
-      "Amboseli National Park",
-      "Lake Nakuru",
+      t("destination.kenya.sevenDay.highlights.bigFive"),
+      t("destination.kenya.sevenDay.highlights.maasaiMara"),
+      t("destination.kenya.sevenDay.highlights.amboseli"),
+      t("destination.kenya.sevenDay.highlights.nakuru"),
     ],
 
-    duration: "7 Days / 6 Nights",
-    region: "East Africa",
+    duration: t("destination.common.sevenDays"),
+    days: 7,
+
+    region: t("regions.eastAfrica"),
+    category: t("categories.wildlifeSafari"),
+
     image: kenya,
-    category: "Wildlife Safari",
     sectionId: "kenya-safari",
     slug: "kenya",
+
     featured: true,
   },
 
+  // =====================================================
+  // TANZANIA — 7 DAY
+  // =====================================================
   {
-    country: "Tanzania",
-    title: "7-Day Tanzania Safari",
-    subtitle: "Serengeti, Ngorongoro & Tarangire",
-    description:
-      "Explore Tanzania's most iconic landscapes, including the Serengeti, the Ngorongoro Crater, and Tarangire National Park, while experiencing extraordinary wildlife encounters.",
+    country: t("destination.tanzania.country"),
+    title: t("destination.tanzania.sevenDay.title"),
+    subtitle: t("destination.tanzania.sevenDay.subtitle"),
+    description: t("destination.tanzania.sevenDay.description"),
 
     highlights: [
-      "Serengeti National Park",
-      "Ngorongoro Crater",
-      "Tarangire National Park",
-      "Great Migration",
+      t("destination.tanzania.sevenDay.highlights.serengeti"),
+      t("destination.tanzania.sevenDay.highlights.ngorongoro"),
+      t("destination.tanzania.sevenDay.highlights.tarangire"),
+      t("destination.tanzania.sevenDay.highlights.migration"),
     ],
 
-    duration: "7 Days / 6 Nights",
-    region: "East Africa",
+    duration: t("destination.common.sevenDays"),
+    days: 7,
+
+    region: t("regions.eastAfrica"),
+    category: t("categories.classicSafari"),
+
     image: tanzania,
-    category: "Classic Safari",
     sectionId: "tanzania-safari",
     slug: "tanzania",
+
     featured: true,
   },
 
+  // =====================================================
+  // ZIMBABWE — 7 DAY
+  // =====================================================
   {
-    country: "Zimbabwe",
-    title: "7-Day Zimbabwe Safari",
-    subtitle: "Victoria Falls & Hwange National Park",
-    description:
-      "Witness the magnificent Victoria Falls, explore Hwange National Park, and discover one of Southern Africa's most remarkable wildlife destinations.",
+    country: t("destination.zimbabwe.country"),
+    title: t("destination.zimbabwe.sevenDay.title"),
+    subtitle: t("destination.zimbabwe.sevenDay.subtitle"),
+    description: t("destination.zimbabwe.sevenDay.description"),
 
     highlights: [
-      "Victoria Falls",
-      "Hwange National Park",
-      "Zambezi River Cruise",
-      "Wildlife Encounters",
+      t("destination.zimbabwe.sevenDay.highlights.victoriaFalls"),
+      t("destination.zimbabwe.sevenDay.highlights.hwange"),
+      t("destination.zimbabwe.sevenDay.highlights.zambezi"),
+      t("destination.zimbabwe.sevenDay.highlights.wildlife"),
     ],
 
-    duration: "7 Days / 6 Nights",
-    region: "Southern Africa",
+    duration: t("destination.common.sevenDays"),
+    days: 7,
+
+    region: t("regions.southernAfrica"),
+    category: t("categories.adventureSafari"),
+
     image: victoria1,
-    category: "Adventure Safari",
     sectionId: "zimbabwe-safari",
     slug: "zimbabwe",
+
     featured: false,
   },
 
+  // =====================================================
+  // ZAMBIA — 7 DAY
+  // =====================================================
   {
-    country: "Zambia",
-    title: "7-Day Zambia Safari",
-    subtitle: "South Luangwa & Zambezi River",
-    description:
-      "Experience authentic African wilderness through walking safaris, exceptional wildlife viewing, and unforgettable adventures along the mighty Zambezi River.",
+    country: t("destination.zambia.country"),
+    title: t("destination.zambia.sevenDay.title"),
+    subtitle: t("destination.zambia.sevenDay.subtitle"),
+    description: t("destination.zambia.sevenDay.description"),
 
     highlights: [
-      "South Luangwa",
-      "Walking Safaris",
-      "Zambezi River",
-      "Wildlife Photography",
+      t("destination.zambia.sevenDay.highlights.southLuangwa"),
+      t("destination.zambia.sevenDay.highlights.walkingSafaris"),
+      t("destination.zambia.sevenDay.highlights.zambezi"),
+      t("destination.zambia.sevenDay.highlights.photography"),
     ],
 
-    duration: "7 Days / 6 Nights",
-    region: "Southern Africa",
+    duration: t("destination.common.sevenDays"),
+    days: 7,
+
+    region: t("regions.southernAfrica"),
+    category: t("categories.walkingSafari"),
+
     image: luangwa,
-    category: "Walking Safari",
     sectionId: "zambia-safari",
     slug: "zambia",
+
     featured: false,
   },
 
+  // =====================================================
+  // MOROCCO — 7 DAY
+  // =====================================================
   {
-    country: "Morocco",
-    title: "Morocco Adventure",
-    subtitle: "Desert, Culture & Ancient Cities",
-    description:
-      "Explore Morocco's colorful cities, cross the Atlas Mountains, experience the Sahara Desert, and immerse yourself in centuries of history and culture.",
+    country: t("destination.morocco.country"),
+    title: t("destination.morocco.adventure.title"),
+    subtitle: t("destination.morocco.adventure.subtitle"),
+    description: t("destination.morocco.adventure.description"),
 
     highlights: [
-      "Marrakech",
-      "Atlas Mountains",
-      "Sahara Desert",
-      "Ancient Medinas",
+      t("destination.morocco.adventure.highlights.marrakech"),
+      t("destination.morocco.adventure.highlights.atlas"),
+      t("destination.morocco.adventure.highlights.sahara"),
+      t("destination.morocco.adventure.highlights.medinas"),
     ],
 
-    duration: "7 Days / 6 Nights",
-    region: "North Africa",
+    duration: t("destination.common.sevenDays"),
+    days: 7,
+
+    region: t("regions.northAfrica"),
+    category: t("categories.culturalExperience"),
+
     image: morocco,
-    category: "Cultural Experience",
     sectionId: "morocco-safari",
     slug: "morocco",
+
     featured: false,
   },
 
+  // =====================================================
+  // EGYPT — 7 DAY
+  // =====================================================
   {
-    country: "Egypt",
-    title: "Egypt Adventure",
-    subtitle: "Pyramids, Nile & Ancient Wonders",
-    description:
-      "Travel through ancient Egypt and discover the pyramids, historic temples, the Nile River, and one of the world's greatest civilizations.",
+    country: t("destination.egypt.country"),
+    title: t("destination.egypt.adventure.title"),
+    subtitle: t("destination.egypt.adventure.subtitle"),
+    description: t("destination.egypt.adventure.description"),
 
     highlights: [
-      "Great Pyramids",
-      "The Nile",
-      "Ancient Temples",
-      "Luxor",
+      t("destination.egypt.adventure.highlights.pyramids"),
+      t("destination.egypt.adventure.highlights.nile"),
+      t("destination.egypt.adventure.highlights.temples"),
+      t("destination.egypt.adventure.highlights.luxor"),
     ],
 
-    duration: "7 Days / 6 Nights",
-    region: "North Africa",
+    duration: t("destination.common.sevenDays"),
+    days: 7,
+
+    region: t("regions.northAfrica"),
+    category: t("categories.historicalJourney"),
+
     image: egypt,
-    category: "Historical Journey",
     sectionId: "egypt-safari",
     slug: "egypt",
+
     featured: false,
   },
 
+  // =====================================================
+  // BOTSWANA — 7 DAY
+  // =====================================================
   {
-    country: "Botswana",
-    title: "Botswana Safari",
-    subtitle: "Okavango Delta & Wildlife",
-    description:
-      "Explore one of Africa's most exclusive safari destinations and experience the extraordinary biodiversity of the Okavango Delta.",
+    country: t("destination.botswana.country"),
+    title: t("destination.botswana.safari.title"),
+    subtitle: t("destination.botswana.safari.subtitle"),
+    description: t("destination.botswana.safari.description"),
 
     highlights: [
-      "Okavango Delta",
-      "Mokoro Excursions",
-      "Luxury Camps",
-      "Wildlife Viewing",
+      t("destination.botswana.safari.highlights.okavango"),
+      t("destination.botswana.safari.highlights.mokoro"),
+      t("destination.botswana.safari.highlights.luxuryCamps"),
+      t("destination.botswana.safari.highlights.wildlife"),
     ],
 
-    duration: "7 Days / 6 Nights",
-    region: "Southern Africa",
+    duration: t("destination.common.sevenDays"),
+    days: 7,
+
+    region: t("regions.southernAfrica"),
+    category: t("categories.luxuryWilderness"),
+
     image: okavango,
-    category: "Luxury Wilderness",
     sectionId: "botswana-safari",
     slug: "botswana",
+
     featured: false,
   },
-    {
-    country: "South Africa",
-    title: "7-Day South Africa Safari",
-    subtitle: "Safari & City Adventure",
-    description:
-      "Experience the best of South Africa in one unforgettable journey, from the iconic landscapes of Cape Town and Table Mountain to thrilling Big Five encounters in Kruger National Park and the vibrant energy of Johannesburg.",
+
+  // =====================================================
+  // SOUTH AFRICA — 7 DAY
+  // =====================================================
+  {
+    country: t("destination.southAfrica.country"),
+    title: t("destination.southAfrica.sevenDay.title"),
+    subtitle: t("destination.southAfrica.sevenDay.subtitle"),
+    description: t("destination.southAfrica.sevenDay.description"),
 
     highlights: [
-      "Table Mountain",
-      "Cape Peninsula",
-      "Boulders Beach",
-      "Big Five Safari",
-      "Kruger National Park",
-      "Johannesburg",
+      t("destination.southAfrica.sevenDay.highlights.tableMountain"),
+      t("destination.southAfrica.sevenDay.highlights.capePeninsula"),
+      t("destination.southAfrica.sevenDay.highlights.bouldersBeach"),
+      t("destination.southAfrica.sevenDay.highlights.bigFive"),
+      t("destination.southAfrica.sevenDay.highlights.kruger"),
+      t("destination.southAfrica.sevenDay.highlights.johannesburg"),
     ],
 
-    duration: "7 Days / 6 Nights",
-    region: "Southern Africa",
+    duration: t("destination.common.sevenDays"),
+    days: 7,
+
+    region: t("regions.southernAfrica"),
+    category: t("categories.wildlifeCityAdventure"),
+
     image: krugerpark,
-    category: "Wildlife & City Adventure",
     sectionId: "southafrica-safari",
     slug: "south-africa",
+
     featured: false,
   },
 
+  // =====================================================
+  // UGANDA — 4 DAY GORILLA & WILDLIFE
+  // =====================================================
   {
-    country: "Namibia",
-    title: "7-Day Namibia Adventure",
-    subtitle: "Desert, Wildlife & Coastal Wonders",
-    description:
-      "Journey across Namibia's extraordinary landscapes, from the towering red dunes of Sossusvlei and the coastal charm of Swakopmund to the rugged wilderness of Damaraland and the wildlife-rich plains of Etosha National Park.",
+    country: t("destination.uganda.country"),
+    title: t("destination.uganda.gorillaWildlife.title"),
+    subtitle: t("destination.uganda.gorillaWildlife.subtitle"),
+    description: t("destination.uganda.gorillaWildlife.description"),
 
     highlights: [
-      "Sossusvlei & Deadvlei",
-      "Swakopmund",
-      "Damaraland",
-      "Etosha National Park",
-      "Namib Desert",
-      "Desert-Adapted Wildlife",
+      t("destination.uganda.gorillaWildlife.title"),
     ],
 
-    duration: "7 Days / 6 Nights",
-    region: "Southern Africa",
+    duration: t("destination.common.fourDays"),
+    days: 4,
+
+    region: t("regions.eastAfrica"),
+    category: t("categories.primateSafari"),
+
+    image:
+      "https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=1200&q=85",
+
+    sectionId: "uganda2-safari",
+    slug: "uganda-gorilla-wildlife",
+  },
+
+  // =====================================================
+  // UGANDA — 4 DAY ADVENTURE
+  // =====================================================
+  {
+    country: t("destination.uganda.country"),
+    title: t("destination.uganda.adventureEscape.title"),
+    subtitle: t("destination.uganda.adventureEscape.subtitle"),
+    description: t("destination.uganda.adventureEscape.description"),
+
+    highlights: [
+      t("destination.uganda.adventureEscape.title"),
+    ],
+
+    duration: t("destination.common.fourDays"),
+    days: 4,
+
+    region: t("regions.eastAfrica"),
+    category: t("categories.adventureSafari"),
+
+    image:
+      "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&w=1200&q=85",
+
+    sectionId: "uganda2-safari",
+    slug: "uganda-adventure",
+  },
+
+  // =====================================================
+  // RWANDA — 4 DAY
+  // =====================================================
+  {
+    country: t("destination.rwanda.country"),
+    title: t("destination.rwanda.adventure.title"),
+    subtitle: t("destination.rwanda.adventure.subtitle"),
+    description: t("destination.rwanda.adventure.description"),
+
+    highlights: [
+      t("destination.rwanda.adventure.title"),
+    ],
+
+    duration: t("destination.common.fourDays"),
+    days: 4,
+
+    region: t("regions.eastAfrica"),
+    category: t("categories.adventureSafari"),
+
+    image:
+      "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1200&q=85",
+
+    sectionId: "rwanda2-safari",
+    slug: "rwanda-adventure",
+  },
+
+  // =====================================================
+  // ETHIOPIA — 4 DAY
+  // =====================================================
+  {
+    country: t("destination.ethiopia.country"),
+    title: t("destination.ethiopia.adventure.title"),
+    subtitle: t("destination.ethiopia.adventure.subtitle"),
+    description: t("destination.ethiopia.adventure.description"),
+
+    highlights: [
+      t("destination.ethiopia.adventure.title"),
+    ],
+
+    duration: t("destination.common.fourDays"),
+    days: 4,
+
+    region: t("regions.eastAfrica"),
+    category: t("categories.culturalExperience"),
+
+    image:
+      "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?auto=format&fit=crop&w=1200&q=85",
+
+    sectionId: "ethiopia2-safari",
+    slug: "ethiopia-adventure",
+  },
+
+  // =====================================================
+  // DRC — 4 DAY
+  // =====================================================
+  {
+    country: t("destination.drc.country"),
+    title: t("destination.drc.adventure.title"),
+    subtitle: t("destination.drc.adventure.subtitle"),
+    description: t("destination.drc.adventure.description"),
+
+    highlights: [
+      t("destination.drc.adventure.title"),
+    ],
+
+    duration: t("destination.common.fourDays"),
+    days: 4,
+
+    region: t("regions.centralAfrica"),
+    category: t("categories.adventureSafari"),
+
+    image:
+      "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=85",
+
+    sectionId: "DRC2",
+    slug: "democratic-republic-of-congo",
+  },
+
+  // =====================================================
+  // ZAMBIA — 4 DAY
+  // =====================================================
+  {
+    country: t("destination.zambia.country"),
+    title: t("destination.zambia.adventure.title"),
+    subtitle: t("destination.zambia.adventure.subtitle"),
+    description: t("destination.zambia.adventure.description"),
+
+    highlights: [
+      t("destination.zambia.adventure.title"),
+    ],
+
+    duration: t("destination.common.fourDays"),
+    days: 4,
+
+    region: t("regions.southernAfrica"),
+    category: t("categories.adventureSafari"),
+
+    image:
+      "https://images.unsplash.com/photo-1516298773066-c48f8e9bd92b?auto=format&fit=crop&w=1200&q=85",
+
+    sectionId: "zambia2-safari",
+    slug: "zambia-adventure",
+  },
+
+  // =====================================================
+  // ZIMBABWE — 4 DAY
+  // =====================================================
+  {
+    country: t("destination.zimbabwe.country"),
+    title: t("destination.zimbabwe.adventure.title"),
+    subtitle: t("destination.zimbabwe.adventure.subtitle"),
+    description: t("destination.zimbabwe.adventure.description"),
+
+    highlights: [
+      t("destination.zimbabwe.adventure.title"),
+    ],
+
+    duration: t("destination.common.fourDays"),
+    days: 4,
+
+    region: t("regions.southernAfrica"),
+    category: t("categories.adventureSafari"),
+
+    image:
+      "https://images.unsplash.com/photo-1535338454770-8be927b5a00b?auto=format&fit=crop&w=1200&q=85",
+
+    sectionId: "zimbabwe-safari",
+    slug: "zimbabwe-adventure",
+  },
+
+  // =====================================================
+  // MOZAMBIQUE — 4 DAY
+  // =====================================================
+  {
+    country: t("destination.mozambique.country"),
+    title: t("destination.mozambique.adventure.title"),
+    subtitle: t("destination.mozambique.adventure.subtitle"),
+    description: t("destination.mozambique.adventure.description"),
+
+    highlights: [
+      t("destination.mozambique.adventure.title"),
+    ],
+
+    duration: t("destination.common.fourDays"),
+    days: 4,
+
+    region: t("regions.southernAfrica"),
+    category: t("categories.beachHoliday"),
+
+    image:
+      "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1200&q=85",
+
+    sectionId: "mozambique2-safari",
+    slug: "mozambique-adventure",
+  },
+
+  // =====================================================
+  // TANZANIA — 4 DAY WILDLIFE
+  // =====================================================
+  {
+    country: t("destination.tanzania.country"),
+    title: t("destination.tanzania.wildlifeSafari.title"),
+    subtitle: t("destination.tanzania.wildlifeSafari.subtitle"),
+    description: t("destination.tanzania.wildlifeSafari.description"),
+
+    highlights: [
+      t("destination.tanzania.wildlifeSafari.highlights.tarangire"),
+      t("destination.tanzania.wildlifeSafari.highlights.serengeti"),
+      t("destination.tanzania.wildlifeSafari.highlights.ngorongoro"),
+      t("destination.tanzania.wildlifeSafari.highlights.wildlife"),
+    ],
+
+    duration: t("destination.common.fourDays"),
+    days: 4,
+
+    region: t("regions.eastAfrica"),
+    category: t("categories.wildlifeSafari"),
+
+    image:
+      "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1200&q=85",
+
+    sectionId: "Tanzania-safari",
+    slug: "tanzania-wildlife",
+  },
+
+  // =====================================================
+  // ZANZIBAR — 4 DAY
+  // =====================================================
+  {
+    country: t("destination.zanzibar.country"),
+    title: t("destination.zanzibar.title"),
+    subtitle: t("destination.zanzibar.subtitle"),
+    description: t("destination.zanzibar.description"),
+
+    highlights: [
+      t("destination.zanzibar.title"),
+    ],
+
+    duration: t("destination.common.fourDays"),
+    days: 4,
+
+    region: t("regions.eastAfrica"),
+    category: t("categories.beachHoliday"),
+
+    image:
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85",
+
+    sectionId: "Tanzania2-safari",
+    slug: "zanzibar",
+  },
+
+  // =====================================================
+  // KENYA & TANZANIA COAST — 5 DAY
+  // =====================================================
+  {
+    country: t("destination.kenyaTanzania.country"),
+    title: t("destination.kenyaTanzania.coastal.title"),
+    subtitle: t("destination.kenyaTanzania.coastal.subtitle"),
+    description: t("destination.kenyaTanzania.coastal.description"),
+
+    highlights: [
+      t("destination.kenyaTanzania.coastal.title"),
+    ],
+
+    duration: t("destination.common.fiveDays"),
+    days: 5,
+
+    region: t("regions.eastAfrica"),
+    category: t("categories.beachHoliday"),
+
+    image:
+      "https://images.unsplash.com/photo-1505881502353-a1986add3762?auto=format&fit=crop&w=1200&q=85",
+
+    sectionId: "kenyacoast-safari",
+    slug: "kenya-tanzania-coastal",
+  },
+
+  // =====================================================
+  // EGYPT — 4 DAY CLASSIC
+  // =====================================================
+  {
+    country: t("destination.egypt.country"),
+    title: t("destination.egypt.classic.title"),
+    subtitle: t("destination.egypt.classic.subtitle"),
+    description: t("destination.egypt.classic.description"),
+
+    highlights: [
+      t("destination.egypt.classic.title"),
+    ],
+
+    duration: t("destination.common.fourDays"),
+    days: 4,
+
+    region: t("regions.northAfrica"),
+    category: t("categories.historicalJourney"),
+
+    image:
+      "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=1200&q=85",
+
+    sectionId: "egypt2-safari",
+    slug: "egypt-classic",
+  },
+
+  // =====================================================
+  // EGYPT — 4 DAY ASWAN
+  // =====================================================
+  {
+    country: t("destination.egypt.country"),
+    title: t("destination.egypt.aswan.title"),
+    subtitle: t("destination.egypt.aswan.subtitle"),
+    description: t("destination.egypt.aswan.description"),
+
+    highlights: [
+      t("destination.egypt.aswan.title"),
+    ],
+
+    duration: t("destination.common.fourDays"),
+    days: 4,
+
+    region: t("regions.northAfrica"),
+    category: t("categories.historicalJourney"),
+
+    image:
+      "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=1200&q=85",
+
+    sectionId: "egypt2-safari",
+    slug: "egypt-aswan",
+  },
+
+  // =====================================================
+  // SUDAN — 5 DAY
+  // =====================================================
+  {
+    country: t("destination.sudan.country"),
+    title: t("destination.sudan.title"),
+    subtitle: t("destination.sudan.subtitle"),
+    description: t("destination.sudan.description"),
+
+    highlights: [
+      t("destination.sudan.title"),
+    ],
+
+    duration: t("destination.common.fiveDays"),
+    days: 5,
+
+    region: t("regions.northAfrica"),
+    category: t("categories.culturalExperience"),
+
+    image:
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85",
+
+    sectionId: "sudan2-safari",
+    slug: "sudan",
+
+    status: t("destination.common.futureExperience"),
+    bookable: false,
+  },
+
+  // =====================================================
+  // NAMIBIA — 7 DAY
+  // =====================================================
+  {
+    country: t("destination.namibia.country"),
+    title: t("destination.namibia.sevenDay.title"),
+    subtitle: t("destination.namibia.sevenDay.subtitle"),
+    description: t("destination.namibia.sevenDay.description"),
+
+    highlights: [
+      t("destination.namibia.sevenDay.highlights.sossusvlei"),
+      t("destination.namibia.sevenDay.highlights.swakopmund"),
+      t("destination.namibia.sevenDay.highlights.damaraland"),
+      t("destination.namibia.sevenDay.highlights.etosha"),
+      t("destination.namibia.sevenDay.highlights.namib"),
+      t("destination.namibia.sevenDay.highlights.desertWildlife"),
+    ],
+
+    duration: t("destination.common.sevenDays"),
+    days: 7,
+
+    region: t("regions.southernAfrica"),
+    category: t("categories.desertAdventure"),
+
     image: etoshapark,
-    category: "Desert Adventure",
     sectionId: "namibia-safari",
     slug: "namibia",
+
     featured: false,
   },
 ];
 
-
+const uniqueDestinations = Array.from(
+  new Map(
+    safariDestinations.map((item) => [
+      `${item.country}-${item.title}`,
+      item,
+    ])
+  ).values()
+);
   // ======================================================
   // FILTER DESTINATIONS
   // ======================================================
+// ======================================================
+// FILTER DESTINATIONS
+// ======================================================
 
-  const filteredDestinations = safariDestinations.filter(
-    (destination) => {
+// ======================================================
+// FILTER DESTINATIONS
+// ======================================================
 
-      const search = searchTerm
-        .toLowerCase()
-        .trim();
+const filteredDestinations = safariDestinations.filter((destination) => {
+  const search = searchTerm.toLowerCase().trim();
 
-      if (!search) {
-        return true;
-      }
+  const searchableText = [
+    destination.country,
+    destination.title,
+    destination.subtitle,
+    destination.description,
+    destination.category,
+    destination.region,
+    destination.duration,
+    ...(destination.highlights || []),
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
 
-      return (
-        destination.country
-          .toLowerCase()
-          .includes(search) ||
+  const matchesSearch =
+    !search || searchableText.includes(search);
 
-        destination.title
-          .toLowerCase()
-          .includes(search) ||
+  const matchesDestination =
+    !filters.destination ||
+    destination.country === filters.destination;
 
-        destination.subtitle
-          .toLowerCase()
-          .includes(search) ||
+  const matchesCategory =
+    !filters.category ||
+    destination.category === filters.category;
 
-        destination.category
-          .toLowerCase()
-          .includes(search)
-      );
+  const matchesRegion =
+    !filters.region ||
+    destination.region === filters.region;
 
+  // ================================
+  // DURATION FILTER
+  // ================================
+
+  const days = Number(destination.days);
+
+  let matchesDuration = true;
+
+  if (filters.duration) {
+    switch (filters.duration) {
+      case "1-3":
+        matchesDuration = days >= 1 && days <= 3;
+        break;
+
+      case "4-5":
+        matchesDuration = days >= 4 && days <= 5;
+        break;
+
+      case "6-7":
+        matchesDuration = days >= 6 && days <= 7;
+        break;
+
+      case "8-14":
+        matchesDuration = days >= 8 && days <= 14;
+        break;
+
+      case "15+":
+        matchesDuration = days >= 15;
+        break;
+
+      default:
+        matchesDuration = true;
     }
-  );
+  }
 
+  return (
+    matchesSearch &&
+    matchesDestination &&
+    matchesCategory &&
+    matchesRegion &&
+    matchesDuration
+  );
+});
+const clearAllSearch = () => {
+
+  setSearchTerm("");
+
+  setFilters({
+    destination: "",
+    category: "",
+    region: "",
+    duration: "",
+  });
+
+  setShowSuggestions(false);
+};
+const destinationOptions = [
+  ...new Set(
+    uniqueDestinations
+      .map((item) => item.country)
+      .filter(Boolean)
+  ),
+].sort();
+
+const categoryOptions = [
+  ...new Set(
+    uniqueDestinations
+      .map((item) => item.category)
+      .filter(Boolean)
+  ),
+].sort();
+
+const regionOptions = [
+  ...new Set(
+    uniqueDestinations
+      .map((item) => item.region)
+      .filter(Boolean)
+  ),
+].sort();
+const suggestions = uniqueDestinations
+  .filter((destination) => {
+
+    const search = searchTerm
+      .toLowerCase()
+      .trim();
+
+    if (!search) return false;
+
+    return (
+      destination.country
+        ?.toLowerCase()
+        .includes(search) ||
+
+      destination.title
+        ?.toLowerCase()
+        .includes(search) ||
+
+      destination.subtitle
+        ?.toLowerCase()
+        .includes(search) ||
+
+      destination.category
+        ?.toLowerCase()
+        .includes(search) ||
+
+      destination.region
+        ?.toLowerCase()
+        .includes(search)
+    );
+  })
+  .slice(0, 6);
 
   // ======================================================
   // HERO & ABOUT SLIDER
@@ -448,8 +1020,78 @@ function Home() {
       );
 
     }, 4000);
+const suggestions = uniqueDestinations
+  .filter((destination) => {
+
+    const search = searchTerm
+      .toLowerCase()
+      .trim();
+
+    if (!search) return false;
+
+    return (
+      destination.country
+        ?.toLowerCase()
+        .includes(search) ||
+
+      destination.title
+        ?.toLowerCase()
+        .includes(search) ||
+
+      destination.subtitle
+        ?.toLowerCase()
+        .includes(search) ||
+
+      destination.category
+        ?.toLowerCase()
+        .includes(search) ||
+
+      destination.region
+        ?.toLowerCase()
+        .includes(search)
+    );
+  })
+  .slice(0, 6);
 
 
+// ======================================================
+// CLEAR FILTERS
+// ======================================================
+
+const clearAllSearch = () => {
+
+  setSearchTerm("");
+
+  setFilters({
+    destination: "",
+    category: "",
+    region: "",
+    duration: "",
+  });
+
+  setShowSuggestions(false);
+};
+const destinations = [
+  ...new Set(
+    safariDestinations.map((item) => item.country)
+  ),
+].sort();
+
+const categories = [
+  ...new Set(
+    safariDestinations
+      .map((item) => item.category)
+      .filter(Boolean)
+  ),
+].sort();
+
+const regions = [
+  ...new Set(
+    safariDestinations
+      .map((item) => item.region)
+      .filter(Boolean)
+  ),
+].sort();
     return () => clearInterval(slider);
 
   }, [images.length, aboutImages.length]);
@@ -618,107 +1260,508 @@ function Home() {
 </section>
 
 {/* ================= DESTINATION SEARCH ================= */}
+{/* ====================================================== */}
+{/* PREMIUM SAFARI SEARCH */}
+{/* ====================================================== */}
 
-<section className="relative z-20 -mt-8 px-4 sm:px-6">
-  <div className="mx-auto max-w-5xl">
+<section className="relative z-30 -mt-10 px-4 sm:px-6">
 
-    <div className="rounded-2xl border border-white/70 bg-white/95 p-4 shadow-xl backdrop-blur-xl sm:p-5">
+  <div className="mx-auto max-w-6xl">
 
-      {/* Heading */}
-      <div className="mb-3 flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <p className="text-[9px] font-bold uppercase tracking-[2.5px] text-[#0B6E4F]">
-            {t("search.findAdventure")}
-          </p>
+    <div className="overflow-visible rounded-[28px] border border-white/80 bg-white/95 shadow-2xl backdrop-blur-xl">
 
-          <h2 className="text-lg font-black text-gray-900 sm:text-xl">
-            {t("search.whereGo")}
-          </h2>
+      {/* ================================================== */}
+      {/* SEARCH HEADER */}
+      {/* ================================================== */}
+
+      <div className="border-b border-gray-100 px-5 py-5 sm:px-7">
+
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+
+          <div>
+
+            <div className="mb-1 flex items-center gap-2">
+
+              <span className="h-1.5 w-1.5 rounded-full bg-[#B28B2C]" />
+
+              <p className="text-[9px] font-bold uppercase tracking-[2.5px] text-[#0B6E4F]">
+                {t("search.findAdventure")}
+              </p>
+
+            </div>
+
+            <h2 className="text-xl font-black tracking-tight text-gray-900 sm:text-2xl">
+              {t("search.whereGo")}
+            </h2>
+
+            <p className="mt-1 text-xs text-gray-500 sm:text-sm">
+              Explore wildlife, beaches, culture and unforgettable African adventures.
+            </p>
+
+          </div>
+
+
+          {/* RESULT COUNT */}
+
+          <div className="rounded-full bg-[#F7F3EA] px-3 py-1.5 text-[10px] font-semibold text-gray-600">
+
+            <span className="font-black text-[#0B6E4F]">
+              {filteredDestinations.length}
+            </span>{" "}
+
+            {filteredDestinations.length === 1
+              ? "experience"
+              : "experiences"}
+
+          </div>
+
         </div>
 
-        <span className="hidden text-xs text-gray-400 sm:block">
-          {t("search.exploreAfrica")}
-        </span>
       </div>
 
-      {/* Search */}
-      <div className="flex flex-col gap-2 sm:flex-row">
 
-        <div className="relative flex-1">
+      {/* ================================================== */}
+      {/* SEARCH BODY */}
+      {/* ================================================== */}
 
-          <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-base">
-            🔍
-          </span>
+      <div className="p-5 sm:p-7">
 
-          <input
-            type="text"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            placeholder={t("search.placeholder")}
-            className="h-12 w-full rounded-xl border border-gray-200 bg-gray-50 pl-11 pr-10 text-sm outline-none transition focus:border-[#0B6E4F] focus:bg-white focus:ring-2 focus:ring-emerald-100"
-          />
 
-          {searchTerm && (
-            <button
-              onClick={() => setSearchTerm("")}
-              aria-label={t("search.clear")}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 transition hover:text-gray-700"
-            >
-              ✕
-            </button>
-          )}
+        {/* ================================================== */}
+        {/* MAIN SEARCH */}
+        {/* ================================================== */}
+
+        <div className="grid gap-3 lg:grid-cols-[1fr_auto]">
+
+
+          {/* SEARCH INPUT */}
+
+          <div className="relative">
+
+            <div className="relative">
+
+              <FaSearch
+                className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-sm text-gray-400"
+              />
+
+              <input
+                type="text"
+                value={searchTerm}
+
+                onChange={(e) => {
+
+                  setSearchTerm(e.target.value);
+
+                  setShowSuggestions(true);
+
+                }}
+
+                onFocus={() => {
+
+                  if (searchTerm.trim()) {
+                    setShowSuggestions(true);
+                  }
+
+                }}
+
+                placeholder="Search Tanzania, gorillas, beach, wildlife..."
+
+                className="h-14 w-full rounded-2xl border border-gray-200 bg-gray-50 pl-11 pr-12 text-sm font-medium text-gray-900 outline-none transition-all placeholder:text-gray-400 focus:border-[#0B6E4F] focus:bg-white focus:ring-4 focus:ring-emerald-50"
+              />
+
+
+              {/* CLEAR INPUT */}
+
+              {searchTerm && (
+
+                <button
+                  type="button"
+                  onClick={() => {
+
+                    setSearchTerm("");
+
+                    setShowSuggestions(false);
+
+                  }}
+
+                  aria-label={t("search.clear")}
+
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 transition hover:text-gray-800"
+                >
+                  ✕
+                </button>
+
+              )}
+
+            </div>
+
+
+            {/* ================================================== */}
+            {/* AUTOCOMPLETE */}
+            {/* ================================================== */}
+
+            {showSuggestions &&
+              searchTerm.trim() &&
+              suggestions.length > 0 && (
+
+                <div className="absolute left-0 right-0 top-[calc(100%+8px)] z-[100] overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-2xl">
+
+                  <div className="border-b border-gray-100 px-4 py-3">
+
+                    <p className="text-[9px] font-bold uppercase tracking-[2px] text-gray-400">
+                      Suggested Experiences
+                    </p>
+
+                  </div>
+
+
+                  {suggestions.map((destination, i) => (
+
+                    <button
+                      key={`${destination.country}-${destination.title}-${i}`}
+
+                      type="button"
+
+                      onClick={() => {
+
+                        setSearchTerm(destination.country);
+
+                        setShowSuggestions(false);
+
+                      }}
+
+                      className="flex w-full items-center gap-3 px-4 py-3 text-left transition hover:bg-gray-50"
+                    >
+
+                      {/* IMAGE */}
+
+                      <div className="h-11 w-11 shrink-0 overflow-hidden rounded-xl">
+
+                        <img
+                          src={destination.image}
+                          alt=""
+                          className="h-full w-full object-cover"
+                        />
+
+                      </div>
+
+
+                      {/* TEXT */}
+
+                      <div className="min-w-0 flex-1">
+
+                        <p className="truncate text-sm font-bold text-gray-900">
+                          {destination.title}
+                        </p>
+
+                        <p className="mt-0.5 truncate text-[10px] text-gray-500">
+
+                          {destination.country}
+
+                          {destination.category && (
+                            <>
+                              {" "}·{" "}
+                              {destination.category}
+                            </>
+                          )}
+
+                        </p>
+
+                      </div>
+
+
+                      <span className="text-xs text-gray-300">
+                        →
+                      </span>
+
+                    </button>
+
+                  ))}
+
+                </div>
+
+              )}
+
+          </div>
+
+
+          {/* SEARCH BUTTON */}
+
+          <button
+            type="button"
+
+            onClick={() => {
+              setShowSuggestions(false);
+
+              document
+                .getElementById("safari-results")
+                ?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+            }}
+
+            className="h-14 rounded-2xl bg-[#0B6E4F] px-8 text-sm font-bold text-white shadow-lg shadow-emerald-900/10 transition-all hover:-translate-y-0.5 hover:bg-[#095c42]"
+          >
+            {t("search.button")}
+          </button>
 
         </div>
 
-        <button
-          className="h-12 rounded-xl bg-[#0B6E4F] px-6 text-sm font-bold text-white transition hover:bg-[#095c42] sm:px-7"
-        >
-          {t("search.button")}
-        </button>
 
-      </div>
+        {/* ================================================== */}
+        {/* FILTERS */}
+        {/* ================================================== */}
 
-      {/* Popular */}
-      <div className="mt-3">
+        <div className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
 
-        <p className="mb-2 text-[10px] font-semibold uppercase tracking-wide text-gray-400">
-          {t("search.popular")}
-        </p>
 
-        <div className="flex gap-1.5 overflow-x-auto pb-1 scrollbar-hide">
+          {/* DESTINATION */}
 
-          {[
-            "Kenya",
-            "Tanzania",
-            "Uganda",
-            "Rwanda",
-            "Zimbabwe",
-            "Zambia",
-            "Botswana",
-            "Namibia",
-            "South Africa",
-            "Morocco",
-            "Egypt",
-          ].map((destination) => {
+          
 
-            const active =
-              searchTerm.toLowerCase() === destination.toLowerCase();
+          {/* EXPERIENCE */}
 
-            return (
+          
+          {/* REGION */}
+
+          
+
+
+          {/* DURATION */}
+
+        
+        </div>
+
+
+        {/* ================================================== */}
+        {/* ACTIVE FILTERS */}
+        {/* ================================================== */}
+
+        {(searchTerm ||
+          filters.destination ||
+          filters.category ||
+          filters.region ||
+          filters.duration) && (
+
+          <div className="mt-4 flex flex-wrap items-center gap-2">
+
+            <span className="mr-1 text-[9px] font-bold uppercase tracking-[1.5px] text-gray-400">
+              Active:
+            </span>
+
+
+            {/* SEARCH */}
+
+            {searchTerm && (
+
               <button
-                key={destination}
-                onClick={() => setSearchTerm(destination)}
-                className={`whitespace-nowrap rounded-full border px-3 py-1.5 text-[10px] font-semibold transition ${
-                  active
-                    ? "border-[#0B6E4F] bg-[#0B6E4F] text-white"
-                    : "border-gray-200 bg-white text-gray-600 hover:border-[#0B6E4F] hover:text-[#0B6E4F]"
-                }`}
-              >
-                {destination}
-              </button>
-            );
+                type="button"
 
-          })}
+                onClick={() => setSearchTerm("")}
+
+                className="inline-flex items-center gap-1.5 rounded-full bg-[#0B6E4F] px-3 py-1.5 text-[10px] font-bold text-white"
+              >
+                Search: {searchTerm}
+                <span>×</span>
+              </button>
+
+            )}
+
+
+            {/* DESTINATION */}
+
+            {filters.destination && (
+
+              <button
+                type="button"
+
+                onClick={() =>
+                  setFilters({
+                    ...filters,
+                    destination: "",
+                  })
+                }
+
+                className="inline-flex items-center gap-1.5 rounded-full bg-[#F7F3EA] px-3 py-1.5 text-[10px] font-bold text-gray-700"
+              >
+                {filters.destination}
+                <span>×</span>
+              </button>
+
+            )}
+
+
+            {/* CATEGORY */}
+
+            {filters.category && (
+
+              <button
+                type="button"
+
+                onClick={() =>
+                  setFilters({
+                    ...filters,
+                    category: "",
+                  })
+                }
+
+                className="inline-flex items-center gap-1.5 rounded-full bg-[#F7F3EA] px-3 py-1.5 text-[10px] font-bold text-gray-700"
+              >
+                {filters.category}
+                <span>×</span>
+              </button>
+
+            )}
+
+
+            {/* REGION */}
+
+            {filters.region && (
+
+              <button
+                type="button"
+
+                onClick={() =>
+                  setFilters({
+                    ...filters,
+                    region: "",
+                  })
+                }
+
+                className="inline-flex items-center gap-1.5 rounded-full bg-[#F7F3EA] px-3 py-1.5 text-[10px] font-bold text-gray-700"
+              >
+                {filters.region}
+                <span>×</span>
+              </button>
+
+            )}
+
+
+            {/* DURATION */}
+
+            {filters.duration && (
+
+              <button
+                type="button"
+
+                onClick={() =>
+                  setFilters({
+                    ...filters,
+                    duration: "",
+                  })
+                }
+
+                className="inline-flex items-center gap-1.5 rounded-full bg-[#F7F3EA] px-3 py-1.5 text-[10px] font-bold text-gray-700"
+              >
+
+                {filters.duration === "1-3"
+  ? "1–3 Days"
+  : filters.duration === "4-5"
+  ? "4–5 Days"
+  : filters.duration === "6-7"
+  ? "6–7 Days"
+  : filters.duration === "8-14"
+  ? "8–14 Days"
+  : filters.duration === "15+"
+  ? "15+ Days"
+  : filters.duration}
+
+                <span>×</span>
+
+              </button>
+
+            )}
+
+
+            <button
+              type="button"
+              onClick={clearAllSearch}
+              className="ml-auto text-[10px] font-bold text-gray-400 transition hover:text-[#0B6E4F]"
+            >
+              Clear all
+            </button>
+
+          </div>
+
+        )}
+
+
+        {/* ================================================== */}
+        {/* POPULAR SEARCHES */}
+        {/* ================================================== */}
+
+        <div className="mt-5">
+
+          <div className="mb-2 flex items-center justify-between">
+
+            <p className="text-[9px] font-bold uppercase tracking-[2px] text-gray-400">
+              {t("search.popular")}
+            </p>
+
+            <span className="hidden text-[9px] text-gray-400 sm:block">
+              Explore by destination
+            </span>
+
+          </div>
+
+
+          <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-hide">
+
+            {[
+              "Kenya",
+              "Tanzania",
+              "Uganda",
+              "Rwanda",
+              "Ethiopia",
+              "Zambia",
+              "Zimbabwe",
+              "Mozambique",
+              "South Africa",
+              "Botswana",
+              "Namibia",
+              "Morocco",
+              "Egypt",
+              "Sudan",
+            ].map((destination) => {
+
+              const active =
+                searchTerm.toLowerCase() ===
+                destination.toLowerCase();
+
+
+              return (
+
+                <button
+                  key={destination}
+                  type="button"
+
+                  onClick={() => {
+
+                    setSearchTerm(destination);
+
+                    setShowSuggestions(false);
+
+                  }}
+
+                  className={`whitespace-nowrap rounded-full border px-3.5 py-2 text-[10px] font-semibold transition-all ${
+                    active
+
+                      ? "border-[#0B6E4F] bg-[#0B6E4F] text-white shadow-sm"
+
+                      : "border-gray-200 bg-gray-50 text-gray-600 hover:border-[#0B6E4F] hover:bg-emerald-50 hover:text-[#0B6E4F]"
+                  }`}
+                >
+
+                  {destination}
+
+                </button>
+
+              );
+
+            })}
+
+          </div>
 
         </div>
 
@@ -727,31 +1770,84 @@ function Home() {
     </div>
 
   </div>
-</section>
-{/* ================= SEARCH RESULTS ================= */}
 
-{searchTerm.trim() && (
-  <section className="bg-[#F8FAF8] px-6 py-16">
+</section>
+
+
+
+{/* ====================================================== */}
+{/* SEARCH RESULTS */}
+{/* ====================================================== */}
+
+{(
+  searchTerm.trim() ||
+  filters.destination ||
+  filters.category ||
+  filters.region ||
+  filters.duration
+) && (
+
+  <section
+    id="safari-results"
+    className="scroll-mt-24 mt-14 px-4 sm:px-6"
+  >
 
     <div className="mx-auto max-w-7xl">
 
-      {/* Results Header */}
 
-      <div className="mb-8 flex items-center justify-between">
+      {/* ================================================== */}
+      {/* RESULTS HEADER */}
+      {/* ================================================== */}
+
+      <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
 
         <div>
-          <p className="text-[10px] font-bold uppercase tracking-[3px] text-[#0B6E4F]">
+
+          <p className="text-[10px] font-bold uppercase tracking-[3px] text-[#B28B2C]">
             Safari Experiences
           </p>
 
-          <h2 className="mt-2 text-3xl font-black text-gray-900">
-            Results for "{searchTerm}"
+
+          <h2 className="mt-2 text-3xl font-black tracking-tight text-[#171510] md:text-4xl">
+
+            {searchTerm
+              ? (
+                <>
+                  Results for{" "}
+
+                  <span className="text-[#B28B2C]">
+                    "{searchTerm}"
+                  </span>
+                </>
+              )
+              : "Explore Your Safari"}
+
           </h2>
+
+
+          <p className="mt-2 text-sm text-gray-500">
+
+            <span className="font-bold text-gray-900">
+              {filteredDestinations.length}
+            </span>{" "}
+
+            {filteredDestinations.length === 1
+              ? "experience"
+              : "experiences"}{" "}
+            found
+
+          </p>
+
         </div>
 
+
+        {/* CLEAR */}
+
         <button
-          onClick={() => setSearchTerm("")}
-          className="text-sm font-bold text-[#0B6E4F] hover:underline"
+          type="button"
+          onClick={clearAllSearch}
+
+          className="w-fit rounded-xl border border-gray-200 bg-white px-5 py-3 text-xs font-bold text-gray-600 shadow-sm transition hover:border-[#0B6E4F] hover:text-[#0B6E4F]"
         >
           Clear Search
         </button>
@@ -759,69 +1855,162 @@ function Home() {
       </div>
 
 
-      {/* Results */}
+      {/* ================================================== */}
+      {/* RESULTS */}
+      {/* ================================================== */}
 
       {filteredDestinations.length > 0 ? (
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
 
-          {filteredDestinations.map((destination) => (
+          {filteredDestinations.map((safari) => (
 
-            <div
-              key={destination.slug}
-              className="group overflow-hidden rounded-[28px] bg-white shadow-lg transition duration-500 hover:-translate-y-2 hover:shadow-2xl"
+            <article
+              key={`${safari.country}-${safari.title}`}
+
+              className="group overflow-hidden rounded-[28px] border border-gray-100 bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
             >
 
-              {/* Image */}
+              {/* ================================================== */}
+              {/* IMAGE */}
+              {/* ================================================== */}
 
               <div className="relative h-64 overflow-hidden">
 
                 <img
-                  src={destination.image}
-                  alt={destination.title}
-                  className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+                  src={
+                    safari.image ||
+                    "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1200&q=85"
+                  }
+
+                  alt={safari.title}
+
+                  className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                 />
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
 
-                <span className="absolute left-5 top-5 rounded-full bg-white/90 px-4 py-2 text-[10px] font-bold uppercase tracking-[2px] text-[#0B6E4F]">
-                  {destination.country}
-                </span>
+                {/* OVERLAY */}
 
-                <h3 className="absolute bottom-5 left-5 right-5 text-2xl font-black text-white">
-                  {destination.title}
-                </h3>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
+
+
+                {/* COUNTRY */}
+
+                <div className="absolute bottom-4 left-4">
+
+                  <span className="rounded-full bg-white/95 px-4 py-2 text-[10px] font-bold text-[#171510] shadow-lg backdrop-blur">
+
+                    {safari.country}
+
+                  </span>
+
+                </div>
+
+
+                {/* CATEGORY */}
+
+                {safari.category && (
+
+                  <div className="absolute right-4 top-4">
+
+                    <span className="rounded-full border border-white/20 bg-black/30 px-3 py-1.5 text-[9px] font-bold text-white backdrop-blur-md">
+
+                      {safari.category}
+
+                    </span>
+
+                  </div>
+
+                )}
 
               </div>
 
 
-              {/* Content */}
+              {/* ================================================== */}
+              {/* CONTENT */}
+              {/* ================================================== */}
 
               <div className="p-6">
 
-                <p className="font-bold text-gray-900">
-                  {destination.subtitle}
+
+                {/* SUBTITLE */}
+
+                <p className="text-[9px] font-bold uppercase tracking-[2px] text-[#B28B2C]">
+
+                  {safari.subtitle}
+
                 </p>
 
-                <p className="mt-2 text-sm leading-6 text-gray-600">
-                  {destination.description}
+
+                {/* TITLE */}
+
+                <h3 className="mt-2 text-xl font-black leading-tight text-[#171510]">
+
+                  {safari.title}
+
+                </h3>
+
+
+                {/* DESCRIPTION */}
+
+                <p className="mt-3 line-clamp-3 text-sm leading-6 text-gray-500">
+
+                  {safari.description}
+
                 </p>
 
 
-                {/* EXACT SECTION BUTTON */}
+                {/* ================================================== */}
+                {/* META */}
+                {/* ================================================== */}
 
-<Link
-  to={`/${i18n.language}/Destinations#${destination.sectionId}`}
-  className="mt-5 inline-flex items-center font-bold text-[#0B6E4F]"
->
-  Explore Safari
+                <div className="mt-5 flex flex-wrap gap-2">
 
-  <FaArrowRight className="ml-2 text-xs transition-transform duration-300 group-hover:translate-x-1" />
-</Link>
+                  {safari.duration && (
+
+                    <span className="rounded-lg bg-gray-50 px-3 py-2 text-[10px] font-semibold text-gray-600">
+
+                      🕐 {safari.duration}
+
+                    </span>
+
+                  )}
+
+
+                  {safari.region && (
+
+                    <span className="rounded-lg bg-gray-50 px-3 py-2 text-[10px] font-semibold text-gray-600">
+
+                      📍 {safari.region}
+
+                    </span>
+
+                  )}
+
+                </div>
+
+
+                {/* ================================================== */}
+                {/* CTA */}
+                {/* ================================================== */}
+
+                <a
+                  href={`/${i18n.language || "en"}/Destinations#${safari.sectionId}`}
+
+                  className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-[#0B6E4F] transition-all hover:gap-3"
+                >
+
+                  Explore Safari
+
+                  <span>
+                    →
+                  </span>
+
+                </a>
 
               </div>
 
-            </div>
+            </article>
 
           ))}
 
@@ -829,20 +2018,43 @@ function Home() {
 
       ) : (
 
-        <div className="rounded-[28px] bg-white p-12 text-center shadow-lg">
+        /* ================================================== */
+        /* NO RESULTS */
+        /* ================================================== */
 
-          <div className="text-5xl">
-            🦁
+        <div className="rounded-[30px] border border-dashed border-gray-300 bg-white px-6 py-20 text-center">
+
+          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#F7F3EA] text-2xl">
+            🔍
           </div>
 
-          <h3 className="mt-4 text-2xl font-black">
-            No destination found
+
+          <h3 className="mt-5 text-2xl font-black text-[#171510]">
+            No safari found
           </h3>
 
-          <p className="mt-2 text-gray-500">
-            Try searching for Kenya, Tanzania, Uganda,
-            Rwanda or another destination.
+
+          <p className="mx-auto mt-2 max-w-md text-sm leading-6 text-gray-500">
+
+            We couldn't find an experience matching{" "}
+
+            <strong>
+              "{searchTerm || "your filters"}"
+            </strong>.
+
+            Try another destination, safari type or region.
+
           </p>
+
+
+          <button
+            type="button"
+            onClick={clearAllSearch}
+
+            className="mt-6 rounded-xl bg-[#0B6E4F] px-6 py-3 text-sm font-bold text-white transition hover:bg-[#095c42]"
+          >
+            View All Safaris
+          </button>
 
         </div>
 
@@ -851,7 +2063,9 @@ function Home() {
     </div>
 
   </section>
+
 )}
+
 
       {/* ABOUT / EXPERIENCE SECTION */}
 {/* ABOUT / EXPERIENCE SECTION */}
