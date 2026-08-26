@@ -253,7 +253,7 @@
     "destinationText": "East, West, North, Central & Southern Africa",
 
     "basedIn": "Based In",
-    "location": "Nairobi, Kenya",
+    "location": "Africa",
 
     "privacy": "Privacy Policy",
     "terms": "Terms & Conditions",
@@ -2676,16 +2676,16 @@
         "paybill": "Paybill",
         "account": "Account",
         "name": "Name",
-        "businessName": "Curious Safaris"
+        "businessName": "Duncan Ombima"
       },
 
       "bank": {
         "type": "Bank Transfer",
-        "title": "Diamond Trust Bank",
+        "title": "Kenya Commercial Bank",
         "account": "Account",
         "name": "Name",
         "swift": "SWIFT",
-        "businessName": "Curious Safaris"
+        "businessName": "Duncan Ombima"
       },
 
       "policy": {

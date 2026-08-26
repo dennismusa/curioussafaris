@@ -784,7 +784,39 @@ const { t, i18n } = useTranslation();
           ))}
 
         </div>
+<div className="mt-5 space-y-2.5 text-xs">
 
+  <div className="flex items-center justify-between border-b border-white/10 pb-2">
+    <span className="text-white/40">
+      {t("nairobi.payment.mpesa.paybill")}
+    </span>
+
+    <span className="text-[10px] font-semibold tracking-wide text-white/80">
+      522533
+    </span>
+  </div>
+
+  <div className="flex items-center justify-between border-b border-white/10 pb-2">
+    <span className="text-white/40">
+      {t("nairobi.payment.mpesa.account")}
+    </span>
+
+    <span className="font-semibold">
+      8003802
+    </span>
+  </div>
+
+  <div className="flex items-center justify-between">
+    <span className="text-white/40">
+      {t("nairobi.payment.mpesa.name")}
+    </span>
+
+    <span className="font-semibold">
+      Duncan Ombima
+    </span>
+  </div>
+
+</div>
 
         {/* Security Message */}
         <div className="relative mt-8 flex gap-4 rounded-2xl border border-white/10 bg-white/[0.04] p-5">

@@ -811,7 +811,22 @@ export default function Destination() {
       </a>
 
     </div>
+{/* ================= YOUTUBE VIDEO ================= */}
 
+<div className="mt-10 flex justify-center sm:mt-12">
+  <div className="w-full max-w-md overflow-hidden rounded-2xl bg-[#F8F6F1] p-2 shadow-lg">
+    <div className="aspect-video overflow-hidden rounded-xl">
+      <iframe
+        className="h-full w-full"
+        src="https://www.youtube.com/embed/fnW33J_7xSc"
+        title="Tanzania Safari - Curious Safaris"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      />
+    </div>
+  </div>
+</div>
   </div>
 
 </section>
@@ -2984,7 +2999,22 @@ export default function Destination() {
       </a>
 
     </div>
+{/* ================= YOUTUBE VIDEO ================= */}
 
+<div className="mt-10 flex justify-center sm:mt-12">
+  <div className="w-full max-w-md overflow-hidden rounded-2xl bg-[#F8F6F1] p-2 shadow-lg">
+    <div className="aspect-video overflow-hidden rounded-xl">
+      <iframe
+        className="h-full w-full"
+        src="https://www.youtube.com/embed/g9HYO35HNn4"
+        title="Zimbabwe Safari - Curious Safaris"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      />
+    </div>
+  </div>
+</div>
   </div>
 </section>
 
@@ -3397,7 +3427,22 @@ export default function Destination() {
       </a>
 
     </div>
+{/* ================= YOUTUBE VIDEO ================= */}
 
+<div className="mt-10 flex justify-center sm:mt-12">
+  <div className="w-full max-w-md overflow-hidden rounded-2xl bg-[#F8F6F1] p-2 shadow-lg">
+    <div className="aspect-video overflow-hidden rounded-xl">
+      <iframe
+        className="h-full w-full"
+        src="https://www.youtube.com/embed/PwNYmi5hkXQ"
+        title="Namibia Safari - Curious Safaris"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      />
+    </div>
+  </div>
+</div>
   </div>
 
 </section>
@@ -3812,9 +3857,27 @@ export default function Destination() {
       </a>
 
     </div>
+{/* ================= YOUTUBE VIDEO ================= */}
 
+<div className="mt-10 flex justify-center sm:mt-12">
+  <div className="w-full max-w-md overflow-hidden rounded-2xl bg-[#F8F6F1] p-2 shadow-lg">
+    <div className="aspect-video overflow-hidden rounded-xl">
+      <iframe
+        className="h-full w-full"
+        src="https://www.youtube.com/embed/Dye-E6I7efA"
+        title="Botswana Safari - Curious Safaris"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      />
+    </div>
+  </div>
+</div>
   </div>
 </section>
+
+
+
 {/* ================= South Africa Safari & City Adventure ================= */}
 <section
   id="southafrica-safari"
@@ -4444,22 +4507,30 @@ export default function Destination() {
         <div className="mt-6 space-y-5 text-sm leading-6 text-gray-600 sm:mt-8 sm:text-base">
 
           <p>
-            <strong>{t("mozambiqueSafari.packageDetails.durationLabel")}</strong>{" "}
+            <strong>
+              {t("mozambiqueSafari.packageDetails.durationLabel")}
+            </strong>{" "}
             {t("mozambiqueSafari.packageDetails.duration")}
           </p>
 
           <p>
-            <strong>{t("mozambiqueSafari.packageDetails.routeLabel")}</strong>{" "}
+            <strong>
+              {t("mozambiqueSafari.packageDetails.routeLabel")}
+            </strong>{" "}
             {t("mozambiqueSafari.packageDetails.route")}
           </p>
 
           <p>
-            <strong>{t("mozambiqueSafari.packageDetails.transportLabel")}</strong>{" "}
+            <strong>
+              {t("mozambiqueSafari.packageDetails.transportLabel")}
+            </strong>{" "}
             {t("mozambiqueSafari.packageDetails.transport")}
           </p>
 
           <p>
-            <strong>{t("mozambiqueSafari.packageDetails.highlightsLabel")}</strong>{" "}
+            <strong>
+              {t("mozambiqueSafari.packageDetails.highlightsLabel")}
+            </strong>{" "}
             {t("mozambiqueSafari.packageDetails.highlights")}
           </p>
 
@@ -4679,6 +4750,30 @@ export default function Destination() {
         <p className="mt-2 text-sm leading-6 text-gray-600">
           {t("mozambiqueSafari.experiences.culture.description")}
         </p>
+
+      </div>
+
+    </div>
+
+
+    {/* ================= YOUTUBE VIDEO ================= */}
+
+    <div className="mt-10 flex justify-center sm:mt-12">
+
+      <div className="w-full max-w-md overflow-hidden rounded-2xl bg-[#F8F6F1] p-2 shadow-lg">
+
+        <div className="aspect-video overflow-hidden rounded-xl">
+
+          <iframe
+            className="h-full w-full"
+            src="https://www.youtube.com/embed/Kd50L1sz0Ug"
+            title="Mozambique Safari - Curious Safaris"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+
+        </div>
 
       </div>
 
@@ -7847,7 +7942,22 @@ export default function Destination() {
       </div>
 
     </div>
+{/* ================= YOUTUBE VIDEO ================= */}
 
+<div className="mt-10 flex justify-center sm:mt-12">
+  <div className="w-full max-w-md overflow-hidden rounded-2xl bg-[#F8F6F1] p-2 shadow-lg">
+    <div className="aspect-video overflow-hidden rounded-xl">
+      <iframe
+        className="h-full w-full"
+        src="https://www.youtube.com/embed/pHcUxi-5WGI"
+        title="Uganda Safari - Curious Safaris"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      />
+    </div>
+  </div>
+</div>
   </div>
 
 </section>
@@ -8266,79 +8376,6 @@ export default function Destination() {
 
 {/* ================= ETHIOPIA HERITAGE & ADVENTURE ================= */}
 {/* ================= ETHIOPIA HERITAGE & ADVENTURE ================= */}
-<section
-  className="relative flex min-h-[58vh] items-center justify-center overflow-hidden lg:min-h-[65vh]"
-  style={{
-    backgroundImage: `url(${serengeti})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  }}
->
-  {/* Dark overlay */}
-  <div className="absolute inset-0 bg-black/55" />
-
-  {/* Gradient */}
-  <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/75" />
-
-  {/* Content */}
-  <div className="relative z-10 mx-auto w-full max-w-4xl px-6 py-16 text-center text-white sm:px-8 lg:py-20">
-
-    {/* Brand badge */}
-    <div className="flex justify-center">
-      <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-5 py-2 text-[10px] font-semibold uppercase tracking-[3px] text-white backdrop-blur-md">
-        {t("services1.badge")}
-      </span>
-    </div>
-
-    {/* Heading */}
-    <h1 className="mx-auto mt-6 max-w-3xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl md:text-6xl">
-      {t("services1.title")}
-    </h1>
-
-    {/* Description */}
-    <p className="mx-auto mt-6 max-w-xl text-sm leading-6 text-white/80 sm:text-base sm:leading-7">
-      {t("services1.description")}
-    </p>
-
-    {/* Buttons */}
-    <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-
-      <a
-        href="/destinations"
-        className="inline-flex w-full items-center justify-center rounded-full bg-[#C8A94C] px-7 py-3 text-sm font-bold text-black shadow-lg transition duration-300 hover:-translate-y-1 hover:bg-[#D8BB63] sm:w-auto"
-      >
-        Explore Destinations
-        <span className="ml-2">→</span>
-      </a>
-
-      <a
-        href="https://wa.me/254745861688?text=Hello%20Curious%20Safaris%2C%20I%27d%20like%20to%20plan%20a%20trip."
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex w-full items-center justify-center rounded-full border border-white/30 bg-white/10 px-7 py-3 text-sm font-bold text-white backdrop-blur-md transition duration-300 hover:-translate-y-1 hover:bg-white hover:text-black sm:w-auto"
-      >
-        Plan Your Journey
-      </a>
-
-    </div>
-
-    {/* Bottom highlights */}
-    <div className="mx-auto mt-8 flex max-w-lg flex-wrap items-center justify-center gap-x-5 gap-y-2 text-[10px] font-medium uppercase tracking-[1.5px] text-white/60 sm:text-xs">
-
-      <span>Wildlife Safaris</span>
-
-      <span className="hidden h-1 w-1 rounded-full bg-[#C8A94C] sm:block" />
-
-      <span>Beach Holidays</span>
-
-      <span className="hidden h-1 w-1 rounded-full bg-[#C8A94C] sm:block" />
-
-      <span>Travel Experiences</span>
-
-    </div>
-
-  </div>
-</section>
 
 {/* ================= DRC ADVENTURE ================= */}
 {/* ================= DRC ADVENTURE ================= */}
