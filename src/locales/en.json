@@ -201,26 +201,29 @@
     "trustedServiceTitle": "Trusted Service",
     "trustedServiceDesc": "From planning to your return home, our team is here to make your journey smooth and memorable."
   },
+"reviews": {
+  "badge": "Traveler Reviews",
+  "title": "Stories From Our",
+  "titleHighlight": "Happy Travelers",
+  "description": "Every journey tells a story. Discover why travelers continue to trust Curious Safaris for personalized African adventures.",
 
-  "reviews": {
-    "badge": "Traveler Reviews",
-    "title": "Stories From Our",
-    "titleHighlight": "Happy Travelers",
-    "description": "Every journey tells a story. Discover why travelers continue to trust Curious Safaris for personalized African adventures.",
+  "basedOn": "Based on Google Reviews",
+  "trustedTitle": "Trusted by Travelers",
+  "trustedDescription": "Guests consistently praise our personalized service, well-planned itineraries, luxury experiences, affordable pricing, and unforgettable wildlife adventures.",
 
-    "basedOn": "Based on Google Reviews",
-    "trustedTitle": "Trusted by Travelers",
-    "trustedDescription": "Guests consistently praise our personalized service, well-planned itineraries, luxury experiences, affordable pricing, and unforgettable wildlife adventures.",
+  "googleReview": "Google Review",
 
-    "googleReview": "Google Review",
+  "review1": {
+    "text": "Traveling with Curious Safaris was one of the best decisions we made. Everything was seamless from start to finish. The itinerary was well thought out, the accommodations were luxurious, and the wildlife encounters were breathtaking."
+  },
 
-    "review1": {
-      "text": "Traveling with Curious Safaris was one of the best decisions we made. Everything was seamless from start to finish. The itinerary was well thought out, the accommodations were luxurious, and the wildlife encounters were breathtaking."
-    },
+  "review2": {
+    "text": "Affordable prices and top-notch service."
+  },
 
-    "review2": {
-      "text": "Affordable prices and top-notch service."
-    },
+  "review3": {
+    "text": "⭐⭐⭐⭐⭐ A Wonderful Nairobi Day Tour\n\nWe had an amazing day exploring Nairobi with Curious Safari. The tour was well organized from start to finish, with excellent service, a friendly guide, and a comfortable experience throughout the day.\n\nWe visited some of Nairobi’s highlights, learned a lot about the city and its wildlife, and enjoyed every moment of the trip. Our guide was knowledgeable, professional, and made the experience truly memorable.\n\nI highly recommend Curious Safari to anyone looking for a reliable and enjoyable Nairobi day tour. Thank you for a fantastic experience! 🦒🌍🇰🇪"
+  },
 
     "stats": {
       "rating": "Google Rating",

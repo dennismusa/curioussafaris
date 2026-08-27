@@ -2835,6 +2835,9 @@ const regions = [
 
 
 {/* ===================== REVIEWSS ===================== */}
+```jsx
+{/* ===================== REVIEWS ===================== */}
+
 <section className="relative overflow-hidden bg-gradient-to-b from-[#F8F6F1] via-white to-[#F2EEE5] py-32">
 
   {/* Background Effects */}
@@ -2843,9 +2846,10 @@ const regions = [
 
   <div className="absolute -bottom-40 -right-40 h-[500px] w-[500px] rounded-full bg-emerald-600/10 blur-[140px]" />
 
+
   <div className="relative mx-auto max-w-7xl px-6">
 
-    {/* Header */}
+    {/* ===================== HEADER ===================== */}
 
     <div className="mx-auto max-w-3xl text-center">
 
@@ -2870,13 +2874,15 @@ const regions = [
     </div>
 
 
-    {/* Rating Card */}
+    {/* ===================== RATING CARD ===================== */}
 
     <div className="mt-16 flex justify-center">
 
-      <div className="rounded-[35px] bg-white px-12 py-10 shadow-2xl">
+      <div className="rounded-[35px] bg-white px-8 py-10 shadow-2xl sm:px-12">
 
-        <div className="flex flex-col items-center gap-4 md:flex-row md:gap-12">
+        <div className="flex flex-col items-center gap-8 md:flex-row md:gap-12">
+
+          {/* Rating */}
 
           <div className="text-center">
 
@@ -2894,11 +2900,17 @@ const regions = [
 
           </div>
 
-          <div className="hidden h-24 w-px bg-gray-200 md:block"></div>
 
-          <div>
+          {/* Divider */}
 
-            <h3 className="text-2xl font-bold">
+          <div className="hidden h-24 w-px bg-gray-200 md:block" />
+
+
+          {/* Trust Message */}
+
+          <div className="text-center md:text-left">
+
+            <h3 className="text-2xl font-bold text-gray-900">
               {t("reviews.trustedTitle")}
             </h3>
 
@@ -2915,25 +2927,34 @@ const regions = [
     </div>
 
 
-    {/* Reviews */}
+    {/* ===================== REVIEWS ===================== */}
 
     <div className="mt-20 grid gap-8 md:grid-cols-2">
 
-      {/* Review 1 */}
+
+      {/* ================= REVIEW 1 ================= */}
 
       <div className="group rounded-[35px] border border-gray-100 bg-white p-10 shadow-xl transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+        {/* Stars */}
 
         <div className="text-2xl text-yellow-400">
           ★★★★★
         </div>
 
+
+        {/* Review Text */}
+
         <p className="mt-8 text-lg italic leading-9 text-gray-600">
           "{t("reviews.review1.text")}"
         </p>
 
+
+        {/* Reviewer */}
+
         <div className="mt-10 flex items-center gap-4">
 
-          <div className="flex h-16 w-16 items-center justify-center rounded-full bg-emerald-700 text-xl font-bold text-white">
+          <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-emerald-700 text-xl font-bold text-white">
             J
           </div>
 
@@ -2954,21 +2975,29 @@ const regions = [
       </div>
 
 
-      {/* Review 2 */}
+      {/* ================= REVIEW 2 ================= */}
 
       <div className="group rounded-[35px] border border-gray-100 bg-white p-10 shadow-xl transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+        {/* Stars */}
 
         <div className="text-2xl text-yellow-400">
           ★★★★★
         </div>
 
+
+        {/* Review Text */}
+
         <p className="mt-8 text-lg italic leading-9 text-gray-600">
           "{t("reviews.review2.text")}"
         </p>
 
+
+        {/* Reviewer */}
+
         <div className="mt-10 flex items-center gap-4">
 
-          <div className="flex h-16 w-16 items-center justify-center rounded-full bg-emerald-700 text-xl font-bold text-white">
+          <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-emerald-700 text-xl font-bold text-white">
             J
           </div>
 
@@ -2988,12 +3017,58 @@ const regions = [
 
       </div>
 
+
+      {/* ================= REVIEW 3 ================= */}
+
+      <div className="group rounded-[35px] border border-gray-100 bg-white p-10 shadow-xl transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+        {/* Stars */}
+
+        <div className="text-2xl text-yellow-400">
+          ★★★★★
+        </div>
+
+
+        {/* Review Text */}
+
+        <p className="mt-8 whitespace-pre-line text-lg italic leading-9 text-gray-600">
+          "{t("reviews.review3.text")}"
+        </p>
+
+
+        {/* Reviewer */}
+
+        <div className="mt-10 flex items-center gap-4">
+
+          <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-emerald-700 text-xl font-bold text-white">
+            G
+          </div>
+
+          <div>
+
+            <h4 className="font-bold text-gray-900">
+              George dennis
+            </h4>
+
+            <p className="text-sm text-gray-500">
+              {t("reviews.googleReview")}
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
 
 
-    {/* Statistics */}
+    {/* ===================== STATISTICS ===================== */}
 
     <div className="mt-20 grid grid-cols-2 gap-6 md:grid-cols-4">
+
+
+      {/* Rating */}
 
       <div className="rounded-3xl bg-white p-8 text-center shadow-lg">
 
@@ -3008,6 +3083,8 @@ const regions = [
       </div>
 
 
+      {/* Verified Reviews */}
+
       <div className="rounded-3xl bg-white p-8 text-center shadow-lg">
 
         <h3 className="text-5xl font-black text-emerald-700">
@@ -3021,6 +3098,8 @@ const regions = [
       </div>
 
 
+      {/* Personalized */}
+
       <div className="rounded-3xl bg-white p-8 text-center shadow-lg">
 
         <h3 className="text-5xl font-black text-emerald-700">
@@ -3033,6 +3112,8 @@ const regions = [
 
       </div>
 
+
+      {/* Support */}
 
       <div className="rounded-3xl bg-white p-8 text-center shadow-lg">
 
@@ -3049,25 +3130,30 @@ const regions = [
     </div>
 
 
-    {/* Buttons */}
+    {/* ===================== BUTTONS ===================== */}
 
     <div className="mt-20 flex flex-wrap justify-center gap-6">
+
+
+      {/* Write Review */}
 
       <a
         href="https://search.google.com/local/writereview?placeid=ChIJ5WRKPtUTLxgR3jaUiiu327U"
         target="_blank"
         rel="noopener noreferrer"
-        className="px-8 py-4 rounded-2xl bg-[#0B6E4F] text-white font-bold hover:bg-[#08523B] hover:-translate-y-1 transition duration-300 shadow-lg"
+        className="rounded-2xl bg-[#0B6E4F] px-8 py-4 font-bold text-white shadow-lg transition duration-300 hover:-translate-y-1 hover:bg-[#08523B]"
       >
         ⭐ {t("reviews.writeReview")}
       </a>
 
 
+      {/* View Google Profile */}
+
       <a
         href="https://www.google.com/maps/search/?api=1&query=Curious+Safaris,+Ruiru,+Kenya&query_place_id=ChIJ5WRKPtUTLxgR3jaUiiu327U"
         target="_blank"
         rel="noopener noreferrer"
-        className="px-8 py-4 rounded-2xl border-2 border-[#0B6E4F] text-[#0B6E4F] font-bold hover:bg-[#0B6E4F] hover:text-white hover:-translate-y-1 transition duration-300"
+        className="rounded-2xl border-2 border-[#0B6E4F] px-8 py-4 font-bold text-[#0B6E4F] transition duration-300 hover:-translate-y-1 hover:bg-[#0B6E4F] hover:text-white"
       >
         💬 {t("reviews.viewProfile")}
       </a>
@@ -3077,6 +3163,7 @@ const regions = [
   </div>
 
 </section>
+
 
 {/* FOOTER */}
 <footer className="relative overflow-hidden bg-[#050505] text-white">
